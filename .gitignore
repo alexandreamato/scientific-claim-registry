@@ -25,6 +25,9 @@ registry/scr.db
 
 # Logs & cron/runtime state
 *.log
+# launchd's stdout/stderr sinks — Python tracebacks land here and `*.log` does not cover them.
+*.cron.out
+*.cron.err
 registry/.contra_rotation
 registry/submissions.json
 

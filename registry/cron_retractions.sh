@@ -81,11 +81,21 @@ fi
 
 # (5) Public provenance: record the week in the public repo, so the git history shows WHICH evidence
 # moved — the project's own thesis (versioned memory) demonstrated in the repository, not just
-# described in it. ONLY the two seeds are staged: the author's work in progress is never swept into
-# an automated commit. Never fatal and never interactive — the deploy already succeeded above, so a
-# network or credential failure may only become a log line. GIT_TERMINAL_PROMPT=0 makes git RETURN an
-# error instead of blocking the cron forever on a password prompt (macOS ships no `timeout`), and the
-# low-speed limits abort a transfer stalled under 1 KB/s for 30 s.
+# described in it.
+#
+# This commit is PATHSPEC-SCOPED and never touches the author's staging area. Both matter, because
+# this runs unattended against a PUBLIC repo: `git commit` without a pathspec commits the WHOLE index,
+# so anything left staged from an interrupted session would be published on Sunday at 04:30. With the
+# pathspec, git builds a temporary index from HEAD + these two paths only; whatever else the author had
+# staged stays staged and unpublished. The emptiness check is scoped the same way and compares the
+# WORKING TREE against HEAD, so no `git add` is needed at all — the author's index is left untouched.
+#
+# Never fatal and never interactive — the deploy already succeeded above, so a network or credential
+# failure may only become a log line. GIT_TERMINAL_PROMPT=0 makes git RETURN an error instead of
+# blocking the cron forever on a password prompt (macOS ships no `timeout`), and the low-speed limits
+# abort a transfer stalled under 1 KB/s for 30 s. NOTE: the push carries the whole branch, so any
+# commit the author left unpushed on `main` goes out with it — that is git, not a leak, but it means
+# `main` should not be used to park work that is not meant to be public.
 if [ "$BEFORE" != "$AFTER" ] && [ -d "$BIO/.git" ]; then
   cd "$BIO" || exit 1
   COUNTS_AFTER="$(python3 -c "import json;c=json.load(open('registry/claims.json'));cl=c['claims'] if isinstance(c,dict) else c;print(len(cl),sum(len(x.get('evidence',[])) for x in cl))" 2>/dev/null || echo '? ?')"
@@ -93,14 +103,15 @@ if [ "$BEFORE" != "$AFTER" ] && [ -d "$BIO/.git" ]; then
   DELTA="claims $CB -> $CA, evidence $EB -> $EA"
   export GIT_TERMINAL_PROMPT=0 GIT_ASKPASS=/usr/bin/true
   export GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30
-  git add registry/claims.json registry/questions.json >> "$LOG" 2>&1
-  if git diff --cached --quiet 2>/dev/null; then
+  SEEDS="registry/claims.json registry/questions.json"
+  if git diff --quiet HEAD -- $SEEDS 2>/dev/null; then
     echo "  git: nothing to commit (seeds unchanged)." >> "$LOG"
   else
     git commit -q \
       -m "Weekly sweep $(date '+%Y-%m-%d'):$SWEPT" \
       -m "Layer 1 surveillance: rotating contradiction sweep (R-AI-12) over the questions above; new evidence verified on ingest (R-AI-13/14). Corpus: $DELTA." \
-      -m "Automated by registry/cron_retractions.sh" >> "$LOG" 2>&1
+      -m "Automated by registry/cron_retractions.sh" \
+      -- $SEEDS >> "$LOG" 2>&1
     if git push -q origin main >> "$LOG" 2>&1; then
       echo "  git: committed + pushed ($DELTA)." >> "$LOG"
     else
