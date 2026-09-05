@@ -606,6 +606,18 @@
 
 ## Changelog
 
+- **2026-09-05** — **R-AI-12: a varredura de contradição estava recuperando duplicatas (conserto de
+  implementação, sem mudança de política).** Auditoria dos 3 meses de automação: R-AI-11 **funcionou**
+  (supporting caiu de **85,7% → 60,4%** entre o que entrou antes e depois da regra; `refines`/`context`
+  passaram a ser usados de verdade), mas R-AI-12 **não** — contradicting ficou parado em **1,3% → 2,3%**.
+  Causa medida (SQ-LIP-000012, 2026-09-05): `europepmc()` ordenava **tudo** por `P_PDATE_D desc`, então o
+  passo de contradição pedia "os 10 mais **recentes** que casam com o tópico **E** termos de null/negativo"
+  — que numa literatura de ~1,2k artigos são **os mesmos** 10 mais recentes do passo topical. Resultado
+  medido: **0 dos 10 sobreviviam ao dedup**; o log confirma **10 de 14 varreduras trazendo 1 candidato**.
+  Os termos negativos nunca chegavam a selecionar nada. **Conserto:** `europepmc()` ganhou parâmetro
+  `sort`; o passo de contradição usa **ordem de RELEVÂNCIA** (`sort=None`), o topical segue por data. Efeito
+  medido no mesmo slot de 10 candidatos: **0 → 8 novos** (dry-run de ponta a ponta confirmou 8). Mesmo
+  custo de LLM, 8× o rendimento. *Forward-fix* — o passado não é re-varrido.
 - **2026-06-12** — **R-SITE-17 [Adopted]: verificação como selo público (camada 1 do plano de capitalização).** Toda a
   QA de verificação (R-AI-13/14) estava invisível por-evidência. Agora: rollup por-pergunta (`verification_rollup` em
   `build_questions.py`) na glance + no JSON (`evidence_verification`); número global no `api/questions.json`, na index de

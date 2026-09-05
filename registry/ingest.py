@@ -65,11 +65,14 @@ def indexed_refs():
             elif r.upper().startswith("PMID:"): pmids.add(r[5:])
     return dois, pmids
 
-def europepmc(query, from_year, n):
+def europepmc(query, from_year, n, sort="P_PDATE_D desc"):
+    """`sort=None` asks Europe PMC for RELEVANCE order. Default stays newest-first: the topical pass
+    wants what is new since last run. The contradiction pass must NOT use it — see gather_contra."""
     q = f'({query}) AND (PUB_YEAR:[{from_year} TO {datetime.date.today().year}])'
-    url = ("https://www.ebi.ac.uk/europepmc/webservices/rest/search?"
-           + urllib.parse.urlencode({"query": q, "format": "json", "pageSize": n,
-                                     "resultType": "core", "sort": "P_PDATE_D desc"}))
+    params = {"query": q, "format": "json", "pageSize": n, "resultType": "core"}
+    if sort:
+        params["sort"] = sort
+    url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": "SCR-ingest/0.1 (scientificclaims.org)"})
     with urllib.request.urlopen(req, timeout=30) as r:
         data = json.loads(r.read())
@@ -290,7 +293,13 @@ def gather_contra(q, from_year, n):
     """Active contradiction-seeking pass — runs on EVERY loop run, in any mode (R-AI-12)."""
     out = []
     try:
-        out += europepmc(contra_query(q), min(from_year, 2000), n)  # widen: null findings are often older
+        # RELEVANCE order (sort=None), NOT newest-first. Measured 2026-09-05 on SQ-LIP-000012: sorted by
+        # date this pass returned 10 articles of which 0 survived dedup against the topical pass — in a
+        # literature this small (~1.2k lipedema papers) "10 newest matching X" and "10 newest matching X
+        # AND null/negative" are the same papers, so the negative terms never got to select anything.
+        # That is why the corpus sat at ~2% contradicting despite a sweep every week (R-AI-12). By
+        # relevance the same 10 slots yield 8 novel disconfirming candidates — same cost, 8x the yield.
+        out += europepmc(contra_query(q), min(from_year, 2000), n, sort=None)  # widen: nulls are often older
     except Exception as e:
         print(f"  [contra europepmc error] {e}")
     if domain_of(q["id"]) == "LIP" and bib_available():
