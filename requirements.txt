@@ -1,0 +1,5 @@
+# SCR Python Dependencies
+# The core ingestion and build pipeline runs entirely on the standard library.
+
+# Required for site/make_images.py (favicon and social sharing images)
+Pillow>=10.0.0

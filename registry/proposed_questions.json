@@ -1,0 +1,284 @@
+{
+  "proposed": [
+    {
+      "temp_id": "SQ-LIP-D000001",
+      "text": "Does complete decongestive therapy (manual lymphatic drainage plus compression) reduce pain, volume, or symptom burden in lipedema?",
+      "text_pt": "A terapia descongestiva completa (drenagem linfática manual mais compressão) reduz a dor, o volume ou a carga de sintomas no lipedema?",
+      "tags": [
+        "Treatment",
+        "Management"
+      ],
+      "keywords": [
+        "complete decongestive therapy",
+        "manual lymphatic drainage",
+        "compression",
+        "conservative treatment"
+      ],
+      "rationale": "Conservative/physiotherapy treatment is a major treatment modality distinct from surgery, diet, and pharmacology, and is not addressed by existing questions.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.5535/arm.2011.35.6.922",
+        "DOI:10.1089/lrb.2023.0013",
+        "DOI:10.1097/gox.0000000000005952",
+        "DOI:10.1111/ddg.14974",
+        "DOI:10.1155/2023/5826630"
+      ],
+      "status": "promoted",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8",
+      "final_id": "SQ-LIP-000021"
+    },
+    {
+      "temp_id": "SQ-LIP-D000002",
+      "text": "What are the rates and types of complications and recurrence after liposuction for lipedema over long-term follow-up?",
+      "text_pt": "Quais são as taxas e os tipos de complicações e recorrência após lipoaspiração para lipedema em seguimento de longo prazo?",
+      "tags": [
+        "Surgery",
+        "Complications",
+        "Treatment"
+      ],
+      "keywords": [
+        "liposuction complications",
+        "recurrence",
+        "long-term outcomes",
+        "postoperative"
+      ],
+      "rationale": "The existing liposuction question covers efficacy/safety broadly; long-term complication and recurrence rates are a distinct, separately answerable outcome.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.1177/0268355520949775",
+        "DOI:10.1097/prs.0000000000012217",
+        "DOI:10.12659/ajcr.935016",
+        "DOI:10.1111/dth.14534",
+        "DOI:10.1097/sap.0000000000004124"
+      ],
+      "status": "rejected",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8"
+    },
+    {
+      "temp_id": "SQ-LIP-D000003",
+      "text": "What clinical criteria and stage/type classification systems are used to diagnose and grade lipedema, and how reliable are they?",
+      "text_pt": "Quais critérios clínicos e sistemas de classificação de estágio/tipo são usados para diagnosticar e graduar o lipedema, e quão confiáveis são?",
+      "tags": [
+        "Diagnosis",
+        "Definition"
+      ],
+      "keywords": [
+        "clinical criteria",
+        "staging",
+        "type classification",
+        "diagnostic reliability"
+      ],
+      "rationale": "Distinct from ultrasound and screening tools; addresses clinical diagnostic criteria and inter-rater reliability of staging systems.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.1159/000527138",
+        "DOI:10.1590/1677-5449.200114",
+        "DOI:10.1016/j.remn.2018.06.008",
+        "DOI:10.23736/s0392-9590.25.05207-1",
+        "DOI:10.1089/lrb.2019.0011"
+      ],
+      "status": "promoted",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8",
+      "final_id": "SQ-LIP-000022"
+    },
+    {
+      "temp_id": "SQ-LIP-D000004",
+      "text": "Is lipedema associated with obesity, and does body weight influence its onset or severity?",
+      "text_pt": "O lipedema está associado à obesidade, e o peso corporal influencia seu início ou gravidade?",
+      "tags": [
+        "Epidemiology",
+        "Comorbidities",
+        "Pathophysiology"
+      ],
+      "keywords": [
+        "obesity",
+        "BMI",
+        "weight",
+        "severity"
+      ],
+      "rationale": "While lipedema is defined as separate from obesity, the empirical relationship between coexisting obesity and lipedema onset/severity is a distinct question not covered.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.1097/prs.0000000000006280",
+        "DOI:10.1515/hmbci-2017-0076",
+        "DOI:10.1177/1358863x231219006",
+        "DOI:10.3389/fimmu.2023.1223264",
+        "DOI:10.7759/cureus.11854"
+      ],
+      "status": "rejected",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8"
+    },
+    {
+      "temp_id": "SQ-LIP-D000005",
+      "text": "How does lipedema affect quality of life, depression, and anxiety in affected patients?",
+      "text_pt": "Como o lipedema afeta a qualidade de vida, a depressão e a ansiedade nos pacientes acometidos?",
+      "tags": [
+        "Mental health",
+        "Comorbidities"
+      ],
+      "keywords": [
+        "quality of life",
+        "depression",
+        "anxiety",
+        "psychological burden"
+      ],
+      "rationale": "Existing mental-health question covers only ADHD association; psychological burden and QoL impact is a separate, literature-measurable relationship.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.3389/fgwh.2025.1629077",
+        "DOI:10.1089/lrb.2023.0038",
+        "DOI:10.3390/life14030295",
+        "DOI:10.1186/s12905-021-01174-y",
+        "DOI:10.3390/ijerph181910223"
+      ],
+      "status": "promoted",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8",
+      "final_id": "SQ-LIP-000020"
+    },
+    {
+      "temp_id": "SQ-LIP-D000006",
+      "text": "Can MRI, lymphoscintigraphy, or DXA differentiate lipedema from lymphedema and other fat distributions?",
+      "text_pt": "A ressonância magnética, a linfocintilografia ou a DXA podem diferenciar o lipedema do linfedema e de outras distribuições de gordura?",
+      "tags": [
+        "Imaging",
+        "Diagnosis"
+      ],
+      "keywords": [
+        "MRI",
+        "lymphoscintigraphy",
+        "DXA",
+        "differential imaging"
+      ],
+      "rationale": "Existing imaging question is limited to ultrasound; other imaging modalities for differentiation are a distinct gap.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.1016/j.remn.2018.06.008",
+        "DOI:10.1089/lrb.2024.0102",
+        "DOI:10.1089/lrb.2022.0010",
+        "DOI:10.1159/000527138",
+        "DOI:10.1016/j.mvr.2021.104298"
+      ],
+      "status": "promoted",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8",
+      "final_id": "SQ-LIP-000023"
+    },
+    {
+      "temp_id": "SQ-LIP-D000007",
+      "text": "Does bariatric surgery or substantial weight loss alter lipedema fat volume or symptoms?",
+      "text_pt": "A cirurgia bariátrica ou a perda de peso substancial altera o volume de gordura ou os sintomas do lipedema?",
+      "tags": [
+        "Treatment",
+        "Surgery",
+        "Metabolism"
+      ],
+      "keywords": [
+        "bariatric surgery",
+        "weight loss",
+        "fat volume",
+        "treatment response"
+      ],
+      "rationale": "Whether weight-loss interventions affect lipedema-specific fat is a distinct empirical question separate from diet for symptom relief or liposuction.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.1111/cob.70062",
+        "DOI:10.1016/j.soard.2021.12.027",
+        "DOI:10.1159/000511044",
+        "DOI:10.1186/s12905-025-03834-9",
+        "DOI:10.1097/prs.0000000000010392"
+      ],
+      "status": "promoted",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8",
+      "final_id": "SQ-LIP-000024"
+    },
+    {
+      "temp_id": "SQ-LIP-D000008",
+      "text": "What specific genetic variants or inheritance patterns have been identified in lipedema?",
+      "text_pt": "Quais variantes genéticas específicas ou padrões de herança foram identificados no lipedema?",
+      "tags": [
+        "Genetics",
+        "Etiology"
+      ],
+      "keywords": [
+        "genetic variants",
+        "inheritance pattern",
+        "familial",
+        "gene mutations"
+      ],
+      "rationale": "Existing genetics content is general (hormones/heredity influence onset, HLA in celiac); identification of specific causal variants/inheritance patterns is distinct.",
+      "library_hits": 5,
+      "example_refs": [
+        "DOI:10.26355/eurrev_202003_20690",
+        "DOI:10.1089/lrb.2023.0065",
+        "DOI:10.3390/jpm12020268",
+        "DOI:10.7417/ct.2023.2495",
+        "DOI:10.1007/s00404-026-08318-1"
+      ],
+      "status": "promoted",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8",
+      "final_id": "SQ-LIP-000025"
+    },
+    {
+      "temp_id": "SQ-LIP-D000009",
+      "text": "Does lipedema impair mobility, gait, or physical function, and does exercise improve outcomes?",
+      "text_pt": "O lipedema prejudica a mobilidade, a marcha ou a função física, e o exercício melhora os desfechos?",
+      "tags": [
+        "Complications",
+        "Treatment",
+        "Management"
+      ],
+      "keywords": [
+        "mobility",
+        "gait",
+        "physical function",
+        "exercise"
+      ],
+      "rationale": "Functional impairment beyond progression to lymphedema, and exercise as an intervention, are distinct and measurable.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.1007/s13679-024-00579-8",
+        "DOI:10.1177/02683555251343148",
+        "DOI:10.1089/lrb.2021.0039",
+        "DOI:10.3390/nu13020358",
+        "DOI:10.1515/hmbci-2017-0076"
+      ],
+      "status": "rejected",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8"
+    },
+    {
+      "temp_id": "SQ-LIP-D000010",
+      "text": "Are there characteristic histological or microvascular changes in lipedema adipose tissue compared to non-lipedema fat?",
+      "text_pt": "Existem alterações histológicas ou microvasculares características no tecido adiposo do lipedema em comparação com a gordura sem lipedema?",
+      "tags": [
+        "Pathophysiology",
+        "Vascular"
+      ],
+      "keywords": [
+        "histology",
+        "adipocyte hypertrophy",
+        "microvascular",
+        "capillary fragility"
+      ],
+      "rationale": "Distinct from the inflammation/pain mechanism question; focuses on structural histological and microvascular tissue characteristics.",
+      "library_hits": 6,
+      "example_refs": [
+        "DOI:10.3389/fimmu.2023.1223264",
+        "DOI:10.1155/2019/8747461",
+        "DOI:10.1016/j.jss.2020.03.055",
+        "DOI:10.3390/cells9020430",
+        "DOI:10.3389/fcell.2026.1804040"
+      ],
+      "status": "rejected",
+      "created": "2026-05-31",
+      "engine": "anthropic/claude-opus-4.8"
+    }
+  ]
+}

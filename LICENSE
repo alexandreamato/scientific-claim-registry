@@ -1,0 +1,44 @@
+SCR — Scientific Claim Registry
+Licensing (Posture B — "protected commons")
+Copyright (c) 2026 Dr. Alexandre Campos Moraes Amato (Amato Duo) · ORCID 0000-0003-4008-4029
+
+This repository mixes documents, data, and code, each under a different licence by design.
+The goal is an open, reusable commons that cannot be silently closed by a third party.
+Full rationale: docs/07_licenciamento.md.
+
+────────────────────────────────────────────────────────────────────────────
+COMPONENT                                   LICENCE
+────────────────────────────────────────────────────────────────────────────
+Documents — papers, editorial, framework,   CC BY 4.0
+specifications (docs/, incl. the SCR         https://creativecommons.org/licenses/by/4.0/
+Protocol, docs/spec/PROTOCOL.md)
+
+Registry data — the questions and claims     CC BY-SA 4.0  (and ODbL for the
+(registry/questions.json, claims.json,        database as a whole)
+scr.db, and the published JSON under site/)   https://creativecommons.org/licenses/by-sa/4.0/
+                                              https://opendatacommons.org/licenses/odbl/1-0/
+
+Software / tooling — the Python pipeline      AGPL-3.0-or-later  + commercial dual licence
+(registry/*.py, site/*.py)                    https://www.gnu.org/licenses/agpl-3.0.html
+                                              (commercial-exemption licences available from
+                                               the author; enabled by the contributor CLA)
+
+Name / brand — "SCR", "Scientific Claim       Trademark (reserved). The open licences above
+Registry", "ScientificClaims.org", "BIO"      do NOT grant any right to the names or marks.
+                                              A fork may reuse the content; it may not call
+                                              itself "SCR" or imply endorsement.
+────────────────────────────────────────────────────────────────────────────
+
+Share-alike (CC BY-SA / AGPL) means derivatives of the data and code must stay open and
+attributed: a fork cannot close what it took, and improvements can flow back. Attribution
+in all cases: cite the author and the relevant DOI (see CITATION.cff).
+
+Contributions: by submitting a contribution you agree it is offered under the licence of the
+component it touches, and (for data/code) under a Contributor License Agreement permitting the
+maintainer to also offer commercial licences. See docs/07_licenciamento.md.
+
+The registry registers evidence; it does not arbitrate truth and is NOT medical advice.
+Claims do not replace clinical judgment.
+
+NO WARRANTY. The materials are provided "as is", without warranty of any kind, to the extent
+permitted by the applicable licence above.

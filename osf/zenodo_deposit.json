@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Framework for Persistent, Versioned, Expert-Curated Biomedical Claims",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p>Modern science assigns persistent identifiers to nearly every artifact it produces &mdash; papers (DOI), researchers (ORCID), clinical trials (registration numbers), genetic sequences (accession numbers) &mdash; yet the scientific <em>claim</em> itself has no identity. Claims remain trapped inside publications: un-addressable, un-versionable, and impossible to track as evidence accumulates.</p><p>This work proposes the <strong>Scientific Claim Registry (SCR)</strong>: a public, versioned, expert-curated registry that assigns each biomedical claim a persistent identifier, a canonical statement with explicit context (population, condition, exposure, comparator, outcome, methodological scope), links to supporting and contradicting evidence, an evidence-certainty rating reusing GRADE, and a complete revision history. The registry is operated by the <strong>BIO (Biological Intelligence Observatory)</strong> method &mdash; its governance and maintenance layer.</p><p>SCR is presented as a testable hypothesis: whether a claim-centric, versioned, expert-curated registry can maintain current biomedical knowledge better than publication-centric synthesis. Lipedema is proposed as the first proof-of-concept domain; the framework is disease-agnostic. The work explicitly builds on and acknowledges prior art including nanopublications, micropublications, Wikidata, CIViC, ClinGen, PharmGKB/CPIC, Open Targets, Cochrane Living Systematic Reviews, GRADE and MAGICapp; its proposed contribution is adoption, governance, and domain execution, not the claim primitive itself.</p><p>This document establishes the conceptual foundation and priority date of the SCR/BIO framework. Future technical specifications, implementations, and disease-specific deployments will build upon the principles described herein.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "persistent identifiers",
+      "claim-centric science",
+      "biomedical knowledge",
+      "knowledge graph",
+      "living evidence",
+      "living consensus",
+      "evidence synthesis",
+      "version control",
+      "biomedical informatics",
+      "scientific infrastructure",
+      "GRADE",
+      "lipedema",
+      "nanopublications"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.2",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {"relation": "isPartOf", "identifier": "https://osf.io/n97ez/", "resource_type": "other"}
+    ]
+  }
+}

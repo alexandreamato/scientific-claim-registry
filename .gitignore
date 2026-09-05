@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local safety backups (never publish)
+*.bak
+*.bak-*
+*.bak-pre-*
+
+# Canonical DB is a lossless rebuild of the JSON seeds (R-DATA-1) — never versioned; regenerate
+# with `python3 registry/db.py build`. The seeds (questions.json/claims.json) are the source of truth.
+registry/scr.db
+*.sqlite
+*.sqlite3
+
+# Logs & cron/runtime state
+*.log
+registry/.contra_rotation
+registry/submissions.json
+
+# Secrets — never commit (live in ~/.config, not here, but guard anyway)
+*token*
+*secret*
+*.key
+.env
+.env.*
+!.env.example
+
+# Agent / tooling local state
+.claude/
+.claude/*
+
+# Build caches
+site/__pycache__/
+registry/__pycache__/
+
+# The author's private curated library (5.2k fichas, 26 MB): NOT part of the registry and not
+# ours to redistribute — the loop only reads it. Rebuild locally with library_index.py.
+registry/library.db
+
+# Generated site output. The seeds + builders above regenerate all of it in seconds (R-DATA-1),
+# so committing it would bury every weekly evidence change under a rebuild diff. The hand-written
+# pages (index.html, pt/index.html), the builders, the CSS and the static assets ARE tracked.
+site/claims.html
+site/questions.html
+site/sitemap.xml
+site/q/
+site/c/
+site/api/
+site/pt/claims.html
+site/pt/questions.html
+site/pt/q/
+site/pt/c/

@@ -1,0 +1,78 @@
+{
+  "registry": "SCR-domains",
+  "version": "0.1",
+  "date": "2026-05-30",
+  "note": "Canonical domain-code dictionary. The code is a short, human-friendly NAMESPACE SHARD used in IDs (SQ-<CODE>-NNNNNN for questions, SCR-<CODE>-NNNNNN for claims). The AUTHORITATIVE disease identity is the cross-reference (MONDO / ICD-11 / MeSH) — the code itself carries no clinical meaning, so we never re-typecast it. Rules: code = 2-4 uppercase letters; unique; STABLE; NEVER reused or repurposed (a wrong/merged domain is deprecated, not recycled). status: active = has questions/claims; proposed = reserved/referenced; deprecated = retired (kept as tombstone).",
+  "domains": [
+    {
+      "code": "LIP",
+      "name": "Lipedema",
+      "aliases": [
+        "lipoedema",
+        "lipidema",
+        "lipoedema"
+      ],
+      "status": "active",
+      "mondo": "MONDO:0013577",
+      "icd11": "EF02.2",
+      "mesh": "D065134",
+      "xrefs": {
+        "omim": "614103",
+        "orphanet": "77243",
+        "umls": "C0398370",
+        "snomedct": "234102003",
+        "meddra": "10063955",
+        "hp": "HP:0100695",
+        "medgen": "451048"
+      },
+      "search_term": "lipedema",
+      "note": "Pilot domain. Primary cross-refs verified: MONDO:0013577 (EBI OLS); ICD-11 EF02.2 'Lipoedema' (WHO MMS); MeSH D065134 (NCBI). Secondary xrefs harvested from the MONDO term (OMIM/Orphanet/UMLS/SNOMED-CT/MedDRA/HPO).",
+      "created": "2026-05-30"
+    },
+    {
+      "code": "LYM",
+      "name": "Lymphedema",
+      "aliases": [
+        "lymphoedema",
+        "lymphatic edema"
+      ],
+      "status": "proposed",
+      "mondo": "MONDO:0019297",
+      "icd11": null,
+      "mesh": "D008209",
+      "search_term": "lymphedema",
+      "note": "Referenced as a comparator/adjacent condition; not yet populated.",
+      "created": "2026-05-30",
+      "xrefs": {
+        "medgen": "6155",
+        "meddra": "10025282",
+        "orphanet": "79383",
+        "snomedct": "234097001",
+        "umls": "C0024236"
+      }
+    },
+    {
+      "code": "EDS",
+      "name": "Ehlers-Danlos syndromes",
+      "aliases": [
+        "EDS",
+        "hypermobility spectrum disorder",
+        "hEDS"
+      ],
+      "status": "proposed",
+      "mondo": "MONDO:0020066",
+      "icd11": null,
+      "mesh": "D004535",
+      "search_term": "Ehlers-Danlos",
+      "note": "Adjacent connective-tissue domain; not yet populated.",
+      "created": "2026-05-30",
+      "xrefs": {
+        "medgen": "41720",
+        "meddra": "10014316",
+        "orphanet": "98249",
+        "snomedct": "398114001",
+        "umls": "C0013720"
+      }
+    }
+  ]
+}

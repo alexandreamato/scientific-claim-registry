@@ -1,0 +1,13 @@
+{
+  "note": "References banned from ingestion (low-quality / off-topic / retracted). The surveillance loop skips these; see ingest.excluded_set().",
+  "excluded": [
+    {
+      "ref": "10.3390/biomedicines14010122",
+      "reason": "scoping review sobre endometriose/comorbidade ginecológica — fora do escopo de prevalência; baixa relevância",
+      "date": "2026-05-31",
+      "category": "off_topic",
+      "author": "Viana DPC (Pinto da Costa Viana, D.); Invitti A; Schor E (2026)",
+      "title": "Lipedema in Women and Its Interrelationship with Endometriosis and Other Gynecologic Diseases: A Scoping Review"
+    }
+  ]
+}
