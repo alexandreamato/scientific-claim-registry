@@ -28,6 +28,10 @@ GLOBAL_VERIFY = {"verified": _ALLV.count("verified"), "disputed": _ALLV.count("d
                  "total": len(_ALLV), "pct_verified": round(100 * _ALLV.count("verified") / max(1, len(_ALLV)))}
 def e(s): return html.escape(str(s if s is not None else ""))
 DATE = Q.get("date", "2026-05-30"); YEAR = int(DATE[:4]); RECENT = YEAR - 5
+# DATE is the registry's FOUNDING date (it anchors the freshness window, so it must not drift).
+# What `/api/*.json` publishes as "generated" is when this build ran — otherwise a consumer polling
+# the API sees a stamp frozen in the past and cannot tell a fresh export from a stale one.
+BUILD_DATE = __import__("datetime").date.today().isoformat()
 BASE = "https://scientificclaims.org"
 CUR_VER = "1.0"  # current/only version of the founding index
 
@@ -636,7 +640,7 @@ open(os.path.join(SITE, "sitemap.xml"), "w").write("\n".join(sm) + "\n")
 
 # ---- static read-API (machine-first; EN canonical with PT fields included) ----
 os.makedirs(os.path.join(SITE, "api"), exist_ok=True)
-api_q = {"registry": "SQ-LIP", "generated": DATE, "count": len(Q["questions"]),
+api_q = {"registry": "SQ-LIP", "generated": BUILD_DATE, "count": len(Q["questions"]),
          "evidence_verification": GLOBAL_VERIFY,
          "questions": [{"id": q["id"], "question": q["text"], "question_pt": q.get("text_pt"),
                         "phrasings": q.get("phrasings", []), "phrasings_pt": q.get("phrasings_pt", []),
@@ -650,7 +654,7 @@ api_q = {"registry": "SQ-LIP", "generated": DATE, "count": len(Q["questions"]),
                         "html": f"{BASE}/q/{q['id']}.html", "html_pt": f"{BASE}/pt/q/{q['id']}.html",
                         "json": f"{BASE}/q/{q['id']}.json"} for q in Q["questions"]]}
 json.dump(api_q, open(os.path.join(SITE, "api", "questions.json"), "w"), ensure_ascii=False, indent=2)
-json.dump({"registry": "SCR-LIP", "generated": DATE, "count": len(C), "claims": list(C.values())},
+json.dump({"registry": "SCR-LIP", "generated": BUILD_DATE, "count": len(C), "claims": list(C.values())},
           open(os.path.join(SITE, "api", "claims.json"), "w"), ensure_ascii=False, indent=2)
 try:
     json.dump(json.load(open(os.path.join(REG, "domains.json"))),

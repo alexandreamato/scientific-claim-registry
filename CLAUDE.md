@@ -181,7 +181,9 @@ fabricação vs. união das fontes). Piloto **inteiro auditado**: **416/423 evid
 correção no change-log do claim). Tooling: `verify_claims.py` (auditoria, resumível) + `run_audit_all.sh`. Selo público
 por-pergunta e global (R-SITE-17): rollup `evidence_verification` no JSON + selo na home/index/api.
 
-Site no ar e **totalmente bilíngue** (EN raiz + PT `/pt/`, hreflang); **347 claims sob 42 perguntas** (Zenodo v0.3 = snapshot de 240; 392→347 dedup R-OBJ-7; 25→42 decompor 7 guarda-chuvas R-Q-7)
+Site no ar e **totalmente bilíngue** (EN raiz + PT `/pt/`, hreflang); **382 claims / 461 evidências sob 42 perguntas**
+(Zenodo v0.3 = snapshot de 240; v0.4 = 347; 392→347 dedup R-OBJ-7; 25→42 decompor 7 guarda-chuvas R-Q-7;
+347→382 pelo cron semanal de jun–ago — **os números aqui envelhecem sozinhos: conferir com `db.py stats`**)
 (SQ-LIP-…, cada claim com **página própria** `/c/<id>.html` + JSON e back-links às perguntas); Knowledge
 Freshness e JSON por pergunta; **tags+keywords, busca e paginação client-side**; referências como **links
 diretos** (DOI/PMID → artigo); citação com **autor corporativo**; estado **`no_evidence`** (lacuna ≠
