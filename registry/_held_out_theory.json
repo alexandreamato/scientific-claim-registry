@@ -1,0 +1,71 @@
+{
+  "note": "Author's IIT2/gfWAT theory — intentionally NOT in the registry yet (per author, 2026-05-30). Staged for future inclusion once empirically supported.",
+  "count": 13,
+  "items": [
+    {
+      "topic": "gfWAT-IIT2 unifying framework",
+      "reason": "founder's own theory (preprint, hypothesis)",
+      "ref": "DOI:10.20944/preprints202605.1114.v1"
+    },
+    {
+      "topic": "Histaminergic peripheral sensitization as mechanism of the lipedema QST triad",
+      "reason": "theory mechanism (empirical QST pattern kept separately as SCR-LIP claim)",
+      "ref": "DOI:10.20944/preprints202605.1114.v1"
+    },
+    {
+      "topic": "Estrogen acting on gfWAT mast-cell estrogen receptors triggering degranulation",
+      "reason": "theory mechanism (ER profile of adipose mast cells never characterized)",
+      "ref": "DOI:10.20944/preprints202605.1114.v1"
+    },
+    {
+      "topic": "Asymmetric lipedema as a natural controlled experiment of local triggers",
+      "reason": "theory / open prediction",
+      "ref": "DOI:10.20944/preprints202605.1114.v1"
+    },
+    {
+      "topic": "Fibromyalgia as a central-sensitization stage of the same mast-cell cascade",
+      "reason": "theory subtyping prediction",
+      "ref": "DOI:10.20944/preprints202605.1114.v1"
+    },
+    {
+      "topic": "Integrative 4-mechanism (inflammatory/hypoxic-hemorrhagic/adipomyofascial/neuromolecular) model of lipedema pain",
+      "reason": "mechanistic synthesis tied to the theory",
+      "ref": "DOI:10.4236/jbise.2026.193011"
+    },
+    {
+      "topic": "Immunological shield: gfWAT as systemic immunoregulatory organ suppressing Th1 (celiac/cancer protection mechanism)",
+      "reason": "founder's mechanistic hypothesis (empirical celiac/cancer/HLA/IgG associations kept as SCR-LIP claims)",
+      "ref": "DOI:10.7759/cureus.104222"
+    },
+    {
+      "topic": "Maternal HLA-DQ2/DQ8 + gluten causing fetal congenital cardiac septal defect",
+      "reason": "speculative unpublished hypothesis",
+      "ref": "lipedema_HLA_gluten_cardiopatia_fetal.md"
+    },
+    {
+      "topic": "hEDS/hypermobility as a shared mast-cell/IIT2 mechanism with lipedema",
+      "reason": "theory mechanism (empirical hypermobility comorbidity kept as SCR-LIP claim)",
+      "ref": "lipedema_eds_hipermobilidade_IIT2.md"
+    },
+    {
+      "topic": "Hashimoto thyroiditis as an organ-specific gluten/HLA IIT2 manifestation",
+      "reason": "theory mechanism (empirical thyroid comorbidity kept as SCR-LIP claim)",
+      "ref": "lipedema_hashimoto_IIT2.md"
+    },
+    {
+      "topic": "Autism/ADHD in male relatives via absent gfWAT 'immune shield'",
+      "reason": "speculative theory extension",
+      "ref": "lipedema_autismo_neuroinflam_IIT2.md"
+    },
+    {
+      "topic": "Mast-cell stabilizers (cromolyn/ketotifen) as disease-modifying therapy for lipedema",
+      "reason": "theory-derived therapeutic rationale (no RCT)",
+      "ref": "lipedema_iit2_guia_terapias.md"
+    },
+    {
+      "topic": "Sarcopenic-valgus / chondromalacia cascade as a downstream consequence",
+      "reason": "founder's musculoskeletal hypothesis (editorial)",
+      "ref": "DOI:10.7759/cureus.95299"
+    }
+  ]
+}

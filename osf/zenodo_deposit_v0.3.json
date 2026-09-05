@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Versioned Memory of How Scientific Answers Evolve — Framework v0.3 and Lipedema Pilot",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p><strong>Positioning:</strong> <em>PubMed stores scientific papers. ScientificClaims.org stores the evolving answers to scientific questions.</em> The Scientific Claim Registry (SCR) is infrastructure for the <strong>memory</strong> of science &mdash; not its truth, consensus, or recommendations. It <strong>registers, it does not arbitrate</strong>.</p><p>Modern science assigns persistent identifiers to nearly every artifact it produces &mdash; papers (DOI), researchers (ORCID), trials (registration numbers) &mdash; yet the evolving <em>answer</em> to a scientific question has no persistent, versioned home. SCR provides one.</p><p><strong>Object model.</strong> The <em>scientific question</em> (e.g. SQ-LIP-000007) is the primary navigable object &mdash; neutral and stable. Underneath it, <em>claims</em> (SCR-LIP-000001) are structured, versioned units of evidence linked with an explicit role (supporting / contradicting / refines / context), each with PECO context, a GRADE certainty rating, dated provenance, and a complete change log. A claim is a graph node: one article can inform claims under several questions.</p><p><strong>What v0.3 adds over the v0.2 proposal:</strong> a <em>working, live system</em> (https://scientificclaims.org). (1) A closed <strong>Layer-1 surveillance loop</strong>: semantic retrieval over a curated domain corpus plus Europe PMC and reading lists &rarr; LLM classification (relevance, stance, study design, quality) &rarr; conservative merge (distinct findings become new claims; restatements corroborate) &rarr; AI-compiled, evidence-bounded answers that are re-compiled and <strong>versioned</strong> when evidence changes, with immutable citable snapshots. (2) <strong>Knowledge Freshness / Evidence Decay</strong> per question. (3) <strong>Quality weighting</strong> (strong evidence overshadows weak), reference verification, an article <strong>ban system</strong> with automated retraction detection (Crossref), full temporal provenance (created / updated / change log), and a literature-grounded <strong>question-creation strategy</strong> (coverage analysis + LLM discovery + temp&rarr;final lifecycle). (4) <strong>Machine-first</strong>: every question and claim exposes JSON for LLMs/agents; bilingual (EN + PT).</p><p><strong>Lipedema pilot (proof of concept, disease-agnostic by design):</strong> 25 versioned scientific questions and 240 evidence claims, populated from a curated lipedema corpus and the live literature.</p><p><strong>Prior-art honesty:</strong> SCR does not invent the claim primitive or persistent claim identity &mdash; nanopublications/Trusty URIs, micropublications, Wikidata, CIViC, ClinGen, Epistemonikos/PICO, SciFact, GRADE and MAGICapp already exist. SCR's contribution is <em>adoption, domain organization, versioned accumulation, freshness, and a machine-first registry built on top of</em> that prior art &mdash; question-centric and registering-not-arbitrating. Operated by the BIO (Biological Intelligence Observatory) research method.</p><p>This version establishes the priority date of the implemented framework and the lipedema pilot dataset.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "scientific questions",
+      "versioned memory",
+      "living evidence",
+      "evidence registry",
+      "persistent identifiers",
+      "knowledge freshness",
+      "evidence decay",
+      "automated evidence surveillance",
+      "claim-centric science",
+      "registers not arbitrates",
+      "GRADE",
+      "machine-readable",
+      "biomedical informatics",
+      "lipedema",
+      "nanopublications"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.3",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {"relation": "isPartOf", "identifier": "https://osf.io/n97ez/", "resource_type": "other"},
+      {"relation": "isSupplementedBy", "identifier": "https://scientificclaims.org", "resource_type": "other"},
+      {"relation": "isPreviousVersionOf", "identifier": "10.5281/zenodo.20466196", "resource_type": "publication"}
+    ]
+  }
+}

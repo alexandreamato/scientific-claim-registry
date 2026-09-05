@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Versioned Memory of How Scientific Answers Evolve — Framework v0.4: Adversarially AI-Verified Evidence with Sentence-Level Provenance, and Expanded Lipedema Pilot",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p><strong>Positioning:</strong> <em>PubMed stores scientific papers. ScientificClaims.org stores the evolving answers to scientific questions.</em> The Scientific Claim Registry (SCR) is infrastructure for the <strong>memory</strong> of science &mdash; not its truth, consensus, or recommendations. It <strong>registers, it does not arbitrate</strong>.</p><p><strong>What v0.4 adds over v0.3:</strong> v0.3 delivered the implemented, live system. v0.4 makes every piece of evidence in it <strong>independently verifiable and verified</strong> &mdash; a per-evidence trust layer that, to our knowledge, no other claim/evidence registry has.</p><p>Verifying that a DOI <em>resolves</em> proves the source exists &mdash; not that the claim is <em>faithful</em> to it. v0.4 closes that gap: <strong>(1) Sentence-level provenance (R-AI-13)</strong> &mdash; every evidence record carries a <strong>verbatim quote</strong> from the source that grounds its stance, with <strong>deterministic grounding</strong> (the quote must be an exact span of the source text), catching a hallucinated or paraphrased quote with no model in the loop; each claim becomes falsifiable by inspection. <strong>(2) Adversarial dual-model verification (R-AI-14)</strong> &mdash; a <strong>second, independent model</strong> re-derives the stance and judges faithfulness against the source, at two altitudes: per-source (does this source contradict or misattribute?) and per-claim (does the statement assert a specific present in <em>no</em> source &mdash; i.e. fabrication, checked against the union of the claim&rsquo;s sources). A record is <em>verified</em> only when stance and provenance are independently confirmed; otherwise it is recorded as <em>disputed</em> (never deleted) and flagged. <strong>(3) Two distinct confidences, never fused (R-CLM-17):</strong> GRADE (the study&rsquo;s quality) is kept separate from extraction confidence (how well the source was read).</p><p><strong>Full audit of the pilot.</strong> All <strong>423 evidence sources across 42 questions</strong> were audited and reviewed: <strong>416 verified, 0 disputed, 7 unverified</strong> (98% verified). The process caught and corrected <strong>13 statement fabrications</strong> (concrete specifics &mdash; sample sizes, statistics, mechanisms &mdash; present in no source, including one statement with seven invented clinimetric figures), cross-paper contamination (statements assembled from other studies&rsquo; findings), stance mislabels, and review-design errors &mdash; silent errors that DOI-resolution and single-model extraction cannot surface. Every fix is recorded in each claim&rsquo;s change log.</p><p><strong>Made public and machine-first (R-SITE-17):</strong> a per-question verification rollup (&ldquo;N of M sources independently verified&rdquo;) on every question page and in its JSON, a registry-wide seal on the homepage and questions index, and a global figure in the static read API. Verified / disputed / unverified are shown honestly side by side.</p><p><strong>Object model (unchanged).</strong> The <em>scientific question</em> (e.g. SQ-LIP-000007) is the primary navigable object &mdash; neutral and stable. Underneath it, <em>claims</em> (SCR-LIP-000001) are structured, versioned units of evidence linked with an explicit role (supporting / contradicting / refines / context), each with PECO context, a GRADE rating, dated provenance, a change log, and now sentence-level provenance and an independent verification verdict. A claim is a graph node: one article can inform claims under several questions.</p><p><strong>Lipedema pilot (proof of concept, disease-agnostic by design):</strong> expanded to <strong>42 versioned scientific questions and 347 evidence claims</strong> (624 question&ndash;claim links), each claim now carrying verification metadata.</p><p><strong>Prior-art honesty:</strong> SCR does not invent the claim primitive or persistent claim identity &mdash; nanopublications/Trusty URIs, micropublications, Wikidata, CIViC, ClinGen, Epistemonikos/PICO, SciFact, GRADE and MAGICapp already exist. The v0.4 contribution is <em>adversarial, sentence-grounded verification of each evidence link, exposed machine-first</em> &mdash; built on top of that prior art, question-centric, registering-not-arbitrating. Operated by the BIO (Biological Intelligence Observatory) research method.</p><p>This version establishes the priority date of the AI-verification layer and the expanded, verified lipedema pilot dataset.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "scientific questions",
+      "versioned memory",
+      "living evidence",
+      "evidence registry",
+      "claim verification",
+      "AI verification",
+      "sentence-level provenance",
+      "quote grounding",
+      "adversarial verification",
+      "persistent identifiers",
+      "knowledge freshness",
+      "evidence decay",
+      "claim-centric science",
+      "registers not arbitrates",
+      "GRADE",
+      "machine-readable",
+      "biomedical informatics",
+      "lipedema",
+      "nanopublications"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.4",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {"relation": "isPartOf", "identifier": "https://osf.io/n97ez/", "resource_type": "other"},
+      {"relation": "isSupplementedBy", "identifier": "https://scientificclaims.org", "resource_type": "other"},
+      {"relation": "isNewVersionOf", "identifier": "10.5281/zenodo.20476673", "resource_type": "publication"}
+    ]
+  }
+}
