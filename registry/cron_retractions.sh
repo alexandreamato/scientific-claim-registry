@@ -2,7 +2,8 @@
 # Weekly hygiene (launchd): (1) retraction scan + auto-ban; (2) rotating CONTRADICTION SWEEP (R-AI-12) —
 # the loop always runs a contradiction-seeking retrieval pass (Europe PMC null/negative), here applied to
 # 2 rotating questions/week so the evidence base keeps hunting disconfirming evidence automatically;
-# (3) rebuild + deploy + purge ONLY if anything changed; (4) quality audit (report). See the .plist.
+# (3) rebuild + deploy + purge ONLY if anything changed; (4) quality audit (report); (5) commit the
+# week's evidence change to the public repo, so the history shows WHICH evidence moved. See the .plist.
 # Uses system tools (python3 stdlib, rsync, curl, ssh) + the OpenRouter key (~/.config). bib is optional.
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin"
 set -u
@@ -15,6 +16,8 @@ DEST="alexandre@91.98.19.157:/home/alexandre/web/scientificclaims.org/public_htm
 cd "$BIO/registry" || exit 1
 echo "===== $(date '+%Y-%m-%d %H:%M') weekly hygiene =====" >> "$LOG"
 BEFORE="$(md5 -q claims.json 2>/dev/null)$(md5 -q questions.json 2>/dev/null)"
+# Corpus size before the run, so step (5) can state what this week actually added.
+COUNTS_BEFORE="$(python3 -c "import json;c=json.load(open('claims.json'));cl=c['claims'] if isinstance(c,dict) else c;print(len(cl),sum(len(x.get('evidence',[])) for x in cl))" 2>/dev/null || echo '? ?')"
 
 # (1) Retraction hygiene (R-CLM-10)
 python3 curate.py check-retractions --ban >> "$LOG" 2>&1
@@ -74,4 +77,34 @@ if [ -n "$OVER" ] && [ "$OVER" -gt 0 ]; then
   echo "  ⚠ QUALITY AUDIT: $OVER over-graded evidence item(s) vs curated bib grau — run audit_quality.py --fix + recompile." >> "$LOG"
 else
   echo "  quality audit: clean (no over-grading)." >> "$LOG"
+fi
+
+# (5) Public provenance: record the week in the public repo, so the git history shows WHICH evidence
+# moved — the project's own thesis (versioned memory) demonstrated in the repository, not just
+# described in it. ONLY the two seeds are staged: the author's work in progress is never swept into
+# an automated commit. Never fatal and never interactive — the deploy already succeeded above, so a
+# network or credential failure may only become a log line. GIT_TERMINAL_PROMPT=0 makes git RETURN an
+# error instead of blocking the cron forever on a password prompt (macOS ships no `timeout`), and the
+# low-speed limits abort a transfer stalled under 1 KB/s for 30 s.
+if [ "$BEFORE" != "$AFTER" ] && [ -d "$BIO/.git" ]; then
+  cd "$BIO" || exit 1
+  COUNTS_AFTER="$(python3 -c "import json;c=json.load(open('registry/claims.json'));cl=c['claims'] if isinstance(c,dict) else c;print(len(cl),sum(len(x.get('evidence',[])) for x in cl))" 2>/dev/null || echo '? ?')"
+  read -r CB EB <<< "$COUNTS_BEFORE"; read -r CA EA <<< "$COUNTS_AFTER"
+  DELTA="claims $CB -> $CA, evidence $EB -> $EA"
+  export GIT_TERMINAL_PROMPT=0 GIT_ASKPASS=/usr/bin/true
+  export GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30
+  git add registry/claims.json registry/questions.json >> "$LOG" 2>&1
+  if git diff --cached --quiet 2>/dev/null; then
+    echo "  git: nothing to commit (seeds unchanged)." >> "$LOG"
+  else
+    git commit -q \
+      -m "Weekly sweep $(date '+%Y-%m-%d'):$SWEPT" \
+      -m "Layer 1 surveillance: rotating contradiction sweep (R-AI-12) over the questions above; new evidence verified on ingest (R-AI-13/14). Corpus: $DELTA." \
+      -m "Automated by registry/cron_retractions.sh" >> "$LOG" 2>&1
+    if git push -q origin main >> "$LOG" 2>&1; then
+      echo "  git: committed + pushed ($DELTA)." >> "$LOG"
+    else
+      echo "  ⚠ git: commit ok, PUSH FAILED — it will go out next run (or run: git -C \"$BIO\" push origin main)." >> "$LOG"
+    fi
+  fi
 fi
