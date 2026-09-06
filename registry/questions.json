@@ -5495,14 +5495,21 @@
         "lipedema",
         "volume"
       ],
-      "current_answer": "Based on currently indexed evidence, liposuction does appear to reduce limb volume/circumference in lipedema, but this specific outcome rests on low-to-moderate-quality uncontrolled data rather than the strongest evidence. Several single-arm case series and cohorts report measurable circumference reductions: ~6.40 cm mean total limb circumference (n=191, VASER), ~6±1.6 cm thigh circumference (n=111 micro-cannular), and concomitant BMI reductions (e.g., 29.65→26.95, 27.0→25.2, 27.0→25.2 kg/m²). However, no randomized controlled trial directly measures limb volume, all volume/circumference data come from before-after observational studies without comparators, and reductions are partly confounded by aspirate removal itself and weight changes. The most robust and consistent evidence pertains to SYMPTOMATIC outcomes (pain, edema, mobility, quality of life), supported by two high-grade meta-analyses and a moderate-grade 12-year cohort, not to limb-volume reduction per se. Limb-volume/circumference reduction should therefore be regarded as probable but demonstrated only at low-to-moderate confidence. Liposuction is not established as disease-modifying/curative; it removes affected adipose tissue and improves symptoms, with some patients reducing or stopping conservative therapy, but durability of volume reduction against ongoing disease and weight gain is not robustly established.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a lipoaspiração parece reduzir o volume/circunferência do membro no lipedema, mas esse desfecho específico baseia-se em dados não controlados de qualidade baixa a moderada, e não nas evidências mais robustas. Várias séries de casos e coortes de braço único relatam reduções mensuráveis de circunferência: ~6,40 cm na circunferência total do membro (n=191, VASER), ~6±1,6 cm na coxa (n=111 microcânula) e reduções concomitantes de IMC (ex.: 29,65→26,95; 27,0→25,2 kg/m²). Contudo, nenhum ensaio clínico randomizado mede diretamente o volume do membro, todos os dados de volume/circunferência vêm de estudos observacionais antes-depois sem comparadores, e as reduções são parcialmente confundidas pela própria remoção do aspirado e por mudanças de peso. A evidência mais robusta e consistente refere-se a desfechos SINTOMÁTICOS (dor, edema, mobilidade, qualidade de vida), apoiada por duas metanálises de alta qualidade e uma coorte de grau moderado de 12 anos, e não à redução do volume do membro em si. A redução de volume/circunferência deve, portanto, ser considerada provável, mas demonstrada apenas com confiança baixa a moderada. A lipoaspiração não está estabelecida como modificadora da doença/curativa; remove tecido adiposo afetado e melhora sintomas, com alguns pacientes reduzindo ou interrompendo a terapia conservadora, mas a durabilidade da redução de volume frente à doença em curso e ao ganho de peso não está robustamente estabelecida.",
-      "major_uncertainty": "No randomized or controlled trial directly measures limb volume; volume/circumference reductions come entirely from uncontrolled before-after series and are confounded by aspirate removal and concurrent weight/BMI change, leaving causal attribution and long-term durability uncertain.",
-      "major_uncertainty_pt": "Nenhum ensaio randomizado ou controlado mede diretamente o volume do membro; as reduções de volume/circunferência vêm inteiramente de séries antes-depois não controladas e são confundidas pela remoção do aspirado e por mudanças concomitantes de peso/IMC, deixando incertas a atribuição causal e a durabilidade a longo prazo.",
-      "version": "1.1",
+      "current_answer": "Based on currently indexed evidence, liposuction does appear to reduce limb volume/circumference in lipedema, but this SPECIFIC outcome still rests on low-to-moderate-quality uncontrolled (before-after) data rather than the strongest evidence. Several single-arm case series and cohorts report measurable circumference reductions: ~6.40 cm mean total limb circumference (n=191, VASER), ~6±1.6 cm thigh circumference (n=111 micro-cannular), plus concomitant BMI reductions (e.g., 29.65→26.95, 27.0→25.2 kg/m²). Critically, no randomized controlled trial directly measures limb volume: the new high-grade RCT (n=410) confirms liposuction benefit but its primary/measured endpoints were leg pain (68% vs 8% achieving ≥2-point reduction; OR 26.2) and quality of life, NOT limb volume. All volume/circumference data therefore come from before-after observational studies without comparators, and reductions are partly confounded by aspirate removal itself and weight changes. By contrast, the SYMPTOMATIC outcomes (pain, edema, mobility, quality of life) now carry the strongest and most consistent support — one high-grade RCT, two high-grade meta-analyses, a moderate-grade single-arm meta-analysis (pain 5.64→1.19, n=429), and a moderate-grade 12-year cohort. Limb-volume/circumference reduction should thus be regarded as PROBABLE but demonstrated only at low-to-moderate confidence, and it is not co-equal with the well-supported symptom outcomes. Liposuction is not established as disease-modifying/curative: it removes affected adipose tissue and improves symptoms (with some patients reducing or stopping conservative therapy), but durability of volume reduction against ongoing disease and weight gain is not robustly established.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a lipoaspiração parece reduzir o volume/circunferência dos membros na lipedema, mas esse desfecho ESPECÍFICO ainda se baseia em dados não controlados (antes-depois) de qualidade baixa a moderada, e não nas evidências mais robustas. Várias séries de casos e coortes de braço único relatam reduções mensuráveis de circunferência: ~6,40 cm na circunferência total do membro (n=191, VASER), ~6±1,6 cm na coxa (n=111, microcânula), além de reduções concomitantes de IMC (ex.: 29,65→26,95, 27,0→25,2 kg/m²). É importante notar que nenhum ensaio clínico randomizado mede diretamente o volume do membro: o novo ECR de alta qualidade (n=410) confirma o benefício da lipoaspiração, mas seus desfechos primários/medidos foram dor na perna (68% vs 8% com redução ≥2 pontos; OR 26,2) e qualidade de vida, NÃO o volume do membro. Assim, todos os dados de volume/circunferência vêm de estudos observacionais antes-depois sem comparadores, e as reduções são parcialmente confundidas pela própria remoção do aspirado e por mudanças de peso. Em contraste, os desfechos SINTOMÁTICOS (dor, edema, mobilidade, qualidade de vida) agora têm o suporte mais forte e consistente — um ECR de alta qualidade, duas metanálises de alta qualidade, uma metanálise de braço único de qualidade moderada (dor 5,64→1,19, n=429) e uma coorte de 12 anos de qualidade moderada. A redução de volume/circunferência deve, portanto, ser considerada PROVÁVEL, mas demonstrada apenas com confiança baixa a moderada, e não é equivalente aos desfechos sintomáticos bem sustentados. A lipoaspiração não está estabelecida como modificadora da doença/curativa: remove o tecido adiposo afetado e melhora os sintomas (com alguns pacientes reduzindo ou interrompendo a terapia conservadora), mas a durabilidade da redução de volume frente à progressão da doença e ao ganho de peso não está robustamente estabelecida.",
+      "major_uncertainty": "No randomized or controlled trial measures limb volume/circumference as an endpoint; all volume data are uncontrolled before-after, confounded by aspirate removal and weight change, with unproven durability against ongoing disease progression.",
+      "major_uncertainty_pt": "Nenhum ensaio randomizado ou controlado mede volume/circunferência do membro como desfecho; todos os dados de volume são antes-depois não controlados, confundidos pela remoção do aspirado e mudança de peso, com durabilidade não comprovada frente à progressão da doença.",
+      "version": "1.2",
       "created": "2026-06-02",
-      "updated": "2026-06-02",
+      "updated": "2026-09-06",
       "history": [
+        {
+          "version": "1.2",
+          "date": "2026-09-06",
+          "change": "This update added a high-grade RCT (n=410) confirming liposuction reduces pain and improves QoL but explicitly NOT measuring limb volume, plus a moderate-grade single-arm pain meta-analysis (n=429), strengthening symptom evidence while leaving the volume-specific outcome still uncontrolled.",
+          "change_pt": "Esta atualização adicionou um ECR de alta qualidade (n=410) confirmando que a lipoaspiração reduz a dor e melhora a qualidade de vida, mas explicitamente NÃO mede o volume do membro, além de uma metanálise de braço único de qualidade moderada sobre dor (n=429), reforçando a evidência sintomática enquanto o desfecho específico de volume permanece não controlado.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.1",
           "date": "2026-06-02",
@@ -5557,6 +5564,22 @@
         {
           "id": "SCR-LIP-000252",
           "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000418",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000408",
+          "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000409",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000434",
+          "role": "context"
         }
       ],
       "related": [
@@ -5569,8 +5592,8 @@
           "direction": "reduced",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Circumference drops (~6 cm) reported in uncontrolled series; no RCT, confounded by aspirate/weight",
-          "note_pt": "Reduções de circunferência (~6 cm) em séries não controladas; sem ECR, confundido por aspirado/peso"
+          "note": "Only uncontrolled before-after case series (~6 cm reductions); no RCT/controlled trial measures volume; confounded by aspirate/weight.",
+          "note_pt": "Apenas séries antes-depois não controladas (~6 cm); nenhum ECR mede volume; confundido por aspirado/peso."
         },
         {
           "outcome": "Pain",
@@ -5578,8 +5601,17 @@
           "direction": "improved",
           "confidence": "high",
           "disease_modifying": false,
-          "note": "Meta-analysis pooled MD pain 3.41 (p<0.00001); consistent across series; symptomatic",
-          "note_pt": "Metanálise DM dor 3,41 (p<0,00001); consistente entre séries; sintomático"
+          "note": "RCT (n=410, OR 26.2) plus two meta-analyses and cohorts show consistent pain reduction.",
+          "note_pt": "ECR (n=410, OR 26,2), duas metanálises e coortes mostram redução consistente da dor."
+        },
+        {
+          "outcome": "Quality of life",
+          "outcome_pt": "Qualidade de vida",
+          "direction": "improved",
+          "confidence": "high",
+          "disease_modifying": false,
+          "note": "RCT and meta-analyses report improved QoL; durable to 12 years in one cohort.",
+          "note_pt": "ECR e metanálises relatam melhora da QV; durável até 12 anos em uma coorte."
         },
         {
           "outcome": "Edema/swelling",
@@ -5587,62 +5619,53 @@
           "direction": "improved",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Consistent edema VAS reductions across multiple before-after cohorts and series",
-          "note_pt": "Reduções consistentes do VAS de edema em múltiplas coortes e séries antes-depois"
+          "note": "Multiple case series and a high-grade meta-analysis report reduced edema scores.",
+          "note_pt": "Múltiplas séries de casos e uma metanálise de alta qualidade relatam redução do edema."
         },
         {
-          "outcome": "Quality of life",
-          "outcome_pt": "Qualidade de vida",
+          "outcome": "Mobility/function",
+          "outcome_pt": "Mobilidade/função",
           "direction": "improved",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Durable QoL gains incl. 12-year cohort; uncontrolled designs",
-          "note_pt": "Ganhos duráveis de QV incl. coorte de 12 anos; desenhos não controlados"
-        },
-        {
-          "outcome": "Mobility",
-          "outcome_pt": "Mobilidade",
-          "direction": "improved",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Mobility improvement reported (up to 100% in one series); uncontrolled",
-          "note_pt": "Melhora de mobilidade relatada (até 100% em uma série); não controlado"
+          "note": "Improved mobility reported across cohorts; some patients reduce/stop conservative therapy.",
+          "note_pt": "Melhora da mobilidade em coortes; alguns pacientes reduzem/interrompem terapia conservadora."
         },
         {
           "outcome": "Reduced need for conservative therapy",
           "outcome_pt": "Redução da necessidade de terapia conservadora",
-          "direction": "reduced",
+          "direction": "improved",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "16–35% stopped/reduced compression/CDT; varies by stage; uncontrolled",
-          "note_pt": "16–35% interromperam/reduziram compressão/TFD; varia por estágio; não controlado"
+          "note": "16–35% no longer required compression/CDT in cohorts; uncontrolled data.",
+          "note_pt": "16–35% deixaram de precisar de compressão/CDT em coortes; dados não controlados."
         },
         {
           "outcome": "Disease modification/cure",
           "outcome_pt": "Modificação da doença/cura",
           "direction": "not_demonstrated",
           "confidence": "very_low",
-          "disease_modifying": true,
-          "note": "No evidence of altered disease course; removes tissue, weight gain can persist",
-          "note_pt": "Sem evidência de alteração do curso da doença; remove tecido, ganho de peso pode persistir"
+          "disease_modifying": false,
+          "note": "No evidence liposuction alters disease course; removes tissue and eases symptoms only.",
+          "note_pt": "Sem evidência de que a lipoaspiração altere o curso da doença; apenas remove tecido e alivia sintomas."
         },
         {
           "outcome": "Safety/complications",
           "outcome_pt": "Segurança/complicações",
-          "direction": "mixed",
-          "confidence": "low",
+          "direction": "improved",
+          "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Low major complication rates (seroma, necrosis, transfusion, erysipelas); no mortality reported",
-          "note_pt": "Baixas taxas de complicações maiores (seroma, necrose, transfusão, erisipela); sem mortalidade relatada"
+          "note": "Low major complication rates (seroma, infection, rare transfusion); no mortality reported.",
+          "note_pt": "Baixas taxas de complicações maiores (seroma, infecção, transfusão rara); sem mortalidade relatada."
         }
       ],
       "compiled_by": {
         "model": "anthropic/claude-opus-4.8",
         "label": "Claude Opus 4.8",
-        "date": "2026-06-02"
+        "date": "2026-09-06"
       },
-      "bottom_line": "Uncontrolled before-and-after studies consistently show liposuction reduces limb circumference by roughly 6 cm and reliably improves pain and quality of life in lipedema. Whether the circumference reduction reflects true disease modification—rather than simple tissue removal or weight loss—and how long it lasts have not been tested in any controlled trial.",
-      "bottom_line_pt": "Estudos não controlados mostram consistentemente que a lipoaspiração reduz a circunferência do membro em cerca de 6 cm e melhora dor e qualidade de vida na lipedema. Se essa redução reflete modificação real da doença—e não apenas remoção de tecido ou perda de peso—e por quanto tempo dura, ainda não foi testado em nenhum ensaio controlado."
+      "bottom_line": "Liposuction lowers leg pain and improves quality of life in lipedema, backed now by a large randomized trial. It also appears to reduce limb size, but that specific measurement comes only from before-and-after studies without comparison groups, and it does not cure the disease.",
+      "bottom_line_pt": "A lipoaspiração reduz a dor nas pernas e melhora a qualidade de vida na lipedema, agora apoiada por um grande ensaio randomizado. Ela também parece reduzir o tamanho do membro, mas essa medida específica vem apenas de estudos antes-depois sem grupos de comparação, e não cura a doença."
     },
     {
       "id": "SQ-LIP-000028",
@@ -5660,14 +5683,21 @@
         "lipedema",
         "disease"
       ],
-      "current_answer": "Based on currently indexed evidence, liposuction for lipedema is supported as a SYMPTOMATIC treatment, not as a demonstrated disease-modifying intervention or cure. The strongest indexed sources — a moderate-grade 12-year prospective cohort (n=60, stage I-II) and a moderate-grade systematic review of 61 articles (Grade 1 recommendation) — show durable, large improvements in pain, edema, bruising, mobility, cosmetic impairment and quality of life, with effects persisting up to 12 years. Lower-grade case series (n=106, n=111) and a single case report concur on symptom relief and acceptable safety. Critically, the evidence does NOT establish that liposuction halts the underlying disease process or cures lipedema: a meta-analysis of 7 studies found ~51% of patients still required conservative therapy postoperatively, and across cohorts only a minority discontinued all conservative therapy (27% in the 12-year cohort, 34.9% off compression at 10 years, 16.4% off complex decongestive therapy at 2 years). No indexed study demonstrates reversal or arrest of disease pathophysiology; benefit is best characterized as removal of pathological adipose tissue with sustained symptom reduction rather than cure. All efficacy sources are uncontrolled (cohort/case series/case report), so confidence in even the symptomatic benefit is moderate at best.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a lipoaspiração para lipedema é sustentada como tratamento SINTOMÁTICO, não como intervenção modificadora da doença ou cura demonstrada. As fontes mais robustas indexadas — uma coorte prospectiva de 12 anos de grau moderado (n=60, estágio I-II) e uma revisão sistemática de grau moderado de 61 artigos (recomendação Grau 1) — mostram melhorias grandes e duradouras em dor, edema, hematomas, mobilidade, comprometimento estético e qualidade de vida, persistindo até 12 anos. Séries de casos de menor grau (n=106, n=111) e um relato de caso concordam quanto ao alívio sintomático e segurança aceitável. Crucialmente, as evidências NÃO estabelecem que a lipoaspiração interrompa o processo subjacente da doença ou cure o lipedema: uma metanálise de 7 estudos constatou que ~51% dos pacientes ainda necessitavam de terapia conservadora no pós-operatório, e apenas uma minoria descontinuou toda terapia conservadora (27% na coorte de 12 anos, 34,9% sem compressão em 10 anos, 16,4% sem terapia descongestiva complexa em 2 anos). Nenhum estudo indexado demonstra reversão ou interrupção da fisiopatologia; o benefício é melhor caracterizado como remoção de tecido adiposo patológico com redução sintomática sustentada, não como cura. Todas as fontes de eficácia são não controladas (coorte/séries de casos/relato de caso), portanto a confiança mesmo no benefício sintomático é, no máximo, moderada.",
-      "major_uncertainty": "No controlled trials exist; whether removed adipose tissue regenerates or disease progresses in untreated areas long-term is unknown, and 'disease modification' has never been directly measured (no pathophysiological or progression-arrest endpoints). Most patients still need ongoing conservative therapy, indicating the underlying condition persists.",
-      "major_uncertainty_pt": "Não existem ensaios controlados; não se sabe se o tecido adiposo removido regenera ou se a doença progride em áreas não tratadas a longo prazo, e a 'modificação da doença' nunca foi medida diretamente (sem desfechos fisiopatológicos ou de interrupção da progressão). A maioria dos pacientes ainda necessita de terapia conservadora contínua, indicando que a condição subjacente persiste.",
-      "version": "1.1",
+      "current_answer": "Based on currently indexed evidence, liposuction for lipedema is supported as a SYMPTOMATIC treatment, not as a demonstrated disease-modifying intervention or cure. The strongest indexed sources — a moderate-grade 12-year prospective cohort (n=60, stage I-II) and a moderate-grade systematic review of 61 articles (Grade 1 recommendation) — show durable, large improvements in pain, edema, bruising, mobility, cosmetic impairment and quality of life, with effects persisting up to 12 years. Lower-grade case series (n=106, n=111) and a single case report concur on symptom relief and acceptable safety. Critically, the evidence does NOT establish that liposuction halts the underlying disease process or cures lipedema: a meta-analysis of 7 studies found ~51% of patients still required conservative therapy postoperatively, and across cohorts only a minority discontinued all conservative therapy (27% in the 12-year cohort, 34.9% off compression at 10 years, 16.4% off complex decongestive therapy at 2 years). Multiple narrative and integrative reviews added this update explicitly characterize lipedema as a chronic, progressive disease with no cure and frame liposuction as symptom-reducing within a multidisciplinary protocol. A new moderate-grade cohort (n=90) further documents that liposuction carries a stage-dependent burden — larger aspirated volumes and persistent postoperative hypoesthesia — rather than any evidence of disease reversal. No indexed study demonstrates reversal or arrest of disease pathophysiology; benefit is best characterized as removal of pathological adipose tissue with sustained symptom reduction rather than cure. All efficacy sources are uncontrolled (cohort/case series/case report), so confidence in even the symptomatic benefit is moderate at best.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a lipoaspiração para lipedema é apoiada como tratamento SINTOMÁTICO, não como intervenção modificadora da doença ou cura demonstrada. As fontes mais fortes indexadas — uma coorte prospectiva de grau moderado com 12 anos de seguimento (n=60, estágio I-II) e uma revisão sistemática de grau moderado de 61 artigos (recomendação Grau 1) — mostram melhorias grandes e duradouras em dor, edema, hematomas, mobilidade, comprometimento estético e qualidade de vida, com efeitos persistindo até 12 anos. Séries de casos de grau inferior (n=106, n=111) e um relato de caso único concordam quanto ao alívio dos sintomas e segurança aceitável. Criticamente, as evidências NÃO estabelecem que a lipoaspiração interrompa o processo subjacente da doença ou cure o lipedema: uma metanálise de 7 estudos encontrou que ~51% dos pacientes ainda necessitavam de terapia conservadora no pós-operatório, e entre as coortes apenas uma minoria descontinuou toda a terapia conservadora (27% na coorte de 12 anos, 34,9% sem compressão em 10 anos, 16,4% sem terapia descongestiva complexa em 2 anos). Várias revisões narrativas e integrativas adicionadas nesta atualização caracterizam explicitamente o lipedema como doença crônica e progressiva sem cura e enquadram a lipoaspiração como redutora de sintomas dentro de um protocolo multidisciplinar. Uma nova coorte de grau moderado (n=90) documenta ainda que a lipoaspiração acarreta um ônus dependente do estágio — maiores volumes aspirados e hipoestesia pós-operatória persistente — em vez de qualquer evidência de reversão da doença. Nenhum estudo indexado demonstra reversão ou interrupção da fisiopatologia da doença; o benefício é melhor caracterizado como remoção de tecido adiposo patológico com redução sintomática sustentada, e não cura. Todas as fontes de eficácia são não controladas (coorte/série de casos/relato de caso), portanto a confiança mesmo no benefício sintomático é, no máximo, moderada.",
+      "major_uncertainty": "All efficacy evidence is uncontrolled (cohorts, case series, one case report); there are no randomized or comparative trials, and no study directly measures whether liposuction alters the underlying disease pathophysiology or long-term progression versus untreated controls.",
+      "major_uncertainty_pt": "Todas as evidências de eficácia são não controladas (coortes, séries de casos, um relato de caso); não há ensaios randomizados ou comparativos, e nenhum estudo mede diretamente se a lipoaspiração altera a fisiopatologia subjacente da doença ou a progressão a longo prazo em comparação com controles não tratados.",
+      "version": "1.2",
       "created": "2026-06-02",
-      "updated": "2026-06-02",
+      "updated": "2026-09-06",
       "history": [
+        {
+          "version": "1.2",
+          "date": "2026-09-06",
+          "change": "This update added four context/supporting reviews and cohorts that reinforce lipedema as an incurable chronic-progressive disease and frame liposuction as symptom-reducing, plus a moderate-grade n=90 cohort documenting stage-dependent aspirate volumes and persistent postoperative hypoesthesia — none demonstrating disease modification or cure.",
+          "change_pt": "Esta atualização acrescentou quatro revisões/coortes de contexto e apoio que reforçam o lipedema como doença crônico-progressiva incurável e enquadram a lipoaspiração como redutora de sintomas, além de uma coorte de grau moderado (n=90) documentando volumes aspirados dependentes do estágio e hipoestesia pós-operatória persistente — nenhuma demonstrando modificação da doença ou cura.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.1",
           "date": "2026-06-02",
@@ -5706,6 +5736,22 @@
         {
           "id": "SCR-LIP-000251",
           "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000435",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000422",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000436",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000432",
+          "role": "context"
         }
       ],
       "related": [
@@ -5718,62 +5764,71 @@
           "direction": "improved",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Large sustained pain reduction (VAS 80→30; 72% drop) across cohort and series; uncontrolled designs.",
-          "note_pt": "Redução grande e sustentada da dor (VAS 80→30; queda de 72%) em coorte e séries; desenhos não controlados."
+          "note": "Large durable pain reduction (VAS drops, effect sizes up to 2.18) across cohort and case series.",
+          "note_pt": "Redução grande e duradoura da dor (quedas na EVA, tamanhos de efeito até 2,18) em coortes e séries de casos."
         },
         {
-          "outcome": "Quality of life / mobility",
-          "outcome_pt": "Qualidade de vida / mobilidade",
+          "outcome": "Edema/swelling",
+          "outcome_pt": "Edema/inchaço",
           "direction": "improved",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Durable QoL and mobility gains to 12 yr; Grade 1 review recommendation; no control groups.",
-          "note_pt": "Ganhos duradouros de QV e mobilidade até 12 anos; recomendação Grau 1 em revisão; sem grupos controle."
+          "note": "Reduced edema and limb circumference sustained up to 12 years; uncontrolled data.",
+          "note_pt": "Redução de edema e circunferência do membro mantida até 12 anos; dados não controlados."
         },
         {
-          "outcome": "Edema / limb volume",
-          "outcome_pt": "Edema / volume do membro",
-          "direction": "reduced",
+          "outcome": "Mobility/movement restriction",
+          "outcome_pt": "Mobilidade/restrição de movimento",
+          "direction": "improved",
+          "confidence": "moderate",
+          "disease_modifying": false,
+          "note": "Improved mobility reported in up to 100% of patients in case series.",
+          "note_pt": "Melhoria da mobilidade relatada em até 100% dos pacientes em séries de casos."
+        },
+        {
+          "outcome": "Quality of life",
+          "outcome_pt": "Qualidade de vida",
+          "direction": "improved",
+          "confidence": "moderate",
+          "disease_modifying": false,
+          "note": "Durable QoL gains at 12 years; validated questionnaire but uncontrolled design.",
+          "note_pt": "Ganhos duradouros de qualidade de vida em 12 anos; questionário validado, porém desenho não controlado."
+        },
+        {
+          "outcome": "Reduced need for conservative therapy",
+          "outcome_pt": "Redução da necessidade de terapia conservadora",
+          "direction": "mixed",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Thigh circumference reduced ~6 cm; volume/edema improved in case series; uncontrolled.",
-          "note_pt": "Circunferência da coxa reduzida ~6 cm; volume/edema melhoraram em séries de casos; não controlado."
+          "note": "Only a minority stop all conservative therapy; ~51% still require it postoperatively.",
+          "note_pt": "Apenas uma minoria interrompe toda terapia conservadora; ~51% ainda necessitam no pós-operatório."
         },
         {
-          "outcome": "Need for conservative therapy",
-          "outcome_pt": "Necessidade de terapia conservadora",
-          "direction": "reduced",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Reduced but persists: ~51% still need it; only 16-35% fully discontinue—disease not eliminated.",
-          "note_pt": "Reduzida mas persiste: ~51% ainda necessitam; só 16-35% descontinuam totalmente—doença não eliminada."
-        },
-        {
-          "outcome": "Disease course modification / cure",
-          "outcome_pt": "Modificação do curso / cura da doença",
+          "outcome": "Disease modification / cure",
+          "outcome_pt": "Modificação da doença / cura",
           "direction": "not_demonstrated",
-          "confidence": "very_low",
+          "confidence": "low",
           "disease_modifying": false,
-          "note": "No study measures pathophysiology or progression arrest; cure not established; condition persists.",
-          "note_pt": "Nenhum estudo mede fisiopatologia ou interrupção da progressão; cura não estabelecida; condição persiste."
+          "note": "No study shows arrest/reversal of pathophysiology; reviews call lipedema incurable/progressive.",
+          "note_pt": "Nenhum estudo mostra interrupção/reversão da fisiopatologia; revisões consideram o lipedema incurável/progressivo."
         },
         {
           "outcome": "Safety / complications",
           "outcome_pt": "Segurança / complicações",
-          "direction": "no_effect",
+          "direction": "mixed",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Low complication rates (1.3% infection, 0.7% seroma, 1.2% serious AE, no deaths); uncontrolled.",
-          "note_pt": "Baixas taxas de complicação (1,3% infecção, 0,7% seroma, 1,2% EA grave, sem óbitos); não controlado."
+          "note": "Low serious-event rates (1.2-1.3%), but persistent hypoesthesia rises with stage/aspirate volume.",
+          "note_pt": "Baixas taxas de eventos graves (1,2-1,3%), mas hipoestesia persistente aumenta com estágio/volume aspirado."
         }
       ],
       "compiled_by": {
         "model": "anthropic/claude-opus-4.8",
         "label": "Claude Opus 4.8",
-        "date": "2026-06-02"
+        "date": "2026-09-06"
       },
-      "bottom_line": "Liposuction produces large, lasting reductions in pain, swelling, and impaired quality of life in lipedema, with effects documented up to 12 years, though all supporting studies are uncontrolled. It does not cure lipedema or demonstrably halt its underlying disease process — most patients still need ongoing conservative therapy, and no study has measured whether the condition actually stops progressing after surgery.",
-      "bottom_line_pt": "A lipoaspiração produz reduções grandes e duradouras na dor, no inchaço e na piora da qualidade de vida na lipedema, com efeitos documentados por até 12 anos, embora todos os estudos de suporte sejam não controlados. Ela não cura a lipedema nem demonstra interromper o processo subjacente da doença — a maioria dos pacientes ainda necessita de terapia conservadora contínua, e nenhum estudo mediu se a condição realmente para de progredir após a cirurgia."
+      "bottom_line": "Liposuction reliably reduces lipedema symptoms — pain, swelling, and mobility problems — with benefits lasting years. It does not cure the disease or stop it from progressing, and most patients still need some ongoing conservative therapy.",
+      "bottom_line_pt": "A lipoaspiração reduz de forma confiável os sintomas do lipedema — dor, inchaço e problemas de mobilidade — com benefícios que duram anos. Ela não cura a doença nem impede sua progressão, e a maioria dos pacientes ainda precisa de alguma terapia conservadora contínua."
     },
     {
       "id": "SQ-LIP-000029",

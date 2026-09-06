@@ -2,7 +2,7 @@
   "registry": "SCR-LIP",
   "version": "0.1",
   "date": "2026-05-30",
-  "count": 382,
+  "count": 385,
   "claims": [
     {
       "id": "SCR-LIP-000001",
@@ -31795,6 +31795,202 @@
           "date": "2026-08-30",
           "event": "created",
           "detail": "auto-ingested for SQ-LIP-000026"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000434",
+      "statement": "In an RCT of 410 women with lipedema, liposuction reduced leg pain (68% vs 8% achieving ≥2-point reduction; OR 26.2) and improved quality of life versus conservative therapy, but the trial's primary endpoint was pain rather than limb volume.",
+      "statement_pt": "Em um ensaio clínico randomizado com 410 mulheres com lipedema, a lipoaspiração reduziu a dor nas pernas (68% vs 8% atingindo redução ≥2 pontos; OR 26,2) e melhorou a qualidade de vida em comparação com a terapia conservadora, mas o desfecho primário do estudo foi a dor e não o volume do membro.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "women with stage I-III lipedema and leg pain",
+        "condition": "lipedema",
+        "exposure": "liposuction",
+        "comparator": "conservative complex decongestive therapy",
+        "outcome": "leg pain reduction and quality of life (not limb volume)",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "high",
+      "evidence": [
+        {
+          "title": "Liposuction versus conservative therapy for patients with lipoedema in Germany: a multicentre, randomised controlled clinical trial.",
+          "authors": "Podda M, Schmidt J, Cornely ME, Steinmetz MI, Rajewski D, Busch KH, Taufig Z, Ghods M, Kovacs M, Schmid S, Kraus D, Hellmich M, Müller W, Schiller P, Cornely OA.",
+          "ref": "DOI:10.1016/s0140-6736(26)00910-4",
+          "stance": "context",
+          "study_design": "rct",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "high",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "After 12 months, 190 (68%) of 278 randomisly assigned patients undergoing liposuction achieved the primary endpoint of pain reduction versus ten (8%) of 132 randomly assigned to conservative therapy (odds ratio 26·2 [95% CI 13·1-52·5]; p<0·0001).",
+          "extraction_confidence": "high",
+          "note": "This RCT demonstrates liposuction benefit but its measured endpoints are pain and quality of life, not limb volume; it is on-topic but does not directly test volume reduction.",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": false,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "verified by verifier; quote not verbatim-grounded. The article is an RCT of 410 women with lipedema showing liposuction superior for pain reduction (68% vs 8%, OR 26.2) and quality of life, with pain as the primary endpoint rather than limb",
+            "date": "2026-09-06"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000027",
+        "source": "MED",
+        "ingested": "2026-09-06"
+      },
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "history": [
+        {
+          "date": "2026-09-06",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000027"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000435",
+      "statement": "In a prospective cohort of 90 women undergoing lower-leg liposuction, aspirated volume increased with lipedema stage (Control 2400 mL to Stage III 4600 mL) and correlated with persistent hypoesthesia, focusing on postoperative sensory alterations rather than disease modification or cure.",
+      "statement_pt": "Em uma coorte prospectiva de 90 mulheres submetidas a lipoaspiração de perna inferior, o volume aspirado aumentou com o estágio do lipedema (Controle 2400 mL a Estágio III 4600 mL) e correlacionou-se com hipoestesia persistente, focando em alterações sensoriais pós-operatórias em vez de modificação ou cura da doença.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "women with lipedema stage I-III and aesthetic controls (n=90)",
+        "condition": "lipedema",
+        "exposure": "VASER-assisted lower-leg liposuction",
+        "comparator": "aesthetic liposuction controls",
+        "outcome": "postoperative sensory alteration/hypoesthesia and satisfaction",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "moderate",
+      "evidence": [
+        {
+          "title": "Aesth Plast Surg (2026) 50:1899–1916",
+          "ref": "DOI:10.1007/s00266-025-05456-w",
+          "stance": "context",
+          "study_design": "cohort",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "moderate",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "Aspirated volume increased with disease stage (Control 2400 mL; Stage I 2600 mL; Stage II 3500 mL; Stage III 4600 mL; p \\ 0.01) and correlated with",
+          "extraction_confidence": "high",
+          "note": "The article studies postoperative sensory complications and satisfaction after liposuction in lipedema, not whether liposuction alters disease course or cures lipedema, so it is on-topic but does not test the affirmative question.",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The article is a prospective cohort of 90 women undergoing lower-leg liposuction focused on postoperative sensory alterations. The specific numbers (Control 2400 mL, Stage III 4600 mL) and the correlation with persistent hypoesthesia are di",
+            "date": "2026-09-06"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000028",
+        "source": "library",
+        "ingested": "2026-09-06"
+      },
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "history": [
+        {
+          "date": "2026-09-06",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000028"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000436",
+      "statement": "This integrative review on physical exercise prescription for lipedema characterizes lipedema as a chronic, progressive disease with no cure, without evaluating liposuction outcomes.",
+      "statement_pt": "Esta revisão integrativa sobre a prescrição de exercício físico para o lipedema caracteriza o lipedema como uma doença crônica e progressiva sem cura, sem avaliar os resultados da lipoaspiração.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "patients with lipedema",
+        "condition": "lipedema",
+        "exposure": "physical exercise interventions",
+        "comparator": "—",
+        "outcome": "exercise prescription recommendations",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "very_low",
+      "evidence": [
+        {
+          "title": "ISSN 2965-6672 | Qualis A2",
+          "ref": "DOI:10.70773/revistatopicos/778519737",
+          "stance": "context",
+          "study_design": "review",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "very_low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "Lipedema is a chronic and progressive disease with no cure, characterized by the abnormal and painful accumulation of adipose tissue, mainly in the upper and lower limbs.",
+          "extraction_confidence": "high",
+          "note": "The article addresses exercise management, not liposuction, and only states in background that lipedema has no cure; it does not test whether liposuction modifies the disease course.",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The abstract confirms lipedema is described as a chronic, progressive disease with no cure, and the study focuses on physical exercise prescription rather than liposuction outcomes, consistent with the statement.",
+            "date": "2026-09-06"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000028",
+        "source": "library",
+        "ingested": "2026-09-06"
+      },
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "history": [
+        {
+          "date": "2026-09-06",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000028"
         }
       ],
       "license": "CC-BY-4.0"
