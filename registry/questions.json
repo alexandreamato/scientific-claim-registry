@@ -5847,14 +5847,21 @@
         "imaging",
         "differential diagnosis"
       ],
-      "current_answer": "Based on currently indexed evidence, MRI — particularly MR lymphangiography (MRL) and Dixon fat/water sequences — shows promise for differentiating lipedema from lymphedema/lipolymphedema, but performance is not yet established by high-quality comparative diagnostic studies. The most consistent discriminating feature across small case series and cross-sectional studies is epifascial/subcutaneous high-signal (T2) fluid: present in essentially all lipolymphedema limbs (100%) but absent in pure lipedema (0%), where subcutaneous fat is homogeneously thickened without edema (SCR-LIP-000202, SCR-LIP-000382). Lymphedema-specific features such as a honeycomb/subcutaneous pattern are reported as absent in pure lipedema (SCR-LIP-000202, SCR-LIP-000383). Topographic adipose-hyperintensity patterns and dilated peripheral/vascular lymphatic patterns are reported to differ among lipedema, lipedema-with-lymphedema, and cancer-related lymphedema, with delayed contrast lymphatic peak times in lipolymphedema (SCR-LIP-000203, SCR-LIP-000382). A deep-learning DIXON-MRL pipeline achieved highly reproducible tissue-volume segmentation (Dice ~0.99) and separated no-edema vs lipedema vs asymmetric lymphedema by volume/distribution/symmetry (SCR-LIP-000201). However, two systematic reviews and a scoping review caution that overall imaging diagnostic performance for lipedema is currently limited and no easy, objective single test exists (SCR-LIP-000363, SCR-LIP-000378, SCR-LIP-000383). Critically, MR/NCMRL reader reliability was only fair-to-slight (Kappa 0.14–0.34) in a moderate-grade systematic review, whereas DXA fat-distribution indices (AUC 0.91) and pretibial ultrasound (sensitivity 0.77–0.79, specificity 0.92–0.96) had better-documented performance (SCR-LIP-000195). Thus MRI can identify features that distinguish these conditions, but its interpretive reproducibility remains a key limitation.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a RM — particularmente a linfangiografia por RM (LRM) e sequências Dixon de gordura/água — mostra-se promissora para diferenciar lipedema de linfedema/lipolinfedema, mas seu desempenho ainda não está estabelecido por estudos diagnósticos comparativos de alta qualidade. A característica discriminante mais consistente em pequenas séries de casos e estudos transversais é o líquido (edema) de alto sinal em T2 epifascial/subcutâneo: presente em praticamente todos os membros com lipolinfedema (100%), mas ausente no lipedema puro (0%), onde a gordura subcutânea está homogeneamente espessada sem edema (SCR-LIP-000202, SCR-LIP-000382). Características específicas de linfedema, como o padrão em favo de mel, são relatadas como ausentes no lipedema puro (SCR-LIP-000202, SCR-LIP-000383). Padrões topográficos de hiperintensidade adiposa e padrões linfáticos dilatados periféricos/vasculares diferem entre lipedema, lipedema com linfedema e linfedema relacionado a câncer, com tempos de pico de contraste linfático retardados no lipolinfedema (SCR-LIP-000203, SCR-LIP-000382). Um pipeline de aprendizado profundo com DIXON-LRM alcançou segmentação de volume tecidual altamente reprodutível (Dice ~0,99) e separou casos sem edema vs lipedema vs linfedema assimétrico por volume/distribuição/simetria (SCR-LIP-000201). No entanto, duas revisões sistemáticas e uma revisão de escopo alertam que o desempenho diagnóstico geral das imagens para lipedema é atualmente limitado e não existe um único teste objetivo simples (SCR-LIP-000363, SCR-LIP-000378, SCR-LIP-000383). Crucialmente, a confiabilidade entre leitores da RM/NCMRL foi apenas razoável-a-fraca (Kappa 0,14–0,34) em uma revisão sistemática de grau moderado, enquanto índices de distribuição de gordura por DXA (AUC 0,91) e ultrassom pré-tibial (sensibilidade 0,77–0,79, especificidade 0,92–0,96) tiveram desempenho melhor documentado (SCR-LIP-000195). Assim, a RM pode identificar características que distinguem essas condições, mas sua reprodutibilidade interpretativa permanece uma limitação importante.",
-      "major_uncertainty": "The supporting differentiation evidence rests largely on small (n=22–45), low/very-low-grade case series and cross-sectional studies with unknown risk of bias, and a moderate-grade systematic review reports only fair-to-slight MR interobserver reliability (Kappa 0.14–0.34). There are no large, prospective, blinded diagnostic-accuracy studies establishing MRI sensitivity/specificity or validated thresholds for distinguishing lipedema from other fat distributions (e.g., obesity), and reported imaging diagnostic performance overall is judged limited.",
-      "major_uncertainty_pt": "As evidências de diferenciação baseiam-se em grande parte em séries de casos e estudos transversais pequenos (n=22–45), de grau baixo/muito baixo e risco de viés desconhecido, e uma revisão sistemática de grau moderado relata confiabilidade interobservador da RM apenas razoável-a-fraca (Kappa 0,14–0,34). Não há estudos prospectivos, cegos e amplos de acurácia diagnóstica que estabeleçam sensibilidade/especificidade da RM ou limiares validados para distinguir lipedema de outras distribuições de gordura (p.ex., obesidade), e o desempenho diagnóstico geral das imagens é considerado limitado.",
-      "version": "1.1",
+      "current_answer": "Based on currently indexed evidence, MRI — particularly MR lymphangiography (MRL) and Dixon fat/water sequences — can identify tissue features that distinguish lipedema from lymphedema/lipolymphedema, but its diagnostic performance is not yet established by high-quality comparative studies, and this is a diagnostic-differentiation (not treatment) question. The most consistent discriminating feature across small case series and cross-sectional studies is epifascial/subcutaneous high-signal (T2) fluid: reported in essentially all lipolymphedema limbs (100%) but absent in pure lipedema (0%), where subcutaneous fat is homogeneously thickened without frank edema (SCR-LIP-000202, SCR-LIP-000382). Lymphedema-specific features such as a honeycomb subcutaneous pattern are reported absent in pure lipedema (SCR-LIP-000202, SCR-LIP-000383). Topographic adipose-hyperintensity patterns and dilated peripheral/vascular lymphatic patterns differ among lipedema, lipedema-with-lymphedema, and cancer-related lymphedema, with delayed contrast lymphatic peak times in lipolymphedema (SCR-LIP-000203, SCR-LIP-000382), and contrast-enhanced T1 and 23Na-MRI may additionally characterize fibrosis and tissue sodium (SCR-LIP-000376, low-quality correspondence). A deep-learning DIXON-MRL pipeline achieved highly reproducible tissue-volume segmentation (Dice ~0.99) and separated no-edema vs lipedema vs asymmetric lymphedema by volume/distribution/symmetry (SCR-LIP-000201). However, two systematic reviews and a scoping review caution that overall imaging diagnostic performance for lipedema is currently limited and no easy, objective single test exists (SCR-LIP-000363, SCR-LIP-000378, SCR-LIP-000383). Critically, MR/NCMRL reader reliability was only fair-to-slight (Kappa 0.14–0.34) in a moderate-grade systematic review, whereas DXA fat-distribution indices (AUC 0.91) and pretibial ultrasound (sensitivity 0.77–0.79, specificity 0.92–0.96) have better-documented performance (SCR-LIP-000195). Notably, functional lymphatic imaging alone does NOT reliably separate the conditions: lymphoscintigraphy is normal in ~61% of lipedema patients and shows overload rather than insufficiency (SCR-LIP-000429), and reviews state lymphoscintigraphy cannot distinguish lipedema from lymphedema because lymphatic changes occur in both (SCR-LIP-000383). Thus MRI can identify structural/anatomic features that separate these conditions, but its interpretive reproducibility and prospective diagnostic accuracy remain key unresolved limitations.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a ressonância magnética (RM) — em particular a linfangiografia por RM (MRL) e as sequências Dixon de gordura/água — pode identificar características teciduais que distinguem o lipedema do linfedema/lipolinfedema, mas seu desempenho diagnóstico ainda não está estabelecido por estudos comparativos de alta qualidade; trata-se de uma questão de diferenciação diagnóstica (não de tratamento). A característica discriminante mais consistente em pequenas séries de casos e estudos transversais é o fluido de alto sinal epifascial/subcutâneo (T2): relatado em praticamente todos os membros com lipolinfedema (100%), mas ausente no lipedema puro (0%), no qual a gordura subcutânea é homogeneamente espessada sem edema franco (SCR-LIP-000202, SCR-LIP-000382). Características específicas do linfedema, como o padrão em favo de mel subcutâneo, são relatadas como ausentes no lipedema puro (SCR-LIP-000202, SCR-LIP-000383). Padrões topográficos de hiperintensidade adiposa e padrões linfáticos periféricos/vasculares dilatados diferem entre lipedema, lipedema-com-linfedema e linfedema relacionado ao câncer, com tempos de pico de contraste linfático retardados no lipolinfedema (SCR-LIP-000203, SCR-LIP-000382); a RM T1 com contraste e a 23Na-RM podem adicionalmente caracterizar fibrose e sódio tecidual (SCR-LIP-000376, correspondência de baixa qualidade). Um pipeline de aprendizado profundo DIXON-MRL alcançou segmentação de volume tecidual altamente reprodutível (Dice ~0,99) e separou sem-edema vs lipedema vs linfedema assimétrico por volume/distribuição/simetria (SCR-LIP-000201). No entanto, duas revisões sistemáticas e uma revisão de escopo alertam que o desempenho diagnóstico geral por imagem para lipedema é atualmente limitado e que não existe um único teste objetivo simples (SCR-LIP-000363, SCR-LIP-000378, SCR-LIP-000383). Criticamente, a confiabilidade entre leitores da RM/NCMRL foi apenas de leve a moderada (Kappa 0,14–0,34) em uma revisão sistemática de qualidade moderada, enquanto índices de distribuição de gordura por DXA (AUC 0,91) e ultrassom pré-tibial (sensibilidade 0,77–0,79, especificidade 0,92–0,96) têm desempenho melhor documentado (SCR-LIP-000195). Notavelmente, a imagem linfática funcional isolada NÃO separa de forma confiável as condições: a linfocintilografia é normal em ~61% dos pacientes com lipedema e mostra sobrecarga em vez de insuficiência (SCR-LIP-000429), e revisões afirmam que a linfocintilografia não distingue lipedema de linfedema porque alterações linfáticas ocorrem em ambos (SCR-LIP-000383). Assim, a RM pode identificar características estruturais/anatômicas que separam essas condições, mas sua reprodutibilidade interpretativa e acurácia diagnóstica prospectiva permanecem limitações não resolvidas.",
+      "major_uncertainty": "No prospective, adequately powered head-to-head diagnostic-accuracy study defines MRI's sensitivity/specificity for differentiating lipedema from lymphedema and other fat distributions against a reference standard, and interobserver reliability of MRL reading remains low (Kappa 0.14–0.34), so real-world diagnostic performance is unproven.",
+      "major_uncertainty_pt": "Nenhum estudo prospectivo, com poder estatístico adequado e comparação direta de acurácia diagnóstica define a sensibilidade/especificidade da RM para diferenciar lipedema de linfedema e outras distribuições de gordura frente a um padrão de referência, e a confiabilidade entre observadores da leitura da MRL permanece baixa (Kappa 0,14–0,34), de modo que o desempenho diagnóstico no mundo real não está comprovado.",
+      "version": "1.2",
       "created": "2026-06-02",
-      "updated": "2026-06-02",
+      "updated": "2026-09-13",
       "history": [
+        {
+          "version": "1.2",
+          "date": "2026-09-13",
+          "change": "This update added context confirming that lymphoscintigraphy alone is normal in ~61% of lipedema patients and reflects lymphatic overload rather than insufficiency (SCR-LIP-000429), reinforcing that functional lymphatic imaging cannot reliably separate the conditions and that structural MRI features carry the discriminating value, without changing the core conclusion.",
+          "change_pt": "Esta atualização adicionou contexto confirmando que a linfocintilografia isolada é normal em ~61% dos pacientes com lipedema e reflete sobrecarga linfática em vez de insuficiência (SCR-LIP-000429), reforçando que a imagem linfática funcional não separa de forma confiável as condições e que as características estruturais da RM carregam o valor discriminante, sem alterar a conclusão central.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.1",
           "date": "2026-06-02",
@@ -5905,6 +5912,22 @@
         {
           "id": "SCR-LIP-000383",
           "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000010",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000437",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000429",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000438",
+          "role": "context"
         }
       ],
       "related": [
@@ -5912,58 +5935,67 @@
       ],
       "outcomes": [
         {
-          "outcome": "Differentiation: lipedema vs lipolymphedema/lymphedema",
-          "outcome_pt": "Diferenciação: lipedema vs lipolinfedema/linfedema",
+          "outcome": "Differentiate lipedema vs lipolymphedema (subcutaneous T2 edema)",
+          "outcome_pt": "Diferenciar lipedema vs lipolinfedema (edema subcutâneo em T2)",
           "direction": "improved",
           "confidence": "low",
-          "note": "Epifascial T2 edema present in ~100% lipolymphedema, 0% pure lipedema; honeycomb absent in lipedema.",
-          "note_pt": "Edema T2 epifascial em ~100% do lipolinfedema, 0% do lipedema puro; favo de mel ausente no lipedema.",
-          "disease_modifying": false
+          "disease_modifying": false,
+          "note": "Epifascial T2 fluid 100% in lipolymphedema vs 0% lipedema in small case series; not high-quality accuracy data.",
+          "note_pt": "Fluido epifascial em T2 100% no lipolinfedema vs 0% no lipedema em pequenas séries; sem dados de acurácia de alta qualidade."
         },
         {
-          "outcome": "MR reader reliability (interobserver agreement)",
-          "outcome_pt": "Confiabilidade entre leitores da RM (concordância interobservador)",
+          "outcome": "Differentiate lymphedema vs lipedema (honeycomb pattern)",
+          "outcome_pt": "Diferenciar linfedema vs lipedema (padrão em favo de mel)",
+          "direction": "improved",
+          "confidence": "very_low",
+          "disease_modifying": false,
+          "note": "Honeycomb subcutaneous pattern reported specific to lymphedema, absent in lipedema; review-level evidence only.",
+          "note_pt": "Padrão em favo de mel subcutâneo relatado como específico do linfedema, ausente no lipedema; apenas evidência de revisão."
+        },
+        {
+          "outcome": "Quantitative volume/distribution differentiation (DIXON-MRL + deep learning)",
+          "outcome_pt": "Diferenciação quantitativa de volume/distribuição (DIXON-MRL + aprendizado profundo)",
+          "direction": "improved",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Reproducible segmentation (Dice ~0.99) separated no-edema/lipedema/asymmetric lymphedema; single small study.",
+          "note_pt": "Segmentação reprodutível (Dice ~0,99) separou sem-edema/lipedema/linfedema assimétrico; estudo único e pequeno."
+        },
+        {
+          "outcome": "Interobserver reliability of MRL reading",
+          "outcome_pt": "Confiabilidade entre observadores da leitura da MRL",
           "direction": "reduced",
           "confidence": "moderate",
-          "note": "MR/NCMRL only fair-to-slight agreement (Kappa 0.14-0.34), limiting clinical reproducibility.",
-          "note_pt": "RM/NCMRL com concordância apenas razoável-a-fraca (Kappa 0,14-0,34), limitando reprodutibilidade.",
-          "disease_modifying": false
+          "disease_modifying": false,
+          "note": "Reader agreement only fair-to-slight (Kappa 0.14–0.34), limiting clinical reproducibility.",
+          "note_pt": "Concordância entre leitores apenas de leve a moderada (Kappa 0,14–0,34), limitando a reprodutibilidade clínica."
         },
         {
-          "outcome": "Automated MRI volume quantification/distribution",
-          "outcome_pt": "Quantificação/distribuição automatizada de volume por RM",
-          "direction": "improved",
-          "confidence": "low",
-          "note": "DL DIXON-MRL: Dice 0.989-0.994; separated no-edema vs lipedema vs lymphedema; single small study.",
-          "note_pt": "DIXON-LRM com IA: Dice 0,989-0,994; separou sem edema vs lipedema vs linfedema; estudo único pequeno.",
-          "disease_modifying": false
-        },
-        {
-          "outcome": "Differentiation: lipedema vs obesity/other fat distributions",
-          "outcome_pt": "Diferenciação: lipedema vs obesidade/outras distribuições de gordura",
+          "outcome": "Overall MRI diagnostic accuracy vs reference standard",
+          "outcome_pt": "Acurácia diagnóstica geral da RM vs padrão de referência",
           "direction": "not_demonstrated",
           "confidence": "very_low",
-          "note": "MRI comparisons focus on lymphedema; data vs obesity rely more on DXA/ultrasound indices.",
-          "note_pt": "Comparações por RM focam linfedema; dados vs obesidade dependem mais de índices de DXA/ultrassom.",
-          "disease_modifying": false
+          "disease_modifying": false,
+          "note": "No prospective powered accuracy study; reviews say overall imaging performance limited, no single objective test.",
+          "note_pt": "Sem estudo prospectivo de acurácia com poder adequado; revisões afirmam desempenho limitado e ausência de teste objetivo único."
         },
         {
-          "outcome": "Overall MRI diagnostic accuracy (validated sens/spec)",
-          "outcome_pt": "Acurácia diagnóstica geral da RM (sens/esp validadas)",
+          "outcome": "Functional lymphatic imaging (lymphoscintigraphy) discrimination",
+          "outcome_pt": "Discriminação por imagem linfática funcional (linfocintilografia)",
           "direction": "not_demonstrated",
           "confidence": "moderate",
-          "note": "Reviews judge imaging diagnostic performance limited; no validated MRI cutoffs/large blinded studies.",
-          "note_pt": "Revisões consideram desempenho limitado; sem limiares validados/estudos cegos amplos de RM.",
-          "disease_modifying": false
+          "disease_modifying": false,
+          "note": "Normal in ~61% of lipedema; cannot distinguish lipedema from lymphedema as changes occur in both.",
+          "note_pt": "Normal em ~61% do lipedema; não distingue lipedema de linfedema pois alterações ocorrem em ambos."
         }
       ],
       "compiled_by": {
         "model": "anthropic/claude-opus-4.8",
         "label": "Claude Opus 4.8",
-        "date": "2026-06-02"
+        "date": "2026-09-13"
       },
-      "bottom_line": "MRI can identify specific tissue features — particularly the presence or absence of fluid between fat layers — that differ between lipedema and lymphedema-related conditions, and automated analysis tools show early promise for separating these groups. However, human readers agree only poorly when interpreting these MRI findings (agreement scores 0.14–0.34), no large rigorous studies have established reliable accuracy thresholds, and MRI has not been shown to reliably distinguish lipedema from obesity or other fat conditions.",
-      "bottom_line_pt": "A RM consegue identificar características específicas dos tecidos — especialmente a presença ou ausência de líquido entre as camadas de gordura — que diferem entre lipedema e condições relacionadas ao linfedema, e ferramentas de análise automatizada mostram resultados iniciais promissores para separar esses grupos. No entanto, os leitores humanos concordam de forma apenas fraca na interpretação dessas imagens (índices de concordância de 0,14–0,34), nenhum estudo rigoroso de grande porte estabeleceu limiares de acurácia confiáveis, e a RM não demonstrou capacidade de distinguir lipedema de obesidade ou outras distribuições de gordura."
+      "bottom_line": "MRI (especially MR lymphangiography and Dixon fat/water imaging) can show tissue features — like subcutaneous fluid, honeycomb patterns, and abnormal lymphatics — that help tell lipedema apart from lymphedema and plain fat. It does not yet have proven, reliable diagnostic accuracy, reader agreement is only fair, and no single MRI test is established as definitive.",
+      "bottom_line_pt": "A RM (especialmente a linfangiografia por RM e as imagens Dixon de gordura/água) pode mostrar características teciduais — como fluido subcutâneo, padrões em favo de mel e linfáticos anormais — que ajudam a diferenciar o lipedema do linfedema e da gordura comum. Ainda não possui acurácia diagnóstica comprovada e confiável, a concordância entre leitores é apenas razoável, e nenhum teste único de RM está estabelecido como definitivo."
     },
     {
       "id": "SQ-LIP-000030",
@@ -5982,14 +6014,21 @@
         "lymphatic imaging",
         "differential diagnosis"
       ],
-      "current_answer": "Based on currently indexed evidence, lymphoscintigraphy alone CANNOT reliably differentiate lipedema from lymphedema, because lymphatic alterations occur in BOTH conditions. The strongest evidence on this specific point is unfavorable: a controlled cross-sectional study (volume-matched) found no significant differences between lipedema and non-lipedemic obesity in abnormal-scan rate (83% vs 96.8%), dermal backflow, or mean lymphoscintigraphy score, and a 2024 scoping review concluded lymphoscintigraphy (the lymphedema gold standard) could NOT distinguish the two since lymphatic changes are present in both. Cohort and case-series data reinforce this: lymphatic alterations on lymphoscintigraphy were seen in 40–47% of clinically diagnosed lipedema patients, meaning abnormal findings do not exclude lipedema; its clinical value is better framed as detecting a coexisting lymphostatic component (lipo-lymphedema) to guide management rather than as a discriminating diagnostic test. A NORMAL lymphoscintigram is more supportive of pure lipedema, and some reviews note characteristic patterns (slowed flow, inter-limb asymmetry), but no source establishes adequate diagnostic accuracy for routine differentiation; lipedema diagnosis remains clinical. By contrast, indexed evidence (mostly low/very-low quality) suggests other functional/anatomic imaging modalities perform better for differentiation — ICG/NIRF lymphography (absence of dermal backflow, linear vessels, foot fat-sparing), MRI/MR-lymphangiography (subcutaneous vs epifascial edema patterns, high reported sensitivity), and CT (honeycombing specific to lymphedema) — though all rest on small, single-center studies with limited diagnostic performance overall.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a linfocintilografia isoladamente NÃO consegue diferenciar de forma confiável o lipedema do linfedema, porque alterações linfáticas ocorrem em AMBAS as condições. A evidência mais forte sobre este ponto é desfavorável: um estudo transversal controlado (pareado por volume) não encontrou diferenças significativas entre lipedema e obesidade sem lipedema na taxa de exames anormais (83% vs 96,8%), refluxo dérmico ou escore médio de linfocintilografia; e uma revisão de escopo de 2024 concluiu que a linfocintilografia (padrão-ouro para linfedema) NÃO conseguiu distinguir as duas, já que alterações linfáticas estão presentes em ambas. Dados de coorte e séries de casos reforçam isso: alterações linfáticas na linfocintilografia foram vistas em 40–47% de pacientes com lipedema clinicamente diagnosticado, ou seja, achados anormais não excluem lipedema; seu valor clínico é melhor entendido como detecção de componente linfostático coexistente (lipo-linfedema) para orientar o manejo, e não como teste diagnóstico discriminatório. Um linfocintilograma NORMAL apoia mais o lipedema puro, e algumas revisões observam padrões característicos (fluxo lentificado, assimetria entre membros), mas nenhuma fonte estabelece acurácia diagnóstica adequada para diferenciação de rotina; o diagnóstico de lipedema permanece clínico. Em contraste, evidências indexadas (em sua maioria de qualidade baixa/muito baixa) sugerem que outras modalidades funcionais/anatômicas têm melhor desempenho para diferenciação — linfografia ICG/NIRF (ausência de refluxo dérmico, vasos lineares, poupança de gordura no pé), RM/linfangiografia por RM (padrões de edema subcutâneo vs epifascial, alta sensibilidade relatada) e TC (favo de mel específico do linfedema) — embora todas se baseiem em estudos pequenos e de centro único, com desempenho diagnóstico globalmente limitado.",
-      "major_uncertainty": "Diagnostic-accuracy estimates for lymphoscintigraphy (sensitivity/specificity for true differentiation) are essentially absent; most evidence is small, single-center, cross-sectional/case-series (low to very-low quality) without blinded reference standards, and the better-performing modalities (ICG, MRI, CT) have not been validated in large, prospective, head-to-head studies.",
-      "major_uncertainty_pt": "Estimativas de acurácia diagnóstica da linfocintilografia (sensibilidade/especificidade para diferenciação real) são praticamente inexistentes; a maioria das evidências é pequena, de centro único, transversal/séries de casos (qualidade baixa a muito baixa) sem padrão de referência cego, e as modalidades de melhor desempenho (ICG, RM, TC) não foram validadas em estudos amplos, prospectivos e comparativos diretos.",
-      "version": "1.1",
+      "current_answer": "Based on currently indexed evidence, lymphoscintigraphy alone CANNOT reliably differentiate lipedema from lymphedema, because lymphatic alterations occur in BOTH conditions. The strongest evidence on this specific point is unfavorable: a controlled cross-sectional study (volume-matched) found no significant differences between lipedema and non-lipedemic obesity in abnormal-scan rate (83% vs 96.8%), dermal backflow, absent inguinal nodes, or mean lymphoscintigraphy score, and a 2024 scoping review concluded lymphoscintigraphy (the lymphedema gold standard) could NOT distinguish the two since lymphatic changes are present in both. Cohort and case-series data reinforce this: lymphatic alterations on lymphoscintigraphy were seen in 40–47% of clinically diagnosed lipedema patients (moderate-quality cohort of 83 women showed 47% abnormal, with involvement unrelated to age, BMI, Stemmer's sign, or clinical stage), meaning abnormal findings do NOT exclude lipedema. Its clinical value is better framed as detecting a coexisting lymphostatic component (lipo-lymphedema) to guide management—and as excluding other causes of edema—rather than as a discriminating diagnostic test; two 2025 case reports similarly used it for exclusion, not comparative discrimination. A NORMAL lymphoscintigram is more supportive of pure lipedema, and some narrative reviews note characteristic patterns (slowed/delayed flow, inter-limb asymmetry), but no source establishes adequate diagnostic accuracy for routine differentiation; lipedema diagnosis remains clinical. By contrast, indexed evidence (mostly low/very-low quality) suggests other functional/anatomic imaging modalities perform better for differentiation—ICG/NIRF lymphography (absence of dermal backflow, linear vessels, foot fat-sparing), MRI/MR-lymphangiography (subcutaneous vs epifascial edema patterns, reported 100% sensitivity in one review), and CT (honeycombing 100% specific to lymphedema)—though all rest on small, single-center studies with limited overall diagnostic performance, inconsistent protocols, and limited clinimetric reporting, so no single tool can currently be recommended.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a linfocintilografia isoladamente NÃO consegue diferenciar de forma confiável o lipedema do linfedema, porque alterações linfáticas ocorrem em AMBAS as condições. A evidência mais forte sobre este ponto é desfavorável: um estudo transversal controlado (pareado por volume) não encontrou diferenças significativas entre lipedema e obesidade sem lipedema quanto à taxa de exames anormais (83% vs 96,8%), refluxo dérmico, ausência de linfonodos inguinais ou escore médio de linfocintilografia, e uma revisão de escopo de 2024 concluiu que a linfocintilografia (padrão-ouro do linfedema) NÃO conseguiu distinguir as duas, pois há alterações linfáticas em ambas. Dados de coorte e séries de casos reforçam isso: alterações linfáticas foram vistas em 40–47% dos pacientes com lipedema diagnosticado clinicamente (coorte de qualidade moderada com 83 mulheres mostrou 47% anormais, com o envolvimento não relacionado a idade, IMC, sinal de Stemmer ou estágio clínico), significando que achados anormais NÃO excluem lipedema. Seu valor clínico é melhor entendido como detecção de um componente linfostático coexistente (lipo-linfedema) para orientar o manejo—e para excluir outras causas de edema—em vez de teste diagnóstico discriminatório; dois relatos de caso de 2025 também a usaram para exclusão, não para discriminação comparativa. Uma linfocintilografia NORMAL apoia mais o lipedema puro, e algumas revisões narrativas apontam padrões característicos (fluxo lento/retardado, assimetria entre membros), mas nenhuma fonte estabelece acurácia diagnóstica adequada para diferenciação de rotina; o diagnóstico de lipedema permanece clínico. Em contraste, evidências indexadas (em sua maioria de baixa/muito baixa qualidade) sugerem que outras modalidades funcionais/anatômicas têm melhor desempenho para diferenciação—linfografia por ICG/NIRF (ausência de refluxo dérmico, vasos lineares, poupamento de gordura do pé), RM/linfangiografia por RM (padrões de edema subcutâneo vs epifascial, sensibilidade de 100% relatada em uma revisão) e TC (favo de mel 100% específico para linfedema)—embora todas se baseiem em estudos pequenos e unicêntricos com desempenho diagnóstico geral limitado, protocolos inconsistentes e relato clinimétrico limitado, de modo que nenhuma ferramenta isolada pode atualmente ser recomendada.",
+      "major_uncertainty": "No head-to-head diagnostic-accuracy study with an independent reference standard establishes lymphoscintigraphy's sensitivity/specificity for distinguishing lipedema from lymphedema; comparative claims favoring MRI/CT/ICG come from small, single-center, mostly low/very-low-quality studies with inconsistent protocols and limited clinimetric reporting.",
+      "major_uncertainty_pt": "Nenhum estudo direto de acurácia diagnóstica com padrão de referência independente estabelece a sensibilidade/especificidade da linfocintilografia para distinguir lipedema de linfedema; alegações comparativas favorecendo RM/TC/ICG vêm de estudos pequenos, unicêntricos, em sua maioria de baixa/muito baixa qualidade, com protocolos inconsistentes e relato clinimétrico limitado.",
+      "version": "1.2",
       "created": "2026-06-02",
-      "updated": "2026-06-02",
+      "updated": "2026-09-13",
       "history": [
+        {
+          "version": "1.2",
+          "date": "2026-09-13",
+          "change": "This update added corroborating context (two case reports using lymphoscintigraphy for exclusion, a new ultrasound classification proposal, and two reviews noting inconsistent protocols and lymphoscintigraphy's role in differential diagnosis) that reinforces—without changing—the prior conclusion that lymphoscintigraphy supports exclusion/detection of lipo-lymphedema rather than direct discrimination.",
+          "change_pt": "Esta atualização acrescentou contexto corroborativo (dois relatos de caso usando linfocintilografia para exclusão, uma nova proposta de classificação por ultrassom e duas revisões apontando protocolos inconsistentes e o papel da linfocintilografia no diagnóstico diferencial) que reforça—sem alterar—a conclusão prévia de que a linfocintilografia apoia exclusão/detecção de lipo-linfedema em vez de discriminação direta.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.1",
           "date": "2026-06-02",
@@ -6056,6 +6095,22 @@
         {
           "id": "SCR-LIP-000385",
           "role": "contradicting"
+        },
+        {
+          "id": "SCR-LIP-000370",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000427",
+          "role": "refines"
+        },
+        {
+          "id": "SCR-LIP-000067",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000428",
+          "role": "context"
         }
       ],
       "related": [
@@ -6063,58 +6118,49 @@
       ],
       "outcomes": [
         {
-          "outcome": "Differentiate lipedema vs lymphedema (lymphoscintigraphy)",
-          "outcome_pt": "Diferenciar lipedema vs linfedema (linfocintilografia)",
+          "outcome": "Direct differentiation lipedema vs lymphedema (lymphoscintigraphy)",
+          "outcome_pt": "Diferenciação direta lipedema vs linfedema (linfocintilografia)",
           "direction": "not_demonstrated",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Lymphatic changes occur in both; volume-matched study and 2024 review found no reliable discrimination.",
-          "note_pt": "Alterações linfáticas ocorrem em ambos; estudo pareado por volume e revisão de 2024 não acharam discriminação confiável."
+          "note": "Abnormal scans common in both; controlled study & scoping review found no reliable discrimination.",
+          "note_pt": "Exames anormais comuns em ambos; estudo controlado e revisão de escopo não acharam discriminação confiável."
         },
         {
-          "outcome": "Detect coexisting lymphostatic component (lipo-lymphedema)",
-          "outcome_pt": "Detectar componente linfostático coexistente (lipo-linfedema)",
+          "outcome": "Exclusion of other edema causes / detection of coexisting lymphedema",
+          "outcome_pt": "Exclusão de outras causas de edema / detecção de linfedema coexistente",
+          "direction": "improved",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Useful to flag lipo-lymphedema (40-47% abnormal) and guide management; not a discriminating test.",
+          "note_pt": "Útil para sinalizar lipo-linfedema (40-47% anormais) e orientar manejo; não é teste discriminatório."
+        },
+        {
+          "outcome": "Normal scan supporting pure lipedema",
+          "outcome_pt": "Exame normal apoiando lipedema puro",
           "direction": "mixed",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Lymphoscintigraphy detects lymphatic involvement in 40-47% of lipedema; useful to flag lipo-lymphedema, not to diagnose lipedema.",
-          "note_pt": "Linfocintilografia detecta envolvimento linfático em 40-47% do lipedema; útil para sinalizar lipo-linfedema, não para diagnosticar lipedema."
+          "note": "Normal findings lean toward pure lipedema (53-60% normal in cohorts) but do not confirm diagnosis.",
+          "note_pt": "Achados normais favorecem lipedema puro (53-60% normais em coortes) mas não confirmam diagnóstico."
         },
         {
-          "outcome": "Differentiation by ICG/NIRF lymphography",
-          "outcome_pt": "Diferenciação por linfografia ICG/NIRF",
-          "direction": "improved",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Absence of dermal backflow, linear vessels, foot fat-sparing distinguish lipedema; small pilot/cross-sectional studies only.",
-          "note_pt": "Ausência de refluxo dérmico, vasos lineares e poupança de gordura no pé distinguem lipedema; apenas estudos piloto/transversais pequenos."
-        },
-        {
-          "outcome": "Differentiation by MRI/MR-lymphangiography",
-          "outcome_pt": "Diferenciação por RM/linfangiografia por RM",
-          "direction": "improved",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Subcutaneous vs epifascial edema patterns separate lipedema/lipolymphedema; high sensitivity reported but small studies, fair interobserver agreement.",
-          "note_pt": "Padrões de edema subcutâneo vs epifascial separam lipedema/lipolinfedema; alta sensibilidade relatada, mas estudos pequenos e concordância interobservador apenas razoável."
-        },
-        {
-          "outcome": "Differentiation by CT",
-          "outcome_pt": "Diferenciação por TC",
+          "outcome": "Differentiation by alternative imaging (MRI/MRL, CT, ICG/NIRF)",
+          "outcome_pt": "Diferenciação por imagem alternativa (RM/LRM, TC, ICG/NIRF)",
           "direction": "improved",
           "confidence": "very_low",
           "disease_modifying": false,
-          "note": "Honeycombing 100% specific for lymphedema and absent in lipedema (one scoping review); single low-quality source.",
-          "note_pt": "Favo de mel 100% específico para linfedema e ausente no lipedema (uma revisão de escopo); fonte única de baixa qualidade."
+          "note": "Distinct patterns reported (backflow, honeycombing, epifascial edema) but small single-center studies.",
+          "note_pt": "Padrões distintos relatados (refluxo, favo de mel, edema epifascial) mas estudos pequenos unicêntricos."
         }
       ],
       "compiled_by": {
         "model": "anthropic/claude-opus-4.8",
         "label": "Claude Opus 4.8",
-        "date": "2026-06-02"
+        "date": "2026-09-13"
       },
-      "bottom_line": "Lymphoscintigraphy cannot reliably tell lipedema apart from lymphedema because abnormal lymphatic findings appear in both conditions, and a volume-matched controlled study found no significant difference in scan results between the two groups; a normal scan is more consistent with pure lipedema, but the test's main practical use is detecting a coexisting lymphatic problem rather than confirming or ruling out lipedema. Other imaging tools — ICG lymphography, MRI, and CT — show more promise for distinguishing the two conditions, but all rest on small, single-center studies without the large prospective validation needed to trust their accuracy estimates, and lipedema diagnosis remains clinical.",
-      "bottom_line_pt": "A linfocintilografia não consegue distinguir de forma confiável lipedema de linfedema, pois alterações linfáticas anormais aparecem em ambas as condições e um estudo controlado pareado por volume não encontrou diferença significativa entre os grupos; um exame normal é mais compatível com lipedema puro, mas o principal uso prático do teste é detectar um componente linfático coexistente, não confirmar ou excluir lipedema. Outras ferramentas de imagem — linfografia com ICG, RM e TC — mostram maior potencial para diferenciar as duas condições, mas todas se baseiam em estudos pequenos e unicêntricos sem a validação prospectiva necessária para confiar nas estimativas de acurácia, e o diagnóstico de lipedema continua sendo clínico."
+      "bottom_line": "Lymphoscintigraphy cannot reliably tell lipedema apart from lymphedema because both show lymphatic changes; a normal scan leans toward pure lipedema and it usefully flags coexisting lymphedema or excludes other causes of swelling. It does not provide a stand-alone diagnostic test—diagnosis stays clinical—and other imaging (ICG lymphography, MRI, CT) may differentiate better but rests on small, low-quality studies.",
+      "bottom_line_pt": "A linfocintilografia não consegue distinguir de forma confiável o lipedema do linfedema porque ambos apresentam alterações linfáticas; um exame normal favorece o lipedema puro e ela é útil para sinalizar linfedema coexistente ou excluir outras causas de inchaço. Ela não fornece um teste diagnóstico isolado—o diagnóstico permanece clínico—e outros exames de imagem (linfografia por ICG, RM, TC) podem diferenciar melhor, mas baseiam-se em estudos pequenos e de baixa qualidade."
     },
     {
       "id": "SQ-LIP-000031",

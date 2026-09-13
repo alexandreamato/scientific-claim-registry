@@ -2,7 +2,7 @@
   "registry": "SCR-LIP",
   "version": "0.1",
   "date": "2026-05-30",
-  "count": 385,
+  "count": 387,
   "claims": [
     {
       "id": "SCR-LIP-000001",
@@ -31991,6 +31991,138 @@
           "date": "2026-09-06",
           "event": "created",
           "detail": "auto-ingested for SQ-LIP-000028"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000437",
+      "statement": "This narrative review of lipedema and obesity discusses diagnostic implications and clinical overlap but does not report specific MRI or imaging findings differentiating lipedema from lymphedema or other fat distributions.",
+      "statement_pt": "Esta revisão narrativa sobre lipedema e obesidade discute implicações diagnósticas e sobreposição clínica, mas não relata achados específicos de ressonância magnética ou imagem que diferenciem o lipedema do linfedema ou de outras distribuições de gordura.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "adult women with suspected or confirmed lipedema, with/without obesity",
+        "condition": "lipedema",
+        "exposure": "clinical and biological diagnostic assessment of lipedema vs obesity",
+        "comparator": "obesity / coexisting conditions",
+        "outcome": "diagnostic implications and clinical overlap",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "low",
+      "evidence": [
+        {
+          "title": "Lipedema and obesity: biological interactions, diagnostic challenges, and principles of interdisciplinary management - a narrative review.",
+          "authors": "Scherkamp D, Wachenfeld-Teschner V, Rabe L, Dos Santos Adrego F, Freund G, Kroh A, Schenk A, Beier JP, Boos AM.",
+          "ref": "DOI:10.1080/21623945.2026.2719267",
+          "stance": "context",
+          "study_design": "review",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "This review synthesizes clinical overlap, biological evidence, diagnostic implications, and staged management for predominantly adult women with suspected or confirmed lipedema",
+          "extraction_confidence": "high",
+          "note": "The review addresses diagnostic differentiation of lipedema broadly but does not test or report MRI-specific findings distinguishing lipedema from lymphedema or other fat distributions, so it is on-topic background rather than direct imagin",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The article is a narrative review on lipedema and obesity interactions, diagnostic challenges, and management. It does not report specific MRI or imaging findings differentiating lipedema from lymphedema. The statement accurately characteri",
+            "date": "2026-09-13"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000029",
+        "source": "MED",
+        "ingested": "2026-09-13"
+      },
+      "created": "2026-09-13",
+      "updated": "2026-09-13",
+      "history": [
+        {
+          "date": "2026-09-13",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000029"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000438",
+      "statement": "This review reports that MRI and CT provide detailed visualization of advanced fibrotic and adipose tissue changes in lymphedema, but does not directly evaluate MRI's ability to differentiate lipedema from lymphedema.",
+      "statement_pt": "Esta revisão relata que a RM e a TC fornecem visualização detalhada de alterações fibróticas e de tecido adiposo avançadas no linfedema, mas não avalia diretamente a capacidade da RM de diferenciar lipedema de linfedema.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "patients with lymphedema",
+        "condition": "lipedema",
+        "exposure": "MRI/CT imaging and AI-driven tissue characterization",
+        "comparator": "other imaging modalities (ICG-L, lymphoscintigraphy)",
+        "outcome": "diagnostic accuracy and tissue characterization",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "low",
+      "evidence": [
+        {
+          "title": "Lymphedema imaging and AI: A review of diagnostic modalities, biomarkers, and clinical integration.",
+          "authors": "Urooj B, Ali S, Naqvi SKH, Xiao F, Huang PC.",
+          "ref": "DOI:10.1016/j.bj.2025.100932",
+          "stance": "context",
+          "study_design": "review",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "MRI and CT provide detailed visualization of advanced fibrotic and adipose changes",
+          "extraction_confidence": "high",
+          "note": "The review discusses MRI for assessing lymphedema tissue changes but does not specifically test MRI's ability to distinguish lipedema from lymphedema or other fat distributions; it is on-topic background only.",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The abstract confirms MRI and CT provide detailed visualization of fibrotic and adipose changes in lymphedema, and the review does not address MRI's ability to differentiate lipedema from lymphedema specifically. The statement accurately ch",
+            "date": "2026-09-13"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000029",
+        "source": "MED",
+        "ingested": "2026-09-13"
+      },
+      "created": "2026-09-13",
+      "updated": "2026-09-13",
+      "history": [
+        {
+          "date": "2026-09-13",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000029"
         }
       ],
       "license": "CC-BY-4.0"
