@@ -2,7 +2,7 @@
   "registry": "SCR-LIP",
   "version": "0.1",
   "date": "2026-05-30",
-  "count": 387,
+  "count": 391,
   "claims": [
     {
       "id": "SCR-LIP-000001",
@@ -32123,6 +32123,266 @@
           "date": "2026-09-13",
           "event": "created",
           "detail": "auto-ingested for SQ-LIP-000029"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000439",
+      "statement": "In a single lipedema patient case report, DXA was used to assess total body, trunk, leg, and arm fat masses and the android-to-gynoid fat ratio, alongside MRI for regional adipose tissue volumes.",
+      "statement_pt": "Em um relato de caso de uma única paciente com lipedema, a DXA foi utilizada para avaliar as massas de gordura corporal total, do tronco, das pernas e dos braços e a razão andróide-ginóide, juntamente com ressonância magnética para os volumes regionais de tecido adiposo.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "single woman with lipedema",
+        "condition": "lipedema",
+        "exposure": "DXA body composition assessment",
+        "comparator": "—",
+        "outcome": "regional fat masses and android-to-gynoid fat ratio",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "very_low",
+      "evidence": [
+        {
+          "title": "JCEM Case Reports, 2026, 4, luag018",
+          "ref": "DOI:10.1210/jcemcr/luag018",
+          "stance": "context",
+          "study_design": "case_report",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "very_low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "Total body, trunk, leg and arm fat masses, the android-to-gynoid fat ratio (in general, the android region is the area between the lower ribs and the pelvis and the gynoid region is the area below the pelvis to the upper thighs) and fat-free mass were assessed by using dual-energy X-ray absorptiomet",
+          "extraction_confidence": "moderate",
+          "note": "The abstract describes DXA being applied to a lipedema patient to measure regional fat distribution, but as a single case report it does not test or validate DXA's ability to identify a characteristic lipedema fat distribution pattern; it i",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The article explicitly describes using DXA (Lunar iDXA) to assess total body, trunk, leg, and arm fat masses and the android-to-gynoid fat ratio, alongside MRI for regional adipose tissue volumes, in a single lipedema patient case report. T",
+            "date": "2026-09-20"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000031",
+        "source": "library",
+        "ingested": "2026-09-20"
+      },
+      "created": "2026-09-20",
+      "updated": "2026-09-20",
+      "history": [
+        {
+          "date": "2026-09-20",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000031"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000440",
+      "statement": "In 40 lipedema patients, dual-energy X-ray absorptiometry was used to measure total and mean lower extremity fat mass and extremity volumes, but no difference in these measures was found between patients with high versus low kinesiophobia.",
+      "statement_pt": "Em 40 pacientes com lipedema, a absorciometria de raios-X de dupla energia foi utilizada para medir a massa gorda total e média das extremidades inferiores e os volumes das extremidades, mas não houve diferença nessas medidas entre pacientes com cinesiofobia alta versus baixa.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "40 women with lipedema and 40 controls",
+        "condition": "lipedema",
+        "exposure": "DXA measurement of lower extremity fat mass and volume",
+        "comparator": "lipedema patients with high vs low kinesiophobia",
+        "outcome": "lower extremity fat mass and extremity volumes",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "low",
+      "evidence": [
+        {
+          "title": "Unveiling kinesiophobia: A hidden challenge",
+          "ref": "DOI:10.1177/02683555251360606",
+          "stance": "context",
+          "study_design": "case_control",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "the lipedema patients were evaluated in terms of extremity volumes, and total and mean lower extremity fat mass by dualenergy X-ray absorptiometry",
+          "extraction_confidence": "high",
+          "note": "DXA is used to measure lower extremity fat mass in lipedema patients, but the abstract does not test whether DXA identifies a lipedema-specific fat distribution pattern; it only uses DXA as a measurement tool within a kinesiophobia study, m",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The article confirms DXA was used to measure total and mean lower extremity fat mass in 40 lipedema patients, and explicitly states no difference was found between high and low kinesiophobia groups in fat mass or extremity volumes. The stat",
+            "date": "2026-09-20"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000031",
+        "source": "library",
+        "ingested": "2026-09-20"
+      },
+      "created": "2026-09-20",
+      "updated": "2026-09-20",
+      "history": [
+        {
+          "date": "2026-09-20",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000031"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000441",
+      "statement": "An integrative review of 30 studies reinforces manual lymphatic drainage as an essential conservative therapeutic modality for reducing edema and pain in lipedema.",
+      "statement_pt": "Uma revisão integrativa de 30 estudos reforça a drenagem linfática manual como uma modalidade terapêutica conservadora essencial para reduzir o edema e a dor no lipedema.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "women with lipedema",
+        "condition": "lipedema",
+        "exposure": "manual lymphatic drainage and conservative management",
+        "comparator": "—",
+        "outcome": "edema and pain reduction, quality of life",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "low",
+      "evidence": [
+        {
+          "title": "Revista FT | ISSN 1678-0817 | v. 30, n. 158, 2026 | DOI: 10.69849/g5mp1531",
+          "ref": "DOI:10.69849/g5mp1531",
+          "stance": "supporting",
+          "study_design": "review",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "The findings reinforce MLD as an essential therapeutic modality for reducing edema and pain.",
+          "extraction_confidence": "high",
+          "note": "Integrative literature review synthesizing evidence that conservative management (notably MLD) reduces edema and pain in lipedema, directly supporting the question's affirmative direction, though it is a narrative review without quantified ",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "supporting",
+            "verdict": "verified",
+            "reason": "The article abstract explicitly states it is an integrative literature review of 30 studies (after screening 597) that reinforces MLD as an essential therapeutic modality for reducing edema and pain in lipedema, matching the statement exact",
+            "date": "2026-09-20"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000032",
+        "source": "library",
+        "ingested": "2026-09-20"
+      },
+      "created": "2026-09-20",
+      "updated": "2026-09-20",
+      "history": [
+        {
+          "date": "2026-09-20",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000032"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "SCR-LIP-000442",
+      "statement": "A scoping review of six studies using objective measures (accelerometry, six-minute walk test, sit-to-stand, dynamometry) found that women with lipedema generally exhibit lower walking capacity and muscle strength compared to healthy or BMI-matched controls.",
+      "statement_pt": "Uma revisão de escopo de seis estudos usando medidas objetivas (acelerometria, teste de caminhada de seis minutos, sentar-levantar, dinamometria) constatou que mulheres com lipedema geralmente exibem menor capacidade de caminhada e força muscular em comparação com controles saudáveis ou pareados por IMC.",
+      "claim_type": "clinical_association",
+      "context": {
+        "population": "women with lipedema",
+        "condition": "lipedema",
+        "exposure": "objective assessment of physical activity and physical function",
+        "comparator": "healthy or BMI-matched controls",
+        "outcome": "walking capacity and muscle strength",
+        "scope": "auto-ingested from Layer 1 surveillance"
+      },
+      "knowledge_state": "emerging",
+      "evidence_confidence": "low",
+      "evidence": [
+        {
+          "title": "Åström Malm et al. BMC Women's Health",
+          "ref": "DOI:10.1186/s12905-026-04271-y",
+          "stance": "context",
+          "study_design": "review",
+          "n": null,
+          "risk_of_bias": "unknown",
+          "grade": "low",
+          "year": 2026,
+          "amato_authored": false,
+          "quote": "Findings indicated that individuals with lipedema generally exhibit lower walking capacity and muscle strength compared to healthy or BMI-matc",
+          "extraction_confidence": "high",
+          "note": "The review characterizes physical function limitations in lipedema and notes physical activity as a component of conservative management, but it maps functional deficits rather than testing the effectiveness of conservative therapy (compres",
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The abstract explicitly states that findings indicated individuals with lipedema exhibit lower walking capacity and muscle strength compared to healthy or BMI-matched controls, and lists the exact objective tools mentioned in the statement ",
+            "date": "2026-09-20"
+          }
+        }
+      ],
+      "relations": [],
+      "gaps": "Auto-ingested single source; not yet human-reviewed.",
+      "primary_amato_source": null,
+      "curators": [],
+      "provenance": {
+        "auto": true,
+        "engine": "anthropic/claude-opus-4.8",
+        "question": "SQ-LIP-000032",
+        "source": "library",
+        "ingested": "2026-09-20"
+      },
+      "created": "2026-09-20",
+      "updated": "2026-09-20",
+      "history": [
+        {
+          "date": "2026-09-20",
+          "event": "created",
+          "detail": "auto-ingested for SQ-LIP-000032"
         }
       ],
       "license": "CC-BY-4.0"

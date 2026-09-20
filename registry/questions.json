@@ -6179,14 +6179,21 @@
         "body composition",
         "fat distribution"
       ],
-      "current_answer": "Based on currently indexed evidence, DXA can help identify the characteristic lipedema fat distribution, but it is a supportive/discriminative tool rather than a validated diagnostic standard. The strongest signal comes from DXA-derived fat-distribution indices that quantify the disproportionate accumulation of fat in the legs relative to the trunk. A cross-sectional DXA study reported that a leg fat mass/total fat mass index distinguished lipedema patients from healthy controls with high discrimination (AUC ~0.90; sensitivity 0.95, specificity 0.73 at a cutoff of 0.383) across all BMI strata, with an elevated leg fat proportion (0.451 vs 0.354) and an inverted trunk/legs ratio (0.960 vs 1.502); appendicular lean mass and total bone density did not differ (low-grade single cross-sectional study). Two systematic reviews place DXA among the imaging tools proposed for characterizing lipedema, citing reproducible cut-offs such as leg fat/total fat ≥0.383–0.384 and BMI-adjusted leg fat ≥0.46, and reporting DXA fat-distribution diagnostic performance around AUC 0.90–0.91 (moderate-grade reviews). However, these same moderate-grade reviews emphasize that overall imaging-based diagnostic performance for lipedema remains limited, protocols are heterogeneous and poorly documented, and no single easy, objective imaging test currently exists. In summary: DXA appears capable of capturing and quantifying the leg-predominant fat distribution typical of lipedema and can discriminate cases from controls in research settings, but the evidence rests largely on a single low-grade study plus reviews flagging limited validation; it is not established as a standalone diagnostic test.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a DXA pode ajudar a identificar a distribuição de gordura característica do lipedema, mas é uma ferramenta de apoio/discriminação, e não um padrão diagnóstico validado. O sinal mais forte vem de índices de distribuição de gordura derivados da DXA que quantificam o acúmulo desproporcional de gordura nas pernas em relação ao tronco. Um estudo transversal com DXA relatou que o índice massa de gordura das pernas/massa de gordura total distinguiu pacientes com lipedema de controles saudáveis com alta discriminação (AUC ~0,90; sensibilidade 0,95, especificidade 0,73 no ponto de corte 0,383) em todas as faixas de IMC, com proporção elevada de gordura nas pernas (0,451 vs 0,354) e razão tronco/pernas invertida (0,960 vs 1,502); massa magra apendicular e densidade óssea total não diferiram (estudo transversal único de baixa qualidade). Duas revisões sistemáticas colocam a DXA entre as ferramentas de imagem propostas para caracterizar o lipedema, citando pontos de corte reprodutíveis como gordura das pernas/gordura total ≥0,383–0,384 e gordura das pernas ajustada pelo IMC ≥0,46, e relatando desempenho diagnóstico da DXA em torno de AUC 0,90–0,91 (revisões de qualidade moderada). No entanto, essas mesmas revisões enfatizam que o desempenho diagnóstico geral baseado em imagem para o lipedema permanece limitado, os protocolos são heterogêneos e mal documentados, e nenhum teste de imagem objetivo e simples existe atualmente. Em resumo: a DXA parece capaz de capturar e quantificar a distribuição de gordura predominante nas pernas típica do lipedema e pode discriminar casos de controles em contextos de pesquisa, mas as evidências baseiam-se em grande parte em um único estudo de baixa qualidade mais revisões que sinalizam validação limitada; não está estabelecida como teste diagnóstico isolado.",
-      "major_uncertainty": "The discriminative diagnostic accuracy (AUC ~0.90–0.91, cutoffs ~0.383) derives largely from a single low-grade cross-sectional study against healthy controls; performance against confounders like obesity and lymphedema, reproducibility across centers, and validated diagnostic thresholds remain unestablished, and reviews explicitly note overall imaging diagnostic performance is limited.",
-      "major_uncertainty_pt": "A acurácia diagnóstica discriminativa (AUC ~0,90–0,91, pontos de corte ~0,383) deriva em grande parte de um único estudo transversal de baixa qualidade contra controles saudáveis; o desempenho frente a fatores de confusão como obesidade e linfedema, a reprodutibilidade entre centros e os limiares diagnósticos validados permanecem não estabelecidos, e as revisões observam explicitamente que o desempenho diagnóstico geral por imagem é limitado.",
-      "version": "1.1",
+      "current_answer": "Based on currently indexed evidence, DXA can help capture and quantify the leg-predominant fat distribution characteristic of lipedema, but it functions as a supportive/discriminative research tool rather than a validated standalone diagnostic standard. The strongest single-study signal comes from a cross-sectional DXA study reporting that a leg fat mass/total fat mass index distinguished lipedema patients from healthy controls with high discrimination (AUC ~0.90; sensitivity 0.95, specificity 0.73 at a cutoff of 0.383) across all BMI strata, with an elevated leg fat proportion (0.451 vs 0.354) and an inverted trunk/legs ratio (0.960 vs 1.502); appendicular lean mass and total bone density did not differ (low-grade single cross-sectional study). Two systematic/narrative reviews place DXA among proposed imaging tools, citing reproducible cut-offs (leg fat/total fat ≥0.383–0.384; BMI-adjusted leg fat ≥0.46) and DXA fat-distribution performance around AUC 0.90–0.91 (moderate- and very-low-grade reviews). These reviews stress that overall imaging-based diagnostic performance for lipedema remains limited, protocols are heterogeneous and poorly documented, and no easy, objective imaging test currently exists. Newer evidence extends—rather than validates—DXA's diagnostic role: in NHANES women, a DXA-defined lipedema-like phenotype (leg-to-trunk fat ratio >90th percentile) was linked to a favorable immunometabolic profile (44.2% lower HOMA-IR, 7.6% lower neutrophil-to-lymphocyte ratio), though authors flag this proxy may simply capture gynoid obesity rather than true lipedema (low-grade, moderate risk of bias). Additional context studies use DXA merely as a measurement tool in lipedema cohorts (a case report, and a 40-patient study showing no fat-mass difference by kinesiophobia) without testing its diagnostic discrimination. In summary: DXA appears capable of quantifying the leg-predominant fat distribution typical of lipedema and can discriminate cases from controls in research settings, but the evidence rests largely on a single low-grade study plus reviews flagging limited validation, and a DXA-defined phenotype may not cleanly separate lipedema from gynoid obesity.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a DXA pode ajudar a capturar e quantificar a distribuição de gordura de predomínio nas pernas característica do lipedema, mas funciona como ferramenta de apoio/discriminação em pesquisa, e não como padrão diagnóstico isolado validado. O sinal mais forte de um único estudo vem de um estudo transversal com DXA que relatou que o índice massa de gordura das pernas/massa de gordura total distinguiu pacientes com lipedema de controles saudáveis com alta discriminação (AUC ~0,90; sensibilidade 0,95, especificidade 0,73 no ponto de corte de 0,383) em todos os estratos de IMC, com proporção elevada de gordura nas pernas (0,451 vs 0,354) e razão tronco/pernas invertida (0,960 vs 1,502); massa magra apendicular e densidade óssea total não diferiram (estudo transversal único de baixa qualidade). Duas revisões (sistemática/narrativa) posicionam a DXA entre as ferramentas de imagem propostas, citando pontos de corte reprodutíveis (gordura das pernas/gordura total ≥0,383–0,384; gordura das pernas ajustada por IMC ≥0,46) e desempenho da DXA em torno de AUC 0,90–0,91 (revisões de qualidade moderada e muito baixa). Essas revisões enfatizam que o desempenho diagnóstico geral baseado em imagem para o lipedema permanece limitado, os protocolos são heterogêneos e mal documentados, e não existe atualmente um teste de imagem fácil e objetivo. Evidências mais recentes estendem—em vez de validar—o papel diagnóstico da DXA: em mulheres do NHANES, um fenótipo semelhante ao lipedema definido por DXA (razão gordura perna-tronco >percentil 90) foi associado a um perfil imunometabólico favorável (HOMA-IR 44,2% menor, razão neutrófilo-linfócito 7,6% menor), embora os autores alertem que esse indicador pode simplesmente captar obesidade ginoide e não lipedema verdadeiro (baixa qualidade, risco de viés moderado). Estudos adicionais de contexto usam a DXA apenas como ferramenta de medição em coortes de lipedema (um relato de caso e um estudo de 40 pacientes que não mostrou diferença de massa gorda por cinesiofobia) sem testar sua discriminação diagnóstica. Em resumo: a DXA parece capaz de quantificar a distribuição de gordura de predomínio nas pernas típica do lipedema e pode discriminar casos de controles em ambientes de pesquisa, mas a evidência repousa em grande parte em um único estudo de baixa qualidade mais revisões que sinalizam validação limitada, e um fenótipo definido por DXA pode não separar de forma limpa o lipedema da obesidade ginoide.",
+      "major_uncertainty": "Whether DXA-derived leg/trunk fat indices actually distinguish lipedema from common gynoid obesity (versus merely detecting lower-body fat distribution) remains unresolved, as the diagnostic cut-offs derive from a single low-grade study and a population proxy that authors themselves note may capture gynoid obesity.",
+      "major_uncertainty_pt": "Ainda não está resolvido se os índices de gordura perna/tronco derivados da DXA realmente distinguem o lipedema da obesidade ginoide comum (em vez de apenas detectar a distribuição de gordura na parte inferior do corpo), pois os pontos de corte diagnósticos derivam de um único estudo de baixa qualidade e de um indicador populacional que os próprios autores observam poder captar obesidade ginoide.",
+      "version": "1.2",
       "created": "2026-06-02",
-      "updated": "2026-06-02",
+      "updated": "2026-09-20",
       "history": [
+        {
+          "version": "1.2",
+          "date": "2026-09-20",
+          "change": "This update added a low-grade NHANES study linking a DXA-defined lipedema-like phenotype to a favorable metabolic profile (while cautioning the proxy may capture gynoid obesity) plus context studies using DXA only as a measurement tool, none of which validate DXA as a diagnostic test.",
+          "change_pt": "Esta atualização acrescentou um estudo de baixa qualidade do NHANES ligando um fenótipo semelhante ao lipedema definido por DXA a um perfil metabólico favorável (ressalvando que o indicador pode captar obesidade ginoide), além de estudos de contexto que usam a DXA apenas como ferramenta de medição, nenhum dos quais valida a DXA como teste diagnóstico.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.1",
           "date": "2026-06-02",
@@ -6217,6 +6224,22 @@
         {
           "id": "SCR-LIP-000378",
           "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000027",
+          "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000439",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000440",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000062",
+          "role": "context"
         }
       ],
       "related": [
@@ -6224,40 +6247,40 @@
       ],
       "outcomes": [
         {
-          "outcome": "Discrimination of lipedema fat distribution vs controls",
-          "outcome_pt": "Discriminação da distribuição de gordura do lipedema vs controles",
+          "outcome": "Discriminating lipedema from healthy controls",
+          "outcome_pt": "Discriminar lipedema de controles saudáveis",
           "direction": "improved",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "DXA leg/total fat index AUC ~0.90 (cutoff 0.383); single low-grade study, supported by moderate reviews.",
-          "note_pt": "Índice gordura perna/total na DXA AUC ~0,90 (corte 0,383); estudo único de baixa qualidade, apoiado por revisões moderadas."
+          "note": "Single study: leg/total fat index AUC~0.90, sens 0.95, spec 0.73 at cutoff 0.383 across BMI strata.",
+          "note_pt": "Estudo único: índice gordura perna/total AUC~0,90, sens 0,95, esp 0,73 no corte 0,383 em todos os estratos de IMC."
         },
         {
-          "outcome": "Quantification of leg-predominant fat distribution pattern",
-          "outcome_pt": "Quantificação do padrão de gordura predominante nas pernas",
-          "direction": "improved",
-          "confidence": "low",
+          "outcome": "Distinguishing lipedema from gynoid obesity",
+          "outcome_pt": "Distinguir lipedema de obesidade ginoide",
+          "direction": "not_demonstrated",
+          "confidence": "very_low",
           "disease_modifying": false,
-          "note": "Elevated leg fat proportion and inverted trunk/legs ratio captured; lean mass/bone density unchanged.",
-          "note_pt": "Proporção elevada de gordura nas pernas e razão tronco/pernas invertida; massa magra/densidade óssea inalteradas."
+          "note": "NHANES DXA proxy authors caution it may capture gynoid obesity, not true lipedema.",
+          "note_pt": "Autores do indicador DXA do NHANES alertam que pode captar obesidade ginoide, não lipedema verdadeiro."
         },
         {
-          "outcome": "Standalone diagnostic validation of lipedema",
-          "outcome_pt": "Validação diagnóstica isolada do lipedema",
+          "outcome": "Validated standalone diagnostic performance",
+          "outcome_pt": "Desempenho diagnóstico isolado validado",
           "direction": "not_demonstrated",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Reviews state overall imaging diagnostic performance limited; no single objective test exists.",
-          "note_pt": "Revisões afirmam desempenho diagnóstico geral por imagem limitado; nenhum teste objetivo único existe."
+          "note": "Reviews state imaging diagnostic performance limited; no easy objective test exists; protocols heterogeneous.",
+          "note_pt": "Revisões afirmam desempenho diagnóstico por imagem limitado; sem teste objetivo fácil; protocolos heterogêneos."
         }
       ],
       "compiled_by": {
         "model": "anthropic/claude-opus-4.8",
         "label": "Claude Opus 4.8",
-        "date": "2026-06-02"
+        "date": "2026-09-20"
       },
-      "bottom_line": "DXA can detect and quantify the leg-heavy fat pattern typical of lipedema—a leg fat/total fat ratio above roughly 0.38 distinguished lipedema patients from healthy controls with about 90% accuracy in one study, and this finding is echoed in systematic reviews. However, that result comes from a single small study against healthy controls, performance against obesity or lymphedema alone is untested, no threshold has been validated across centers, and DXA cannot diagnose lipedema on its own.",
-      "bottom_line_pt": "A DXA consegue detectar e quantificar o padrão de gordura concentrado nas pernas típico do lipedema—uma razão gordura nas pernas/gordura total acima de aproximadamente 0,38 distinguiu pacientes com lipedema de controles saudáveis com cerca de 90% de acurácia em um estudo, resultado corroborado por revisões sistemáticas. No entanto, esse dado vem de um único estudo pequeno comparado a controles saudáveis, o desempenho frente à obesidade ou ao linfedema isolados não foi testado, nenhum limiar foi validado em múltiplos centros, e a DXA não pode diagnosticar o lipedema de forma isolada."
+      "bottom_line": "DXA can measure and flag the leg-heavy fat pattern typical of lipedema and tell patients from healthy controls in research studies. It is not a proven standalone diagnostic test, and its fat-ratio markers may not reliably separate lipedema from ordinary gynoid (lower-body) obesity.",
+      "bottom_line_pt": "A DXA pode medir e sinalizar o padrão de gordura concentrada nas pernas típico do lipedema e distinguir pacientes de controles saudáveis em estudos de pesquisa. Não é um teste diagnóstico isolado comprovado, e seus marcadores de razão de gordura podem não separar de forma confiável o lipedema da obesidade ginoide comum (parte inferior do corpo)."
     },
     {
       "id": "SQ-LIP-000032",
@@ -6276,14 +6299,21 @@
         "lymphatic drainage",
         "lipedema"
       ],
-      "current_answer": "Based on currently indexed evidence, conservative therapy (compression, manual lymphatic drainage, complex decongestive therapy [CDT], and exercise) appears to provide SYMPTOMATIC benefit in lipedema but has NOT been shown to be disease-modifying or curative. The evidence base is dominated by guidelines, consensus statements, narrative and systematic reviews of largely uncontrolled studies; no RCTs of conservative therapy versus control/sham are indexed. By outcome: (1) PAIN — multiple systematic reviews and guidelines report reduction in pain/discomfort with conservative measures (Grade 2A-2B in one systematic review; moderate confidence) but this rests on low/uncontrolled primary data; (2) LIMB VOLUME / CIRCUMFERENCE — CDT achieved up to ~10% leg circumference reduction (systematic review, moderate), and a small uncontrolled case series (n=22) showed CDT plus pneumatic compression reduced extracellular and intracellular fluid; combined compression-plus-exercise outperformed exercise alone; (3) FLUID/EDEMA control — compression and CDT reduce edema where present, though manual lymphatic drainage is explicitly NOT recommended in the Dutch and some other guidelines, and compression is advised mainly when edema is present; (4) QUALITY OF LIFE / MOBILITY — improvements reported but most strongly attributed to liposuction in comparative syntheses; conservative therapy alone shows weaker QoL evidence. Across guidelines (German S2k, Dutch, BAAPS/BAPRAS, US standard of care, Brazilian consensus), conservative management is uniformly recommended as FIRST-LINE, with surgery considered only after ~12 months of conservative treatment. Importantly, conservative therapy is positioned to relieve symptoms and slow potential progression, NOT to remove the abnormal adipose tissue (only liposuction is reported to do that).",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a terapia conservadora (compressão, drenagem linfática manual, terapia descongestiva complexa [TDC] e exercício) parece proporcionar benefício SINTOMÁTICO no lipedema, mas NÃO demonstrou modificar a doença ou curá-la. A base de evidências é dominada por diretrizes, declarações de consenso e revisões narrativas/sistemáticas de estudos majoritariamente não controlados; não há ensaios clínicos randomizados de terapia conservadora versus controle/placebo indexados. Por desfecho: (1) DOR — múltiplas revisões sistemáticas e diretrizes relatam redução da dor/desconforto com medidas conservadoras (Grau 2A-2B em uma revisão sistemática; confiança moderada), mas baseiam-se em dados primários de baixa qualidade/não controlados; (2) VOLUME/CIRCUNFERÊNCIA DO MEMBRO — a TDC alcançou até ~10% de redução da circunferência da perna (revisão sistemática, moderada), e uma pequena série de casos não controlada (n=22) mostrou que a TDC com compressão pneumática reduziu o fluido extracelular e intracelular; compressão combinada com exercício superou o exercício isolado; (3) controle de FLUIDO/EDEMA — compressão e TDC reduzem o edema quando presente, embora a drenagem linfática manual seja explicitamente NÃO recomendada nas diretrizes holandesas e em algumas outras, e a compressão seja aconselhada principalmente quando há edema; (4) QUALIDADE DE VIDA/MOBILIDADE — melhorias relatadas, mas mais fortemente atribuídas à lipoaspiração em sínteses comparativas; a terapia conservadora isolada mostra evidência de QV mais fraca. Em todas as diretrizes (S2k alemã, holandesa, BAAPS/BAPRAS, padrão de cuidado dos EUA, consenso brasileiro), o manejo conservador é recomendado uniformemente como PRIMEIRA LINHA, com cirurgia considerada apenas após ~12 meses de tratamento conservador. É importante notar que a terapia conservadora é posicionada para aliviar sintomas e possivelmente retardar a progressão, NÃO para remover o tecido adiposo anormal (apenas a lipoaspiração demonstrou fazê-lo).",
-      "major_uncertainty": "No randomized controlled trials of conservative therapy versus control are indexed; nearly all evidence is consensus/guideline-based or uncontrolled case series, so effect sizes for pain, volume and QoL cannot be reliably quantified and disease-modification is unproven. Guidelines diverge on manual lymphatic drainage (recommended by some, explicitly not recommended by the Dutch guideline), and durability of any benefit is unknown.",
-      "major_uncertainty_pt": "Nenhum ensaio clínico randomizado de terapia conservadora versus controle está indexado; quase toda a evidência é baseada em consenso/diretrizes ou em séries de casos não controladas, de modo que os tamanhos de efeito para dor, volume e QV não podem ser quantificados de forma confiável, e a modificação da doença não está comprovada. As diretrizes divergem sobre a drenagem linfática manual (recomendada por algumas, explicitamente não recomendada pela diretriz holandesa), e a durabilidade de qualquer benefício é desconhecida.",
-      "version": "1.1",
+      "current_answer": "Based on currently indexed evidence, conservative therapy (compression, manual lymphatic drainage [MLD], complex decongestive therapy [CDT], and exercise) provides SYMPTOMATIC benefit in lipedema but has NOT been shown to be disease-modifying or curative. The evidence base is dominated by guidelines, consensus statements, and systematic/narrative reviews of largely uncontrolled primary studies; no RCT of conservative therapy versus control/sham is indexed. By outcome: (1) PAIN — multiple systematic reviews and guidelines report reduction in pain/discomfort with conservative measures (Grade 2A-2B in one systematic review; moderate confidence), with an integrative review of 30 studies reinforcing MLD for pain reduction, though this rests on low/uncontrolled primary data; (2) LIMB VOLUME / CIRCUMFERENCE — CDT achieved up to ~10% leg circumference reduction (systematic review, moderate) and reduced capillary fragility; a small uncontrolled case series (n=22) showed CDT plus pneumatic compression reduced extracellular and intracellular fluid; combined compression-plus-exercise outperformed exercise alone; (3) FLUID/EDEMA control — compression and CDT reduce edema where present, though MLD is explicitly NOT recommended in the Dutch guideline, and flat-knit compression is advised mainly when edema is present; (4) QUALITY OF LIFE / MOBILITY — improvements are reported but are most strongly attributed to liposuction in comparative syntheses; conservative therapy alone shows weaker QoL evidence, and a scoping review found women with lipedema exhibit lower walking capacity and muscle strength than controls (characterizing deficits, not testing therapy). Across guidelines (German S2k, Dutch, BAAPS/BAPRAS, US standard of care, Brazilian consensus), conservative management is uniformly recommended as FIRST-LINE, with surgery considered only after ~12 months. Importantly, conservative therapy is positioned to relieve symptoms and possibly slow progression, NOT to remove the abnormal adipose tissue — a single-arm meta-analysis (6 studies, 429 patients) shows tumescent liposuction sharply reduces pain in patients REFRACTORY to conservative management, underscoring that surgery is reserved for cases where conservative therapy does not suffice.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a terapia conservadora (compressão, drenagem linfática manual [DLM], terapia física complexa descongestiva [TFC] e exercício) proporciona benefício SINTOMÁTICO no lipedema, mas NÃO demonstrou modificar a doença nem curá-la. A base de evidências é dominada por diretrizes, declarações de consenso e revisões sistemáticas/narrativas de estudos primários majoritariamente não controlados; nenhum ensaio clínico randomizado de terapia conservadora versus controle/placebo está indexado. Por desfecho: (1) DOR — múltiplas revisões sistemáticas e diretrizes relatam redução de dor/desconforto com medidas conservadoras (Grau 2A-2B em uma revisão sistemática; confiança moderada), com uma revisão integrativa de 30 estudos reforçando a DLM para redução da dor, embora isso se baseie em dados primários de baixa qualidade/não controlados; (2) VOLUME / CIRCUNFERÊNCIA DO MEMBRO — a TFC alcançou até ~10% de redução da circunferência da perna (revisão sistemática, moderada) e reduziu a fragilidade capilar; uma pequena série de casos não controlada (n=22) mostrou que a TFC com compressão pneumática reduziu fluido extracelular e intracelular; compressão combinada com exercício superou o exercício isolado; (3) controle de FLUIDO/EDEMA — compressão e TFC reduzem o edema quando presente, embora a DLM NÃO seja recomendada na diretriz holandesa e a compressão em malha plana seja indicada principalmente quando há edema; (4) QUALIDADE DE VIDA / MOBILIDADE — melhorias são relatadas, mas atribuídas mais fortemente à lipoaspiração nas sínteses comparativas; a terapia conservadora isolada apresenta evidência mais fraca de qualidade de vida, e uma revisão de escopo encontrou que mulheres com lipedema apresentam menor capacidade de caminhada e força muscular que controles (caracterizando déficits, não testando a terapia). Em todas as diretrizes (S2k alemã, holandesa, BAAPS/BAPRAS, padrão de cuidado dos EUA, consenso brasileiro), o manejo conservador é uniformemente recomendado como PRIMEIRA LINHA, com cirurgia considerada apenas após ~12 meses. É importante ressaltar que a terapia conservadora visa aliviar sintomas e possivelmente retardar a progressão, NÃO remover o tecido adiposo anormal — uma metanálise de braço único (6 estudos, 429 pacientes) mostra que a lipoaspiração tumescente reduz acentuadamente a dor em pacientes REFRATÁRIAS ao manejo conservador, reforçando que a cirurgia fica reservada aos casos em que a terapia conservadora não é suficiente.",
+      "major_uncertainty": "No RCT compares conservative therapy against control/sham for any outcome; all efficacy signals derive from uncontrolled series, guidelines, and reviews, so the true magnitude and durability of symptomatic benefit — and any effect on disease progression — remain unproven.",
+      "major_uncertainty_pt": "Nenhum ensaio clínico randomizado compara a terapia conservadora com controle/placebo para qualquer desfecho; todos os sinais de eficácia derivam de séries não controladas, diretrizes e revisões, de modo que a magnitude real e a durabilidade do benefício sintomático — e qualquer efeito sobre a progressão da doença — permanecem não comprovados.",
+      "version": "1.2",
       "created": "2026-06-02",
-      "updated": "2026-06-02",
+      "updated": "2026-09-20",
       "history": [
+        {
+          "version": "1.2",
+          "date": "2026-09-20",
+          "change": "This update added an integrative review (30 studies) reinforcing MLD for edema/pain, a single-arm meta-analysis showing liposuction reduces pain in conservative-refractory patients, and a scoping review documenting reduced walking capacity/muscle strength in lipedema — none of which alter the core conclusion.",
+          "change_pt": "Esta atualização acrescentou uma revisão integrativa (30 estudos) reforçando a DLM para edema/dor, uma metanálise de braço único mostrando que a lipoaspiração reduz a dor em pacientes refratárias ao tratamento conservador, e uma revisão de escopo documentando menor capacidade de caminhada/força muscular no lipedema — nenhuma das quais altera a conclusão central.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.1",
           "date": "2026-06-02",
@@ -6362,6 +6392,22 @@
         {
           "id": "SCR-LIP-000037",
           "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000418",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000408",
+          "role": "context"
+        },
+        {
+          "id": "SCR-LIP-000441",
+          "role": "supporting"
+        },
+        {
+          "id": "SCR-LIP-000442",
+          "role": "context"
         }
       ],
       "related": [
@@ -6369,13 +6415,13 @@
       ],
       "outcomes": [
         {
-          "outcome": "Pain / discomfort",
-          "outcome_pt": "Dor / desconforto",
+          "outcome": "Pain",
+          "outcome_pt": "Dor",
           "direction": "reduced",
-          "confidence": "moderate",
+          "confidence": "low",
           "disease_modifying": false,
-          "note": "Systematic reviews/guidelines report pain reduction (Grade 2A-2B) with conservative care; symptom-only, no RCT.",
-          "note_pt": "Revisões sistemáticas/diretrizes relatam redução da dor (Grau 2A-2B) com cuidado conservador; apenas sintomático, sem ECR."
+          "note": "Reviews/guidelines report pain reduction with compression, CDT, MLD; rests on uncontrolled data, no RCT.",
+          "note_pt": "Revisões/diretrizes relatam redução da dor com compressão, TFC, DLM; baseia-se em dados não controlados, sem ECR."
         },
         {
           "outcome": "Limb volume / circumference",
@@ -6383,44 +6429,44 @@
           "direction": "reduced",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "CDT up to ~10% circumference reduction; combined compression+exercise > exercise alone; uncontrolled data.",
-          "note_pt": "TDC até ~10% de redução da circunferência; compressão+exercício > exercício isolado; dados não controlados."
+          "note": "CDT up to ~10% circumference reduction; combined compression+exercise beats exercise alone; small/uncontrolled.",
+          "note_pt": "TFC até ~10% de redução; compressão+exercício supera exercício isolado; estudos pequenos/não controlados."
         },
         {
-          "outcome": "Fluid / edema control",
-          "outcome_pt": "Controle de fluido / edema",
+          "outcome": "Edema / fluid control",
+          "outcome_pt": "Controle de edema / fluido",
           "direction": "reduced",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "CDT+pneumatic compression reduced extra/intracellular fluid (n=22, uncontrolled); compression when edema present.",
-          "note_pt": "TDC+compressão pneumática reduziu fluido extra/intracelular (n=22, não controlado); compressão quando há edema."
+          "note": "Compression/CDT reduce edema when present; MLD not recommended in Dutch guideline; case series n=22.",
+          "note_pt": "Compressão/TFC reduzem edema quando presente; DLM não recomendada na diretriz holandesa; série n=22."
         },
         {
           "outcome": "Quality of life / mobility",
           "outcome_pt": "Qualidade de vida / mobilidade",
-          "direction": "improved",
-          "confidence": "low",
+          "direction": "mixed",
+          "confidence": "very_low",
           "disease_modifying": false,
-          "note": "Improvements reported but more strongly attributed to liposuction; conservative-alone QoL evidence weak.",
-          "note_pt": "Melhorias relatadas, mas mais atribuídas à lipoaspiração; evidência de QV conservadora isolada fraca."
+          "note": "Improvements reported but attributed mainly to liposuction; conservative-alone QoL evidence weak.",
+          "note_pt": "Melhorias relatadas, mas atribuídas principalmente à lipoaspiração; evidência de QV com conservador isolado é fraca."
         },
         {
-          "outcome": "Disease progression / abnormal adipose removal",
-          "outcome_pt": "Progressão da doença / remoção de adiposo anormal",
+          "outcome": "Disease modification / removal of abnormal fat",
+          "outcome_pt": "Modificação da doença / remoção da gordura anormal",
           "direction": "not_demonstrated",
-          "confidence": "very_low",
-          "disease_modifying": true,
-          "note": "Conservative therapy not shown to remove abnormal adipose or cure; possible slowing of progression unproven.",
-          "note_pt": "Terapia conservadora não demonstrou remover adiposo anormal ou curar; possível retardo da progressão não comprovado."
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Only liposuction reported to remove abnormal adipose tissue; conservative therapy not shown to cure/reverse.",
+          "note_pt": "Apenas a lipoaspiração remove tecido adiposo anormal; conservador não demonstrou curar/reverter."
         }
       ],
       "compiled_by": {
         "model": "anthropic/claude-opus-4.8",
         "label": "Claude Opus 4.8",
-        "date": "2026-06-02"
+        "date": "2026-09-20"
       },
-      "bottom_line": "Conservative treatments—compression garments, complex decongestive therapy, and exercise—consistently reduce pain and modestly decrease limb swelling in lipedema, and every major guideline recommends them as the first step in management. They have not been shown to remove the abnormal fatty tissue, cure the condition, or reliably improve quality of life on their own, and no randomized controlled trials exist to confirm how large these benefits actually are or how long they last.",
-      "bottom_line_pt": "Tratamentos conservadores—meias de compressão, terapia descongestiva complexa e exercício—reduzem consistentemente a dor e diminuem modestamente o inchaço dos membros no lipedema, e todas as principais diretrizes os recomendam como primeira etapa do tratamento. Não foi demonstrado que removam o tecido adiposo anormal, curem a condição ou melhorem de forma confiável a qualidade de vida isoladamente, e não existem ensaios clínicos randomizados para confirmar o tamanho real desses benefícios ou por quanto tempo eles duram."
+      "bottom_line": "Conservative therapy (compression, CDT, exercise) can reduce pain, swelling, and limb volume in lipedema and is recommended first-line by all major guidelines. It has not been shown to remove the abnormal fat, cure or reverse the disease, and no controlled trials confirm its effects.",
+      "bottom_line_pt": "A terapia conservadora (compressão, TFC, exercício) pode reduzir dor, inchaço e volume do membro no lipedema e é recomendada como primeira linha por todas as principais diretrizes. Ela não demonstrou remover a gordura anormal, curar ou reverter a doença, e nenhum ensaio controlado confirma seus efeitos."
     },
     {
       "id": "SQ-LIP-000033",
