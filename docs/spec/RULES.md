@@ -619,7 +619,11 @@
   (a biblioteca as cataloga, marcadas) e nada no loop olhava a marca: **11 artigos** de autoria banida (13 claims)
   estavam no registro público. Banidos com `author_ban`, claims removidos (526 → 515), as 10 perguntas afetadas
   recompiladas, e o loop passou a recusar a autoria na entrada. Snapshots congelados de versões antigas ainda
-  contêm os nomes (pendente decisão do autor: imutabilidade × regra 2).
+  continham os nomes: por decisão do autor, as **54 versões arquivadas** que citavam um claim removido tiveram o
+  conteúdo **retirado com aviso** (mantidos número, data, pergunta e link para a versão atual), como numa retratação.
+  **Regra:** banimento por autoria prevalece sobre a imutabilidade do snapshot; o snapshot não some (a citação não
+  quebra), o conteúdo sim, e o aviso diz quando e por quê. Fica fora do alcance: o arquivo da v0.5 no Zenodo e o
+  histórico do git público, ambos publicados antes do banimento.
 
 - **2026-11-17** — **R-AI-7 / R-AI-12: oito semanas de varredura vazia, e a biblioteca que o loop não via
   (conserto de implementação + duas garantias).** (1) De 27/09 a 15/11 a chave OpenRouter não existia na máquina
