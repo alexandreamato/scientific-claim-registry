@@ -10,7 +10,8 @@ Run from registry/:
   python3 curate.py list
   python3 curate.py unban 10.xxxx/yyyy
 
-Categories: retracted | low_quality | off_topic | predatory | superseded | duplicate.
+Categories: retracted | low_quality | off_topic | predatory | superseded | duplicate | author_ban
+(author_ban = the author's rule 2 in ~/lipedema: banned AUTHORSHIP is never cited, in any context).
 After banning, rebuild + deploy. The loop reads exclude.json and skips banned refs (ingest.excluded_set).
 """
 import json, os, sys, datetime, urllib.request, urllib.parse
@@ -18,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CF, QF = os.path.join(HERE, "claims.json"), os.path.join(HERE, "questions.json")
 XF = os.path.join(HERE, "exclude.json")
 UA = {"User-Agent": "SCR/0.1 (https://scientificclaims.org; mailto:alexandre@amato.com.br)"}
-CATEGORIES = ("retracted", "low_quality", "off_topic", "predatory", "superseded", "duplicate")
+CATEGORIES = ("retracted", "low_quality", "off_topic", "predatory", "superseded", "duplicate", "author_ban")
 
 def norm(ref): return (ref or "").replace("DOI:", "").replace("doi:", "").strip().lower()
 

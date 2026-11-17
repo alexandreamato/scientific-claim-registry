@@ -146,13 +146,17 @@
   bibliográfica. `ref_link()` colapsa qualquer filename a "Sobrenome ANO"; o dado é corrigido na fonte.
 - **R-CLM-10 [Adopted]** **Sistema de banimento de artigos** (curadoria humana, Layer 2 — `registry/curate.py`
   + `exclude.json`). Uma referência pode ser **banida** por categoria — `retracted | low_quality | off_topic |
-  predatory | superseded | duplicate` — o que a **remove do registro** (claim órfão é apagado, R-CLM-9 não se
+  predatory | superseded | duplicate | author_ban` — o que a **remove do registro** (claim órfão é apagado, R-CLM-9 não se
   aplica a *erro de ingestão* corrigido por curadoria) **e a impede de ser reingerida** (o loop lê
   `ingest.excluded_set()` e pula). **`curate.py check-retractions [--ban]`** varre todos os DOIs do registro no
   Crossref (campo `updated-by` type `retraction`) e detecta/auto-bane retratações. **Rodar é ROTINA, não
   opcional:** LaunchAgent semanal `org.scientificclaims.retractions` (domingo 04:30, `cron_retractions.sh`)
   varre → auto-bane retratados → rebuild+deploy se mudou → log em `retractions.log`. Banir por qualidade/escopo
-  é decisão humana; retratação é fato auto-detectável.
+  é decisão humana; retratação é fato auto-detectável. **`author_ban` (desde 2026-11-17):** a regra 2 da biblioteca
+  do autor (autoria banida nunca é citada, em nenhum contexto) vale no registro. O loop recusa todo candidato com a
+  marca `utilidade: proibida_nao_citar` da ficha ou cuja autoria case com `~/lipedema/tools/bib_cli/banidos.py`
+  (fonte única dos nomes e das exceções por DOI) — `ingest.banned_author`, aplicado em `gather`, `gather_contra`
+  e no filtro final do `loop.py`.
 - **R-CLM-11 [Adopted]** **Qualidade pesa: evidência forte OFUSCA a fraca.** Num claim com múltiplas fontes, a
   conclusão e a resposta compilada são **ponderadas pela qualidade** de cada fonte. Alta qualidade (revisão
   sistemática/metanálise, ECR, coorte prospectiva grande; GRADE high/moderate; baixo risco de viés) **supera e
@@ -610,6 +614,12 @@
 ---
 
 ## Changelog
+
+- **2026-11-17** — **R-CLM-10: categoria `author_ban`.** A busca semântica devolve as fichas de autoria banida
+  (a biblioteca as cataloga, marcadas) e nada no loop olhava a marca: **11 artigos** de autoria banida (13 claims)
+  estavam no registro público. Banidos com `author_ban`, claims removidos (526 → 515), as 10 perguntas afetadas
+  recompiladas, e o loop passou a recusar a autoria na entrada. Snapshots congelados de versões antigas ainda
+  contêm os nomes (pendente decisão do autor: imutabilidade × regra 2).
 
 - **2026-11-17** — **R-AI-7 / R-AI-12: oito semanas de varredura vazia, e a biblioteca que o loop não via
   (conserto de implementação + duas garantias).** (1) De 27/09 a 15/11 a chave OpenRouter não existia na máquina

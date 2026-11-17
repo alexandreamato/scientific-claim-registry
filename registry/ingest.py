@@ -233,7 +233,8 @@ def _ficha_candidate(f, stem):
             "title": f.get("titulo") or stem, "pubYear": (int(yr) if str(yr).isdigit() else None),
             "abstractText": (abstract or f.get("resumo_oficial") or "")[:4000],
             "grau": f.get("grau_evidencia"), "tipo_estudo": f.get("tipo_estudo"),
-            "amato_authored": str(stem).lower().startswith("amato")}
+            "amato_authored": str(stem).lower().startswith("amato"),
+            "utilidade": f.get("utilidade"), "authors": f.get("autores")}
 
 def bib_search(question_text, n):
     """SEMANTIC retrieval over the local library: bib /semantic ranks by meaning (Ollama embeddings),
@@ -253,6 +254,43 @@ def bib_search(question_text, n):
             continue
         out.append(_ficha_candidate(f, stem))
     return out
+
+# Rule 2 of the author's library (~/lipedema/CLAUDE.md): banned AUTHORSHIP is never cited, in any context.
+# The library CATALOGS these works (utilidade: proibida_nao_citar) and keeps them searchable, so the semantic
+# pass returns them; until 2026-11-17 nothing here looked at the mark and 11 such papers entered the public
+# registry. The name patterns live in the library (tools/bib_cli/banidos.py, single source, with the
+# author's per-DOI exceptions); the local copy is only a fallback for a machine without the library.
+_BANIDOS = None
+_BANIDOS_FALLBACK = re.compile(r"viana\s+d\.?\s*p|pinto\s+da\s+costa\s+viana|\bviana\s+(et\s+al|&)|"
+                               r"\bkamamoto\b|\bfrederichi", re.I)
+
+def banned_author(a):
+    """Name of the banned author of candidate `a`, or None (library mark first, then authorship)."""
+    global _BANIDOS
+    if str(a.get("utilidade") or "") == "proibida_nao_citar":
+        return "library mark (proibida_nao_citar)"
+    authors = a.get("authors") or a.get("authorString") or a.get("autores") or ""
+    if isinstance(authors, (list, tuple)):
+        authors = ", ".join(str(x) for x in authors)
+    if not authors:
+        return None
+    if _BANIDOS is None:
+        try:
+            tools = os.path.join(BIB_DIR, "tools")
+            if tools not in sys.path:
+                sys.path.insert(0, tools)
+            from bib_cli import banidos as _b
+            _BANIDOS = _b
+        except Exception:
+            _BANIDOS = False
+    if _BANIDOS:
+        hit = _BANIDOS.quem(authors, (a.get("doi") or "").lower())
+        # The library's pattern needs initials; a bare "<surname> et al." still counts.
+        if hit or not re.search(r"\bviana\s+(et\s+al|&)", authors, re.I):
+            return hit
+        return "banned author (et al. form)"
+    m = _BANIDOS_FALLBACK.search(authors)
+    return m.group(0) if m else None
 
 def excluded_set():
     """DOIs/PMIDs banned from ingestion (registry/exclude.json), managed via curate.py."""
@@ -281,7 +319,7 @@ def gather(q, sources, from_year, n):
     excl = excluded_set()
     seen, uniq = set(), []
     for a in out:
-        if (a.get("doi") or "").lower() in excl:
+        if (a.get("doi") or "").lower() in excl or banned_author(a):
             continue
         key = (a.get("doi") or "").lower() or a.get("pmid") or (a.get("title") or "")[:80].lower()
         if key and key not in seen:
@@ -324,7 +362,7 @@ def gather_contra(q, from_year, n):
     excl = excluded_set()
     seen, uniq = set(), []
     for a in out:
-        if (a.get("doi") or "").lower() in excl:
+        if (a.get("doi") or "").lower() in excl or banned_author(a):
             continue
         key = (a.get("doi") or "").lower() or a.get("pmid") or (a.get("title") or "")[:80].lower()
         if key and key not in seen:

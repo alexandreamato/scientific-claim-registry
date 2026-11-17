@@ -372,7 +372,7 @@ def main():
             elif r.upper().startswith("PMID:"): pmids.add(r[5:])
     excl = ingest.excluded_set()
     new = [a for a in arts if ((a.get("doi") or "").lower() not in dois) and ((a.get("pmid") or "") not in pmids)
-           and ((a.get("doi") or "").lower() not in excl)]
+           and ((a.get("doi") or "").lower() not in excl) and not ingest.banned_author(a)]
     print(f"  {len(arts)} candidates · {len(new)} not yet indexed\n")
 
     # CROSS-QUESTION dedup index (R-OBJ-7): DOI -> claim ids anywhere in the registry, so a paper already

@@ -6,6 +6,72 @@
       "reason": "scoping review sobre endometriose/comorbidade ginecológica — fora do escopo de prevalência; baixa relevância",
       "date": "2026-05-31",
       "category": "off_topic"
+    },
+    {
+      "ref": "10.3390/ijms26157074",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.20944/preprints202506.1813.v1",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.3390/ijms262110741",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.20944/preprints202512.2108.v1",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.9734/jammr/2025/v37i25731",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.1007/s10103-025-04693-4",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.3390/ijms27052319",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.3389/fcell.2026.1903835",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.3390/biomedicines14071510",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.7759/cureus.116856",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
+    },
+    {
+      "ref": "10.1016/j.metop.2026.100518",
+      "category": "author_ban",
+      "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
+      "date": "2026-11-17"
     }
   ]
 }
