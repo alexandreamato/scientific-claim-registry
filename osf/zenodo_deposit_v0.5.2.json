@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Versioned Memory of How Scientific Answers Evolve — Framework v0.5.2: Corrective Release",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p><strong>Corrective release. Use v0.5.2 instead of v0.5.1 (10.5281/zenodo.24325390) or v0.5 (10.5281/zenodo.24324283).</strong></p><p>In v0.5.1, the first-mention timeline anchor of one question (SQ-LIP-000004) still pointed to a reference that the curator&rsquo;s rules exclude from citation (author_ban, R-CLM-10). v0.5.2 removes it, and the tool that sets these anchors now skips excluded references. The rulebook records the cleanup of the project&rsquo;s public repository history.</p><p><strong>Dataset (otherwise identical to v0.5.1):</strong> 42 versioned questions, 514 evidence claims, 612 evidence records (601 verified, 4 disputed, 7 unverified), 876 question&ndash;claim links, 371 distinct DOIs. For the substance of this release line (registry kept current by its own Layer 1 surveillance loop; full-text risk-of-bias appraisal, R-CLM-18) see v0.5 and v0.5.1. It registers; it does not arbitrate.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "scientific questions",
+      "versioned memory",
+      "living evidence",
+      "evidence registry",
+      "claim verification",
+      "AI verification",
+      "sentence-level provenance",
+      "quote grounding",
+      "adversarial verification",
+      "persistent identifiers",
+      "knowledge freshness",
+      "evidence decay",
+      "claim-centric science",
+      "registers not arbitrates",
+      "GRADE",
+      "machine-readable",
+      "biomedical informatics",
+      "lipedema",
+      "nanopublications",
+      "living evidence surveillance",
+      "unattended operation"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.5.2",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "relation": "isPartOf",
+        "identifier": "https://osf.io/n97ez/",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isSupplementedBy",
+        "identifier": "https://scientificclaims.org",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isNewVersionOf",
+        "identifier": "10.5281/zenodo.24325390",
+        "resource_type": "publication"
+      }
+    ]
+  }
+}

@@ -43,7 +43,8 @@ contrato de claim, versionamento, freshness, machine-first, neutralidade) cercad
 
 - **SCR Protocol v1:** 10.5281/zenodo.20517114
 - **Concept DOI** (sempre a última versão): 10.5281/zenodo.20466195
-- **v0.5.1 (ATUAL)** (correção da v0.5: curadoria por autoria `author_ban`, risco de viés por leitura do texto integral R-CLM-18; 42 perguntas/514 claims): 10.5281/zenodo.24325390
+- **v0.5.2 (ATUAL)** (correção da v0.5.1: retira o último resíduo de autoria banida, no `first_mention` da SQ-LIP-000004; mesmos 514 claims): 10.5281/zenodo.24325901
+- **v0.5.1** (substituída pela v0.5.2) (correção da v0.5: curadoria por autoria `author_ban`, risco de viés por leitura do texto integral R-CLM-18; 42 perguntas/514 claims): 10.5281/zenodo.24325390
 - **v0.5** (substituída pela v0.5.1 no mesmo dia; não usar) (vigilância da Layer 1 sem supervisão, em escala de biblioteca; 42 perguntas/526 claims, 614/626 verificadas; modos de falha documentados): 10.5281/zenodo.24324283
 - **v0.4** (verificação adversarial por dois modelos + proveniência ao nível da frase; piloto auditado: 42 perguntas/347 claims, 416/423 verificadas): 10.5281/zenodo.20665788
 - **v0.3** (framework + dataset do piloto): 10.5281/zenodo.20476673 · **v0.2:** 10.5281/zenodo.20466196

@@ -64,3 +64,6 @@ site/pt/claims.html
 site/pt/questions.html
 site/pt/q/
 site/pt/c/
+
+# Zenodo bundles are build artifacts (they live on Zenodo)
+osf/*.zip
