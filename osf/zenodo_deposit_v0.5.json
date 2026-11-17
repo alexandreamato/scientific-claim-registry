@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Versioned Memory of How Scientific Answers Evolve — Framework v0.5: Unattended Layer 1 Surveillance at Library Scale, with Documented Failure Modes",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p><strong>Positioning:</strong> <em>PubMed stores scientific papers. ScientificClaims.org stores the evolving answers to scientific questions.</em> The Scientific Claim Registry (SCR) is infrastructure for the <strong>memory</strong> of science &mdash; not its truth, consensus, or recommendations. It <strong>registers, it does not arbitrate</strong>.</p><p><strong>What v0.5 adds over v0.4:</strong> v0.4 made every evidence link independently verified. v0.5 is the first version in which the registry has been <strong>kept current by its own Layer 1 surveillance loop</strong> (retrieve &rarr; classify &rarr; dual-model verify &rarr; promote/corroborate &rarr; recompile &rarr; version), and it reports what that took, including where it failed.</p><p><strong>Growth through the loop, not manual curation.</strong> From v0.4 to v0.5 the lipedema pilot grew from 347 to <strong>526 evidence claims</strong> and from 423 to <strong>626 evidence records</strong> (895 question&ndash;claim links, 383 distinct DOIs) under the same 42 versioned questions. Sources: (1) an unattended weekly rotating contradiction sweep (R-AI-12), June&ndash;September 2026, pairing each topical retrieval with a null/negative/opposing-evidence pass; (2) a library-scale backfill re-running all 42 questions against the author&rsquo;s curated lipedema library (4,563 structured records) plus Europe PMC. Verification across the registry: <strong>614 verified, 5 disputed (kept and flagged), 7 unverified</strong>; 19 records contradict the claim they sit under. Each changed answer received a new immutable version with a &ldquo;what changed&rdquo; note.</p><p><strong>Operational honesty.</strong> Unattended operation exposed failures a demo never shows, documented with the guarantees added: (a) eight silent weeks in which a missing LLM credential made every run fail while the rotation still advanced and logged the questions as swept &mdash; the rotation now advances only on successful runs, and a missing credential is a loud warning; (b) silently degraded semantic retrieval, now with keyword fallback and a self-started library service; (c) a malformed model response that discarded a whole run (atomic writes kept the registry intact), now parsed leniently on retry. A memory system that hides its own gaps contradicts its premise.</p><p><strong>Object model (unchanged).</strong> The <em>scientific question</em> (e.g. SQ-LIP-000007) is the primary navigable object. Underneath it, <em>claims</em> (SCR-LIP-000001) are structured, versioned units of evidence with an explicit role (supporting / contradicting / refines / context), PECO context, a GRADE rating, dated provenance, a change log, sentence-level provenance and an independent verification verdict.</p><p><strong>Prior-art honesty:</strong> SCR does not invent the claim primitive or persistent claim identity &mdash; nanopublications/Trusty URIs, micropublications, Wikidata, CIViC, ClinGen, Epistemonikos/PICO, SciFact, GRADE and MAGICapp already exist. The v0.5 contribution is evidence that a question-centric, verified, versioned registry can be maintained by its own loop, with the failure modes of unattended operation documented and guarded. Operated by the BIO (Biological Intelligence Observatory) research method.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "scientific questions",
+      "versioned memory",
+      "living evidence",
+      "evidence registry",
+      "claim verification",
+      "AI verification",
+      "sentence-level provenance",
+      "quote grounding",
+      "adversarial verification",
+      "persistent identifiers",
+      "knowledge freshness",
+      "evidence decay",
+      "claim-centric science",
+      "registers not arbitrates",
+      "GRADE",
+      "machine-readable",
+      "biomedical informatics",
+      "lipedema",
+      "nanopublications",
+      "living evidence surveillance",
+      "unattended operation"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.5",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "relation": "isPartOf",
+        "identifier": "https://osf.io/n97ez/",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isSupplementedBy",
+        "identifier": "https://scientificclaims.org",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isNewVersionOf",
+        "identifier": "10.5281/zenodo.20665788",
+        "resource_type": "publication"
+      }
+    ]
+  }
+}

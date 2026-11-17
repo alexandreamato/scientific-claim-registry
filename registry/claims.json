@@ -40493,8 +40493,8 @@
     },
     {
       "id": "SCR-LIP-000570",
-      "statement": "This narrative review notes that lipedema is commonly comorbid with anxiety and depression and causes chronic pain through multifactorial mechanisms, but it does not report direct quality-of-life measurements or effect sizes.",
-      "statement_pt": "Esta revisão narrativa observa que o lipedema é comumente comórbido com ansiedade e depressão e causa dor crônica por mecanismos multifatoriais, mas não relata medições diretas de qualidade de vida ou tamanhos de efeito.",
+      "statement": "This review states that lipedema often coexists with psychological distress, which significantly detracts from the quality of life of affected individuals, and that psychological support is vital in addressing the emotional challenges of the condition.",
+      "statement_pt": "Esta revisão afirma que o lipedema frequentemente coexiste com sofrimento psicológico, que reduz significativamente a qualidade de vida das pessoas afetadas, e que o apoio psicológico é vital para lidar com os desafios emocionais da condição.",
       "claim_type": "clinical_association",
       "context": {
         "population": "women with lipedema (Brazilian context)",
@@ -40517,10 +40517,10 @@
           "grade": "very_low",
           "year": 2026,
           "amato_authored": false,
-          "quote": "commonly comorbid with hypertension, anemia, anxiety, and depression",
-          "extraction_confidence": "moderate",
+          "quote": "The condition often coexists with psychological distress, which significantly detracts from the quality of life of affected individuals.",
+          "extraction_confidence": "high",
           "note": "The review mentions anxiety/depression comorbidity and pain, which relate to quality of life, but it is a narrative synthesis that does not itself measure HRQoL, so it provides on-topic background rather than a direct test of the relationsh",
-          "verification": {
+          "prior_verification": {
             "method": "dual-model",
             "verifier_model": "anthropic/claude-sonnet-4-6",
             "primary_model": "anthropic/claude-opus-4.8",
@@ -40532,7 +40532,18 @@
             "reason": "The article abstract explicitly states '42% of patients with anxiety or depression' and 'markedly reduced quality of life vs age-matched controls,' which are direct quality-of-life measurements/effect sizes. The statement claims the article",
             "date": "2026-11-17"
           },
-          "needs_review": true
+          "verification": {
+            "method": "dual-model",
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The abstract explicitly states that lipedema 'often coexists with psychological distress, which significantly detracts from the quality of life of affected individuals' and that 'psychological support is vital in addressing the emotional ch",
+            "date": "2026-11-17"
+          }
         }
       ],
       "relations": [],
@@ -40553,9 +40564,21 @@
           "date": "2026-11-17",
           "event": "created",
           "detail": "auto-ingested for SQ-LIP-000041"
+        },
+        {
+          "date": "2026-11-17",
+          "event": "statement revised",
+          "detail": "R-AI-14 fidelity review: the statement said the review did not report quality-of-life data, but it does. Re-anchored to the abstract's own wording (the 42%/74% figures are in the full text, not in the abstract the verifier reads); quote replaced by the abstract's verbatim sentence."
         }
       ],
-      "license": "CC-BY-4.0"
+      "license": "CC-BY-4.0",
+      "statement_integrity": {
+        "fabricated": false,
+        "invented": [],
+        "reason": "Every concrete specific in the claim statement — lipedema coexisting with psychological distress, significantly detracting from quality of life, and psychological support being vital in addressing emotional challenges — is directly present ",
+        "verifier_model": "anthropic/claude-sonnet-4-6",
+        "date": "2026-11-17"
+      }
     },
     {
       "id": "SCR-LIP-000571",

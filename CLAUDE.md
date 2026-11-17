@@ -133,7 +133,10 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
   https://zenodo.org/record/20517114 (spec autônoma disease-agnostic = `docs/spec/PROTOCOL.md`; PDF+MD;
   `isPartOf` o concept DOI; publicado 2026-06-02). Ver R-PROTO-2.
 - **Concept DOI** (sempre a última versão): **10.5281/zenodo.20466195**
-- **Version DOI (v0.4, ATUAL):** **10.5281/zenodo.20665788** · Registro: https://zenodo.org/records/20665788
+- **Version DOI (v0.5, ATUAL):** **10.5281/zenodo.24324283** · Registro: https://zenodo.org/records/24324283
+  (registro mantido pelo próprio loop: backfill das 42 perguntas contra a biblioteca `~/lipedema` + varredura semanal;
+  526 claims/626 evidências, 614 verificadas; changelog documenta as 8 semanas de varredura vazia e as garantias; publicado 2026-11-17)
+- **Version DOI** (v0.4): **10.5281/zenodo.20665788** · Registro: https://zenodo.org/records/20665788
   (camada de verificação adversarial por dois modelos + proveniência ao nível da frase, R-AI-13/14; auditoria
   completa do piloto: 42 perguntas/347 claims, 416/423 evidências verificadas, 13 fabricações corrigidas; publicado 2026-06-12)
 - **Version DOI** (v0.3): **10.5281/zenodo.20476673** · Registro: https://zenodo.org/records/20476673
@@ -171,7 +174,14 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
 > registra-não-arbitra, machine-first). A versão inicial falava em "consenso vivo"/Delphi como
 > núcleo — isso virou a **Layer 2 opcional**.
 
-## Estado atual (2026-06-12)
+## Estado atual (2026-11-17)
+
+**v0.5 publicada (`10.5281/zenodo.24324283`).** Backfill das 42 perguntas contra a biblioteca (agora em `~/lipedema`,
+4.563 fichas): 391 → 526 claims, 470 → 626 evidências. Cron semanal consertado (não avança sem rodar; sobe o `bib serve`;
+purge com `~/.config/cloudflare/purge.env`); deploy com `--chmod=D755,F644` (permissões do Dropbox davam 403 no site).
+Chaves locais: `~/.config/scr_openrouter_token`, `~/.config/scr_zenodo_token`. Ver Changelog de 2026-11-17 no RULES.
+
+### Estado anterior (2026-06-12)
 
 **🛡️ CAMADA DE VERIFICAÇÃO (R-AI-13/14, R-CLM-17) — COMPLETA E PUBLICADA (Zenodo v0.4, `10.5281/zenodo.20665788`).**
 Toda evidência carrega **proveniência ao nível da frase** (quote verbatim com grounding determinístico) + **verificação

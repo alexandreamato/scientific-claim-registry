@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Deposit SCR v0.4 to Zenodo as a NEW VERSION of the concept DOI. Token via env ZENODO_TOKEN.
+"""Deposit SCR v0.5 to Zenodo as a NEW VERSION of the concept DOI. Token via env ZENODO_TOKEN.
 
-  prepare : newversion draft → clear inherited files → upload v0.4 bundle+changelog → set metadata (REVERSIBLE)
+  prepare : newversion draft → clear inherited files → upload v0.5 bundle+changelog → set metadata (REVERSIBLE)
   status  : show the current draft (reserved DOI, files, metadata title/version)
   publish : POST actions/publish — IRREVERSIBLE, mints the version DOI
 
@@ -11,11 +11,11 @@ import os, sys, json, urllib.request, urllib.error
 
 TOKEN = os.environ.get("ZENODO_TOKEN")
 BASE = "https://zenodo.org/api"
-PREV_ID = "20476673"  # v0.3 record/deposition id (the latest published version)
+PREV_ID = "20665788"  # v0.4 record/deposition id (the latest published version)
 HERE = os.path.dirname(os.path.abspath(__file__))
-BUNDLE = os.path.join(HERE, "SCR-v0.4-bundle.zip")
-CHANGELOG = os.path.join(HERE, "deposit_v0.4", "CHANGELOG-v0.4.md")
-META = os.path.join(HERE, "zenodo_deposit_v0.4.json")
+BUNDLE = os.path.join(HERE, "SCR-v0.5-bundle.zip")
+CHANGELOG = os.path.join(HERE, "deposit_v0.5", "CHANGELOG-v0.5.md")
+META = os.path.join(HERE, "zenodo_deposit_v0.5.json")
 STATE = os.path.join(HERE, ".zenodo_draft.json")
 
 
@@ -49,7 +49,7 @@ def prepare():
     for f in draft.get("files", []):
         req("DELETE", f"{BASE}/deposit/depositions/{newid}/files/{f['id']}")
         print(f"  removed inherited file: {f.get('filename')}")
-    # upload v0.4 bundle + changelog
+    # upload v0.5 bundle + changelog
     for path in (BUNDLE, CHANGELOG):
         name = os.path.basename(path)
         st, _ = req("PUT", f"{bucket}/{name}", data=open(path, "rb").read(), raw=True)
@@ -65,7 +65,7 @@ def prepare():
 
 
 def upload():
-    """(Re)upload the v0.4 files to the EXISTING cached draft — does not create a new version."""
+    """(Re)upload the v0.5 files to the EXISTING cached draft — does not create a new version."""
     s = json.load(open(STATE))
     st, draft = req("GET", f"{BASE}/deposit/depositions/{s['id']}")
     if st != 200:
