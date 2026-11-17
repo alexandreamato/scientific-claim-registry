@@ -736,10 +736,10 @@
         "questionário",
         "IMC"
       ],
-      "current_answer": "Based on currently indexed evidence, lipedema is very likely underdiagnosed, with convergent support across multiple study designs, geographic settings, and evidence grades. Key findings: (1) ~81% of lipedema patients are classified overweight/obese by BMI alone, causing workup to stop prematurely; (2) only 71% of 115 patients at a specialized Saudi clinic received a clinical diagnosis; (3) low physician awareness (only 46.2% of 251 UK vascular surgeons recognized lipedema), with the condition historically absent from MeSH/EMBASE and ICD-WHO coding as of 2012; (4) Dutch guidelines explicitly state lipedema is frequently misdiagnosed or wrongly classified as an aesthetic problem; (5) a systematic review of 61 studies confirms reliance on observational data with absent standardized diagnostic criteria and validated patient-reported outcomes; and (6) multiple narrative and systematic reviews across countries consistently characterize lipedema as underrecognized, frequently misdiagnosed as obesity or lymphedema (estimated prevalence ~10–17% in adult women, several sources cautioning this figure may be inflated by uncertain diagnosis). Misdiagnosis is especially acute in filariasis-endemic settings, where two Indian cases were initially mistaken for filarial lymphedema or obesity before clinical criteria and normal lymphoscintigraphy redirected the diagnosis. Substantial diagnostic delay is documented: a Spanish cohort showed a mean delay of 26.1 years (onset ~20, diagnosis ~46.5), and a prospective cohort found median time-to-diagnosis of 25.5 years for lipedema versus 12.1 years for lymphedema. Diagnosis is further hindered when multiple specialist consultations are required (51.2% needed ≥3 specialists in one Spanish survey).\n\nRegarding screening tools, evidence supports their potential utility while highlighting important limitations, and tools must be judged BY what they detect: most aim to RAISE CLINICAL SUSPICION or support DIFFERENTIAL DIAGNOSIS (lipedema vs obesity/lymphedema), NOT to confirm disease or alter its course. Symptom/questionnaire approaches: a simplified 9-item self-applied questionnaire derived from QuASiL achieved AUC 0.912 (7-question model) and 0.8615 (total-score) against expert diagnosis in 109 women; the Brazilian Portuguese QuASiL showed 96.4% comprehension with symptom intensity correlating with limb volume; a validated online questionnaire (cutoff ≥12, AUC 0.86, specificity 0.88 but LOW sensitivity 0.46) estimated 12.3% prevalence among Brazilian women; a Spanish study proposed ≥6 of 13 symptoms as a threshold; and large Spanish cohorts propose multi-criterion frameworks (Schingale classification, modified Wolf/Herbst scales). A prospective cohort CART algorithm using three clinical variables (bruising, body disproportion, spared feet) separated lipedema from lymphedema with 100% in-sample accuracy (not externally validated). Several reviews converge on a reproducible clinical core: bilateral symmetric hip-to-ankle fat sparing the feet, negative Stemmer sign, absence of pitting, pain, pressure sensitivity, and easy bruising. Objective/measurement tools under investigation include DXA leg/total fat mass index (AUC 0.90; leg-fat/total-fat ratio ≥0.384 proposed as an auxiliary cutoff), quantitative sensory testing (combined PPT+VDT z-score, AUCs ~0.86–0.91), bioimpedance spectroscopy, high-frequency ultrasound subcutaneous-thickness cutoffs (e.g., pretibial ≥11.7 mm, thigh ≥11.9 mm, lateral leg ≥8.4 mm; sensitivity 0.77–0.79, specificity up to 0.96, not externally validated), a proposed clinical-ultrasonographic algorithm for under-recognized abdominal lipedema, non-contrast CT (95% sensitivity, 100% specificity in one review), ICG lymphography/lymphoscintigraphy, MR lymphangiography, and IL-6 genotyping with body-composition indices. Lymphoscintigraphy appears useful chiefly to EXCLUDE lymphedema: a systematic review (7 studies, 311 lipedema patients) found it normal in 61.4%, with lymphatic 'overload' signs (tortuous/collateral vessels) rather than frank insufficiency and rare dermal backflow (3.8%). However, a moderate-quality systematic review of 20 studies found 13 different imaging/measurement tools with inconsistent protocols and limited clinimetric reporting, and other systematic reviews found limited diagnostic performance and absence of prospective comparative data. No single screening or imaging tool has been validated in large independent prospective cohorts; diagnosis still relies on clinical grounds due to the absence of specific biomarkers, and systematic screening is not yet standard practice.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, o lipedema é muito provavelmente subdiagnosticado, com apoio convergente em múltiplos desenhos de estudo, contextos geográficos e níveis de evidência. Principais achados: (1) ~81% das pacientes com lipedema são classificadas como sobrepeso/obesidade apenas pelo IMC, fazendo com que a investigação pare prematuramente; (2) apenas 71% de 115 pacientes em uma clínica especializada na Arábia Saudita receberam diagnóstico clínico; (3) baixa conscientização médica (apenas 46,2% de 251 cirurgiões vasculares do Reino Unido reconheceram o lipedema), com a condição historicamente ausente do MeSH/EMBASE e da codificação CID-OMS até 2012; (4) diretrizes holandesas afirmam explicitamente que o lipedema é frequentemente mal diagnosticado ou erroneamente classificado como problema estético; (5) uma revisão sistemática de 61 estudos confirma a dependência de dados observacionais com ausência de critérios diagnósticos padronizados e desfechos validados relatados por pacientes; e (6) múltiplas revisões narrativas e sistemáticas em vários países caracterizam consistentemente o lipedema como subreconhecido, frequentemente confundido com obesidade ou linfedema (prevalência estimada ~10–17% em mulheres adultas, com várias fontes alertando que esse número pode estar inflado por diagnóstico incerto). O erro diagnóstico é especialmente grave em regiões endêmicas de filariose, onde dois casos indianos foram inicialmente confundidos com linfedema filarial ou obesidade antes que critérios clínicos e linfocintilografia normal redirecionassem o diagnóstico. Há atraso diagnóstico substancial documentado: uma coorte espanhola mostrou atraso médio de 26,1 anos (início ~20, diagnóstico ~46,5), e uma coorte prospectiva encontrou tempo mediano até o diagnóstico de 25,5 anos para lipedema versus 12,1 anos para linfedema. O diagnóstico é ainda mais dificultado quando são necessárias múltiplas consultas com especialistas (51,2% precisaram de ≥3 especialistas em um levantamento espanhol).\n\nQuanto às ferramentas de rastreio, as evidências apoiam sua potencial utilidade ao mesmo tempo em que destacam limitações importantes, e as ferramentas devem ser julgadas PELO QUE detectam: a maioria visa AUMENTAR A SUSPEITA CLÍNICA ou apoiar o DIAGNÓSTICO DIFERENCIAL (lipedema vs obesidade/linfedema), NÃO confirmar a doença nem alterar seu curso. Abordagens por questionário de sintomas: um questionário autoaplicável simplificado de 9 itens derivado do QuASiL alcançou AUC 0,912 (modelo de 7 perguntas) e 0,8615 (escore total) contra diagnóstico de especialista em 109 mulheres; o QuASiL em português brasileiro mostrou 96,4% de compreensão com intensidade dos sintomas correlacionada ao volume do membro; um questionário online validado (corte ≥12, AUC 0,86, especificidade 0,88 mas BAIXA sensibilidade 0,46) estimou prevalência de 12,3% entre mulheres brasileiras; um estudo espanhol propôs ≥6 de 13 sintomas como limiar; e grandes coortes espanholas propõem estruturas multicritério (classificação de Schingale, escalas modificadas de Wolf/Herbst). Um algoritmo CART de coorte prospectiva usando três variáveis clínicas (hematomas, desproporção corporal, pés poupados) separou lipedema de linfedema com 100% de acurácia na amostra (não validado externamente). Várias revisões convergem em um núcleo clínico reprodutível: gordura simétrica bilateral do quadril ao tornozelo poupando os pés, sinal de Stemmer negativo, ausência de cacifo, dor, sensibilidade à pressão e hematomas fáceis. Ferramentas objetivas/de medição em investigação incluem índice de massa gorda de pernas/total por DXA (AUC 0,90; razão gordura das pernas/gordura total ≥0,384 proposta como corte auxiliar), teste sensorial quantitativo (escore z combinado PPT+VDT, AUCs ~0,86–0,91), espectroscopia por bioimpedância, cortes de espessura subcutânea por ultrassom de alta frequência (ex.: pré-tibial ≥11,7 mm, coxa ≥11,9 mm, perna lateral ≥8,4 mm; sensibilidade 0,77–0,79, especificidade até 0,96, não validados externamente), um algoritmo clínico-ultrassonográfico proposto para lipedema abdominal subreconhecido, TC sem contraste (95% de sensibilidade, 100% de especificidade em uma revisão), linfografia ICG/linfocintilografia, linfangiografia por RM e genotipagem de IL-6 com índices de composição corporal. A linfocintilografia parece útil principalmente para EXCLUIR linfedema: uma revisão sistemática (7 estudos, 311 pacientes com lipedema) encontrou-a normal em 61,4%, com sinais de 'sobrecarga' linfática (vasos tortuosos/colaterais) em vez de insuficiência franca e refluxo dérmico raro (3,8%). No entanto, uma revisão sistemática de qualidade moderada de 20 estudos encontrou 13 ferramentas diferentes de imagem/medição com protocolos inconsistentes e relato clinimétrico limitado, e outras revisões sistemáticas encontraram desempenho diagnóstico limitado e ausência de dados comparativos prospectivos. Nenhuma ferramenta isolada de rastreio ou imagem foi validada em grandes coortes prospectivas independentes; o diagnóstico ainda se baseia em critérios clínicos devido à ausência de biomarcadores específicos, e o rastreio sistemático ainda não é prática padrão.",
-      "major_uncertainty": "No screening or imaging tool has been validated in large, independent, prospective cohorts; reported accuracies (e.g., questionnaire AUCs ~0.86–0.91, ultrasound/DXA cutoffs, 100% CART in-sample accuracy) derive from small or single-center studies with heterogeneous protocols and limited clinimetric reporting, and true population prevalence remains uncertain because estimates (10–17%) may themselves be inflated by diagnostic imprecision.",
-      "major_uncertainty_pt": "Nenhuma ferramenta de rastreio ou imagem foi validada em grandes coortes prospectivas independentes; as acurácias relatadas (ex.: AUCs de questionário ~0,86–0,91, cortes de ultrassom/DXA, 100% de acurácia na amostra do CART) derivam de estudos pequenos ou de centro único com protocolos heterogêneos e relato clinimétrico limitado, e a verdadeira prevalência populacional permanece incerta porque as estimativas (10–17%) podem estar infladas pela imprecisão diagnóstica.",
+      "current_answer": "Based on currently indexed evidence, the proposition has two parts. (1) UNDERDIAGNOSIS — consistently supported. A broad and convergent body of evidence (narrative and systematic reviews, cross-sectional surveys, and cohorts) describes lipedema as frequently unrecognized, misdiagnosed, or conflated with obesity and lymphedema. Objective markers of this delay include a mean diagnostic delay of ~26 years (symptom onset ~20 yr vs diagnosis ~46 yr) in two independent cohorts (SCR-LIP-000283, SCR-LIP-000288, moderate GRADE), low clinician recognition (only 46.2% of vascular consultants recognized it; SCR-LIP-000285), and the need for multiple specialist consultations before diagnosis (51.2% needed ≥3 specialists; SCR-LIP-000364). BMI-centred workup contributes, since ~81% of lipedema patients are classified overweight/obese by BMI alone (SCR-LIP-000007). Estimated female prevalence (~10–17%) reinforces that many cases go unlabelled, though these figures are themselves affected by diagnostic uncertainty (SCR-LIP-000069, SCR-LIP-000282, SCR-LIP-000458). (2) CAN SCREENING TOOLS HELP — supported but at emerging/low-to-moderate certainty, with no externally validated instrument endorsed for routine practice. Several approaches report good discrimination against expert clinical diagnosis: a simplified 9-item self-applied questionnaire derived from QuASiL (AUC 0.86–0.91; SCR-LIP-000188), the validated QuASiL itself (SCR-LIP-000009), and a 3-variable CART rule separating lipedema from lymphedema with reported 100% accuracy in one cohort (SCR-LIP-000288, moderate GRADE). Applied at population scale, a validated questionnaire estimated 12.3% prevalence but with modest sensitivity (0.46) despite high specificity (0.88) — i.e., it misses many true cases (SCR-LIP-000275). Objective/imaging adjuncts (DXA leg-fat/total-fat ratio AUC ~0.90; high-frequency ultrasound thickness cutoffs; bioimpedance spectroscopy; ICG/lymphoscintigraphy; non-contrast CT/MR-lymphangiography) show discriminative signals but come from small, heterogeneous cohorts with inconsistent protocols and limited clinimetric reporting, so systematic reviews decline to recommend any single tool (SCR-LIP-000199, SCR-LIP-000455, SCR-LIP-000191, SCR-LIP-000198, SCR-LIP-000285, SCR-LIP-000067, SCR-LIP-000359). OUTCOME-WISE: screening tools demonstrate the ability to flag/identify suspected cases (diagnostic discrimination) and to document underdiagnosis; they have NOT been shown to improve downstream outcomes such as earlier treatment, disease course, or patient-relevant endpoints — that remains not demonstrated. Several supporting items are lower-tier (reviews, editorials, letters, case reports) and one review (SCR-LIP-000284 second ref, SCR-LIP-000456 second ref) is flagged 'disputed' and treated as provisional.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a proposição tem duas partes. (1) SUBDIAGNÓSTICO — consistentemente apoiado. Um corpo amplo e convergente de evidências (revisões narrativas e sistemáticas, estudos transversais e coortes) descreve o lipedema como frequentemente não reconhecido, mal diagnosticado ou confundido com obesidade e linfedema. Marcadores objetivos desse atraso incluem atraso diagnóstico médio de ~26 anos (início dos sintomas ~20 anos vs diagnóstico ~46 anos) em duas coortes independentes (SCR-LIP-000283, SCR-LIP-000288, GRADE moderado), baixo reconhecimento pelos médicos (apenas 46,2% dos consultores vasculares o reconheceram; SCR-LIP-000285) e a necessidade de múltiplas consultas especializadas antes do diagnóstico (51,2% precisaram de ≥3 especialistas; SCR-LIP-000364). A investigação centrada no IMC contribui, já que ~81% dos pacientes com lipedema são classificados como sobrepeso/obesidade apenas pelo IMC (SCR-LIP-000007). A prevalência estimada em mulheres (~10–17%) reforça que muitos casos não são rotulados, embora esses números sejam afetados pela própria incerteza diagnóstica (SCR-LIP-000069, SCR-LIP-000282, SCR-LIP-000458). (2) FERRAMENTAS DE RASTREIO PODEM AJUDAR — apoiado, mas com certeza emergente/baixa a moderada, sem instrumento validado externamente recomendado para prática de rotina. Várias abordagens relatam boa discriminação frente ao diagnóstico clínico de especialista: um questionário simplificado autoaplicado de 9 itens derivado do QuASiL (AUC 0,86–0,91; SCR-LIP-000188), o próprio QuASiL validado (SCR-LIP-000009) e uma regra CART de 3 variáveis separando lipedema de linfedema com 100% de acurácia relatada em uma coorte (SCR-LIP-000288, GRADE moderado). Aplicado em escala populacional, um questionário validado estimou prevalência de 12,3%, mas com sensibilidade modesta (0,46) apesar de alta especificidade (0,88) — ou seja, perde muitos casos verdadeiros (SCR-LIP-000275). Adjuntos objetivos/de imagem (razão gordura da perna/gordura total por DXA AUC ~0,90; pontos de corte de espessura por ultrassom de alta frequência; espectroscopia de bioimpedância; ICG/linfocintilografia; TC/RM-linfangiografia sem contraste) mostram sinais discriminativos, mas provêm de coortes pequenas e heterogêneas com protocolos inconsistentes e relato clinimétrico limitado, de modo que revisões sistemáticas não recomendam nenhuma ferramenta isolada (SCR-LIP-000199, SCR-LIP-000455, SCR-LIP-000191, SCR-LIP-000198, SCR-LIP-000285, SCR-LIP-000067, SCR-LIP-000359). POR DESFECHO: as ferramentas de rastreio demonstram capacidade de sinalizar/identificar casos suspeitos (discriminação diagnóstica) e de documentar o subdiagnóstico; não foi demonstrado que melhorem desfechos subsequentes como tratamento mais precoce, curso da doença ou desfechos relevantes para o paciente — isso permanece não demonstrado. Vários itens de apoio são de nível inferior (revisões, editoriais, cartas, relatos de caso) e uma revisão está sinalizada como 'disputed' e tratada como provisória.",
+      "major_uncertainty": "No screening instrument has been externally validated across populations, cutoffs and tools vary widely, reported sensitivities are often modest (e.g., 0.46), and there is no evidence that applying any screening tool improves clinical outcomes rather than merely detecting more cases.",
+      "major_uncertainty_pt": "Nenhum instrumento de rastreio foi validado externamente entre populações, os pontos de corte e ferramentas variam muito, as sensibilidades relatadas costumam ser modestas (ex.: 0,46) e não há evidência de que aplicar qualquer ferramenta de rastreio melhore desfechos clínicos em vez de apenas detectar mais casos.",
       "claims": [
         {
           "id": "SCR-LIP-000007",
@@ -866,9 +866,16 @@
           "role": "refines"
         }
       ],
-      "version": "1.8",
+      "version": "1.9",
       "updated": "2026-11-17",
       "history": [
+        {
+          "version": "1.9",
+          "date": "2026-11-17",
+          "change": "Answer recompiled after human curation of the claim set.",
+          "change_pt": "Resposta recompilada após curadoria humana dos claims.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.8",
           "date": "2026-11-17",
@@ -949,57 +956,39 @@
       },
       "outcomes": [
         {
-          "outcome": "Underdiagnosis / misdiagnosis",
-          "outcome_pt": "Subdiagnóstico / erro diagnóstico",
+          "outcome": "Underdiagnosis / diagnostic delay documented",
+          "outcome_pt": "Subdiagnóstico / atraso diagnóstico documentado",
           "direction": "increased",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Convergent evidence: low awareness, BMI masking, ~25-yr diagnostic delay, frequent confusion with obesity/lymphedema.",
-          "note_pt": "Evidência convergente: baixa conscientização, mascaramento pelo IMC, atraso de ~25 anos, confusão frequente com obesidade/linfedema."
+          "note": "Convergent reviews/cohorts show frequent misdiagnosis; mean delay ~26 yr; low clinician recognition.",
+          "note_pt": "Revisões/coortes convergentes mostram diagnóstico equivocado frequente; atraso médio ~26 anos; baixo reconhecimento médico."
         },
         {
-          "outcome": "Questionnaire screening (suspicion/differential)",
-          "outcome_pt": "Rastreio por questionário (suspeita/diferencial)",
+          "outcome": "Screening-tool discrimination (identify suspected cases)",
+          "outcome_pt": "Discriminação da ferramenta de rastreio (identificar casos suspeitos)",
           "direction": "improved",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "QuASiL-derived tools AUC 0.86-0.91 vs expert dx; low sensitivity (0.46) in one online tool; not externally validated.",
-          "note_pt": "Ferramentas derivadas do QuASiL AUC 0,86-0,91 vs dx especialista; baixa sensibilidade (0,46) em uma online; sem validação externa."
+          "note": "Questionnaires AUC 0.86-0.91, CART 100% in one cohort, DXA AUC 0.90; but modest sensitivity, not externally validated.",
+          "note_pt": "Questionários AUC 0,86-0,91, CART 100% em uma coorte, DXA AUC 0,90; mas sensibilidade modesta, sem validação externa."
         },
         {
-          "outcome": "Imaging/measurement tools (US, DXA, QST, BIS, CT, lymphography)",
-          "outcome_pt": "Ferramentas de imagem/medição (US, DXA, QST, BIS, TC, linfografia)",
-          "direction": "mixed",
-          "confidence": "low",
+          "outcome": "Improved clinical outcomes from screening (earlier treatment, disease course)",
+          "outcome_pt": "Melhora de desfechos clínicos pelo rastreio (tratamento precoce, curso da doença)",
+          "direction": "not_demonstrated",
+          "confidence": "very_low",
           "disease_modifying": false,
-          "note": "Promising cutoffs (DXA AUC 0.90, US spec up to 0.96) but 13 tools, inconsistent protocols, no prospective validation.",
-          "note_pt": "Cortes promissores (DXA AUC 0,90, US espec. até 0,96) mas 13 ferramentas, protocolos inconsistentes, sem validação prospectiva."
-        },
-        {
-          "outcome": "Lymphoscintigraphy to exclude lymphedema",
-          "outcome_pt": "Linfocintilografia para excluir linfedema",
-          "direction": "mixed",
-          "confidence": "moderate",
-          "disease_modifying": false,
-          "note": "Normal in 61.4% of lipedema; overload signs not frank insufficiency; useful to rule out lymphedema in doubtful cases.",
-          "note_pt": "Normal em 61,4% do lipedema; sinais de sobrecarga, não insuficiência franca; útil para excluir linfedema em casos duvidosos."
-        },
-        {
-          "outcome": "Clinical criteria (foot sparing, negative Stemmer, no pitting)",
-          "outcome_pt": "Critérios clínicos (poupar pés, Stemmer negativo, sem cacifo)",
-          "direction": "improved",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Reproducible clinical core across reviews; CART with 3 signs 100% in-sample vs lymphedema; sufficient in most cases.",
-          "note_pt": "Núcleo clínico reprodutível em revisões; CART com 3 sinais 100% na amostra vs linfedema; suficiente na maioria dos casos."
+          "note": "No study shows screening changes treatment timing or patient outcomes, only case detection.",
+          "note_pt": "Nenhum estudo mostra que o rastreio altere o momento do tratamento ou desfechos; apenas detecção de casos."
         }
       ],
       "related": [
         "SQ-LIP-000037",
         "SQ-LIP-000038"
       ],
-      "bottom_line": "Lipedema is very likely underdiagnosed and commonly mistaken for obesity or lymphedema, with diagnosis often delayed 25+ years; several questionnaires, clinical criteria, and imaging/measurement aids can help raise suspicion and separate it from look-alikes. No screening or imaging tool has been proven in large independent studies, so diagnosis still rests on clinical judgment and these tools only flag suspicion rather than confirm the disease or change its course.",
-      "bottom_line_pt": "O lipedema é muito provavelmente subdiagnosticado e comumente confundido com obesidade ou linfedema, com diagnóstico frequentemente atrasado em mais de 25 anos; vários questionários, critérios clínicos e recursos de imagem/medição podem ajudar a aumentar a suspeita e diferenciá-lo de condições semelhantes. Nenhuma ferramenta de rastreio ou imagem foi comprovada em grandes estudos independentes, de modo que o diagnóstico ainda depende do julgamento clínico e essas ferramentas apenas sinalizam suspeita, sem confirmar a doença ou alterar seu curso."
+      "bottom_line": "Strong and consistent evidence shows lipedema is often unrecognized and diagnosed only after many years, and several questionnaires and body-composition/imaging measures can help flag suspected cases against expert diagnosis. What is not established is a single validated screening tool ready for routine use, or proof that screening actually leads to earlier treatment or better patient outcomes.",
+      "bottom_line_pt": "Evidências fortes e consistentes mostram que o lipedema costuma não ser reconhecido e só é diagnosticado após muitos anos, e que vários questionários e medidas de composição corporal/imagem podem ajudar a sinalizar casos suspeitos frente ao diagnóstico de especialista. O que não está estabelecido é uma ferramenta de rastreio única e validada pronta para uso de rotina, nem a prova de que o rastreio realmente leva a tratamento mais precoce ou melhores desfechos para o paciente."
     },
     {
       "id": "SQ-LIP-000005",
@@ -2075,10 +2064,10 @@
         "macrófagos",
         "mecanismo da dor"
       ],
-      "current_answer": "Based on currently indexed evidence, the inflammation and pain mechanisms in lipedema tissue are multifactorial, stage-dependent, and involve immune-cellular, neurogenic, vascular, fibrotic, and metabolic components—though causal relationships remain unestablished. Almost all direct tissue evidence comes from small cross-sectional/observational studies, case reports, and narrative reviews; the single high-grade study (an RCT) speaks only against *systemic* inflammation as the pain mediator.\n\n**Immune-cellular and macrophage dynamics (best-supported tissue finding):** Multiple independent biopsy studies consistently report increased macrophage infiltration (CD68+) in lipedema adipose tissue versus BMI-matched controls. Several converge on M2 (anti-inflammatory) macrophage predominance: CyTOF+RNA-seq with in vitro functional confirmation (low-to-moderate grade) showed CD163+ enrichment (~2.58-fold, 1171 DEGs); an anatomically-matched biopsy study (moderate grade) showed roughly doubled CD45+ leukocytes (40.7 vs 20 cells/field) and increased CD68+ macrophages with CD163 raised 3.4x; another biopsy study found increased CD45+ (45.7 vs 28) and CD68+ (19.5 vs 12.3) without increased CD3+ T cells; histological studies report crown-like structures absent in controls (12.5–14% of cases). M2-conditioned media promotes adipogenesis. This M2-dominant signature is repeatedly contrasted with the M1-dominant response of obesity. The picture is NOT uniform: a stage-dependent shift toward M1-like polarization (with IL-6/TNF upregulation) is described at stage III; some narrative reviews emphasize M1 accumulation (TNF-α, IL-6, MCP-1, YKL-40); and one transcriptomic study (n=14) found suppressed inflammation (possibly comorbidity-related). An integrative review of 10 biopsy studies found inflammatory infiltrates and macrophage enrichment in 5/10 and adipocyte hypertrophy in 7/10, proposing TNF-α/IL-6 sensitize C and A-delta nociceptors. The MIF-1/CD74 axis (elevated in tissue independent of BMI) is implicated in macrophage recruitment.\n\n**Neurogenic and peripheral sensitization mechanisms:** Cross-sectional tissue studies (low grade) report elevated CGRP and NGF in stage 3 tissue with reduced dermal neuronal density (Tuj-1+) and stage-dependent von Frey hypersensitivity (painDETECT >19 only in stage 3), suggesting neurogenic inflammation and peripheral neuropathic pain in advanced disease. Transcriptomic analysis identified pain-transmission genes (SHTN1, SCN7A, SLC12A2). A case report adds perineurial/endoneurial macrophage infiltration. An exploratory cross-sectional study (n=118, low grade) found higher neuropathic pain prevalence in lipedema than lymphedema (42% vs 21%, higher painDETECT/LANSS), with pain intensity correlating with catastrophizing and anxiety. Narrative reviews propose estrogen-mediated peripheral nerve inflammation, altered sympathetic signaling, increased interstitial pressure compressing peripheral nerves, and mast-cell/substance-P nociceptor sensitization; however, one review explicitly notes that direct neural characterization (TRPV1 sensitization, CGRP fibers, mast cell-nerve interactions) remains incomplete and hypothetical.\n\n**Pressure hyperalgesia and tissue-property links:** QST/algometry studies (low grade) consistently identify lowered pressure pain threshold as a BMI-independent feature, with a distinctive QST signature (lowered PPT, raised vibration detection threshold, spared thermal thresholds; PVTH-score AUC 0.958). Shear-wave elastography (n=35, low grade) found subcutaneous tissue stiffness correlated with general pain (rho 0.35–0.36) and neuropathic pain (rho 0.38–0.47) in the thigh, independent of BMI/fat thickness.\n\n**Vascular and interstitial mechanisms:** Histological/EM studies report microangiopathy, endothelial barrier degeneration (reduced VE-cadherin, ZO-1, TIE-2/Tie2), endothelial/pericyte hyperproliferation (Ki-67+), increased dermal interstitial spaces (~46% vs 42%), elevated tissue sodium proposed to damage the endothelial glycocalyx, elevated VEGF/VEGF-C, capillary dilation, hypoxia, calcium-crystal and collagen accumulation. Dermal vessel number correlates with macrophage count. Preliminary metabolomics noted elevated tissue histamine; oxidative stress markers (malondialdehyde, protein carbonyls) and elevated IL-8/IL-28A/IL-29/IL-11 are reported.\n\n**Fibrosis:** Interstitial/intercellular fibrosis is present from stage I (preceding adipocyte hypertrophy) and progresses across stages; tissue stiffness links to pain (above).\n\n**Hormonal/metabolic mechanisms:** Reviews implicate estrogen-axis dysregulation (ERβ predominance, increased tissue aromatase/CYP19A1 driving local estrogen) and mitochondrial dysfunction (reduced oxidative capacity, UCP1 downregulation). A multi-omics study found local downregulation of inflammation-related factors with upregulation of mitochondrial/oxidative-phosphorylation pathways and altered sphingolipid/glutathione metabolism. A hypothesis paper proposes extracellular-vesicle-mediated crosstalk driving local inflammation/fibrosis.\n\n**Systemic vs. local inflammation:** An RCT (high grade for this point) found pain reduction after a low-carbohydrate diet was not associated with changes in systemic inflammatory (hsCRP, TNF-α, MIP-1β) or fibrosis markers (TGF-β). Multiple biopsy studies independently found no systemic inflammatory/adipokine differences (IL-6, IL-18, lipocalin-2, leptin) despite tissue-level macrophage infiltration, reinforcing that inflammation in lipedema is predominantly localized. However, one cross-sectional study (low grade) reported elevated systemic low-grade inflammation markers (CRP, NLR, PLR, platelet count) in lipedema versus controls, not explained by BMI—suggesting a possible minor systemic component; this does not override the RCT finding that systemic markers do not track pain. A small uncontrolled case series (n=5) reported multimodal physical therapy reduced pain and lowered tissue sodium on MRI.\n\n**Overall assessment:** The accumulated evidence supports a model of localized, stage-progressive adipose tissue inflammation—dominated by macrophage infiltration (most consistently M2-polarized, though M1 features emerge at advanced stages), with crown-like structures, microangiopathy/endothelial dysfunction, fibrosis from early stages, interstitial fluid/sodium dysregulation, neurogenic sensitization, and hormonal/metabolic alterations—underlying lipedema pain. The strongest evidence (RCT, plus multiple concordant biopsy studies) indicates systemic inflammation does not mediate pain, though one observational study detects elevated systemic low-grade markers. The increased-macrophage-infiltration finding is corroborated across many independent biopsy cohorts and is the best-supported tissue-level observation, though the precise polarization (M2 vs M1) varies by stage, method, and comorbidity. No causal mechanism has been experimentally established in humans.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, os mecanismos de inflamação e dor no tecido do lipedema são multifatoriais, dependentes do estágio e envolvem componentes imuno-celulares, neurogênicos, vasculares, fibróticos e metabólicos—embora as relações causais permaneçam não estabelecidas. Quase toda a evidência tecidual direta vem de pequenos estudos transversais/observacionais, relatos de caso e revisões narrativas; o único estudo de alto grau (um ECR) fala apenas contra a inflamação *sistêmica* como mediadora da dor.\n\n**Dinâmica imuno-celular e de macrófagos (achado tecidual mais bem sustentado):** Múltiplos estudos de biópsia independentes relatam consistentemente aumento da infiltração de macrófagos (CD68+) no tecido adiposo do lipedema versus controles pareados por IMC. Vários convergem para a predominância de macrófagos M2 (anti-inflamatórios): CyTOF+RNA-seq com confirmação funcional in vitro (grau baixo a moderado) mostrou enriquecimento de CD163+ (~2,58 vezes, 1171 genes diferencialmente expressos); um estudo de biópsia anatomicamente pareado (grau moderado) mostrou leucócitos CD45+ aproximadamente duplicados (40,7 vs 20 células/campo) e aumento de macrófagos CD68+ com CD163 elevado 3,4x; outro estudo encontrou aumento de CD45+ (45,7 vs 28) e CD68+ (19,5 vs 12,3) sem aumento de células T CD3+; estudos histológicos relatam estruturas em coroa ausentes nos controles (12,5–14% dos casos). Meio condicionado por M2 promove adipogênese. Essa assinatura dominante M2 é repetidamente contrastada com a resposta dominante M1 da obesidade. O quadro NÃO é uniforme: uma mudança dependente do estágio para polarização tipo M1 (com regulação positiva de IL-6/TNF) é descrita no estágio III; algumas revisões narrativas enfatizam acúmulo de M1 (TNF-α, IL-6, MCP-1, YKL-40); e um estudo transcriptômico (n=14) encontrou inflamação suprimida (possivelmente relacionada a comorbidades). Uma revisão integrativa de 10 estudos de biópsia encontrou infiltrados inflamatórios e enriquecimento de macrófagos em 5/10 e hipertrofia de adipócitos em 7/10, propondo que TNF-α/IL-6 sensibilizam nociceptores C e A-delta. O eixo MIF-1/CD74 (elevado no tecido independentemente do IMC) está implicado no recrutamento de macrófagos.\n\n**Mecanismos neurogênicos e de sensibilização periférica:** Estudos teciduais transversais (grau baixo) relatam CGRP e NGF elevados no tecido de estágio 3 com densidade neuronal dérmica reduzida (Tuj-1+) e hipersensibilidade de von Frey dependente do estágio (painDETECT >19 apenas no estágio 3), sugerindo inflamação neurogênica e dor neuropática periférica na doença avançada. Análise transcriptômica identificou genes de transmissão de dor (SHTN1, SCN7A, SLC12A2). Um relato de caso acrescenta infiltração de macrófagos perineural/endoneural. Um estudo transversal exploratório (n=118, grau baixo) encontrou maior prevalência de dor neuropática no lipedema do que no linfedema (42% vs 21%, maiores escores painDETECT/LANSS), com intensidade da dor correlacionando-se com catastrofização e ansiedade. Revisões narrativas propõem inflamação do nervo periférico mediada por estrogênio, sinalização simpática alterada, aumento da pressão intersticial comprimindo nervos periféricos e sensibilização de nociceptores por mastócitos/substância P; no entanto, uma revisão observa explicitamente que a caracterização neural direta (sensibilização de TRPV1, fibras de CGRP, interações mastócito-nervo) permanece incompleta e hipotética.\n\n**Hiperalgesia à pressão e ligações com propriedades teciduais:** Estudos de QST/algometria (grau baixo) identificam consistentemente limiar de dor à pressão reduzido como característica independente do IMC, com assinatura QST distintiva (PPT reduzido, limiar de detecção de vibração aumentado, limiares térmicos preservados; escore PVTH AUC 0,958). Elastografia por ondas de cisalhamento (n=35, grau baixo) encontrou rigidez do tecido subcutâneo correlacionada com dor geral (rho 0,35–0,36) e dor neuropática (rho 0,38–0,47) na coxa, independente de IMC/espessura de gordura.\n\n**Mecanismos vasculares e intersticiais:** Estudos histológicos/ME relatam microangiopatia, degeneração da barreira endotelial (VE-caderina, ZO-1, TIE-2/Tie2 reduzidos), hiperproliferação endotelial/pericitária (Ki-67+), aumento dos espaços intersticiais dérmicos (~46% vs 42%), sódio tecidual elevado proposto para danificar o glicocálix endotelial, VEGF/VEGF-C elevados, dilatação capilar, hipóxia, acúmulo de cristais de cálcio e colágeno. O número de vasos dérmicos correlaciona-se com a contagem de macrófagos. Metabolômica preliminar observou histamina tecidual elevada; marcadores de estresse oxidativo (malondialdeído, carbonilas proteicas) e IL-8/IL-28A/IL-29/IL-11 elevados são relatados.\n\n**Fibrose:** Fibrose intersticial/intercelular está presente desde o estágio I (precedendo a hipertrofia de adipócitos) e progride ao longo dos estágios; a rigidez tecidual liga-se à dor (acima).\n\n**Mecanismos hormonais/metabólicos:** Revisões implicam desregulação do eixo do estrogênio (predominância de ERβ, aumento da aromatase tecidual/CYP19A1 impulsionando estrogênio local) e disfunção mitocondrial (capacidade oxidativa reduzida, regulação negativa de UCP1). Um estudo multi-ômica encontrou regulação negativa local de fatores relacionados à inflamação com regulação positiva de vias mitocondriais/de fosforilação oxidativa e metabolismo alterado de esfingolipídios/glutationa. Um artigo de hipótese propõe comunicação cruzada mediada por vesículas extracelulares impulsionando inflamação/fibrose local.\n\n**Inflamação sistêmica vs. local:** Um ECR (alto grau para este ponto) encontrou que a redução da dor após uma dieta baixa em carboidratos não foi associada a mudanças em marcadores inflamatórios sistêmicos (hsCRP, TNF-α, MIP-1β) ou de fibrose (TGF-β). Múltiplos estudos de biópsia encontraram independentemente nenhuma diferença em marcadores inflamatórios/adipocinas sistêmicos (IL-6, IL-18, lipocalina-2, leptina) apesar da infiltração de macrófagos a nível tecidual, reforçando que a inflamação no lipedema é predominantemente localizada. No entanto, um estudo transversal (grau baixo) relatou marcadores sistêmicos de inflamação de baixo grau elevados (CRP, NLR, PLR, contagem de plaquetas) no lipedema versus controles, não explicados pelo IMC—sugerindo um possível componente sistêmico menor; isso não anula o achado do ECR de que marcadores sistêmicos não acompanham a dor. Uma pequena série de casos não controlada (n=5) relatou que a fisioterapia multimodal reduziu a dor e diminuiu o sódio tecidual na RM.\n\n**Avaliação geral:** As evidências acumuladas sustentam um modelo de inflamação tecidual adiposa localizada e progressiva por estágio—dominada por infiltração de macrófagos (mais consistentemente polarizada M2, embora características M1 surjam em estágios avançados), com estruturas em coroa, microangiopatia/disfunção endotelial, fibrose desde estágios iniciais, desregulação de fluido/sódio intersticial, sensibilização neurogênica e alterações hormonais/metabólicas—subjacentes à dor do lipedema. A evidência mais forte (ECR, mais múltiplos estudos de biópsia concordantes) indica que a inflamação sistêmica não media a dor, embora um estudo observacional detecte marcadores sistêmicos de baixo grau elevados. O achado de aumento da infiltração de macrófagos é corroborado em muitas coortes de biópsia independentes e é a observação a nível tecidual mais bem sustentada, embora a polarização precisa (M2 vs M1) varie por estágio, método e comorbidade. Nenhum mecanismo causal foi estabelecido experimentalmente em humanos.",
-      "major_uncertainty": "No human study has experimentally established a causal mechanism linking any specific inflammatory, vascular, or neural pathway to lipedema pain; macrophage polarization direction (M2 vs M1) and the relative contributions of neurogenic, vascular, fibrotic, and metabolic processes remain unresolved and appear to vary by disease stage, biopsy method, and comorbidity.",
-      "major_uncertainty_pt": "Nenhum estudo humano estabeleceu experimentalmente um mecanismo causal ligando qualquer via inflamatória, vascular ou neural específica à dor do lipedema; a direção da polarização de macrófagos (M2 vs M1) e as contribuições relativas de processos neurogênicos, vasculares, fibróticos e metabólicos permanecem não resolvidas e parecem variar por estágio da doença, método de biópsia e comorbidade.",
+      "current_answer": "Based on currently indexed evidence, lipedema tissue displays a LOCAL immune-inflammatory profile that is biologically distinct from the pro-inflammatory (M1) pattern of obesity. Multiple biopsy-based cross-sectional studies converge on increased CD45+ leukocyte and CD68+ macrophage infiltration in affected subcutaneous tissue versus BMI-matched controls, independent of body weight (e.g., CD68+ roughly doubled; crown-like structures around dead adipocytes present in lipedema but absent in controls). Several studies and reviews report a predominant M2 (CD163+/CD206+, 'anti-inflammatory/repair') macrophage polarization, with one moderate-quality matched study showing CD163 up ~3.4-fold and an associated VEGF-C/Tie2 lymphatic-vascular signature. Mechanisms proposed on top of this include microvascular/endothelial dysfunction (reduced VE-cadherin, ZO-1, Tie2; increased permeability), elevated tissue sodium damaging the endothelial glycocalyx, progressive fibrosis, local estrogen/aromatase signaling, oxidative stress, and a candidate MIF-1/CD74 macrophage-recruitment axis. However, the picture is NOT uniform: one cross-sectional biopsy study reports a STAGE-DEPENDENT shift from M2 (stage I) toward M1-like with IL-6/TNF upregulation at stages II–III, and multi-omics/transcriptomic studies have found local DOWNREGULATION or suppression of inflammatory pathways with a metabolic/oxidative-phosphorylation signature instead — so whether inflammation is anti-inflammatory-predominant, metabolic, or progresses to classical pro-inflammation with stage remains contested. Regarding PAIN mechanism, evidence points to a LOCAL/peripheral rather than purely systemic process: pain is causally linked to the lipedema fat itself, and candidate mechanisms include peripheral/neuropathic sensory changes (reduced dermal neuronal density, elevated CGRP/NGF in advanced stages, cutaneous von Frey hypersensitivity), nerve-associated macrophage infiltration (single case report), neurogenic inflammation, cytokine-mediated nociceptor sensitization (TNF-α/IL-6 on C and A-delta fibers — proposed in reviews), increased interstitial pressure compressing nerves, and adiposity-independent tissue stiffness/fibrosis correlating with neuropathic pain scores. A distinctive quantitative sensory testing signature (lowered pressure-pain threshold with spared thermal thresholds) and a high prevalence of neuropathic pain features support a mechanistic pain phenotype distinct from simple mechanical load. Importantly, the single HIGH-quality study (an RCT) found that pain reduction after a low-carbohydrate diet was NOT significantly associated with changes in systemic inflammatory markers (hsCRP, TNF-α, MIP-1β) or fibrosis markers, arguing against systemic inflammation as the primary pain driver and favoring localized tissue mechanisms; evidence on systemic low-grade inflammation is mixed (some studies report elevated NLR/PLR/CRP, others no systemic adipokine difference). Overall, most of this mechanistic evidence is low to very-low quality (small cross-sectional biopsy studies, case reports, and narrative reviews), so the inflammation-and-pain model remains emerging and partly conflicting.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, o tecido do lipedema apresenta um perfil imuno-inflamatório LOCAL biologicamente distinto do padrão pró-inflamatório (M1) da obesidade. Vários estudos transversais baseados em biópsia convergem para um aumento da infiltração de leucócitos CD45+ e macrófagos CD68+ no tecido subcutâneo afetado versus controles pareados por IMC, independentemente do peso corporal (ex.: CD68+ aproximadamente dobrado; estruturas em coroa ao redor de adipócitos mortos presentes no lipedema e ausentes nos controles). Vários estudos e revisões relatam uma polarização predominante de macrófagos M2 (CD163+/CD206+, 'anti-inflamatória/reparadora'), com um estudo pareado de qualidade moderada mostrando CD163 aumentado ~3,4 vezes e uma assinatura linfático-vascular VEGF-C/Tie2. Mecanismos propostos adicionais incluem disfunção microvascular/endotelial (redução de VE-caderina, ZO-1, Tie2; aumento da permeabilidade), sódio tecidual elevado danificando o glicocálice endotelial, fibrose progressiva, sinalização local de estrogênio/aromatase, estresse oxidativo e um eixo candidato MIF-1/CD74 de recrutamento de macrófagos. No entanto, o quadro NÃO é uniforme: um estudo de biópsia relata uma mudança DEPENDENTE DO ESTÁGIO de M2 (estágio I) para M1-like com aumento de IL-6/TNF nos estágios II–III, e estudos de multiômica/transcriptômica encontraram DOWNREGULAÇÃO ou supressão local de vias inflamatórias com uma assinatura metabólica/de fosforilação oxidativa — portanto, se a inflamação é predominantemente anti-inflamatória, metabólica, ou progride para inflamação clássica com o estágio permanece contestado. Quanto ao mecanismo da DOR, as evidências apontam para um processo LOCAL/periférico em vez de puramente sistêmico: a dor está causalmente ligada à própria gordura do lipedema, e os mecanismos candidatos incluem alterações sensoriais periféricas/neuropáticas (redução da densidade neuronal dérmica, CGRP/NGF elevados em estágios avançados, hipersensibilidade cutânea von Frey), infiltração de macrófagos associada a nervos (relato de caso único), inflamação neurogênica, sensibilização de nociceptores mediada por citocinas (TNF-α/IL-6 em fibras C e A-delta — proposto em revisões), aumento da pressão intersticial comprimindo nervos e rigidez/fibrose tecidual independente da adiposidade correlacionada com escores de dor neuropática. Uma assinatura distinta de teste sensorial quantitativo (limiar de dor à pressão reduzido com limiares térmicos preservados) e alta prevalência de características de dor neuropática sustentam um fenótipo de dor mecanisticamente distinto da simples carga mecânica. Importante: o único estudo de ALTA qualidade (um ECR) constatou que a redução da dor após uma dieta de baixo carboidrato NÃO se associou significativamente a alterações em marcadores inflamatórios sistêmicos (hsCRP, TNF-α, MIP-1β) ou de fibrose, argumentando contra a inflamação sistêmica como fator primário da dor e favorecendo mecanismos teciduais localizados; as evidências sobre inflamação sistêmica de baixo grau são mistas. No geral, a maior parte dessas evidências mecanísticas é de qualidade baixa a muito baixa, então o modelo de inflamação e dor permanece emergente e parcialmente conflitante.",
+      "major_uncertainty": "Whether lipedema tissue inflammation is primarily anti-inflammatory (M2-dominant), metabolic/suppressed, or stage-dependently pro-inflammatory remains unresolved due to conflicting low-quality biopsy and omics data; the precise causal chain from tissue changes to pain (neuropathic vs inflammatory vs mechanical) is not established, with only one high-quality RCT (indirectly, via diet) bearing on systemic inflammation's role.",
+      "major_uncertainty_pt": "Se a inflamação do tecido do lipedema é principalmente anti-inflamatória (dominante M2), metabólica/suprimida, ou pró-inflamatória dependente do estágio permanece não resolvido devido a dados conflitantes de biópsia e ômica de baixa qualidade; a cadeia causal exata das alterações teciduais até a dor (neuropática vs inflamatória vs mecânica) não está estabelecida, com apenas um ECR de alta qualidade (indiretamente, via dieta) relacionado ao papel da inflamação sistêmica.",
       "claims": [
         {
           "id": "SCR-LIP-000041",
@@ -2205,9 +2194,16 @@
           "role": "supporting"
         }
       ],
-      "version": "1.7",
+      "version": "1.8",
       "updated": "2026-11-17",
       "history": [
+        {
+          "version": "1.8",
+          "date": "2026-11-17",
+          "change": "Answer recompiled after human curation of the claim set.",
+          "change_pt": "Resposta recompilada após curadoria humana dos claims.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.7",
           "date": "2026-11-17",
@@ -2287,13 +2283,13 @@
       },
       "outcomes": [
         {
-          "outcome": "Tissue macrophage infiltration",
-          "outcome_pt": "Infiltração de macrófagos no tecido",
+          "outcome": "Macrophage infiltration in affected tissue",
+          "outcome_pt": "Infiltração de macrófagos no tecido afetado",
           "direction": "increased",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Increased CD68+/CD45+ infiltration vs BMI-matched controls, corroborated across many biopsy cohorts.",
-          "note_pt": "Infiltração CD68+/CD45+ aumentada vs controles pareados por IMC, corroborada em muitas coortes de biópsia."
+          "note": "Multiple matched biopsy studies show increased CD68+/CD45+ cells and crown-like structures, independent of BMI.",
+          "note_pt": "Vários estudos de biópsia pareados mostram aumento de células CD68+/CD45+ e estruturas em coroa, independente do IMC."
         },
         {
           "outcome": "M2 (anti-inflammatory) macrophage predominance",
@@ -2301,75 +2297,66 @@
           "direction": "increased",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "M2/CD163+ dominance reported repeatedly, but stage III shows M1 shift; polarization varies.",
-          "note_pt": "Dominância M2/CD163+ relatada repetidamente, mas estágio III mostra mudança M1; polarização varia."
+          "note": "Several studies/reviews report M2 (CD163+) dominance differing from obesity; conflicts with stage-dependent M1 shift.",
+          "note_pt": "Vários estudos/revisões relatam dominância M2 (CD163+) diferente da obesidade; conflita com mudança M1 dependente do estágio."
         },
         {
-          "outcome": "Peripheral/neurogenic sensitization",
-          "outcome_pt": "Sensibilização periférica/neurogênica",
-          "direction": "increased",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Elevated CGRP/NGF, pain-gene expression, nerve-associated inflammation; mostly stage 3, hypothesis-level.",
-          "note_pt": "CGRP/NGF elevados, expressão de genes de dor, inflamação associada a nervos; principalmente estágio 3, nível de hipótese."
-        },
-        {
-          "outcome": "Pressure pain threshold (hyperalgesia)",
-          "outcome_pt": "Limiar de dor à pressão (hiperalgesia)",
-          "direction": "reduced",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Lowered PPT is a BMI-independent QST feature; tissue stiffness correlates with pain.",
-          "note_pt": "PPT reduzido é característica de QST independente do IMC; rigidez tecidual correlaciona com dor."
-        },
-        {
-          "outcome": "Vascular/endothelial dysfunction & microangiopathy",
-          "outcome_pt": "Disfunção vascular/endotelial e microangiopatia",
-          "direction": "increased",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Reduced VE-cadherin/ZO-1/Tie2, Ki-67+ hyperproliferation, elevated VEGF-C, tissue sodium.",
-          "note_pt": "VE-caderina/ZO-1/Tie2 reduzidos, hiperproliferação Ki-67+, VEGF-C e sódio tecidual elevados."
-        },
-        {
-          "outcome": "Interstitial fibrosis",
-          "outcome_pt": "Fibrose intersticial",
-          "direction": "increased",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Present from stage I, progresses with stage; stiffness links to pain.",
-          "note_pt": "Presente desde estágio I, progride com o estágio; rigidez ligada à dor."
-        },
-        {
-          "outcome": "Systemic inflammation as pain mediator",
-          "outcome_pt": "Inflamação sistêmica como mediadora da dor",
-          "direction": "not_demonstrated",
-          "confidence": "high",
-          "disease_modifying": false,
-          "note": "RCT: pain reduction unlinked to systemic markers; biopsies show no systemic adipokine difference.",
-          "note_pt": "ECR: redução da dor não ligada a marcadores sistêmicos; biópsias não mostram diferença de adipocinas sistêmicas."
-        },
-        {
-          "outcome": "Systemic low-grade inflammation markers (CRP/NLR/PLR)",
-          "outcome_pt": "Marcadores sistêmicos de inflamação de baixo grau (CRP/NLR/PLR)",
-          "direction": "increased",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "One cross-sectional study found elevated markers not explained by BMI; does not track pain.",
-          "note_pt": "Um estudo transversal encontrou marcadores elevados não explicados por IMC; não acompanha a dor."
-        },
-        {
-          "outcome": "Hormonal/metabolic (estrogen, mitochondrial) alterations",
-          "outcome_pt": "Alterações hormonais/metabólicas (estrogênio, mitocôndria)",
+          "outcome": "Local tissue inflammatory cytokines (IL-6/TNF)",
+          "outcome_pt": "Citocinas inflamatórias teciduais locais (IL-6/TNF)",
           "direction": "mixed",
           "confidence": "very_low",
           "disease_modifying": false,
-          "note": "Reviews/multi-omics implicate aromatase/ERβ and mitochondrial changes; mechanism unproven.",
-          "note_pt": "Revisões/multi-ômica implicam aromatase/ERβ e alterações mitocondriais; mecanismo não comprovado."
+          "note": "Some biopsy data show stage-dependent IL-6/TNF rise; omics studies report local downregulation/suppression.",
+          "note_pt": "Alguns dados de biópsia mostram aumento de IL-6/TNF dependente do estágio; estudos de ômica relatam downregulação/supressão local."
+        },
+        {
+          "outcome": "Systemic inflammation as pain driver",
+          "outcome_pt": "Inflamação sistêmica como causa da dor",
+          "direction": "not_demonstrated",
+          "confidence": "high",
+          "disease_modifying": false,
+          "note": "RCT: pain reduction not associated with changes in hsCRP/TNF-α; favors local over systemic mechanism.",
+          "note_pt": "ECR: redução da dor não associada a alterações de hsCRP/TNF-α; favorece mecanismo local sobre sistêmico."
+        },
+        {
+          "outcome": "Systemic low-grade inflammatory markers (NLR/PLR/CRP)",
+          "outcome_pt": "Marcadores sistêmicos de inflamação de baixo grau (NLR/PLR/CRP)",
+          "direction": "mixed",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Some studies report elevated NLR/PLR/CRP not explained by BMI; others find no systemic adipokine difference.",
+          "note_pt": "Alguns estudos relatam NLR/PLR/CRP elevados não explicados pelo IMC; outros não encontram diferença de adipocinas sistêmicas."
+        },
+        {
+          "outcome": "Peripheral/neuropathic pain mechanism",
+          "outcome_pt": "Mecanismo de dor periférica/neuropática",
+          "direction": "increased",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "QST signature, high neuropathic-pain prevalence, reduced dermal neurons, elevated CGRP/NGF suggest peripheral sensory involvement.",
+          "note_pt": "Assinatura de QST, alta prevalência de dor neuropática, redução de neurônios dérmicos e CGRP/NGF elevados sugerem envolvimento sensorial periférico."
+        },
+        {
+          "outcome": "Microvascular/endothelial dysfunction",
+          "outcome_pt": "Disfunção microvascular/endotelial",
+          "direction": "increased",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Reduced VE-cadherin/ZO-1/Tie2, increased permeability, sodium-glycocalyx damage proposed as inflammatory/pain contributors.",
+          "note_pt": "Redução de VE-caderina/ZO-1/Tie2, aumento de permeabilidade e dano sódio-glicocálice propostos como contribuintes inflamatórios/de dor."
+        },
+        {
+          "outcome": "Tissue stiffness/fibrosis linked to pain",
+          "outcome_pt": "Rigidez/fibrose tecidual ligada à dor",
+          "direction": "increased",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Shear-wave elastography stiffness correlates with neuropathic pain scores independent of BMI/fat thickness.",
+          "note_pt": "Rigidez por elastografia shear-wave correlaciona com escores de dor neuropática independente de IMC/espessura de gordura."
         }
       ],
-      "bottom_line": "Lipedema tissue shows localized, mostly M2-type macrophage inflammation, abnormal small vessels, early fibrosis, and sensitized nerves that together appear to drive the characteristic pain and pressure tenderness. What the evidence does not establish is a proven cause-and-effect chain, whether the inflammation is more anti- or pro-inflammatory (it varies by stage), or any role for whole-body inflammation in the pain.",
-      "bottom_line_pt": "O tecido do lipedema apresenta inflamação localizada por macrófagos (principalmente do tipo M2), vasos pequenos anormais, fibrose precoce e nervos sensibilizados que, juntos, parecem causar a dor e a sensibilidade à pressão características. O que a evidência não estabelece é uma cadeia causal comprovada, se a inflamação é mais anti ou pró-inflamatória (varia por estágio), ou qualquer papel da inflamação de corpo inteiro na dor."
+      "bottom_line": "Lipedema fat shows a local immune response—more macrophages (often an M2 'repair' type) around fat cells, plus small-vessel and nerve changes—that appears tied to the painful tissue itself rather than to body weight or whole-body inflammation. It is not yet settled whether the inflammation is mainly anti-inflammatory, metabolic, or turns pro-inflammatory as the disease advances, and most of the evidence comes from small, low-quality studies.",
+      "bottom_line_pt": "A gordura do lipedema mostra uma resposta imune local—mais macrófagos (frequentemente do tipo M2 'reparador') ao redor das células de gordura, além de alterações em pequenos vasos e nervos—que parece ligada ao próprio tecido doloroso, e não ao peso corporal ou à inflamação de todo o corpo. Ainda não está definido se a inflamação é principalmente anti-inflamatória, metabólica, ou se torna pró-inflamatória com o avanço da doença, e a maioria das evidências vem de estudos pequenos e de baixa qualidade."
     },
     {
       "id": "SQ-LIP-000012",
@@ -5467,14 +5454,21 @@
         "fat volume",
         "treatment response"
       ],
-      "current_answer": "Based on currently indexed evidence, bariatric surgery or substantial weight loss reliably reduces TOTAL body weight and overall adipose mass in people with lipedema, but its effect on the characteristic lipedematous limb fat and on core symptoms (notably pain) diverges by outcome and remains inconsistent. For the VOLUME outcome, two moderate-grade cohorts—the highest-quality indexed evidence—show lower-body fat CAN be measurably reduced: a prospective interventional cohort found moderate diet-induced weight loss (~9%) reduced leg/thigh adipose mass with relative reductions similar to abdominal fat and improved insulin sensitivity, though inflammation/fibrosis markers were unchanged (DOI:10.2337/db24-0890), and a cohort study found bariatric surgery reduced adjusted thigh volume by ~33.4%—comparable to lymphedema controls (~37%, p>0.999), greater at BMI ≥50 (~44%), and correlating with excess BMI loss (DOI:10.1159/000511044). These moderate-grade data argue against the absolute view that lipedema fat is wholly volume-resistant. However, a larger LOW- and very-low-grade body of evidence consistently indicates that disproportionate limb fat and symptoms often persist: a low-grade systematic review (7 studies, 51 patients) found mean ~34% total weight loss but only 1 study (n=31) showed significant thigh-volume reduction, with the rest showing persistent/worsened disproportionality and no pain improvement (DOI:10.1111/cob.70062, DOI:10.1093/bjs/znaf270.045); a case series of 13 patients losing >50 kg showed lipedema pain did NOT improve (VAS 7.3→7.9, p=0.28) (DOI:10.1016/j.soard.2021.12.027); a scoping review (49 women, mean EWL ~71%) reported VAS pain INCREASING post-operatively with persistent cuff-like fat (DOI:10.1007/s11695-025-08021-1); a case series of 7 women found 100% symptom persistence with weight regain worsening limb volume (DOI:10.34119/bjhrv7n9-201); case reports showed limb circumferences unchanged/increased with retained pain and continued compression need (DOI:10.1111/cob.12239, DOI:10.1016/j.soard.2016.04.013); a case report of 87 kg loss showed lower-limb lipedema fat persisted entirely (symptom relief came from subsequent surgery, not weight loss) (DOI:10.1007/s12262-020-02163-5); and a national survey of 707 women found 52.2% reported no benefit from diet/exercise, only 16% complete improvement (DOI:10.1177/1358863x231202769). Narrative reviews describe lipedema fat as resistant to bariatric surgery/diet while noting it may still control comorbid obesity and metabolic health, with liposuction reserved for fat-specific reduction (DOI:10.1097/psn.0000000000000245, DOI:10.3390/biomedicines10123081, DOI:10.1515/hmbci-2017-0076, DOI:10.1016/j.jpra.2026.01.004, DOI:10.1097/psn.0000000000000316). A small ketogenic-diet pilot showed waist/hip reduction but NO significant thigh reduction (p=0.20) and pain relief uncorrelated with weight loss (DOI:10.1002/osp4.580). A very-low-grade single case report of 11% diet-induced weight loss in a normal-weight woman found proportional (not preferential) reduction of leg fat (DOI:10.1210/jcemcr/luag018). A critical cross-cutting signal is that PAIN and ADIPOSE VOLUME behave as DISSOCIABLE endpoints: a low-grade synthesis of treatment cohorts argues body weight is a confounded endpoint that may not track symptom relief (DOI:10.7759/cureus.115591). Weighting by quality, the moderate-grade cohorts support genuine reductions in measured lower-limb fat volume, while the consistent lower-quality signal indicates symptom relief and full correction of disproportionate limb fat are not reliably achieved by weight loss per se. There is NO evidence that weight loss is disease-modifying or curative. Evidence remains emerging.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, a cirurgia bariátrica ou a perda de peso substancial reduz de forma confiável o peso corporal TOTAL e a massa adiposa global em pessoas com lipedema, mas seu efeito sobre a gordura lipedematosa característica dos membros e sobre os sintomas centrais (notadamente a dor) diverge por desfecho e permanece inconsistente. Para o desfecho VOLUME, dois estudos de coorte de qualidade moderada—a evidência indexada de maior qualidade—mostram que a gordura da parte inferior do corpo PODE ser mensuravelmente reduzida: uma coorte intervencionista prospectiva constatou que a perda de peso moderada induzida por dieta (~9%) reduziu a massa adiposa de pernas/coxas com reduções relativas semelhantes à gordura abdominal e melhorou a sensibilidade à insulina, embora marcadores de inflamação/fibrose não tenham mudado (DOI:10.2337/db24-0890), e um estudo de coorte constatou que a cirurgia bariátrica reduziu o volume ajustado da coxa em ~33,4%—comparável aos controles com linfedema (~37%, p>0,999), maior em IMC ≥50 (~44%) e correlacionado com a perda de IMC em excesso (DOI:10.1159/000511044). Esses dados de qualidade moderada contestam a visão absoluta de que a gordura do lipedema é totalmente resistente ao volume. No entanto, um corpo maior de evidências de qualidade BAIXA e muito baixa indica consistentemente que a gordura desproporcional dos membros e os sintomas frequentemente persistem: uma revisão sistemática de baixa qualidade (7 estudos, 51 pacientes) encontrou perda média de peso total de ~34%, mas apenas 1 estudo (n=31) mostrou redução significativa do volume da coxa, com os demais mostrando desproporcionalidade persistente/agravada e nenhuma melhora da dor (DOI:10.1111/cob.70062, DOI:10.1093/bjs/znaf270.045); uma série de casos de 13 pacientes que perderam >50 kg mostrou que a dor do lipedema NÃO melhorou (EVA 7,3→7,9, p=0,28) (DOI:10.1016/j.soard.2021.12.027); uma revisão de escopo (49 mulheres, EWL médio ~71%) relatou AUMENTO da dor EVA no pós-operatório com gordura em manguito persistente (DOI:10.1007/s11695-025-08021-1); uma série de casos de 7 mulheres encontrou 100% de persistência dos sintomas com reganho de peso agravando o volume dos membros (DOI:10.34119/bjhrv7n9-201); relatos de caso mostraram circunferências dos membros inalteradas/aumentadas com dor retida e necessidade contínua de compressão (DOI:10.1111/cob.12239, DOI:10.1016/j.soard.2016.04.013); um relato de caso de perda de 87 kg mostrou que a gordura lipedematosa dos membros inferiores persistiu totalmente (o alívio dos sintomas veio da cirurgia subsequente, não da perda de peso) (DOI:10.1007/s12262-020-02163-5); e uma pesquisa nacional com 707 mulheres encontrou 52,2% relatando nenhum benefício da dieta/exercício, apenas 16% melhora completa (DOI:10.1177/1358863x231202769). Revisões narrativas descrevem a gordura do lipedema como resistente à cirurgia bariátrica/dieta, observando que ela ainda pode controlar a obesidade comórbida e a saúde metabólica, com a lipoaspiração reservada para a redução específica da gordura (DOI:10.1097/psn.0000000000000245, DOI:10.3390/biomedicines10123081, DOI:10.1515/hmbci-2017-0076, DOI:10.1016/j.jpra.2026.01.004, DOI:10.1097/psn.0000000000000316). Um pequeno estudo piloto de dieta cetogênica mostrou redução de cintura/quadril, mas NENHUMA redução significativa da coxa (p=0,20) e alívio da dor não correlacionado com a perda de peso (DOI:10.1002/osp4.580). Um relato de caso único de qualidade muito baixa de 11% de perda de peso induzida por dieta em uma mulher com peso normal encontrou redução proporcional (não preferencial) da gordura da perna (DOI:10.1210/jcemcr/luag018). Um sinal transversal crítico é que a DOR e o VOLUME ADIPOSO se comportam como desfechos DISSOCIÁVEIS: uma síntese de baixa qualidade de coortes de tratamento argumenta que o peso corporal é um desfecho confundido que pode não acompanhar o alívio dos sintomas (DOI:10.7759/cureus.115591). Ponderando pela qualidade, as coortes de qualidade moderada apoiam reduções genuínas no volume de gordura mensurado dos membros inferiores, enquanto o sinal consistente de menor qualidade indica que o alívio dos sintomas e a correção completa da gordura desproporcional dos membros não são alcançados de forma confiável pela perda de peso em si. NÃO há evidências de que a perda de peso seja modificadora da doença ou curativa. As evidências permanecem emergentes.",
-      "major_uncertainty": "The two moderate-grade cohorts showing measurable lower-limb fat reduction conflict with a larger body of low/very-low-grade studies reporting persistent disproportionate fat and no symptom benefit; no RCT isolates weight loss from the characteristic lipedema fat/pain, and pain versus adipose volume appear dissociable, so whether any genuine limb-fat reduction translates into symptom relief remains unresolved.",
-      "major_uncertainty_pt": "As duas coortes de qualidade moderada que mostram redução mensurável da gordura dos membros inferiores conflitam com um corpo maior de estudos de qualidade baixa/muito baixa que relatam gordura desproporcional persistente e nenhum benefício sintomático; nenhum ECR isola a perda de peso da gordura/dor característica do lipedema, e dor versus volume adiposo parecem dissociáveis, de modo que permanece sem resolução se qualquer redução genuína de gordura dos membros se traduz em alívio dos sintomas.",
-      "version": "1.7",
+      "current_answer": "Based on currently indexed evidence, bariatric surgery or substantial weight loss should be decomposed by outcome. (1) GENERAL/OVERALL WEIGHT: surgery reliably produces large total-body weight loss (e.g. >50 kg, %EWL up to ~104%). (2) LIPEDEMA-SPECIFIC FAT VOLUME: the evidence is mixed and mostly low-quality. Several case reports/series (SCR-LIP-000207, -000210, -000212, -000386, -000525) and narrative reviews (SCR-LIP-000209, -000388) report that lipedematous limb fat persists despite massive weight loss, consistent with the common claim that lipedema fat is 'diet-resistant.' However, two higher-graded prospective cohorts contradict a blanket resistance claim: a bariatric cohort (SCR-LIP-000208, moderate) found ~33% adjusted thigh-volume reduction comparable to lymphedema controls, and a diet-induced weight-loss study (SCR-LIP-000213, moderate) found leg/thigh fat fell in relative proportion to abdominal fat. A systematic review (SCR-LIP-000206, low) of 7 studies/51 patients found only 1 study reporting significant thigh-volume reduction, with most showing persistent disproportionality. The net picture is that total limb volume can fall with large weight loss but disproportionate lipedematous distribution often persists. (3) PAIN/SYMPTOMS: the evidence more consistently shows LITTLE OR NO lipedema-specific symptom benefit — characteristic limb pain did not improve (VAS 7.3→7.9, p=0.28; SCR-LIP-000207), a scoping review found pain paradoxically increased (SCR-LIP-000207 evidence), symptoms persisted in 100% of a case series (SCR-LIP-000386), and a survey found 52% reported no benefit from diet/exercise (SCR-LIP-000387). Pain and adipose volume behave as dissociable endpoints (SCR-LIP-000526, SCR-LIP-000391). (4) DISEASE MODIFICATION/CURE: not demonstrated — no evidence that weight loss alters the underlying lipedema disease process. Weight loss does improve comorbid obesity and metabolic health (insulin sensitivity; SCR-LIP-000213, -000388), which is a distinct benefit.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, a cirurgia bariátrica ou a perda de peso substancial deve ser analisada por desfecho. (1) PESO GERAL: a cirurgia produz de forma confiável grande perda de peso corporal total (ex.: >50 kg, %EWL até ~104%). (2) VOLUME DE GORDURA ESPECÍFICO DO LIPEDEMA: a evidência é mista e majoritariamente de baixa qualidade. Vários relatos/séries de casos (SCR-LIP-000207, -000210, -000212, -000386, -000525) e revisões narrativas (SCR-LIP-000209, -000388) relatam que a gordura lipedematosa dos membros persiste apesar de perda de peso maciça, consistente com a alegação de que a gordura do lipedema é 'resistente à dieta'. No entanto, dois estudos de coorte prospectivos de maior qualidade contradizem uma resistência absoluta: uma coorte bariátrica (SCR-LIP-000208, moderada) encontrou redução de ~33% no volume da coxa ajustado, comparável aos controles com linfedema, e um estudo de perda de peso por dieta (SCR-LIP-000213, moderada) encontrou que a gordura da perna/coxa diminuiu em proporção relativa à gordura abdominal. Uma revisão sistemática (SCR-LIP-000206, baixa) de 7 estudos/51 pacientes encontrou apenas 1 estudo relatando redução significativa do volume da coxa, com a maioria mostrando desproporção persistente. O quadro geral é que o volume total do membro pode cair com grande perda de peso, mas a distribuição lipedematosa desproporcional frequentemente persiste. (3) DOR/SINTOMAS: a evidência mostra de forma mais consistente POUCO OU NENHUM benefício sintomático específico do lipedema — a dor característica dos membros não melhorou (VAS 7,3→7,9, p=0,28; SCR-LIP-000207), uma revisão de escopo encontrou dor paradoxalmente aumentada, os sintomas persistiram em 100% de uma série de casos (SCR-LIP-000386), e uma pesquisa encontrou 52% relatando nenhum benefício da dieta/exercício (SCR-LIP-000387). Dor e volume de gordura comportam-se como desfechos dissociáveis (SCR-LIP-000526, SCR-LIP-000391). (4) MODIFICAÇÃO DA DOENÇA/CURA: não demonstrada — não há evidência de que a perda de peso altere o processo subjacente da doença. A perda de peso melhora a obesidade comórbida e a saúde metabólica (sensibilidade à insulina; SCR-LIP-000213, -000388), que é um benefício distinto.",
+      "major_uncertainty": "The strongest-graded evidence (two moderate-grade cohorts) suggests limb/leg fat does respond proportionally to weight loss, directly conflicting with the widespread low-quality (case report/narrative review) claim of 'diet-resistant' lipedema fat; no RCT or large controlled study has resolved whether bariatric surgery specifically reduces lipedema-disproportionate fat or symptoms, and follow-up is short with no data on disease progression.",
+      "major_uncertainty_pt": "A evidência de maior qualidade (duas coortes de grau moderado) sugere que a gordura da perna/membro responde proporcionalmente à perda de peso, conflitando diretamente com a alegação difundida de baixa qualidade (relato de caso/revisão narrativa) de gordura 'resistente à dieta'; nenhum ECR ou grande estudo controlado resolveu se a cirurgia bariátrica reduz especificamente a gordura desproporcional do lipedema ou os sintomas, e o seguimento é curto, sem dados sobre progressão da doença.",
+      "version": "1.8",
       "created": "2026-05-31",
       "updated": "2026-11-17",
       "history": [
+        {
+          "version": "1.8",
+          "date": "2026-11-17",
+          "change": "Answer recompiled after human curation of the claim set.",
+          "change_pt": "Resposta recompilada após curadoria humana dos claims.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.7",
           "date": "2026-11-17",
@@ -5628,40 +5622,31 @@
       },
       "outcomes": [
         {
-          "outcome": "Total body weight / overall adipose mass",
-          "outcome_pt": "Peso corporal total / massa adiposa global",
+          "outcome": "Total body weight loss",
+          "outcome_pt": "Perda de peso corporal total",
           "direction": "reduced",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Weight loss consistently reduces total weight and overall fat; not lipedema-specific.",
-          "note_pt": "A perda de peso reduz consistentemente o peso total e a gordura global; não é específica do lipedema."
+          "note": "Surgery reliably produces large total weight loss (>50 kg, %EWL up to ~104%).",
+          "note_pt": "Cirurgia produz de forma confiável grande perda de peso total (>50 kg, %EWL até ~104%)."
         },
         {
-          "outcome": "Lower-limb / lipedematous fat volume",
-          "outcome_pt": "Volume de gordura dos membros inferiores / lipedematosa",
-          "direction": "mixed",
-          "confidence": "moderate",
-          "disease_modifying": false,
-          "note": "Two moderate cohorts show measurable thigh/leg fat reduction; many low-grade studies show persistent disproportionate fat.",
-          "note_pt": "Duas coortes moderadas mostram redução mensurável da gordura; muitos estudos de baixa qualidade mostram gordura desproporcional persistente."
-        },
-        {
-          "outcome": "Pain",
-          "outcome_pt": "Dor",
+          "outcome": "Lipedema limb fat volume",
+          "outcome_pt": "Volume de gordura lipedematosa dos membros",
           "direction": "mixed",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Low/very-low studies show pain often unchanged or worsened; pain appears dissociable from weight loss.",
-          "note_pt": "Estudos de qualidade baixa/muito baixa mostram dor frequentemente inalterada ou agravada; a dor parece dissociável da perda de peso."
+          "note": "Two moderate cohorts show proportional leg-fat reduction; many weaker case reports show persistent disproportionate fat.",
+          "note_pt": "Duas coortes moderadas mostram redução proporcional; muitos relatos mais fracos mostram gordura desproporcional persistente."
         },
         {
-          "outcome": "Disproportionate limb shape",
-          "outcome_pt": "Forma desproporcional dos membros",
-          "direction": "not_demonstrated",
+          "outcome": "Lipedema pain/symptoms",
+          "outcome_pt": "Dor/sintomas do lipedema",
+          "direction": "no_effect",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Full correction of characteristic disproportionality not reliably achieved by weight loss.",
-          "note_pt": "Correção completa da desproporcionalidade característica não é alcançada de forma confiável pela perda de peso."
+          "note": "Pain usually unchanged (VAS 7.3→7.9); symptoms persisted in 100% of one series; pain dissociable from volume.",
+          "note_pt": "Dor geralmente inalterada (VAS 7,3→7,9); sintomas persistiram em 100% de uma série; dor dissociável do volume."
         },
         {
           "outcome": "Metabolic health / insulin sensitivity",
@@ -5669,30 +5654,21 @@
           "direction": "improved",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "Diet-induced weight loss improved insulin sensitivity; benefit for comorbid obesity, not lipedema itself.",
-          "note_pt": "A perda de peso induzida por dieta melhorou a sensibilidade à insulina; benefício para obesidade comórbida, não para o lipedema em si."
-        },
-        {
-          "outcome": "Inflammation / fibrosis markers",
-          "outcome_pt": "Marcadores de inflamação / fibrose",
-          "direction": "no_effect",
-          "confidence": "moderate",
-          "disease_modifying": false,
-          "note": "Adipose inflammation and fibrosis markers unchanged after moderate weight loss.",
-          "note_pt": "Marcadores de inflamação adiposa e fibrose inalterados após perda de peso moderada."
+          "note": "Diet-induced weight loss improved insulin sensitivity; surgery helps comorbid obesity.",
+          "note_pt": "Perda de peso por dieta melhorou a sensibilidade à insulina; cirurgia ajuda na obesidade comórbida."
         },
         {
           "outcome": "Disease modification / cure",
           "outcome_pt": "Modificação da doença / cura",
           "direction": "not_demonstrated",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "No evidence weight loss alters the disease course or cures lipedema.",
-          "note_pt": "Nenhuma evidência de que a perda de peso altere o curso da doença ou cure o lipedema."
+          "confidence": "very_low",
+          "disease_modifying": true,
+          "note": "No evidence weight loss alters the underlying lipedema disease process.",
+          "note_pt": "Sem evidência de que a perda de peso altere o processo subjacente da doença."
         }
       ],
-      "bottom_line": "Losing weight through surgery or diet lowers total body fat and can measurably shrink lower-limb fat, but it does not reliably fix the disproportionate limb fat or relieve the pain of lipedema. It does not cure or change the course of the disease, and symptom relief often happens independently of how much weight is lost.",
-      "bottom_line_pt": "Perder peso por cirurgia ou dieta reduz a gordura corporal total e pode diminuir mensuravelmente a gordura dos membros inferiores, mas não corrige de forma confiável a gordura desproporcional dos membros nem alivia a dor do lipedema. Não cura nem altera o curso da doença, e o alívio dos sintomas muitas vezes ocorre independentemente de quanto peso é perdido."
+      "bottom_line": "Major weight loss (from surgery or diet) reliably cuts total body and often total limb fat and improves metabolic health, but the characteristic disproportionate lipedema fat frequently persists and lipedema pain usually does not improve. It does not cure or modify the underlying disease, and whether lipedema fat truly resists weight loss remains contested between weaker case reports and stronger cohort studies.",
+      "bottom_line_pt": "A perda de peso significativa (por cirurgia ou dieta) reduz de forma confiável a gordura corporal total e frequentemente a gordura total dos membros e melhora a saúde metabólica, mas a gordura desproporcional característica do lipedema frequentemente persiste e a dor do lipedema geralmente não melhora. Não cura nem modifica a doença subjacente, e se a gordura do lipedema realmente resiste à perda de peso permanece contestado entre relatos de casos mais fracos e estudos de coorte mais robustos."
     },
     {
       "id": "SQ-LIP-000025",
@@ -8177,14 +8153,21 @@
         "case-finding",
         "lipedema"
       ],
-      "current_answer": "Based on currently indexed evidence, several screening tools and questionnaires CAN help identify SUSPECTED lipedema cases, though all remain at an emerging stage and none is a validated standalone diagnostic standard — diagnosis is still fundamentally clinical. Symptom-based questionnaires carry the most direct screening evidence: a simplified 9-item self-applied tool derived from the validated QuASiL achieved AUC≈0.86–0.91 against expert clinical diagnosis in 109 women (low grade), and an online version (cutoff ≥12, AUC 0.86) was applied at population scale in Brazil (specificity 0.88 but low sensitivity 0.46, meaning many true cases are missed). The QuASiL has now also been applied in undiagnosed Turkish women with good internal consistency (Cronbach's alpha 0.84), and the separately-labelled Lipedema Screening Questionnaire (LSQ) detected probable lipedema in 36.8% of women with leg pain versus 12.3% of controls — but the LSQ authors themselves caution it is NOT diagnostic (both low grade). Simple clinical decision rules also discriminate: a CART algorithm using just three variables (bruising, body disproportion, spared feet) separated lipedema from lymphedema with reported 100% accuracy in a prospective cohort of 249 patients (moderate grade), and the negative Stemmer sign plus foot/hand sparing are repeatedly cited distinguishing features (used, e.g., to redirect two misdiagnosed cases in India — very low grade). Adjunct/objective tools proposed as case-identification aids — DXA leg-fat/total-fat index (AUC 0.90, cutoff ≥0.383), high-frequency ultrasound thickness cutoffs (sensitivity 0.77–0.79, specificity up to 0.96, NOT externally validated), bioimpedance spectroscopy, quantitative sensory testing (PPT+VDT, AUC ~0.86–0.91), CT (reported 95% sensitivity/100% specificity), MR lymphangiography, and IL-6 genotyping — each show discriminative signals but rest on small, single-setting, low- or very-low-grade studies. A moderate-grade methodological review warns that limb-quantification tools use highly heterogeneous, poorly documented protocols with reliability reported in only a minority, limiting reproducibility. One contrasting review (very low grade) states diagnosis is exclusively clinical with no specific biomarker and complementary exams used only to exclude differentials — this reflects the current lack of a validated objective gold standard rather than contradicting the screening rationale. Reviews and guidelines (moderate to very low grade) consistently document substantial underdiagnosis and long diagnostic delay (median ~25 years), supporting the rationale for screening. OUTCOME NOTE: the demonstrated outcome is case IDENTIFICATION / diagnostic discrimination (detecting suspected lipedema), NOT treatment efficacy or disease modification.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, várias ferramentas de triagem e questionários PODEM ajudar a identificar casos SUSPEITOS de lipedema, embora todos permaneçam em estágio emergente e nenhum seja um padrão diagnóstico isolado validado — o diagnóstico ainda é fundamentalmente clínico. Questionários baseados em sintomas têm a evidência de triagem mais direta: uma ferramenta autoaplicável simplificada de 9 itens derivada do QuASiL validado alcançou AUC≈0,86–0,91 contra diagnóstico clínico por especialista em 109 mulheres (baixa qualidade), e uma versão online (ponto de corte ≥12, AUC 0,86) foi aplicada em escala populacional no Brasil (especificidade 0,88 mas baixa sensibilidade 0,46, o que significa que muitos casos reais passam despercebidos). O QuASiL foi agora também aplicado em mulheres turcas não diagnosticadas com boa consistência interna (alfa de Cronbach 0,84), e o Lipedema Screening Questionnaire (LSQ) detectou lipedema provável em 36,8% das mulheres com dor nas pernas versus 12,3% dos controles — mas os próprios autores do LSQ advertem que NÃO é diagnóstico (ambos baixa qualidade). Regras de decisão clínica simples também discriminam: um algoritmo CART usando apenas três variáveis (hematomas, desproporção corporal, pés poupados) separou lipedema de linfedema com 100% de acurácia relatada em coorte prospectiva de 249 pacientes (qualidade moderada), e o sinal de Stemmer negativo mais poupamento de pés/mãos são características distintivas repetidamente citadas (usadas, p.ex., para redirecionar dois casos mal diagnosticados na Índia — qualidade muito baixa). Ferramentas adjuntas/objetivas propostas como auxílio à identificação — índice gordura-perna/gordura-total por DXA (AUC 0,90, corte ≥0,383), cortes de espessura por ultrassom de alta frequência (sensibilidade 0,77–0,79, especificidade até 0,96, NÃO validados externamente), bioimpedância, teste sensorial quantitativo (PPT+VDT, AUC ~0,86–0,91), TC (95% sensibilidade/100% especificidade relatadas), linfangiografia por RM e genotipagem de IL-6 — cada uma mostra sinais discriminativos mas baseia-se em estudos pequenos, de centro único, de baixa ou muito baixa qualidade. Uma revisão metodológica de qualidade moderada alerta que as ferramentas de quantificação de membros usam protocolos muito heterogêneos e mal documentados, com confiabilidade relatada em apenas uma minoria, limitando a reprodutibilidade. Uma revisão contrastante (qualidade muito baixa) afirma que o diagnóstico é exclusivamente clínico, sem biomarcador específico, e exames complementares usados apenas para excluir diagnósticos diferenciais — isso reflete a atual ausência de um padrão-ouro objetivo validado, em vez de contradizer a justificativa da triagem. Revisões e diretrizes (qualidade moderada a muito baixa) documentam consistentemente subdiagnóstico substancial e longo atraso diagnóstico (mediana ~25 anos), apoiando a justificativa da triagem. NOTA DE DESFECHO: o desfecho demonstrado é a IDENTIFICAÇÃO de casos / discriminação diagnóstica (detectar lipedema suspeito), NÃO eficácia de tratamento ou modificação da doença.",
-      "major_uncertainty": "No screening tool has been prospectively validated against an objective gold standard across diverse populations; questionnaire sensitivity is often low (e.g., 0.46), imaging cutoffs lack external validation, and the field still has no accepted biomarker, so how well any tool performs at genuine case-finding in real primary-care screening remains unproven.",
-      "major_uncertainty_pt": "Nenhuma ferramenta de triagem foi validada prospectivamente contra um padrão-ouro objetivo em populações diversas; a sensibilidade dos questionários costuma ser baixa (p.ex., 0,46), os cortes de imagem carecem de validação externa, e o campo ainda não tem biomarcador aceito, de modo que o desempenho real de qualquer ferramenta na detecção de casos em triagem de atenção primária permanece não comprovado.",
-      "version": "1.2",
+      "current_answer": "Based on currently indexed evidence, screening tools and questionnaires CAN help identify suspected lipedema cases and flag them for clinical confirmation, but they are not diagnostic. Several questionnaire-based instruments have been developed and validated: the QuASiL lipedema symptoms questionnaire was translated/validated in Brazilian Portuguese (high comprehension, symptom intensity correlating with limb volume) and applied in Turkish women (Cronbach's alpha 0.84). A simplified 9-item self-applied screening tool derived from QuASiL and grounded in standard clinical criteria (bilateral symmetric fat sparing feet, negative Stemmer sign, pain on palpation, bruising) achieved diagnostic discrimination of AUC 0.91 for a 7-question model and AUC 0.86 for a total-score model against expert diagnosis in 109 women (low-grade cross-sectional evidence). A separate validated Lipedema Screening Questionnaire (LSQ) detected probable lipedema more often in women with leg pain (36.8%) than controls (12.3%). Beyond questionnaires, clinical decision rules show promise: a CART algorithm using only three clinical variables (bruising, body disproportion, spared feet) classified lipedema versus lymphedema with 100% accuracy in a prospective cohort of 249 patients (moderate grade). Note, however, that one cross-sectional survey of 969 patients found no distributional difference between diagnosed and undiagnosed groups at a ≥6/13-symptom threshold (p=0.666), indicating symptom-count thresholds alone may not reliably separate cases. Across sources there is consistent documentation of underdiagnosis and long diagnostic delay (median 25.5 years to diagnosis). IMPORTANT CAVEATS: screening instruments identify SUSPECTED cases and estimate probability — they are explicitly not diagnostic, and their authors say so. Reported specificity is often higher than sensitivity (e.g., online tool sensitivity 0.46, specificity 0.88), meaning such tools may miss true cases. One review emphasizes lipedema diagnosis remains exclusively clinical with no specific biomarker. Objective adjuncts (DXA leg-fat/total-fat ratio AUC ~0.90, high-frequency ultrasound, bioimpedance) are being studied as complementary aids but measurement protocols are heterogeneous and poorly standardized, and several cutoffs are not yet externally validated.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, ferramentas de triagem e questionários PODEM ajudar a identificar casos suspeitos de lipedema e encaminhá-los para confirmação clínica, mas não são diagnósticos. Vários instrumentos baseados em questionários foram desenvolvidos e validados: o questionário de sintomas QuASiL foi traduzido/validado em português brasileiro (alta compreensão, intensidade dos sintomas correlacionada com volume do membro) e aplicado em mulheres turcas (alfa de Cronbach 0,84). Uma ferramenta simplificada de triagem autoaplicável de 9 itens derivada do QuASiL e baseada em critérios clínicos padrão (depósito de gordura bilateral simétrico poupando os pés, sinal de Stemmer negativo, dor à palpação, equimoses) alcançou discriminação diagnóstica de AUC 0,91 para um modelo de 7 perguntas e AUC 0,86 para um modelo de pontuação total contra diagnóstico de especialista em 109 mulheres (evidência transversal de baixa qualidade). Um Questionário de Triagem de Lipedema (LSQ) validado separado detectou lipedema provável com mais frequência em mulheres com dor nas pernas (36,8%) do que em controles (12,3%). Além dos questionários, regras de decisão clínica mostram promessa: um algoritmo CART usando apenas três variáveis clínicas (equimoses, desproporção corporal, pés poupados) classificou lipedema versus linfedema com 100% de acurácia em uma coorte prospectiva de 249 pacientes (qualidade moderada). Observe, no entanto, que uma pesquisa transversal de 969 pacientes não encontrou diferença distribucional entre grupos diagnosticados e não diagnosticados no limiar de ≥6/13 sintomas (p=0,666), indicando que limiares apenas de contagem de sintomas podem não separar casos de forma confiável. Entre as fontes, há documentação consistente de subdiagnóstico e longo atraso diagnóstico (mediana de 25,5 anos até o diagnóstico). RESSALVAS IMPORTANTES: instrumentos de triagem identificam casos SUSPEITOS e estimam probabilidade — eles explicitamente não são diagnósticos, e seus autores afirmam isso. A especificidade relatada costuma ser maior que a sensibilidade (ex.: ferramenta online sensibilidade 0,46, especificidade 0,88), o que significa que tais ferramentas podem perder casos verdadeiros. Uma revisão enfatiza que o diagnóstico de lipedema permanece exclusivamente clínico, sem biomarcador específico. Adjuntos objetivos (razão gordura perna/total por DXA AUC ~0,90, ultrassom de alta frequência, bioimpedância) estão sendo estudados como auxiliares complementares, mas os protocolos de medição são heterogêneos e mal padronizados, e vários pontos de corte ainda não foram validados externamente.",
+      "major_uncertainty": "Most validation studies are single-country, low-grade cross-sectional designs with modest sensitivity and limited external validation; it remains uncertain whether any questionnaire or cutoff performs reliably across diverse populations and against a consistent diagnostic reference standard.",
+      "major_uncertainty_pt": "A maioria dos estudos de validação são desenhos transversais de baixa qualidade, de um único país, com sensibilidade modesta e validação externa limitada; permanece incerto se algum questionário ou ponto de corte funciona de forma confiável em populações diversas e contra um padrão de referência diagnóstico consistente.",
+      "version": "1.3",
       "created": "2026-06-02",
       "updated": "2026-11-17",
       "history": [
+        {
+          "version": "1.3",
+          "date": "2026-11-17",
+          "change": "Answer recompiled after human curation of the claim set.",
+          "change_pt": "Resposta recompilada após curadoria humana dos claims.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.2",
           "date": "2026-11-17",
@@ -8293,40 +8276,49 @@
       ],
       "outcomes": [
         {
-          "outcome": "Case identification via symptom questionnaires",
-          "outcome_pt": "Identificação de casos por questionários de sintomas",
+          "outcome": "Identification of suspected/probable cases",
+          "outcome_pt": "Identificação de casos suspeitos/prováveis",
           "direction": "improved",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "QuASiL/LSQ discriminate suspected cases (AUC ~0.86-0.91) but low sensitivity; not diagnostic.",
-          "note_pt": "QuASiL/LSQ discriminam casos suspeitos (AUC ~0,86-0,91) mas baixa sensibilidade; não diagnósticos."
+          "note": "QuASiL/LSQ-type tools flag probable cases; AUC up to 0.91 vs expert dx in small cross-sectional studies.",
+          "note_pt": "Ferramentas tipo QuASiL/LSQ sinalizam casos prováveis; AUC até 0,91 vs dx de especialista em pequenos estudos transversais."
         },
         {
-          "outcome": "Clinical decision rule (lipedema vs lymphedema)",
-          "outcome_pt": "Regra de decisão clínica (lipedema vs linfedema)",
+          "outcome": "Differentiation from lymphedema (clinical rule)",
+          "outcome_pt": "Diferenciação de linfedema (regra clínica)",
           "direction": "improved",
           "confidence": "moderate",
           "disease_modifying": false,
-          "note": "3-variable CART (bruising, disproportion, spared feet) classified with reported 100% accuracy, single cohort.",
-          "note_pt": "CART de 3 variáveis (hematomas, desproporção, pés poupados) classificou com 100% de acurácia relatada, coorte única."
+          "note": "3-variable CART (bruising, disproportion, spared feet) classified lipedema vs lymphedema with 100% accuracy, n=249.",
+          "note_pt": "CART de 3 variáveis (equimoses, desproporção, pés poupados) classificou lipedema vs linfedema com 100% de acurácia, n=249."
         },
         {
-          "outcome": "Objective/imaging adjunct discrimination (DXA, US, BIS, QST, CT)",
-          "outcome_pt": "Discriminação por adjuntos objetivos/imagem (DXA, US, BIS, QST, TC)",
+          "outcome": "Confirmatory/definitive diagnosis",
+          "outcome_pt": "Diagnóstico confirmatório/definitivo",
+          "direction": "not_demonstrated",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "Tool authors state screeners are not diagnostic; diagnosis remains clinical with no specific biomarker.",
+          "note_pt": "Autores afirmam que triagens não são diagnósticas; diagnóstico permanece clínico sem biomarcador específico."
+        },
+        {
+          "outcome": "Sensitivity of questionnaire cutoffs",
+          "outcome_pt": "Sensibilidade dos pontos de corte do questionário",
+          "direction": "mixed",
+          "confidence": "low",
+          "disease_modifying": false,
+          "note": "High specificity but low sensitivity (e.g. 0.46/0.88); symptom-count threshold did not separate groups in one survey.",
+          "note_pt": "Alta especificidade mas baixa sensibilidade (ex. 0,46/0,88); limiar de contagem de sintomas não separou grupos em uma pesquisa."
+        },
+        {
+          "outcome": "Objective adjuncts (DXA/ultrasound/BIS)",
+          "outcome_pt": "Adjuntos objetivos (DXA/ultrassom/BIS)",
           "direction": "improved",
           "confidence": "low",
           "disease_modifying": false,
-          "note": "Each shows discriminative signal (AUC up to 0.90) but small, single-setting, not externally validated.",
-          "note_pt": "Cada um mostra sinal discriminativo (AUC até 0,90) mas pequeno, centro único, sem validação externa."
-        },
-        {
-          "outcome": "Validated standalone diagnostic gold standard",
-          "outcome_pt": "Padrão-ouro diagnóstico isolado validado",
-          "direction": "not_demonstrated",
-          "confidence": "very_low",
-          "disease_modifying": false,
-          "note": "No tool replaces clinical diagnosis; no accepted biomarker; one review states diagnosis is exclusively clinical.",
-          "note_pt": "Nenhuma ferramenta substitui o diagnóstico clínico; sem biomarcador aceito; uma revisão afirma diagnóstico exclusivamente clínico."
+          "note": "DXA leg-fat ratio AUC ~0.90 and ultrasound/BIS show promise but protocols heterogeneous, cutoffs not externally validated.",
+          "note_pt": "Razão gordura perna por DXA AUC ~0,90 e ultrassom/BIS promissores, mas protocolos heterogêneos, cortes não validados externamente."
         }
       ],
       "compiled_by": {
@@ -8334,8 +8326,8 @@
         "label": "Claude Opus 4.8",
         "date": "2026-11-17"
       },
-      "bottom_line": "Symptom questionnaires (QuASiL, LSQ) and simple clinical rules can flag people likely to have lipedema and help separate it from lymphedema, supporting their use for screening. They are not diagnostic on their own — some miss many true cases (low sensitivity), none is a validated gold standard, and diagnosis still depends on clinical judgment.",
-      "bottom_line_pt": "Questionários de sintomas (QuASiL, LSQ) e regras clínicas simples podem sinalizar pessoas com provável lipedema e ajudar a separá-lo do linfedema, apoiando seu uso para triagem. Eles não são diagnósticos por si só — alguns deixam passar muitos casos reais (baixa sensibilidade), nenhum é um padrão-ouro validado, e o diagnóstico ainda depende do julgamento clínico."
+      "bottom_line": "Validated questionnaires (QuASiL, LSQ) and simple clinical decision rules can flag people likely to have lipedema and sort them for further clinical evaluation. They cannot confirm the diagnosis on their own, often miss true cases, and no single screening tool has been established as a standalone diagnostic standard.",
+      "bottom_line_pt": "Questionários validados (QuASiL, LSQ) e regras clínicas simples podem sinalizar pessoas com provável lipedema e encaminhá-las para avaliação clínica adicional. Eles não confirmam o diagnóstico sozinhos, frequentemente perdem casos verdadeiros, e nenhuma ferramenta de triagem isolada foi estabelecida como padrão diagnóstico independente."
     },
     {
       "id": "SQ-LIP-000039",
@@ -8354,14 +8346,21 @@
         "lipo-lymphedema",
         "natural history"
       ],
-      "current_answer": "Based on currently indexed evidence, lipedema is frequently described as capable of progressing to lipolymphedema (often labeled Stage IV), but this remains only weakly supported and is now actively contested by the strongest longitudinal data. Numerous narrative reviews and a consensus document assert that advanced lipedema can overload or obstruct lymphatics and evolve into secondary lymphedema (very_low to low grade). Objective imaging supports an underlying gradient of lymphatic dysfunction: cross-sectional/cohort lymphoscintigraphy series (moderate grade) show pathologic transport in roughly 47–63% of lipedema limbs, with transport index worsening by clinical stage. However, a moderate-grade systematic review (7 studies, 311 lipedema patients) found lymphoscintigraphy NORMAL in 61.4%, with dermal backflow rare (3.8%), indicating the picture is predominantly lymphatic OVERLOAD rather than frank insufficiency. Critically, the single moderate-grade PROSPECTIVE cohort (median 4.6-year follow-up) found lipedema stable in 62% of patients with only 2.8% mean volume change, with progression driven by BMI/waist-height increases rather than lipedema itself, and lymphoscintigraphic abnormalities (present in 46.1%) NOT associated with volume progression (p=0.72); note this item is flagged 'disputed' and should be treated as provisional. Near-infrared imaging (low grade) shows dilated vessels with increased propulsion but NO dermal backflow in early lipedema, consistent with frank lymphatic failure being absent early. Cross-sectional data link rising BMI to progressively higher prevalence of subclinical and clinical lymphedema (16% to 78% across BMI groups), implicating obesity as the key aggravating cofactor. Several reviews explicitly frame lipedema and lymphedema as DISTINCT disease entities, not a precursor-successor relationship. Overall, the directionality (lipedema → lipolymphedema) is biologically plausible and widely asserted in low-quality sources, but the best longitudinal evidence suggests that observed progression is largely driven by concurrent weight gain rather than inherent disease progression; true prospective progression rates attributable to lipedema itself are not established.",
-      "current_answer_pt": "Com base nas evidências atualmente indexadas, o lipedema é frequentemente descrito como capaz de progredir para lipolinfedema (muitas vezes rotulado como Estágio IV), mas isso permanece apenas fracamente fundamentado e agora é ativamente contestado pelos dados longitudinais mais robustos. Numerosas revisões narrativas e um documento de consenso afirmam que o lipedema avançado pode sobrecarregar ou obstruir os vasos linfáticos e evoluir para linfedema secundário (grau muito baixo a baixo). Imagens objetivas apoiam um gradiente subjacente de disfunção linfática: séries transversais/coortes de linfocintilografia (grau moderado) mostram transporte patológico em cerca de 47–63% dos membros com lipedema, com o índice de transporte piorando conforme o estágio clínico. No entanto, uma revisão sistemática de grau moderado (7 estudos, 311 pacientes com lipedema) encontrou linfocintilografia NORMAL em 61,4%, com refluxo dérmico raro (3,8%), indicando que o quadro é predominantemente SOBRECARGA linfática e não insuficiência franca. Fundamentalmente, a única coorte PROSPECTIVA de grau moderado (seguimento mediano de 4,6 anos) encontrou lipedema estável em 62% dos pacientes com variação de volume média de apenas 2,8%, com a progressão impulsionada por aumentos de IMC/relação cintura-estatura em vez do lipedema em si, e as anomalias linfocintilográficas (presentes em 46,1%) NÃO associadas à progressão de volume (p=0,72); observe que este item está marcado como 'disputado' e deve ser tratado como provisório. A imagem por infravermelho próximo (grau baixo) mostra vasos dilatados com propulsão aumentada, mas SEM refluxo dérmico no lipedema inicial, consistente com a ausência de falência linfática franca precocemente. Dados transversais ligam o aumento do IMC a uma prevalência progressivamente maior de linfedema subclínico e clínico (16% a 78% entre grupos de IMC), implicando a obesidade como o principal cofator agravante. Várias revisões enquadram explicitamente o lipedema e o linfedema como entidades distintas, não como uma relação precursor-sucessor. No geral, a direcionalidade (lipedema → lipolinfedema) é biologicamente plausível e amplamente afirmada em fontes de baixa qualidade, mas a melhor evidência longitudinal sugere que a progressão observada é em grande parte impulsionada pelo ganho de peso concomitante e não pela progressão inerente da doença; as taxas reais de progressão prospectiva atribuíveis ao lipedema em si não estão estabelecidas.",
-      "major_uncertainty": "Whether lipedema inherently progresses to lymphedema over time, versus coexisting with lymphatic overload whose worsening is actually driven by concurrent obesity/weight gain, remains unresolved — the one prospective cohort (disputed, provisional) argues against inherent progression, while lower-quality cross-sectional and review sources assert it.",
-      "major_uncertainty_pt": "Se o lipedema progride inerentemente para linfedema ao longo do tempo, versus coexistir com sobrecarga linfática cuja piora é na verdade impulsionada pela obesidade/ganho de peso concomitante, permanece sem resolução — a única coorte prospectiva (disputada, provisória) argumenta contra a progressão inerente, enquanto fontes transversais e de revisão de menor qualidade a afirmam.",
-      "version": "1.2",
+      "current_answer": "Based on currently indexed evidence, lipedema is widely described as a potentially progressive condition in which a subset of patients develop secondary lymphedema, termed lipo-lymphedema, typically at advanced clinical stages (often designated Stage IV). Multiple narrative and consensus reviews and staging frameworks characterize lipolymphedema as a recognized complication of advanced lipedema (SCR-LIP-000018, 000129, 000333, 000338, 000494), though most such sources are low-to-very-low grade and do not quantify progression rates. Objective imaging evidence is mixed but points to a graded, severity-associated lymphatic burden rather than universal progression: lymphoscintigraphy shows pathologic transport in ~63% of severe (stage 3/4) versus milder cases (SCR-LIP-000123, moderate grade), and near-infrared imaging in early lipedema shows dilated vessels and increased propulsion but NO dermal backflow, indicating lymphatic function is preserved early and may deteriorate later (SCR-LIP-000124). However, a systematic review of lymphoscintigraphy (470 patients) found studies normal in 61% of lipedema patients with dermal backflow rare (3.8%), interpreting findings as lymphatic OVERLOAD rather than frank insufficiency (SCR-LIP-000429, moderate grade); a prospective cohort found 47% abnormal across all stages including stage 1, suggesting coexisting impairment that does not necessarily equal progression to lymphedema (SCR-LIP-000130, moderate grade). Obesity/BMI is a consistent cofactor: in 258 women, subclinical and clinical lymphedema prevalence rose steeply with BMI (SCR-LIP-000263), and a prospective cohort of 100 patients found limb-volume progression was driven by weight gain rather than disease chronicity, with lymphoscintigraphic abnormalities NOT associated with progression — arguing against inherent, inevitable progression (SCR-LIP-000565, moderate grade, high risk of bias). Some sources explicitly frame lipedema and lymphedema as entirely distinct entities and dispute that one progresses into the other (SCR-LIP-000495, SCR-LIP-000128, both low/very-low grade). On balance, the evidence supports that lipo-lymphedema occurs in some patients with advanced disease and is strongly linked to rising BMI, but does not establish that lipedema inevitably or uniformly progresses to lymphedema, nor that lymphatic dysfunction is cause versus consequence.",
+      "current_answer_pt": "Com base nas evidências atualmente indexadas, o lipedema é amplamente descrito como uma condição potencialmente progressiva em que um subgrupo de pacientes desenvolve linfedema secundário, denominado lipo-linfedema, tipicamente em estágios clínicos avançados (frequentemente designados Estágio IV). Múltiplas revisões narrativas e de consenso caracterizam o lipo-linfedema como complicação reconhecida do lipedema avançado (SCR-LIP-000018, 000129, 000333, 000338, 000494), embora a maioria dessas fontes seja de qualidade baixa a muito baixa e não quantifique as taxas de progressão. As evidências de imagem são mistas, mas apontam para uma carga linfática associada à gravidade, e não para progressão universal: a linfocintilografia mostra transporte patológico em ~63% dos casos graves (estágio 3/4) versus mais leves (SCR-LIP-000123, qualidade moderada), e a imagem por infravermelho próximo no lipedema inicial mostra vasos dilatados e propulsão aumentada mas SEM refluxo dérmico, indicando que a função linfática é preservada no início e pode deteriorar-se depois (SCR-LIP-000124). No entanto, uma revisão sistemática de linfocintilografia (470 pacientes) encontrou exames normais em 61% dos pacientes com lipedema, com refluxo dérmico raro (3,8%), interpretando os achados como SOBRECARGA linfática e não insuficiência franca (SCR-LIP-000429, qualidade moderada); uma coorte prospectiva encontrou 47% de alterações em todos os estágios, incluindo estágio 1, sugerindo comprometimento coexistente que não equivale necessariamente a progressão para linfedema (SCR-LIP-000130, qualidade moderada). A obesidade/IMC é um cofator consistente: em 258 mulheres, a prevalência de linfedema subclínico e clínico aumentou acentuadamente com o IMC (SCR-LIP-000263), e uma coorte prospectiva de 100 pacientes constatou que a progressão do volume dos membros foi impulsionada pelo ganho de peso e não pela cronicidade da doença, com alterações linfocintilográficas NÃO associadas à progressão — argumentando contra uma progressão inerente e inevitável (SCR-LIP-000565, qualidade moderada, alto risco de viés). Algumas fontes enquadram explicitamente o lipedema e o linfedema como entidades totalmente distintas e contestam que um progrida para o outro (SCR-LIP-000495, SCR-LIP-000128, ambas de qualidade baixa/muito baixa). No conjunto, as evidências apoiam que o lipo-linfedema ocorre em alguns pacientes com doença avançada e está fortemente ligado ao aumento do IMC, mas não estabelecem que o lipedema progride inevitável ou uniformemente para linfedema, nem que a disfunção linfática seja causa ou consequência.",
+      "major_uncertainty": "Whether lymphatic dysfunction is a cause or a consequence of lipedema progression, the true rate of progression to clinical lymphedema, and the degree to which progression reflects the disease itself versus rising BMI/obesity. No high-grade longitudinal study isolates intrinsic lipedema progression from weight-driven change.",
+      "major_uncertainty_pt": "Se a disfunção linfática é causa ou consequência da progressão do lipedema, a taxa real de progressão para linfedema clínico, e em que medida a progressão reflete a própria doença versus o aumento do IMC/obesidade. Nenhum estudo longitudinal de alta qualidade isola a progressão intrínseca do lipedema da mudança impulsionada pelo peso.",
+      "version": "1.3",
       "created": "2026-06-02",
       "updated": "2026-11-17",
       "history": [
+        {
+          "version": "1.3",
+          "date": "2026-11-17",
+          "change": "Answer recompiled after human curation of the claim set.",
+          "change_pt": "Resposta recompilada após curadoria humana dos claims.",
+          "engine": "anthropic/claude-opus-4.8"
+        },
         {
           "version": "1.2",
           "date": "2026-11-17",
@@ -8466,31 +8465,31 @@
       ],
       "outcomes": [
         {
-          "outcome": "Progression to frank lymphedema (disease course)",
-          "outcome_pt": "Progressão para linfedema franco (curso da doença)",
-          "direction": "not_demonstrated",
+          "outcome": "Progression to clinical lymphedema (lipo-lymphedema)",
+          "outcome_pt": "Progressão para linfedema clínico (lipo-linfedema)",
+          "direction": "mixed",
+          "confidence": "low",
+          "disease_modifying": true,
+          "note": "Occurs in subset with advanced disease; reviews affirm it, cohort data suggest it is weight-driven not inevitable.",
+          "note_pt": "Ocorre em subgrupo com doença avançada; revisões afirmam, dados de coorte sugerem ser impulsionado pelo peso e não inevitável."
+        },
+        {
+          "outcome": "Lymphatic dysfunction severity by lipedema stage",
+          "outcome_pt": "Gravidade da disfunção linfática por estágio do lipedema",
+          "direction": "increased",
           "confidence": "moderate",
           "disease_modifying": true,
-          "note": "Prospective cohort: lipedema stable in 62%, no inherent progression; weight gain, not disease, drives worsening.",
-          "note_pt": "Coorte prospectiva: lipedema estável em 62%, sem progressão inerente; ganho de peso, não a doença, impulsiona a piora."
+          "note": "Pathologic transport higher in severe vs mild stages; early disease lacks dermal backflow.",
+          "note_pt": "Transporte patológico maior em estágios graves vs leves; doença inicial sem refluxo dérmico."
         },
         {
-          "outcome": "Lymphatic dysfunction (transport/overload)",
-          "outcome_pt": "Disfunção linfática (transporte/sobrecarga)",
-          "direction": "mixed",
-          "confidence": "moderate",
-          "disease_modifying": false,
-          "note": "Abnormal transport in 47-63% of limbs but lymphoscintigraphy normal in ~61%; overload not frank insufficiency, dermal backflow rare.",
-          "note_pt": "Transporte anormal em 47-63% dos membros, mas linfocintilografia normal em ~61%; sobrecarga, não insuficiência franca, refluxo dérmico raro."
-        },
-        {
-          "outcome": "Lymphedema prevalence with rising BMI",
-          "outcome_pt": "Prevalência de linfedema com aumento do IMC",
+          "outcome": "BMI/obesity as driver of progression",
+          "outcome_pt": "IMC/obesidade como fator de progressão",
           "direction": "increased",
-          "confidence": "low",
-          "disease_modifying": false,
-          "note": "Cross-sectional: clinical lymphedema rose 6% to 78% across BMI groups; obesity is key cofactor, not lipedema alone.",
-          "note_pt": "Transversal: linfedema clínico subiu de 6% para 78% entre grupos de IMC; obesidade é cofator-chave, não o lipedema isolado."
+          "confidence": "moderate",
+          "disease_modifying": true,
+          "note": "Lymphedema prevalence and limb-volume progression rise strongly with BMI across studies.",
+          "note_pt": "Prevalência de linfedema e progressão de volume aumentam fortemente com o IMC nos estudos."
         }
       ],
       "compiled_by": {
@@ -8498,8 +8497,8 @@
         "label": "Claude Opus 4.8",
         "date": "2026-11-17"
       },
-      "bottom_line": "Lipedema often co-occurs with lymphatic overload and can accompany lymphedema, especially as body weight rises. But the best long-term study suggests lipedema itself usually stays stable and does not reliably progress into lymphedema on its own — weight gain, not the disease, drives most worsening.",
-      "bottom_line_pt": "O lipedema frequentemente coexiste com sobrecarga linfática e pode acompanhar o linfedema, especialmente com o aumento do peso corporal. Mas o melhor estudo de longo prazo sugere que o próprio lipedema geralmente permanece estável e não progride de forma confiável para linfedema por conta própria — o ganho de peso, não a doença, impulsiona a maior parte da piora."
+      "bottom_line": "Some people with advanced lipedema develop secondary lymphedema (lipo-lymphedema), and this risk rises sharply with higher body weight. The evidence does not show that lipedema always or inevitably turns into lymphedema, and it is still unclear whether lymphatic problems cause the progression or result from it.",
+      "bottom_line_pt": "Algumas pessoas com lipedema avançado desenvolvem linfedema secundário (lipo-linfedema), e esse risco aumenta acentuadamente com maior peso corporal. As evidências não mostram que o lipedema sempre ou inevitavelmente se transforma em linfedema, e ainda não está claro se os problemas linfáticos causam a progressão ou resultam dela."
     },
     {
       "id": "SQ-LIP-000040",

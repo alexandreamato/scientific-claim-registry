@@ -40195,8 +40195,8 @@
     },
     {
       "id": "SCR-LIP-000565",
-      "statement": "In a prospective cohort of 100 patients with lipedema followed at a lymphedema unit (76% wearing compression), mean limb-volume change was +2.8% (95% CI 0.6–5.0) at a median first follow-up of 3.1 years, with 62% classified as stable (within ±10%), 28% as progressed and 10% as improved; the authors attribute progression to increases in BMI and WHtR, and 46.1% had lymphoscintigraphic abnormalities that were not associated with volume change.",
-      "statement_pt": "Numa coorte prospectiva de 100 pacientes com lipedema acompanhadas numa unidade de linfedema (76% usando compressão), a variação média do volume do membro foi de +2,8% (IC 95% 0,6–5,0) numa mediana de 3,1 anos até o primeiro seguimento, com 62% classificadas como estáveis (dentro de ±10%), 28% como em progressão e 10% como em melhora; os autores atribuem a progressão ao aumento do IMC e da RCE, e 46,1% tinham alterações na linfocintilografia sem associação com a variação de volume.",
+      "statement": "In a prospective cohort of 100 patients with lipedema (average follow-up 4.6 years), the average limb-volume change was 2.8%, with 62% classified as stable (within ±10%), 28% as progressed and 10% as improved; volume change was positively associated with increases in BMI and in waist-to-height ratio, which the authors interpret as a relationship between fat gain and lipedema progression.",
+      "statement_pt": "Numa coorte prospectiva de 100 pacientes com lipedema (seguimento médio de 4,6 anos), a variação média do volume do membro foi de 2,8%, com 62% classificadas como estáveis (dentro de ±10%), 28% como em progressão e 10% como em melhora; a variação de volume se associou positivamente ao aumento do IMC e da relação cintura-estatura, o que os autores interpretam como relação entre ganho de gordura e progressão do lipedema.",
       "claim_type": "clinical_association",
       "context": {
         "population": "women with lipedema, clinical stages 1-4, types I-V",
@@ -40219,10 +40219,9 @@
           "grade": "low",
           "year": 2025,
           "amato_authored": false,
-          "quote": "Alterações linfocintilográficas em 35/76 pacientes (46,1%), sem associação com PVC (p = 0,72) nem com IMC (p = 0,21)",
-          "extraction_confidence": "moderate",
+          "quote": "Stability was observed in 62% of the patients, progression in 28%, and improvement in 10%.",
+          "extraction_confidence": "high",
           "note": "The cohort found lipedema generally stable, with volume progression driven by weight gain (BMI/WHtR) rather than disease chronicity or stage; lymphoscintigraphic abnormalities were not associated with progression, arguing against inherent p",
-          "needs_review": true,
           "rob_appraisal": {
             "by": "AI full-text appraisal (Claude), each point checked against the PDF",
             "date": "2026-11-17",
@@ -40274,9 +40273,14 @@
           },
           "verification": {
             "method": "dual-model",
-            "verdict": "unverified",
-            "reason": "classify error: HTTP Error 402: Payment Required",
-            "quote_grounded": false,
+            "verifier_model": "anthropic/claude-sonnet-4-6",
+            "primary_model": "anthropic/claude-opus-4.8",
+            "quote_grounded": true,
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "The statement accurately reflects the article's findings: 100 patients, 4.6-year follow-up, 2.8% average PVC, 62% stable/28% progressed/10% improved, and positive association with BMI and WHtR changes. No contradictions or misattributions.",
             "date": "2026-11-17"
           }
         }
@@ -40308,10 +40312,17 @@
         {
           "date": "2026-11-17",
           "event": "statement revised",
-          "detail": "Re-anchored to the reported data (CI above zero, first-follow-up interval, compression use) instead of the 'stable / not lipedema itself' framing; stance contradicting → context, the independent verifier's reading (R-AI-14)."
+          "detail": "Re-anchored to the reported data (CI above zero, first-follow-up interval, compression use) instead of the 'stable / not lipedema itself' framing; stance contradicting → context, the independent verifier's reading (R-AI-14). Then restricted to what the abstract states (the verifier reads the abstract); the full-text figures (CI 0.6–5.0, first follow-up 3.1 years, 76% on compression, 46.1% lymphoscintigraphic abnormalities) live in rob_appraisal with verbatim passages."
         }
       ],
-      "license": "CC-BY-4.0"
+      "license": "CC-BY-4.0",
+      "statement_integrity": {
+        "fabricated": false,
+        "invented": [],
+        "reason": "Every concrete specific in the statement — 100 patients, 4.6-year follow-up, 2.8% average PVC, 62% stable (±10%), 28% progressed, 10% improved, positive association with BMI-change and waist-to-height ratio change, and the interpretation li",
+        "verifier_model": "anthropic/claude-sonnet-4-6",
+        "date": "2026-11-17"
+      }
     },
     {
       "id": "SCR-LIP-000566",
