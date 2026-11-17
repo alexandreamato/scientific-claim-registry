@@ -58,7 +58,7 @@ T = {
         "claim_word":"Claim","json_link":"machine-readable JSON →","evidence_h":"Evidence",
         "context_h":"Context (PECO)","gaps_h":"Gaps & caveats","answers":"Answers these questions",
         "no_q":"Not yet linked to a question.","back_claims":"← All claims","ev_time":"Evidence over time",
-        "rob":"risk of bias","auto_note":"Auto-compiled by the Layer 1 surveillance loop; not yet human-reviewed.",
+        "rob":"risk of bias","rob_why":"Why this risk of bias: full-text methodological appraisal","rob_method":"Each point was checked against the full text and is shown with the verbatim passage. Positional or interpretive points were excluded.","auto_note":"Auto-compiled by the Layer 1 surveillance loop; not yet human-reviewed.",
         "v_verified":"verified","v_disputed":"needs review","v_unverified":"unverified",
         "v_title_ok":"Stance and quote independently confirmed by a second model.",
         "v_title_bad":"A second model could not confirm the stance or the quote — treat as provisional.",
@@ -79,7 +79,7 @@ T = {
         "claim_word":"Claim","json_link":"JSON legível por máquina →","evidence_h":"Evidência",
         "context_h":"Contexto (PECO)","gaps_h":"Lacunas e ressalvas","answers":"Responde a estas perguntas",
         "no_q":"Ainda não ligado a uma pergunta.","back_claims":"← Todos os claims","ev_time":"Evidência ao longo do tempo",
-        "rob":"risco de viés","auto_note":"Compilado automaticamente pelo loop de vigilância da Layer 1; ainda não revisado por humano.",
+        "rob":"risco de viés","rob_why":"Por que este risco de viés: avaliação metodológica do texto integral","rob_method":"Cada ponto foi conferido no texto integral e vem com o trecho literal. Pontos de posição ou de interpretação foram excluídos.","auto_note":"Compilado automaticamente pelo loop de vigilância da Layer 1; ainda não revisado por humano.",
         "v_verified":"verificado","v_disputed":"requer revisão","v_unverified":"não verificado",
         "v_title_ok":"Stance e citação confirmados de forma independente por um segundo modelo.",
         "v_title_bad":"Um segundo modelo não confirmou o stance ou a citação — tratar como provisório.",
@@ -293,8 +293,18 @@ def render_claim(c, lang):
         quote = f'<br><span class="evquote">“{e(x.get("quote"))}”</span>' if (x.get("quote") and _grnd) else ""
         ec = x.get("extraction_confidence")
         ec_html = f' <span class="muted small">· {t["extr_l"]}: {e(ec)}</span>' if ec else ""
+        # R-CLM-18 — the basis of a risk-of-bias rating, when it comes from a full-text appraisal.
+        ra = x.get("rob_appraisal") or {}
+        rob_html = ""
+        if ra.get("points"):
+            pts = "".join(f'<li>{e(pt.get("text_pt" if lang == "pt" else "text") or pt.get("text"))}'
+                          + (f'<br><span class="evquote">“{e(pt["quote"])}”</span>' if pt.get("quote") else "") + '</li>'
+                          for pt in ra["points"])
+            rob_html = (f'<details class="robwhy"><summary class="small">{e(t["rob_why"])} ({len(ra["points"])})</summary>'
+                        f'<p class="muted small">{e(t["rob_method"])} {e(ra.get("by",""))} · {e(ra.get("date",""))}</p>'
+                        f'<ol class="small">{pts}</ol></details>')
         ev_items += (f'<li>{cite_link(x)} {badge} <span class="muted small">— {e(meta)}</span>'
-                     f'{ec_html}{quote}{note}</li>')
+                     f'{ec_html}{quote}{note}{rob_html}</li>')
     ql = claim_questions.get(cid, [])
     if ql:
         q_items = "".join(

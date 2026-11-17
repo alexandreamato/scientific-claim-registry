@@ -605,6 +605,14 @@ def classify(question, art):
             r["engine"] = model_name()
             return r
         except Exception as e:
+            # A provider REFUSAL (no credit, bad key) is not a flaky call: falling back to the heuristic here
+            # would mint claims whose statement is just the article title, for every candidate that mentions
+            # the disease. Seen on 2026-11-17 (HTTP 402, account out of credit). Abort before any write —
+            # the loop only writes at the end, so exiting here leaves the registry untouched.
+            code = getattr(e, "code", None)
+            if code in (401, 402, 403):
+                sys.exit(f"LLM provider refused the call (HTTP {code}) — aborting this run without writing. "
+                         "Check the provider account (credit / key).")
             print(f"    [llm error: {e} — heuristic fallback]")
     text = ((art.get("title") or "") + " " + (art.get("abstractText") or "")).lower()
     dom = DOMAIN_TERM.get(domain_of(question["id"]), "").lower()

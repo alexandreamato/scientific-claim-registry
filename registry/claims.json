@@ -2,7 +2,7 @@
   "registry": "SCR-LIP",
   "version": "0.1",
   "date": "2026-05-30",
-  "count": 515,
+  "count": 514,
   "claims": [
     {
       "id": "SCR-LIP-000001",
@@ -4442,14 +4442,14 @@
           "stance": "supporting",
           "study_design": "cross_sectional",
           "n": null,
-          "risk_of_bias": "moderate",
+          "risk_of_bias": "high",
           "year": 2024,
           "amato_authored": false,
           "note": "Dinnendahl/Bertsch; only PPT-down and VDT-up of 13 parameters; pattern in thigh, absent in hand",
           "title": "Non-obese lipedema patients show a distinctly altered quantitative sensory testing profile with high diagnostic potential",
           "authors": "Dinnendahl et al.",
           "journal": "PAIN Reports",
-          "grade": "low",
+          "grade": "very_low",
           "_prov": {
             "grade_source": "bib_curated"
           },
@@ -4466,7 +4466,34 @@
             "date": "2026-06-10"
           },
           "quote": "Pressão é mediada por fibras C/Aδ; vibração por fibras Aβ → o padrão alterado sugere envolvimento seletivo destes subgrupos de fibras, com inflamação sistêmica e hormonal descartadas como causadores principais (não há sensibilização da mão); inflamação local clássica também improvável (ausência de h",
-          "extraction_confidence": "high"
+          "extraction_confidence": "high",
+          "rob_appraisal": {
+            "by": "AI full-text appraisal (Claude), each point checked against the PDF",
+            "date": "2026-11-17",
+            "source": "full text (PDF in the author's library)",
+            "points": [
+              {
+                "text": "Two-gate design: patients with chronic pain compared with pain-free healthy volunteers, which inflates diagnostic accuracy (spectrum bias); no comparison with other painful or swollen-leg conditions.",
+                "text_pt": "Desenho de duas portas: pacientes com dor crônica comparadas com voluntárias saudáveis sem dor, o que infla a acurácia (viés de espectro); sem comparação com outras condições de perna dolorosa ou aumentada.",
+                "quote": "correctly 95.8% of the participants as lipedema patients or healthy controls"
+              },
+              {
+                "text": "Pain is treated as lipedema-defining, so a pain-based test cannot detect painless lipedema.",
+                "text_pt": "A dor é tratada como definidora do lipedema, então um teste baseado em dor não detecta o lipedema sem dor.",
+                "quote": "lipedema-defining"
+              },
+              {
+                "text": "Patients came from a surgical lymphology clinic and an author is affiliated with a company in the same group, while no conflict of interest is declared.",
+                "text_pt": "As pacientes vieram de uma clínica de cirurgia linfológica e um autor é afiliado a uma empresa do mesmo grupo, sem conflito de interesse declarado.",
+                "quote": "The authors have no conflict of interest to declare."
+              },
+              {
+                "text": "Narrow single-centre sample: women aged 18–40 with BMI below 30.",
+                "text_pt": "Amostra estreita, de um centro: mulheres de 18 a 40 anos com IMC abaixo de 30.",
+                "quote": "female, 18–40 years, body mass index (BMI) below 30 kg/m2"
+              }
+            ]
+          }
         },
         {
           "ref": "DOI:10.1177/02683555251357094",
@@ -4534,6 +4561,11 @@
           "date": "2026-06-12",
           "event": "disputed evidence reviewed",
           "detail": "Human review: synthesis — this source confirms lowered PPT; the vibration/thermal/AUC specifics are in a sibling source (integrity clean). Accepted (refines)."
+        },
+        {
+          "date": "2026-11-17",
+          "event": "risk of bias revised",
+          "detail": "10.1097/pr9.0000000000001155: risk_of_bias moderate → high, grade low → very_low (GRADE downgrade for serious risk of bias), from a full-text methodological appraisal; 4 points, each with the verbatim passage (rob_appraisal)."
         }
       ],
       "statement_integrity": {
@@ -16574,8 +16606,8 @@
           "stance": "supporting",
           "study_design": "case_series",
           "n": null,
-          "risk_of_bias": "unknown",
-          "grade": "low",
+          "risk_of_bias": "high",
+          "grade": "very_low",
           "year": 2022,
           "amato_authored": false,
           "note": "Retrospective case series directly measuring lipedema pain before and after bariatric surgery; addresses the question but with small uncontrolled sample, showing weight loss did not alter lipedema symptoms.",
@@ -16595,7 +16627,34 @@
             "date": "2026-06-10"
           },
           "quote": "EVA de dor PRÉ-bariátrica: 7,3 ± 1,4 (mediana 7; variação 5-10) EVA de dor PÓS-bariátrica: 7,9 ± 1,2 (mediana 8; variação 6-10) — SEM melhora significativa (p = 0,28)",
-          "extraction_confidence": "high"
+          "extraction_confidence": "high",
+          "rob_appraisal": {
+            "by": "AI full-text appraisal (Claude), each point checked against the PDF",
+            "date": "2026-11-17",
+            "source": "full text (PDF in the author's library)",
+            "points": [
+              {
+                "text": "Selected on the outcome: the 13 patients were identified because they still had symptoms after bariatric surgery; there is no denominator of operated patients.",
+                "text_pt": "Seleção pelo desfecho: as 13 pacientes foram identificadas justamente por continuarem com sintomas após a bariátrica; não há denominador de operadas.",
+                "quote": "We identified 13 patients who suffered from lipedemaassociated symptoms after bariatric surgery"
+              },
+              {
+                "text": "Pre-operative pain was recalled years later, as the authors acknowledge.",
+                "text_pt": "A dor pré-operatória foi lembrada anos depois, como os autores reconhecem.",
+                "quote": "before bariatric surgery also may be subject to recall bias"
+              },
+              {
+                "text": "Circular definition: pain is taken as obligatory, so persistence of pain in 'lipedema' is partly built into the definition.",
+                "text_pt": "Definição circular: a dor é tomada como obrigatória, então a persistência da dor no 'lipedema' está em parte embutida na definição.",
+                "quote": "LiDo with its obligatory pain persists"
+              },
+              {
+                "text": "Retrospective chart review of 13 patients, without objective volume or imaging measures.",
+                "text_pt": "Revisão retrospectiva de prontuários de 13 pacientes, sem medida objetiva de volume nem imagem.",
+                "quote": "In a retrospective analysis, we reviewed the medical records"
+              }
+            ]
+          }
         },
         {
           "ref": "DOI:10.1007/s11695-025-08021-1",
@@ -16661,6 +16720,11 @@
           "date": "2026-06-12",
           "event": "disputed evidence reviewed",
           "detail": "Human review: this source is a 49-patient systematic review corroborating that weight loss does not reduce lipedema; the '13 patients / p=0.28' specifics are from the sibling case series (integrity clean). Accepted (contradicting)."
+        },
+        {
+          "date": "2026-11-17",
+          "event": "risk of bias revised",
+          "detail": "10.1016/j.soard.2021.12.027: risk_of_bias unknown → high, grade low → very_low (GRADE downgrade for serious risk of bias), from a full-text methodological appraisal; 4 points, each with the verbatim passage (rob_appraisal)."
         }
       ],
       "license": "CC-BY-4.0",
@@ -16693,8 +16757,8 @@
           "stance": "supporting",
           "study_design": "cohort",
           "n": null,
-          "risk_of_bias": "unknown",
-          "grade": "moderate",
+          "risk_of_bias": "high",
+          "grade": "low",
           "year": 2020,
           "amato_authored": false,
           "note": "The article directly examines the effect of bariatric surgery on thigh volume and weight loss in lipedema patients, reporting significant volume reduction comparable to controls and correlated with BMI loss, directly addressing whether subs",
@@ -16714,7 +16778,39 @@
             "date": "2026-06-10"
           },
           "quote": "O volume da coxa diminuiu significativamente em ambos os grupos após a cirurgia bariátrica. Redução ajustada do volume da coxa: 33,4% no lipedema vs 37,0% nos controles no 1º seguimento",
-          "extraction_confidence": "high"
+          "extraction_confidence": "high",
+          "rob_appraisal": {
+            "by": "AI full-text appraisal (Claude), each point checked against the PDF",
+            "date": "2026-11-17",
+            "source": "full text (PDF in the author's library)",
+            "points": [
+              {
+                "text": "The paper's own Table 2 contradicts the text: adjusted thigh volume falls 37.9% in lipoedema (23,785.4 → 14,763.6 mL) and 32.2% in controls (22,854.7 → 15,493.9 mL), whereas the abstract and text report 33.4% vs 37.0%.",
+                "text_pt": "A Tabela 2 do próprio artigo contradiz o texto: o volume ajustado da coxa cai 37,9% no lipedema (23.785,4 → 14.763,6 mL) e 32,2% nos controles (22.854,7 → 15.493,9 mL), enquanto o resumo e o texto dão 33,4% contra 37,0%.",
+                "quote": "reduction amounted to 33.4% in lipoedema and 37.0% in"
+              },
+              {
+                "text": "Very small and shrinking samples: 14 controls (8 at the second visit); 23 and 17 of 31 lipoedema patients at the two follow-ups.",
+                "text_pt": "Amostras muito pequenas e com perdas: 14 controles (8 na segunda visita); 23 e 17 das 31 pacientes com lipedema nos dois seguimentos.",
+                "quote": "a n = 23, b n = 14, c n = 17, d n = 8"
+              },
+              {
+                "text": "The lipoedema group lost more weight than controls, so thigh-volume loss per unit of weight lost was not compared.",
+                "text_pt": "O grupo lipedema perdeu mais peso que os controles, e a perda de coxa por unidade de peso perdido não foi comparada.",
+                "quote": "justed total weight loss (%TWL) amounted to 34.2% (30.9–37.5%) in patients with lipoedema and 28.8%"
+              },
+              {
+                "text": "Pain is the diagnostic criterion but was not measured as an outcome.",
+                "text_pt": "A dor é o critério diagnóstico, mas não foi medida como desfecho.",
+                "quote": "The diagnostic criterion for lipoedema was painful"
+              },
+              {
+                "text": "A retrospective cohort is repeatedly called a 'trial'.",
+                "text_pt": "Uma coorte retrospectiva é chamada várias vezes de 'trial'.",
+                "quote": "This trial demonstrates a significant reduction in thigh"
+              }
+            ]
+          }
         }
       ],
       "relations": [],
@@ -16735,6 +16831,11 @@
           "date": "2026-05-31",
           "event": "created",
           "detail": "auto-ingested for SQ-LIP-000024"
+        },
+        {
+          "date": "2026-11-17",
+          "event": "risk of bias revised",
+          "detail": "10.1159/000511044: risk_of_bias unknown → high, grade moderate → low (GRADE downgrade for serious risk of bias), from a full-text methodological appraisal; 5 points, each with the verbatim passage (rob_appraisal)."
         }
       ],
       "license": "CC-BY-4.0",
@@ -21358,79 +21459,6 @@
         "fabricated": false,
         "invented": [],
         "reason": "All concrete specifics in the claim — cutoff ≥12 points, AUC 0.8615, specificity 0.88, sensitivity 0.46, PPV 0.767, 12.3% prevalence, ~8.8 million women aged 18-69 — are explicitly present in the provided sources.",
-        "verifier_model": "anthropic/claude-sonnet-4-6",
-        "date": "2026-06-10"
-      }
-    },
-    {
-      "id": "SCR-LIP-000277",
-      "statement": "In non-obese lipedema patients, standardized QST (DFNS protocol) revealed selective alterations in only 2 of 13 parameters at the affected lateral thigh—elevated pressure pain (PPT, AUC 0.9075) and reduced vibration detection (VDT, AUC 0.8638)—and a combined PPT+VDT z-score score was proposed as a rapid diagnostic test for lipedema.",
-      "statement_pt": "Em pacientes não-obesas com lipedema, o QST padronizado (protocolo DFNS) revelou alterações seletivas em apenas 2 de 13 parâmetros na coxa lateral afetada—hiper-responsividade à dor por pressão (PPT, AUC 0,9075) e redução da sensibilidade à vibração (VDT, AUC 0,8638)—e um escore combinado PPT+VDT foi proposto como teste diagnóstico rápido para lipedema.",
-      "claim_type": "clinical_association",
-      "context": {
-        "population": "non-obese women with lipedema",
-        "condition": "lipedema",
-        "exposure": "standardized QST (DFNS protocol) at lateral thigh",
-        "comparator": "healthy controls (normative reference)",
-        "outcome": "PPT and VDT z-scores as diagnostic markers",
-        "scope": "auto-ingested from Layer 1 surveillance"
-      },
-      "knowledge_state": "emerging",
-      "evidence_confidence": "low",
-      "evidence": [
-        {
-          "ref": "DOI:10.1101/2023.04.25.23289086",
-          "stance": "supporting",
-          "study_design": "cross_sectional",
-          "n": null,
-          "risk_of_bias": "unknown",
-          "grade": "low",
-          "year": 2023,
-          "amato_authored": false,
-          "note": "Cross-sectional case-control comparison proposing a quantitative sensory testing-based diagnostic score (PVTH-score) with high discriminative accuracy, directly addressing the development of a screening/diagnostic tool for identifying liped",
-          "title": "Non-obese lipedema patients show a distinctly altered Quantitative Sensory Testing profile with high diagnostic potential",
-          "authors": "Dinnendahl et al.",
-          "verification": {
-            "method": "dual-model",
-            "verifier_model": "anthropic/claude-sonnet-4-6",
-            "primary_model": "anthropic/claude-opus-4.8",
-            "quote_grounded": true,
-            "stance_agreed": true,
-            "faithful": true,
-            "verifier_stance": "supporting",
-            "verdict": "verified",
-            "reason": "The article directly reports selective alterations in PPT and VDT at the lateral thigh (2 of 13 QST parameters), with AUC values of 0.9075 for PPT and 0.8638 for VDT, and proposes a combined PPT+VDT score (PVTH-score) as a rapid diagnostic ",
-            "date": "2026-06-10"
-          },
-          "quote": "testar se os parametros alterados podem servir de base para um teste diagnostico rapido (PVTH-score)",
-          "extraction_confidence": "high"
-        }
-      ],
-      "relations": [],
-      "gaps": "Auto-ingested single source; not yet human-reviewed.",
-      "primary_amato_source": null,
-      "curators": [],
-      "provenance": {
-        "auto": true,
-        "engine": "anthropic/claude-opus-4.8",
-        "question": "SQ-LIP-000004",
-        "source": "library",
-        "ingested": "2026-05-31"
-      },
-      "created": "2026-05-31",
-      "updated": "2026-05-31",
-      "history": [
-        {
-          "date": "2026-05-31",
-          "event": "created",
-          "detail": "auto-ingested for SQ-LIP-000004"
-        }
-      ],
-      "license": "CC-BY-4.0",
-      "statement_integrity": {
-        "fabricated": false,
-        "invented": [],
-        "reason": "All concrete specifics in the statement — non-obese patients, DFNS protocol, 2 of 13 parameters altered, lateral thigh, PPT AUC 0.9075, VDT AUC 0.8638, and the combined PPT+VDT z-score as a proposed diagnostic tool — are present in at least",
         "verifier_model": "anthropic/claude-sonnet-4-6",
         "date": "2026-06-10"
       }
@@ -40167,8 +40195,8 @@
     },
     {
       "id": "SCR-LIP-000565",
-      "statement": "In a prospective cohort of lipedema patients (median follow-up 4.6 years), the disease was stable in 62% with a mean volume change of only 2.8%, progression was driven by BMI/WHtR increases rather than lipedema itself, and lymphoscintigraphic abnormalities present in 46.1% were not associated with volume progression (p=0.72).",
-      "statement_pt": "Em uma coorte prospectiva de pacientes com lipedema (seguimento mediano de 4,6 anos), a doença permaneceu estável em 62% com mudança volumétrica média de apenas 2,8%; a progressão foi associada ao aumento de IMC/WHtR e não ao lipedema em si, e as alterações linfocintilográficas presentes em 46,1% não se associaram à progressão volumétrica (p=0,72).",
+      "statement": "In a prospective cohort of 100 patients with lipedema followed at a lymphedema unit (76% wearing compression), mean limb-volume change was +2.8% (95% CI 0.6–5.0) at a median first follow-up of 3.1 years, with 62% classified as stable (within ±10%), 28% as progressed and 10% as improved; the authors attribute progression to increases in BMI and WHtR, and 46.1% had lymphoscintigraphic abnormalities that were not associated with volume change.",
+      "statement_pt": "Numa coorte prospectiva de 100 pacientes com lipedema acompanhadas numa unidade de linfedema (76% usando compressão), a variação média do volume do membro foi de +2,8% (IC 95% 0,6–5,0) numa mediana de 3,1 anos até o primeiro seguimento, com 62% classificadas como estáveis (dentro de ±10%), 28% como em progressão e 10% como em melhora; os autores atribuem a progressão ao aumento do IMC e da RCE, e 46,1% tinham alterações na linfocintilografia sem associação com a variação de volume.",
       "claim_type": "clinical_association",
       "context": {
         "population": "women with lipedema, clinical stages 1-4, types I-V",
@@ -40184,17 +40212,55 @@
         {
           "title": "Is lipedema a progressive disease?",
           "ref": "DOI:10.1177/1358863x241306415",
-          "stance": "contradicting",
+          "stance": "context",
           "study_design": "cohort",
           "n": null,
-          "risk_of_bias": "unknown",
-          "grade": "moderate",
+          "risk_of_bias": "high",
+          "grade": "low",
           "year": 2025,
           "amato_authored": false,
           "quote": "Alterações linfocintilográficas em 35/76 pacientes (46,1%), sem associação com PVC (p = 0,72) nem com IMC (p = 0,21)",
           "extraction_confidence": "moderate",
           "note": "The cohort found lipedema generally stable, with volume progression driven by weight gain (BMI/WHtR) rather than disease chronicity or stage; lymphoscintigraphic abnormalities were not associated with progression, arguing against inherent p",
-          "verification": {
+          "needs_review": true,
+          "rob_appraisal": {
+            "by": "AI full-text appraisal (Claude), each point checked against the PDF",
+            "date": "2026-11-17",
+            "source": "full text (PDF in the author's library)",
+            "points": [
+              {
+                "text": "Not an untreated natural history: most patients were on active conservative treatment, although the paper presents itself as a natural-history study.",
+                "text_pt": "Não é história natural sem tratamento: a maioria estava em tratamento conservador ativo, embora o artigo se apresente como estudo de história natural.",
+                "quote": "A total of 76% of the patients wore the compression garments prescribed by the doctor and 66% carried out [physical exercise]"
+              },
+              {
+                "text": "Selection: only 100 of 195 recruited patients (those with two volume measurements) were analysed, and liposuction history was an exclusion criterion, so patients who progressed to surgery may be missing.",
+                "text_pt": "Seleção: só 100 das 195 recrutadas (as que tinham duas volumetrias) foram analisadas, e lipoaspiração prévia era critério de exclusão; quem progrediu até a cirurgia pode ter saído da amostra.",
+                "quote": "From the 195 patients with lipedema recruited in our prospective cohort from September 2012 to September 2023, those who had at least two volume measurements"
+              },
+              {
+                "text": "The volume change is taken at the first follow-up (median 3.1 years, SD 1.9), not at the 4.6-year median in the abstract, and the fixed ±10% cut-off is not adjusted for time.",
+                "text_pt": "A variação de volume vem do primeiro seguimento (mediana de 3,1 anos, DP 1,9), não dos 4,6 anos do resumo, e o corte fixo de ±10% não é ajustado pelo tempo.",
+                "quote": "first follow up had a median of 3.1 years (SD: 1.9) after baseline"
+              },
+              {
+                "text": "The mean volume change has a confidence interval above zero (net increase), and 28% progressed versus 10% improved; 'stability in 62%' depends on the chosen cut-off.",
+                "text_pt": "A variação média de volume tem intervalo de confiança acima de zero (aumento líquido), e 28% progrediram contra 10% que melhoraram; 'estabilidade em 62%' depende do corte escolhido.",
+                "quote": "The mean PVC was 2.8% (95% CI: 0.6–5.0)"
+              },
+              {
+                "text": "The case definition requires pain or discomfort, so painless lipedema is excluded by design.",
+                "text_pt": "A definição de caso exige dor ou desconforto, então o lipedema sem dor fica excluído por construção.",
+                "quote": "associated with pain or discomfort in LL"
+              },
+              {
+                "text": "Lymphatic involvement was frequent in the same cohort (relevant to the lipedema–lymphedema question).",
+                "text_pt": "O acometimento linfático foi frequente na mesma coorte (relevante para a relação entre lipedema e linfedema).",
+                "quote": "Lymphoscintigraphic alterations (n = 76) 35/76 (46.1%)"
+              }
+            ]
+          },
+          "prior_verification": {
             "method": "dual-model",
             "verifier_model": "anthropic/claude-sonnet-4-6",
             "primary_model": "anthropic/claude-opus-4.8",
@@ -40206,7 +40272,13 @@
             "reason": "The article accurately provides the stated findings: 62% stability, 2.8% mean PVC, BMI/WHtR driving progression, and 46.1% lymphoscintigraphic abnormalities not associated with volume progression (p=0.72). However, the stance should be 'con",
             "date": "2026-11-17"
           },
-          "needs_review": true
+          "verification": {
+            "method": "dual-model",
+            "verdict": "unverified",
+            "reason": "classify error: HTTP Error 402: Payment Required",
+            "quote_grounded": false,
+            "date": "2026-11-17"
+          }
         }
       ],
       "relations": [],
@@ -40227,6 +40299,16 @@
           "date": "2026-11-17",
           "event": "created",
           "detail": "auto-ingested for SQ-LIP-000039"
+        },
+        {
+          "date": "2026-11-17",
+          "event": "risk of bias revised",
+          "detail": "10.1177/1358863x241306415: risk_of_bias unknown → high, grade moderate → low (GRADE downgrade for serious risk of bias), from a full-text methodological appraisal; 6 points, each with the verbatim passage (rob_appraisal)."
+        },
+        {
+          "date": "2026-11-17",
+          "event": "statement revised",
+          "detail": "Re-anchored to the reported data (CI above zero, first-follow-up interval, compression use) instead of the 'stable / not lipedema itself' framing; stance contradicting → context, the independent verifier's reading (R-AI-14)."
         }
       ],
       "license": "CC-BY-4.0"

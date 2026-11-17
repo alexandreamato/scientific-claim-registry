@@ -224,6 +224,12 @@
   são eixos ortogonais. O `classify` retorna ambos na mesma chamada (sem custo extra) e a evidência grava os dois;
   a página do claim mostra a confiança de leitura ao lado do GRADE. Complementa a verificação adversarial (R-AI-14):
   extraction_confidence é a **auto-avaliação** do primário; o verdict é o **veredito independente** do segundo modelo.
+- **R-CLM-18 [Adopted]** **Risco de viés vindo de leitura do texto integral é justificado ponto a ponto.** Quando o
+  `risk_of_bias` de uma evidência é revisto por avaliação metodológica do texto integral, cada ponto entra em
+  `evidence.rob_appraisal.points` com o **trecho literal** do artigo que o sustenta, e o site mostra a lista. Só
+  entram fatos conferíveis no artigo (desenho, seleção, perdas, números que não fecham, definição de caso);
+  pontos de posição ou de agenda ficam fora. A autoria é declarada como é: avaliação por IA conferida no PDF não
+  é assinada como avaliação de especialista (Layer 2). Risco de viés sério rebaixa o GRADE em um nível.
 
 ## 5. Perguntas e respostas
 
@@ -614,6 +620,13 @@
 ---
 
 ## Changelog
+
+- **2026-11-17** — **R-CLM-18 (novo) e aborto por recusa do provedor.** Quatro estudos centrais em teses contestadas
+  (coorte de Vasc Med 2025 sobre progressão; Fink 2021, bariátrica; Dinnendahl 2024, teste sensorial; Cornely 2022,
+  dor após bariátrica) receberam risco de viés alto com 4–6 pontos cada, todos conferidos no PDF com trecho literal;
+  GRADE rebaixado um nível. O *preprint* de Dinnendahl 2023 foi banido como `superseded`. O SCR-LIP-000565 foi
+  reancorado nos dados (IC acima de zero). Com o saldo do OpenRouter zerado (HTTP 402), `classify` caía na
+  heurística e cunharia claims com o título como texto; agora 401/402/403 abortam o run sem gravar.
 
 - **2026-11-17** — **R-CLM-10: categoria `author_ban`.** A busca semântica devolve as fichas de autoria banida
   (a biblioteca as cataloga, marcadas) e nada no loop olhava a marca: **11 artigos** de autoria banida (13 claims)

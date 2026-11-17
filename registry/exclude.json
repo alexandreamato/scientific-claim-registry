@@ -72,6 +72,12 @@
       "category": "author_ban",
       "reason": "rule 2 (author ban): library mark (proibida_nao_citar)",
       "date": "2026-11-17"
+    },
+    {
+      "ref": "10.1101/2023.04.25.23289086",
+      "category": "superseded",
+      "reason": "preprint superseded by the peer-reviewed version (10.1097/PR9.0000000000001155); the score definition changed between versions",
+      "date": "2026-11-17"
     }
   ]
 }
