@@ -621,6 +621,13 @@
 
 ## Changelog
 
+- **2026-11-17** — **Histórico do git reescrito (regra 2).** `git filter-repo` em todos os 16 commits: evidências e claims
+  de autoria banida removidos dos seeds e das cópias de dataset em `osf/deposit_v0.*`, textos de resposta que citavam
+  esses DOIs/IDs trocados por um aviso de retirada, nomes tirados de comentários e da lista `exclude.json` (que guarda só
+  os DOIs), e os pacotes `osf/*.zip` retirados do repositório (continuam no Zenodo). Envio forçado ao GitHub. Os SHAs
+  antigos seguem acessíveis no GitHub até o suporte apagá-los. Também saiu o `first_mention` da SQ-LIP-000004, que
+  apontava para um preprint de autoria banida; `first_mention.py` agora pula referências banidas.
+
 - **2026-11-17** — **R-CLM-18 (novo) e aborto por recusa do provedor.** Quatro estudos centrais em teses contestadas
   (coorte de Vasc Med 2025 sobre progressão; Fink 2021, bariátrica; Dinnendahl 2024, teste sensorial; Cornely 2022,
   dor após bariátrica) receberam risco de viés alto com 4–6 pontos cada, todos conferidos no PDF com trecho literal;
