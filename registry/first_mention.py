@@ -22,7 +22,11 @@ def oldest(query):
             res = json.loads(r.read()).get("resultList", {}).get("result", [])
     except Exception as e:
         print(f"   [error {e}]"); return None
+    import ingest  # rule 2 (author ban) + exclude.json apply to the first-mention anchor too
+    excl = ingest.excluded_set()
     for x in res:
+        if (x.get("doi") or "").lower() in excl or ingest.banned_author(x):
+            continue
         yr = int(x.get("pubYear") or 0)
         if 1930 <= yr <= THIS_YEAR and (x.get("doi") or x.get("pmid") or x.get("title")):
             ref = (f"DOI:{x['doi'].lower()}" if x.get("doi") else
