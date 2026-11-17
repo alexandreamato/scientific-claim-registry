@@ -116,7 +116,7 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
 - **Build → deploy:**
   ```bash
   cd site && python3 build_questions.py && python3 build_site.py && python3 build_home.py && \
-  rsync -avz --delete --exclude='*.py' --exclude='deploy.md' --exclude='CLAUDE.md' \
+  rsync -avz --delete --chmod=D755,F644 --exclude='*.py' --exclude='deploy.md' --exclude='CLAUDE.md' \
     -e "ssh -p 22" ./ alexandre@91.98.19.157:/home/alexandre/web/scientificclaims.org/public_html/
   ```
   `build_questions.py` é dono do **sitemap**; `build_home.py` regenera o hero da home do dado real da pergunta

@@ -32,7 +32,7 @@ python3 make_images.py       # (só se mudar a OG image / favicon)
 A partir desta pasta (`site/`):
 
 ```bash
-rsync -avz --delete \
+rsync -avz --delete --chmod=D755,F644 \
   --exclude='.inbox' --exclude='*.py' --exclude='deploy.md' --exclude='CLAUDE.md' --exclude='.git' --exclude='.claude' \
   -e "ssh -p 22" \
   ./ alexandre@91.98.19.157:/home/alexandre/web/scientificclaims.org/public_html/

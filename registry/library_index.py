@@ -13,7 +13,7 @@ Then `from library_index import search` to query it.
 """
 import os, re, sqlite3, subprocess, sys, datetime
 DIR = os.path.dirname(os.path.abspath(__file__))
-LIBDIR = "/Users/alexandreamato/Library/CloudStorage/SynologyDrive-aamato/artigos lipedema"
+LIBDIR = os.environ.get("BIB_DIR", os.path.expanduser("~/lipedema"))  # moved off Synology 2026-09-16
 DB = os.path.join(DIR, "library.db")
 SKIP = {".venv", "__pycache__", "tools", "graph", "scripts", "scripts_temporarios",
         ".claude", ".git", "node_modules", ".bib", "figuras", "figures"}

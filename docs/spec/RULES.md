@@ -335,7 +335,10 @@
 - **R-AI-7 [Adopted]** **Retrieval é semântico, sobre a biblioteca curada do autor.** O loop busca via
   **`bib`** (API local `http://127.0.0.1:8900`): `/semantic` (embeddings/Ollama) ranqueia por significado e
   `fichamod` carrega a **ficha estruturada exata** (objetivo/resultados/conclusão/grau/DOI) como entrada do
-  classify — muito superior a FTS5 lexical. Fallback p/ `library_index` (FTS5) se a API estiver fora.
+  classify — muito superior a FTS5 lexical. Fallback p/ `library_index` (FTS5) se a API estiver fora **ou se o
+  `/semantic` falhar** (antes, falha do `/semantic` com `/health` ok deixava o run sem biblioteca nenhuma).
+  A biblioteca mora em **`~/lipedema`** (`BIB_DIR`) desde 2026-09-16; a pasta antiga do Synology é rede de
+  segurança congelada e **não** se lê. O cron semanal **sobe o `bib serve`** se ele estiver fora e o derruba no fim.
   *Diferencial vs Consensus: mesmo recall semântico, mas sobre o corpus de lipedema mais completo (o do autor),
   e com memória versionada persistente que o Consensus não tem.*
 - **R-AI-8 [Adopted]** **Ingestão por lista de DOIs** (`loop.py --doi-file`): aceitar uma *reading list*
@@ -375,7 +378,9 @@
   automação:** o cron semanal (`cron_retractions.sh`) faz uma **varredura rotativa** de **2 perguntas/semana**
   (`loop --source all --accept 4 --commit`), ciclando as 25 (~a cada 13 semanas) — o registro caça contradição
   continuamente, sozinho. O classify (R-AI-11) rotula o que vier; quem não acha registra isso honestamente
-  (caveat R-SITE-13). Custo baixo (2 loops/semana).
+  (caveat R-SITE-13). Custo baixo (2 loops/semana). **A rotação só avança sobre perguntas cujo loop terminou com
+  sucesso (exit 0);** sem chave de LLM a varredura é **pulada com ⚠ no log e o ponteiro não se move** — "varrer"
+  sem rodar não conta como varrer.
 - **R-AI-13 [Adopted]** **Proveniência ao nível da frase (quote grounding).** Verificar que o **DOI resolve**
   (R-AI-4) prova que a *fonte existe*, **não** que a claim é **fiel** à fonte. Por isso todo item de evidência
   carrega um **`quote`**: um trecho **verbatim** (≤300 caracteres) do abstract/ficha que **fundamenta a stance e o
@@ -605,6 +610,20 @@
 ---
 
 ## Changelog
+
+- **2026-11-17** — **R-AI-7 / R-AI-12: oito semanas de varredura vazia, e a biblioteca que o loop não via
+  (conserto de implementação + duas garantias).** (1) De 27/09 a 15/11 a chave OpenRouter não existia na máquina
+  que roda o cron: `loop.py` saía com "No LLM key" toda semana, mas o ponteiro avançava e o log dizia
+  "contradiction sweep: SQ-…" — 18 perguntas (SQ-LIP-000033→000042, 000001→000006) "varridas" sem nada feito. O
+  ponteiro voltou para SQ-LIP-000033 e agora só avança com sucesso (R-AI-12). (2) `BIB_DIR`/`LIBDIR` ainda
+  apontavam para a pasta do Synology, abandonada em 16/09. (3) O `/semantic` do `bib serve` devolvia HTTP 500 a
+  toda consulta (`np` só era ligado no caminho da CLI) — consertado na biblioteca. Com o serve no ar o run
+  ficava sem biblioteca nenhuma; com ele fora, caía no FTS5 de 30/05/2026 (5.242 PDFs lidos por texto, sem as fichas). A biblioteca tem hoje 4.563 fichas; o registro
+  citava 284 DOIs. Feito o backfill das 42 perguntas contra a biblioteca nova: **391 → 526 claims, 470 → 626
+  evidências** (136 verified, 6 disputed por R-AI-14, mantidos com selo e não apagados). (4) O deploy publicava
+  com as permissões da pasta do Dropbox (700/600) e o nginx devolvia **403 no site inteiro**; todo `rsync` de
+  deploy agora leva `--chmod=D755,F644`. (5) Um recompile voltou com vírgula final no JSON e perdeu a pergunta
+  inteira; `ingest._loads_lenient` tenta de novo sem ela.
 
 - **2026-09-05** — **R-AI-12: a varredura de contradição estava recuperando duplicatas (conserto de
   implementação, sem mudança de política).** Auditoria dos 3 meses de automação: R-AI-11 **funcionou**

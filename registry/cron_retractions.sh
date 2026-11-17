@@ -30,16 +30,50 @@ if ! python3 enrich_evidence.py --check >> "$LOG" 2>&1; then
 fi
 
 # (2) Rotating contradiction sweep (R-AI-12): 2 questions/week, cycling through all.
+#
+# PREFLIGHT. From 2026-09-27 to 2026-11-15 the LLM key was missing on the machine running this job:
+# loop.py exited with "No LLM key" every week, the rotation pointer advanced anyway, and the log said
+# "contradiction sweep: SQ-…" as if it had run — 18 questions were "swept" with nothing done. Now the
+# pointer only advances for questions whose loop actually exited 0, and a missing key is a loud ⚠.
+#
+# bib serve (semantic retrieval over ~/lipedema) is started for the run if it is not up, and stopped
+# afterwards; without it the library side falls back to the FTS5 index (registry/library.db).
+BIB_HOME="${BIB_DIR:-$HOME/lipedema}"
+BIB_PID=""
+if ! curl -s -m 3 http://127.0.0.1:8900/health | grep -q '"ok"'; then
+  if [ -x "$BIB_HOME/bib" ]; then
+    (cd "$BIB_HOME" && ./bib serve >/dev/null 2>&1) & BIB_PID=$!
+    for _ in $(seq 1 30); do
+      curl -s -m 2 http://127.0.0.1:8900/health | grep -q '"ok"' && break; sleep 1
+    done
+  fi
+fi
+if curl -s -m 3 http://127.0.0.1:8900/health | grep -q '"ok"'; then
+  echo "  bib serve: up${BIB_PID:+ (started for this run, pid $BIB_PID)}" >> "$LOG"
+else
+  echo "  ⚠ bib serve: DOWN — library retrieval will use the stale FTS5 fallback." >> "$LOG"
+fi
 QIDS=( $(python3 -c "import json;print(' '.join(sorted(q['id'] for q in json.load(open('questions.json'))['questions'])))") )
 N=${#QIDS[@]}
 PTR=$(cat .contra_rotation 2>/dev/null || echo 0)
 SWEPT=""
-for i in 0 1; do
-  idx=$(( (PTR + i) % N )); qid="${QIDS[$idx]}"; SWEPT="$SWEPT $qid"
-  python3 loop.py "$qid" --source all --accept 4 --commit >> "$LOG" 2>&1
-done
-echo $(( (PTR + 2) % N )) > .contra_rotation
-echo "  contradiction sweep:$SWEPT" >> "$LOG"
+if ! python3 -c "import sys, ingest; sys.exit(0 if ingest.provider() else 1)" 2>/dev/null; then
+  echo "  ⚠ NO LLM KEY on $(scutil --get ComputerName 2>/dev/null || hostname): sweep SKIPPED, rotation kept at $PTR (${QIDS[$PTR]}). Restore ~/.config/scr_openrouter_token." >> "$LOG"
+else
+  DONE=0
+  for i in 0 1; do
+    idx=$(( (PTR + i) % N )); qid="${QIDS[$idx]}"
+    if python3 loop.py "$qid" --source all --accept 4 --commit >> "$LOG" 2>&1; then
+      SWEPT="$SWEPT $qid"; DONE=$(( DONE + 1 ))
+    else
+      echo "  ⚠ loop.py FAILED on $qid — rotation stops here, it is retried next week." >> "$LOG"
+      break
+    fi
+  done
+  echo $(( (PTR + DONE) % N )) > .contra_rotation
+  echo "  contradiction sweep:${SWEPT:- (none completed)}" >> "$LOG"
+fi
+[ -n "$BIB_PID" ] && { pkill -P "$BIB_PID" 2>/dev/null; kill "$BIB_PID" 2>/dev/null; }
 
 # (2b) Language-leak guard (R-SITE-16): the sweep recompiles answers, which can drift to the wrong
 # language (a bottom_line_pt in Spanish, a change_pt in English). Flag it before it ships.
@@ -55,10 +89,15 @@ if [ "$BEFORE" != "$AFTER" ]; then
   python3 build_questions.py >> "$LOG" 2>&1
   python3 build_site.py >> "$LOG" 2>&1
   python3 build_home.py >> "$LOG" 2>&1
-  rsync -az --delete --exclude='.inbox' --exclude='*.py' --exclude='deploy.md' --exclude='CLAUDE.md' \
+  rsync -az --delete --chmod=D755,F644 --exclude='.inbox' --exclude='*.py' --exclude='deploy.md' --exclude='CLAUDE.md' \
         --exclude='.git' --exclude='.claude' -e "ssh -p 22 -o StrictHostKeyChecking=accept-new" \
         ./ "$DEST" >> "$LOG" 2>&1
   CF="${SCR_CF_TOKEN:-$( [ -f "$HOME/.config/scr_cf_token" ] && cat "$HOME/.config/scr_cf_token" )}"
+  # Fallback: the author's purge-only token (~/.config/cloudflare/purge.env), which also covers this zone.
+  if [ -z "$CF" ] && [ -f "$HOME/.config/cloudflare/purge.env" ]; then
+    CF="$(set -a; . "$HOME/.config/cloudflare/purge.env"; echo "${CF_PURGE_TOKEN:-}")"
+  fi
+  [ -z "$CF" ] && echo "  ⚠ no Cloudflare purge token — cache NOT purged." >> "$LOG"
   if [ -n "$CF" ]; then
     curl -s -X POST -H "Authorization: Bearer $CF" \
       -H "Content-Type: application/json" \

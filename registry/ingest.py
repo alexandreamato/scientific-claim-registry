@@ -116,6 +116,14 @@ def _extract_json(s):
     i, j = s.find("{"), s.rfind("}")
     return s[i:j + 1] if i >= 0 and j > i else s
 
+def _loads_lenient(s):
+    """json.loads, retried once without trailing commas. On 2026-11-17 a long recompile came back with
+    `…, }` (illegal in JSON) and the whole question's run was lost; the retry only fires on failure."""
+    try:
+        return json.loads(s)
+    except json.JSONDecodeError:
+        return json.loads(re.sub(r",\s*([}\]])", r"\1", s))
+
 def _chat_json(system, user, model=None):
     """Single-turn 'return strict JSON' call routed to the active provider. Returns a parsed dict.
     `model` overrides the default model for this call (used by the independent verifier, R-AI-14)."""
@@ -131,7 +139,7 @@ def _chat_json(system, user, model=None):
                                               "X-Title": "Scientific Claim Registry"})
         with urllib.request.urlopen(req, timeout=120) as r:
             d = json.loads(r.read())
-        return json.loads(_extract_json(d["choices"][0]["message"]["content"]))
+        return _loads_lenient(_extract_json(d["choices"][0]["message"]["content"]))
     if prov == "anthropic":
         body = json.dumps({"model": mdl, "max_tokens": 1500, "temperature": 0, "system": system,
                            "messages": [{"role": "user", "content": user},
@@ -184,7 +192,10 @@ def search_library(q, n):
 
 # ---- bib: the author's local library with SEMANTIC retrieval + structured fichas ----
 BIB_API = os.environ.get("BIB_API", "http://127.0.0.1:8900")
-BIB_DIR = os.environ.get("BIB_DIR", "/Users/alexandreamato/Library/CloudStorage/SynologyDrive-aamato/artigos lipedema")
+# The library moved off the Synology driver to ~/lipedema on 2026-09-16 (the old folder stays as a frozen
+# safety net and must NOT be read: it stopped receiving fichas, and the driver returns zeroed bytes on
+# partial reads). expanduser keeps this portable across the author's three machines.
+BIB_DIR = os.environ.get("BIB_DIR", os.path.expanduser("~/lipedema"))
 _FICHAMOD = None
 
 def _fichamod():
@@ -256,10 +267,13 @@ def gather(q, sources, from_year, n):
     """Collect candidate articles from the requested sources (library + Europe PMC)."""
     out = []
     if "library" in sources and domain_of(q["id"]) == "LIP":
-        if bib_available():
-            out += bib_search(q["text"], n)
-        else:
-            out += search_library(q, n)
+        # bib_search returns [] when /semantic fails (e.g. Ollama down) even though /health is ok, and
+        # that used to leave the run with NO library evidence at all. Fall back to FTS5 in both cases.
+        hits = bib_search(q["text"], n) if bib_available() else []
+        if not hits:
+            print("  [library: bib semantic unavailable — using the FTS5 fallback (registry/library.db)]")
+            hits = search_library(q, n)
+        out += hits
     if "europepmc" in sources:
         try: out += europepmc(build_query(q), from_year, n)
         except Exception as e: print(f"  [europepmc error] {e}")

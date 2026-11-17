@@ -136,7 +136,7 @@ cd ..
 **não** publica em scientificclaims.org). Um host próprio aponta `SCR_DEPLOY_SSH` para o seu servidor.
 ```bash
 # requer chaves SSH do maintainer e o token Cloudflare
-rsync -avz --delete \
+rsync -avz --delete --chmod=D755,F644 \
   --exclude='.inbox' --exclude='*.py' --exclude='deploy.md' --exclude='CLAUDE.md' \
   --exclude='.git' --exclude='.claude' --exclude='__pycache__' --exclude='.DS_Store' \
   -e "ssh -p 22" ./site/ "$SCR_DEPLOY_SSH"
