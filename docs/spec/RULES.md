@@ -629,7 +629,7 @@
   heurística e cunharia claims com o título como texto; agora 401/402/403 abortam o run sem gravar.
 
 - **2026-11-17** — **R-CLM-10: categoria `author_ban`.** A busca semântica devolve as fichas de autoria banida
-  (a biblioteca as cataloga, marcadas) e nada no loop olhava a marca: **11 artigos** de autoria banida (13 claims)
+  (a biblioteca as cataloga, marcadas) e nada no loop olhava a marca: **11 artigos** de autoria banida (11 claims)
   estavam no registro público. Banidos com `author_ban`, claims removidos (526 → 515), as 10 perguntas afetadas
   recompiladas, e o loop passou a recusar a autoria na entrada. Snapshots congelados de versões antigas ainda
   continham os nomes: por decisão do autor, as **54 versões arquivadas** que citavam um claim removido tiveram o

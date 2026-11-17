@@ -133,7 +133,10 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
   https://zenodo.org/record/20517114 (spec autônoma disease-agnostic = `docs/spec/PROTOCOL.md`; PDF+MD;
   `isPartOf` o concept DOI; publicado 2026-06-02). Ver R-PROTO-2.
 - **Concept DOI** (sempre a última versão): **10.5281/zenodo.20466195**
-- **Version DOI (v0.5, ATUAL):** **10.5281/zenodo.24324283** · Registro: https://zenodo.org/records/24324283
+- **Version DOI (v0.5.1, ATUAL):** **10.5281/zenodo.24325390** · Registro: https://zenodo.org/records/24325390
+  (correção da v0.5 no mesmo dia: 11 referências de autoria banida removidas, R-CLM-10 `author_ban`; risco de viés por
+  leitura do texto integral, R-CLM-18; 514 claims/612 evidências; publicado 2026-11-17)
+- **Version DOI (v0.5, substituída — contém autoria banida, não usar):** **10.5281/zenodo.24324283** · Registro: https://zenodo.org/records/24324283
   (registro mantido pelo próprio loop: backfill das 42 perguntas contra a biblioteca `~/lipedema` + varredura semanal;
   526 claims/626 evidências, 614 verificadas; changelog documenta as 8 semanas de varredura vazia e as garantias; publicado 2026-11-17)
 - **Version DOI** (v0.4): **10.5281/zenodo.20665788** · Registro: https://zenodo.org/records/20665788
@@ -176,7 +179,7 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
 
 ## Estado atual (2026-11-17)
 
-**v0.5 publicada (`10.5281/zenodo.24324283`).** Backfill das 42 perguntas contra a biblioteca (agora em `~/lipedema`,
+**v0.5.1 publicada (`10.5281/zenodo.24325390`), corrigindo a v0.5 (`…24324283`).** Backfill das 42 perguntas contra a biblioteca (agora em `~/lipedema`,
 4.563 fichas): 391 → 526 claims, 470 → 626 evidências. Cron semanal consertado (não avança sem rodar; sobe o `bib serve`;
 purge com `~/.config/cloudflare/purge.env`); deploy com `--chmod=D755,F644` (permissões do Dropbox davam 403 no site).
 Chaves locais: `~/.config/scr_openrouter_token`, `~/.config/scr_zenodo_token`. Ver Changelog de 2026-11-17 no RULES.

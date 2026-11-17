@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deposit SCR v0.5 to Zenodo as a NEW VERSION of the concept DOI. Token via env ZENODO_TOKEN.
+"""Deposit SCR v0.5.1 to Zenodo as a NEW VERSION of the concept DOI. Token via env ZENODO_TOKEN.
 
   prepare : newversion draft → clear inherited files → upload v0.5 bundle+changelog → set metadata (REVERSIBLE)
   status  : show the current draft (reserved DOI, files, metadata title/version)
@@ -11,11 +11,11 @@ import os, sys, json, urllib.request, urllib.error
 
 TOKEN = os.environ.get("ZENODO_TOKEN")
 BASE = "https://zenodo.org/api"
-PREV_ID = "20665788"  # v0.4 record/deposition id (the latest published version)
+PREV_ID = "24324283"  # v0.5 record/deposition id (the latest published version)
 HERE = os.path.dirname(os.path.abspath(__file__))
-BUNDLE = os.path.join(HERE, "SCR-v0.5-bundle.zip")
-CHANGELOG = os.path.join(HERE, "deposit_v0.5", "CHANGELOG-v0.5.md")
-META = os.path.join(HERE, "zenodo_deposit_v0.5.json")
+BUNDLE = os.path.join(HERE, "SCR-v0.5.1-bundle.zip")
+CHANGELOG = os.path.join(HERE, "deposit_v0.5.1", "CHANGELOG-v0.5.1.md")
+META = os.path.join(HERE, "zenodo_deposit_v0.5.1.json")
 STATE = os.path.join(HERE, ".zenodo_draft.json")
 
 

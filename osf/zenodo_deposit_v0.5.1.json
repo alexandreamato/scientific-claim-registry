@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Versioned Memory of How Scientific Answers Evolve — Framework v0.5.1: Corrective Release (Curation by Authorship, Full-Text Risk-of-Bias Appraisal)",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p><strong>Corrective release of v0.5 (10.5281/zenodo.24324283), published the same day. Use v0.5.1 instead of v0.5.</strong></p><p>The v0.5 dataset contained references that the curator&rsquo;s rules exclude from citation; they entered through semantic retrieval over the curator&rsquo;s library, which catalogues them as not citable, a mark the surveillance loop did not read. v0.5.1 removes them (11 references, 11 claims; new curation category <em>author_ban</em>, R-CLM-10) and makes the loop refuse them on ingest; one preprint was removed as superseded by its peer-reviewed version. Archived question versions that cited removed claims keep their number and date with content withdrawn and a notice.</p><p><strong>Risk of bias from full-text appraisal (R-CLM-18).</strong> Four studies central to contested questions were re-rated as high risk of bias, each point justified with the verbatim passage from the full text and shown publicly; GRADE downgraded one level; positional points excluded. The appraisal was performed by an AI model and checked against the PDFs, and is labelled as such rather than as expert (Layer 2) review. Affected answers were recompiled.</p><p><strong>Operational guarantees.</strong> A provider refusal (no credit, invalid key) now aborts a run without writing instead of falling back to a heuristic that would record title-only claims.</p><p><strong>Dataset:</strong> 42 versioned questions, 514 evidence claims, 612 evidence records (601 verified, 4 disputed, 7 unverified), 876 question&ndash;claim links, 371 distinct DOIs. All other content is as described in v0.5: a question-centric, verified, versioned registry kept current by its own Layer 1 surveillance loop. It registers; it does not arbitrate.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "scientific questions",
+      "versioned memory",
+      "living evidence",
+      "evidence registry",
+      "claim verification",
+      "AI verification",
+      "sentence-level provenance",
+      "quote grounding",
+      "adversarial verification",
+      "persistent identifiers",
+      "knowledge freshness",
+      "evidence decay",
+      "claim-centric science",
+      "registers not arbitrates",
+      "GRADE",
+      "machine-readable",
+      "biomedical informatics",
+      "lipedema",
+      "nanopublications",
+      "living evidence surveillance",
+      "unattended operation"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.5.1",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "relation": "isPartOf",
+        "identifier": "https://osf.io/n97ez/",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isSupplementedBy",
+        "identifier": "https://scientificclaims.org",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isNewVersionOf",
+        "identifier": "10.5281/zenodo.24324283",
+        "resource_type": "publication"
+      }
+    ]
+  }
+}
