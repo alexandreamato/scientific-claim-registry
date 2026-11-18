@@ -621,6 +621,18 @@
 
 ## Changelog
 
+- **2026-11-18** — **`first_mention` refeito nas 42 perguntas.** O anel vazado da linha do tempo ("primeira menção na
+  literatura") estava errado em 20 perguntas e ausente em 19. Havia duas causas. A busca no texto integral do Europe PMC
+  fez um artigo de obesidade de 1934, que só cita a palavra de passagem, virar a origem de 13 perguntas. E o
+  `sort=… asc` do Europe PMC põe primeiro os registros sem data e os preprints recentes, que viraram a "origem" de
+  outras 7. Agora a busca casa o tema só em título e resumo (com a grafia *lipoedema*), exclui preprints, calcula o
+  mais antigo localmente sobre todos os resultados e compara com a evidência mais antiga já ligada à pergunta. O
+  anel nunca é mais novo que a evidência que a própria linha do tempo mostra. Exclusões e autores banidos (R-CLM-10)
+  continuam pulados, e âncora com `via: "curated"` (SQ-LIP-000001, Allen & Hines 1940) nunca é sobrescrita.
+  A âncora é aproximada: ela marca o artigo indexado mais antigo que casa com as palavras do tema, não um julgamento
+  de prioridade histórica. As palavras do tema vêm da mesma heurística do loop, então um artigo genérico como
+  "[Lipedema]" (1991) pode ancorar uma pergunta estreita; um `first_mention` curado à mão prevalece.
+
 - **2026-11-17** — **Histórico do git reescrito (regra 2).** `git filter-repo` em todos os 16 commits: evidências e claims
   de autoria banida removidos dos seeds e das cópias de dataset em `osf/deposit_v0.*`, textos de resposta que citavam
   esses DOIs/IDs trocados por um aviso de retirada, nomes tirados de comentários e da lista `exclude.json` (que guarda só

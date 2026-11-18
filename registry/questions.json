@@ -407,9 +407,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1982,
+        "ref": "PMID:7134941",
+        "title": "[Vascular diseases in lipedema of the legs. Special symptoms, common therapeutic results, viewpoint on vascular surgery]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -627,9 +627,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 2025,
-        "ref": "DOI:10.21203/rs.3.rs-7041394/v1",
-        "title": "Assessment of the elasticity of lipedematous tissue and the examination of the relationship between pain and fibrosis in lipedema",
+        "year": 1989,
+        "ref": "PMID:2678371",
+        "title": "[Diagnosis and differential diagnosis of swollen leg]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -988,7 +988,13 @@
         "SQ-LIP-000038"
       ],
       "bottom_line": "Strong and consistent evidence shows lipedema is often unrecognized and diagnosed only after many years, and several questionnaires and body-composition/imaging measures can help flag suspected cases against expert diagnosis. What is not established is a single validated screening tool ready for routine use, or proof that screening actually leads to earlier treatment or better patient outcomes.",
-      "bottom_line_pt": "Evidências fortes e consistentes mostram que o lipedema costuma não ser reconhecido e só é diagnosticado após muitos anos, e que vários questionários e medidas de composição corporal/imagem podem ajudar a sinalizar casos suspeitos frente ao diagnóstico de especialista. O que não está estabelecido é uma ferramenta de rastreio única e validada pronta para uso de rotina, nem a prova de que o rastreio realmente leva a tratamento mais precoce ou melhores desfechos para o paciente."
+      "bottom_line_pt": "Evidências fortes e consistentes mostram que o lipedema costuma não ser reconhecido e só é diagnosticado após muitos anos, e que vários questionários e medidas de composição corporal/imagem podem ajudar a sinalizar casos suspeitos frente ao diagnóstico de especialista. O que não está estabelecido é uma ferramenta de rastreio única e validada pronta para uso de rotina, nem a prova de que o rastreio realmente leva a tratamento mais precoce ou melhores desfechos para o paciente.",
+      "first_mention": {
+        "year": 2008,
+        "ref": "DOI:10.1556/oh.2008.28490",
+        "title": "Lipedema, a hardly known disease: diagnosis, associated illnesses and therapy",
+        "via": "registry_evidence"
+      }
     },
     {
       "id": "SQ-LIP-000005",
@@ -1098,9 +1104,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 2012,
+        "ref": "DOI:10.1186/1750-1172-7-23",
+        "title": "Review of Dercum's disease and proposal of diagnostic criteria, diagnostic methods, classification and management",
         "via": "europepmc"
       },
       "phrasings": [
@@ -1222,9 +1228,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 2026,
-        "ref": "DOI:10.20944/preprints202605.1114.v1",
-        "title": "Lipedema as a Syndrome of Adipose Mast Cell Activation and Type 2 Immune Orchestration: A Testable Neuroimmune Framework",
+        "year": 2023,
+        "ref": "DOI:10.7759/cureus.35570",
+        "title": "The Association Between Lipedema and Attention-Deficit/Hyperactivity Disorder",
         "via": "europepmc"
       },
       "phrasings": [
@@ -1370,9 +1376,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1985,
+        "ref": "DOI:10.2214/ajr.144.2.361",
+        "title": "The role of CT in the diagnosis of primary lymphedema of the lower limb",
         "via": "europepmc"
       },
       "phrasings": [
@@ -1602,9 +1608,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 2026,
-        "ref": "DOI:10.20944/preprints202605.1114.v1",
-        "title": "Lipedema as a Syndrome of Adipose Mast Cell Activation and Type 2 Immune Orchestration: A Testable Neuroimmune Framework",
+        "year": 2008,
+        "ref": "DOI:10.1556/oh.2008.28490",
+        "title": "[Lipedema, a barely known disease: diagnosis, associated diseases and therapy]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -1763,9 +1769,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1985,
+        "ref": "DOI:10.2214/ajr.144.2.361",
+        "title": "The role of CT in the diagnosis of primary lymphedema of the lower limb",
         "via": "europepmc"
       },
       "phrasings": [
@@ -1963,9 +1969,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1950,
+        "ref": "PMID:14816757",
+        "title": "[Allen Hines' syndrome; lipo-edema of the legs (obesity of lower extremities and orthostatic edema)]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -2259,9 +2265,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1998,
+        "ref": "PMID:9664268",
+        "title": "Analysis of lymphatic drainage in various forms of leg edema using two compartment lymphoscintigraphy",
         "via": "europepmc"
       },
       "phrasings": [
@@ -2597,9 +2603,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1982,
+        "ref": "PMID:7134941",
+        "title": "[Vascular diseases in lipedema of the legs. Special symptoms, common therapeutic results, viewpoint on vascular surgery]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -2838,9 +2844,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 2026,
-        "ref": "DOI:10.20944/preprints202605.0074.v1",
-        "title": "Pathogenesis of Lipedema—A Regenerative Imbalance",
+        "year": 2004,
+        "ref": "DOI:10.1046/j.1439-0353.2004.04051.x",
+        "title": "[Lipoedema--current status, new perspectives]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -3133,10 +3139,10 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
-        "via": "europepmc"
+        "year": 2020,
+        "ref": "DOI:10.1016/j.mehy.2020.110435",
+        "title": "Ketogenic diet as a potential intervention for lipedema",
+        "via": "registry_evidence"
       },
       "phrasings": [
         "Can following a keto or low-carb eating plan improve lipedema symptoms?",
@@ -3476,9 +3482,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 2025,
-        "ref": "DOI:10.20944/preprints202511.1033.v1",
-        "title": "Clinical Outcomes of Shochwave Therapy in Lipedema",
+        "year": 1991,
+        "ref": "PMID:1917468",
+        "title": "[Lipedema]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -3734,7 +3740,13 @@
         }
       ],
       "bottom_line": "There is no clinical evidence that gestrinone treats lipedema; only an untested laboratory rationale exists. Its benefit, safety, and whether it changes the disease remain completely unknown, and medical societies advise against using it.",
-      "bottom_line_pt": "Não há evidência clínica de que a gestrinona trate o lipedema; existe apenas uma justificativa laboratorial não testada. Seu benefício, segurança e se altera a doença permanecem totalmente desconhecidos, e sociedades médicas desaconselham seu uso."
+      "bottom_line_pt": "Não há evidência clínica de que a gestrinona trate o lipedema; existe apenas uma justificativa laboratorial não testada. Seu benefício, segurança e se altera a doença permanecem totalmente desconhecidos, e sociedades médicas desaconselham seu uso.",
+      "first_mention": {
+        "year": 1991,
+        "ref": "PMID:1917468",
+        "title": "[Lipedema]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000017",
@@ -3943,10 +3955,10 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
-        "via": "europepmc"
+        "year": 1994,
+        "ref": "DOI:10.1097/00006534-199411000-00014",
+        "title": "Lipedema",
+        "via": "registry_evidence"
       },
       "phrasings": [
         "Can lipedema develop into lymphedema and lead to functional impairment over time?",
@@ -4151,9 +4163,9 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1982,
+        "ref": "PMID:7134941",
+        "title": "[Vascular diseases in lipedema of the legs. Special symptoms, common therapeutic results, viewpoint on vascular surgery]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -4349,10 +4361,10 @@
       ],
       "created": "2026-05-30",
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
-        "via": "europepmc"
+        "year": 1940,
+        "ref": null,
+        "title": "Allen EV, Hines EA Jr. Lipedema of the legs: a syndrome characterized by fat legs and edema. Proc Staff Meet Mayo Clin 1940;15:184-7",
+        "via": "registry_evidence"
       },
       "phrasings": [
         "How has lipedema been described and surgically treated throughout history?",
@@ -4600,9 +4612,9 @@
         }
       ],
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1982,
+        "ref": "PMID:7134941",
+        "title": "[Vascular diseases in lipedema of the legs. Special symptoms, common therapeutic results, viewpoint on vascular surgery]",
         "via": "europepmc"
       },
       "phrasings": [
@@ -4840,9 +4852,9 @@
         }
       ],
       "first_mention": {
-        "year": 2025,
-        "ref": "DOI:10.20944/preprints202511.1033.v1",
-        "title": "Clinical Outcomes of Shochwave Therapy in Lipedema",
+        "year": 1984,
+        "ref": "DOI:10.1177/000331978403500806",
+        "title": "Lipedema--the non-lymphatic masquerader",
         "via": "europepmc"
       },
       "phrasings": [
@@ -5130,9 +5142,9 @@
         }
       ],
       "first_mention": {
-        "year": 1934,
-        "ref": "PMID:19311918",
-        "title": "Clinical and Biologic Considerations of Obesity and Certain Allied Conditions",
+        "year": 1984,
+        "ref": "DOI:10.1177/000331978403500806",
+        "title": "Lipedema--the non-lymphatic masquerader",
         "via": "europepmc"
       },
       "phrasings": [
@@ -5832,9 +5844,9 @@
         }
       ],
       "first_mention": {
-        "year": 2026,
-        "ref": "DOI:10.20944/preprints202604.2085.v1",
-        "title": "Genetic Polymorphisms and Vascular Dysfunction in Lipedema: Implications for a Non-Hormonal Pathophysiological Model",
+        "year": 2010,
+        "ref": "DOI:10.1055/s-0029-1224154",
+        "title": "Pit-1 mutation and lipoedema in a family",
         "via": "europepmc"
       },
       "phrasings": [
@@ -6079,7 +6091,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Liposuction reliably reduces pain in lipedema — and this is now confirmed by a randomized trial, not just before-after studies. It relieves symptoms but has not been shown to cure or halt the underlying disease.",
-      "bottom_line_pt": "A lipoaspiração reduz a dor no lipedema de forma confiável — e isso agora é confirmado por um ensaio randomizado, não apenas por estudos antes-depois. Ela alivia os sintomas, mas não foi demonstrado que cure ou interrompa a doença subjacente."
+      "bottom_line_pt": "A lipoaspiração reduz a dor no lipedema de forma confiável — e isso agora é confirmado por um ensaio randomizado, não apenas por estudos antes-depois. Ela alivia os sintomas, mas não foi demonstrado que cure ou interrompa a doença subjacente.",
+      "first_mention": {
+        "year": 2004,
+        "ref": "DOI:10.1046/j.1439-0353.2004.04051.x",
+        "title": "[Lipoedema--current status, new perspectives]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000027",
@@ -6289,7 +6307,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Liposuction most likely does reduce limb size in lipedema, and it clearly relieves pain and improves quality of life. But the limb-size benefit comes only from uncontrolled before-after studies, no trial has directly measured volume, and it does not cure the disease or guarantee lasting size reduction.",
-      "bottom_line_pt": "A lipoaspiração provavelmente reduz o tamanho do membro no lipedema e claramente alivia a dor e melhora a qualidade de vida. Mas o benefício de tamanho vem apenas de estudos não controlados antes-depois, nenhum ensaio mediu o volume diretamente, e ela não cura a doença nem garante redução duradoura de tamanho."
+      "bottom_line_pt": "A lipoaspiração provavelmente reduz o tamanho do membro no lipedema e claramente alivia a dor e melhora a qualidade de vida. Mas o benefício de tamanho vem apenas de estudos não controlados antes-depois, nenhum ensaio mediu o volume diretamente, e ela não cura a doença nem garante redução duradoura de tamanho.",
+      "first_mention": {
+        "year": 2004,
+        "ref": "DOI:10.1046/j.1439-0353.2004.04051.x",
+        "title": "[Lipoedema--current status, new perspectives]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000028",
@@ -6492,7 +6516,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Liposuction reliably and durably reduces pain, swelling, bruising and improves quality of life and mobility for people with lipedema, with benefits lasting years and strongest in earlier-stage patients. It does not cure the disease or stop it from progressing — most patients still need some ongoing conservative therapy, symptom relief is not tied to how much fat is removed, and all the evidence comes from uncontrolled studies.",
-      "bottom_line_pt": "A lipoaspiração reduz de forma confiável e duradoura a dor, o inchaço e as equimoses e melhora a qualidade de vida e a mobilidade em pessoas com lipedema, com benefícios que duram anos e são maiores em estágios iniciais. Ela não cura a doença nem impede sua progressão — a maioria dos pacientes ainda precisa de alguma terapia conservadora contínua, o alívio dos sintomas não depende da quantidade de gordura removida, e todas as evidências vêm de estudos não controlados."
+      "bottom_line_pt": "A lipoaspiração reduz de forma confiável e duradoura a dor, o inchaço e as equimoses e melhora a qualidade de vida e a mobilidade em pessoas com lipedema, com benefícios que duram anos e são maiores em estágios iniciais. Ela não cura a doença nem impede sua progressão — a maioria dos pacientes ainda precisa de alguma terapia conservadora contínua, o alívio dos sintomas não depende da quantidade de gordura removida, e todas as evidências vêm de estudos não controlados.",
+      "first_mention": {
+        "year": 1985,
+        "ref": "DOI:10.2214/ajr.144.2.361",
+        "title": "The role of CT in the diagnosis of primary lymphedema of the lower limb",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000029",
@@ -6677,7 +6707,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "MRI can show clear structural differences — homogeneous thickened fat in lipedema versus honeycomb pattern and epifascial fluid in lymphedema/phlebedema — and separate lipedema from BMI-matched obesity by fat distribution. It has not been proven as an accurate, reproducible standalone diagnostic test, because the evidence is small case series with poor reader agreement and no large blinded accuracy studies.",
-      "bottom_line_pt": "A RM pode mostrar diferenças estruturais claras — gordura espessada homogênea no lipedema versus padrão em favo de mel e líquido epifascial no linfedema/flebedema — e separar o lipedema da obesidade pareada por IMC pela distribuição de gordura. Ela não foi comprovada como um teste diagnóstico isolado preciso e reprodutível, porque as evidências são pequenas séries de casos com baixa concordância entre leitores e nenhum grande estudo de acurácia cego."
+      "bottom_line_pt": "A RM pode mostrar diferenças estruturais claras — gordura espessada homogênea no lipedema versus padrão em favo de mel e líquido epifascial no linfedema/flebedema — e separar o lipedema da obesidade pareada por IMC pela distribuição de gordura. Ela não foi comprovada como um teste diagnóstico isolado preciso e reprodutível, porque as evidências são pequenas séries de casos com baixa concordância entre leitores e nenhum grande estudo de acurácia cego.",
+      "first_mention": {
+        "year": 1992,
+        "ref": "DOI:10.1148/radiology.184.1.1609085",
+        "title": "Swollen lower extremity: role of MR imaging",
+        "via": "registry_evidence"
+      }
     },
     {
       "id": "SQ-LIP-000030",
@@ -6873,7 +6909,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Lymphoscintigraphy by standard criteria cannot reliably tell lipedema from lymphedema—it is normal in most lipedema patients and often wrongly flags lymphedema, but patterns like absent dermal backflow with normal transport favor lipedema. It does not serve as a stand-alone diagnostic test, though it usefully detects a coexisting lymphatic component and rules out other causes of swelling.",
-      "bottom_line_pt": "A linfocintilografia por critérios padrão não consegue distinguir de forma confiável lipedema de linfedema—é normal na maioria dos pacientes com lipedema e frequentemente sinaliza linfedema erroneamente, mas padrões como ausência de refluxo dérmico com transporte normal favorecem o lipedema. Ela não serve como teste diagnóstico isolado, embora detecte de forma útil um componente linfático coexistente e exclua outras causas de inchaço."
+      "bottom_line_pt": "A linfocintilografia por critérios padrão não consegue distinguir de forma confiável lipedema de linfedema—é normal na maioria dos pacientes com lipedema e frequentemente sinaliza linfedema erroneamente, mas padrões como ausência de refluxo dérmico com transporte normal favorecem o lipedema. Ela não serve como teste diagnóstico isolado, embora detecte de forma útil um componente linfático coexistente e exclua outras causas de inchaço.",
+      "first_mention": {
+        "year": 1993,
+        "ref": "DOI:10.1067/mva.1993.50510",
+        "title": "Noninvasive evaluation of the lymphatic system with lymphoscintigraphy: a prospective, semiquantitative analysis in 386 extremities",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000031",
@@ -7025,7 +7067,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "DXA can measure the leg-heavy fat pattern typical of lipedema and tells cases apart from controls fairly well in research studies. It is not a proven stand-alone diagnostic test, and it has not been shown to reliably separate true lipedema from ordinary 'pear-shaped' (gynoid) fat.",
-      "bottom_line_pt": "A DXA pode medir o padrão de gordura concentrada nas pernas típico do lipedema e distingue razoavelmente bem os casos dos controles em estudos de pesquisa. Não é um teste diagnóstico isolado comprovado e não demonstrou separar de forma confiável o lipedema verdadeiro da gordura ginoide ('formato de pera') comum."
+      "bottom_line_pt": "A DXA pode medir o padrão de gordura concentrada nas pernas típico do lipedema e distingue razoavelmente bem os casos dos controles em estudos de pesquisa. Não é um teste diagnóstico isolado comprovado e não demonstrou separar de forma confiável o lipedema verdadeiro da gordura ginoide ('formato de pera') comum.",
+      "first_mention": {
+        "year": 1982,
+        "ref": "PMID:7134941",
+        "title": "[Vascular diseases in lipedema of the legs. Special symptoms, common therapeutic results, viewpoint on vascular surgery]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000032",
@@ -7238,7 +7286,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Conservative therapy (compression, CDT, exercise) can reduce pain, edema and limb size and improve physical function in lipedema, especially when combined rather than used as single components. It has not been shown to cure the disease or remove the abnormal fat, and in refractory cases liposuction reduces pain far more than conservative care does.",
-      "bottom_line_pt": "A terapia conservadora (compressão, TFCD, exercício) pode reduzir dor, edema e tamanho do membro e melhorar a função física no lipedema, especialmente quando combinada em vez de usada como componentes isolados. Não demonstrou curar a doença nem remover a gordura anormal, e em casos refratários a lipoaspiração reduz a dor muito mais que o cuidado conservador."
+      "bottom_line_pt": "A terapia conservadora (compressão, TFCD, exercício) pode reduzir dor, edema e tamanho do membro e melhorar a função física no lipedema, especialmente quando combinada em vez de usada como componentes isolados. Não demonstrou curar a doença nem remover a gordura anormal, e em casos refratários a lipoaspiração reduz a dor muito mais que o cuidado conservador.",
+      "first_mention": {
+        "year": 1984,
+        "ref": "DOI:10.1177/000331978403500806",
+        "title": "Lipedema--the non-lymphatic masquerader",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000033",
@@ -7426,7 +7480,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Diet, exercise, and weight management can reduce pain and body weight/fat and are recommended as first-line supportive care within a multidisciplinary program for lipedema. They do not remove the abnormal lipedema fat, do not reliably reduce inflammation, and are not proven to cure or alter the underlying disease.",
-      "bottom_line_pt": "Dieta, exercício e controle de peso podem reduzir a dor e o peso/gordura corporal e são recomendados como cuidado de apoio de primeira linha dentro de um programa multidisciplinar para o lipedema. Eles não removem a gordura anormal do lipedema, não reduzem a inflamação de forma confiável e não têm comprovação de curar ou alterar a doença subjacente."
+      "bottom_line_pt": "Dieta, exercício e controle de peso podem reduzir a dor e o peso/gordura corporal e são recomendados como cuidado de apoio de primeira linha dentro de um programa multidisciplinar para o lipedema. Eles não removem a gordura anormal do lipedema, não reduzem a inflamação de forma confiável e não têm comprovação de curar ou alterar a doença subjacente.",
+      "first_mention": {
+        "year": 1995,
+        "ref": "DOI:10.1177/000331979504600103",
+        "title": "Raised leg exercises for leg edema in the elderly",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000034",
@@ -7592,7 +7652,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Lipedema carries a heavy psychological and quality-of-life burden (more depression, anxiety, stigma, and poorer well-being than comparison groups), so guidelines include psychosocial support as a standard part of multidisciplinary care. What the evidence does not show is that providing psychosocial interventions actually improves these outcomes — no controlled trial has tested this, and documented quality-of-life gains come mainly from physical treatments like compression and liposuction.",
-      "bottom_line_pt": "O lipedema acarreta uma pesada carga psicológica e de qualidade de vida (mais depressão, ansiedade, estigma e pior bem-estar do que grupos de comparação), por isso as diretrizes incluem o apoio psicossocial como parte padrão do cuidado multidisciplinar. O que a evidência não mostra é que oferecer intervenções psicossociais de fato melhore esses desfechos — nenhum ensaio controlado testou isso, e os ganhos documentados em qualidade de vida vêm principalmente de tratamentos físicos como compressão e lipoaspiração."
+      "bottom_line_pt": "O lipedema acarreta uma pesada carga psicológica e de qualidade de vida (mais depressão, ansiedade, estigma e pior bem-estar do que grupos de comparação), por isso as diretrizes incluem o apoio psicossocial como parte padrão do cuidado multidisciplinar. O que a evidência não mostra é que oferecer intervenções psicossociais de fato melhore esses desfechos — nenhum ensaio controlado testou isso, e os ganhos documentados em qualidade de vida vêm principalmente de tratamentos físicos como compressão e lipoaspiração.",
+      "first_mention": {
+        "year": 2004,
+        "ref": "DOI:10.1046/j.1439-0353.2004.04051.x",
+        "title": "[Lipoedema--current status, new perspectives]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000035",
@@ -7810,7 +7876,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Lipedema onset and worsening are consistently reported around female hormonal transitions (puberty, pregnancy, menopause), and estrogen-related tissue mechanisms are biologically plausible. However, this link is largely observational and mechanistic — a causal hormonal trigger is not proven, and the best-quality evidence found no difference in circulating estrogen or testosterone levels versus controls.",
-      "bottom_line_pt": "O início e o agravamento do lipedema são consistentemente relatados em torno de transições hormonais femininas (puberdade, gravidez, menopausa), e mecanismos teciduais relacionados ao estrogênio são biologicamente plausíveis. No entanto, essa ligação é em grande parte observacional e mecanística — um gatilho hormonal causal não está comprovado, e a evidência de melhor qualidade não encontrou diferença nos níveis circulantes de estrogênio ou testosterona em relação a controles."
+      "bottom_line_pt": "O início e o agravamento do lipedema são consistentemente relatados em torno de transições hormonais femininas (puberdade, gravidez, menopausa), e mecanismos teciduais relacionados ao estrogênio são biologicamente plausíveis. No entanto, essa ligação é em grande parte observacional e mecanística — um gatilho hormonal causal não está comprovado, e a evidência de melhor qualidade não encontrou diferença nos níveis circulantes de estrogênio ou testosterona em relação a controles.",
+      "first_mention": {
+        "year": 1982,
+        "ref": "PMID:7134941",
+        "title": "[Vascular diseases in lipedema of the legs. Special symptoms, common therapeutic results, viewpoint on vascular surgery]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000036",
@@ -7982,7 +8054,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Lipedema often runs in families and affects almost only women, and genetic studies have found several risk genes, pointing to a real inherited component. However, no single confirmed 'lipedema gene' exists, inheritance appears complex and polygenic, and most family-history numbers come from descriptive studies rather than rigorous testing.",
-      "bottom_line_pt": "O lipedema frequentemente ocorre em famílias e afeta quase só mulheres, e estudos genéticos encontraram vários genes de risco, indicando um componente hereditário real. No entanto, não existe um único 'gene do lipedema' confirmado, a herança parece complexa e poligênica, e a maioria dos números de história familiar vem de estudos descritivos e não de testes rigorosos."
+      "bottom_line_pt": "O lipedema frequentemente ocorre em famílias e afeta quase só mulheres, e estudos genéticos encontraram vários genes de risco, indicando um componente hereditário real. No entanto, não existe um único 'gene do lipedema' confirmado, a herança parece complexa e poligênica, e a maioria dos números de história familiar vem de estudos descritivos e não de testes rigorosos.",
+      "first_mention": {
+        "year": 2010,
+        "ref": "DOI:10.1002/ajmg.a.33313",
+        "title": "Lipedema: An inherited condition",
+        "via": "registry_evidence"
+      }
     },
     {
       "id": "SQ-LIP-000037",
@@ -8134,7 +8212,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "The evidence consistently shows that lipedema is underdiagnosed, often mistaken for obesity or lymphedema, and typically diagnosed decades after symptoms begin. What it does not pin down is exactly how many cases are missed, because there is still no validated biomarker or agreed-upon set of diagnostic criteria.",
-      "bottom_line_pt": "As evidências mostram de forma consistente que o lipedema é subdiagnosticado, frequentemente confundido com obesidade ou linfedema e geralmente diagnosticado décadas após o início dos sintomas. O que não fica definido é exatamente quantos casos passam despercebidos, pois ainda não há biomarcador validado nem conjunto consensual de critérios diagnósticos."
+      "bottom_line_pt": "As evidências mostram de forma consistente que o lipedema é subdiagnosticado, frequentemente confundido com obesidade ou linfedema e geralmente diagnosticado décadas após o início dos sintomas. O que não fica definido é exatamente quantos casos passam despercebidos, pois ainda não há biomarcador validado nem conjunto consensual de critérios diagnósticos.",
+      "first_mention": {
+        "year": 2007,
+        "ref": "DOI:10.1016/j.jaad.2006.09.023",
+        "title": "Lipedema, a frequently unrecognized problem",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000038",
@@ -8327,7 +8411,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Validated questionnaires (QuASiL, LSQ) and simple clinical decision rules can flag people likely to have lipedema and sort them for further clinical evaluation. They cannot confirm the diagnosis on their own, often miss true cases, and no single screening tool has been established as a standalone diagnostic standard.",
-      "bottom_line_pt": "Questionários validados (QuASiL, LSQ) e regras clínicas simples podem sinalizar pessoas com provável lipedema e encaminhá-las para avaliação clínica adicional. Eles não confirmam o diagnóstico sozinhos, frequentemente perdem casos verdadeiros, e nenhuma ferramenta de triagem isolada foi estabelecida como padrão diagnóstico independente."
+      "bottom_line_pt": "Questionários validados (QuASiL, LSQ) e regras clínicas simples podem sinalizar pessoas com provável lipedema e encaminhá-las para avaliação clínica adicional. Eles não confirmam o diagnóstico sozinhos, frequentemente perdem casos verdadeiros, e nenhuma ferramenta de triagem isolada foi estabelecida como padrão diagnóstico independente.",
+      "first_mention": {
+        "year": 2010,
+        "ref": "DOI:10.2147/jpr.s12351",
+        "title": "Pilot study: rapidly cycling hypobaric pressure improves pain after 5 days in adiposis dolorosa",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000039",
@@ -8498,7 +8588,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Some people with advanced lipedema develop secondary lymphedema (lipo-lymphedema), and this risk rises sharply with higher body weight. The evidence does not show that lipedema always or inevitably turns into lymphedema, and it is still unclear whether lymphatic problems cause the progression or result from it.",
-      "bottom_line_pt": "Algumas pessoas com lipedema avançado desenvolvem linfedema secundário (lipo-linfedema), e esse risco aumenta acentuadamente com maior peso corporal. As evidências não mostram que o lipedema sempre ou inevitavelmente se transforma em linfedema, e ainda não está claro se os problemas linfáticos causam a progressão ou resultam dela."
+      "bottom_line_pt": "Algumas pessoas com lipedema avançado desenvolvem linfedema secundário (lipo-linfedema), e esse risco aumenta acentuadamente com maior peso corporal. As evidências não mostram que o lipedema sempre ou inevitavelmente se transforma em linfedema, e ainda não está claro se os problemas linfáticos causam a progressão ou resultam dela.",
+      "first_mention": {
+        "year": 1977,
+        "ref": "PMID:188330",
+        "title": "The swollen leg",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000040",
@@ -8674,7 +8770,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Women with lipedema do have measurably worse strength, walking capacity, daily-activity function, and quality of life than both healthy and weight-matched women, with deficits that persist after accounting for body weight. The evidence is all observational and low-quality, so it cannot prove that lipedema itself independently causes mobility to worsen over time rather than coexisting conditions like lymphedema and obesity.",
-      "bottom_line_pt": "Mulheres com lipedema apresentam força, capacidade de caminhada, função nas atividades diárias e qualidade de vida mensuravelmente piores do que mulheres saudáveis e pareadas por peso, com déficits que persistem após considerar o peso corporal. As evidências são todas observacionais e de baixa qualidade, portanto não podem provar que o próprio lipedema cause independentemente piora da mobilidade ao longo do tempo, em vez de condições coexistentes como linfedema e obesidade."
+      "bottom_line_pt": "Mulheres com lipedema apresentam força, capacidade de caminhada, função nas atividades diárias e qualidade de vida mensuravelmente piores do que mulheres saudáveis e pareadas por peso, com déficits que persistem após considerar o peso corporal. As evidências são todas observacionais e de baixa qualidade, portanto não podem provar que o próprio lipedema cause independentemente piora da mobilidade ao longo do tempo, em vez de condições coexistentes como linfedema e obesidade.",
+      "first_mention": {
+        "year": 1995,
+        "ref": "DOI:10.1177/000331979504600408",
+        "title": "Functional lymphatic alterations in patients suffering from lipedema",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000041",
@@ -8898,7 +9000,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Lipedema is strongly and consistently linked to worse quality of life, more pain, and high rates of depression and anxiety, mainly affecting physical and psychological well-being. It remains unclear how much of the mood burden is specific to lipedema versus shared with obesity, and whether treatments like liposuction truly change the disease or just ease symptoms — none of the treatment studies had control groups.",
-      "bottom_line_pt": "O lipedema está forte e consistentemente ligado a pior qualidade de vida, mais dor e altas taxas de depressão e ansiedade, afetando principalmente o bem-estar físico e psicológico. Permanece incerto quanto da carga emocional é específica do lipedema versus compartilhada com a obesidade, e se tratamentos como a lipoaspiração realmente alteram a doença ou apenas aliviam os sintomas — nenhum dos estudos de tratamento teve grupos de controle."
+      "bottom_line_pt": "O lipedema está forte e consistentemente ligado a pior qualidade de vida, mais dor e altas taxas de depressão e ansiedade, afetando principalmente o bem-estar físico e psicológico. Permanece incerto quanto da carga emocional é específica do lipedema versus compartilhada com a obesidade, e se tratamentos como a lipoaspiração realmente alteram a doença ou apenas aliviam os sintomas — nenhum dos estudos de tratamento teve grupos de controle.",
+      "first_mention": {
+        "year": 2004,
+        "ref": "DOI:10.1046/j.1439-0353.2004.04051.x",
+        "title": "[Lipoedema--current status, new perspectives]",
+        "via": "europepmc"
+      }
     },
     {
       "id": "SQ-LIP-000042",
@@ -9108,7 +9216,13 @@
         "date": "2026-11-17"
       },
       "bottom_line": "Women with lipedema repeatedly report more depression and anxiety and much lower quality of life than the general population and matched controls, with mood worsening alongside pain and disease stage. It is not clear whether lipedema itself causes this beyond the effects of obesity, chronic pain and stigma, nor whether symptom screens reflect truly diagnosed mental illness.",
-      "bottom_line_pt": "Mulheres com lipedema relatam repetidamente mais depressão e ansiedade e qualidade de vida muito menor do que a população geral e controles pareados, com o humor piorando junto com a dor e o estágio da doença. Não está claro se o próprio lipedema causa isso além dos efeitos da obesidade, dor crônica e estigma, nem se os rastreios de sintomas refletem doença mental realmente diagnosticada."
+      "bottom_line_pt": "Mulheres com lipedema relatam repetidamente mais depressão e ansiedade e qualidade de vida muito menor do que a população geral e controles pareados, com o humor piorando junto com a dor e o estágio da doença. Não está claro se o próprio lipedema causa isso além dos efeitos da obesidade, dor crônica e estigma, nem se os rastreios de sintomas refletem doença mental realmente diagnosticada.",
+      "first_mention": {
+        "year": 2012,
+        "ref": "DOI:10.1038/aps.2011.153",
+        "title": "Rare adipose disorders (RADs) masquerading as obesity",
+        "via": "europepmc"
+      }
     }
   ]
 }
