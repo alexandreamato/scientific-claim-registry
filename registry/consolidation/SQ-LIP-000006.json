@@ -1,0 +1,154 @@
+{
+ "question": "SQ-LIP-000006",
+ "text": "Is lipedema associated with ADHD?",
+ "n_old_claims": 3,
+ "n_items": 4,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.7759/cureus.35570",
+   "title": "The Association Between Lipedema and Attention-Deficit/Hyperactivity Disorder",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": 354,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Risco relativo de TDAH em mulheres com lipedema: RR=1,424 (IC 95%: 1,2218–1,6598; p<0,0001)",
+   "note": "RR 1.424 (95%CI 1.22-1.66), p<0.0001; self-report screening",
+   "old_claims": [
+    "SCR-LIP-000015",
+    "SCR-LIP-000016"
+   ],
+   "old_statements": [
+    "Women meeting lipedema screening criteria have a higher prevalence of positive ADHD self-report (ASRS-18) than women without lipedema (76.9% vs 54%; RR 1.424).",
+    "Higher lipedema screening scores correlate positively with higher ADHD (ASRS-18) scores, supporting a dimensional co-occurrence of the two conditions."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.20944/preprints202605.1114.v1",
+   "title": "Lipedema as a Syndrome of Adipose Mast Cell Activation and Type 2 Immune Orchestration: A Testable Neuroimmune Framework",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "clínicos (FM 35–40%, ADHD 1,42 RR, hEDS 44%, joelho 58,1%)",
+   "note": "The article discusses the comorbidity of lipedema with ADHD, providing evidence of a potential association.",
+   "old_claims": [
+    "SCR-LIP-000015"
+   ],
+   "old_statements": [
+    "Women meeting lipedema screening criteria have a higher prevalence of positive ADHD self-report (ASRS-18) than women without lipedema (76.9% vs 54%; RR 1.424)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.7759/cureus.88809",
+   "title": "The Evolutionary Theory of Lipedema: A Perspective on Energy Storage and Chronic Inflammation",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Associação lipedema-TDAH: prevalência de sintomas de TDAH 76,9% no grupo lipedema vs 54% sem lipedema (RR 1,424; p<0,0001) em coorte de 354 mulheres (Amato 2023)",
+   "note": "The article discusses the relationship between lipedema and ADHD, indicating a potential association that warrants further investigation.",
+   "old_claims": [
+    "SCR-LIP-000015"
+   ],
+   "old_statements": [
+    "Women meeting lipedema screening criteria have a higher prevalence of positive ADHD self-report (ASRS-18) than women without lipedema (76.9% vs 54%; RR 1.424)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.20944/preprints202605.1114.v2",
+   "title": "An Adipose Mast-Cell Activation and Type-2 Orchestration Endotype of Lipedema: A Testable Neuroimmune Framework",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Broader adipogenic, gut-immune, HLA-associated, cancer-related, ADHD-related, and systemic immunomodulatory concepts are separated into a dedicated exploratory section; they are secondary hypotheses and are not required for the central mast cell-histamine-QST-pain claim.",
+   "note": "The abstract only names 'ADHD-related' concepts as a secondary, exploratory, untested hypothesis and does not report any measured association between lipedema and ADHD, so it is on-topic but not directly informative.",
+   "old_claims": [
+    "SCR-LIP-000461"
+   ],
+   "old_statements": [
+    "This hypothesis paper on a mast cell/type-2 immune endotype of lipedema lists ADHD-related concepts only within a dedicated exploratory section as a secondary, untested hypothesis not required for its central mast cell-histamine-pain framework."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Self-reported ADHD symptoms are associated with lipedema in women, in unadjusted cross-sectional screening comparisons.",
+   "role": "supporting",
+   "rationale": "The only primary study shows higher positive ADHD screening in women meeting lipedema criteria; reviews only restate it.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "In 354 women, positive ASRS-18 ADHD self-report was 76.9% with lipedema vs 54% without (RR 1.424, 95% CI 1.22-1.66); lipedema screening scores correlated with ADHD scores."
+    },
+    {
+     "e": "E2",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Hypothesis paper cites an ADHD relative risk of 1.42 among lipedema comorbidities."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Perspective review restates ADHD symptom prevalence of 76.9% vs 54% (RR 1.424) in a cohort of 354 women."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00016"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E4",
+   "reason": "Mentions ADHD-related concepts only as an untested exploratory hypothesis; reports no finding on the association."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Limited evidence suggests self-reported ADHD symptoms are more common in women screening positive for lipedema, based on cross-sectional data.",
+    "severity": "minor",
+    "note": "Rests on a single cross-sectional screening study (E1); E2 and E3 are correctly marked context and secondary_of E1. The plural 'comparisons' implies more than one study; hedge as limited evidence. E4 correctly dropped."
+   }
+  ],
+  "set_issues": []
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000006.cons.json",
+   "ver": "SQ-LIP-000006.ver.json"
+  }
+ ]
+}

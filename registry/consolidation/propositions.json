@@ -36,47 +36,41 @@
  "G-00004": {
   "statement": "In women with painful lipedema, liposuction reduces leg pain more than conservative therapy alone.",
   "questions": [
-   "SQ-LIP-000013"
+   "SQ-LIP-000013",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027",
+   "SQ-LIP-000032"
   ],
   "refs": [
    "DOI:10.1016/s0140-6736(26)00910-4"
   ]
  },
- "G-00005": {
-  "statement": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status.",
-  "questions": [
-   "SQ-LIP-000013"
-  ],
-  "refs": [
-   "DOI:10.1007/7140.2006.00006",
-   "DOI:10.1007/s00266-025-05507-2",
-   "DOI:10.1007/s00266-026-06371-4",
-   "DOI:10.1016/j.bjps.2025.06.031",
-   "DOI:10.1016/j.jpra.2026.01.004",
-   "DOI:10.1097/gox.0000000000005952",
-   "DOI:10.1097/prs.0000000000012217",
-   "DOI:10.1111/dth.12820",
-   "DOI:10.1111/dth.14364",
-   "DOI:10.1111/j.1610-0387.2010.07504.x",
-   "DOI:10.21037/atm-24-165",
-   "DOI:10.7759/cureus.55260"
-  ]
- },
  "G-00006": {
   "statement": "Liposuction for lipedema is associated with improved quality of life and mobility.",
   "questions": [
-   "SQ-LIP-000013"
+   "SQ-LIP-000013",
+   "SQ-LIP-000015",
+   "SQ-LIP-000019",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027",
+   "SQ-LIP-000028",
+   "SQ-LIP-000034"
   ],
   "refs": [
+   "DOI:10.1016/j.bjps.2025.12.018",
    "DOI:10.1093/asjof/ojag039",
+   "DOI:10.1097/sap.0000000000004124",
    "DOI:10.1111/ijd.70227",
-   "DOI:10.1111/iwj.13608"
+   "DOI:10.1111/iwj.13608",
+   "DOI:10.56238/levv16n53-097"
   ]
  },
  "G-00007": {
   "statement": "Liposuction for lipedema may be associated with improved psychological wellbeing and body image.",
   "questions": [
-   "SQ-LIP-000013"
+   "SQ-LIP-000013",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027"
   ],
   "refs": [
    "DOI:10.1007/s00266-026-06116-3",
@@ -86,43 +80,58 @@
  "G-00008": {
   "statement": "Improvements after liposuction for lipedema are reported to persist for years without clinically relevant deterioration.",
   "questions": [
-   "SQ-LIP-000013"
+   "SQ-LIP-000013",
+   "SQ-LIP-000019",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027",
+   "SQ-LIP-000028"
   ],
   "refs": [
    "DOI:10.1097/dss.0000000000002019",
+   "DOI:10.1111/j.1365-2133.2011.10566.x",
    "DOI:10.1177/0268355520949775",
    "DOI:10.3205/iprs000161"
-  ]
- },
- "G-00009": {
-  "statement": "Liposuction for lipedema is associated with reduced need for compression and other conservative decongestive therapy.",
-  "questions": [
-   "SQ-LIP-000013"
-  ],
-  "refs": [
-   "DOI:10.1007/s00266-020-01910-z",
-   "DOI:10.1097/prs.0000000000008880"
   ]
  },
  "G-00010": {
   "statement": "Major complications after liposuction for lipedema are uncommon, while minor complications such as seroma and hematoma occur more often.",
   "questions": [
-   "SQ-LIP-000013"
+   "SQ-LIP-000013",
+   "SQ-LIP-000015",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027"
   ],
   "refs": [
+   "DOI:10.1007/s00266-020-01910-z",
    "DOI:10.1007/s00266-025-05456-w",
    "DOI:10.1007/s00266-026-05774-7",
    "DOI:10.1007/s00266-026-06004-w",
    "DOI:10.1016/j.bjps.2024.07.038",
-   "DOI:10.1055/a-2334-9260"
+   "DOI:10.1055/a-2334-9260",
+   "DOI:10.1093/asjof/ojag039",
+   "DOI:10.1097/gox.0000000000003553",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1177/02683555251413901",
+   "DOI:10.21037/atm-24-165"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00261",
+    "statement": "Serious complications after liposuction for lipedema appear uncommon, while minor complications such as seroma, hematoma, fibrosis and loose skin are reported."
+   }
   ]
  },
  "G-00011": {
   "statement": "Benefits of liposuction for lipedema may be more sustained in earlier than in advanced disease stages.",
   "questions": [
-   "SQ-LIP-000013"
+   "SQ-LIP-000013",
+   "SQ-LIP-000015",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027"
   ],
   "refs": [
+   "DOI:10.1111/dth.14534",
+   "DOI:10.3390/jcm14010279",
    "DOI:10.5999/aps.2017.44.4.324"
   ]
  },
@@ -133,6 +142,2745 @@
   ],
   "refs": [
    "DOI:10.1093/eurpub/ckab165.304"
+  ]
+ },
+ "G-00013": {
+  "statement": "Joint hypermobility is frequently reported among women with lipedema.",
+  "questions": [
+   "SQ-LIP-000005"
+  ],
+  "refs": [
+   "DOI:10.1007/s44162-025-00113-x",
+   "DOI:10.1177/02683555211015887",
+   "DOI:10.1515/hmbci-2017-0076",
+   "DOI:10.7759/cureus.95299"
+  ]
+ },
+ "G-00014": {
+  "statement": "Joint hypermobility is reported more often in lipedema than in comparison groups in unadjusted observational comparisons.",
+  "questions": [
+   "SQ-LIP-000005"
+  ],
+  "refs": [
+   "DOI:10.1007/s10238-026-02157-9",
+   "DOI:10.3390/jcm14207195"
+  ]
+ },
+ "G-00015": {
+  "statement": "Observational evidence has not established whether joint hypermobility is an intrinsic feature of lipedema or present only in patient subsets.",
+  "questions": [
+   "SQ-LIP-000005"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555261499760"
+  ]
+ },
+ "G-00016": {
+  "statement": "Self-reported ADHD symptoms are associated with lipedema in women, in unadjusted cross-sectional screening comparisons.",
+  "questions": [
+   "SQ-LIP-000006"
+  ],
+  "refs": [
+   "DOI:10.20944/preprints202605.1114.v1",
+   "DOI:10.7759/cureus.35570",
+   "DOI:10.7759/cureus.88809"
+  ]
+ },
+ "G-00017": {
+  "statement": "Lipedema was first delineated in the mid-twentieth century as a distinct syndrome of symmetric, foot-sparing leg fat with orthostatic edema, separate from lymphedema.",
+  "questions": [
+   "SQ-LIP-000019"
+  ],
+  "refs": [
+   "Allen EV, Hines EA Jr. Lipedema of the legs: a syndrome characterized by fat legs and edema. Proc Staff Meet Mayo Clin 1940;15:184-7",
+   "DOI:10.1016/j.clindermatol.2025.09.026",
+   "DOI:10.1097/00006534-199411000-00014",
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.9734/bjmmr/2015/13894",
+   "Wold LE, Hines EA Jr, Allen EV. Lipedema of the legs: a syndrome characterized by fat legs and orthostatic edema. Ann Intern Med 1951;34(5):1243-50"
+  ]
+ },
+ "G-00018": {
+  "statement": "Surgical correction of disproportionate lower-body fat began with excisional techniques before liposuction was developed and applied to lipedema.",
+  "questions": [
+   "SQ-LIP-000019"
+  ],
+  "refs": [
+   "DOI:10.1016/j.amsu.2017.10.024",
+   "DOI:10.1097/00006534-196409000-00010"
+  ]
+ },
+ "G-00019": {
+  "statement": "Tumescent liposuction with vibrating microcannulas emerged around the turn of the century as the main surgical treatment for lipedema, complementing decongestive therapy.",
+  "questions": [
+   "SQ-LIP-000019"
+  ],
+  "refs": [
+   "DOI:10.1007/7140.2006.00006",
+   "DOI:10.1007/s00266-026-05889-x",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1046/j.1439-0353.2004.04051.x",
+   "DOI:10.17116/plast.hirurgia202403186",
+   "DOI:10.21037/atm-24-165"
+  ]
+ },
+ "G-00020": {
+  "statement": "Liposuction for lipedema is associated with reduced limb circumference and volume compared with preoperative status.",
+  "questions": [
+   "SQ-LIP-000027"
+  ],
+  "refs": [
+   "DOI:10.1007/7140.2006.00006",
+   "DOI:10.1007/s00266-026-06238-8",
+   "DOI:10.1093/asjof/ojag039",
+   "DOI:10.1097/gox.0000000000006367",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1111/dth.12820",
+   "DOI:10.3205/iprs000161"
+  ]
+ },
+ "G-00021": {
+  "statement": "Decongestive therapy without surgery may also reduce limb volume in lipedema, while the adipose accumulation itself is reported to persist.",
+  "questions": [
+   "SQ-LIP-000021",
+   "SQ-LIP-000027"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2020.0128",
+   "DOI:10.1159/000342073"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00113",
+    "statement": "Decongestive therapy may reduce limb size by removing fluid while leaving the lipedema fat accumulation itself unchanged."
+   }
+  ]
+ },
+ "G-00023": {
+  "statement": "Lipedema onset or worsening is frequently reported at female hormonal transitions, especially puberty, and also pregnancy and menopause.",
+  "questions": [
+   "SQ-LIP-000002",
+   "SQ-LIP-000012",
+   "SQ-LIP-000035",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "Amato ACM, 2020",
+   "DOI:10.1002/ajmg.a.33313",
+   "DOI:10.1038/s44324-025-00093-y",
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.1097/prs.0000000000006280",
+   "DOI:10.1111/dth.14534",
+   "DOI:10.1177/1358863x231202769",
+   "DOI:10.1371/journal.pone.0274867",
+   "DOI:10.1515/hmbci-2017-0076",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.17116/plast.hirurgia202403186",
+   "DOI:10.3205/iprs000161",
+   "DOI:10.3238/arztebl.2020.0396",
+   "DOI:10.3390/biomedicines10123081",
+   "DOI:10.3390/endocrines6020024",
+   "DOI:10.3390/ijms222111720",
+   "DOI:10.3390/ijms23126621"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00199",
+    "statement": "Lipedema onset or worsening is frequently reported at female hormonal transitions, especially puberty, and also pregnancy and menopause."
+   },
+   {
+    "key": "G-00245",
+    "statement": "Lipedema onset or worsening is frequently reported to coincide with female hormonal transitions such as puberty, pregnancy and menopause."
+   },
+   {
+    "key": "G-00084",
+    "statement": "Lipedema symptom onset frequently coincides with hormonal life events, particularly puberty, and also pregnancy or menopause."
+   }
+  ]
+ },
+ "G-00024": {
+  "statement": "Starting hormonal contraception is reported by some women to coincide with lipedema symptom onset or worsening.",
+  "questions": [
+   "SQ-LIP-000012",
+   "SQ-LIP-000035",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "DOI:10.1159/000342073",
+   "DOI:10.7759/cureus.99189"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00201",
+    "statement": "Starting hormonal contraception is reported by some women to coincide with lipedema symptom onset or worsening."
+   },
+   {
+    "key": "G-00246",
+    "statement": "Hormonal contraceptive use is reported to coincide with lipedema symptom onset or worsening in some women."
+   }
+  ]
+ },
+ "G-00025": {
+  "statement": "Altered estrogen signalling in affected adipose tissue, including an imbalanced estrogen receptor pattern and local aromatase activity, is proposed as a lipedema mechanism.",
+  "questions": [
+   "SQ-LIP-000012",
+   "SQ-LIP-000035",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "DOI:10.1007/s00404-026-08318-1",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.mehy.2014.08.011",
+   "DOI:10.1055/a-0767-6842",
+   "DOI:10.3238/arztebl.2020.0396",
+   "DOI:10.3390/cells15191820",
+   "DOI:10.3390/ijms222111720",
+   "DOI:10.53347/rid-217362",
+   "DOI:10.5772/intechopen.96402"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00200",
+    "statement": "Altered estrogen signalling in affected adipose tissue, including an imbalanced estrogen receptor pattern and local aromatase activity, is proposed as a lipedema mechanism."
+   },
+   {
+    "key": "G-00247",
+    "statement": "Dysregulated estrogen signalling in adipose tissue, including altered estrogen receptor balance, is proposed as a mechanism of lipedema."
+   }
+  ]
+ },
+ "G-00026": {
+  "statement": "Genetic findings in lipedema include variants and loci in hormone-related pathways, notably steroid hormone metabolism.",
+  "questions": [
+   "SQ-LIP-000035"
+  ],
+  "refs": [
+   "DOI:10.1038/s41431-022-01231-6",
+   "DOI:10.1101/2021.06.15.21258988",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.3390/ijms21176264",
+   "DOI:10.3390/jpm13010098",
+   "DOI:10.4081/vl.2026.15495"
+  ]
+ },
+ "G-00028": {
+  "statement": "Lipedema is frequently reported to be underdiagnosed or misdiagnosed, most often as obesity or lymphedema.",
+  "questions": [
+   "SQ-LIP-000004",
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jmv.2012.05.002",
+   "DOI:10.1016/j.jpra.2026.01.004",
+   "DOI:10.1055/a-2530-5875",
+   "DOI:10.1097/gox.0000000000001043",
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.1111/iwj.12949",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1177/0268355516639421",
+   "DOI:10.1556/oh.2008.28490",
+   "DOI:10.2147/ijwh.s106227",
+   "DOI:10.3390/ijerph20176647",
+   "DOI:10.3390/jcm14207195",
+   "DOI:10.36557/2674-8169.2026v8n2p869-884",
+   "DOI:10.4103/jpgm.jpgm_273_25"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00208",
+    "statement": "Lipedema is frequently reported to be under-recognised, undiagnosed or misdiagnosed, most often as obesity or lymphedema."
+   }
+  ]
+ },
+ "G-00029": {
+  "statement": "Diagnosis of lipedema is frequently delayed, often by decades after symptom onset and after multiple consultations.",
+  "questions": [
+   "SQ-LIP-000004"
+  ],
+  "refs": [
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.3390/ijerph20176647"
+  ]
+ },
+ "G-00030": {
+  "statement": "Physician awareness and recognition of lipedema is reported to be low.",
+  "questions": [
+   "SQ-LIP-000004"
+  ],
+  "refs": [
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1177/02683555251332998"
+  ]
+ },
+ "G-00031": {
+  "statement": "Prevalence estimates suggest lipedema is common among women, far exceeding recorded diagnoses, although estimates vary widely.",
+  "questions": [
+   "SQ-LIP-000004",
+   "SQ-LIP-000037"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.22597",
+   "DOI:10.1016/j.bjps.2023.05.056",
+   "DOI:10.1097/gox.0000000000001043",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.1590/1677-5449.202101981",
+   "DOI:10.3390/jcm14207195",
+   "DOI:10.3390/jpm13010098"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00119",
+    "statement": "Estimated lipedema prevalence among women is high relative to recognised diagnoses, which is interpreted as under-recognition."
+   }
+  ]
+ },
+ "G-00032": {
+  "statement": "Screening questionnaires and simple clinical-criteria algorithms are reported to discriminate lipedema from non-lipedema or lymphedema with good accuracy.",
+  "questions": [
+   "SQ-LIP-000004",
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-025-05192-1",
+   "DOI:10.1590/1677-5449.200049",
+   "DOI:10.1590/1677-5449.200114",
+   "DOI:10.23736/s0392-9590.25.05207-1",
+   "DOI:10.3390/biomedicines13123049",
+   "DOI:10.3390/ijerph20176647",
+   "DOI:10.5603/aa.2018.0020"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00099",
+    "statement": "Structured combinations of clinical signs or screening questionnaires can discriminate lipedema from lymphedema or non-lipedema with good accuracy."
+   }
+  ]
+ },
+ "G-00033": {
+  "statement": "Ultrasound, body-composition and lymphatic imaging measures are reported to discriminate lipedema from controls or related conditions.",
+  "questions": [
+   "SQ-LIP-000004"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1089/lrb.2019.0011",
+   "DOI:10.1089/lrb.2022.0010",
+   "DOI:10.1097/gox.0000000000008015",
+   "DOI:10.1159/000527138",
+   "DOI:10.1177/02683555211002340",
+   "DOI:10.1177/02683555211068953",
+   "DOI:10.26355/eurrev_202003_20690"
+  ]
+ },
+ "G-00034": {
+  "statement": "No objective diagnostic tool or biomarker for lipedema is yet standardised or validated for routine clinical use.",
+  "questions": [
+   "SQ-LIP-000004"
+  ],
+  "refs": [
+   "DOI:10.1002/jmri.28400",
+   "DOI:10.1089/lrb.2024.0102",
+   "DOI:10.1111/obr.13648",
+   "DOI:10.3238/arztebl.2020.0396"
+  ]
+ },
+ "G-00035": {
+  "statement": "No clinical study has evaluated gestrinone in lipedema, so its use as a lipedema treatment lacks direct clinical evidence.",
+  "questions": [
+   "SQ-LIP-000016"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jdrv.2026.04.003",
+   "DOI:10.1590/1677-5449.202502402",
+   "DOI:10.7759/cureus.97213"
+  ]
+ },
+ "G-00036": {
+  "statement": "The proposed rationale for gestrinone in lipedema rests on hypothesised aromatase inhibition and estrogen-receptor blockade, supported only by theoretical and in vitro data.",
+  "questions": [
+   "SQ-LIP-000016"
+  ],
+  "refs": [
+   "DOI:10.3390/ph17091248"
+  ]
+ },
+ "G-00037": {
+  "statement": "Guidelines and expert consensus recommend conservative therapy as first-line lipedema management, reserving liposuction for symptoms that persist despite it.",
+  "questions": [
+   "SQ-LIP-000032",
+   "SQ-LIP-000034"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.bjps.2022.12.004",
+   "DOI:10.1097/gox.0000000000005952",
+   "DOI:10.1111/ddg.13036",
+   "DOI:10.1111/ddg.15513",
+   "DOI:10.1111/iwj.13071",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.1177/0268355516639421",
+   "DOI:10.1556/oh.2008.28490",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.26779/2786-832x.2025.2.69",
+   "DOI:10.5535/arm.2011.35.6.922"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00131",
+    "statement": "A stepwise approach is recommended, starting with optimised conservative care and reserving liposuction for selected patients after adequate conservative treatment."
+   }
+  ]
+ },
+ "G-00038": {
+  "statement": "Multimodal decongestive therapy combined with exercise is associated with reductions in limb volume or circumference in lipedema.",
+  "questions": [
+   "SQ-LIP-000032"
+  ],
+  "refs": [
+   "DOI:10.1007/s13679-024-00579-8",
+   "DOI:10.1089/lrb.2020.0019",
+   "DOI:10.1089/lrb.2024.0065",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1177/02683555261503720",
+   "DOI:10.12659/AJCR.934406",
+   "DOI:10.26890/dgym6676",
+   "DOI:10.5535/arm.2011.35.6.922"
+  ]
+ },
+ "G-00039": {
+  "statement": "Conservative therapy, including compression and exercise, is associated with reduced pain and related symptoms in lipedema.",
+  "questions": [
+   "SQ-LIP-000032"
+  ],
+  "refs": [
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.3390/ijerph20020914",
+   "DOI:10.51731/cjht.2022.413",
+   "DOI:10.56238/levv16n53-097"
+  ]
+ },
+ "G-00040": {
+  "statement": "Manual lymphatic drainage used alone may have little effect on limb volume in lipedema.",
+  "questions": [
+   "SQ-LIP-000032"
+  ],
+  "refs": [
+   "DOI:10.1080/09593985.2018.1479474",
+   "DOI:10.69849/g5mp1531"
+  ]
+ },
+ "G-00041": {
+  "statement": "Evidence on conservative therapy for lipedema is predominantly observational and quasi-experimental, with few randomised trials.",
+  "questions": [
+   "SQ-LIP-000032"
+  ],
+  "refs": [
+   "DOI:10.1590/1677-5449.202501962"
+  ]
+ },
+ "G-00042": {
+  "statement": "Lipedema subcutaneous tissue shows increased immune cell infiltration, predominantly macrophages, compared with matched controls.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1038/s41598-020-67987-3",
+   "DOI:10.1155/2019/8747461",
+   "DOI:10.3390/metabo13101105",
+   "DOI:10.4236/jbise.2026.193011",
+   "DOI:10.5772/intechopen.88632",
+   "DOI:10.7417/CT.2023.2496"
+  ]
+ },
+ "G-00043": {
+  "statement": "Macrophages in lipedema tissue are reported to show a predominantly alternatively activated, anti-inflammatory phenotype rather than a classical pro-inflammatory one.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1097/gox.0000000000006288",
+   "DOI:10.3389/fcell.2025.1691161",
+   "DOI:10.3389/fcell.2026.1816014",
+   "DOI:10.3389/fimmu.2022.1004609",
+   "DOI:10.3389/fimmu.2023.1223264",
+   "DOI:10.3390/biomedicines13030561"
+  ]
+ },
+ "G-00044": {
+  "statement": "Some molecular profiling suggests local inflammatory pathways are downregulated in lipedema tissue, favouring metabolic over classical inflammatory mechanisms.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1016/j.metabol.2025.156191"
+  ]
+ },
+ "G-00045": {
+  "statement": "Systemic inflammatory markers are inconsistently elevated in lipedema.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jss.2020.03.055",
+   "DOI:10.1177/15578585261454779",
+   "DOI:10.3390/ijms262211130",
+   "DOI:10.3390/jpm13010098"
+  ]
+ },
+ "G-00046": {
+  "statement": "Lipedema pain does not appear to be driven primarily by systemic inflammation.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1007/s00105-023-05189-4",
+   "DOI:10.1016/j.cdnut.2025.104571"
+  ]
+ },
+ "G-00047": {
+  "statement": "Lipedema is associated with pressure pain hypersensitivity in affected limbs, independent of body mass index.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1097/PR9.0000000000001155",
+   "DOI:10.1177/02683555251357094"
+  ]
+ },
+ "G-00048": {
+  "statement": "Neuropathic pain features and peripheral nerve involvement, including neurogenic inflammation, are frequently reported in lipedema.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.mehy.2014.08.011",
+   "DOI:10.1177/15578585261454778",
+   "DOI:10.29011/2574-7754.102581",
+   "DOI:10.3390/ijms231810313"
+  ]
+ },
+ "G-00049": {
+  "statement": "Microvascular dysfunction and tissue sodium accumulation are proposed contributors to inflammation and pain in lipedema tissue.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.24281",
+   "DOI:10.1055/a-2181-8469",
+   "DOI:10.1089/lrb.2021.0039",
+   "DOI:10.1089/whr.2020.0086",
+   "DOI:10.3389/fcell.2026.1804905",
+   "DOI:10.3390/biomedicines10123081"
+  ]
+ },
+ "G-00050": {
+  "statement": "Subcutaneous tissue stiffness may be associated with pain intensity in lipedema, independent of adiposity.",
+  "questions": [
+   "SQ-LIP-000011"
+  ],
+  "refs": [
+   "DOI:10.21203/rs.3.rs-7041394/v1"
+  ]
+ },
+ "G-00052": {
+  "statement": "Depressive symptoms are frequently reported in lipedema, more often than in population controls.",
+  "questions": [
+   "SQ-LIP-000020"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jpsychores.2025.112306",
+   "DOI:10.1089/lrb.2024.0117",
+   "DOI:10.1515/hmbci-2021-0027",
+   "DOI:10.3389/fgwh.2025.1629077",
+   "DOI:10.3390/life14030295",
+   "DOI:10.3390/women6030050"
+  ]
+ },
+ "G-00053": {
+  "statement": "Anxiety symptoms and difficulties in emotional regulation are frequently reported in lipedema.",
+  "questions": [
+   "SQ-LIP-000020"
+  ],
+  "refs": [
+   "DOI:10.1177/15578585261454789",
+   "DOI:10.12740/app/201427",
+   "DOI:10.3390/ijerph192013679"
+  ]
+ },
+ "G-00055": {
+  "statement": "Pain and core physical symptoms are associated with poorer mental health and quality of life in lipedema.",
+  "questions": [
+   "SQ-LIP-000020"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2023.0038",
+   "DOI:10.1186/s12905-021-01174-y",
+   "DOI:10.21203/rs.3.rs-2705753/v1"
+  ]
+ },
+ "G-00057": {
+  "statement": "Compared with overweight or obese women, women with lipedema may not have more depression or anxiety, despite greater disability.",
+  "questions": [
+   "SQ-LIP-000020"
+  ],
+  "refs": [
+   "DOI:10.17219/acem/181146"
+  ]
+ },
+ "G-00058": {
+  "statement": "Anxiety, depressive symptoms and quality-of-life satisfaction may improve after liposuction for lipedema.",
+  "questions": [
+   "SQ-LIP-000020"
+  ],
+  "refs": [
+   "DOI:10.1016/j.bjps.2024.02.048"
+  ]
+ },
+ "G-00059": {
+  "statement": "Increased subcutaneous thickness on ultrasound is associated with lipedema and may discriminate affected limbs from non-lipedema limbs using site-specific cutoffs.",
+  "questions": [
+   "SQ-LIP-000003"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-025-05192-1",
+   "DOI:10.1007/s00266-026-05988-9",
+   "DOI:10.1016/j.bjps.2023.05.056",
+   "DOI:10.1055/s-0037-1621766",
+   "DOI:10.1089/lrb.2024.0102",
+   "DOI:10.1111/obr.13648",
+   "DOI:10.1159/000527138",
+   "DOI:10.1177/02683555211002340",
+   "DOI:10.1177/02683555211068953",
+   "DOI:10.1177/02683555261475099",
+   "DOI:10.12687/phleb2431-4-2018",
+   "DOI:10.7759/cureus.55906"
+  ]
+ },
+ "G-00060": {
+  "statement": "Ultrasound may differentiate lipedema from lymphedema, since lymphedema shows dermal thickening and hypoechogenicity whereas lipedema mainly shows subcutaneous changes.",
+  "questions": [
+   "SQ-LIP-000003"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2017.0090",
+   "DOI:10.1111/j.1365-2133.2010.09810.x"
+  ]
+ },
+ "G-00061": {
+  "statement": "Qualitative ultrasound patterns of dermis and hypodermis, including septal changes and hyperechoic nodules, may classify structural tissue alterations in lipedema.",
+  "questions": [
+   "SQ-LIP-000003",
+   "SQ-LIP-000029"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2022.0082",
+   "DOI:10.1089/lrb.2023.29151.editorial",
+   "DOI:10.4236/jbise.2025.1810029",
+   "DOI:10.4236/jbise.2025.184008",
+   "DOI:10.4236/jbise.2025.188026",
+   "DOI:10.7759/cureus.114807"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00187",
+    "statement": "Qualitative ultrasound patterns of dermis and hypodermis, including septal changes and hyperechoic nodules, may classify structural tissue alterations in lipedema."
+   }
+  ]
+ },
+ "G-00062": {
+  "statement": "Ultrasound techniques beyond conventional imaging, such as microvascular imaging and elastography, may detect vascular and stiffness alterations in lipedema tissue.",
+  "questions": [
+   "SQ-LIP-000003"
+  ],
+  "refs": [
+   "DOI:10.1038/s41366-026-02049-8",
+   "DOI:10.3233/ch-238103",
+   "DOI:10.4236/jbise.2026.195015"
+  ]
+ },
+ "G-00064": {
+  "statement": "Ultrasound is used to measure subcutaneous thickness and stiffness for monitoring lipedema treatment, separately from diagnosis.",
+  "questions": [
+   "SQ-LIP-000003"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-026-05638-0",
+   "DOI:10.1007/s00266-026-05889-x",
+   "DOI:10.1177/02683555261451555"
+  ]
+ },
+ "G-00065": {
+  "statement": "Fibromyalgia is frequently reported to co-occur with lipedema in cross-sectional studies, although reported frequencies vary widely between samples.",
+  "questions": [
+   "SQ-LIP-000008"
+  ],
+  "refs": [
+   "DOI:10.1007/s13555-018-0241-6",
+   "DOI:10.1038/ijo.2016.205",
+   "DOI:10.1089/lrb.2023.0038",
+   "DOI:10.1177/02683555251321042",
+   "DOI:10.20944/preprints202605.1114.v1",
+   "DOI:10.2147/jpr.s315736",
+   "DOI:10.47582/jompac.1301253"
+  ]
+ },
+ "G-00066": {
+  "statement": "Pain is reported by most people with lipedema and is more frequent and more disabling than in matched comparison groups.",
+  "questions": [
+   "SQ-LIP-000008"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.jvsv.2026.102585",
+   "DOI:10.1177/02683555261451571",
+   "DOI:10.1371/journal.pone.0319099",
+   "DOI:10.3390/biomedicines10123081",
+   "DOI:10.3390/life14030295",
+   "DOI:10.3390/nu13020358"
+  ]
+ },
+ "G-00067": {
+  "statement": "Lipedema is associated with lower pressure pain thresholds than in healthy or obese comparison groups.",
+  "questions": [
+   "SQ-LIP-000008"
+  ],
+  "refs": [
+   "DOI:10.1080/09593985.2025.2592718",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.1186/s12905-026-04580-2"
+  ]
+ },
+ "G-00068": {
+  "statement": "Neuropathic pain features are frequently reported in lipedema and may be more common in advanced stages.",
+  "questions": [
+   "SQ-LIP-000008"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555261490379",
+   "DOI:10.1177/15578585261454778",
+   "DOI:10.1177/15578585261508256",
+   "DOI:10.3390/ijms231810313"
+  ]
+ },
+ "G-00069": {
+  "statement": "Other chronic pain conditions, such as joint pain, arthritis and migraine, are frequently reported as comorbidities of lipedema.",
+  "questions": [
+   "SQ-LIP-000008"
+  ],
+  "refs": [
+   "DOI:10.1097/gox.0000000000005436",
+   "DOI:10.1111/ddg.15064",
+   "DOI:10.1111/dth.14534",
+   "DOI:10.1515/hmbci-2017-0076",
+   "DOI:10.1590/1677-5449.202101981",
+   "DOI:10.3390/jcm14207195"
+  ]
+ },
+ "G-00070": {
+  "statement": "Pain reduction in lipedema may not be mediated by changes in systemic inflammatory or fibrotic markers.",
+  "questions": [
+   "SQ-LIP-000008"
+  ],
+  "refs": [
+   "DOI:10.1016/j.cdnut.2025.104571"
+  ]
+ },
+ "G-00071": {
+  "statement": "A positive family history is frequently reported in people with lipedema, with affected relatives predominantly female.",
+  "questions": [
+   "SQ-LIP-000025"
+  ],
+  "refs": [
+   "DOI:10.1038/s44324-025-00093-y",
+   "DOI:10.1097/gox.0000000000006173"
+  ]
+ },
+ "G-00072": {
+  "statement": "Pedigree data in lipedema are most consistent with autosomal dominant inheritance with sex limitation and reduced penetrance in males.",
+  "questions": [
+   "SQ-LIP-000025"
+  ],
+  "refs": [
+   "DOI:10.1002/ajmg.a.33313",
+   "DOI:10.1016/j.jbiotec.2019.05.040",
+   "DOI:10.26355/eurrev_201907_18292",
+   "DOI:10.3390/biomedicines10123081",
+   "DOI:10.3390/ijms23126621"
+  ]
+ },
+ "G-00075": {
+  "statement": "Common genetic variants at loci linked to body fat distribution are associated with lipedema phenotypes in genome-wide studies.",
+  "questions": [
+   "SQ-LIP-000025"
+  ],
+  "refs": [
+   "DOI:10.1038/s41431-022-01231-6",
+   "DOI:10.1101/2021.06.15.21258988",
+   "DOI:10.1371/journal.pone.0274867"
+  ]
+ },
+ "G-00076": {
+  "statement": "Deleterious variants in genes of lipid metabolism, adipogenesis and insulin signalling are found in a minority of people with lipedema.",
+  "questions": [
+   "SQ-LIP-000025"
+  ],
+  "refs": [
+   "DOI:10.1111/obr.13953",
+   "DOI:10.3390/jpm12020268"
+  ]
+ },
+ "G-00077": {
+  "statement": "A polymorphism in the interleukin-six gene may be associated with increased lipedema risk.",
+  "questions": [
+   "SQ-LIP-000025",
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.26355/eurrev_202003_20690"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00207",
+    "statement": "A polymorphism in the interleukin-six gene may be associated with increased lipedema risk."
+   }
+  ]
+ },
+ "G-00078": {
+  "statement": "Lipedema adipose tissue and stem cells show altered gene expression and DNA methylation compared with controls.",
+  "questions": [
+   "SQ-LIP-000025"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jss.2020.03.055",
+   "DOI:10.1055/a-2183-7414",
+   "DOI:10.1186/s12967-026-07726-w"
+  ]
+ },
+ "G-00079": {
+  "statement": "Lipedema is estimated to affect a substantial proportion of adult women, suggesting it is a common rather than rare condition.",
+  "questions": [
+   "SQ-LIP-000002"
+  ],
+  "refs": [
+   "DOI:10.1097/gox.0000000000001043",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1590/1677-5449.202101981",
+   "DOI:10.1590/1677-5449.202101982",
+   "DOI:10.1590/1677-5449.202301832"
+  ]
+ },
+ "G-00080": {
+  "statement": "Lipedema prevalence estimates vary widely and remain uncertain, partly because of underdiagnosis and the lack of validated diagnostic criteria.",
+  "questions": [
+   "SQ-LIP-000002"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.22597",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.3390/jpm13010098"
+  ]
+ },
+ "G-00081": {
+  "statement": "Lipedema is frequently identified among patients attending vein, lymphology or limb-swelling clinics.",
+  "questions": [
+   "SQ-LIP-000002"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jdmv.2023.06.002",
+   "DOI:10.1097/00006534-199411000-00014",
+   "DOI:10.1097/gox.0000000000006173"
+  ]
+ },
+ "G-00083": {
+  "statement": "Lipedema with the classical phenotype can occur in men, although male cases are rare.",
+  "questions": [
+   "SQ-LIP-000002"
+  ],
+  "refs": [
+   "DOI:10.14740/jmc3806",
+   "DOI:10.7759/cureus.87332"
+  ]
+ },
+ "G-00086": {
+  "statement": "Lipedema is frequently underrecognised, with diagnosis often delayed for many years after symptom onset.",
+  "questions": [
+   "SQ-LIP-000002"
+  ],
+  "refs": [
+   "DOI:10.1097/prs.0000000000006280",
+   "DOI:10.1186/s12905-022-02022-3",
+   "DOI:10.2458/lymph.4838"
+  ]
+ },
+ "G-00087": {
+  "statement": "Lipedema is reported in women of normal or low body weight, not only in women with obesity.",
+  "questions": [
+   "SQ-LIP-000002"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jmv.2012.05.002",
+   "DOI:10.12659/ajcr.930840",
+   "DOI:10.7759/cureus.11854"
+  ]
+ },
+ "G-00088": {
+  "statement": "Ketogenic or low-carbohydrate diets reduce body weight and total fat mass in women with lipedema.",
+  "questions": [
+   "SQ-LIP-000014"
+  ],
+  "refs": [
+   "DOI:10.1007/s13679-025-00642-y",
+   "DOI:10.2147/dmso.s377720",
+   "DOI:10.3390/nu15163654",
+   "DOI:10.47363/jghr/2024(5)163"
+  ]
+ },
+ "G-00089": {
+  "statement": "Ketogenic or low-carbohydrate diets are associated with reductions in lipedema-affected limb fat, leg volume and limb circumferences.",
+  "questions": [
+   "SQ-LIP-000014"
+  ],
+  "refs": [
+   "DOI:10.1155/2023/5826630",
+   "DOI:10.1210/jcemcr/luag018",
+   "DOI:10.3389/fnut.2024.1484612",
+   "DOI:10.3390/cimb48090892",
+   "DOI:10.3390/jcm15218643",
+   "DOI:10.3390/nu18091381"
+  ]
+ },
+ "G-00090": {
+  "statement": "Ketogenic or low-carbohydrate diets reduce pain in women with lipedema, although the pooled effect is small.",
+  "questions": [
+   "SQ-LIP-000014"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.24026",
+   "DOI:10.1002/osp4.580",
+   "DOI:10.1007/s13679-023-00536-x",
+   "DOI:10.1016/j.mehy.2020.110435",
+   "DOI:10.1186/s12937-026-01304-y",
+   "DOI:10.3390/nu16193276"
+  ]
+ },
+ "G-00091": {
+  "statement": "Benefits of ketogenic or low-carbohydrate diets in lipedema may be sustained over long-term follow-up.",
+  "questions": [
+   "SQ-LIP-000014"
+  ],
+  "refs": [
+   "DOI:10.3389/fnut.2026.1728651",
+   "DOI:10.3390/life11121402"
+  ]
+ },
+ "G-00092": {
+  "statement": "Ketogenic or low-carbohydrate diets are associated with reduced systemic inflammatory markers in lipedema, but not clearly more than low-fat diets.",
+  "questions": [
+   "SQ-LIP-000014"
+  ],
+  "refs": [
+   "DOI:10.1016/j.cdnut.2025.104571",
+   "DOI:10.3390/nu17183014"
+  ]
+ },
+ "G-00093": {
+  "statement": "The certainty of evidence for dietary interventions in lipedema remains limited because most studies have high risk of bias and lack stage stratification.",
+  "questions": [
+   "SQ-LIP-000014"
+  ],
+  "refs": [
+   "DOI:10.1016/j.maturitas.2025.108716",
+   "DOI:10.1093/nutrit/nuaf203"
+  ]
+ },
+ "G-00094": {
+  "statement": "Lipedema diagnosis is primarily clinical, based on history and physical examination, because no specific biomarker or confirmatory imaging test exists.",
+  "questions": [
+   "SQ-LIP-000003",
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.jmv.2012.05.002",
+   "DOI:10.1038/s44324-025-00093-y",
+   "DOI:10.1177/02683555261451571",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.3238/arztebl.2020.0396",
+   "DOI:10.4236/jbise.2026.193011"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00063",
+    "statement": "Lipedema diagnosis remains primarily clinical, with ultrasound and other imaging considered adjunctive rather than definitive."
+   }
+  ]
+ },
+ "G-00095": {
+  "statement": "Clinical criteria for lipedema commonly include disproportionate symmetric limb fat sparing hands and feet, tenderness, easy bruising and a negative Stemmer sign.",
+  "questions": [
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1007/s00105-018-4304-5",
+   "DOI:10.1111/ddg.13036",
+   "DOI:10.1177/0268355516639421"
+  ]
+ },
+ "G-00096": {
+  "statement": "Lipedema is commonly classified by anatomical type of fat distribution and by morphological stage of skin and tissue change.",
+  "questions": [
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.22597",
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.20944/preprints202510.1397.v1"
+  ]
+ },
+ "G-00097": {
+  "statement": "Morphological lipedema stage correlates poorly with symptom burden and lymphatic function, so it may not be a valid measure of severity.",
+  "questions": [
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1016/j.mvr.2021.104298",
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.1111/ddg.15513",
+   "DOI:10.1371/journal.pone.0319099",
+   "DOI:10.3390/ijms25031599"
+  ]
+ },
+ "G-00098": {
+  "statement": "Current lipedema staging systems are considered insufficient, and modified or additional classifications have been proposed.",
+  "questions": [
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-025-05192-1",
+   "DOI:10.3390/jpm13010098",
+   "DOI:10.3390/life15091397",
+   "DOI:10.4236/jbise.2025.184008"
+  ]
+ },
+ "G-00100": {
+  "statement": "Imaging and body-composition measures are proposed as diagnostic adjuncts, but their diagnostic performance and reliability remain insufficiently established.",
+  "questions": [
+   "SQ-LIP-000022",
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.1002/jmri.28400",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.bjps.2023.05.056",
+   "DOI:10.1089/lrb.2019.0011",
+   "DOI:10.1089/lrb.2024.0102",
+   "DOI:10.1111/obr.13648",
+   "DOI:10.1159/000527138",
+   "DOI:10.3238/arztebl.2020.0396"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00206",
+    "statement": "Imaging and body-composition measures are proposed as diagnostic adjuncts, but their diagnostic performance and reliability remain insufficiently established."
+   }
+  ]
+ },
+ "G-00101": {
+  "statement": "Standardized, universally accepted diagnostic criteria for lipedema are still lacking.",
+  "questions": [
+   "SQ-LIP-000022"
+  ],
+  "refs": [
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.1136/bmjopen-2024-086869",
+   "DOI:10.12775/qs.2025.38.57746"
+  ]
+ },
+ "G-00103": {
+  "statement": "Lymphoscintigraphy in lipedema is frequently normal, and dermal backflow, a hallmark of lymphedema, is rare.",
+  "questions": [
+   "SQ-LIP-000029",
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1007/s001050050627",
+   "DOI:10.1097/gox.0000000000008015",
+   "DOI:10.25259/jcis_121_2026"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00189",
+    "statement": "Lymphoscintigraphy in lipedema is frequently normal, and dermal backflow, a hallmark of lymphedema, is rare."
+   }
+  ]
+ },
+ "G-00104": {
+  "statement": "Lymphatic abnormalities on lymphoscintigraphy are common in lipedema, limiting its specificity for distinguishing lipedema from lymphedema.",
+  "questions": [
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.1111/cob.12730",
+   "DOI:10.3389/fphys.2023.1099555",
+   "DOI:10.7759/cureus.55906"
+  ]
+ },
+ "G-00105": {
+  "statement": "Lymphoscintigraphy may help detect coexisting lymphatic dysfunction and exclude other causes of edema, rather than serving routine lipedema diagnosis.",
+  "questions": [
+   "SQ-LIP-000023",
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jvsv.2026.102592",
+   "DOI:10.30795/jfootankle.2025.v19.1893",
+   "DOI:10.4081/vl.2025.14438",
+   "DOI:10.4103/jpgm.jpgm_273_25"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00170",
+    "statement": "Lymphoscintigraphy is mainly used to exclude lymphedema or detect coexisting lymphostatic involvement, rather than to diagnose lipedema itself."
+   }
+  ]
+ },
+ "G-00106": {
+  "statement": "Indocyanine green or near-infrared lymphography can distinguish lipedema, showing linear vessels without dermal backflow, from lymphedema with extensive dermal backflow.",
+  "questions": [
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.23458",
+   "DOI:10.1016/j.mvr.2021.104298",
+   "DOI:10.1089/lrb.2022.0010",
+   "DOI:10.1111/cob.12588"
+  ]
+ },
+ "G-00107": {
+  "statement": "MR lymphangiography can distinguish pure lipedema from lipo-lymphedema and lymphedema by patterns of subcutaneous fluid and lymphatic vessels.",
+  "questions": [
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1002/jmri.28281",
+   "DOI:10.1007/s00330-022-09047-0",
+   "DOI:10.1016/j.mvr.2009.01.005"
+  ]
+ },
+ "G-00108": {
+  "statement": "The overall diagnostic performance of imaging for lipedema remains limited, with inconsistent protocols and no single validated objective test.",
+  "questions": [
+   "SQ-LIP-000023",
+   "SQ-LIP-000029",
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.bjps.2023.05.056",
+   "DOI:10.1089/lrb.2024.0102",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.1111/obr.13648",
+   "DOI:10.4236/jbise.2025.184008"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00186",
+    "statement": "The overall diagnostic performance of imaging for lipedema remains limited, with inconsistent protocols and no single validated objective test."
+   },
+   {
+    "key": "G-00171",
+    "statement": "Overall diagnostic performance of imaging for lipedema remains limited, with heterogeneous protocols and no standardized objective imaging test."
+   }
+  ]
+ },
+ "G-00109": {
+  "statement": "Lipedema is a clinical entity distinct from lymphedema, distinguishable clinically by foot sparing and a negative Stemmer sign.",
+  "questions": [
+   "SQ-LIP-000030"
+  ],
+  "refs": [
+   "DOI:10.1007/s00105-018-4304-5",
+   "DOI:10.1097/00006534-199411000-00014"
+  ]
+ },
+ "G-00110": {
+  "statement": "Complete decongestive therapy, especially combined with exercise or pneumatic compression, is associated with reduced limb volume and circumference in lipedema.",
+  "questions": [
+   "SQ-LIP-000021"
+  ],
+  "refs": [
+   "DOI:10.1080/09593985.2018.1479474",
+   "DOI:10.1089/lrb.2020.0019",
+   "DOI:10.1089/lrb.2020.0128",
+   "DOI:10.1089/lrb.2023.0013",
+   "DOI:10.1089/lrb.2024.0065",
+   "DOI:10.26890/dgym6676",
+   "DOI:10.5535/arm.2011.35.6.922"
+  ]
+ },
+ "G-00111": {
+  "statement": "Decongestive and compression-based conservative therapy is reported to reduce pain in lipedema, although the supporting evidence is limited and inconsistent.",
+  "questions": [
+   "SQ-LIP-000021"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2021.0039",
+   "DOI:10.1097/gox.0000000000005952",
+   "DOI:10.1111/dth.14364",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.1590/1677-5449.202501962"
+  ]
+ },
+ "G-00112": {
+  "statement": "Compression therapy is associated with less heaviness, swelling and bruising and better physical functioning in lipedema.",
+  "questions": [
+   "SQ-LIP-000021"
+  ],
+  "refs": [
+   "DOI:10.3390/ijerph20020914",
+   "DOI:10.3390/life14111346"
+  ]
+ },
+ "G-00114": {
+  "statement": "Decongestive physiotherapy after liposuction for lipedema is associated with reduced postoperative pain, better mobility and fewer complications.",
+  "questions": [
+   "SQ-LIP-000021"
+  ],
+  "refs": [
+   "DOI:10.3390/jcm14072137"
+  ]
+ },
+ "G-00115": {
+  "statement": "The need for ongoing decongestive therapy is reported to decline after liposuction, though many patients continue some conservative therapy.",
+  "questions": [
+   "SQ-LIP-000013",
+   "SQ-LIP-000015",
+   "SQ-LIP-000021",
+   "SQ-LIP-000027",
+   "SQ-LIP-000028"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-020-01910-z",
+   "DOI:10.1097/prs.0000000000008880",
+   "DOI:10.1111/ddg.14974",
+   "DOI:10.7759/cureus.55260"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00009",
+    "statement": "Liposuction for lipedema is associated with reduced need for compression and other conservative decongestive therapy."
+   }
+  ]
+ },
+ "G-00116": {
+  "statement": "Lipedema is frequently misdiagnosed as obesity or lymphedema.",
+  "questions": [
+   "SQ-LIP-000022",
+   "SQ-LIP-000037"
+  ],
+  "refs": [
+   "DOI:10.1007/s00105-010-1987-7",
+   "DOI:10.1016/j.jmv.2012.05.002",
+   "DOI:10.1016/j.jpra.2026.01.004",
+   "DOI:10.1055/a-2530-5875",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1097/psn.0000000000000316",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.1111/iwj.12949",
+   "DOI:10.1177/0268355516639421",
+   "DOI:10.1177/02683555211068953",
+   "DOI:10.1556/oh.2008.28490",
+   "DOI:10.2147/ijwh.s106227",
+   "DOI:10.4103/jpgm.jpgm_273_25"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00102",
+    "statement": "Lipedema is frequently misdiagnosed or confused with obesity or lymphedema."
+   }
+  ]
+ },
+ "G-00117": {
+  "statement": "Lipedema is typically diagnosed many years after symptom onset.",
+  "questions": [
+   "SQ-LIP-000037"
+  ],
+  "refs": [
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.23736/s0392-9590.25.05207-1",
+   "DOI:10.3390/biomedicines13123049"
+  ]
+ },
+ "G-00118": {
+  "statement": "A substantial share of women with lipedema have no prior diagnosis, and reaching one often requires several consultations.",
+  "questions": [
+   "SQ-LIP-000037"
+  ],
+  "refs": [
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.3390/ijerph20176647"
+  ]
+ },
+ "G-00120": {
+  "statement": "Low clinician awareness and knowledge of lipedema are reported to contribute to its under-recognition.",
+  "questions": [
+   "SQ-LIP-000037"
+  ],
+  "refs": [
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1177/02683555251332998"
+  ]
+ },
+ "G-00121": {
+  "statement": "Reliance on body mass index and the absence of validated objective criteria or biomarkers are reported to hinder recognition of lipedema.",
+  "questions": [
+   "SQ-LIP-000037"
+  ],
+  "refs": [
+   "Amato ACM, 2021",
+   "DOI:10.1002/jmri.28400",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1177/02683555211002340",
+   "DOI:10.3238/arztebl.2020.0396",
+   "DOI:10.36557/2674-8169.2026v8n2p869-884"
+  ]
+ },
+ "G-00122": {
+  "statement": "Celiac-associated HLA-DQ risk haplotypes are reported more frequently in women with lipedema than in the general population, with a small effect size.",
+  "questions": [
+   "SQ-LIP-000009"
+  ],
+  "refs": [
+   "DOI:10.1590/S0102-67202015000300009",
+   "DOI:10.7759/cureus.41594",
+   "DOI:10.7759/cureus.87332"
+  ]
+ },
+ "G-00123": {
+  "statement": "Women with serologically confirmed celiac disease may have lower gynoid and leg fat than women without celiac disease, including among those with overweight or obesity.",
+  "questions": [
+   "SQ-LIP-000009"
+  ],
+  "refs": [
+   "DOI:10.64898/2025.12.01.25341350"
+  ]
+ },
+ "G-00124": {
+  "statement": "The prevalence of a lipedema-like fat phenotype does not appear to differ between women with and without celiac disease autoimmunity.",
+  "questions": [
+   "SQ-LIP-000009"
+  ],
+  "refs": [
+   "DOI:10.7759/cureus.104222"
+  ]
+ },
+ "G-00125": {
+  "statement": "Food-specific IgG reactivity to gluten-containing cereals appears similar in women with lipedema and in comparison women.",
+  "questions": [
+   "SQ-LIP-000009"
+  ],
+  "refs": [
+   "DOI:10.7759/cureus.93788"
+  ]
+ },
+ "G-00126": {
+  "statement": "The main celiac-associated HLA-DQ haplotype is the principal genetic risk determinant for celiac disease, through presentation of gliadin peptides to helper T cells.",
+  "questions": [
+   "SQ-LIP-000009"
+  ],
+  "refs": [
+   "DOI:10.5772/intechopen.95837"
+  ]
+ },
+ "G-00128": {
+  "statement": "Lipedema is associated with more depressive symptoms, psychological distress and body image dissatisfaction, and these are linked to lower quality of life.",
+  "questions": [
+   "SQ-LIP-000034"
+  ],
+  "refs": [
+   "DOI:10.1007/s40519-019-00703-x",
+   "DOI:10.3390/women6030050"
+  ]
+ },
+ "G-00129": {
+  "statement": "Guidelines and consensus statements recommend multidisciplinary lipedema care that includes psychosocial support or psychological assessment alongside physical treatment.",
+  "questions": [
+   "SQ-LIP-000015",
+   "SQ-LIP-000034"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.bjps.2022.12.004",
+   "DOI:10.1111/ddg.15513",
+   "DOI:10.1177/0268355516639421",
+   "DOI:10.1177/02683555261451571",
+   "DOI:10.12968/bjcn.2017.22.sup10.s44",
+   "DOI:10.1590/1677-5449.202301832"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00255",
+    "statement": "Lipedema management is recommended as multidisciplinary and individualized, addressing physical symptoms, mental health and self-care."
+   }
+  ]
+ },
+ "G-00130": {
+  "statement": "In lipedema, higher health-related stigma is associated with lower quality of life, while stronger perceived social support is associated with better social and emotional functioning.",
+  "questions": [
+   "SQ-LIP-000034"
+  ],
+  "refs": [
+   "DOI:10.1080/07399332.2025.2499487"
+  ]
+ },
+ "G-00132": {
+  "statement": "Depressive symptoms are frequently reported in women with lipedema, often reaching moderate or greater severity on screening instruments.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1007/s13555-018-0241-6",
+   "DOI:10.1016/j.jpsychores.2025.112306",
+   "DOI:10.1089/lrb.2024.0117",
+   "DOI:10.1186/s12905-021-01174-y",
+   "DOI:10.1186/s12905-022-02022-3",
+   "DOI:10.3389/fgwh.2025.1629077",
+   "DOI:10.3390/ijerph181910223",
+   "DOI:10.3390/jcm11102836"
+  ]
+ },
+ "G-00133": {
+  "statement": "Anxiety symptoms are frequently reported in women with lipedema.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1177/15578585261454789",
+   "DOI:10.12740/app/201427",
+   "DOI:10.1515/hmbci-2021-0027"
+  ]
+ },
+ "G-00134": {
+  "statement": "Compared with healthy controls or population norms, women with lipedema report more depressive and anxiety symptoms and poorer emotional well-being.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-026-05957-2",
+   "DOI:10.1177/02683555251410009",
+   "DOI:10.1371/journal.pone.0355488",
+   "DOI:10.3390/women6030050"
+  ]
+ },
+ "G-00135": {
+  "statement": "Excess depressive and anxiety symptoms in lipedema may not be fully explained by body mass, although findings against comparable-weight groups are inconsistent.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.17219/acem/181146",
+   "DOI:10.3390/ijerph192013679",
+   "DOI:10.3390/life14030295"
+  ]
+ },
+ "G-00136": {
+  "statement": "Greater pain burden in lipedema, including comorbid fibromyalgia, is associated with more depressive and anxiety symptoms.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2023.0038",
+   "DOI:10.21203/rs.3.rs-2705753/v1"
+  ]
+ },
+ "G-00137": {
+  "statement": "Depression and psychological burden may be greater in more advanced lipedema stages, although this is not consistently found.",
+  "questions": [
+   "SQ-LIP-000020",
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1007/s11136-022-03216-w",
+   "DOI:10.1371/journal.pone.0319099"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00056",
+    "statement": "More advanced lipedema stage may be associated with greater psychological burden."
+   }
+  ]
+ },
+ "G-00138": {
+  "statement": "Depressive symptoms and appearance-related distress are associated with lower quality of life in lipedema.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1007/s40519-019-00703-x",
+   "DOI:10.1080/13548506.2018.1459750"
+  ]
+ },
+ "G-00139": {
+  "statement": "Psychosocial factors such as stigma, social connectedness and psychological flexibility are associated with quality of life in lipedema beyond symptom severity.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1007/s11136-015-1080-x",
+   "DOI:10.1080/07399332.2025.2499487",
+   "DOI:10.1080/17482631.2026.2734666"
+  ]
+ },
+ "G-00140": {
+  "statement": "Depressive and anxiety symptoms may decrease after liposuction for lipedema.",
+  "questions": [
+   "SQ-LIP-000042"
+  ],
+  "refs": [
+   "DOI:10.1016/j.bjps.2024.02.048"
+  ]
+ },
+ "G-00141": {
+  "statement": "Guidelines and consensus statements recommend conservative management, including diet, weight control, exercise and compression, as first-line care for lipedema.",
+  "questions": [
+   "SQ-LIP-000015",
+   "SQ-LIP-000033"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1111/ddg.13036",
+   "DOI:10.1111/ddg.15513",
+   "DOI:10.1111/iwj.13071",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.1177/0268355516639421",
+   "DOI:10.12775/jehs.2026.87.67421",
+   "DOI:10.12968/bjcn.2016.21.sup10.s6",
+   "DOI:10.1556/oh.2008.28490",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.26779/2786-832x.2025.2.69",
+   "DOI:10.5535/arm.2011.35.6.922",
+   "DOI:10.56238/levv16n53-097"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00256",
+    "statement": "Conservative therapy, such as compression, exercise, diet and skin care, is commonly recommended as first-line management of lipedema."
+   }
+  ]
+ },
+ "G-00142": {
+  "statement": "Ketogenic and low-carbohydrate diets are associated with reductions in weight, fat mass and pain in people with lipedema.",
+  "questions": [
+   "SQ-LIP-000033"
+  ],
+  "refs": [
+   "DOI:10.1007/s13679-023-00536-x",
+   "DOI:10.1093/nutrit/nuaf203",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.19251/pwod/2025.3(3)"
+  ]
+ },
+ "G-00143": {
+  "statement": "Evidence for dietary interventions in lipedema is limited, mostly at high risk of bias and without consistent effects on inflammation.",
+  "questions": [
+   "SQ-LIP-000033"
+  ],
+  "refs": [
+   "DOI:10.1016/j.maturitas.2025.108716"
+  ]
+ },
+ "G-00144": {
+  "statement": "Conventional weight-loss approaches often fail to improve lipedema-specific fat and symptoms.",
+  "questions": [
+   "SQ-LIP-000033"
+  ],
+  "refs": [
+   "DOI:10.1093/cdn/nzac070.023",
+   "DOI:10.1590/1806-9282.20240801"
+  ]
+ },
+ "G-00145": {
+  "statement": "Obesity frequently coexists with lipedema and may aggravate its adipose tissue abnormalities.",
+  "questions": [
+   "SQ-LIP-000033"
+  ],
+  "refs": [
+   "DOI:10.1080/21623945.2026.2719267",
+   "DOI:10.1097/prs.0000000000010392"
+  ]
+ },
+ "G-00146": {
+  "statement": "Structured exercise combined with decongestive therapy reduces limb volume and pain in lipedema.",
+  "questions": [
+   "SQ-LIP-000033"
+  ],
+  "refs": [
+   "DOI:10.1007/s13679-024-00579-8",
+   "DOI:10.1089/lrb.2020.0019"
+  ]
+ },
+ "G-00147": {
+  "statement": "Advanced lipedema is described as sometimes complicated by secondary lymphedema, termed lipolymphedema.",
+  "questions": [
+   "SQ-LIP-000017"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.22597",
+   "DOI:10.1007/3-540-28043-x_3",
+   "DOI:10.1016/j.jvsv.2019.11.014",
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.14740/jmc3806",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.19080/oajs.2024.15.555923",
+   "DOI:10.26890/dgym6676",
+   "DOI:10.3390/biomedicines10123081"
+  ]
+ },
+ "G-00148": {
+  "statement": "Lipedema is regarded by some authors as a condition distinct from lymphedema rather than a precursor of it.",
+  "questions": [
+   "SQ-LIP-000017"
+  ],
+  "refs": [
+   "DOI:10.1007/s00105-010-1987-7",
+   "DOI:10.1097/00006534-199411000-00014"
+  ]
+ },
+ "G-00149": {
+  "statement": "Lymphedema in people with lipedema is reported to be more frequent at higher body mass index.",
+  "questions": [
+   "SQ-LIP-000001",
+   "SQ-LIP-000017",
+   "SQ-LIP-000039"
+  ],
+  "refs": [
+   "DOI:10.14740/jocmr4666",
+   "DOI:10.7759/cureus.11854"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00236",
+    "statement": "Lymphedema in women with lipedema appears more frequent with higher body mass."
+   },
+   {
+    "key": "G-00218",
+    "statement": "Subclinical and clinical lymphedema in women with lipedema is reported to be more prevalent at higher body mass index."
+   }
+  ]
+ },
+ "G-00150": {
+  "statement": "Lymphedema co-occurring with advanced lipedema may reflect associated obesity rather than progression of lipedema itself.",
+  "questions": [
+   "SQ-LIP-000017"
+  ],
+  "refs": [
+   "DOI:10.3390/jpm13010098"
+  ]
+ },
+ "G-00151": {
+  "statement": "Lymphatic transport abnormalities are frequently detected by imaging in lipedema, with severity varying between studies.",
+  "questions": [
+   "SQ-LIP-000017"
+  ],
+  "refs": [
+   "DOI:10.1016/j.bjps.2023.05.056",
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.1024/0301-1526.37.1.39",
+   "DOI:10.1177/000331979504600408",
+   "DOI:10.3390/ijms23126621"
+  ]
+ },
+ "G-00152": {
+  "statement": "Lymphatic dysfunction in lipedema may be more pronounced in severe disease or with longer disease duration.",
+  "questions": [
+   "SQ-LIP-000017"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.23458",
+   "DOI:10.1016/j.mri.2020.06.010",
+   "DOI:10.1016/j.mvr.2021.104298",
+   "DOI:10.1055/s-0039-1697904",
+   "DOI:10.23736/s0392-9590.21.04604-6"
+  ]
+ },
+ "G-00154": {
+  "statement": "Coexisting lymphostasis may add a reducible fluid component to limb volume in lipedema, while the adipose accumulation persists.",
+  "questions": [
+   "SQ-LIP-000017",
+   "SQ-LIP-000039"
+  ],
+  "refs": [
+   "DOI:10.1159/000342073"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00221",
+    "statement": "Coexisting lymphostasis may add a drainable fluid component to lipedema limbs, while the adipose accumulation itself persists after drainage."
+   }
+  ]
+ },
+ "G-00155": {
+  "statement": "Varicose veins, telangiectasias and chronic venous disease are reported in a variable and sometimes large proportion of people with lipedema.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1097/gox.0000000000005436",
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.1371/journal.pone.0319099",
+   "DOI:10.24875/rma.23000040",
+   "DOI:10.3389/fcell.2026.1819443",
+   "DOI:10.4103/jpgm.jpgm_273_25"
+  ]
+ },
+ "G-00156": {
+  "statement": "Varicose veins may not be more frequent in lipedema than in comparison groups without lipedema.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jdmv.2023.06.002",
+   "DOI:10.1177/02683555211002340"
+  ]
+ },
+ "G-00157": {
+  "statement": "Impaired venous function may not be a primary feature of lipedema, even though chronic venous disease often coexists.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1046/j.1365-2133.1996.d01-741.x"
+  ]
+ },
+ "G-00158": {
+  "statement": "Saphenous compartment pressure may not differ between limbs with lipedema plus varicose veins and limbs with varicose veins alone.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555261480910"
+  ]
+ },
+ "G-00159": {
+  "statement": "Lipedema is reported to involve microvascular alterations such as capillary fragility and increased permeability.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.4236/jbise.2026.193011"
+  ]
+ },
+ "G-00160": {
+  "statement": "Angiogenic and lymphangiogenic markers in serum or tissue may be altered in lipedema.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1038/s41598-020-67987-3",
+   "DOI:10.3390/diseases14070251"
+  ]
+ },
+ "G-00161": {
+  "statement": "Lipedema may be associated with a modestly higher risk of venous thromboembolism in hospitalised women with obesity, independent of obesity and comorbidities.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1177/1358863x231219006"
+  ]
+ },
+ "G-00162": {
+  "statement": "In people with chronic venous insufficiency, concomitant lipedema is associated with smaller quality-of-life gains after endovenous ablation, and lipedema symptoms persist after treatment.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555261418968"
+  ]
+ },
+ "G-00163": {
+  "statement": "Guidance recommends low compression pressure for lipedema and early venous disease, and higher pressure for severe venous or lymphatic disease.",
+  "questions": [
+   "SQ-LIP-000018"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555251410002"
+  ]
+ },
+ "G-00165": {
+  "statement": "MR lymphography may distinguish pure lipedema from lipo-lymphedema, since epifascial fluid is reported in lipo-lymphedema but not in pure lipedema.",
+  "questions": [
+   "SQ-LIP-000023"
+  ],
+  "refs": [
+   "DOI:10.1016/j.mri.2020.06.010",
+   "DOI:10.1016/j.mvr.2009.01.005",
+   "DOI:10.7759/cureus.55906"
+  ]
+ },
+ "G-00166": {
+  "statement": "MRI patterns and volumes of subcutaneous tissue may help distinguish lipedema from lymphedema.",
+  "questions": [
+   "SQ-LIP-000023"
+  ],
+  "refs": [
+   "DOI:10.1002/jmri.28281",
+   "DOI:10.1002/jmri.28400",
+   "DOI:10.1002/jmri.28720",
+   "DOI:10.1007/s00330-022-09047-0"
+  ]
+ },
+ "G-00167": {
+  "statement": "Dermal backflow is rare or absent in lipedema on lymphatic imaging, which may help distinguish it from lymphedema.",
+  "questions": [
+   "SQ-LIP-000023"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.23458",
+   "DOI:10.1097/gox.0000000000008015",
+   "DOI:10.1111/cob.12588"
+  ]
+ },
+ "G-00168": {
+  "statement": "Superficial lymphatic vessels in lipedema are frequently reported as dilated or tortuous, with slower superficial lymph flow than in controls.",
+  "questions": [
+   "SQ-LIP-000023"
+  ],
+  "refs": [
+   "DOI:10.1016/j.mvr.2021.104298",
+   "DOI:10.1089/lrb.2022.0010"
+  ]
+ },
+ "G-00169": {
+  "statement": "Lymphoscintigraphy may not separate lipedema from overweight or obese women, because lymphatic alterations are common in both.",
+  "questions": [
+   "SQ-LIP-000023"
+  ],
+  "refs": [
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.3389/fphys.2023.1099555"
+  ]
+ },
+ "G-00172": {
+  "statement": "Lipedema limb fat and disproportion are often reported to persist after bariatric surgery despite substantial overall weight loss.",
+  "questions": [
+   "SQ-LIP-000024"
+  ],
+  "refs": [
+   "DOI:10.1007/s12262-020-02163-5",
+   "DOI:10.1016/j.jpra.2026.01.004",
+   "DOI:10.1016/j.soard.2016.04.013",
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.1097/psn.0000000000000316",
+   "DOI:10.1111/cob.12239",
+   "DOI:10.1111/cob.70062",
+   "DOI:10.1159/000511044",
+   "DOI:10.3390/biomedicines10123081"
+  ]
+ },
+ "G-00173": {
+  "statement": "Weight loss, including after bariatric surgery, may fail to relieve limb pain and other core lipedema symptoms in many patients.",
+  "questions": [
+   "SQ-LIP-000024"
+  ],
+  "refs": [
+   "DOI:10.1007/s11695-025-08021-1",
+   "DOI:10.1016/j.soard.2021.12.027",
+   "DOI:10.1093/bjs/znaf270.045",
+   "DOI:10.1177/1358863x231202769",
+   "DOI:10.34119/bjhrv7n9-201"
+  ]
+ },
+ "G-00174": {
+  "statement": "Diet-induced weight loss may reduce leg adipose tissue in lipedema roughly in proportion to fat loss elsewhere in the body.",
+  "questions": [
+   "SQ-LIP-000024"
+  ],
+  "refs": [
+   "DOI:10.1210/jcemcr/luag018",
+   "DOI:10.1515/hmbci-2017-0076",
+   "DOI:10.2337/db24-0890",
+   "DOI:10.3390/jcm15218643"
+  ]
+ },
+ "G-00175": {
+  "statement": "Changes in lipedema pain may be dissociated from changes in body weight or adipose volume.",
+  "questions": [
+   "SQ-LIP-000024",
+   "SQ-LIP-000027"
+  ],
+  "refs": [
+   "DOI:10.1002/osp4.580",
+   "DOI:10.1111/dth.14534",
+   "DOI:10.7759/cureus.115591"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00022",
+    "statement": "Pain relief and adipose volume change after lipedema treatment may be dissociable, so weight or volume may not track symptom benefit."
+   }
+  ]
+ },
+ "G-00176": {
+  "statement": "Liposuction for lipedema is associated with self-reported reductions in pain and improved mobility and quality of life.",
+  "questions": [
+   "SQ-LIP-000024"
+  ],
+  "refs": [
+   "DOI:10.1097/gox.0000000000003553"
+  ]
+ },
+ "G-00177": {
+  "statement": "Persistent cutaneous sensory alterations may follow leg liposuction for lipedema, particularly in more advanced stages.",
+  "questions": [
+   "SQ-LIP-000026"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-025-05456-w"
+  ]
+ },
+ "G-00178": {
+  "statement": "Liposuction has not been shown to cure lipedema.",
+  "questions": [
+   "SQ-LIP-000028"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1093/asjof/ojag039",
+   "DOI:10.3238/arztebl.2020.0396",
+   "DOI:10.70773/revistatopicos/778519737"
+  ]
+ },
+ "G-00179": {
+  "statement": "Liposuction for lipedema is associated with reduced pain and other symptoms compared with preoperative status, mainly in uncontrolled studies.",
+  "questions": [
+   "SQ-LIP-000013",
+   "SQ-LIP-000015",
+   "SQ-LIP-000019",
+   "SQ-LIP-000026",
+   "SQ-LIP-000027",
+   "SQ-LIP-000028",
+   "SQ-LIP-000032"
+  ],
+  "refs": [
+   "DOI:10.1007/7140.2006.00006",
+   "DOI:10.1007/s00266-025-05329-2",
+   "DOI:10.1007/s00266-025-05456-w",
+   "DOI:10.1007/s00266-025-05507-2",
+   "DOI:10.1007/s00266-026-06371-4",
+   "DOI:10.1016/j.bjps.2025.06.031",
+   "DOI:10.1016/j.bjps.2025.12.018",
+   "DOI:10.1016/j.jpra.2026.01.004",
+   "DOI:10.1055/a-2334-9260",
+   "DOI:10.1080/21623945.2026.2719267",
+   "DOI:10.1093/asjof/ojag039",
+   "DOI:10.1097/gox.0000000000005952",
+   "DOI:10.1097/prs.0000000000008880",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1111/dth.12820",
+   "DOI:10.1111/dth.14364",
+   "DOI:10.1111/j.1610-0387.2010.07504.x",
+   "DOI:10.21037/atm-24-165",
+   "DOI:10.4172/2161-1173.1000133",
+   "DOI:10.56238/levv16n53-097",
+   "DOI:10.7759/cureus.55260"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00260",
+    "statement": "Liposuction for lipedema is associated with reduced pain and improved symptoms compared with preoperative status, based largely on uncontrolled studies."
+   },
+   {
+    "key": "G-00005",
+    "statement": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status."
+   }
+  ]
+ },
+ "G-00180": {
+  "statement": "Liposuction may yield better patient-reported outcomes than conservative treatment alone in lipedema.",
+  "questions": [
+   "SQ-LIP-000028"
+  ],
+  "refs": [
+   "DOI:10.3390/jcm14010279"
+  ]
+ },
+ "G-00181": {
+  "statement": "Benefits of liposuction for lipedema appear greater in earlier disease stages than in advanced stages.",
+  "questions": [
+   "SQ-LIP-000028"
+  ],
+  "refs": [
+   "DOI:10.1111/j.1610-0387.2010.07504.x",
+   "DOI:10.21037/atm-24-165"
+  ]
+ },
+ "G-00182": {
+  "statement": "Serious complications after liposuction for lipedema are reported to be uncommon, although persistent sensory changes may occur.",
+  "questions": [
+   "SQ-LIP-000028"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-020-01910-z",
+   "DOI:10.1007/s00266-025-05456-w"
+  ]
+ },
+ "G-00183": {
+  "statement": "In small MRI series, pure lipedema tends to show homogeneous subcutaneous fat without the epifascial fluid or honeycomb pattern of lymphedema.",
+  "questions": [
+   "SQ-LIP-000029"
+  ],
+  "refs": [
+   "DOI:10.1016/j.mri.2020.06.010",
+   "DOI:10.1016/j.mvr.2009.01.005",
+   "DOI:10.1080/028418501127346909",
+   "DOI:10.1148/radiology.184.1.1609085",
+   "DOI:10.7759/cureus.55906"
+  ]
+ },
+ "G-00184": {
+  "statement": "Lymphatic and fluid changes, such as subcutaneous edema-like signal and dilated lymphatic vessels, may occur in lipedema and are not exclusive to lymphedema.",
+  "questions": [
+   "SQ-LIP-000029"
+  ],
+  "refs": [
+   "DOI:10.1002/jmri.28281",
+   "DOI:10.1002/jmri.28400",
+   "DOI:10.1002/jmri.28720",
+   "DOI:10.1089/lrb.2022.0010"
+  ]
+ },
+ "G-00185": {
+  "statement": "MRI measurement of subcutaneous fat volume and distribution may help separate lipedema from BMI-matched controls, based on small pilot data.",
+  "questions": [
+   "SQ-LIP-000029"
+  ],
+  "refs": [
+   "DOI:10.1007/s00330-022-09047-0",
+   "DOI:10.1117/1.jmi.10.3.036001",
+   "DOI:10.1117/12.2611240"
+  ]
+ },
+ "G-00188": {
+  "statement": "DXA leg-fat indices are proposed as an auxiliary tool to suggest or exclude lipedema in borderline cases.",
+  "questions": [
+   "SQ-LIP-000029"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270"
+  ]
+ },
+ "G-00190": {
+  "statement": "DXA regional fat indices, such as leg fat relative to total fat or a low trunk-to-leg fat ratio, may help discriminate lipedema from controls.",
+  "questions": [
+   "SQ-LIP-000023",
+   "SQ-LIP-000031"
+  ],
+  "refs": [
+   "DOI:10.1007/s12020-026-04723-3",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.bjps.2023.05.056",
+   "DOI:10.1111/bjd.13697",
+   "DOI:10.1159/000527138",
+   "DOI:10.3389/fendo.2026.1857893"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00164",
+    "statement": "A DXA index of leg fat relative to total body fat may help discriminate lipedema from women without lipedema."
+   }
+  ]
+ },
+ "G-00191": {
+  "statement": "Evidence on DXA and other imaging tools for lipedema remains limited, with small heterogeneous samples and poorly reported reliability.",
+  "questions": [
+   "SQ-LIP-000031"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2024.0102",
+   "DOI:10.1111/obr.13648"
+  ]
+ },
+ "G-00192": {
+  "statement": "A gynoid fat phenotype may mimic lipedema, so fat distribution alone may not reliably separate lipedema from gynoid obesity without clinical screening.",
+  "questions": [
+   "SQ-LIP-000031"
+  ],
+  "refs": [
+   "DOI:10.36557/2674-8169.2026v8n2p869-884"
+  ]
+ },
+ "G-00193": {
+  "statement": "DXA regional fat measures are used in lipedema studies as descriptive variables or as proxy definitions of a lipedema-like phenotype.",
+  "questions": [
+   "SQ-LIP-000031"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555251360606",
+   "DOI:10.1210/jcemcr/luag018",
+   "DOI:10.64898/2025.12.01.25341350",
+   "DOI:10.7759/cureus.104222"
+  ]
+ },
+ "G-00194": {
+  "statement": "A positive family history is frequently reported among people with lipedema, though reported frequencies vary widely.",
+  "questions": [
+   "SQ-LIP-000002",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.jpra.2026.01.004",
+   "DOI:10.1038/s44324-025-00093-y",
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.1097/prs.0000000000006280",
+   "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "DOI:10.1177/1534734614554284",
+   "DOI:10.1371/journal.pone.0319099",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.3390/ijms25031599"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00085",
+    "statement": "A positive family history is frequently reported in lipedema, suggesting a heritable predisposition."
+   }
+  ]
+ },
+ "G-00195": {
+  "statement": "Pedigree-based reports suggest familial lipedema may follow autosomal dominant inheritance with sex limitation, though X-linked and polygenic models are also proposed.",
+  "questions": [
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "DOI:10.1002/ajmg.a.33313",
+   "DOI:10.1016/j.jbiotec.2019.05.040",
+   "DOI:10.1016/j.mehy.2014.08.011",
+   "DOI:10.17116/plast.hirurgia202403186",
+   "DOI:10.26355/eurrev_201907_18292",
+   "DOI:10.3390/biomedicines10123081",
+   "DOI:10.3390/jpm13010098"
+  ]
+ },
+ "G-00196": {
+  "statement": "Lipedema may be genetically heterogeneous, with no single causal gene shared across affected families.",
+  "questions": [
+   "SQ-LIP-000012",
+   "SQ-LIP-000025",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2023.0065",
+   "DOI:10.1089/lrb.2024.29161.editorial",
+   "DOI:10.3390/ijms222111720"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00073",
+    "statement": "No single causative gene has been established for non-syndromic lipedema, and its genetic basis appears heterogeneous."
+   },
+   {
+    "key": "G-00251",
+    "statement": "Rare candidate variants differ between lipedema families, suggesting genetically heterogeneous rather than single-gene inheritance."
+   }
+  ]
+ },
+ "G-00198": {
+  "statement": "Rare variants in hormone-metabolism genes such as AKR1C1 have been reported in isolated lipedema families, but replication is lacking.",
+  "questions": [
+   "SQ-LIP-000012",
+   "SQ-LIP-000025",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "DOI:10.1007/s00404-026-08318-1",
+   "DOI:10.1111/obr.13953",
+   "DOI:10.26355/eurrev_202312_34698",
+   "DOI:10.3390/ijms21176264",
+   "DOI:10.3390/jpm13010098",
+   "DOI:10.4081/vl.2026.15495"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00074",
+    "statement": "Rare missense variants in an aldo-keto reductase gene involved in progesterone metabolism are proposed as a cause of familial non-syndromic lipedema."
+   },
+   {
+    "key": "G-00252",
+    "statement": "A rare variant in an aldo-keto reductase gene may segregate with lipedema in a family, suggesting heredity may act through hormone metabolism."
+   }
+  ]
+ },
+ "G-00202": {
+  "statement": "A self-administered lipedema screening questionnaire may discriminate lipedema from non-lipedema, though sensitivity at a population cut-off is low and external validation lacking.",
+  "questions": [
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.1590/1677-5449.200114",
+   "DOI:10.1590/1677-5449.202101981"
+  ]
+ },
+ "G-00203": {
+  "statement": "The QuASiL questionnaire has shown acceptable comprehension, convergent validity and internal consistency in some populations, although reliability has varied between studies.",
+  "questions": [
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.1080/07399332.2026.2720245",
+   "DOI:10.1590/1677-5449.200049"
+  ]
+ },
+ "G-00204": {
+  "statement": "Screening questionnaires can flag probable lipedema among undiagnosed women, but they do not by themselves establish the diagnosis.",
+  "questions": [
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.1177/02683555261490379",
+   "DOI:10.36557/2674-8169.2026v8n2p869-884"
+  ]
+ },
+ "G-00205": {
+  "statement": "Structured clinical criteria or sign-based algorithms may help separate lipedema from lymphedema, but their validation is limited.",
+  "questions": [
+   "SQ-LIP-000038"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-025-05192-1",
+   "DOI:10.23736/s0392-9590.25.05207-1",
+   "DOI:10.3390/biomedicines13123049"
+  ]
+ },
+ "G-00209": {
+  "statement": "Lipedema is associated with reduced lower-limb strength, function and mobility compared with women without lipedema.",
+  "questions": [
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.1080/09593985.2025.2592718",
+   "DOI:10.1089/lrb.2021.0039",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.23736/s0392-9590.21.04604-6"
+  ]
+ },
+ "G-00210": {
+  "statement": "Women with lipedema may have greater disability than overweight or obese women, including after adjustment for body mass index.",
+  "questions": [
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.17219/acem/181146"
+  ]
+ },
+ "G-00211": {
+  "statement": "Functional impairment in lipedema appears to worsen with advancing stage and lipolymphedema, though quantitative data are limited.",
+  "questions": [
+   "SQ-LIP-000017",
+   "SQ-LIP-000039",
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.22597",
+   "DOI:10.1089/lrb.2021.0039",
+   "DOI:10.1089/lrb.2024.0117",
+   "DOI:10.1097/gox.0000000000003553",
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.3390/ijerph20031989"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00153",
+    "statement": "Functional impairment is reported in lipedema and may be greater in advanced stages or lipolymphedema."
+   },
+   {
+    "key": "G-00220",
+    "statement": "Advanced stage or coexisting lipo-lymphedema may be associated with worse physical function in lipedema."
+   }
+  ]
+ },
+ "G-00212": {
+  "statement": "Body mass index may be associated with the degree of functional impairment within lipedema.",
+  "questions": [
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2024.0117"
+  ]
+ },
+ "G-00213": {
+  "statement": "Joint pain and gait or joint abnormalities are frequently reported in lipedema, and hypermobility has been described.",
+  "questions": [
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.1515/hmbci-2017-0076",
+   "DOI:10.3390/jcm14207195"
+  ]
+ },
+ "G-00214": {
+  "statement": "Activity and participation outcomes are reported to be addressed in few lipedema studies, which are often methodologically weak.",
+  "questions": [
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.3390/ijerph20031989"
+  ]
+ },
+ "G-00215": {
+  "statement": "Lipedema is associated with reduced health-related quality of life and greater symptom burden than in women without lipedema.",
+  "questions": [
+   "SQ-LIP-000040"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jmv.2012.05.002",
+   "DOI:10.1371/journal.pone.0355488"
+  ]
+ },
+ "G-00216": {
+  "statement": "Lipo-lymphedema is frequently described as an advanced stage or complication of lipedema attributed to chronic lymphatic overload, though cohort evidence of conversion is lacking.",
+  "questions": [
+   "SQ-LIP-000039"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.22597",
+   "DOI:10.1002/oby.23458",
+   "DOI:10.1007/3-540-28043-x_3",
+   "DOI:10.1007/s00105-010-1987-7",
+   "DOI:10.1089/lrb.2021.0039",
+   "DOI:10.1097/00006534-199411000-00014",
+   "DOI:10.1097/gox.0000000000008015",
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.14740/jmc3806",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.3390/biomedicines10123081"
+  ]
+ },
+ "G-00217": {
+  "statement": "Lymphatic transport abnormalities are reported in many women with lipedema and are usually mild; whether they worsen with stage remains uncertain.",
+  "questions": [
+   "SQ-LIP-000039"
+  ],
+  "refs": [
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.1055/s-0039-1697904",
+   "DOI:10.23736/s0392-9590.21.04604-6",
+   "DOI:10.3390/ijms23126621"
+  ]
+ },
+ "G-00219": {
+  "statement": "Limb volume in lipedema appears stable in most patients over several years, with volume change associated with changes in body mass index.",
+  "questions": [
+   "SQ-LIP-000039"
+  ],
+  "refs": [
+   "DOI:10.1177/1358863x241306415"
+  ]
+ },
+ "G-00222": {
+  "statement": "Health-related quality of life in lipedema is reduced across physical, psychological and social domains compared with population norms or healthy controls.",
+  "questions": [
+   "SQ-LIP-000020",
+   "SQ-LIP-000034",
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1007/s13555-018-0241-6",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1080/17482631.2026.2734666",
+   "DOI:10.1177/02683555251410009",
+   "DOI:10.1186/s12905-022-02022-3",
+   "DOI:10.1186/s12905-025-03834-9",
+   "DOI:10.1371/journal.pone.0355488",
+   "DOI:10.3390/ijerph181910223"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00051",
+    "statement": "Health-related quality of life is reduced in women with lipedema compared with general population norms across physical, mental and social domains."
+   },
+   {
+    "key": "G-00127",
+    "statement": "Lipedema is associated with reduced health-related quality of life compared with general-population norms and healthy controls."
+   }
+  ]
+ },
+ "G-00223": {
+  "statement": "Depressive and anxiety symptoms are frequently reported in people with lipedema, though evidence on whether they exceed those in women with comparable obesity is inconsistent.",
+  "questions": [
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1007/s40519-019-00703-x",
+   "DOI:10.12740/app/201427",
+   "DOI:10.17219/acem/181146",
+   "DOI:10.3389/fgwh.2025.1629077",
+   "DOI:10.3390/life14030295"
+  ]
+ },
+ "G-00224": {
+  "statement": "Lower quality of life in lipedema is associated with psychological factors such as depression, appearance-related distress, stigma and low psychological flexibility.",
+  "questions": [
+   "SQ-LIP-000020",
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1007/s11136-015-1080-x",
+   "DOI:10.1007/s40519-019-00703-x",
+   "DOI:10.1080/07399332.2025.2499487",
+   "DOI:10.1080/13548506.2018.1459750",
+   "DOI:10.3390/jcm11102836"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00054",
+    "statement": "Depression, appearance-related distress, stigma and low psychological flexibility are associated with lower quality of life in lipedema."
+   }
+  ]
+ },
+ "G-00225": {
+  "statement": "Pain and core physical symptom severity are associated with lower quality of life in lipedema.",
+  "questions": [
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1186/s12905-021-01174-y",
+   "DOI:10.21203/rs.3.rs-2705753/v1"
+  ]
+ },
+ "G-00226": {
+  "statement": "Findings are inconsistent on whether quality-of-life and psychological burden worsen with more advanced lipedema stage.",
+  "questions": [
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1007/s11136-022-03216-w",
+   "DOI:10.1371/journal.pone.0319099",
+   "DOI:10.3390/jcm11102836"
+  ]
+ },
+ "G-00227": {
+  "statement": "Comorbid fibromyalgia may be associated with further reduced quality of life and more anxiety and depression in lipedema.",
+  "questions": [
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1089/lrb.2023.0038"
+  ]
+ },
+ "G-00228": {
+  "statement": "Liposuction for lipedema is associated with improved health-related quality of life and psychological symptoms, although not always to normative levels.",
+  "questions": [
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1016/j.bjps.2024.02.048",
+   "DOI:10.1016/j.ejvs.2013.10.009",
+   "DOI:10.1097/sap.0000000000004124"
+  ]
+ },
+ "G-00229": {
+  "statement": "Lipedema and lymphedema may differ in disease-specific quality-of-life profile, with lipedema reported worse on symptom, appearance and mood domains.",
+  "questions": [
+   "SQ-LIP-000041"
+  ],
+  "refs": [
+   "DOI:10.1016/j.jpsychores.2026.112562",
+   "DOI:10.1089/lrb.2024.0117"
+  ]
+ },
+ "G-00230": {
+  "statement": "Lipedema is a clinical entity distinct from obesity and lymphedema, although the three conditions can coexist.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "Amato ACM, 2020",
+   "DOI:10.1007/s00105-010-1987-7",
+   "DOI:10.1007/s00404-026-08318-1",
+   "DOI:10.1016/j.jmv.2012.05.002",
+   "DOI:10.1016/j.jpsychores.2026.112562",
+   "DOI:10.1055/a-2530-5875",
+   "DOI:10.1177/02683555261451571",
+   "DOI:10.1556/oh.2008.28490",
+   "DOI:10.1590/1677-5449.202301832",
+   "DOI:10.19080/oajs.2024.15.555923"
+  ]
+ },
+ "G-00231": {
+  "statement": "Lipedema fat in the affected limbs is reported to resist diet, exercise and bariatric weight loss, unlike common obesity.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "DOI:10.1007/s00105-018-4304-5",
+   "DOI:10.1097/psn.0000000000000245",
+   "DOI:10.1177/1534734614554284"
+  ]
+ },
+ "G-00232": {
+  "statement": "Foot sparing, a negative Stemmer sign, bilateral symmetry, easy bruising and painful fat help distinguish lipedema from lymphedema clinically.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "Amato ACM, 2019",
+   "DOI:10.1097/00006534-199411000-00014",
+   "DOI:10.1111/iwj.12949",
+   "DOI:10.1111/j.1758-8111.2012.00045.x"
+  ]
+ },
+ "G-00233": {
+  "statement": "Lipedema adipose tissue is reported to show histological and molecular features that differ from control tissue of similar body mass and from lymphedema.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "DOI:10.1002/oby.24281",
+   "DOI:10.1016/j.jss.2020.03.055",
+   "DOI:10.1038/s41598-020-67987-3",
+   "DOI:10.3390/biomedicines10123081",
+   "DOI:10.3390/ijms23126621",
+   "DOI:10.3390/ijms24087591"
+  ]
+ },
+ "G-00234": {
+  "statement": "Lymphatic imaging shows patterns in lipedema that differ from lymphedema.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "DOI:10.1002/jmri.28281",
+   "DOI:10.1002/oby.23458",
+   "DOI:10.1016/j.mri.2020.06.010",
+   "DOI:10.1016/j.remn.2018.06.008",
+   "DOI:10.1024/0301-1526.37.1.39"
+  ]
+ },
+ "G-00235": {
+  "statement": "Lipedema may coexist with obesity and with lymphedema in the same patient.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "DOI:10.1080/21623945.2026.2719267",
+   "DOI:10.1159/000342073",
+   "DOI:10.14740/jmc3806"
+  ]
+ },
+ "G-00237": {
+  "statement": "Limited evidence suggests lipedema may be accompanied by lower rates of metabolic comorbidity than in women of similar age in the general population.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "DOI:10.1515/hmbci-2017-0076"
+  ]
+ },
+ "G-00238": {
+  "statement": "Routine blood count parameters may not distinguish women with lipedema from controls.",
+  "questions": [
+   "SQ-LIP-000001"
+  ],
+  "refs": [
+   "PMID:42249859"
+  ]
+ },
+ "G-00239": {
+  "statement": "Lipedema and lipedema-like peripheral fat distribution may be associated with greater insulin sensitivity than comparable obesity, though findings are mixed.",
+  "questions": [
+   "SQ-LIP-000010"
+  ],
+  "refs": [
+   "DOI:10.2337/db24-0890",
+   "DOI:10.3389/fcell.2025.1691161",
+   "DOI:10.64898/2025.12.01.25341350"
+  ]
+ },
+ "G-00240": {
+  "statement": "Diabetes is reported less frequently in lipedema and lipedema-like peripheral fat distribution than in comparison groups, although adiposity matching is limited.",
+  "questions": [
+   "SQ-LIP-000010"
+  ],
+  "refs": [
+   "DOI:10.1515/hmbci-2017-0076",
+   "DOI:10.3390/biomedicines13030561",
+   "DOI:10.7759/cureus.104222"
+  ]
+ },
+ "G-00241": {
+  "statement": "Lipedema may be associated with a more favorable plasma lipid profile than obesity, though adiposity-matched comparisons are inconsistent.",
+  "questions": [
+   "SQ-LIP-000010"
+  ],
+  "refs": [
+   "DOI:10.1111/obr.13953",
+   "DOI:10.3389/fimmu.2023.1223264",
+   "DOI:10.3390/biomedicines13040867"
+  ]
+ },
+ "G-00242": {
+  "statement": "Lipedema is reported to involve systemic and adipose tissue inflammation.",
+  "questions": [
+   "SQ-LIP-000010"
+  ],
+  "refs": [
+   "DOI:10.1111/j.1600-0560.2009.01256.x",
+   "DOI:10.3389/fendo.2022.1000094",
+   "DOI:10.3390/ijms25031599"
+  ]
+ },
+ "G-00243": {
+  "statement": "A lipedema-like peripheral fat distribution may be inversely associated with cancer prevalence in women.",
+  "questions": [
+   "SQ-LIP-000010"
+  ],
+  "refs": [
+   "DOI:10.64898/2025.12.02.25341445"
+  ]
+ },
+ "G-00244": {
+  "statement": "Regionally patterned gluteofemoral fat is proposed to coexist with preserved systemic metabolic health, in contrast to visceral obesity.",
+  "questions": [
+   "SQ-LIP-000010"
+  ],
+  "refs": [
+   "DOI:10.3390/cells15191820",
+   "DOI:10.3390/cimb48090892",
+   "DOI:10.7759/cureus.88809"
+  ]
+ },
+ "G-00248": {
+  "statement": "Circulating testosterone and estradiol are reported not to differ between women with lipedema and controls, though evidence is limited.",
+  "questions": [
+   "SQ-LIP-000012",
+   "SQ-LIP-000035"
+  ],
+  "refs": [
+   "DOI:10.1055/a-2183-7414"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00027",
+    "statement": "Circulating estradiol and testosterone levels in lipedema may not differ from those of controls."
+   }
+  ]
+ },
+ "G-00249": {
+  "statement": "Lipedema frequently runs in families, in a pattern suggested to be sex-limited autosomal dominant inheritance with incomplete penetrance.",
+  "questions": [
+   "SQ-LIP-000012"
+  ],
+  "refs": [
+   "DOI:10.1002/ajmg.a.33313",
+   "DOI:10.1016/j.abd.2025.501270",
+   "DOI:10.1016/j.mehy.2014.08.011",
+   "DOI:10.1097/prs.0000000000006280",
+   "DOI:10.1177/1534734614554284",
+   "DOI:10.26355/eurrev_201907_18292",
+   "DOI:10.3390/jpm13010098"
+  ]
+ },
+ "G-00250": {
+  "statement": "Genome-wide studies suggest common genetic variants may contribute modestly to lipedema susceptibility.",
+  "questions": [
+   "SQ-LIP-000012",
+   "SQ-LIP-000036"
+  ],
+  "refs": [
+   "Amato ACM, 2020",
+   "DOI:10.1038/s41431-022-01231-6",
+   "DOI:10.1038/s44324-025-00093-y",
+   "DOI:10.1101/2021.06.15.21258988",
+   "DOI:10.1371/journal.pone.0274867"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00197",
+    "statement": "Genome-wide studies report common variant loci associated with a lipedema phenotype, suggesting a modest polygenic contribution."
+   }
+  ]
+ },
+ "G-00253": {
+  "statement": "Lipedema is reported almost exclusively in women.",
+  "questions": [
+   "SQ-LIP-000002",
+   "SQ-LIP-000012"
+  ],
+  "refs": [
+   "DOI:10.1055/a-2183-7414",
+   "DOI:10.1097/gox.0000000000008015",
+   "DOI:10.3205/iprs000161",
+   "DOI:10.3390/ijms23126621",
+   "DOI:10.4103/jpgm.jpgm_273_25"
+  ],
+  "merged_twins": [
+   {
+    "key": "G-00082",
+    "statement": "Lipedema affects almost exclusively women."
+   }
+  ]
+ },
+ "G-00254": {
+  "statement": "Adipose-derived cells from lipedema may show upregulated adipogenic gene expression compared with controls of similar weight.",
+  "questions": [
+   "SQ-LIP-000012"
+  ],
+  "refs": [
+   "DOI:10.1097/prs.0000000000010392"
+  ]
+ },
+ "G-00257": {
+  "statement": "Liposuction is recommended by many guidelines for selected patients with persistent symptoms despite conservative care, although some restrict it to research settings.",
+  "questions": [
+   "SQ-LIP-000015"
+  ],
+  "refs": [
+   "DOI:10.1007/3-540-28043-x_86",
+   "DOI:10.1007/s11936-025-01126-x",
+   "DOI:10.1016/j.bjps.2022.12.004",
+   "DOI:10.1097/gox.0000000000005952",
+   "DOI:10.1111/iwj.13071",
+   "DOI:10.2147/ijwh.s106227",
+   "DOI:10.26779/2786-832x.2025.2.69",
+   "DOI:10.51731/cjht.2022.413"
+  ]
+ },
+ "G-00258": {
+  "statement": "Decongestive therapy combined with exercise may reduce limb volume and pain more than pneumatic compression with exercise or exercise alone.",
+  "questions": [
+   "SQ-LIP-000015"
+  ],
+  "refs": [
+   "DOI:10.1007/s13679-024-00579-8",
+   "DOI:10.1089/lrb.2020.0019"
+  ]
+ },
+ "G-00259": {
+  "statement": "Limited evidence suggests conservative measures such as diet and decongestive therapy may improve symptoms in lipedema, with uncertain effect on limb volume.",
+  "questions": [
+   "SQ-LIP-000015"
+  ],
+  "refs": [
+   "DOI:10.1007/s13679-023-00536-x",
+   "DOI:10.1089/lrb.2024.0065",
+   "DOI:10.1111/dth.14364",
+   "DOI:10.12659/AJCR.934406",
+   "DOI:10.26890/dgym6676",
+   "DOI:10.5535/arm.2011.35.6.922"
   ]
  }
 }

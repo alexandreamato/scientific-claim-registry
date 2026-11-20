@@ -1,0 +1,177 @@
+{
+ "question": "SQ-LIP-000016",
+ "text": "Is gestrinone an effective treatment for lipedema?",
+ "n_old_claims": 3,
+ "n_items": 4,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] P1: overgeneralized — suggested: Systematic searches have identified no clinical studies of gestrinone in lipedema, so its use lacks direct clinical evidence. (E1 (zero eligible studies) and E2 support; E4 is weak (a scoping review that merely does not mention gestrinone). No clinical study has evaluated is an absolute universal bounded by the search dates of two reviews; absence of evidence is not evidence of ineffectiveness. E1 note about SBEM opposition is not evidenced by its quote.)",
+  "[minor] P2: overgeneralized; misplaced ['E2'] — suggested: The proposed rationale for gestrinone in lipedema rests on hypothesised aromatase inhibition and estrogen-receptor blockade extrapolated from other conditions, without lipedema-specific experimental data. (Single review (E3). The in vitro data come from a breast cancer line and a hepatoma line, not lipedema tissue, so describing them as support for the lipedema rationale could mislead. E2 (rationale is purely theoretical extrapolation) belongs here too.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.7759/cureus.97213",
+   "title": "Lack of Scientific Evidence for the Use of Gestrinone in the Treatment of Lipedema: A Systematic Review",
+   "year": 2025,
+   "design": "systematic_review",
+   "n": 0,
+   "grade": "high",
+   "risk_of_bias": "low",
+   "quote": "0 estudos elegíveis incluídos",
+   "note": "zero eligible studies; SBEM and Brazilian Lipedema Association oppose use",
+   "old_claims": [
+    "SCR-LIP-000040"
+   ],
+   "old_statements": [
+    "There is no scientific evidence supporting gestrinone for lipedema: a PRISMA systematic review identified zero clinical trials, observational studies or case reports evaluating it, particularly as subcutaneous implants."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1590/1677-5449.202502402",
+   "title": "Gestrinone, lipedema, and the limits of theoretical extrapolation in clinical practice: a critical narrative review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "No clinical trials, observational studies, case series, or case reports directly evaluating this therapy were identified. Existing proposals rely exclusively on theoretical extrapolations lacking clinical validation. Therefore, current evidence does not support the use of gestrinone in the treatment",
+   "note": "The review explicitly concludes that no direct clinical evidence exists and current evidence does NOT support gestrinone for lipedema, directly contradicting the affirmative answer that it is an effective treatment.",
+   "old_claims": [
+    "SCR-LIP-000040"
+   ],
+   "old_statements": [
+    "There is no scientific evidence supporting gestrinone for lipedema: a PRISMA systematic review identified zero clinical trials, observational studies or case reports evaluating it, particularly as subcutaneous implants."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.3390/ph17091248",
+   "title": "Effects, Doses, and Applicability of Gestrinone in Estrogen-Dependent Conditions and Post-Menopausal Women",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Mecanismo proposto para o lipedema: na doença há superexpressão de aromatase no tecido adiposo, aumentando a conversão de androgênios em estrogênios e alimentando a fisiopatologia; a gestrinona inibiria a aromatase e bloquearia receptores estrogênicos.",
+   "note": "The article is a narrative/mechanistic review that proposes gestrinone use in lipedema as a new application, offering a speculative aromatase-inhibition rationale and only in vitro cell data; it provides no clinical efficacy evidence in lip",
+   "old_claims": [
+    "SCR-LIP-000329"
+   ],
+   "old_statements": [
+    "This review proposes a mechanistic rationale for gestrinone in lipedema—based on aromatase overexpression in lipedema adipose tissue, with gestrinone hypothesized to inhibit aromatase and block estrogen receptors and adipogenesis—but presents only in vitro cell-viability data (MTT in MDA-MB-231 and Huh7 lines) and no clinical trial demonstrating efficacy in lipedema patients."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1016/j.jdrv.2026.04.003",
+   "title": "Treatment Strategies for Lipedema: A Scoping Review on liposuction, compression therapy, bariatric surgery and pharmacological treatment",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "TRATAMENTO FARMACOLÓGICO (0 estudos elegíveis): NENHUMA evidência primária dentro do escopo da busca.",
+   "note": "The review found no eligible pharmacological studies and does not mention gestrinone at all; proposed drugs were deemed insufficient, providing no affirmative evidence for gestrinone efficacy.",
+   "old_claims": [
+    "SCR-LIP-000493"
+   ],
+   "old_statements": [
+    "This scoping review of lipedema treatments (2020-2025) identified zero eligible studies on pharmacological treatment, with gestrinone not mentioned among any evaluated or proposed drug therapies (selenium, butcher's broom, diosmin, metformin, exenatide)."
+   ],
+   "old_role_in_question": "contradicting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "No clinical study has evaluated gestrinone in lipedema, so its use as a lipedema treatment lacks direct clinical evidence.",
+   "role": "contradicting",
+   "rationale": "Systematic, critical and scoping reviews converge on the absence of any clinical evidence for gestrinone in lipedema.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "PRISMA systematic review found zero eligible trials, observational studies or case reports of gestrinone (including subcutaneous implants) for lipedema; SBEM and the Brazilian Lipedema Association oppose its use."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Critical narrative review identified no clinical trials, observational studies, case series or case reports; proposals rely only on theoretical extrapolation, and current evidence does not support gestrinone for lipedema."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Scoping review of lipedema treatments found zero eligible pharmacological studies; gestrinone was not among the evaluated or proposed drug therapies."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 3,
+   "store_key": "G-00035"
+  },
+  {
+   "key": "P2",
+   "statement": "The proposed rationale for gestrinone in lipedema rests on hypothesised aromatase inhibition and estrogen-receptor blockade, supported only by theoretical and in vitro data.",
+   "role": "context",
+   "rationale": "The only argument offered for gestrinone is mechanistic and lacks clinical validation.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Review proposes gestrinone for lipedema based on aromatase overexpression in lipedema adipose tissue, hypothesising aromatase inhibition and estrogen-receptor blockade; presents only in vitro cell-viability data (MTT, MDA-MB-231 and Huh7), no clinical trial."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00036"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Systematic searches have identified no clinical studies of gestrinone in lipedema, so its use lacks direct clinical evidence.",
+    "severity": "minor",
+    "note": "E1 (zero eligible studies) and E2 support; E4 is weak (a scoping review that merely does not mention gestrinone). No clinical study has evaluated is an absolute universal bounded by the search dates of two reviews; absence of evidence is not evidence of ineffectiveness. E1 note about SBEM opposition is not evidenced by its quote."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E2"
+    ],
+    "suggested_statement": "The proposed rationale for gestrinone in lipedema rests on hypothesised aromatase inhibition and estrogen-receptor blockade extrapolated from other conditions, without lipedema-specific experimental data.",
+    "severity": "minor",
+    "note": "Single review (E3). The in vitro data come from a breast cancer line and a hepatoma line, not lipedema tissue, so describing them as support for the lipedema rationale could mislead. E2 (rationale is purely theoretical extrapolation) belongs here too."
+   }
+  ],
+  "set_issues": []
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000016.cons.json",
+   "ver": "SQ-LIP-000016.ver.json"
+  }
+ ]
+}

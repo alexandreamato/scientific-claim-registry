@@ -265,6 +265,8 @@ header nav a.active{color:var(--accent-d); font-weight:700}
 .v-bad{background:#fbecd9; color:#9a5b16}
 .v-na{background:#eef2f7; color:#7a879b}
 .evquote{display:block; margin:3px 0 0; padding:2px 0 2px 11px; border-left:2px solid var(--line); color:var(--ink-soft); font-size:13.5px; font-style:italic}
+.evfinding{display:block; margin:3px 0 0; color:var(--ink); font-size:14.5px}
+.sup-note{border-left:3px solid var(--accent, #b45309); padding-left:10px}
 .integ-warn{background:#fbecd9; border-color:#e6c79a; color:#7a4e12}
 .verseal{display:inline-block; font-size:14px; color:#1d7a4f; background:#e2f3ec; border:1px solid #b8e0cc; border-radius:8px; padding:7px 13px; margin:4px 0 0}
 .verseal strong{font-weight:700}

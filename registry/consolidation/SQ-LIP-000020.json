@@ -1,0 +1,941 @@
+{
+ "question": "SQ-LIP-000020",
+ "text": "How does lipedema affect quality of life, depression, and anxiety in affected patients?",
+ "n_old_claims": 27,
+ "n_items": 28,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E20 and E21 are the same 511-patient cohort (identical PHQ-9 and WHOQOL data) counted separately in P4 and P5 without secondary_of.",
+  "[minor] set: E6 (narrative review citing a 328-patient online WHOQOL-BREF cohort) overlaps E8 (329 women, WHOQOL-BREF/PHQ-9/DAS-24) and is not marked secondary_of.",
+  "[minor] set: P7 (no excess depression/anxiety vs overweight women) is not reconciled with P2/P3 and with E3 and E7, which found excess against BMI-matched or BMI-adjusted controls.",
+  "[minor] set: Stage-related items E25, E20 and E19 are not under P6, understating support for a dose-response.",
+  "[minor] P1: misplaced ['E28'] (E16, E22, E19, E24 and E13 support it. E28 is qualitative and has no comparison with norms, so it is only context.)",
+  "[minor] P2: misplaced ['E10'] (E3, E27 and E25 support the control comparison. E10 compares with lymphedema and E1, E11 have no controls, so they support prevalence only. E12 (no difference from overweight women) tempers the comparison and P7 handles it. E11 (87.5%) is an outlier.)",
+  "[minor] P3: two ideas (Supported by E7 and E26. It bundles anxiety with emotional regulation difficulties, which only E7 and E15 cover. E23 (anxiety 64.4%), E24, E11 and E2 also carry anxiety data and are not listed.)",
+  "[minor] P4: two ideas (Associations only, worded correctly. It bundles four factors with different evidence. E6 is a review whose depression and appearance correlations look like the E8 cohort (n=328/329, same measures) and has no secondary_of. E20 is the same 511-patient cohort as E21 in P5.)",
+  "[minor] P5: misplaced ['E2'] (E21 and E4 support it. E2 concerns comorbid fibromyalgia, not pain or core symptoms as such. E3, E26 and E27 (pain correlated with or predicting depression) are not listed here.)",
+  "[minor] P6: not fully supported; misplaced ['E25', 'E20', 'E19'] (Hedged ('may'), with E14 supporting and E23 contradicting. Stage-related evidence sits elsewhere: E25 (dose-response suggested), E20 (stage correlates with PHQ-9, r=0.2, and with QoL impairment) and E19 (worse function at higher stages). The balance is therefore mixed but leans more supportive than shown.)",
+  "[minor] P7: overgeneralized — suggested: Limited evidence suggests depression and anxiety in lipedema may not exceed those of comparably overweight women, although disability appears greater. (This rests on a single study; the hedge helps. The statement is in tension with E3 (BMI-matched population controls: far more depression) and E7 (higher anxiety after BMI adjustment). The comparator differs (clinical overweight/obese vs population), so the comparator should be named, and E3 and E7 are counter-evidence not placed here.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.3389/fgwh.2025.1629077",
+   "title": "Mental and physical health burden and quality of life in Czech women with lipedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "mais da metade apresenta sintomas depressivos moderados a severos e a qualidade de vida é baixa em múltiplos domínios, com o domínio psicológico o mais afetado",
+   "note": "Cross-sectional observational study directly measuring depression (PHQ-9), quality of life (WHOQOL-BREF), and symptom associations in lipedema patients; small sample (n=43) and chi-square associations are unadjusted, limiting strength.",
+   "old_claims": [
+    "SCR-LIP-000167"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 43 Czech women with lipedema, 50.9% had moderate-to-severe depressive symptoms (PHQ-9 >=10) and WHOQOL-BREF scores were low across domains (psychological 46.3, physical 50.8), with the psychological domain most affected; specific physical symptoms (shortness of breath, muscle stiffness, appetite problems, fatigue, numbness) were significantly associated with depression severity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1089/lrb.2023.0038",
+   "title": "Prevalence of Fibromyalgia Syndrome in Women with Lipedema and Its Effect on Anxiety, Depression, and Quality of Life",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The mean anxiety and depression scores of Group 1 were significantly higher compared with Group 2 (13.11 ± 4.2 vs. 9.87 ± 4.65, 10.23 ± 3.79 vs. 8.26 ± 4.15, respectively, p < 0.001). The mental and physical subgroup scores of SF-12 (35.37 ± 8.59 vs. 42.55 ± 10.15, 35.27 ± 8.49 vs. 40.38 ± 11.36, re",
+   "note": "Online self-administered survey of lipedema patients reports quality of life, anxiety, and depression measures (HADS, SF-12), directly addressing the question, though stratified primarily by FMS comorbidity rather than lipedema vs controls.",
+   "old_claims": [
+    "SCR-LIP-000168"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 354 women with lipedema, 35% met FMS criteria, and those with comorbid FMS had significantly higher anxiety (13.11 vs 9.87) and depression (10.23 vs 8.26) scores and lower SF-12 physical (35.37 vs 42.55) and mental (35.27 vs 40.38) quality-of-life scores (all p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.3390/life14030295",
+   "title": "Health Implications of Lipedema: Analysis of Patient Questionnaires and Population-Based Matched Controls",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Depressao autorrelatada nos ultimos 12 meses em 43,6% do grupo lipedema vs 18,5% dos controles (p=0,001); pelo PHQ-8, apenas 10,3% dos pacientes nao tinham sintomas depressivos vs 60,7% dos controles",
+   "note": "Cross-sectional questionnaire study with BMI/age/sex-matched controls directly measuring quality of life, depression (PHQ-8), pain and social outcomes in lipedema patients, showing significantly worse mental health and QoL outcomes. [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000169"
+   ],
+   "old_statements": [
+    "In a study comparing lipedema patients with population controls matched for sex, age and BMI, lipedema patients reported worse self-rated general health, higher rates of self-reported depression (43.6% vs 18.5%, p=0.001) with PHQ-8 depressive symptoms in 89.7% versus 39.3% of controls, more severe pain and pain-related disability, fewer close social contacts, and a strong positive correlation between pain severity and depressive symptoms (rho=0.612, p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1186/s12905-021-01174-y",
+   "title": "Quality of life, its factors, and sociodemographic characteristics of Polish women with lipedema",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Todos os domínios abaixo dos valores da população geral. Apenas 34,7% avaliaram QoL geral como boa/muito boa; 20,4% como ruim/muito ruim",
+   "note": "Cross-sectional online survey of women with lipedema directly measuring quality of life (WHOQOL-BREF) and depression (PHQ-9), with multivariate regression linking symptom burden to reduced QoL; directly addresses the question's affirmative  [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000170"
+   ],
+   "old_statements": [
+    "In a survey of 98 Polish women with lipedema, all WHOQOL-BREF domains scored below general-population values (physical health 45.4, psychological 46.3, social relationships 50.4, environment 49.6 on 0-100), 59.2% had PHQ-9 scores >=10 indicating possible depression (mean PHQ-9 12.2), and core lipedema symptoms (Factor 1: leg heaviness, joint/tissue/muscle pain, swelling, stiffness) were the only significant predictor of worse quality of life (beta=-0.345, p=0.004, model explaining 23.5% of variance)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.3390/ijerph181910223",
+   "title": "Lipoedema as a Social Problem. A Scoping Review",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Qualidade de vida (Romejn, n=163): EQ-5D-3L 66,1/100 vs 85/100 população holandesa; RAND-36 59,3/100 vs 74,9/100; dificuldade em atividades diárias (trabalho/estudo/tarefas domésticas) em 64,8%; dor em 74,1%; depressão em 42%",
+   "note": "Scoping review synthesizing multiple studies directly reporting reduced quality of life, high depression/anxiety prevalence, and correlations with QoL in lipedema patients, directly addressing the question. [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000171",
+    "SCR-LIP-000103"
+   ],
+   "old_statements": [
+    "In this scoping review, lipedema patients showed reduced quality of life (EQ-5D-3L 66.1 vs 85 in the Dutch population; WHOQOL-BREF physical/mental domains below midpoint), depression prevalence of 22.7%-42%, 51.1% with mental disorders, and QoL strongly correlated with depression severity (r=-0.75).",
+    "Lipoedema as a Social Problem. A Scoping Review"
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1007/s40519-019-00703-x",
+   "title": "The effect of lipedema on health-related quality of life and psychological status: a narrative review of the literature",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Ansiedade/depressão em 42,0% (1,2% extremamente) DUDEK 2019 (n=328, online, WHOQOL-BREF): maior coorte de QoL no lipedema. HRQOL inversamente correlacionada com: severidade de sintomas (r=-0,651), depressão (r=-0,750), distress de aparência (r=-0,654)",
+   "note": "Narrative review synthesizing four moderate-quality cross-sectional studies directly measuring HRQOL and psychological status in lipedema; all studies cross-sectional preventing causal inference, with heterogeneous instruments precluding me",
+   "old_claims": [
+    "SCR-LIP-000171"
+   ],
+   "old_statements": [
+    "In this scoping review, lipedema patients showed reduced quality of life (EQ-5D-3L 66.1 vs 85 in the Dutch population; WHOQOL-BREF physical/mental domains below midpoint), depression prevalence of 22.7%-42%, 51.1% with mental disorders, and QoL strongly correlated with depression severity (r=-0.75)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.3390/ijerph192013679",
+   "title": "The Difficulties in Emotional Regulation among a Cohort of Females with Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Pacientes com lipedema apresentam dificuldades significativas com regulação emocional associadas a sintomas de ansiedade, independentemente do IMC.",
+   "note": "Small case-control study (n=26 patients) directly measuring anxiety (HAM-A) and emotion regulation; effects persisted after BMI adjustment, supporting that lipedema is associated with worse psychological/emotional outcomes. Small sample and",
+   "old_claims": [
+    "SCR-LIP-000172"
+   ],
+   "old_statements": [
+    "In an observational study of 26 females with lipedema versus healthy controls, lipedema patients showed markedly higher emotion regulation difficulties (DERS total 135.69±13.12 vs 53.00±9.03) and anxiety (HAM-A 27.62±8.98 vs 4.96±2.51), with all group differences remaining significant after adjusting for BMI via ANCOVA (DERS total F(1,49)=582.95, p<0.001; HAM-A F(1,49)=123.10, p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1080/13548506.2018.1459750",
+   "title": "Depression and appearance-related distress in functioning with lipedema",
+   "year": 2018,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lower quality of life was predicted by higher symptom severity, lower mobility, higher appearance-related distress and higher depression severity. Appearance-related distress and depression constitute important aspects of psychological functioning in women with lipedema.",
+   "note": "Cross-sectional online survey with validated psychometric instruments and hierarchical regression directly quantifies how depression, appearance distress and physical factors predict quality of life in lipedema patients, with adjusted (mult [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000173"
+   ],
+   "old_statements": [
+    "In 329 women with lipedema, lower quality of life (WHOQOL-BREF) was independently predicted by higher depression (PHQ-9 β=-0.36), higher appearance-related distress (DAS-24 β=-0.29), lower mobility (β=0.27) and higher symptom severity, with the final regression model explaining 73% of QoL variance and mean PHQ-9 of 11.87 indicating minor depression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1080/07399332.2025.2499487",
+   "title": "Health-related stigma, perceived social support, and their role in quality of life among women with lipedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "we found significantly more health-related stigma compared to an aged-matched general female population (N = 1872), leading to an overall lower quality of life. Conversely, strong social support was associated with better social and emotional functioning.",
+   "note": "The article directly examines quality of life and emotional well-being in lipedema patients, reporting that higher stigma is associated with lower HRQoL and worse emotional functioning, supporting the question's affirmative direction regard [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000174"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 245 women with lipedema, health-related stigma was significantly higher than in an age-matched general female population (Distress 49.5 vs 17.1–28.7; 65% with moderate/severe distress) and correlated negatively with all RAND-36 quality-of-life domains (strongest for social functioning r=−0.54 and emotional well-being r=−0.50), while greater perceived social support correlated positively with HRQoL."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1089/lrb.2024.0117",
+   "title": "The Comparative Evaluation of Depression, Life Satisfaction, and Quality of Life Between Female Patients with Lipedema and Lymphedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Funcionalidade (LEFS): SIGNIFICATIVAMENTE PIOR no linfedema — 0,4455 vs 0,6250 (p = 0,001)",
+   "note": "Cross-sectional study directly measuring depression (PHQ-9), life satisfaction (LSI), and QoL (LYMQOL-Leg) in lipedema patients with validated instruments, reporting that lipedema is associated with moderate depression and reduced QoL, bear [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000175"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 37 women with lipedema versus 36 with lymphedema, lipedema patients showed moderate depression (PHQ-9 mean 10.4) and impaired global quality of life (LYMQOL-Leg 5.47) comparable to lymphedema patients, while lymphedema patients had worse functional status and life satisfaction; in lipedema, longer disease duration correlated with PHQ-9 (r=-0.415, p=0.028) and BMI correlated with functional impairment."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1515/hmbci-2021-0027",
+   "title": "The association between serum vitamin D and mood disorders in a cohort of lipedema patients",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "87,5% das pacientes (n=35) apresentaram risco severo ou alto de depressão; escore médio HAM-D = 25,39",
+   "note": "The article directly documents high prevalence of depression and anxiety in lipedema patients and examines correlates (vitamin D, BMI, disease duration), bearing on how lipedema affects mood/QoL. Small single-cohort cross-sectional design w",
+   "old_claims": [
+    "SCR-LIP-000176"
+   ],
+   "old_statements": [
+    "In a cross-sectional cohort of 40 lipedema patients, 87.5% showed severe/high depression risk (mean HAM-D 25.39) and 92.5% showed severe/high anxiety risk (mean HAM-A 23.45), with serum vitamin D inversely correlated with depression (adjusted r=-0.580, p<0.001) and anxiety (adjusted r=-0.489, p=0.002), and BMI positively correlated with both depression (r=0.560) and anxiety (r=0.511)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.17219/acem/181146",
+   "title": "Disability and emotional symptoms in women with lipedema: A comparison with overweight/obese women",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "NENHUMA diferenca significativa entre grupos em sintomas emocionais: BDI-II mediana 11,00 (lipedema) vs 8,00 (obesidade) p=0,130; HADS-A 9,16 +/- 3,59 vs 8,10 +/- 3,35 p=0,162; HADS-D 5,00 vs 6,00 p=0,474 -- nem antes nem depois do ajuste por BMI.",
+   "note": "Cross-sectional baseline comparison directly measuring disability, depression, and anxiety in lipedema vs overweight/obese controls; disability worse even after BMI adjustment, but emotional symptoms did not differ, refining the question's  [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000177"
+   ],
+   "old_statements": [
+    "Compared with overweight/obese women, women with lipedema showed greater disability (WHO-DAS II domains for mobility, household activities, and social participation remained significantly worse after robust BMI adjustment, e.g. social participation Z=3.15, p=0.002; days with difficulties Z=4.13, p<0.001), but showed NO significant differences in depression (BDI-II median 11 vs 8, p=0.130; HADS-D p=0.474) or anxiety (HADS-A 9.16 vs 8.10, p=0.162), before or after BMI adjustment."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1186/s12905-025-03834-9",
+   "title": "Examining the characteristic features of lipedema and the usefulness of BMI and WHtR in clinical evaluation",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Qualidade de vida: SF-36 total mediano 57,4/100; dimensões — funcionamento físico 80, limitação por saúde física 75, limitação por problemas emocionais 66,6, energia/fadiga 45, bem-estar emocional 60, funcionamento social 50, dor 47,5, saúde geral 35.",
+   "note": "Cross-sectional study reporting SF-36 quality of life in lipedema patients showing reduced scores versus reference populations, directly bearing on the quality-of-life aspect of the question; however it does not assess depression or anxiety",
+   "old_claims": [
+    "SCR-LIP-000178"
+   ],
+   "old_statements": [
+    "In 44 women with lipedema, median total SF-36 quality of life was 57.4/100 (lowest domains: general health 35, pain 47.5, social functioning 50, energy/fatigue 45), below historical healthy Polish population (61.6) and a prior lipedema cohort (59.3), and SF-36 scores did not differ by BMI or WHtR strata."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1007/s11136-022-03216-w",
+   "title": "Stages of lipoedema: experiences of physical and mental health and health care",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Depressão: Estágio 3–4 = 48,3% vs Estágio 1–2 = 34,8% (χ²=22,78, p<0,001)",
+   "note": "Large cross-sectional survey directly reports depression, anxiety-related symptoms (fearfulness), social isolation, and life dissatisfaction in lipedema patients, with worse outcomes at advanced stages; findings are self-reported and unadju",
+   "old_claims": [
+    "SCR-LIP-000349"
+   ],
+   "old_statements": [
+    "In a survey of lipedema patients comparing self-reported stages, more advanced stage (3-4) was associated with higher rates of depression (48.3% vs 34.8%, p<0.001), social isolation (staying home 64.3% vs 44.4%), life dissatisfaction (35.7% vs 22.0%), and loss of mobility, while psychological burden such as inferiority complex (72.8%) and constantly thinking about lipedema (73.4%) was high across all stages."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.12740/app/201427",
+   "title": "Lipedema: The intersection of physical and mental health",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "pacientes com lipedema mostraram dificuldade significativamente maior na regulação emocional e níveis mais altos de ansiedade",
+   "note": "Narrative review (no original intervention) summarizing observational and survey studies that consistently report impaired quality of life, elevated anxiety, depressive symptoms, and emotional/behavioral disturbances in lipedema patients, d",
+   "old_claims": [
+    "SCR-LIP-000350"
+   ],
+   "old_statements": [
+    "This narrative review synthesizing 25 references reports that lipedema patients show greater emotional dysregulation and higher anxiety (Al-Wardat: 26 patients vs 26 controls via DERS/HAM-A), significant behavioral disturbances versus overweight/obese controls (Chachaj et al.), depressive/anxious symptoms associated with comorbid fibromialgia (Cagliyan Turk et al.), occupational limitations in 51–73% of respondents (Clarke et al.), and that liposuction significantly reduced depressive symptoms and improved quality of life and body image (Arndt et al.)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1177/02683555251410009",
+   "title": "Health-related quality of life among lipedema patients: A systematic review and meta-analysis",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Emotional well-being: 64,19 (IC 95% 59,86–68,52) vs norma 73,2 — ansiedade/depressão frequentes; I²=89,41%",
+   "note": "Meta-analysis directly quantifying HRQoL and psychosocial impacts in lipedema patients with pooled effect sizes; high heterogeneity (I²=83–93%) lowers confidence.",
+   "old_claims": [
+    "SCR-LIP-000351"
+   ],
+   "old_statements": [
+    "In a systematic review and meta-analysis of cross-sectional cohorts, women with lipedema showed reduced HRQoL across all SF-36/RAND-36 domains versus population norms, with the largest deficits in energy/fatigue (43.50 vs 59.4), bodily pain (51.77 vs 77.4), role physical (51.10 vs 82.4), and general health (49.64 vs 73.1), plus impaired emotional well-being (64.19 vs 73.2) reflecting frequent anxiety/depression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1016/j.bjps.2024.02.048",
+   "title": "Quality of life following liposuction for lipoedema: a prospective outcome study",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "PHQ-4: escore total caiu de 4,47 (T0, depressão leve, significativamente acima da norma de 1,76; p<0,001) para 2,10 (T1, indistinguível da norma; p=0,516); p<0,001 na comparação intra-grupo. Subescala ansiedade: 2,47 → 0,93 (p<0,001); subescala depressão: 2,00 → 1,17 (p=0,026)",
+   "note": "Prospective single-arm outcome study documenting that lipedema patients had elevated baseline depression/anxiety (PHQ-4 above norm) and impaired QoL, which improved after liposuction; bears directly on how lipedema affects QoL, depression a",
+   "old_claims": [
+    "SCR-LIP-000352"
+   ],
+   "old_statements": [
+    "In a prospective study of lipedema patients undergoing power-assisted liposuction, PHQ-4 total scores fell from 4.47 (mild depression, above population norm) to 2.10 (p<0.001), with anxiety subscale dropping 2.47→0.93 and depression subscale 2.00→1.17, while quality-of-life satisfaction (FLZM health module 45.77→88.00), self-esteem (RSES 29.93→33.33), and emotional stability all improved significantly postoperatively."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1007/s11136-015-1080-x",
+   "title": "Quality of life in women with lipoedema: a contextual behavioral approach",
+   "year": 2016,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Passo 1 (severidade de sintomas) explicou 13,9% da variância (F(1,110)=17,69; p<0,001). Adição de AAQ-II e SCS-R aumentou ΔR²=30,5%, totalizando R²=44,4% (F(3;108)=28,74; p<0,001).",
+   "note": "Cross-sectional online study directly measuring quality of life and psychological factors in lipedema patients; reports reduced QoL/life satisfaction and identifies psychological predictors beyond symptom severity. Note: depression and anxi",
+   "old_claims": [
+    "SCR-LIP-000353"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of women with lipedema (n=112), WHOQOL-BREF averaged 3.12 (1-5 scale) and life satisfaction (SWLS) averaged 3.63 (below midpoint), with symptom severity explaining 13.9% of QoL variance; psychological flexibility (AAQ-II β=0.26) and social connectedness (SCS-R β=0.37) independently predicted QoL after controlling for symptom severity, raising explained variance to 44.4%."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1186/s12905-022-02022-3",
+   "title": "Women with lipoedema: a national survey on their health, health-related quality of life, and sense of coherence",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Mulheres com lipedema pontuaram 25–35 pontos ABAIXO da população feminina sueca geral em TODAS as subescalas do RAND-36, em todos os grupos etários (p<0,05 na maioria). A menor diferença foi em bem-estar emocional (~10 pontos)",
+   "note": "Cross-sectional national survey directly measuring health-related quality of life (RAND-36, including emotional well-being subscale) and reporting depression prevalence, with comparison to a general population, directly addressing the quest",
+   "old_claims": [
+    "SCR-LIP-000354"
+   ],
+   "old_statements": [
+    "In a national Swedish survey of women with lipedema, RAND-36 scores were 25-35 points below the age-matched general female population across all subscales (largest gap in physical role functioning, ~43 points lower in ages 60-79; smallest in emotional well-being, ~10 points), with worse physical and social functioning at higher lipedema stages and a self-reported depression prevalence of 13.5%."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.3390/jcm11102836",
+   "title": "Characteristics and Patient Reported Outcome Measures in Lipedema Patients—Establishing a Baseline for Treatment Evaluation in a High-Volume Center",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "PHQ-9: média 10,84±6,39; 54,01% em risco de depressão moderada a severa; correlação estágio-PHQ-9: r=0,2, p=0,002; correlação incapacidade profissional-PHQ-9: r=0,413, p<0,001",
+   "note": "Large cross-sectional study using validated PROMs (WHOQOL-BREF, PHQ-9) directly quantifying quality of life and depression in lipedema patients, with stage-dependent correlations; directly addresses the question's affirmative direction.",
+   "old_claims": [
+    "SCR-LIP-000355"
+   ],
+   "old_statements": [
+    "In 511 lipedema patients, PHQ-9 averaged 10.84±6.39 with 54% at risk of moderate-to-severe depression, WHOQOL-BREF global score averaged 60.5±16.02 (lowest in physical 54.54 and psychological 51.91 domains), and quality-of-life impairment correlated with disease stage (r=0.55, p<0.001) and inversely with depression score (r=-0.775, p<0.0001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.21203/rs.3.rs-2705753/v1",
+   "title": "Understanding the Vicious Circle of Pain, Physical Activity, and Mental Health in Lipedema Patients – a Response Surface Analysis",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "a dor emergiu como entidade condutora dominante, afetando negativamente saúde física, mental, ambiental e geral; a atividade física afetou positivamente saúde mental e geral; os dois preditores interagem sinergicamente (efeitos de incongruência)",
+   "note": "Cross-sectional self-report study quantifying depression (PHQ-9) and quality-of-life dimensions (WHOQOL-BREF) in lipedema patients, with response surface analysis showing pain and physical inactivity drive worse mental health and QoL, direc",
+   "old_claims": [
+    "SCR-LIP-000355"
+   ],
+   "old_statements": [
+    "In 511 lipedema patients, PHQ-9 averaged 10.84±6.39 with 54% at risk of moderate-to-severe depression, WHOQOL-BREF global score averaged 60.5±16.02 (lowest in physical 54.54 and psychological 51.91 domains), and quality-of-life impairment correlated with disease stage (r=0.55, p<0.001) and inversely with depression score (r=-0.775, p<0.0001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1007/s13555-018-0241-6",
+   "title": "Exploration of Patient Characteristics and Quality of Life in Patients with Lipoedema Using a Survey",
+   "year": 2018,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "RAND-36 total 59,3 vs 74,9 na média feminina holandesa (p < 0,001); todas as 9 dimensões significativamente reduzidas exceto 'health change'",
+   "note": "Cross-sectional survey directly measuring QoL (RAND-36, EQ-5D-3L) and anxiety/depression in lipedema patients versus reference population, directly addressing the question.",
+   "old_claims": [
+    "SCR-LIP-000356"
+   ],
+   "old_statements": [
+    "In a survey of lipedema patients, RAND-36 quality of life was significantly lower than the general Dutch female population (59.3 vs 74.9, p<0.001) and EQ-5D-3L was reduced (66.1 vs 85), with 42.0% reporting anxiety/depression and 74.1% reporting pain/discomfort (vs 31.1% in the general population)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1371/journal.pone.0319099",
+   "title": "Clinical characteristics, comorbidities, and correlation with advanced lipedema stages: A retrospective study from a Swiss referral centre",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Burden psicossocial elevado (n=239): ansiedade (HADS≥8) 64,4%; depressão (HADS≥8) 23,4%; fadiga alta (FSS≥4) 56,1%; dor alta (BPI≥7) 14,2%; QV baixa: PCS-SF36 em 71,5%, MCS-SF36 em 67,4% — NENHUM desses parâmetros diferiu significativamente entre estágios (p>0,5)",
+   "note": "Retrospective referral-centre study with validated instruments (SF-36, HADS, BPI, FSS) directly quantifying quality of life, depression, and anxiety in lipedema patients, showing high psychosocial burden dissociated from disease stage.",
+   "old_claims": [
+    "SCR-LIP-000357"
+   ],
+   "old_statements": [
+    "In a Swiss cohort of 239 lipedema patients assessed with validated questionnaires, 64.4% had anxiety (HADS≥8), 23.4% had depression (HADS≥8), and low quality of life was found in 71.5% (PCS-SF36) and 67.4% (MCS-SF36), with none of these psychosocial parameters differing significantly across disease stages (p>0.5)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1371/journal.pone.0355488",
+   "title": "Lipedema in Sweden – “The LISE-study”: Quality of life and body image in women with lipedema compared to healthy controls and women with cancer",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Women with lipedema experienced significantly more symptoms than healthy controls, including more pain, fatigue, depression, anxiety, loss of appetite, dyspnea and reduced QoL (<0.001 for all).",
+   "note": "Study directly measures quality of life, body image, depression and anxiety in lipedema patients versus controls, finding significantly worse outcomes across all measures.",
+   "old_claims": [
+    "SCR-LIP-000507"
+   ],
+   "old_statements": [
+    "In a comparative cross-sectional study, women with lipedema (n=104) had significantly lower HR-QoL (RAND-36) than healthy controls across all eight dimensions (p<0.001), scores comparable to women with advanced cancer in several dimensions (even lower in general health), greater body image concern (BSQ, p=0.001), and higher symptom burden including depression and anxiety (ESAS, p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1016/j.jpsychores.2025.112306",
+   "title": "Lipedema and depression - A systematic review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalências de depressão reportadas entre 23% e 59,2% Maior estudo (n=1362) reportou prevalência de 40% para depressão Vários estudos encontraram associação positiva entre depressão e estadiamento do lipedema — sugestivo de relação dose-resposta",
+   "note": "Systematic review reporting elevated depression prevalence and severity in lipedema patients versus general population, with a stage-dependent association, directly addressing the depression component of the question.",
+   "old_claims": [
+    "SCR-LIP-000508"
+   ],
+   "old_statements": [
+    "In a systematic review of 16 studies covering 4537 lipedema patients, reported depression prevalence ranged from 23% to 59.2% (40% in the largest study, n=1362), with mean PHQ-9 scores of 10.8-12.2 (mild-to-moderate depression) and a suggested dose-response association with lipedema stage."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1177/15578585261454789",
+   "title": "Lipedema: Exploring Relationship Between Physical and Psychological Symptoms in Affected Patients—A Mixed-Methods Study",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "47% com ansiedade (HADS), 18% com depressão; 92% sem qualquer acompanhamento psicológico",
+   "note": "The study directly measures anxiety, depression, and QOL in lipedema patients and reports high prevalence plus significant correlations between physical symptoms, self-perception, and mental health, providing affirmative evidence.",
+   "old_claims": [
+    "SCR-LIP-000509"
+   ],
+   "old_statements": [
+    "In a mixed-methods study of women with lipedema, 47% screened positive for anxiety and 18% for depression (HADS), with depression correlating with spontaneous pain (r=0.331, p=0.002) and inversely with global self-perception (r=-0.608, p<0.0001), and 15/17 interviewees reporting reduced mental health."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.3390/women6030050",
+   "title": "Body Image, Psychological Distress, and Well-Being in Italian Women with Lipedema: A Controlled Cross-Sectional Study",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Mulheres com lipedema: maior insatisfação com imagem corporal, maior sofrimento percebido, mais sintomas clinicamente inexplicados (M.U.S.), mais sintomas depressivos, mais atitudes alimentares desordenadas e mais dor (todos p < 0,001)",
+   "note": "Controlled study directly comparing psychological outcomes shows lipedema patients have significantly worse depression, distress, and well-being, directly supporting the affirmative.",
+   "old_claims": [
+    "SCR-LIP-000510"
+   ],
+   "old_statements": [
+    "In a controlled cross-sectional study, Italian women with lipedema showed greater body image dissatisfaction, more depressive symptoms, higher psychological distress, and lower psychological well-being and life satisfaction than women without lipedema (all p<0.001), with PHQ-9 depression scores predicted by medically unexplained symptoms, maladaptive cognitions, and pain intensity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1080/17482631.2026.2734666",
+   "title": "A qualitative study exploring the experiences of individuals living with lipoedema and the impacts it has on their quality of life.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Individuals living with lipoedema experience impacts on their quality-of-life across physical, psychological, and social aspects of life.",
+   "note": "Qualitative study directly exploring how lipoedema affects quality of life across physical, psychological, and social domains, supporting the affirmative direction; psychological burden addressed though not via standardized depression/anxie",
+   "old_claims": [
+    "SCR-LIP-000512"
+   ],
+   "old_statements": [
+    "In a qualitative study of 16 individuals with lipoedema, participants reported impacts on quality of life across physical, psychological, and social domains, driven by symptom burden, social judgement, and healthcare-related challenges."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Health-related quality of life in lipedema is reduced across physical, psychological and social domains compared with population norms or healthy controls.",
+   "role": "supporting",
+   "rationale": "Multiple surveys, a meta-analysis and qualitative work consistently report lower quality-of-life scores than population references.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Meta-analysis: SF-36/RAND-36 reduced in all domains vs norms, largest deficits in energy/fatigue (43.50 vs 59.4), bodily pain (51.77 vs 77.4), role physical (51.10 vs 82.4); emotional well-being 64.19 vs 73.2."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "RAND-36 total 59.3 vs 74.9 in the Dutch female population (p<0.001) and EQ-5D-3L 66.1 vs 85; 42.0% reported anxiety/depression and 74.1% pain/discomfort."
+    },
+    {
+     "e": "E5",
+     "stance": "context",
+     "secondary_of": "E22",
+     "finding": "Scoping review cites EQ-5D-3L 66.1 vs 85 and RAND-36 59.3 vs 74.9, depression prevalence 22.7%-42%, and QoL correlated with depression severity (r=-0.75)."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "National Swedish survey: RAND-36 25-35 points below age-matched women in all subscales, smallest gap in emotional well-being; worse physical and social functioning at higher stages; self-reported depression 13.5%."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Women with lipedema (n=104) had lower RAND-36 than healthy controls in all eight dimensions (p<0.001), comparable to advanced cancer in several, plus greater body image concern and more depression and anxiety."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "In 44 women, median SF-36 total 57.4/100 (general health 35, pain 47.5), below a healthy population reference; scores did not differ by BMI or WHtR strata."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Qualitative study of 16 individuals: quality-of-life impacts across physical, psychological and social domains, driven by symptom burden, social judgement and healthcare challenges."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00222",
+   "statement_before_twin_merge": "Health-related quality of life is reduced in women with lipedema compared with general population norms across physical, mental and social domains."
+  },
+  {
+   "key": "P2",
+   "statement": "Depressive symptoms are frequently reported in lipedema, more often than in population controls.",
+   "role": "supporting",
+   "rationale": "A systematic review and several cohorts report high prevalence of clinically relevant depressive symptoms.",
+   "evidence": [
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Systematic review of 16 studies (4537 patients): depression prevalence 23%-59.2% (40% in the largest, n=1362), mean PHQ-9 10.8-12.2, with a suggested dose-response with stage."
+    },
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Self-reported depression 43.6% vs 18.5% in sex-, age- and BMI-matched population controls (p=0.001); PHQ-8 symptoms in 89.7% vs 39.3%; pain severity correlated with depressive symptoms."
+    },
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "In 43 Czech women, 50.9% had moderate-to-severe depressive symptoms (PHQ-9 >=10); WHOQOL-BREF low, psychological domain most affected (46.3)."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "In 40 patients, 87.5% had severe/high depression risk (HAM-D 25.39) and 92.5% severe/high anxiety risk; vitamin D inversely and BMI positively correlated with both."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "37 women with lipedema had moderate depression (PHQ-9 10.4) and impaired QoL comparable to lymphedema; disease duration correlated with PHQ-9."
+    },
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "Italian women with lipedema had more depressive symptoms, psychological distress, body image dissatisfaction and lower well-being than women without lipedema (all p<0.001)."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00052"
+  },
+  {
+   "key": "P3",
+   "statement": "Anxiety symptoms and difficulties in emotional regulation are frequently reported in lipedema.",
+   "role": "supporting",
+   "rationale": "Controlled and screening studies report high anxiety burden, persisting after body mass adjustment in one study.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "26 females with lipedema vs controls: DERS 135.69 vs 53.00 and HAM-A 27.62 vs 4.96, significant after BMI adjustment (ANCOVA p<0.001)."
+    },
+    {
+     "e": "E26",
+     "stance": "supporting",
+     "finding": "47% screened positive for anxiety and 18% for depression (HADS); depression correlated with spontaneous pain and inversely with self-perception; 92% had no psychological follow-up."
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "secondary_of": "E7",
+     "finding": "Narrative review cites greater emotional dysregulation and anxiety vs controls, behavioural disturbances vs overweight controls, and occupational limitations in 51-73%."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00053"
+  },
+  {
+   "key": "P4",
+   "statement": "Lower quality of life in lipedema is associated with psychological factors such as depression, appearance-related distress, stigma and low psychological flexibility.",
+   "role": "refines",
+   "rationale": "Regression and correlation analyses identify psychological and social factors as major correlates of quality of life.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "In 329 women, lower WHOQOL-BREF independently predicted by depression (beta -0.36), appearance distress (beta -0.29), lower mobility and symptom severity; model explained 73% of variance."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "In 511 patients, PHQ-9 mean 10.84 (54% moderate-to-severe risk); QoL impairment correlated with stage (r=0.55) and with depression (r=-0.775)."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Narrative review: anxiety/depression in 42.0%; HRQoL inversely correlated with symptom severity (r=-0.651), depression (r=-0.750) and appearance distress (r=-0.654)."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "In 245 women, health-related stigma higher than in age-matched women and correlated negatively with all RAND-36 domains (social functioning r=-0.54); social support correlated positively with HRQoL."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "In 112 women, symptom severity explained 13.9% of QoL variance; psychological flexibility (beta 0.26) and social connectedness (beta 0.37) raised it to 44.4%."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00224",
+   "statement_before_twin_merge": "Depression, appearance-related distress, stigma and low psychological flexibility are associated with lower quality of life in lipedema."
+  },
+  {
+   "key": "P5",
+   "statement": "Pain and core physical symptoms are associated with poorer mental health and quality of life in lipedema.",
+   "role": "refines",
+   "rationale": "Several studies identify pain and symptom burden as leading predictors of psychological and quality-of-life impairment.",
+   "evidence": [
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "In 511 patients, pain was the dominant driver negatively affecting physical, mental, environmental and overall health; physical activity positively affected mental health, interacting with pain."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In 98 Polish women, all WHOQOL-BREF domains below population values, 59.2% PHQ-9 >=10; core symptoms (heaviness, pain, swelling) were the only significant predictor of worse QoL."
+    },
+    {
+     "e": "E2",
+     "stance": "refines",
+     "finding": "Among 354 women, 35% met fibromyalgia criteria; they had higher anxiety (13.11 vs 9.87) and depression (10.23 vs 8.26) and lower SF-12 physical and mental scores (p<0.001)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00055"
+  },
+  {
+   "key": "P6",
+   "statement": "Depression and psychological burden may be greater in more advanced lipedema stages, although this is not consistently found.",
+   "role": "refines",
+   "rationale": "Stage-related findings are inconsistent across cohorts.",
+   "evidence": [
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Self-reported stage 3-4 associated with more depression (48.3% vs 34.8%, p<0.001), social isolation and life dissatisfaction; inferiority feelings high across all stages."
+    },
+    {
+     "e": "E23",
+     "stance": "contradicting",
+     "finding": "In 239 Swiss patients, anxiety 64.4%, depression 23.4% and low SF-36 PCS/MCS in about two-thirds, with no significant difference across stages (p>0.5)."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 2,
+   "store_key": "G-00137",
+   "statement_before_twin_merge": "More advanced lipedema stage may be associated with greater psychological burden."
+  },
+  {
+   "key": "P7",
+   "statement": "Compared with overweight or obese women, women with lipedema may not have more depression or anxiety, despite greater disability.",
+   "role": "refines",
+   "rationale": "A comparison with a weight-matched control group suggests emotional symptoms may not be specific to lipedema.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Versus overweight/obese women, lipedema showed worse WHO-DAS II mobility, household and social participation after BMI adjustment, but no difference in BDI-II, HADS-D or HADS-A."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00057"
+  },
+  {
+   "key": "P8",
+   "statement": "Anxiety, depressive symptoms and quality-of-life satisfaction may improve after liposuction for lipedema.",
+   "role": "context",
+   "rationale": "An uncontrolled prospective study reports postoperative psychological improvement.",
+   "evidence": [
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "After power-assisted liposuction, PHQ-4 fell from 4.47 to 2.10 (p<0.001), anxiety 2.47 to 0.93, depression 2.00 to 1.17; FLZM health satisfaction 45.77 to 88.00 and self-esteem improved."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00058"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E28"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E16, E22, E19, E24 and E13 support it. E28 is qualitative and has no comparison with norms, so it is only context."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E10"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E3, E27 and E25 support the control comparison. E10 compares with lymphedema and E1, E11 have no controls, so they support prevalence only. E12 (no difference from overweight women) tempers the comparison and P7 handles it. E11 (87.5%) is an outlier."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Supported by E7 and E26. It bundles anxiety with emotional regulation difficulties, which only E7 and E15 cover. E23 (anxiety 64.4%), E24, E11 and E2 also carry anxiety data and are not listed."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Associations only, worded correctly. It bundles four factors with different evidence. E6 is a review whose depression and appearance correlations look like the E8 cohort (n=328/329, same measures) and has no secondary_of. E20 is the same 511-patient cohort as E21 in P5."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E2"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E21 and E4 support it. E2 concerns comorbid fibromyalgia, not pain or core symptoms as such. E3, E26 and E27 (pain correlated with or predicting depression) are not listed here."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E25",
+     "E20",
+     "E19"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Hedged ('may'), with E14 supporting and E23 contradicting. Stage-related evidence sits elsewhere: E25 (dose-response suggested), E20 (stage correlates with PHQ-9, r=0.2, and with QoL impairment) and E19 (worse function at higher stages). The balance is therefore mixed but leans more supportive than shown."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Limited evidence suggests depression and anxiety in lipedema may not exceed those of comparably overweight women, although disability appears greater.",
+    "severity": "minor",
+    "note": "This rests on a single study; the hedge helps. The statement is in tension with E3 (BMI-matched population controls: far more depression) and E7 (higher anxiety after BMI adjustment). The comparator differs (clinical overweight/obese vs population), so the comparator should be named, and E3 and E7 are counter-evidence not placed here."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Hedged and a context role. It rests on one uncontrolled pre-post series, which allows expectation and selection bias, and the proposition does not say it is non-randomised. E15 mentions the same effect via Arndt, which is likely a secondary report."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E20 and E21 are the same 511-patient cohort (identical PHQ-9 and WHOQOL data) counted separately in P4 and P5 without secondary_of.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E6 (narrative review citing a 328-patient online WHOQOL-BREF cohort) overlaps E8 (329 women, WHOQOL-BREF/PHQ-9/DAS-24) and is not marked secondary_of.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P7 (no excess depression/anxiety vs overweight women) is not reconciled with P2/P3 and with E3 and E7, which found excess against BMI-matched or BMI-adjusted controls.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Stage-related items E25, E20 and E19 are not under P6, understating support for a dose-response.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000020.cons.json",
+   "ver": "SQ-LIP-000020.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00051",
+   "into": "G-00222"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00056",
+   "into": "G-00137"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00054",
+   "into": "G-00224"
+  }
+ ]
+}

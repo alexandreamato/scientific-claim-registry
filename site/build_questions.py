@@ -22,7 +22,7 @@ C = {c["id"]: c for c in json.load(open(os.path.join(REG, "claims.json")))["clai
 QMAP = {q["id"]: q for q in Q["questions"]}
 # Registry-wide verification rollup (R-AI-14) — every evidence source's independent-verification verdict.
 _ALLV = [(ev.get("verification") or {}).get("verdict") or "unverified"
-         for c in C.values() for ev in c.get("evidence", [])]
+         for c in C.values() if c.get("status") not in ("superseded", "retired") for ev in c.get("evidence", [])]
 GLOBAL_VERIFY = {"verified": _ALLV.count("verified"), "disputed": _ALLV.count("disputed"),
                  "unverified": len(_ALLV) - _ALLV.count("verified") - _ALLV.count("disputed"),
                  "total": len(_ALLV), "pct_verified": round(100 * _ALLV.count("verified") / max(1, len(_ALLV)))}

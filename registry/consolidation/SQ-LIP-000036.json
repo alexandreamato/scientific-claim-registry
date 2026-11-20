@@ -1,0 +1,1020 @@
+{
+ "question": "SQ-LIP-000036",
+ "text": "Is lipedema onset influenced by heredity and family history?",
+ "n_old_claims": 26,
+ "n_items": 31,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: No proposition states the overall conclusion that a heritable component to lipedema is accepted (E1 Delphi consensus, E21/E26 genetic basis); E1 appears only as context under P1.",
+  "[minor] set: Primary onset data (E15, E9, E7, E14, E11) are not placed under P6, which cites only narrative reviews.",
+  "[minor] set: Mild tension between P2 (Mendelian autosomal dominant models) and P4/P3 (modest polygenic contribution, heterogeneity); the wording acknowledges both but does not reconcile them.",
+  "[minor] P3: not fully supported; overgeneralized; misplaced ['E24', 'E12'] — suggested: Lipedema may be genetically heterogeneous, with candidate variants differing between affected families and no single shared causal gene identified. (Rests on one small exome study (E19) plus its editorial; E24 (AKR1C1 family) and E12 (PIT1 in a sporadic case) also point to different genes in different families and could support it. Hedged with 'may', so minor.)",
+  "[minor] P7: not fully supported; overgeneralized; two ideas; stance errors ['E4']; misplaced ['E4', 'E3'] — suggested: Altered estrogen signalling in adipose tissue, including an imbalanced estrogen receptor pattern, is proposed as a lipedema mechanism and a possible link to heritable predisposition. (Local aromatase activity appears in no finding placed here (it is in E22/E26, not listed); E4 and E3 state generic hormonal dysregulation, not receptor or aromatase mechanism, so they only partly support. E6, E17, E22, E26 describe the receptor/aromatase mechanism and should be placed here. Also only loosely about heredity.)",
+  "[minor] P8: not fully supported; overgeneralized — suggested: Hormonal contraceptive use has been anecdotally linked to worsened lipedema symptoms, on very limited evidence. (Single case report generalised to 'some women'; family history mention is not tied to this claim. Off-topic for heredity.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "Consenso sobre fisiopatologia: aprovadas afirmações sobre componente hereditário, inflamação crônica, fatores hormonais (puberdade, gestação, menopausa), aumento de fluido extracelular, distribuição desproporcional de TAS e ausência de relação causal com obesidade",
+   "note": "consensus: hormones trigger/exacerbate (4.46); inflammation contributes (4.25)",
+   "old_claims": [
+    "SCR-LIP-000004",
+    "SCR-LIP-000046"
+   ],
+   "old_statements": [
+    "Lipedema is a multifactorial disorder whose symptoms are closely linked to female hormonal transitions (puberty, pregnancy, menopause) and to chronic low-grade inflammation, on a polygenic predisposition.",
+    "Several findings suggest a hereditary predisposition to lipedema, with frequent family history among affected women."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "Amato ACM, 2020",
+   "title": null,
+   "year": 2020,
+   "design": "expert_opinion",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "",
+   "old_claims": [
+    "SCR-LIP-000004"
+   ],
+   "old_statements": [
+    "Lipedema is a multifactorial disorder whose symptoms are closely linked to female hormonal transitions (puberty, pregnancy, menopause) and to chronic low-grade inflammation, on a polygenic predisposition."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.53347/rid-217362",
+   "title": "Lower limb lipoedema - male patient",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema aparece como condição multifatorial primariamente impulsionada por desregulação hormonal — especialmente envolvendo estrogênio — junto a componentes metabólicos e possivelmente genéticos.",
+   "note": "This is a systematic literature review directly addressing the role of hormones (and mentioning genetic susceptibility) in lipedema pathophysiology, which is highly relevant to the question. Confidence is moderate because systematic reviews",
+   "old_claims": [
+    "SCR-LIP-000109"
+   ],
+   "old_statements": [
+    "A systematic review identified four distinct pathophysiological hypotheses linking hormonal dysregulation—particularly estrogen metabolism and receptor function, growth hormone imbalance, and adipokine/leptin-related adipose stem cell alterations—to lipedema development, with possible genetic susceptibility components."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1007/s00404-026-08318-1",
+   "title": "Impact of hormones on lipedema development: a systematic literature review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema parece ser condição multifatorial impulsionada primariamente por desregulação hormonal — especialmente estrogênio — com componentes metabólicos e possivelmente genéticos.",
+   "note": "Systematic review directly evaluating the association between hormones and lipedema development, also citing genetic/familial evidence; addresses both hormonal and hereditary components of the question, supporting an affirmative answer.",
+   "old_claims": [
+    "SCR-LIP-000109"
+   ],
+   "old_statements": [
+    "A systematic review identified four distinct pathophysiological hypotheses linking hormonal dysregulation—particularly estrogen metabolism and receptor function, growth hormone imbalance, and adipokine/leptin-related adipose stem cell alterations—to lipedema development, with possible genetic susceptibility components."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1055/a-0767-6842",
+   "title": "Lipödem – Grundlagen und aktuelle Thesen zum Pathomechanismus",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "predisposição genética estrogênio-regulada, padrão alterado de receptores estrogênicos ERα/ERβ no tecido adiposo branco",
+   "note": "This is a narrative/mechanistic literature review that explicitly addresses hormonal (estrogen-regulated) and hereditary (polygenic, familial aggregation) contributions to lipedema onset, directly supporting the question's affirmative direc",
+   "old_claims": [
+    "SCR-LIP-000110"
+   ],
+   "old_statements": [
+    "Lipedema is described as an estrogen-regulated polygenic disorder that manifests almost exclusively in women, with onset at hormonal transition phases (puberty, pregnancy, menopause), family aggregation in at least 16% of cases, and a pathological ERα/ERβ receptor pattern in white adipose tissue driving site-specific lipogenesis."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.3238/arztebl.2020.0396",
+   "title": "Lipedema—Pathogenesis, Diagnosis, and Treatment Options",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Papel do estrogênio enfatizado: manifestação em fases de mudança hormonal (puberdade, gravidez, menopausa); mudança no padrão de distribuição de receptores de estrogênio α/β no tecido adiposo",
+   "note": "The narrative review explicitly emphasizes estrogen's role and notes that lipedema manifests during hormonal transition phases, directly supporting the affirmative; graded low because it is a hypothesis-level claim in a selective review, no",
+   "old_claims": [
+    "SCR-LIP-000110",
+    "SCR-LIP-000473"
+   ],
+   "old_statements": [
+    "Lipedema is described as an estrogen-regulated polygenic disorder that manifests almost exclusively in women, with onset at hormonal transition phases (puberty, pregnancy, menopause), family aggregation in at least 16% of cases, and a pathological ERα/ERβ receptor pattern in white adipose tissue driving site-specific lipogenesis.",
+    "This narrative review reports that up to 60% of lipedema patients have an affected first-degree relative with an autosomal dominant sex-limited incomplete penetrance pattern and implicated mutations (AKR1C1, PIT1), alongside estrogen pathway dysregulation (increased ER-alpha/ER-beta ratio, local CYP19A1 aromatase upregulation) driving adipose changes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1097/prs.0000000000006280",
+   "title": "New Insights on Lipedema: The Enigmatic Disease of the Peripheral Fat",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "avós afetadas 35,4% (74/209), mães 29,7% (62/209), tias 23,0% (48/209), irmãs 14,8% (31/209), primas 11,5% (24/209) — padrão autossômico dominante já descrito em 6 famílias por Child 2010",
+   "note": "Cross-sectional survey reporting adolescent/hormonal onset timing and high familial prevalence, supporting hormonal and hereditary influence on lipedema onset, though descriptive without adjusted analysis.",
+   "old_claims": [
+    "SCR-LIP-000153"
+   ],
+   "old_statements": [
+    "In a survey of 209 lipedema patients, symptom onset clustered in adolescence (mean age 16±9 years, 32.5% at ages 14-18), family history was common (affected grandmothers 35.4%, mothers 29.7%, aunts 23.0%), and 30.5% of premenopausal patients had sex-hormone imbalances, consistent with hormonal and hereditary contributions to lipedema onset."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1016/j.mehy.2014.08.011",
+   "title": "Pathophysiological dilemmas of lipedema",
+   "year": 2014,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Até 60% dos casos sugerem herança autossômica dominante com penetrância incompleta (Child et al., 330 familiares)",
+   "note": "The article is a hypothesis-driven critical review synthesizing genetic (up to 60% autosomal dominant inheritance) and hormonal (estrogen-regulated) evidence, directly supporting the affirmative that hormones and heredity influence lipedema [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000154"
+   ],
+   "old_statements": [
+    "This critical review proposes an integrative pathomechanism in which lipedema is an estrogen-regulated polygenetic disease, citing up to 60% of cases suggesting autosomal dominant inheritance with incomplete penetrance (Child et al., 330 relatives) and manifestation paralleling feminine hormonal changes, alongside estrogen receptor differences (decreased ERα, increased ERβ in the gluteal region) and animal models (PROX1+/-, VEGFR-3 mutants)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Apenas 23% tinham diagnóstico prévio de lipedema (77% subdiagnosticadas)",
+   "note": "The article reports demographic and epidemiological characteristics directly bearing on who lipedema affects (women, age of onset, family history, BMI) and its underdiagnosis, supporting the question's affirmative direction; it does not pro [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000141"
+   ],
+   "old_statements": [
+    "In a Saudi cross-sectional study of 115 patients with lower-limb edema, lipedema was clinically confirmed in 71%, affected only women with mean age 38.6 years and mean BMI 30.5, with disease onset typically at ages 20-39, perceived triggers being puberty (49%), pregnancy (22%), and massive weight loss (22%), a positive family history in 46% (predominantly mothers and sisters), and 77% being previously undiagnosed."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.3390/jpm13010098",
+   "title": "Lipedema Research—Quo Vadis?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Incidência familiar em 15% de familiares femininas de primeiro grau (herança X-linked dominante ou autossômica dominante com penetrância incompleta, possivelmente oligogênica)",
+   "note": "The review explicitly documents familial inheritance patterns and a hormone-metabolism gene (AKR1C1, progesterone pathway) variant linked to lipedema, directly bearing on the role of heredity and hormones in onset. [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000157"
+   ],
+   "old_statements": [
+    "This systematic review reports familial incidence of lipedema in 15% of first-degree female relatives consistent with X-linked dominant or autosomal dominant inheritance with incomplete penetrance, identifies an AKR1C1 missense variant (a gene involved in progesterone metabolism) as the first mutated gene in a family with primary non-syndromic lipedema, and notes hormonal/progesterone-pathway involvement."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1002/ajmg.a.33313",
+   "title": "Lipedema: An inherited condition",
+   "year": 2010,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "We present a series of pedigrees and propose that lipedema is a genetic condition with either X-linked dominant inheritance or more likely, autosomal dominant inheritance with sex limitation. Lipedema appears to be a condition almost exclusively affecting females, presumably estrogen-requiring as it",
+   "note": "The article directly addresses both heredity (familial pedigrees, linkage analysis indicating autosomal dominant inheritance with sex limitation) and hormonal influence (puberty onset, near-exclusive female occurrence suggesting estrogen de",
+   "old_claims": [
+    "SCR-LIP-000219"
+   ],
+   "old_statements": [
+    "In a series of 67 probands, 14.9% had at least one affected first-degree relative (all affected relatives female), X-chromosome linkage analysis in the largest family excluded X-linked dominant inheritance (lod scores < -2) favoring autosomal dominant inheritance with sex limitation, and onset at puberty in 55% of probands plus near-exclusive female occurrence suggested estrogen-dependent expression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "mutação em AKR1C1 (aldo-ceto redutase que catalisa redução de progesterona em 20α-hidroxiprogesterona) em caso familiar; mutação em PIT1 (fator de transcrição para GH, prolactina, TSH-β) em caso esporádico — ambos corroboram influência hormonal na etiologia",
+   "note": "The review synthesizes genetic studies (GWAS, sequencing) showing heritable loci and monogenic mutations in hormone-related genes (AKR1C1 affecting progesterone, PIT1 affecting GH/prolactin/TSH), directly supporting both hereditary and horm [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000220"
+   ],
+   "old_statements": [
+    "This narrative review reports genetic evidence (305 candidate genes via next-generation sequencing in 162 patients; 18 GWAS risk loci including VEGFA and GRB14-COBLL1 validated in UK Biobank; monogenic AKR1C1 and PIT1 mutations affecting progesterone and growth-hormone/prolactin pathways) supporting both hereditary and hormonal influences on lipedema onset."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3390/ijms23126621",
+   "title": "Current Mechanistic Understandings of Lymphedema and Lipedema: Tales of Fluid, Fat, and Fibrosis",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema: quase exclusivo de mulheres, início em períodos de mudança hormonal (puberdade, gravidez, menopausa)",
+   "note": "Narrative review explicitly states lipedema onset coincides with hormonal-change periods and is female-predominant, and includes a genetics domain, both bearing directly on the question; however, as a narrative review it provides descriptiv [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000222"
+   ],
+   "old_statements": [
+    "This comparative narrative review reports that lipedema is almost exclusively found in women and typically begins during periods of hormonal change (puberty, pregnancy, menopause), and notes heritability/genetic markers as part of its genetics domain."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1038/s44324-025-00093-y",
+   "title": "Unraveling lipedema: comprehensive insights and the path to future discoveries",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Genética poligênica: história familiar em 30-89% dos casos; GWAS de 2022 com 130 portadoras identificou 6 regiões (CPE, ZNF25, ZNF33A — biologia do estrogênio)",
+   "note": "The review directly synthesizes genetic (familial history, GWAS, AKR1C1) and hormonal (puberty/pregnancy/menopause onset, estradiol effects on ASCs) evidence bearing on the onset of lipedema, supporting the affirmative direction; confidence [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000223"
+   ],
+   "old_statements": [
+    "This multidisciplinary review reports that lipedema shows familial history in 30-89% of cases with polygenic GWAS findings (loci in CPE, ZNF25, ZNF33A linked to estrogen biology, plus VEGFA and GRB14-COBLL1, and an AKR1C1 missense variant) and that onset or worsening clusters at hormonal transitions—puberty (15.7-67.3%), pregnancy/lactation (9.5-63.1%), and menopause (1.9-21%)—with estradiol altering ERα/ERβ and PPAR-γ2 expression in lipedema-derived adipose stem cells."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1371/journal.pone.0274867",
+   "title": "Investigation of clinical characteristics and genome associations in the ‘UK Lipoedema’ cohort",
+   "year": 2022,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Início frequentemente associado a mudanças hormonais (puberdade, gestação, menopausa)",
+   "note": "The lipedema article directly reports hormonal triggers of onset and a heritable genetic association (GWAS locus near LHFPL6 with independent replication), supporting both hormonal and hereditary influence, though the genetic signal was onl",
+   "old_claims": [
+    "SCR-LIP-000224"
+   ],
+   "old_statements": [
+    "In a rigorously defined UK lipedema cohort (n=130), onset was frequently associated with hormonal changes (puberty, pregnancy, menopause), and the first dedicated GWAS identified a suggestive genetic locus (rs1409440, OR_meta 2.01, P_meta 4×10⁻⁶) upstream of LHFPL6, replicated in an independent 100,000 Genomes cohort."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1101/2021.06.15.21258988",
+   "title": "Investigation of clinical characteristics and genome associations in the ‘UK Lipoedema’ cohort",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Top SNPs included loci associated with lipoma formation, biosynthesis of hormones and lipid hydroxylation.",
+   "note": "The GWAS found only suggestive (not genome-wide significant) loci involving hormone biosynthesis and lipid pathways, plus noted frequent family history, consistent with hereditary and hormonal influences; findings require replication, lower",
+   "old_claims": [
+    "SCR-LIP-000224"
+   ],
+   "old_statements": [
+    "In a rigorously defined UK lipedema cohort (n=130), onset was frequently associated with hormonal changes (puberty, pregnancy, menopause), and the first dedicated GWAS identified a suggestive genetic locus (rs1409440, OR_meta 2.01, P_meta 4×10⁻⁶) upstream of LHFPL6, replicated in an independent 100,000 Genomes cohort."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.3390/ijms222111720",
+   "title": "Lipedema and the Potential Role of Estrogen in Excessive Adipose Tissue Accumulation",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The onset of lipedema pathophysiology is thought to occur during periods of hormonal fluctuation, such as puberty, pregnancy, or menopause.",
+   "note": "Narrative/mechanistic review proposing hormonal (estrogen receptor) and genetic bases for lipedema onset, directly addressing both hormonal influence and heredity; supports the affirmative direction but is hypothesis-generating with no orig [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000225"
+   ],
+   "old_statements": [
+    "This review proposes that dysregulated estrogen signaling in adipose tissue—via an increased ERα/ERβ ratio in gluteofemoral adipocytes or excessive local paracrine estrogen production by adipocyte steroidogenic enzymes—drives the excessive subcutaneous fat accumulation in lipedema, and cites whole-exome sequencing linking lipedema to variants in sex hormone genes, with onset coinciding with hormonal fluctuation periods such as puberty, pregnancy, and menopause."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1038/s41431-022-01231-6",
+   "title": "Genome-wide association study of a lipedema phenotype among women in the UK Biobank identifies multiple genetic risk factors",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Herdabilidade SNP do modelo principal = 5,13%; intercepto do LD-score <1,02, sem evidência de inflação genômica sistemática além do sinal poligênico. 18 loci genome-wide significativos (p<5x10^-9) associados ao fenótipo lipedêmico",
+   "note": "This genome-wide association study identifies heritable genetic risk loci for a lipedema phenotype, directly supporting a hereditary influence; genetic correlations with leptin and age at menopause also touch on hormonal/endocrine links. Co",
+   "old_claims": [
+    "SCR-LIP-000226"
+   ],
+   "old_statements": [
+    "A GWAS of an inferred lipedema phenotype in UK Biobank women identified 18 genome-wide significant loci (SNP heritability ~5.13%), including RSPO3 (OR=1.24), GRB14-COBLL1, VEGFA, and ADAMTS9 (some replicated in an independent clinically-diagnosed lipedema cohort), with genetic correlations to body fat, leptin levels, and age at menopause."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1089/lrb.2023.0065",
+   "title": "A Family-Based Study of Inherited Genetic Risk in Lipedema",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Historical evaluation of individuals with lipedema indicates a positive family history in 60%-80% of cases; however, genetic investigation of larger family cohorts is required.",
+   "note": "The article directly addresses the question by reporting specific candidate genes/pathways and inheritance patterns; it refines the affirmative by concluding lipedema shows polygenic heterogeneity rather than a single Mendelian variant.",
+   "old_claims": [
+    "SCR-LIP-000215"
+   ],
+   "old_statements": [
+    "Family-based exome sequencing of 31 individuals from 9 lipedema families identified candidate variants in 469 genes with no single gene shared across all families, supporting genetic heterogeneity rather than a Mendelian single-gene cause, with gene ontology enrichment in vasopressin receptor activity (AVPR1A, AVPR2), microfibril binding (FBN, ELN, LTBP), and patched binding (PTCH1/2, Hedgehog pathway)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1089/lrb.2024.29161.editorial",
+   "title": "Focus on Lipedema: Unraveling the Mysteries Through Research",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "análise de DNA de 31 indivíduos de 9 famílias afetadas por lipedema rendeu 469 variantes gênicas candidatas; avaliação de ontologia gênica sugeriu que atividade do receptor de vasopressina, ligação a microfibrilas e ligação a patched podem ser contribuintes importantes do risco genético",
+   "note": "Editorial commentary describing a familial genetic study that identified multiple candidate variants and ontology categories, emphasizing a multigenic (not single-gene) inheritance; these are preliminary candidates for future analysis, so i",
+   "old_claims": [
+    "SCR-LIP-000215"
+   ],
+   "old_statements": [
+    "Family-based exome sequencing of 31 individuals from 9 lipedema families identified candidate variants in 469 genes with no single gene shared across all families, supporting genetic heterogeneity rather than a Mendelian single-gene cause, with gene ontology enrichment in vasopressin receptor activity (AVPR1A, AVPR2), microfibril binding (FBN, ELN, LTBP), and patched binding (PTCH1/2, Hedgehog pathway)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.26355/eurrev_201907_18292",
+   "title": "Genetics of lipedema: new perspectives on genetic research and molecular diagnoses",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "herança autossômica dominante com penetrância incompleta e limitação sexual (principalmente mulheres afetadas) = modo mais provável de herança. História familiar positiva autorrelatada em até 64% das mulheres",
+   "note": "The article directly addresses the question by reviewing inheritance patterns and specific genetic variants/candidate genes in lipedema, including the proposed autosomal dominant mode and named syndromic mutations and GWAS candidates. [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000238"
+   ],
+   "old_statements": [
+    "This systematic review reports that lipedema most likely follows autosomal dominant inheritance with incomplete penetrance and sex limitation (positive family history in up to 64% of women), identifies no confirmed gene for primary non-syndromic lipedema, and catalogs syndromic associations (POU1F1A c.196C>T p.Pro24Leu; NSD1 p.Cys2175Ser/Sotos; 7q11.23 deletion/Williams-Beuren with ELN, FZD9, MLXIPL; ABCC6/PXE; ALDH18A1/cutis laxa III) plus 17 GWAS/animal-model candidate genes (e.g., LYPLAL1, TBX15, HOXC13, RSPO3, VEGFA, PROX1, VEGFR3, PRDM16)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Genética como causa substancial mas com estudos subdimensionados; herança autossômica dominante feminino-preferencial Início associado a períodos de flutuação hormonal (puberdade, gestação, menopausa) — sugerindo dependência estrogênica",
+   "note": "The review explicitly links lipedema onset to hormonal fluctuation periods and proposes estrogen-dependent mechanisms and female-preferential autosomal dominant heredity, directly addressing both hormonal and hereditary influence; however i [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000229"
+   ],
+   "old_statements": [
+    "This narrative review reports that lipedema onset is associated with periods of hormonal fluctuation (puberty, pregnancy, menopause) and describes estrogen-dependent mechanisms (increased aromatase CYP19A1, estrogen-induced ZNF423 hyperproliferation), alongside a proposed female-preferential autosomal dominant inheritance pattern."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.4081/vl.2026.15495",
+   "title": "From rare familial mutations to multifactorial disease: aldo-keto reductase 1C enzymes as a central biological pathway in lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Variante AKR1C1 p.Leu213Gln (L213Q) — descrita por Michelini et al. — segrega com lipedema em 3 gerações",
+   "note": "Review articulating a gene-environment model in which both heredity (familial AKR1C mutations and regulatory polymorphisms) and hormones (steroid metabolism, endocrine disruptors) influence lipedema onset, directly supporting the question's",
+   "old_claims": [
+    "SCR-LIP-000231"
+   ],
+   "old_statements": [
+    "This review proposes AKR1C enzymes (AKR1C1-4) as a central biological pathway linking rare familial mutations (e.g., AKR1C1 L213Q segregating with lipedema across 3 generations, AKR1C2 Ser320PheTer2) and common regulatory polymorphisms (rs28571848, rs34477787) to lipedema through altered steroid hormone metabolism in gluteofemoral subcutaneous adipose tissue, with environmental endocrine disruptors and hormones converging on the same hereditary pathway."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.3390/ijms21176264",
+   "title": "Aldo-Keto Reductase 1C1 (AKR1C1) as the First Mutated Gene in a Family with Nonsyndromic Primary Lipedema",
+   "year": 2020,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Variante AKR1C1 c.638T>A; p.L213Q identificada exclusivamente nas 3 pacientes afetadas e ausente nos 9 membros não afetados da família Sanger sequencing confirmou segregação perfeita com o fenótipo lipedema",
+   "note": "The article reports a hereditary (autosomal dominant) gene variant segregating with lipedema and links a hormonal mechanism (progesterone metabolism via 20α-HSD) to disease onset at puberty, directly supporting both heredity and hormonal in",
+   "old_claims": [
+    "SCR-LIP-000315"
+   ],
+   "old_statements": [
+    "Whole-exome sequencing in a family with autosomal dominant nonsyndromic primary lipedema identified the AKR1C1 c.638T>A (p.L213Q) variant segregating perfectly with the disease in 3 affected members (puberty onset in all) and absent in 9 unaffected members, with molecular dynamics and QSAR predicting partial loss of 20α-HSD function that may promote lipogenesis via reduced progesterone catabolism."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1159/000342073",
+   "title": "Is Lymphostasis an Aggravant of Lipedema?",
+   "year": 2012,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Piora dos sintomas (edema e dor) relatada pela paciente ao iniciar contraceptivos orais aos 24 anos, com melhora parcial após suspensão e início de exercício físico",
+   "note": "The article is a case report focused on lymphatic drainage treatment for lipo-lymphedema; it anecdotally mentions a hereditary pattern and hormonal (oral contraceptive) symptom worsening but does not test the relationship between hormones/h",
+   "old_claims": [
+    "SCR-LIP-000474"
+   ],
+   "old_statements": [
+    "In a single case report, a 54-year-old woman with lipedema described a family history of 'fat legs' since adolescence and reported worsening swelling and pain after starting oral contraceptives at age 24, with partial improvement after discontinuation."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Genetic basis: up to 60% of patients have an affected first-degree relative; autosomal dominant pattern with sex-limited incomplete penetrance; mutations in AKR1C1 (aldo-keto reductase 1C1 — increases allopregnanolone, decreases PGF2-alpha, raises progesterone, stimulates adipogenesis) and PIT1 (gro",
+   "note": "The review synthesizes evidence that both heredity (familial clustering, autosomal dominant inheritance, AKR1C1/PIT1 mutations) and hormones (estrogen receptor dysregulation, local aromatase upregulation) contribute to lipedema, directly af",
+   "old_claims": [
+    "SCR-LIP-000473"
+   ],
+   "old_statements": [
+    "This narrative review reports that up to 60% of lipedema patients have an affected first-degree relative with an autosomal dominant sex-limited incomplete penetrance pattern and implicated mutations (AKR1C1, PIT1), alongside estrogen pathway dysregulation (increased ER-alpha/ER-beta ratio, local CYP19A1 aromatase upregulation) driving adipose changes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.3390/jcm14207195",
+   "title": "Lipedema and Hypermobility Spectrum Disorders Sharing Pathophysiology: A Cross-Sectional Observational Study",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O reconhecimento precoce de alterações do tecido conectivo, especialmente em crianças com predisposição familiar, poderia permitir intervenções oportunas.",
+   "note": "The abstract only mentions 'predisposição familiar' in passing within therapeutic recommendations; it does not measure or test heredity/family history as a factor in lipedema onset, so it is on-topic context rather than direct evidence.",
+   "old_claims": [
+    "SCR-LIP-000559"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey comparing lipedema and lymphedema patients, lipedema patients more often reported hypermobility and multisystemic symptoms, and the authors mention early recognition of connective tissue changes in children with familial predisposition, but heredity/family history was not systematically measured or tested."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.17116/plast.hirurgia202403186",
+   "title": "Modern aspects of etiopathogenesis, diagnosis and treatment of lipedema [Современные аспекты этиопатогенеза, диагностики и лечения липедемы]",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Herança autossômica dominante com penetrância incompleta ou X-ligada dominante; histórico familiar presente em 16-64% dos casos (Child et al.)",
+   "note": "Narrative review explicitly describes hormonal triggers (puberty, pregnancy, menopause) and autosomal/X-linked dominant inheritance with family history in 16-64% of cases, directly supporting the affirmative; graded low because it is a narr",
+   "old_claims": [
+    "SCR-LIP-000476"
+   ],
+   "old_statements": [
+    "This review reports that lipedema onset or exacerbation occurs during hormonal transition periods (puberty, pregnancy, menopause, hysterectomy/oophorectomy) with estrogen receptor imbalance (ER-alpha suppressed, ER-beta activated), and that it shows autosomal dominant or X-linked dominant inheritance with a family history in 16-64% of cases."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.1177/1534734614554284",
+   "title": "Lipedema: A Review of the Literature",
+   "year": 2015,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Histórico familiar positivo em 16–64% dos pacientes — herança X-linked dominante ou autossômica dominante com limitação por sexo",
+   "note": "The review reports positive family history in 16–64% of patients with proposed hereditary inheritance patterns and onset in post-pubertal women, directly supporting hormonal and hereditary influence on lipedema onset, though as narrative re",
+   "old_claims": [
+    "SCR-LIP-000476"
+   ],
+   "old_statements": [
+    "This review reports that lipedema onset or exacerbation occurs during hormonal transition periods (puberty, pregnancy, menopause, hysterectomy/oophorectomy) with estrogen receptor imbalance (ER-alpha suppressed, ER-beta activated), and that it shows autosomal dominant or X-linked dominant inheritance with a family history in 16-64% of cases."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome - systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Histórico familiar positivo: 16–64% (autodeclarado); 25/73 pacientes na série dos autores",
+   "note": "The review reports a positive family history in 16–64% of lipedema patients and a Pit-1 mutation identified in an affected family, both directly supporting a hereditary/familial influence; however these are self-reported prevalences and a s",
+   "old_claims": [
+    "SCR-LIP-000560"
+   ],
+   "old_statements": [
+    "In a systematic review of lipedema, positive family history was self-reported in 16–64% of cases (25/73 patients in the authors' own series), and a Pit-1 mutation was identified in one family with lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1016/j.jbiotec.2019.05.040",
+   "title": "Target and whole exome sequencing in families with lymphedema and lipedema",
+   "year": 2019,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Herança no lipedema: padrão autossômico dominante com penetrância completa em mulheres e penetrância reduzida em homens",
+   "note": "The article reports an autosomal dominant inheritance pattern with sex-dependent penetrance for lipedema but explicitly states no causative gene was identified as of 2019; it refines the question by describing an inheritance pattern while n",
+   "old_claims": [
+    "SCR-LIP-000527"
+   ],
+   "old_statements": [
+    "In families with lipedema, lipedema inheritance is described as an autosomal dominant pattern with complete penetrance in women and reduced penetrance in men, but as of 2019 no causative gene had been identified, prompting the use of combined targeted gene sequencing and whole exome sequencing to search for candidate variants."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "A positive family history is frequently reported among people with lipedema, though reported frequencies vary widely.",
+   "role": "supporting",
+   "rationale": "Primary surveys and an author series report familial clustering; several reviews only restate the pedigree series (E11) and are marked secondary so the convergence is not overstated.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "In 209 patients, affected grandmothers 35.4%, mothers 29.7%, aunts 23.0%, sisters 14.8%; onset clustered in adolescence (mean 16 years)."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "In a Saudi cohort with clinically confirmed lipedema (71% of 115), positive family history in 46%, mainly mothers and sisters."
+    },
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "Review with the authors' own series: family history in 25/73 patients; literature range of self-reported family history 16-64%; a Pit-1 mutation identified in one affected family."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Review: familial history reported in 30-89% of cases across studies, within a polygenic model."
+    },
+    {
+     "e": "E29",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Review restates positive family history in 16-64% of patients, with X-linked or sex-limited autosomal dominant inheritance proposed."
+    },
+    {
+     "e": "E26",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Review restates that up to 60% have an affected first-degree relative, with a sex-limited autosomal dominant pattern."
+    },
+    {
+     "e": "E1",
+     "stance": "context",
+     "finding": "Brazilian Delphi consensus approved a statement that lipedema has a hereditary component; it does not measure family-history frequency."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00194"
+  },
+  {
+   "key": "P2",
+   "statement": "Pedigree-based reports suggest familial lipedema may follow autosomal dominant inheritance with sex limitation, though X-linked and polygenic models are also proposed.",
+   "role": "refines",
+   "rationale": "Primary pedigree evidence is limited to one series (E11) and family descriptions (E31); the reviews here mostly restate E11 and are marked secondary.",
+   "evidence": [
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Among 67 probands, 14.9% had an affected first-degree relative (all female); X-linkage analysis in the largest family excluded X-linked dominance (lod < -2), favouring sex-limited autosomal dominant inheritance."
+    },
+    {
+     "e": "E31",
+     "stance": "supporting",
+     "finding": "In families with lipedema, inheritance described as autosomal dominant with complete penetrance in women and reduced penetrance in men; no causative gene identified."
+    },
+    {
+     "e": "E21",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Systematic review: sex-limited autosomal dominant inheritance with incomplete penetrance most likely; family history up to 64%; no confirmed gene for non-syndromic lipedema."
+    },
+    {
+     "e": "E8",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Review cites Child et al. (330 relatives): up to 60% of cases suggest autosomal dominant inheritance with incomplete penetrance."
+    },
+    {
+     "e": "E10",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Review: familial incidence in 15% of first-degree female relatives, consistent with X-linked or autosomal dominant inheritance, possibly oligogenic."
+    },
+    {
+     "e": "E22",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Review: genetics a substantial but understudied cause, with female-preferential autosomal dominant inheritance."
+    },
+    {
+     "e": "E28",
+     "stance": "context",
+     "secondary_of": "E11",
+     "finding": "Review citing Child et al.: autosomal dominant with incomplete penetrance or X-linked dominant inheritance; family history in 16-64% of cases."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00195"
+  },
+  {
+   "key": "P3",
+   "statement": "Lipedema may be genetically heterogeneous, with no single causal gene shared across affected families.",
+   "role": "refines",
+   "rationale": "Family exome sequencing found no gene shared across families, which qualifies simple single-gene inheritance models.",
+   "evidence": [
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Exome sequencing of 31 individuals from 9 families found candidate variants in 469 genes with none shared across all families; enrichment in vasopressin receptor, microfibril and patched binding."
+    },
+    {
+     "e": "E20",
+     "stance": "context",
+     "secondary_of": "E19",
+     "finding": "Editorial on the family exome study: 469 candidate variants, ontology implicating vasopressin receptor activity, microfibril binding and patched binding."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00196"
+  },
+  {
+   "key": "P4",
+   "statement": "Genome-wide studies suggest common genetic variants may contribute modestly to lipedema susceptibility.",
+   "role": "supporting",
+   "rationale": "One biobank GWAS on an inferred phenotype with low SNP heritability and one clinical-cohort GWAS with a suggestive replicated locus; hence 'modest'.",
+   "evidence": [
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "UK Biobank GWAS of an inferred lipedema phenotype: 18 genome-wide significant loci (RSPO3, GRB14-COBLL1, VEGFA, ADAMTS9), SNP heritability about 5.13%, some replicated in a clinical cohort."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "In 130 clinically defined UK patients, the first dedicated GWAS found a suggestive locus (rs1409440, OR 2.01, P 4x10-6) upstream of LHFPL6, replicated in 100,000 Genomes."
+    },
+    {
+     "e": "E16",
+     "stance": "context",
+     "secondary_of": "E15",
+     "finding": "Preprint of the UK Lipoedema cohort GWAS: only suggestive loci, near lipoma formation, hormone biosynthesis and lipid hydroxylation genes."
+    },
+    {
+     "e": "E2",
+     "stance": "context",
+     "finding": "Expert opinion (no quote available) describes lipedema as multifactorial on a polygenic predisposition."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00250",
+   "statement_before_twin_merge": "Genome-wide studies report common variant loci associated with a lipedema phenotype, suggesting a modest polygenic contribution."
+  },
+  {
+   "key": "P5",
+   "statement": "Rare variants in hormone-metabolism genes such as AKR1C1 have been reported in isolated lipedema families, but replication is lacking.",
+   "role": "supporting",
+   "rationale": "The only primary segregation evidence is one family (E24); reviews re-report it, and the PIT1 case is sporadic.",
+   "evidence": [
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Exome sequencing in one family found AKR1C1 p.L213Q in all 3 affected and none of 9 unaffected members, predicted to reduce 20alpha-HSD function."
+    },
+    {
+     "e": "E23",
+     "stance": "context",
+     "secondary_of": "E24",
+     "finding": "Review cites AKR1C1 L213Q segregating across 3 generations, plus AKR1C2 Ser320PheTer2 and regulatory polymorphisms, proposing an AKR1C steroid-metabolism pathway."
+    },
+    {
+     "e": "E12",
+     "stance": "context",
+     "secondary_of": "E24",
+     "finding": "Review re-reports the AKR1C1 mutation in a familial case and a PIT1 mutation in a sporadic case."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00198"
+  },
+  {
+   "key": "P6",
+   "statement": "Lipedema onset or worsening is frequently reported at female hormonal transitions, especially puberty, and also pregnancy and menopause.",
+   "role": "context",
+   "rationale": "Hormone-linked onset is context for how an inherited susceptibility may be expressed; primary onset data (E7, E9, E11, E15) are placed under the hereditary propositions where their main finding belongs. Same idea as G-00023, which the checker does not accept for this question, so stated as a new proposition with its wording.",
+   "evidence": [
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Review: lipedema almost exclusive to women, beginning in periods of hormonal change (puberty, pregnancy, menopause)."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Review: onset thought to occur during hormonal fluctuation such as puberty, pregnancy or menopause."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Review emphasises estrogen: manifestation at hormonal change phases (puberty, pregnancy, menopause) and altered estrogen receptor alpha/beta distribution in adipose tissue."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 3,
+   "store_key": "G-00023",
+   "statement_before_twin_merge": "Lipedema onset or worsening is frequently reported at female hormonal transitions, especially puberty, and also pregnancy and menopause."
+  },
+  {
+   "key": "P7",
+   "statement": "Altered estrogen signalling in affected adipose tissue, including an imbalanced estrogen receptor pattern and local aromatase activity, is proposed as a lipedema mechanism.",
+   "role": "context",
+   "rationale": "These reviews propose estrogen-driven mechanisms, with genetic susceptibility as a possible component. Same idea as G-00025, which the checker does not accept for this question, so stated as a new proposition with its wording.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Systematic review: lipedema appears multifactorial, driven mainly by hormonal (especially estrogen) dysregulation with metabolic and possibly genetic components."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "secondary_of": "E4",
+     "finding": "Same systematic review conclusion (record title mismatched): hormonal dysregulation, especially estrogen, with metabolic and possibly genetic components."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Review: estrogen-regulated genetic predisposition with an altered ERalpha/ERbeta receptor pattern in white adipose tissue."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00025",
+   "statement_before_twin_merge": "Altered estrogen signalling in affected adipose tissue, including an imbalanced estrogen receptor pattern and local aromatase activity, is proposed as a lipedema mechanism."
+  },
+  {
+   "key": "P8",
+   "statement": "Starting hormonal contraception is reported by some women to coincide with lipedema symptom onset or worsening.",
+   "role": "context",
+   "rationale": "The case report's measured content is contraceptive-linked worsening; its family history is anecdotal. Same idea as G-00024, which the checker does not accept for this question, so stated as a new proposition with its wording.",
+   "evidence": [
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Case report: worsening swelling and pain after starting oral contraceptives at 24, partial improvement after stopping; family history of 'fat legs' mentioned anecdotally."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00024",
+   "statement_before_twin_merge": "Starting hormonal contraception is reported by some women to coincide with lipedema symptom onset or worsening."
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E27",
+   "reason": "Mentions familial predisposition only in passing; heredity or family history not measured or tested."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Primary surveys (E7, E9, E30, E14) show frequent but widely varying family history; E29/E26 correctly marked secondary of E11; E1 correctly context."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged ('suggest', 'may'); E11 and E31 carry it, the restating reviews are correctly secondary. Mendelian framing sits in tension with the modest polygenic picture of P4 but the wording acknowledges alternative models."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E24",
+     "E12"
+    ],
+    "suggested_statement": "Lipedema may be genetically heterogeneous, with candidate variants differing between affected families and no single shared causal gene identified.",
+    "severity": "minor",
+    "note": "Rests on one small exome study (E19) plus its editorial; E24 (AKR1C1 family) and E12 (PIT1 in a sporadic case) also point to different genes in different families and could support it. Hedged with 'may', so minor."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E18 (UK Biobank, 18 loci, SNP heritability about 5%) and E15 (suggestive locus) support 'modest polygenic'; E16 correctly secondary of E15. Phenotype in E18 is inferred, not clinically diagnosed, but wording says 'lipedema phenotype'."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Rare variants in hormone-metabolism genes such as AKR1C1 have been reported in isolated lipedema families, with limited evidence beyond single families.",
+    "severity": "minor",
+    "note": "'Replication is lacking' is not stated in any item; E21 (no confirmed gene) is the closest. Reword to what the items show."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Statement is fine but only narrative reviews are cited. Primary data in the set are not placed here: E15 (cohort, onset frequently with hormonal change), E9 (puberty 49%, pregnancy 22%), E7 (onset clustered at adolescence), E14 (percent ranges), E22, E11 (onset at puberty in 55%)."
+   },
+   {
+    "key": "P7",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [
+     "E4"
+    ],
+    "misplaced": [
+     "E4",
+     "E3"
+    ],
+    "suggested_statement": "Altered estrogen signalling in adipose tissue, including an imbalanced estrogen receptor pattern, is proposed as a lipedema mechanism and a possible link to heritable predisposition.",
+    "severity": "minor",
+    "note": "Local aromatase activity appears in no finding placed here (it is in E22/E26, not listed); E4 and E3 state generic hormonal dysregulation, not receptor or aromatase mechanism, so they only partly support. E6, E17, E22, E26 describe the receptor/aromatase mechanism and should be placed here. Also only loosely about heredity."
+   },
+   {
+    "key": "P8",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Hormonal contraceptive use has been anecdotally linked to worsened lipedema symptoms, on very limited evidence.",
+    "severity": "minor",
+    "note": "Single case report generalised to 'some women'; family history mention is not tied to this claim. Off-topic for heredity."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "No proposition states the overall conclusion that a heritable component to lipedema is accepted (E1 Delphi consensus, E21/E26 genetic basis); E1 appears only as context under P1.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Primary onset data (E15, E9, E7, E14, E11) are not placed under P6, which cites only narrative reviews.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Mild tension between P2 (Mendelian autosomal dominant models) and P4/P3 (modest polygenic contribution, heterogeneity); the wording acknowledges both but does not reconcile them.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000036.cons2.json",
+   "ver": "SQ-LIP-000036.ver2.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00200",
+   "into": "G-00025"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00199",
+   "into": "G-00023"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00201",
+   "into": "G-00024"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00197",
+   "into": "G-00250"
+  }
+ ]
+}

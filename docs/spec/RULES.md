@@ -242,6 +242,18 @@
   com checagem de formato determinística, até 2 rodadas de correção e desempate pela redação mais cautelosa do
   verificador. Substitui na prática o "um achado = um claim" do R-OBJ-7, que continua valendo para não haver
   proposições gêmeas entre perguntas.
+  **Modo subagente (sem custo de API):** o mesmo pipeline roda com subagentes do Claude Code
+  (`consolidate.py prep|check|prep-verify|repair-prompt|finish`; respostas por `recompile_agent.py`). O código
+  continua dono de tudo que é determinístico (itens, formato, GRADE, store, status). O verificador é outro
+  modelo (Sonnet) com contexto limpo, que não vê o raciocínio do consolidador: a independência é menor que entre
+  fabricantes, e isso fica registrado em `models` de cada resultado.
+  **Aplicação:** `apply_consolidation.py` cria os claims novos (um por proposição do store, reaproveitado entre
+  perguntas), copia cada evidência intacta com `stance`, `finding` e `secondary_of` novos, e troca os links da
+  pergunta. O claim antigo nunca é apagado (R-CLM-9): recebe `superseded_by` e, quando nenhuma pergunta o liga
+  mais, `status: superseded`; sai do índice e dos contadores do site, mas mantém a página com o aviso e o link
+  para o novo. O `knowledge_state` do claim novo é o mais frequente entre os claims antigos de apoio (empate →
+  o menor), herdado e nunca inventado (R-CLM-5). O loop passa a anexar artigo novo à proposição geral, com o
+  resultado do estudo em `finding`.
 
 ## 5. Perguntas e respostas
 
@@ -640,6 +652,16 @@
   e cada um virou regra: chave de evidência inventada (o formato agora é checado e refeito), ressalva já
   superada por um RCT entre os itens (agora há verificação do conjunto), duas ideias numa frase e o mesmo
   estudo contado duas vezes (`secondary_of`).
+  No mesmo dia, para não gastar crédito do OpenRouter, a consolidação das outras 40 perguntas passou ao modo
+  subagente (ver R-CLM-19), com `apply_consolidation.py` e `recompile_agent.py` para aplicar e refazer as respostas.
+  **Aplicado no registro no mesmo dia:** as 42 perguntas saíram `clean` (25 na primeira verificação, 14 após uma
+  rodada de correção, 3 com desempate pela redação do verificador). 288 proposições por pergunta viraram 215 claims
+  depois de juntar 46 gêmeas entre perguntas (R-OBJ-7). Dos 514 claims antigos, 490 ficaram `superseded` e 24
+  `retired` (toda a evidência deles foi descartada como não-achado ou fora do tema); nenhum foi apagado e nenhuma
+  evidência não descartada se perdeu (conferido por código). As 42 respostas foram recompiladas a partir das
+  proposições. Um DOI errado veio à tona na verificação e foi corrigido: SCR-LIP-000121 citava 10.1111/iwj.13071
+  (custo de lesão por pressão), mas a citação é de Shavit, Wollina & Alavi 2018, 10.1111/iwj.12949. Nenhuma
+  chamada ao OpenRouter: tudo por subagentes do Claude Code.
 
 - **2026-11-18** — **`first_mention` refeito nas 42 perguntas.** O anel vazado da linha do tempo ("primeira menção na
   literatura") estava errado em 20 perguntas e ausente em 19. Havia duas causas. A busca no texto integral do Europe PMC

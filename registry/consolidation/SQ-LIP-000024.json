@@ -1,0 +1,691 @@
+{
+ "question": "SQ-LIP-000024",
+ "text": "Does bariatric surgery or substantial weight loss alter lipedema fat volume or symptoms?",
+ "n_old_claims": 18,
+ "n_items": 22,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: The most direct quantitative evidence of fat-volume change after bariatric surgery (E5: thigh volume down by a third, similar to controls) has no proposition of its own and appears only as a contradicting item under the negative P1; P1 and P3 are not reconciled with E5/E12.",
+  "[minor] set: E2 is listed as secondary_of E1, but E1 (which reports no pain improvement and is the primary) is not in the P2 findings.",
+  "[minor] P1: not fully supported; overgeneralized — suggested: Lipedema limb fat and disproportion are often reported to persist after bariatric surgery despite weight loss, though one cohort found substantial thigh volume reduction. (Support is mostly case reports, small series and narrative reviews citing the same early report (E6/E8, and likely E15/E7). E5 and E12 show leg fat does fall with weight loss, so 'persist' is true of disproportion and symptoms more than of absolute fat. E13 also belongs here. Hedged as 'reported', hence minor.)",
+  "[minor] P2: not fully supported; overgeneralized; two ideas; stance errors ['E14'] — suggested: Weight loss, including after bariatric surgery, may fail to relieve limb pain and other core lipedema symptoms in some patients. (Evidence is small case series (E3 titled 'persistent pain', a selected group) and a review; 'many patients' is not quantifiable. E14 is a diet/exercise survey, not weight loss outcome, and E1 (primary of E2, reports no pain improvement) is absent. Bundles diet and surgery.)",
+  "[minor] P3: not fully supported; overgeneralized — suggested: Limited evidence suggests diet-induced weight loss may reduce leg fat in lipedema about as much as fat elsewhere, though reports conflict. (One moderate cohort (E12) plus a single case (E19) and a not-attributable pilot (E21); E10 and E18 (no thigh reduction) conflict. Stated more generally than the evidence allows, though hedged with 'may'.)",
+  "[minor] P4: not fully supported; two ideas — suggested: Changes in lipedema pain may be dissociated from changes in body weight, with limited evidence for adipose volume. (Bundles body weight and adipose volume. E18 is a tiny pilot where a non-significant correlation is weak evidence of independence; E17 also shows lower BMI associated with greater symptom reduction, which cuts the other way. E3 and E12 would support this too.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1111/cob.70062",
+   "title": "Lipoedema and Bariatric and Metabolic Surgery: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Bariatric and metabolic surgery achieves meaningful weight reduction in patients with lipoedema and obesity but does not consistently improve core lipoedema symptoms. Its role remains adjunctive rather than primary.",
+   "note": "Systematic review directly addressing whether bariatric surgery alters lipedema fat volume/symptoms; finds weight loss but inconsistent effect on core lipedema symptoms, refining the affirmative direction. Evidence base limited to case repo",
+   "old_claims": [
+    "SCR-LIP-000206"
+   ],
+   "old_statements": [
+    "In a systematic review of 7 studies (51 patients) with lipedema and obesity undergoing bariatric/metabolic surgery, mean total weight loss was 33.9% but only 1 study (n=31) reported significant thigh volume reduction, while the remaining studies showed persistent or worsened lower-limb disproportionality and no improvement in pain."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1093/bjs/znaf270.045",
+   "title": "129 Lipoedema and Bariatric and Metabolic Surgery: A Systematic Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "BMS alcança redução de peso significativa em pacientes com lipoedema e obesidade concomitante, mas não melhora consistentemente os sintomas centrais do lipoedema (dor, desproporcionalidade, edema). O papel da BMS é adjuvante e não primário no manejo do lipoedema.",
+   "note": "Directly addresses whether weight loss via bariatric surgery alters lipedema fat volume/symptoms; finds weight loss but inconsistent symptom improvement, refining the affirmative claim. Evidence base is small (case reports/cohorts, n=51).",
+   "old_claims": [
+    "SCR-LIP-000206"
+   ],
+   "old_statements": [
+    "In a systematic review of 7 studies (51 patients) with lipedema and obesity undergoing bariatric/metabolic surgery, mean total weight loss was 33.9% but only 1 study (n=31) reported significant thigh volume reduction, while the remaining studies showed persistent or worsened lower-limb disproportionality and no improvement in pain."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1016/j.soard.2021.12.027",
+   "title": "Persistent lipedema pain in patients after bariatric surgery: a case series of 13 patients",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "high",
+   "quote": "EVA de dor PRÉ-bariátrica: 7,3 ± 1,4 (mediana 7; variação 5-10) EVA de dor PÓS-bariátrica: 7,9 ± 1,2 (mediana 8; variação 6-10) — SEM melhora significativa (p = 0,28)",
+   "note": "Retrospective case series directly measuring lipedema pain before and after bariatric surgery; addresses the question but with small uncontrolled sample, showing weight loss did not alter lipedema symptoms.",
+   "old_claims": [
+    "SCR-LIP-000207"
+   ],
+   "old_statements": [
+    "In a case series of 13 patients who lost an average of >50 kg (BMI from 50 to 32 kg/m²) after bariatric surgery, characteristic lipedema limb pain did not improve (VAS 7.3 pre vs 7.9 post, p=0.28) and extremity fat persisted, indicating substantial weight loss did not reduce lipedema fat or symptoms."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1007/s11695-025-08021-1",
+   "title": "Lipedema after Bariatric and Metabolic Surgery: A Scoping Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Apesar do EWL >70%, escore VAS de dor AUMENTOU pós-operatoriamente: 7,30 (pré) → 7,92 (pós)",
+   "note": "Scoping review aggregating 5 studies (49 patients) directly addressing the question; finding is that substantial weight loss (EWL >70%) did not improve lipedema symptoms and pain paradoxically increased, contradicting the affirmative that s",
+   "old_claims": [
+    "SCR-LIP-000207"
+   ],
+   "old_statements": [
+    "In a case series of 13 patients who lost an average of >50 kg (BMI from 50 to 32 kg/m²) after bariatric surgery, characteristic lipedema limb pain did not improve (VAS 7.3 pre vs 7.9 post, p=0.28) and extremity fat persisted, indicating substantial weight loss did not reduce lipedema fat or symptoms."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1159/000511044",
+   "title": "Leg Volume in Patients with Lipoedema following Bariatric Surgery",
+   "year": 2020,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "O volume da coxa diminuiu significativamente em ambos os grupos após a cirurgia bariátrica. Redução ajustada do volume da coxa: 33,4% no lipedema vs 37,0% nos controles no 1º seguimento",
+   "note": "The article directly examines the effect of bariatric surgery on thigh volume and weight loss in lipedema patients, reporting significant volume reduction comparable to controls and correlated with BMI loss, directly addressing whether subs",
+   "old_claims": [
+    "SCR-LIP-000208"
+   ],
+   "old_statements": [
+    "In patients with lipedema (mean baseline BMI 48.5), bariatric surgery (sleeve gastrectomy or RYGB) reduced adjusted thigh volume by 33.4% at first follow-up, comparable to the 37.0% reduction in lymphedema controls (p>0.999), with greater reduction in those with BMI ≥50 (44.4% vs 33.2% for BMI 35-<50) and reduction correlating with excess BMI loss."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1097/psn.0000000000000245",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Cirurgia bariátrica não eficaz no lipedema (Fife et al., 2010) — gordura lipedematosa não responde a restrição calórica ou procedimentos de má-absorção",
+   "note": "The review explicitly states (citing Fife et al., 2010) that bariatric surgery is ineffective for lipedema and that lipedema fat is resistant to diet and weight loss, directly addressing the question with a contradicting stance. [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000209"
+   ],
+   "old_statements": [
+    "This review reports that bariatric surgery is not effective for lipedema, as lipedematous fat does not respond to caloric restriction or malabsorptive procedures, with weight loss occurring in unaffected areas instead."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Resistência terapêutica a dieta hipocalórica, exercício e cirurgia bariátrica — gordura 'persistente'",
+   "note": "The review explicitly states therapeutic resistance to bariatric surgery and hypocaloric diet, indicating weight loss does not effectively reduce lipedema fat. This is a narrative synthesis, not primary measurement, hence low confidence; st",
+   "old_claims": [
+    "SCR-LIP-000209"
+   ],
+   "old_statements": [
+    "This review reports that bariatric surgery is not effective for lipedema, as lipedematous fat does not respond to caloric restriction or malabsorptive procedures, with weight loss occurring in unaffected areas instead."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1097/psn.0000000000000316",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema é resistente a dieta e exercício — peso é perdido apenas nas áreas não afetadas, enquanto as regiões lipedematosas permanecem inalteradas; cirurgia bariátrica não produz resultados em lipedema (Fife et al. 2010)",
+   "note": "The review explicitly states that bariatric surgery does not alter lipedema fat and that weight loss spares lipedematous regions, which is evidence against the affirmative that weight loss reduces lipedema fat; however it is a narrative rev",
+   "old_claims": [
+    "SCR-LIP-000209"
+   ],
+   "old_statements": [
+    "This review reports that bariatric surgery is not effective for lipedema, as lipedematous fat does not respond to caloric restriction or malabsorptive procedures, with weight loss occurring in unaffected areas instead."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1111/cob.12239",
+   "title": "Lipoedema in patients after bariatric surgery: report of two cases and review of literature",
+   "year": 2018,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "porém circunferências das coxas (78-83 cm) e panturrilhas (54-55 cm) permaneceram virtualmente inalteradas",
+   "note": "Two case reports plus literature review directly addressing the question; both cases show lipedema fat and symptoms persist despite substantial bariatric weight loss, contradicting the affirmative direction, but evidence is anecdotal.",
+   "old_claims": [
+    "SCR-LIP-000210"
+   ],
+   "old_statements": [
+    "In two case reports of patients with coexisting obesity and lipedema, bariatric surgery produced major weight loss (64 kg and 73.9 kg) but thigh and calf circumferences remained virtually unchanged or even increased, and both patients retained limb pain and required long-term compression therapy, indicating lipedematous tissue was refractory to surgical weight loss."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1515/hmbci-2017-0076",
+   "title": "Lipedema: friend and foe",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "'persistent fat' refratário a dieta extrema",
+   "note": "The article explicitly states that lifestyle change (including weight loss) does not reduce lipedema fat, directly addressing whether weight loss alters lipedema fat volume; however it is a narrative review/case series without controlled ba",
+   "old_claims": [
+    "SCR-LIP-000211"
+   ],
+   "old_statements": [
+    "In a review and chart analysis of 46 women with lipedema, lifestyle changes and weight loss did not reduce lipedema fat, which remained refractory to diet and exercise."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1016/j.soard.2016.04.013",
+   "title": "Lipedema in patients after bariatric surgery",
+   "year": 2016,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Ambos os casos demonstram resistência da gordura lipedematosa à perda de peso por cirurgia bariátrica, confirmando a não-responsividade ao déficit calórico como critério diagnóstico central",
+   "note": "Two case reports directly addressing whether bariatric-induced weight loss alters lipedema fat; both show persistence of lipedema fat despite significant weight loss, contradicting the affirmative that weight loss reduces lipedema fat volum",
+   "old_claims": [
+    "SCR-LIP-000212"
+   ],
+   "old_statements": [
+    "In two patients after bariatric surgery (gastric bypass with 62% excess weight loss; sleeve gastrectomy with 49% excess weight loss), lipedematous fat of the lower limbs persisted despite substantial weight loss, demonstrating resistance of lipedema fat to caloric deficit."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.2337/db24-0890",
+   "title": "Adipose Tissue Biology and Effect of Weight Loss in Women With Lipedema",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Reduções relativas similares de massa de gordura abdominal e de pernas após perda de peso — TSAT NÃO foi resistente à perda de peso",
+   "note": "Prospective interventional study measuring body composition, metabolic function, and adipose biology before and after diet-induced weight loss in women with lipedema; directly addresses whether weight loss alters lipedema fat volume and met",
+   "old_claims": [
+    "SCR-LIP-000213"
+   ],
+   "old_statements": [
+    "In women with obesity and lipedema, moderate diet-induced weight loss (~9%) reduced lower-body (leg/thigh) adipose mass with relative reductions similar to abdominal fat and improved insulin sensitivity, refuting the notion that lipedema fat is resistant to weight loss, though inflammation and fibrosis markers did not change."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.34119/bjhrv7n9-201",
+   "title": "Lipedema resistance after bariatric surgery: case reports",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Resistência da gordura lipedematosa em 100% dos casos: apesar da perda ponderal, o tecido nodular do lipedema permaneceu volumoso e os sintomas (dor, sensibilidade ao toque, equimose fácil, edema, peso nos membros) persistiram pós-CBM.",
+   "note": "Case series directly addressing whether bariatric surgery/weight loss alters lipedema fat and symptoms; reports that substantial weight loss reduced overall weight but lipedematous fat and symptoms were resistant, refining the affirmative d",
+   "old_claims": [
+    "SCR-LIP-000386"
+   ],
+   "old_statements": [
+    "In a case series of 7 women who underwent bariatric/metabolic surgery (5 RYGB, 2 sleeve) with substantial weight loss (%EWL 27.4-104.2%; BMI reduction 4.0-24.5 kg/m²), lipedematous nodular fat remained voluminous and symptoms (pain, tenderness, easy bruising, edema, limb heaviness) persisted in 100% of cases, with weight regain accompanied by increased limb volume and worsening symptoms."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1177/1358863x231202769",
+   "title": "National survey of patient symptoms and therapies among 707 women with a lipedema phenotype in the United States",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Tratamentos utilizados: dieta 93,8% / exercício 91,5% / suplementos 59,4% / compressão 45,0% / DLM 43,3% / bypass gástrico 15,7% / lipoaspiração 14,0% Dieta/exercício sem melhora: 52,2% relataram ausência de benefício; apenas 16,0% relataram melhora completa",
+   "note": "The survey reports use of gastric bypass and diet/exercise as therapies and patient-reported lack of benefit, bearing indirectly on whether weight loss alters lipedema symptoms, though it is self-reported and uncontrolled for weight-loss ou",
+   "old_claims": [
+    "SCR-LIP-000387"
+   ],
+   "old_statements": [
+    "In a national survey of 707 women with a lipedema phenotype, 15.7% had undergone gastric bypass and 93.8% used diet, yet 52.2% reported no benefit from diet/exercise and only 16.0% reported complete improvement, indicating limited symptom relief from weight-loss approaches."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1016/j.jpra.2026.01.004",
+   "title": "Lipedema and obesity: A narrative review and treatment protocol",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Cirurgia bariátrica é ineficaz para reduzir os depósitos patológicos de gordura do lipedema (confirmado pela diretriz alemã S2K) — embora possa controlar obesidade comórbida e melhorar saúde metabólica",
+   "note": "The review directly addresses bariatric surgery effects on lipedema, indicating bariatric surgery does NOT reduce lipedema-specific fat deposits but may help comorbid obesity, refining the affirmative question.",
+   "old_claims": [
+    "SCR-LIP-000388"
+   ],
+   "old_statements": [
+    "This narrative review reports that bariatric surgery is ineffective at reducing pathological lipedema fat deposits (per the German S2K guideline), although it may control comorbid obesity and improve metabolic health, while liposuction (WAL/tumescent) produces sustained reductions in pain and leg volume (e.g., 6.9% volume reduction and pain VAS dropping from 7.2 to 2.1 at 6 months in Rapprich et al.)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1097/gox.0000000000003553",
+   "title": "Survey Outcomes of Lipedema Reduction Surgery in the United States",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Mulheres com lipedema nos EUA relataram benefícios significativos após cirurgia de redução de lipedema, incluindo melhora em qualidade de vida, dor, mobilidade e tamanho de roupas. No entanto, complicações como fibrose, crescimento de TCA, linfedema e pele frouxa são preocupantes",
+   "note": "Self-reported cross-sectional survey supporting lipedema reduction surgery as a management option with measured benefits and complications; relevant to overall management but limited by self-report and selection bias.",
+   "old_claims": [
+    "SCR-LIP-000326"
+   ],
+   "old_statements": [
+    "In a US survey of 148 women with lipedema who underwent reduction surgery (61% tumescent liposuction, 38% water-assisted), 84% reported improved quality of life, 86% had reduced pain, mobility improved across stages, and 90% would repeat the procedure, though complications including new fibrosis (27.7%), adipose tissue growth in untreated areas, new lipo-lymphedema, and loose skin (75%) were reported."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1111/dth.14534",
+   "title": "Disease progression and comorbidities in lipedema patients: A 10‐year retrospective analysis",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Redução do IMC em 2,7 kg/m² (IQR 1,1-5,2) e do tamanho de meia compressiva em 2 (IQR 2-4) após 20 meses, mantidos estáveis até 34 meses (sem reganho; p>0,9999)",
+   "note": "The article studies liposuction, not bariatric surgery or weight loss as the intervention; it indirectly bears on the question by showing lower BMI (≤35) predicts better outcomes and a small BMI decrease post-op, but does not directly test ",
+   "old_claims": [
+    "SCR-LIP-000390"
+   ],
+   "old_statements": [
+    "In a retrospective study of lipedema patients undergoing multistage lymph-sparing liposuction, BMI decreased by a median of 2.7 kg/m2 and patients with BMI ≤35 had greater symptom (VAS composite 51.6% vs 25.3%) and conservative-therapy-need reduction than those with BMI >35, but liposuction volume did not correlate with symptom or treatment-need reduction; the study did not evaluate bariatric surgery or substantial weight loss as the intervention."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1002/osp4.580",
+   "title": "Effect of a ketogenic diet on pain and quality of life in patients with lipedema: The LIPODIET pilot study",
+   "year": 2021,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "INDEPENDÊNCIA peso-dor: SEM correlação entre perda de peso e redução de dor na semana 7 (r=0,283, p=0,46) — efeito da cetose dissociado do emagrecimento",
+   "note": "Small uncontrolled pilot study addressing whether weight loss (via ketogenic diet) alters lipedema fat volume and symptoms; finds regional thigh fat resistant to weight loss and pain improvement dissociated from weight loss, refining the af",
+   "old_claims": [
+    "SCR-LIP-000391"
+   ],
+   "old_statements": [
+    "In a 7-week eucaloric ketogenic (LCHF) diet pilot study of women with lipedema, weight loss of −4.6±0.7 kg was accompanied by reduced waist (−4.3 cm) and hip (−2.2 cm) circumferences but NO significant thigh reduction (p=0.20), and pain reduction at week 7 did not correlate with weight loss (r=0.283, p=0.46), indicating lipedematous fat resists weight-loss-driven volume change and symptom benefits appear independent of weight loss."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1210/jcemcr/luag018",
+   "title": "Moderate weight loss decreases lipedema-affected body fat mass in a woman who is lean with lipedema.",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "These data suggest weight loss decreases lipedema-affected adipose tissue and demonstrate the therapeutic effect of weight loss on body composition in women with lipedema even if they are normal weight.",
+   "note": "The article tests diet-induced weight loss (not specifically ketogenic/low-carbohydrate) on body fat in lipedema; the dietary macronutrient composition is not specified, so it is on-topic for diet in lipedema but does not directly test a ke",
+   "old_claims": [
+    "SCR-LIP-000414"
+   ],
+   "old_statements": [
+    "In a 56-year-old normal-weight woman with lipedema, 11% diet-induced weight loss reduced upper and lower body fat proportionally (leg fat 44.8% to 45.1% of total; arm fat 9.1% to 9.6%), suggesting weight loss decreases lipedema-affected adipose tissue."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1007/s12262-020-02163-5",
+   "title": "Lower Leg Lifts in Patients After Massive Weight Loss in Obesity-Associated Lipoedema",
+   "year": 2024,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Gordura do lipedema persiste integralmente após perda de peso massiva (87 kg perdidos): a perda ponderal reduz o tecido adiposo visceral e subcutâneo de distribuição regular, mas não a deposição patológica lipedematosa nos membros inferiores",
+   "note": "Case report explicitly states lipedema fat persists after 87 kg weight loss, qualifying the affirmative that weight loss alters lipedema fat; symptom relief came from surgery, not the weight loss itself.",
+   "old_claims": [
+    "SCR-LIP-000525"
+   ],
+   "old_statements": [
+    "In a case report of a patient who lost 87 kg after bariatric surgery, lipedematous fat in the lower limbs persisted entirely despite massive weight loss, while subsequent lower leg lift surgery improved mobility and reduced lipedema symptoms (pain, heaviness, edema)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.3390/jcm15218643",
+   "title": "A Multimodal Intervention Including Tirzepatide in Women with Lipedema and Excess Body Weight: A Pilot Case Series.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "During the first 8-9 weeks, all participants received only a low-carbohydrate Mediterranean diet and recommendations for aerobic and resistance exercise; no participant received tirzepatide during this phase.",
+   "note": "The study included a low-carbohydrate Mediterranean diet phase relevant to the question, but as an uncontrolled multimodal pilot case series it cannot isolate the diet's effect; the authors explicitly state changes cannot be attributed to a",
+   "old_claims": [
+    "SCR-LIP-000484"
+   ],
+   "old_statements": [
+    "In a pilot case series of five women with lipedema and excess body weight, an 8-9 week low-carbohydrate Mediterranean diet plus exercise (T1-T2), followed by tirzepatide in four participants, was associated with weight loss of 7.7-17.1 kg and generally decreased lower-limb circumferences and subcutaneous fat thickness, though changes could not be attributed to any single component."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.7759/cureus.115591",
+   "title": "Conflicting Molecular Hallmarks of Lipedema Reflect Cell-Composition Confounding: A Reanalysis and Germline Reframing.",
+   "year": 2026,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Pain and adipose volume are dissociable across treatments, so body weight is a confounded endpoint.",
+   "note": "The article does not directly test bariatric surgery or substantial weight loss, but its synthesis argues that pain and adipose volume are dissociable, implying weight-based interventions may not track symptom outcomes — a qualifying caveat",
+   "old_claims": [
+    "SCR-LIP-000526"
+   ],
+   "old_statements": [
+    "In a synthesis of published lipedema treatment cohorts, pain and adipose volume behaved as dissociable endpoints, indicating body weight is a confounded endpoint and that weight-based treatment effects may not track symptom relief."
+   ],
+   "old_role_in_question": "refines"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema limb fat and disproportion are often reported to persist after bariatric surgery despite substantial overall weight loss.",
+   "role": "contradicting",
+   "rationale": "Persistence rests on case reports and narrative reviews largely citing the same earlier source; a controlled cohort found thigh volume fell comparably to controls, so evidence is mixed. Diet-induced loss is treated separately in P3, where the best-graded study found proportional leg fat loss.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Systematic review of 7 studies (51 patients): mean total weight loss 33.9%, but only 1 study (n=31) reported significant thigh volume reduction; others showed persistent or worsened lower-limb disproportionality; surgery role adjunctive."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Two patients lost 64 kg and 73.9 kg after bariatric surgery, but thigh (78-83 cm) and calf (54-55 cm) circumferences remained virtually unchanged or increased; limb pain persisted and compression remained necessary."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Two patients after gastric bypass (62% excess weight loss) and sleeve gastrectomy (49%) retained lower-limb lipedematous fat despite substantial weight loss."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Patient who lost 87 kg after bariatric surgery retained lower-limb lipedematous fat entirely; symptoms improved only after subsequent lower leg lift surgery."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Review states, citing earlier work, that bariatric surgery is not effective for lipedema; lipedematous fat does not respond to caloric restriction or malabsorptive procedures, weight being lost in unaffected areas."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Review describes lipedema fat as persistent, with therapeutic resistance to hypocaloric diet, exercise and bariatric surgery."
+    },
+    {
+     "e": "E8",
+     "stance": "context",
+     "finding": "Review states weight is lost only in unaffected areas while lipedematous regions remain unchanged and bariatric surgery produces no results in lipedema.",
+     "secondary_of": "E6"
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Narrative review, citing the German S2k guideline, states bariatric surgery does not reduce pathological lipedema fat deposits, though it may control comorbid obesity and improve metabolic health."
+    },
+    {
+     "e": "E5",
+     "stance": "contradicting",
+     "finding": "Cohort (mean BMI 48.5): bariatric surgery reduced adjusted thigh volume by 33.4% at first follow-up, comparable to 37.0% in controls (p>0.999); greater reduction with BMI >=50 and correlated with excess BMI loss."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 8,
+   "store_key": "G-00172"
+  },
+  {
+   "key": "P2",
+   "statement": "Weight loss, including after bariatric surgery, may fail to relieve limb pain and other core lipedema symptoms in many patients.",
+   "role": "contradicting",
+   "rationale": "Small uncontrolled bariatric series and a systematic review report persistent symptoms; a patient survey on diet and exercise qualifies the picture.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "13 patients losing >50 kg (BMI 50 to 32) after bariatric surgery: lipedema pain VAS 7.3 before vs 7.9 after (p=0.28); extremity fat persisted."
+    },
+    {
+     "e": "E4",
+     "stance": "context",
+     "secondary_of": "E3",
+     "finding": "Scoping review of 5 studies (49 patients): despite excess weight loss >70%, pain VAS rose from 7.30 to 7.92 after surgery."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "7 women after bariatric surgery (%EWL 27.4-104.2%): nodular lipedema fat remained voluminous and pain, tenderness, bruising, edema and heaviness persisted in all; weight regain increased limb volume and symptoms."
+    },
+    {
+     "e": "E14",
+     "stance": "refines",
+     "finding": "Survey of 707 women with lipedema phenotype: 93.8% used diet and 15.7% had gastric bypass; 52.2% reported no benefit from diet/exercise and only 16.0% complete improvement."
+    },
+    {
+     "e": "E2",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Conference abstract of the same systematic review: meaningful weight loss without consistent improvement of core lipedema features; adjunctive rather than primary role."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00173"
+  },
+  {
+   "key": "P3",
+   "statement": "Diet-induced weight loss may reduce leg adipose tissue in lipedema roughly in proportion to fat loss elsewhere in the body.",
+   "role": "supporting",
+   "rationale": "A prospective study and a case report support proportional loss, a chart analysis contradicts it; reconciled with P1 because it concerns modest diet-induced loss, not bariatric surgery. A combined diet and drug series is context only.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Women with obesity and lipedema: ~9% diet-induced weight loss reduced leg and abdominal fat mass by similar relative amounts and improved insulin sensitivity; inflammation and fibrosis markers did not change."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Normal-weight woman with lipedema: 11% diet-induced weight loss reduced upper- and lower-body fat proportionally (leg fat 44.8% to 45.1% of total fat)."
+    },
+    {
+     "e": "E21",
+     "stance": "context",
+     "finding": "5 women: low-carbohydrate Mediterranean diet plus exercise, then tirzepatide in 4, with 7.7-17.1 kg weight loss and generally decreased lower-limb circumferences and subcutaneous fat thickness; effects not attributable to any single component."
+    },
+    {
+     "e": "E10",
+     "stance": "contradicting",
+     "finding": "Review and chart analysis of 46 women: lifestyle change and weight loss did not reduce lipedema fat, which remained refractory to diet and exercise."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00174"
+  },
+  {
+   "key": "P4",
+   "statement": "Changes in lipedema pain may be dissociated from changes in body weight or adipose volume.",
+   "role": "refines",
+   "rationale": "A ketogenic diet pilot found pain reduction uncorrelated with weight loss; a synthesis supports dissociation, while a liposuction cohort suggests partial association with BMI.",
+   "evidence": [
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "7-week ketogenic diet pilot: weight loss -4.6 kg with reduced waist (-4.3 cm) and hip (-2.2 cm) but no significant thigh reduction (p=0.20); pain reduction did not correlate with weight loss (r=0.283, p=0.46)."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Synthesis of published treatment cohorts: pain and adipose volume behaved as dissociable endpoints, making body weight a confounded endpoint."
+    },
+    {
+     "e": "E17",
+     "stance": "refines",
+     "finding": "Multistage liposuction cohort: BMI fell by median 2.7 kg/m2; liposuction volume did not correlate with symptom reduction, and BMI <=35 had greater symptom reduction (51.6% vs 25.3%) than BMI >35."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00175"
+  },
+  {
+   "key": "P5",
+   "statement": "Liposuction for lipedema is associated with self-reported reductions in pain and improved mobility and quality of life.",
+   "role": "context",
+   "rationale": "Off the weight-loss axis; kept as comparator. Replaces G-00005, whose edema, bruising and heaviness outcomes are not reported here.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "US survey of 148 women after reduction surgery: 84% improved quality of life, 86% reduced pain, mobility improved; complications included new fibrosis (27.7%) and loose skin (75%)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00176"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema limb fat and disproportion are often reported to persist after bariatric surgery despite weight loss, though one cohort found substantial thigh volume reduction.",
+    "severity": "minor",
+    "note": "Support is mostly case reports, small series and narrative reviews citing the same early report (E6/E8, and likely E15/E7). E5 and E12 show leg fat does fall with weight loss, so 'persist' is true of disproportion and symptoms more than of absolute fat. E13 also belongs here. Hedged as 'reported', hence minor."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [
+     "E14"
+    ],
+    "misplaced": [],
+    "suggested_statement": "Weight loss, including after bariatric surgery, may fail to relieve limb pain and other core lipedema symptoms in some patients.",
+    "severity": "minor",
+    "note": "Evidence is small case series (E3 titled 'persistent pain', a selected group) and a review; 'many patients' is not quantifiable. E14 is a diet/exercise survey, not weight loss outcome, and E1 (primary of E2, reports no pain improvement) is absent. Bundles diet and surgery."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Limited evidence suggests diet-induced weight loss may reduce leg fat in lipedema about as much as fat elsewhere, though reports conflict.",
+    "severity": "minor",
+    "note": "One moderate cohort (E12) plus a single case (E19) and a not-attributable pilot (E21); E10 and E18 (no thigh reduction) conflict. Stated more generally than the evidence allows, though hedged with 'may'."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Changes in lipedema pain may be dissociated from changes in body weight, with limited evidence for adipose volume.",
+    "severity": "minor",
+    "note": "Bundles body weight and adipose volume. E18 is a tiny pilot where a non-significant correlation is weak evidence of independence; E17 also shows lower BMI associated with greater symptom reduction, which cuts the other way. E3 and E12 would support this too."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Single self-report survey, hedged 'associated with'; fine as context. E17 and E15 (symptom reduction after liposuction) belong here rather than elsewhere."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "The most direct quantitative evidence of fat-volume change after bariatric surgery (E5: thigh volume down by a third, similar to controls) has no proposition of its own and appears only as a contradicting item under the negative P1; P1 and P3 are not reconciled with E5/E12.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E2 is listed as secondary_of E1, but E1 (which reports no pain improvement and is the primary) is not in the P2 findings.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000024.cons2.json",
+   "ver": "SQ-LIP-000024.ver2.json"
+  }
+ ]
+}

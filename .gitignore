@@ -67,3 +67,9 @@ site/pt/c/
 
 # Zenodo bundles are build artifacts (they live on Zenodo)
 osf/*.zip
+
+# Working files of the agent-mode consolidation (prompts and drafts); results live in consolidation/*.json
+registry/consolidation/work/*
+!registry/consolidation/work/twins.json
+!registry/consolidation/work/twins_reasons.md
+registry/consolidation/run_all.log

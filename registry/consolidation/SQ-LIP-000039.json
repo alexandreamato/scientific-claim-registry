@@ -1,0 +1,721 @@
+{
+ "question": "SQ-LIP-000039",
+ "text": "Does lipedema progress to lymphedema (lipo-lymphedema)?",
+ "n_old_claims": 19,
+ "n_items": 21,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: The central question (conversion of lipedema to lymphedema) has no clean proposition: P1 mixes the staging concept, mechanism and absence of cohort evidence, and the opposing 'distinct entity, not a precursor' view (E21, E17) is buried as a contradicting finding inside a supporting proposition.",
+  "[minor] set: E19 (lymphoscintigraphy normal in 61.4 percent, secondary lymphedema 11.8 percent) and E9 (no severe cases) are split between P1 and P2 and not reconciled with the 'many women' wording of P2.",
+  "[minor] set: P4 contains a claim ('not chronicity, stage or lymphoscintigraphic abnormality' / 'rather than disease duration') not found in the item text; role 'contradicting' does not match the proposition content.",
+  "[minor] P1: not fully supported; two ideas; misplaced ['E21', 'E17'] — suggested: Lipo-lymphedema is often described as an advanced stage or complication of lipedema, but longitudinal evidence that lipedema converts to lymphedema is lacking. (Bundles three ideas (described as a stage, attributed to lymphatic overload, no cohort evidence of conversion) and places the opposing view (E21 distinct entity, E17) inside a 'supporting' proposition. Staging reviews (E6, E7, E8, E12) restate a classification rather than evidence of conversion. E2 is a single post-surgical case. Hedged 'frequently described' so wording matches thin evidence. E9 (no severe cases, not necessarily progression) bears on this and sits under P2.)",
+  "[minor] P2: not fully supported; overgeneralized; two ideas; misplaced ['E19'] — suggested: Lymphatic transport abnormalities are reported in a substantial share of women with lipedema, often mild; their relation to stage remains uncertain. ('Usually mild' rests on E9 alone; E3 shows mean transport index above the pathologic threshold in severe disease. E19 (systematic review: lymphoscintigraphy normal in 61.4 percent) is the strongest item on prevalence of abnormality and is placed under P1; the 'many women' wording sits uneasily with it.)",
+  "[minor] P3: not fully supported; overgeneralized — suggested: Subclinical and clinical lymphedema in women with lipedema may be more frequent at higher body mass index, from limited cross-sectional data. (Single cross-sectional study (E5) with E15 a same-group review; no non-lipedema obese comparison, so the lymphedema may reflect obesity rather than lipedema progression. E20 (BMI change tracks volume change) is consistent.)",
+  "[minor] P4: not fully supported; overgeneralized; two ideas; stance errors ['E20'] — suggested: Limb volume in lipedema appears stable in most patients over several years, with volume change associated with changes in body mass index. ('Rather than disease duration' and the finding text 'not chronicity, stage or lymphoscintigraphic abnormality' are not in E20's quote or old_statement, which give only 62/28/10 percent stability and association with BMI and waist-to-height. Also role 'contradicting' is questionable: limb volume change does not address progression to lymphedema, and 28 percent progressed.)",
+  "[minor] P5: not fully supported; two ideas — suggested: Advanced stage or coexisting lipo-lymphedema may be associated with worse physical function in lipedema. (One survey of operated women (selection), weak correlation (r2 0.11), stage and lipo-lymphedema conflated. Hedged with 'may', so acceptable; E6 (immobility) not placed here.)",
+  "[minor] P6: not fully supported; overgeneralized — suggested: Coexisting lymphostasis may add a reducible fluid component to lipedema limbs, while adipose tissue persists after decongestive therapy. (A single case report generalised; hedged with 'may'. Peripheral to the question of progression.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round + arbitration)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "9 afirmações não atingiram o limiar de suficiência de evidência (critério 4), sinalizando lacunas científicas explícitas: microvasculatura, lipolinfedema",
+   "note": "consensus: lipolymphedema as a complication 3.95 (level B); lymph stasis more evident in advanced stages 4.36",
+   "old_claims": [
+    "SCR-LIP-000018"
+   ],
+   "old_statements": [
+    "Secondary lymphedema (lipolymphedema) can develop as a complication of advanced lipedema due to chronic lymphatic overload, with lymph stasis becoming more evident at advanced disease stages."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.14740/jmc3806",
+   "title": "Lipedema in Male Progressing to Subclinical and Clinical Systemic Lymphedema",
+   "year": 2022,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The physical examination revealed lipedema and lymphedema in the right lower limb.",
+   "note": "Single case report describing co-occurrence and progression of lipedema with lymphedema and obesity as aggravating factor; it documents overlap and progression rather than directly testing whether lipedema is a distinct disease entity, so i",
+   "old_claims": [
+    "SCR-LIP-000261"
+   ],
+   "old_statements": [
+    "In a 3-year follow-up case report of a 53-year-old male, lipedema co-occurred with post-surgical right lower-limb lymphedema and progressed from subclinical to clinical systemic lymphedema detected by multi-segment bioimpedance, with the authors reporting that lymphedema is detected in 50% of individuals with lipedema and BMI over 30 kg/m2."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1055/s-0039-1697904",
+   "title": "Uncovering Lymphatic Transport Abnormalities in Patients with Primary Lipedema",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "The mean TI was significantly greater for extremities with severe (stage 3/4) lipede",
+   "note": "This cross-sectional study directly addresses lymphatic dysfunction in lipedema and its association with clinical staging, providing objective lymphoscintigraphic evidence that lymphatic transport abnormalities worsen with lipedema severity",
+   "old_claims": [
+    "SCR-LIP-000123"
+   ],
+   "old_statements": [
+    "Lymphoscintigraphy in 19 lipedema patients revealed pathologic lymphatic transport (TI >10) in 63.2% of lower extremities, with significantly higher transport index scores in severe (stage 3/4) versus mild/moderate (stage 1/2) lipedema (mean TI 15.1 vs 9.7, p=0.049), indicating progressive lymphatic dysfunction associated with clinical severity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1002/oby.23458",
+   "title": "Lymphatic function and anatomy in early stages of lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The lymphatic failure is NOT involved in the etiology of early lipedema, although it likely contributes to progression to lipolymphedema.",
+   "note": "Pilot study with 20 participants addressing lymphatic anatomy and function in early lipedema; directly relevant to the question of progression to lymphedema and functional disability, but refines rather than simply supports or contradicts b",
+   "old_claims": [
+    "SCR-LIP-000124"
+   ],
+   "old_statements": [
+    "In early-stage (I-II) lipedema, near-infrared fluorescence lymphatic imaging reveals dilated lymphatic vessels and increased propulsion rates but no dermal backflow, indicating that lymphatic failure is absent in early lipedema but likely contributes to progression toward lipolymphedema."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.7759/cureus.11854",
+   "title": "Lipedema and the Evolution to Lymphedema With the Progression of Obesity",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Patients with lipedema can develop edema even when their weight is within the standards of normality. However, obesity is an aggravating factor, as the prevalence of lipedema increases progressively with the increase in weight.",
+   "note": "The study treats lipedema as a clinically diagnosed entity and examines its relationship to obesity and lymphedema, showing lipedema can occur at normal weight (distinct from obesity) but progresses toward lymphedema with rising BMI. This r",
+   "old_claims": [
+    "SCR-LIP-000263"
+   ],
+   "old_statements": [
+    "In 258 women with clinically diagnosed lipedema, the prevalence of subclinical systemic lymphedema and clinical lower-limb lymphedema increased progressively with BMI (Group I <30: 16.3% subclinical, 6.1% clinical; Group II 30-40: 48.3% and 51.6%; Group III 40-50: 72.2% and 77.8%; p=0.0001), and lipedema patients could develop edema even at normal weight."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1097/psn.0000000000000245",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Early diagnosis and treatment are crucial, as the disease is progressive and can lead to immobility as well as a significant decrease in the qualit",
+   "note": "This is a narrative/educational review article summarizing existing literature on lipedema. It directly addresses progression to lymphedema (lipolymphedema, Stage IV) and functional disability (immobility, decreased quality of life), suppor",
+   "old_claims": [
+    "SCR-LIP-000129"
+   ],
+   "old_statements": [
+    "Lipedema is described as a progressive disease that can advance to lipolymphedema (Stage IV, with dorsal foot edema and positive Stemmer sign) and lead to immobility and significant decrease in quality of life."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a distinct, progressive condition requiring early recognition and intervention.",
+   "note": "The review characterizes lipedema as progressive with impaired mobility and quality of life impact, supporting functional disability; it distinguishes lipedema from lymphedema but does not quantify progression to lymphedema, relying on obse",
+   "old_claims": [
+    "SCR-LIP-000129"
+   ],
+   "old_statements": [
+    "Lipedema is described as a progressive disease that can advance to lipolymphedema (Stage IV, with dorsal foot edema and positive Stemmer sign) and lead to immobility and significant decrease in quality of life."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1002/oby.22597",
+   "title": "Lipedema: A Call to Action!",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "4 estágios (I: pele lisa, hipodermis aumentada; II: nódulos palpáveis peau d'orange; III: pregas/reentrâncias com massas deformantes; IV: lipolinfedema com Stemmer positivo)",
+   "note": "Narrative/systematic review describing lipedema staging where stage IV is lipolymphedema (positive Stemmer), consistent with progression to lymphedema and deforming morphology affecting function, but it does not present quantitative data on",
+   "old_claims": [
+    "SCR-LIP-000129"
+   ],
+   "old_statements": [
+    "Lipedema is described as a progressive disease that can advance to lipolymphedema (Stage IV, with dorsal foot edema and positive Stemmer sign) and lead to immobility and significant decrease in quality of life."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1016/j.remn.2018.06.008",
+   "title": "Hallazgos linfogammagráficos en pacientes con lipedema",
+   "year": 2018,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lymphoscintigraphy showed alterations in 47% of the patients, most were low (35.9%) or low-moderate grade (48.7%). None of the patients were severely affected",
+   "note": "Prospective cohort of 83 patients with clinical lipedema undergoing lymphoscintigraphy; directly addresses lymphatic involvement in lipedema across stages, relevant to the question of progression to lymphedema and functional disability, tho",
+   "old_claims": [
+    "SCR-LIP-000130"
+   ],
+   "old_statements": [
+    "Lymphoscintigraphy revealed abnormalities in 47% of lipedema patients across all clinical stages (including stage 1), with low-to-moderate grade lymphatic dysfunction predominating and no severe cases, suggesting subcutaneous lymphatic impairment coexists with lipedema but does not necessarily represent progression to frank lymphedema."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1097/gox.0000000000003553",
+   "title": "Survey Outcomes of Lipedema Reduction Surgery in the United States",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Correlação inversa significativa entre estágio/lipo-linfedema e escore LEFS (r²=0,11; P=0,0001); Stage 1/2 com LEFS significativamente maior que lipo-linfedema",
+   "note": "This self-reported survey documents the existence of lipo-lymphedema as an advanced presentation and its association with worse functional (LEFS) scores and mobility impairment, providing contextual evidence that lipedema can co-occur with ",
+   "old_claims": [
+    "SCR-LIP-000330"
+   ],
+   "old_statements": [
+    "In a survey of US women with lipedema undergoing reduction surgery, lipo-lymphedema cases showed worse functional disability scores than earlier-stage lipedema (significant inverse correlation between stage/lipo-lymphedema and LEFS score, r²=0.11, P=0.0001), and surgery improved mobility most in advanced stages (stage 3: 96%, lipo-lymphedema: 79%)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.23736/s0392-9590.21.04604-6",
+   "title": "Update in the management of lipedema",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "transporte linfático prejudicado em estágios precoces",
+   "note": "The review addresses lymphatic dysfunction and clinical staging relevant to potential progression toward lymphedema, but as a narrative review it provides background/context rather than direct evidence quantifying progression to lymphedema ",
+   "old_claims": [
+    "SCR-LIP-000332"
+   ],
+   "old_statements": [
+    "This non-systematic review describes lipedema as having a 4-stage clinical classification with documented lymphatic dysfunction (abnormal lymphoscintigraphic patterns, impaired lymphatic transport in early stages, lymphatic aneurysmal structures) and reports impaired functional and cardiovascular parameters, but does not quantify progression rates to lymphedema or measure functional disability outcomes."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Quatro estágios progressivos (E1 nódulos perolados; E2 depressões + fascia perilobular contraída; E3 lobos deformantes + perda de elasticidade; E4 lipolinfedema)",
+   "note": "The review explicitly outlines a progressive staging system ending in lipolymphedema (stage 4) and associates lipedema with chronic pain and functional/discomfort symptoms, supporting the affirmative direction; however, it is a narrative sy",
+   "old_claims": [
+    "SCR-LIP-000333"
+   ],
+   "old_statements": [
+    "This narrative review describes lipedema as progressing through four stages culminating in stage 4 lipolymphedema, with chronic pain, swelling, and reported lymphovascular dysfunction (e.g., decreased PROX-1, increased VEGFR-3/VEGF-C, endothelial permeability), while noting it remains unclear whether lymphatic dysfunction is cause or consequence."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3390/ijms23126621",
+   "title": "Current Mechanistic Understandings of Lymphedema and Lipedema: Tales of Fluid, Fat, and Fibrosis",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Transporte linfático comprometido no lipedema (5 estudos citados) — evidência clínica de doença linfática",
+   "note": "The review discusses mechanistic overlap and impaired lymphatic transport in lipedema, touching on the lipedema-lymphedema relationship, but frames it as a hypothesized/distinct pathophysiology rather than confirming clinical progression to",
+   "old_claims": [
+    "SCR-LIP-000334"
+   ],
+   "old_statements": [
+    "This comparative narrative review describes lipedema and lymphedema as sharing a 'trifecta' of fluid, fat, and fibrosis but in reverse temporal order (lipedema: fat→fibrosis→inflammation→fluid; lymphedema: fluid→inflammation→fibrosis→fat), and reports that lipedema shows elevated VEGF-C and PF4 with evidence of impaired lymphatic transport in cited studies, but lacks the T-cell inflammatory signature and lymphatic architectural changes characteristic of lymphedema."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1089/lrb.2021.0039",
+   "title": "Physical Therapy in Women with Early Stage Lipedema: Potential Impact of Multimodal Manual Therapy, Compression, Exercise, and Education Interventions",
+   "year": 2021,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Participants with Stage 1-2 lipedema and early Stage 0-1 lymphedema (n = 5, age = 38.4 ± 13.4 years, body mass index = 27.2 ± 4.3 kg/m2) underwent nine visits of physical therapy in 6 weeks for management of symptoms impacting functional mobility and QoL.",
+   "note": "Small (n=5) uncontrolled proof-of-principle therapy study; it enrolled patients with lipedema plus early lymphedema and addressed functional mobility, providing contextual evidence that lipedema can coexist with lymphedema and impair functi",
+   "old_claims": [
+    "SCR-LIP-000336"
+   ],
+   "old_statements": [
+    "In a proof-of-principle study of 5 women with Stage 1-2 lipedema and concurrent early Stage 0-1 lymphedema, multimodal physical therapy reduced pain (VAS 4.6 to 0.0) and improved functional scale scores (PSFS 4.5 to 8.3), with the enrollment criteria indicating coexistence of lipedema and early-stage lymphedema affecting functional mobility."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.14740/jocmr4666",
+   "title": "Hypotheses and Evolution in the Current Treatment of Lipedema Syndrome",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Pacientes com lipedema e BMI <30 kg/m² podem desenvolver linfedema sistêmico subclínico e clínico bilateral em MMII (de Godoy 2019, 2020) À medida que paciente se torna obesa, há aumento significativo de linfedema sistêmico subclínico/clínico em MMII, progredindo para tronco e MMSS",
+   "note": "Narrative review/hypothesis article asserting that lipedema can be accompanied by progressive subclinical-to-clinical systemic lymphedema and increased limb volume; supports the affirmative direction but is opinion/hypothesis-driven with no",
+   "old_claims": [
+    "SCR-LIP-000338"
+   ],
+   "old_statements": [
+    "This review proposes that lipedema patients (including those with BMI <30 kg/m²) can develop subclinical and clinical bilateral systemic lymphedema in the lower limbs, which worsens and progresses to the trunk and upper limbs as obesity develops, and contributes to increased limb volume requiring exclusion before liposuction."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1159/000342073",
+   "title": "Is Lymphostasis an Aggravant of Lipedema?",
+   "year": 2012,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "A intervenção terapêutica apenas reduz o tamanho dos membros, mas as características do lipedema (acúmulo de tecido adiposo) permanecem.",
+   "note": "The article treats lipedema and lymphedema as distinct co-occurring diagnoses and notes that lymphatic drainage reduces limb size while the lipedema adipose accumulation persists, implying lipedema is separate from lymphedema but that regio",
+   "old_claims": [
+    "SCR-LIP-000444"
+   ],
+   "old_statements": [
+    "In a 54-year-old woman diagnosed with concomitant lipedema and grade I lymphedema, manual and mechanical lymph drainage with compression reduced leg volume by 10.6% (right) and 6.78% (left) in 3 days, while the lipedema-associated adipose accumulation itself remained unchanged, suggesting regional cutaneous lymphostasis aggravates lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1097/00006534-199411000-00014",
+   "title": "Lipedema",
+   "year": 1994,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "These findings are representative of a clinical entity known as lipedema, which is distinct from lymphedema and for which treatment may be different.",
+   "note": "The article argues that lipedema is distinct from lymphedema and does not progress to it, contradicting the premise that lipedema progresses to lymphedema. However, it is a small retrospective case series (n=9) and does not directly study l",
+   "old_claims": [
+    "SCR-LIP-000128"
+   ],
+   "old_statements": [
+    "In a retrospective review of 250 lower extremity lymphedema cases, 9 patients with lipedema showed bilateral symmetric swelling sparing the feet, absent Stemmer sign, and consistent fat pads anterior to the lateral malleoli, distinguishing lipedema as a separate clinical entity from lymphedema that requires different treatment."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1007/3-540-28043-x_3",
+   "title": "Lipedema and Lymphatic Edema",
+   "year": 2006,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Em estágios avançados, o lipedema pode obstruir vasos linfáticos e causar linfedema secundário (lipo-linfedema) — progressão bem documentada pela linfocintilografia",
+   "note": "Narrative review states that advanced lipedema can progress to secondary lymphedema (lipo-lymphedema), a well-recognized complication, supporting the progression component of the question; functional disability is not directly quantified.",
+   "old_claims": [
+    "SCR-LIP-000494"
+   ],
+   "old_statements": [
+    "This review reports that advanced lipedema can obstruct lymphatic vessels and progress to secondary lymphedema (lipo-lymphedema), documented by lymphoscintigraphy, with lymphatic capillary microaneurysms observed even early, requiring combined complex physical therapy."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1097/gox.0000000000008015",
+   "title": "Lymphoscintigraphic Findings in Patients With Lipedema: A Systematic Review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lymphoscintigraphy findings were normal in 61.4% of patients with lipedema. Tortuous lymph vessels were the most common abnormality (56.8%), followed by collateral lymph vessels (49.1%) and popliteal node visualization (44.0%). Dermal backflow (3.8%) and secondary lymphedema (11.8%) were less freque",
+   "note": "The review reports lymphoscintigraphy patterns in lipedema (mostly normal or overload signs, low dermal backflow) that help distinguish it from lymphedema, but stresses methodological heterogeneity and lack of standardized protocols, qualif",
+   "old_claims": [
+    "SCR-LIP-000429"
+   ],
+   "old_statements": [
+    "In a systematic review of 7 studies (470 patients, 311 with lipedema), lymphoscintigraphy was normal in 61.4% of lipedema patients, with tortuous lymph vessels (56.8%), collateral vessels (49.1%), and popliteal node visualization (44.0%) as the most common abnormalities and dermal backflow rare (3.8%), reflecting lymphatic overload rather than frank insufficiency."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1177/1358863x241306415",
+   "title": "Is lipedema a progressive disease?",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "Stability was observed in 62% of the patients, progression in 28%, and improvement in 10%.",
+   "note": "The cohort found lipedema generally stable, with volume progression driven by weight gain (BMI/WHtR) rather than disease chronicity or stage; lymphoscintigraphic abnormalities were not associated with progression, arguing against inherent p",
+   "old_claims": [
+    "SCR-LIP-000565"
+   ],
+   "old_statements": [
+    "In a prospective cohort of 100 patients with lipedema (average follow-up 4.6 years), the average limb-volume change was 2.8%, with 62% classified as stable (within ±10%), 28% as progressed and 10% as improved; volume change was positively associated with increases in BMI and in waist-to-height ratio, which the authors interpret as a relationship between fat gain and lipedema progression."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1007/s00105-010-1987-7",
+   "title": "Dicker durch Fett oder Wasser — Lipohyperplasia dolorosa vs. Lymphödem",
+   "year": 2010,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipohyperplasia dolorosa and lymphedema are completely different disease entities, which are both, however, classified under lymphology.",
+   "note": "The article explicitly frames lipedema and lymphedema as completely different entities with distinct etiologies, which argues against the premise that lipedema progresses into lymphedema; it does not report longitudinal progression or funct",
+   "old_claims": [
+    "SCR-LIP-000495"
+   ],
+   "old_statements": [
+    "This review characterizes lipohyperplasia dolorosa (lipedema) and lymphedema as completely different disease entities, with lipedema being a congenital fat distribution disorder rather than a precursor that progresses into lymphedema."
+   ],
+   "old_role_in_question": "contradicting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipo-lymphedema is frequently described as an advanced stage or complication of lipedema attributed to chronic lymphatic overload, though cohort evidence of conversion is lacking.",
+   "role": "supporting",
+   "rationale": "Support is a consensus that itself flags lipolymphedema as an evidence gap, reviews, a pilot imaging study and one case; no cohort tracks conversion of lipedema to lymphedema, and one review rejects the link.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Delphi consensus agreed lipolymphedema is a complication (3.95, level B) and lymph stasis is more evident in advanced stages (4.36), while flagging lipolymphedema as an evidence gap."
+    },
+    {
+     "e": "E4",
+     "stance": "refines",
+     "finding": "NIRF imaging in early-stage lipedema: dilated vessels and increased propulsion without dermal backflow; lymphatic failure absent in early disease but likely contributes to progression to lipolymphedema."
+    },
+    {
+     "e": "E19",
+     "stance": "refines",
+     "finding": "Systematic review (311 lipedema patients): lymphoscintigraphy normal in 61.4%; secondary lymphedema in 11.8% and dermal backflow in 3.8%, pattern read as overload rather than insufficiency."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Case report of a man with lipedema and post-surgical limb lymphedema: over 3 years, progression from subclinical to clinical systemic lymphedema by bioimpedance."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Review states advanced lipedema can obstruct lymphatics and cause secondary lymphedema documented by lymphoscintigraphy, with lymphatic microaneurysms seen even early."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Review describes lipedema as progressive, advancing to stage IV lipolymphedema with dorsal foot edema and positive Stemmer sign, leading to immobility."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Review describes four stages, stage IV being lipolymphedema with positive Stemmer sign."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Review describes four progressive stages culminating in stage 4 lipolymphedema, noting it is unclear whether lymphatic dysfunction is cause or consequence."
+    },
+    {
+     "e": "E7",
+     "stance": "context",
+     "finding": "Systematic review characterizes lipedema as a distinct, progressive condition requiring early recognition, without quantifying progression to lymphedema."
+    },
+    {
+     "e": "E14",
+     "stance": "context",
+     "finding": "Five women with early lipedema had concurrent early-stage lymphedema at enrolment in a physical therapy study (pain VAS 4.6 to 0.0 after therapy)."
+    },
+    {
+     "e": "E17",
+     "stance": "context",
+     "finding": "Among 250 lymphedema referrals, 9 lipedema patients showed symmetric foot-sparing swelling and negative Stemmer sign, framed as an entity distinct from lymphedema."
+    },
+    {
+     "e": "E21",
+     "stance": "contradicting",
+     "finding": "Review frames lipohyperplasia dolorosa and lymphedema as completely different disease entities, lipedema being a fat distribution disorder rather than a precursor of lymphedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 12,
+   "store_key": "G-00216"
+  },
+  {
+   "key": "P2",
+   "statement": "Lymphatic transport abnormalities are reported in many women with lipedema and are usually mild; whether they worsen with stage remains uncertain.",
+   "role": "refines",
+   "rationale": "Abnormalities appear across all stages and are mostly low grade; the only stage gradient comes from one small study.",
+   "evidence": [
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "In 83 patients, lymphoscintigraphic alterations in 47% across all stages including stage 1, mostly low or low-moderate grade, none severe."
+    },
+    {
+     "e": "E3",
+     "stance": "refines",
+     "finding": "Lymphoscintigraphy in 19 patients: pathologic transport (TI >10) in 63.2% of limbs; higher TI in stage 3/4 than stage 1/2 (15.1 vs 9.7, p=0.049)."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Review reports abnormal lymphoscintigraphic patterns and impaired lymphatic transport already in early stages, without quantifying progression to lymphedema."
+    },
+    {
+     "e": "E13",
+     "stance": "context",
+     "finding": "Review cites impaired lymphatic transport in lipedema but notes it lacks the T-cell inflammatory signature and lymphatic architectural changes of lymphedema, with fluid arising late."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00217"
+  },
+  {
+   "key": "P3",
+   "statement": "Lymphedema in people with lipedema is reported to be more frequent at higher body mass index.",
+   "role": "supporting",
+   "rationale": "Rests on one cross-sectional series (E5), re-reported by the same group's review (E15); cross-sectional data cannot show change over time.",
+   "evidence": [
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "In 258 women, subclinical and clinical lymphedema were more frequent with higher BMI (<30: 16.3% and 6.1%; 30-40: 48.3% and 51.6%; 40-50: 72.2% and 77.8%; p=0.0001); edema also at normal weight."
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "secondary_of": "E5",
+     "finding": "Review by the same group proposes that lipedema patients, including BMI <30, develop systemic lymphedema that worsens and spreads to trunk and arms as obesity develops."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00149",
+   "statement_before_twin_merge": "Subclinical and clinical lymphedema in women with lipedema is reported to be more prevalent at higher body mass index."
+  },
+  {
+   "key": "P4",
+   "statement": "Limb volume in lipedema appears stable in most patients over several years, with volume change associated with changes in body mass index.",
+   "role": "contradicting",
+   "rationale": "A prospective cohort found most patients stable and linked volume change to BMI and waist-to-height gains, not to lymphoscintigraphic abnormalities.",
+   "evidence": [
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "In 100 patients over 4.6 years, 62% stable, 28% progressed, 10% improved (mean volume change 2.8%); change associated with BMI and waist-to-height increases."
+    }
+   ],
+   "statement_before_arbitration": "Lipedema limb volume may remain stable over years in most patients, with change tracking weight gain rather than disease duration.",
+   "wording_source": "verifier",
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00219"
+  },
+  {
+   "key": "P5",
+   "statement": "Functional impairment in lipedema appears to worsen with advancing stage and lipolymphedema, though quantitative data are limited.",
+   "role": "refines",
+   "rationale": "One survey of operated women shows a weak inverse correlation, confounded with stage; limb volume is not addressed here.",
+   "evidence": [
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Survey of operated women: stage and lipo-lymphedema inversely correlated with LEFS function score (r2=0.11, P=0.0001); stage 1/2 scored higher than lipo-lymphedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00211",
+   "statement_before_twin_merge": "Advanced stage or coexisting lipo-lymphedema may be associated with worse physical function in lipedema."
+  },
+  {
+   "key": "P6",
+   "statement": "Coexisting lymphostasis may add a reducible fluid component to limb volume in lipedema, while the adipose accumulation persists.",
+   "role": "refines",
+   "rationale": "A distinct idea from one case, hence hedged.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Case with lipedema and grade I lymphedema: lymph drainage and compression cut leg volume 10.6% and 6.78% in 3 days while lipedema fat remained."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00154",
+   "statement_before_twin_merge": "Coexisting lymphostasis may add a drainable fluid component to lipedema limbs, while the adipose accumulation itself persists after drainage."
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E21",
+     "E17"
+    ],
+    "suggested_statement": "Lipo-lymphedema is often described as an advanced stage or complication of lipedema, but longitudinal evidence that lipedema converts to lymphedema is lacking.",
+    "severity": "minor",
+    "note": "Bundles three ideas (described as a stage, attributed to lymphatic overload, no cohort evidence of conversion) and places the opposing view (E21 distinct entity, E17) inside a 'supporting' proposition. Staging reviews (E6, E7, E8, E12) restate a classification rather than evidence of conversion. E2 is a single post-surgical case. Hedged 'frequently described' so wording matches thin evidence. E9 (no severe cases, not necessarily progression) bears on this and sits under P2."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E19"
+    ],
+    "suggested_statement": "Lymphatic transport abnormalities are reported in a substantial share of women with lipedema, often mild; their relation to stage remains uncertain.",
+    "severity": "minor",
+    "note": "'Usually mild' rests on E9 alone; E3 shows mean transport index above the pathologic threshold in severe disease. E19 (systematic review: lymphoscintigraphy normal in 61.4 percent) is the strongest item on prevalence of abnormality and is placed under P1; the 'many women' wording sits uneasily with it."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Subclinical and clinical lymphedema in women with lipedema may be more frequent at higher body mass index, from limited cross-sectional data.",
+    "severity": "minor",
+    "note": "Single cross-sectional study (E5) with E15 a same-group review; no non-lipedema obese comparison, so the lymphedema may reflect obesity rather than lipedema progression. E20 (BMI change tracks volume change) is consistent."
+   },
+   {
+    "key": "P4",
+    "supported": "no",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [
+     "E20"
+    ],
+    "misplaced": [],
+    "suggested_statement": "Limb volume in lipedema appears stable in most patients over several years, with volume change associated with changes in body mass index.",
+    "severity": "minor",
+    "note": "'Rather than disease duration' and the finding text 'not chronicity, stage or lymphoscintigraphic abnormality' are not in E20's quote or old_statement, which give only 62/28/10 percent stability and association with BMI and waist-to-height. Also role 'contradicting' is questionable: limb volume change does not address progression to lymphedema, and 28 percent progressed.",
+    "resolution": "arbitration: verifier wording adopted (not re-verified)"
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Advanced stage or coexisting lipo-lymphedema may be associated with worse physical function in lipedema.",
+    "severity": "minor",
+    "note": "One survey of operated women (selection), weak correlation (r2 0.11), stage and lipo-lymphedema conflated. Hedged with 'may', so acceptable; E6 (immobility) not placed here."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Coexisting lymphostasis may add a reducible fluid component to lipedema limbs, while adipose tissue persists after decongestive therapy.",
+    "severity": "minor",
+    "note": "A single case report generalised; hedged with 'may'. Peripheral to the question of progression."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "The central question (conversion of lipedema to lymphedema) has no clean proposition: P1 mixes the staging concept, mechanism and absence of cohort evidence, and the opposing 'distinct entity, not a precursor' view (E21, E17) is buried as a contradicting finding inside a supporting proposition.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E19 (lymphoscintigraphy normal in 61.4 percent, secondary lymphedema 11.8 percent) and E9 (no severe cases) are split between P1 and P2 and not reconciled with the 'many women' wording of P2.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P4 contains a claim ('not chronicity, stage or lymphoscintigraphic abnormality' / 'rather than disease duration') not found in the item text; role 'contradicting' does not match the proposition content.",
+    "severity": "minor",
+    "resolution": "resolved by arbitration on P4"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000039.consA.json",
+   "ver": "SQ-LIP-000039.verA.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00221",
+   "into": "G-00154"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00218",
+   "into": "G-00149"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00220",
+   "into": "G-00211"
+  }
+ ]
+}

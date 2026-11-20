@@ -1,0 +1,1008 @@
+{
+ "question": "SQ-LIP-000002",
+ "text": "How common is lipedema, and who does it affect?",
+ "n_old_claims": 25,
+ "n_items": 30,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: Prevalence figure of about 11% is propagated through citation chains (E7, E11, E13, E15, E16, E22, E25) and E2 is a consensus on the same Brazilian estimate as E1; independence is overstated and P1 and P2 partly twin/tension each other.",
+  "[minor] set: Clinic-based proportions (E11, E19, E14, E28, E30) are mixed between P1 and P3; E28 and E14 non-obese/hormonal data scattered across propositions.",
+  "[minor] P1: not fully supported; overgeneralized; misplaced ['E11', 'E19'] — suggested: Questionnaire-based and secondary estimates suggest lipedema may affect a sizeable minority of adult women, though true general-population prevalence is uncertain. (Only primary data is one self-reported screening questionnaire (probable lipedema); E2/E3 restate it, E22 and much of E11/E19 repeat a secondary 11% figure. Clinic proportions (15%, 18.8%, 15-17%) are not general-population prevalence. Stronger 'common rather than rare' wording is in tension with E23/E24 (lower or underestimated figures).)",
+  "[minor] P2: two ideas (Variation is shown (1:72,000 to about 11%). Underdiagnosis and lack of biomarker/ICD code are supported (E24, E7); 'validated diagnostic criteria' is slightly beyond 'no validated biomarker'. Could cite E14/E13 for underdiagnosis.)",
+  "[minor] P3: not fully supported — suggested: Lipedema is found in a minority to sizeable share of patients seen in vein, lymphology or limb-swelling clinics, depending on selection. ('Frequently' is vague: 7.7% in vein clinic, 9/250 (3.6%) in lymphedema series, 71% in a selected edema cohort. E11 (15%, 18.8%) and E19 (15-17%) belong here rather than P1.)",
+  "[minor] P6: misplaced ['E21', 'E9', 'E6', 'E28'] (E15 finding is mainly a review statement. Puberty onset 57% (E21), 62.2% adolescent (E9), 63.8% hormonal (E28), 49% puberty (E14) are stronger and sit elsewhere. Menopause rests only on E15.)",
+  "[minor] P7: misplaced ['E21', 'E8'] — suggested: A positive family history is frequently reported in lipedema, which may point to a heritable component. (E16 and E25 are reviews citing the same figure; E21 (85%) and E8 (72.6%) are primary data placed elsewhere or unused. Familial reporting alone does not establish heritability; 'suggesting' is mild enough.)",
+  "[minor] P8: misplaced ['E14', 'E13'] (Well supported by E20, E21, E6. E14 (77% undiagnosed), E13 (93% unrecognized) and E19 would strengthen it.)",
+  "[minor] P9: misplaced ['E28'] (E18 is about edema/lymphedema by BMI and E13 a single case; the best support is E28 (39% non-obese) which is not placed here. E26 as contradicting is a fair, older review claim.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202101981",
+   "title": "Prevalência e fatores de risco para lipedema no Brasil",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": 253,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "A prevalência de lipedema na população feminina brasileira é de 12,3%, estimando-se conservadoramente 8,8 milhões de mulheres entre 18-69 anos com sintomas sugestivos.",
+   "note": "online validated screening questionnaire; selection bias",
+   "old_claims": [
+    "SCR-LIP-000012"
+   ],
+   "old_statements": [
+    "The estimated prevalence of probable lipedema among adult Brazilian women is approximately 12.3%, indicating a common rather than rare condition."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "afirmação 'prevalência de lipedema no Brasil é 12,3% da população feminina adulta' obteve concordância 3,78/5, inclusão 3,81/5, clareza 3,98/5 e evidência 3,49/5 — menor nível de concordância entre as afirmações aceitas",
+   "note": "consensus endorsed 12.3% (lowest-agreement statement)",
+   "old_claims": [
+    "SCR-LIP-000012",
+    "SCR-LIP-000014"
+   ],
+   "old_statements": [
+    "The estimated prevalence of probable lipedema among adult Brazilian women is approximately 12.3%, indicating a common rather than rare condition.",
+    "Lipedema occurs in men with the classical phenotype (bilateral, symmetrical, foot-sparing lower-limb fat accumulation, negative Stemmer sign), although it almost exclusively affects women and male occurrence is rare."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1590/1677-5449.202101982",
+   "title": "Lipedema prevalence and risk factors in Brazil",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência estimada de lipedema em mulheres brasileiras: 12,3% ± 4% (IC 95%; z-score p<0,001) com ponto de corte 12 — extrapolação conservadora ≈ 8,8 milhões de mulheres de 18-69 anos",
+   "note": "The article directly estimates lipedema prevalence in a defined population (Brazilian women) and characterizes who is affected by demographics, BMI, and comorbidities, directly addressing how common lipedema is and whom it affects.",
+   "old_claims": [
+    "SCR-LIP-000012"
+   ],
+   "old_statements": [
+    "The estimated prevalence of probable lipedema among adult Brazilian women is approximately 12.3%, indicating a common rather than rare condition."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.7759/cureus.87332",
+   "title": "Lipedema in Men: A Retrospective Case Series of Five Patients From a Brazilian Referral Center",
+   "year": 2025,
+   "design": "case_series",
+   "n": 5,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "Prevalência estimada de lipedema masculino ~0,2% mundial",
+   "note": "5 men 31-58y; classical phenotype; no histopathology",
+   "old_claims": [
+    "SCR-LIP-000014"
+   ],
+   "old_statements": [
+    "Lipedema occurs in men with the classical phenotype (bilateral, symmetrical, foot-sparing lower-limb fat accumulation, negative Stemmer sign), although it almost exclusively affects women and male occurrence is rare."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1177/1358863x231202769",
+   "title": "National survey of patient symptoms and therapies among 707 women with a lipedema phenotype in the United States",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Those with lipedema had a mean age of 48.6 years and mean BMI of 40.9 kg/m2. Lipedema symptom onset occurred frequently at puberty (48.0%) or pregnancy (41.2%).",
+   "note": "The survey provides demographic and clinical characteristics of a large U.S. lipedema cohort, offering context on who is affected and when symptoms begin, but does not report population prevalence estimates.",
+   "old_claims": [
+    "SCR-LIP-000076"
+   ],
+   "old_statements": [
+    "In a national survey of 707 U.S. women with lipedema, the mean age was 48.6 years and mean BMI was 40.9 kg/m², with symptom onset most commonly at puberty (48.0%) or pregnancy (41.2%), and the condition exclusively affected women in this sample."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1097/prs.0000000000006280",
+   "title": "New Insights on Lipedema: The Enigmatic Disease of the Peripheral Fat",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "idade média de início dos sintomas 16±9 anos (32,5% = 68/209 aos 14–18 anos; 27,3% = 57/209 aos 19–23 anos; máxima registrada 54 anos)",
+   "note": "The article provides descriptive epidemiological data on lipedema patients (exclusively female, average age, age of onset, time to diagnosis), which is relevant to who lipedema affects, but the sample is limited to postoperative patients in",
+   "old_claims": [
+    "SCR-LIP-000077"
+   ],
+   "old_statements": [
+    "In a survey of 209 German female lipedema patients who underwent liposuction, the average age was 38.5 years, first manifestation occurred at age 16, and diagnosis took a mean of 15 years to achieve, with comorbidities including hypothyroidism (35.9%) and depression (23.0%) at rates exceeding general population prevalence."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.3390/jpm13010098",
+   "title": "Lipedema Research—Quo Vadis?",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência mundial estimada em 11% entre mulheres — dado ampliado por subdiagnóstico, mas com limitação diagnóstica reconhecida pelos autores Incidência familiar em 15% de familiares femininas de primeiro grau",
+   "note": "This narrative review provides contextual background on lipedema's history, affected population (women), and clinical characteristics, but does not report specific prevalence or incidence data, making it contextually relevant but not direct",
+   "old_claims": [
+    "SCR-LIP-000078"
+   ],
+   "old_statements": [
+    "Lipedema is a serious disease with undetermined genetic background that affects women, first described as a syndrome in 1940, and is neither a cosmetic problem nor a lifestyle issue, though its true prevalence and incidence remain poorly defined in the literature."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1111/dth.14534",
+   "title": "Disease progression and comorbidities in lipedema patients: A 10‐year retrospective analysis",
+   "year": 2020,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Onset puberal em 58,5%; gravidez 20,8%; história familiar positiva em 72,6%; envolvimento de membros superiores em 61,3%",
+   "note": "The article provides demographic and comorbidity data from a specialized surgical clinic cohort, offering context about who is affected by lipedema (exclusively women, elevated BMI, specific comorbidities), but does not address population p",
+   "old_claims": [
+    "SCR-LIP-000079"
+   ],
+   "old_statements": [
+    "In a retrospective series of 106 lipedema patients who underwent liposuction, the cohort was exclusively female with a median BMI of 31.6 kg/m², and showed elevated prevalence of obesity, hypothyroidism, migraine, and depression compared to non-lipedema populations, while diabetes (5%) and dyslipidemia (7%) prevalence were unexpectedly low."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1371/journal.pone.0319099",
+   "title": "Clinical characteristics, comorbidities, and correlation with advanced lipedema stages: A retrospective study from a Swiss referral centre",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "idade média 41,9±12,5 anos; IMC médio 30,6±8,3 kg/m²",
+   "note": "This retrospective cross-sectional study from a single referral centre provides detailed epidemiological and clinical characteristics of lipedema patients (all female, referral bias), addressing who is affected and clinical burden, but does",
+   "old_claims": [
+    "SCR-LIP-000080"
+   ],
+   "old_statements": [
+    "In a Swiss referral centre cohort of 381 women with lipedema (mean age 41.9 years), 49.9% reported a family history, 62.2% reported symptom onset during adolescence, and 92.1% had comorbidities, with pain affecting 87.9% and significantly reduced quality of life in the majority."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.3390/ijms25031599",
+   "title": "Observational Study on a Large Italian Population with Lipedema: Biochemical and Hormonal Profile, Anatomical and Clinical Evaluation, Self-Reported History",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "História familiar positiva: 81,2% (289/356); 40,2% materna, 32,6% paterna, 4,8% ambas; sem diferença entre estágios",
+   "note": "The study characterizes a large clinical sample of women with lipedema, providing data on demographics, clinical features, and comorbidities relevant to who is affected, but does not report population-level prevalence estimates.",
+   "old_claims": [
+    "SCR-LIP-000081"
+   ],
+   "old_statements": [
+    "In a cohort of 360 Italian women with lipedema of the lower limbs (stages 1–3), the condition was found exclusively in women and was associated with comorbidities including vitamin D insufficiency, chronic venous disease, and dyslipidemia."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência de lipedema: 11% em mulheres (Földi), 15% dos pacientes em clínica linfológica (Herpertz), 6,5% de crianças encaminhadas com diagnóstico de linfedema (Schook 2011), 18,8% dos 843 pacientes com aumento de membros inferiores",
+   "note": "The review directly compiles epidemiological data on lipedema prevalence, sex distribution (almost exclusively women), and familial occurrence, directly addressing how common lipedema is and who it affects.",
+   "old_claims": [
+    "SCR-LIP-000138"
+   ],
+   "old_statements": [
+    "This systematic review reports lipedema prevalence estimates of 11% in women (Földi), 15% of patients in a lymphology clinic (Herpertz), and 18.8% of 843 patients with lower-limb enlargement, occurring almost exclusively in women, with positive family history in 16–64% of cases."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.14740/jmc3806",
+   "title": "Lipedema in Male Progressing to Subclinical and Clinical Systemic Lymphedema",
+   "year": 2022,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema e menos frequente em homens do que em mulheres, mas o ganho de peso e fator agravante em ambos os sexos.",
+   "note": "A single male case report that incidentally comments on lipedema being less common in men and on obesity as an aggravating factor, providing only contextual, anecdotal information about who lipedema affects rather than rigorous epidemiologi",
+   "old_claims": [
+    "SCR-LIP-000139"
+   ],
+   "old_statements": [
+    "This case report of a 53-year-old male with lipedema notes that lipedema is less frequent in men than in women, that obesity is the principal aggravating factor in both sexes, and that the authors' case series detects lymphedema by multi-segment bioimpedance in 50% of individuals with lipedema and BMI above 30 kg/m2."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.12659/ajcr.930840",
+   "title": "A Young Woman with Excessive Fat in Lower Extremities Develops Disordered Eating and Is Subsequently Diagnosed with Anorexia Nervosa, Lipedema, and Hypermobile Ehlers-Danlos Syndrome",
+   "year": 2021,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "prevalência de lipedema estimada em ~11% da população feminina",
+   "note": "The article is a single case report but explicitly cites prevalence (~11% of women), sex predominance (women), and recognition rates relevant to how common lipedema is and whom it affects; epidemiological figures are cited from other source",
+   "old_claims": [
+    "SCR-LIP-000140"
+   ],
+   "old_statements": [
+    "This case report cites epidemiological data estimating lipedema prevalence at approximately 11% of the female population, predominantly affecting women, and reports a UK study finding 93% of patients with lipedema signs/symptoms were unrecognized by their physicians; it also describes lipedema persisting in a woman with low BMI (15 kg/m²), demonstrating it is not exclusive to overweight/obese women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Apenas 23% tinham diagnóstico prévio de lipedema (77% subdiagnosticadas)",
+   "note": "The article reports demographic and epidemiological characteristics directly bearing on who lipedema affects (women, age of onset, family history, BMI) and its underdiagnosis, supporting the question's affirmative direction; it does not pro [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000141"
+   ],
+   "old_statements": [
+    "In a Saudi cross-sectional study of 115 patients with lower-limb edema, lipedema was clinically confirmed in 71%, affected only women with mean age 38.6 years and mean BMI 30.5, with disease onset typically at ages 20-39, perceived triggers being puberty (49%), pregnancy (22%), and massive weight loss (22%), a positive family history in 46% (predominantly mothers and sisters), and 77% being previously undiagnosed."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1515/hmbci-2017-0076",
+   "title": "Lipedema: friend and foe",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "ginoidismo (waist:hip <1) com 80% das pacientes tendo lipedema em braços (tipo IV)",
+   "note": "The article (review plus chart review of 46 women) explicitly addresses who lipedema affects (women, onset at hormonal life stages, autosomal dominant inheritance with female preference) and cites prevalence figures from clinical settings (",
+   "old_claims": [
+    "SCR-LIP-000142"
+   ],
+   "old_statements": [
+    "Lipedema is a chronic disorder presenting almost exclusively in women, typically beginning during periods of hormonal change such as puberty, childbirth, or menopause, with familial aggregation suggesting an autosomal dominant inheritance pattern and an estimated prevalence of 11–15% of adult women."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.jpra.2026.01.004",
+   "title": "Lipedema and obesity: A narrative review and treatment protocol.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência estimada de lipedema em 11–15% de mulheres adultas; agregação familiar em até 60% dos casos sugere herança autossômica dominante",
+   "note": "Narrative review noting lipedema affects mostly women and often onsets at hormonal life events, but it does not provide prevalence estimates or test demographic associations; it is background description rather than a primary epidemiologic ",
+   "old_claims": [
+    "SCR-LIP-000142"
+   ],
+   "old_statements": [
+    "Lipedema is a chronic disorder presenting almost exclusively in women, typically beginning during periods of hormonal change such as puberty, childbirth, or menopause, with familial aggregation suggesting an autosomal dominant inheritance pattern and an estimated prevalence of 11–15% of adult women."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1055/a-2183-7414",
+   "title": "Auf der Suche nach der Evidenz: Eine systematische Übersichtsarbeit zur Pathologie des Lipödems",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipoedema is a symmetrically localised, painful hypertrophy of subcutaneous adipose tissue in the extremities with marked disproportion to the trunk, and almost exclusively affects females.",
+   "note": "The article focuses on cellular pathology and pathogenesis, but its background states that lipedema almost exclusively affects females, which addresses the 'who does it affect' part of the question. It does not provide prevalence figures, s",
+   "old_claims": [
+    "SCR-LIP-000143"
+   ],
+   "old_statements": [
+    "This systematic review of lipedema pathology notes that lipedema is a symmetrically localized, painful hypertrophy of subcutaneous adipose tissue in the extremities that almost exclusively affects females."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.7759/cureus.11854",
+   "title": "Lipedema and the Evolution to Lymphedema With the Progression of Obesity",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Patients with lipedema can develop edema even when their weight is within the standards of normality. However, obesity is an aggravating factor, as the prevalence of lipedema increases progressively with the increase in weight.",
+   "note": "The study treats lipedema as a clinically diagnosed entity and examines its relationship to obesity and lymphedema, showing lipedema can occur at normal weight (distinct from obesity) but progresses toward lymphedema with rising BMI. This r",
+   "old_claims": [
+    "SCR-LIP-000263"
+   ],
+   "old_statements": [
+    "In 258 women with clinically diagnosed lipedema, the prevalence of subclinical systemic lymphedema and clinical lower-limb lymphedema increased progressively with BMI (Group I <30: 16.3% subclinical, 6.1% clinical; Group II 30-40: 48.3% and 51.6%; Group III 40-50: 72.2% and 77.8%; p=0.0001), and lipedema patients could develop edema even at normal weight."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1097/gox.0000000000001043",
+   "title": "Lipedema: A Relatively Common Disease with Extremely Common Misconceptions",
+   "year": 2016,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema afeta ~1 em 9 mulheres adultas; apesar da prevalência estimada, poucos médicos reconhecem a constelação de sinais e sintomas para diagnosticá-lo corretamente",
+   "note": "Narrative review directly addressing prevalence and affected population, citing an estimate of ~1 in 9 adult women and near-exclusive occurrence in women; estimate is not derived from a primary epidemiological study, hence low confidence.",
+   "old_claims": [
+    "SCR-LIP-000266",
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "This review estimates lipedema affects approximately 1 in 9 adult women, occurs almost exclusively in women with bilateral symmetric limb adiposity sparing the feet, and notes 15-17% of patients treated for lymphedema have concomitant lipedema.",
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1186/s12905-022-02022-3",
+   "title": "Women with lipoedema: a national survey on their health, health-related quality of life, and sense of coherence",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "69% (n=169) tiveram início dos sintomas antes dos 30 anos, mas apenas 3 delas (1,6%) foram diagnosticadas por profissional de saúde antes dessa idade; idade mais frequente de diagnóstico: 50–59 anos (34,9%)",
+   "note": "The article describes a female-only lipedema population, including age of onset (often <30 years), age at diagnosis, comorbidities, and subtype distribution, providing demographic context relevant to who lipedema affects, though it does not",
+   "old_claims": [
+    "SCR-LIP-000267"
+   ],
+   "old_statements": [
+    "In a Swedish national survey of women with lipedema, 69% reported symptom onset before age 30 but the most frequent age at diagnosis was 50-59 years (34.9%), with the most common subtype being combined type 3+4 (buttocks-ankles plus arms) in 58.7% of participants."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.2458/lymph.4838",
+   "title": "PREVALENCE OF CLINICAL MANIFESTATIONS AND ORTHOPEDIC ALTERATIONS IN PATIENTS WITH LIPEDEMA: A PROSPECTIVE COHORT STUDY",
+   "year": 2021,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "História familiar em 85% das pacientes (média 1,1 parentes de 1º grau e 1,3 de 2º grau) Início relacionado à puberdade em 57% — janela hormonal estrogênica confirmada como gatilho prevalente",
+   "note": "The article reports demographic and onset characteristics of a lipedema patient cohort, including age, familial prevalence, pubertal onset, and diagnostic delay, which directly inform who lipedema affects and its patterns of occurrence.",
+   "old_claims": [
+    "SCR-LIP-000268"
+   ],
+   "old_statements": [
+    "In a prospective cohort of 138 lipedema patients (median age 47.6 years), 85% reported a positive family history, 57% had symptom onset related to puberty (median onset age 14.8 years), and Type III (ankle-to-hip) involvement predominated at ~71%, with a median diagnostic delay exceeding 25 years."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1097/prs.0000000000012217",
+   "title": "Observational Study of Ultrasound-Assisted Liposuction for Lower Limb Lipedema on 191 Female Patients",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema, a chronic condition affecting 11% of women, causes abnormal fat buildup in the lower limbs, leading to disproportionate body shape and functional problems. Often misdiagnosed, its cause is unclear",
+   "note": "The article briefly mentions that lipedema is often misdiagnosed (supporting the underdiagnosis aspect of the question) but does not address screening tools; its primary focus is on surgical treatment outcomes, making it only tangentially r",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1002/oby.22597",
+   "title": "Lipedema: A Call to Action!",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência mínima: 1:72.000 na população geral (Child et al.), considerado subestimação — estudo alemão com 62 mulheres profissionais detectou lipedema em 39% (todos os estágios), 9,7% para apresentação moderada a grave",
+   "note": "This narrative review explicitly states that lipedema is underdiagnosed and misdiagnosed, and calls for increased awareness and better understanding of its clinical presentation to improve diagnosis, directly supporting the affirmative dire",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência estimada de 6–11% em mulheres na população geral; prevalência mundial ~10% — subestimada por ausência de código ICD-10 nos EUA e falta de biomarcador diagnóstico validado",
+   "note": "This systematic review directly addresses underrecognition and diagnostic challenges in lipedema, supporting the affirmative direction of the question, though it does not specifically evaluate screening tools.",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Estimated Brazilian prevalence: ~12.3% of female population (~8.8 million women), commonly comorbid with hypertension, anemia, anxiety, and depression Genetic basis: up to 60% of patients have an affected first-degree relative; autosomal dominant pattern with sex-limited incomplete penetrance",
+   "note": "The review directly reports prevalence (~12.3% of women) and who is affected (female, familial clustering up to 60%, autosomal dominant sex-limited penetrance), bearing affirmatively on how common lipedema is and who it affects, though esti",
+   "old_claims": [
+    "SCR-LIP-000446"
+   ],
+   "old_statements": [
+    "A narrative review estimates lipedema prevalence at ~12.3% of the Brazilian female population (~8.8 million women), reports an affected first-degree relative in up to 60% of patients with an autosomal dominant sex-limited inheritance pattern, and notes common comorbidities of hypertension, anemia, anxiety, and depression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1016/j.jmv.2012.05.002",
+   "title": "[Lipedema: a misdiagnosed entity]",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a disorder of adipose tissue that occurs almost exclusively in obese women. It is characterized by bilateral enlargement from hip to ankle due to abnormal depositions of subcutaneous fat associated with often mild edema, usually sparing the feet. Disease onset is usually at or soon after",
+   "note": "The review explicitly describes who lipedema affects (almost exclusively obese women, onset at/after puberty), directly addressing the question of who the condition affects.",
+   "old_claims": [
+    "SCR-LIP-000447"
+   ],
+   "old_statements": [
+    "This review states that lipedema occurs almost exclusively in obese women and typically begins at or soon after puberty, presenting as bilateral enlargement from hip to ankle sparing the feet."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.4103/jpgm.jpgm_273_25",
+   "title": "Report of two cases of lipedema: An under-recognized, misdiagnosed, and under-reported disorder in India",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic adipose tissue disorder primarily affecting women",
+   "note": "The article states lipedema primarily affects women and is under-reported in India with scarce epidemiological data, but it is a two-case report that does not provide prevalence estimates or tested epidemiologic data, so it is on-topic back",
+   "old_claims": [
+    "SCR-LIP-000448"
+   ],
+   "old_statements": [
+    "A case report of two middle-aged Indian women describes lipedema as a disorder primarily affecting women, noting it is under-recognized in India with scarce epidemiological data."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1016/j.jdmv.2023.06.002",
+   "title": "Frequency of lipoedema in patients consulting a vein clinic for mild to moderate superficial venous disorder with symptoms: A retrospective analysis",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Frequência de lipedema = 7,7% (36/464)",
+   "note": "The article directly estimates lipedema frequency (7.7%) in a defined female population and describes who is affected (age, BMI, hormonal onset), bearing directly on how common lipedema is and who it affects, though in a selected vein-clini",
+   "old_claims": [
+    "SCR-LIP-000449"
+   ],
+   "old_statements": [
+    "Among 464 female patients consulting a vein clinic for mild-to-moderate superficial venous disorder, lipedema was diagnosed in 7.7% (36/464); affected women had a mean age of ~55 years, 39% were non-obese, and onset was associated with a hormonal event (puberty, pregnancy, menopause) in 63.8% of cases."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.1097/gox.0000000000008015",
+   "title": "Lymphoscintigraphic Findings in Patients With Lipedema: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "encompassing 470 patients, of whom 311 had lipedema. The mean age was 47.4 years, and all patients were women. The mean body mass index was 32.6 kg/m2.",
+   "note": "The review reports demographic data (all female, mean age 47.4, BMI 32.6) bearing on who lipedema affects, but it does not estimate population prevalence; the demographics are from study samples rather than a epidemiological prevalence anal",
+   "old_claims": [
+    "SCR-LIP-000450"
+   ],
+   "old_statements": [
+    "In a systematic review of 7 studies comprising 311 lipedema patients, all patients were women with a mean age of 47.4 years and a mean BMI of 32.6 kg/m2."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1097/00006534-199411000-00014",
+   "title": "Lipedema",
+   "year": 1994,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "These findings are representative of a clinical entity known as lipedema, which is distinct from lymphedema and for which treatment may be different.",
+   "note": "The article argues that lipedema is distinct from lymphedema and does not progress to it, contradicting the premise that lipedema progresses to lymphedema. However, it is a small retrospective case series (n=9) and does not directly study l",
+   "old_claims": [
+    "SCR-LIP-000128"
+   ],
+   "old_statements": [
+    "In a retrospective review of 250 lower extremity lymphedema cases, 9 patients with lipedema showed bilateral symmetric swelling sparing the feet, absent Stemmer sign, and consistent fat pads anterior to the lateral malleoli, distinguishing lipedema as a separate clinical entity from lymphedema that requires different treatment."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema is estimated to affect a substantial proportion of adult women, suggesting it is a common rather than rare condition.",
+   "role": "supporting",
+   "rationale": "Questionnaire-based and review-cited prevalence estimates consistently place lipedema among common conditions in adult women.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Validated online screening questionnaire estimated lipedema prevalence of 12.3% among adult Brazilian women, conservatively about 8.8 million women aged 18-69 with suggestive symptoms."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "English version of the same Brazilian study: prevalence 12.3% ± 4% (95% CI) at cut-off 12, extrapolated to about 8.8 million women aged 18-69."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Delphi consensus accepted the statement that lipedema prevalence in Brazil is 12.3% of adult women, though with the lowest agreement among accepted statements (3.78/5; evidence 3.49/5)."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Systematic review compiles prevalence of 11% in women, 15% of lymphology clinic patients, 6.5% of children referred as lymphedema, and 18.8% of 843 patients with lower-limb enlargement."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Review estimates lipedema affects about 1 in 9 adult women and notes 15-17% of patients treated for lymphedema have concomitant lipedema."
+    },
+    {
+     "e": "E22",
+     "stance": "context",
+     "finding": "Surgical cohort background states lipedema affects 11% of women and is often misdiagnosed."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00079"
+  },
+  {
+   "key": "P2",
+   "statement": "Lipedema prevalence estimates vary widely and remain uncertain, partly because of underdiagnosis and the lack of validated diagnostic criteria.",
+   "role": "refines",
+   "rationale": "Reported figures range from very rare to very common, and reviews attribute this to diagnostic limitations.",
+   "evidence": [
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "Review cites a minimum prevalence of 1:72,000 in the general population, considered an underestimate, versus 39% (9.7% moderate-severe) in a German sample of 62 professional women."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Review gives estimated prevalence of 6-11% in women (worldwide about 10%), considered underestimated due to absent ICD-10 code in the US and no validated diagnostic biomarker."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Review cites an estimated 11% worldwide prevalence in women with acknowledged diagnostic limitation, and states true prevalence and incidence remain poorly defined."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 3,
+   "store_key": "G-00080"
+  },
+  {
+   "key": "P3",
+   "statement": "Lipedema is frequently identified among patients attending vein, lymphology or limb-swelling clinics.",
+   "role": "supporting",
+   "rationale": "Several clinical-setting studies find lipedema in a notable share of patients referred for other leg conditions.",
+   "evidence": [
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Lipedema was diagnosed in 7.7% (36/464) of women consulting a vein clinic for mild-to-moderate superficial venous disorder; 39% were non-obese and onset was hormonal in 63.8%."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Among 115 patients with lower-limb edema, lipedema was clinically confirmed in 71%, all women, mean age 38.6, mean BMI 30.5; 77% had no prior diagnosis."
+    },
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "Among 250 lower-extremity lymphedema cases, 9 patients had lipedema with symmetric foot-sparing swelling and negative Stemmer sign, considered a distinct entity."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00081"
+  },
+  {
+   "key": "P4",
+   "statement": "Lipedema is reported almost exclusively in women.",
+   "role": "supporting",
+   "rationale": "Reviews and patient samples consistently report female-only or near-exclusively female populations.",
+   "evidence": [
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Systematic review of lipedema pathology states it almost exclusively affects females."
+    },
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "Two-case report describes lipedema as primarily affecting women and under-recognized in India with scarce epidemiological data."
+    },
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Systematic review of 7 lymphoscintigraphy studies: all 311 lipedema patients were women, mean age 47.4 years, mean BMI 32.6."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00253",
+   "statement_before_twin_merge": "Lipedema affects almost exclusively women."
+  },
+  {
+   "key": "P5",
+   "statement": "Lipedema with the classical phenotype can occur in men, although male cases are rare.",
+   "role": "refines",
+   "rationale": "Case reports and series document male lipedema while confirming it is much less frequent than in women.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Five men aged 31-58 with classical phenotype; male lipedema prevalence cited as about 0.2% worldwide; no histopathology."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Case report of a 53-year-old man notes lipedema is less frequent in men than women and weight gain aggravates it in both sexes."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00083"
+  },
+  {
+   "key": "P6",
+   "statement": "Lipedema onset or worsening is frequently reported at female hormonal transitions, especially puberty, and also pregnancy and menopause.",
+   "role": "supporting",
+   "rationale": "Multiple cohorts and reviews report onset clustered around hormonal transitions.",
+   "evidence": [
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "In a US survey of 707 women, mean age 48.6, mean BMI 40.9; onset at puberty in 48.0% and pregnancy in 41.2%."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "In 106 female liposuction patients, pubertal onset 58.5%, pregnancy 20.8%, family history 72.6%, upper-limb involvement 61.3%; hypothyroidism, migraine and depression elevated."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Review plus chart review of 46 women: onset typically at puberty, childbirth or menopause, familial aggregation suggesting autosomal dominant inheritance, estimated prevalence 11-15% of adult women."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00023",
+   "statement_before_twin_merge": "Lipedema symptom onset frequently coincides with hormonal life events, particularly puberty, and also pregnancy or menopause."
+  },
+  {
+   "key": "P7",
+   "statement": "A positive family history is frequently reported among people with lipedema, though reported frequencies vary widely.",
+   "role": "supporting",
+   "rationale": "Patient cohorts and reviews report familial clustering in a large share of cases.",
+   "evidence": [
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "In 360 Italian women, positive family history in 81.2% (289/356): 40.2% maternal, 32.6% paternal, no difference by stage."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "In 381 Swiss referral women (mean age 41.9), 49.9% reported family history, 62.2% adolescent onset, 92.1% had comorbidities."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Narrative review cites prevalence of 11-15% of adult women and familial aggregation in up to 60% of cases, suggesting autosomal dominant inheritance."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Review reports up to 60% of patients have an affected first-degree relative, autosomal dominant sex-limited inheritance; cites Brazilian prevalence of about 12.3%."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00194",
+   "statement_before_twin_merge": "A positive family history is frequently reported in lipedema, suggesting a heritable predisposition."
+  },
+  {
+   "key": "P8",
+   "statement": "Lipedema is frequently underrecognised, with diagnosis often delayed for many years after symptom onset.",
+   "role": "context",
+   "rationale": "Surveys of patients report long intervals between early onset and diagnosis.",
+   "evidence": [
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Swedish national survey: 69% had onset before age 30 but only 1.6% were diagnosed before that age; most frequent diagnosis age 50-59 (34.9%)."
+    },
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "In 138 patients, 85% family history, 57% puberty-related onset (median 14.8 years), and median diagnostic delay over 25 years."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "In 209 German female liposuction patients, onset at mean age 16 and diagnosis took a mean of 15 years; hypothyroidism 35.9%, depression 23.0%."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00086"
+  },
+  {
+   "key": "P9",
+   "statement": "Lipedema is reported in women of normal or low body weight, not only in women with obesity.",
+   "role": "refines",
+   "rationale": "Several items describe lipedema at normal weight, while one review frames it as a disorder of obese women.",
+   "evidence": [
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "In 258 women with lipedema, edema could occur at normal weight, while subclinical and clinical lymphedema increased progressively with BMI (p=0.0001)."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Case report of lipedema persisting in a woman with BMI 15 kg/m2; cites prevalence about 11% of women and 93% of cases unrecognized by physicians."
+    },
+    {
+     "e": "E26",
+     "stance": "contradicting",
+     "finding": "Review states lipedema occurs almost exclusively in obese women, with onset at or soon after puberty."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00087"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E11",
+     "E19"
+    ],
+    "suggested_statement": "Questionnaire-based and secondary estimates suggest lipedema may affect a sizeable minority of adult women, though true general-population prevalence is uncertain.",
+    "severity": "minor",
+    "note": "Only primary data is one self-reported screening questionnaire (probable lipedema); E2/E3 restate it, E22 and much of E11/E19 repeat a secondary 11% figure. Clinic proportions (15%, 18.8%, 15-17%) are not general-population prevalence. Stronger 'common rather than rare' wording is in tension with E23/E24 (lower or underestimated figures)."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Variation is shown (1:72,000 to about 11%). Underdiagnosis and lack of biomarker/ICD code are supported (E24, E7); 'validated diagnostic criteria' is slightly beyond 'no validated biomarker'. Could cite E14/E13 for underdiagnosis."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema is found in a minority to sizeable share of patients seen in vein, lymphology or limb-swelling clinics, depending on selection.",
+    "severity": "minor",
+    "note": "'Frequently' is vague: 7.7% in vein clinic, 9/250 (3.6%) in lymphedema series, 71% in a selected edema cohort. E11 (15%, 18.8%) and E19 (15-17%) belong here rather than P1."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Consistent with many all-female samples; E29 and E27 are weak but non-contradictory; P5 handles male exceptions."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Small case series and a case report; hedged 'can occur' and 'rare' is adequate. The 0.2% figure is a cited estimate."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E21",
+     "E9",
+     "E6",
+     "E28"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E15 finding is mainly a review statement. Puberty onset 57% (E21), 62.2% adolescent (E9), 63.8% hormonal (E28), 49% puberty (E14) are stronger and sit elsewhere. Menopause rests only on E15."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E21",
+     "E8"
+    ],
+    "suggested_statement": "A positive family history is frequently reported in lipedema, which may point to a heritable component.",
+    "severity": "minor",
+    "note": "E16 and E25 are reviews citing the same figure; E21 (85%) and E8 (72.6%) are primary data placed elsewhere or unused. Familial reporting alone does not establish heritability; 'suggesting' is mild enough."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E14",
+     "E13"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Well supported by E20, E21, E6. E14 (77% undiagnosed), E13 (93% unrecognized) and E19 would strengthen it."
+   },
+   {
+    "key": "P9",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E28"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E18 is about edema/lymphedema by BMI and E13 a single case; the best support is E28 (39% non-obese) which is not placed here. E26 as contradicting is a fair, older review claim."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "Prevalence figure of about 11% is propagated through citation chains (E7, E11, E13, E15, E16, E22, E25) and E2 is a consensus on the same Brazilian estimate as E1; independence is overstated and P1 and P2 partly twin/tension each other.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Clinic-based proportions (E11, E19, E14, E28, E30) are mixed between P1 and P3; E28 and E14 non-obese/hormonal data scattered across propositions.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000002.cons.json",
+   "ver": "SQ-LIP-000002.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00085",
+   "into": "G-00194"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00082",
+   "into": "G-00253"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00084",
+   "into": "G-00023"
+  }
+ ]
+}

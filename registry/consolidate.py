@@ -32,6 +32,8 @@ VERIFIER = os.environ.get("SCR_CONSOLIDATE_VERIFIER", "openai/gpt-5.5")
 REPAIR_ROUNDS = 2
 FORMAT_RETRIES = 3
 MAX_WORDS = 25
+# A number, not a digit inside a gene or locus name (AKR1C1, HLA-DQ2 are allowed; "stage 3", "50%" are not).
+NUMBER = re.compile(r"(?<![A-Za-z])\d+(?![A-Za-z])")
 STANCES = {"supporting", "contradicting", "refines", "context"}
 ROLES = STANCES
 GRADES = ["very_low", "low", "moderate", "high"]
@@ -161,7 +163,7 @@ def validate(cons, items, store_keys):
             errs.append(f"{k}: statement has {len(s.split())} words (max {MAX_WORDS})")
         if STUDY_DESC.match(s):
             errs.append(f"{k}: statement describes a study instead of stating a proposition: {s!r}")
-        if re.search(r"\d", s):
+        if NUMBER.search(s):
             errs.append(f"{k}: statement contains a digit: {s!r}")
         if p.get("role") not in ROLES:
             errs.append(f"{k}: invalid role {p.get('role')!r}")
@@ -287,7 +289,7 @@ def consolidate(qid, Q, C, store):
         changed = False
         for p in cons["propositions"]:
             new = sugg.get(p["key"])
-            if new and len(new.split()) <= MAX_WORDS and not re.search(r"\d", new) and not STUDY_DESC.match(new):
+            if new and len(new.split()) <= MAX_WORDS and not NUMBER.search(new) and not STUDY_DESC.match(new):
                 p["statement_before_arbitration"] = p["statement"]
                 p["statement"], p["wording_source"], changed = new, "verifier", True
         if changed:
@@ -327,14 +329,242 @@ def consolidate(qid, Q, C, store):
     return out
 
 
+# ---------------------------------------------------------------------------------------------------------------
+# Agent mode (no API spend): the same pipeline, but the thinking is done by Claude Code subagents that read the
+# prompt files below and write JSON answers. Everything deterministic (items, validation, store, GRADE, status)
+# stays here, so the result is identical in shape and checked by the same code.
+#   prep QID              → work/QID.cons_prompt.md   (system + user prompt for the consolidator)
+#   check QID CONS.json   → format errors, or OK
+#   prep-verify QID CONS  → work/QID.ver_prompt.md    (for an independent verifier with a fresh context)
+#   repair-prompt QID CONS VER → work/QID.repair_prompt.md (only if major problems)
+#   finish QID CONS VER [primary_label verifier_label] → consolidation/QID.json + store
+WORK = os.path.join(OUTDIR, "work")
+
+
+def _ctx(qid):
+    Q, C = load()
+    store = json.load(open(STORE)) if os.path.exists(STORE) else {}
+    q = Q[qid]
+    items = build_items(q, C)
+    return q, items, store
+
+
+def _user_prompt(qid, q, items, store):
+    existing = related_store(store, items)
+    return existing, (f"QUESTION {qid}: {q['text']}\n\nEXISTING PROPOSITIONS that share papers with this question "
+                      f"(reuse by key when the idea is the same):\n{json.dumps(existing, ensure_ascii=False, indent=1)}"
+                      f"\n\nITEMS ({len(items)}):\n{json.dumps(items, ensure_ascii=False, indent=1)}")
+
+
+def agent_prep(qid):
+    os.makedirs(WORK, exist_ok=True)
+    q, items, store = _ctx(qid)
+    existing, user = _user_prompt(qid, q, items, store)
+    p = os.path.join(WORK, f"{qid}.cons_prompt.md")
+    open(p, "w").write(f"# SYSTEM\n\n{SYS_CONS}\n\n# INPUT\n\n{user}\n")
+    json.dump({"existing_keys": [x["key"] for x in existing]}, open(os.path.join(WORK, f"{qid}.keys.json"), "w"))
+    print(p)
+
+
+def _load_cons(path):
+    """Reused G- propositions keep the store's wording verbatim (never reworded), so fill it in from the store."""
+    cons = json.load(open(path))
+    store = json.load(open(STORE)) if os.path.exists(STORE) else {}
+    for p in cons.get("propositions", []):
+        k = p.get("key", "")
+        if k.startswith("G-") and k in store:
+            p["statement"] = store[k]["statement"]
+    return cons
+
+
+def _keys(qid):
+    kp = os.path.join(WORK, f"{qid}.keys.json")
+    return set(json.load(open(kp))["existing_keys"]) if os.path.exists(kp) else set()
+
+
+def agent_check(qid, cons_path):
+    q, items, store = _ctx(qid)
+    errs = validate(_load_cons(cons_path), items, _keys(qid))
+    print("OK" if not errs else "ERRORS:\n- " + "\n- ".join(errs))
+    return not errs
+
+
+def agent_prep_verify(qid, cons_path):
+    q, items, store = _ctx(qid)
+    cons = _load_cons(cons_path)
+    byE = {i["e"]: i for i in items}
+    props = [{"key": p["key"], "statement": p["statement"], "role": p["role"],
+              "findings": [{"e": x["e"], "stance": x["stance"], "finding": x["finding"],
+                            "secondary_of": x.get("secondary_of")} for x in p["evidence"]]}
+             for p in cons["propositions"]]
+    payload = {"question": q["text"],
+               "items": [{k: byE[e][k] for k in ("e", "ref", "title", "year", "design", "n", "grade", "quote")}
+                         | {"old_statement": byE[e]["old_statements"][0]} for e in byE],
+               "propositions": props, "dropped": cons.get("dropped", [])}
+    p = os.path.join(WORK, f"{qid}.ver_prompt.md")
+    open(p, "w").write(f"# SYSTEM\n\n{SYS_VER}\n\n# INPUT\n\n{json.dumps(payload, ensure_ascii=False, indent=1)}\n")
+    print(p)
+
+
+def agent_repair_prompt(qid, cons_path, ver_path):
+    q, items, store = _ctx(qid)
+    _, user = _user_prompt(qid, q, items, store)
+    probs = problems(json.load(open(ver_path)))
+    p = os.path.join(WORK, f"{qid}.repair_prompt.md")
+    open(p, "w").write(f"# SYSTEM\n\n{SYS_REPAIR}\n\n# INPUT\n\n{user}\n\nYOUR EARLIER PROPOSAL:\n"
+                       f"{open(cons_path).read()}\n\nINDEPENDENT VERIFIER REPORT:\n- " + "\n- ".join(probs) + "\n")
+    print(p)
+
+
+def agent_finish(qid, cons_path, ver_path, primary="claude-code-subagent", verifier="claude-code-subagent"):
+    Q, C = load()
+    store = json.load(open(STORE)) if os.path.exists(STORE) else {}
+    q = Q[qid]
+    items = build_items(q, C)
+    byE = {i["e"]: i for i in items}
+    cons, ver = _load_cons(cons_path), json.load(open(ver_path))
+    errs = validate(cons, items, _keys(qid))
+    if errs:
+        sys.exit("format invalid:\n- " + "\n- ".join(errs))
+    # A G- key may have been created by a question finished in parallel; only accept keys that exist now.
+    major, probs = problems(ver, major_only=True), problems(ver)
+    for p in cons["propositions"]:
+        p["grade"] = grade_of(p, byE)
+        p["n_findings"] = sum(1 for x in p["evidence"] if not x.get("secondary_of"))
+    out = {"question": qid, "text": q["text"], "n_old_claims": len(q["claims"]), "n_items": len(items),
+           "status": "needs_review" if major else "clean", "major_problems": major,
+           "minor_problems": [x for x in probs if x not in major],
+           "models": {"primary": primary, "verifier": verifier, "mode": "agent"},
+           "created": datetime.date.today().isoformat(),
+           "items": items, "propositions": cons["propositions"], "dropped": cons.get("dropped", []),
+           "verification": ver, "log": [{"step": "agent_mode", "cons": os.path.basename(cons_path),
+                                         "ver": os.path.basename(ver_path)}]}
+    for k in [k for k, p in store.items() if qid in p["questions"]]:
+        store[k]["questions"].remove(qid)
+        if not store[k]["questions"]:
+            del store[k]
+    nxt = 1 + max([int(k[2:]) for k in store] or [0])
+    for p in cons["propositions"]:
+        refs = [byE[x["e"]]["ref"] for x in p["evidence"] if x["e"] in byE]
+        if p["key"].startswith("G-") and p["key"] in store:
+            sp = store[p["key"]]
+            sp["questions"] = sorted(set(sp["questions"]) | {qid})
+            sp["refs"] = sorted(set(sp["refs"]) | set(r for r in refs if r))
+            p["store_key"] = p["key"]
+        else:
+            gk = f"G-{nxt:05d}"; nxt += 1
+            store[gk] = {"statement": p["statement"], "questions": [qid], "refs": sorted(r for r in refs if r)}
+            p["store_key"] = gk
+    json.dump(out, open(os.path.join(OUTDIR, f"{qid}.json"), "w"), ensure_ascii=False, indent=1)
+    json.dump(store, open(STORE, "w"), ensure_ascii=False, indent=1)
+    print(f"{qid}: {len(q['claims'])} claims / {len(items)} papers → {len(cons['propositions'])} propositions, "
+          f"{len(cons.get('dropped', []))} dropped, status={out['status']} ({len(major)} major, "
+          f"{len(probs) - len(major)} minor)")
+
+
+def store_listing(out_path):
+    """All store propositions, for a twin-detection pass (written to a file an agent can read)."""
+    store = json.load(open(STORE))
+    lines = [f"{k}\t{','.join(v['questions'])}\t{v['statement']}" for k, v in sorted(store.items())]
+    open(out_path, "w").write("key\tquestions\tstatement\n" + "\n".join(lines) + "\n")
+    print(f"{len(lines)} propositions → {out_path}")
+
+
+def merge_twins(map_path):
+    """map: {"G-x": "G-y", ...} — x states the same idea as y. y keeps its wording; x's questions, refs and
+    findings move to y; a question that had both gets one proposition (evidence unioned). R-OBJ-7: no twins."""
+    mp = json.load(open(map_path))
+    store = json.load(open(STORE))
+    for x, y in mp.items():
+        if x not in store or y not in store or x == y:
+            print(f"skip {x}→{y}"); continue
+        store[y]["questions"] = sorted(set(store[y]["questions"]) | set(store[x]["questions"]))
+        store[y]["refs"] = sorted(set(store[y]["refs"]) | set(store[x]["refs"]))
+        store[y].setdefault("merged_twins", []).append({"key": x, "statement": store[x]["statement"]})
+        for qid in store[x]["questions"]:
+            f = os.path.join(OUTDIR, f"{qid}.json")
+            res = json.load(open(f))
+            keep = None
+            for p in [p for p in res["propositions"] if p.get("store_key") in (x, y)]:
+                if keep is None:
+                    keep = p
+                    if p["store_key"] == x:
+                        p["statement_before_twin_merge"] = p["statement"]
+                    p["store_key"], p["statement"] = y, store[y]["statement"]
+                else:
+                    keep["evidence"] += p["evidence"]
+                    res["propositions"].remove(p)
+            if keep is not None:
+                byE = {i["e"]: i for i in res["items"]}
+                keep["grade"] = grade_of(keep, byE)
+                keep["n_findings"] = sum(1 for e in keep["evidence"] if not e.get("secondary_of"))
+            res.setdefault("log", []).append({"step": "merge_twins", "from": x, "into": y})
+            json.dump(res, open(f, "w"), ensure_ascii=False, indent=1)
+        del store[x]
+        print(f"{x} → {y}")
+    json.dump(store, open(STORE, "w"), ensure_ascii=False, indent=1)
+
+
+def agent_arbitrate(qid, cons_path, ver_path):
+    """Automatic tiebreak after the repair round (same rule as API mode): for each proposition still flagged
+    major, adopt the verifier's suggested wording if it passes the format checks. Writes <qid>.consA/.verA.json.
+    Recorded as arbitration, not re-verified."""
+    cons, ver = _load_cons(cons_path), json.load(open(ver_path))
+    sug = {v["key"]: v.get("suggested_statement") for v in ver.get("verdicts", []) if v.get("severity") == "major"}
+    done = []
+    for p in cons["propositions"]:
+        new = sug.get(p["key"])
+        if new and not p["key"].startswith("G-") and len(new.split()) <= MAX_WORDS and not NUMBER.search(new) \
+                and not STUDY_DESC.match(new):
+            p["statement_before_arbitration"], p["statement"], p["wording_source"] = p["statement"], new, "verifier"
+            done.append(p["key"])
+    for v in ver.get("verdicts", []):
+        if v["key"] in done:
+            v["severity"], v["resolution"] = "minor", "arbitration: verifier wording adopted (not re-verified)"
+    for si in ver.get("set_issues") or []:
+        if isinstance(si, dict) and si.get("severity") == "major" and any(k in si.get("issue", "") for k in done):
+            si["severity"], si["resolution"] = "minor", "resolved by arbitration on " + ", ".join(done)
+    base = os.path.join(WORK, qid)
+    json.dump(cons, open(base + ".consA.json", "w"), ensure_ascii=False, indent=1)
+    json.dump(ver, open(base + ".verA.json", "w"), ensure_ascii=False, indent=1)
+    print(f"{qid}: arbitration on {done or 'nothing'}; left major: {problems(ver, major_only=True)}")
+
+
+AGENT_CMDS = {"arbitrate": agent_arbitrate, "store-listing": store_listing, "merge-twins": merge_twins, "prep": agent_prep, "check": agent_check, "prep-verify": agent_prep_verify,
+              "repair-prompt": agent_repair_prompt, "finish": agent_finish}
+
+
+def openrouter_balance():
+    """Remaining OpenRouter credit in US$, or None if it cannot be read."""
+    try:
+        tok = open(os.path.expanduser("~/.config/scr_openrouter_token")).read().strip()
+        req = ingest.urllib.request.Request("https://openrouter.ai/api/v1/credits",
+                                            headers={"Authorization": f"Bearer {tok}"})
+        d = json.loads(_uo(req, timeout=30).read())["data"]
+        return d["total_credits"] - d["total_usage"]
+    except Exception:
+        return None
+
+
+# Stop before the balance drops below this floor, so the weekly cron still has credit to run.
+MIN_BALANCE = float(os.environ.get("SCR_CONSOLIDATE_MIN_BALANCE", "3"))
+
+
 def main():
     os.makedirs(OUTDIR, exist_ok=True)
+    if len(sys.argv) > 2 and sys.argv[1] in AGENT_CMDS:
+        r = AGENT_CMDS[sys.argv[1]](*sys.argv[2:])
+        sys.exit(0 if r is not False else 1)
     Q, C = load()
     store = json.load(open(STORE)) if os.path.exists(STORE) else {}
     ids = sorted(Q) if "--all" in sys.argv else [a for a in sys.argv[1:] if a.startswith("SQ-")]
     for qid in ids:
         if os.path.exists(os.path.join(OUTDIR, f"{qid}.json")) and "--force" not in sys.argv:
             print(f"{qid}: already consolidated (use --force)"); continue
+        bal = openrouter_balance()
+        if bal is not None and bal < MIN_BALANCE:
+            print(f"STOP: OpenRouter balance US$ {bal:.2f} < floor US$ {MIN_BALANCE:.2f}. "
+                  f"Recharge and rerun; finished questions are skipped."); break
         for k in [k for k, p in store.items() if qid in p["questions"]]:
             store[k]["questions"].remove(qid)
             if not store[k]["questions"]:

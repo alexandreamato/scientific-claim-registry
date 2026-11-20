@@ -10,7 +10,9 @@ CSSVER = hashlib.md5(open(os.path.join(SITE, "style.css"), "rb").read()).hexdige
 BASE = "https://scientificclaims.org"
 REG = os.path.join(SITE, "..", "registry")
 data = json.load(open(os.path.join(REG, "claims.json")))
-claims = data["claims"]
+ALL_CLAIMS = data["claims"]
+# R-CLM-19: superseded single-paper claims keep their own page (R-CLM-9) but leave the claims index.
+claims = [c for c in ALL_CLAIMS if c.get("status") not in ("superseded", "retired")]
 def e(s): return html.escape(str(s if s is not None else ""))
 counts = Counter(c["knowledge_state"] for c in claims)
 
@@ -57,7 +59,7 @@ T = {
         "prev":"‹ Prev","next":"Next ›","results":"results",
         "claim_word":"Claim","json_link":"machine-readable JSON →","evidence_h":"Evidence",
         "context_h":"Context (PECO)","gaps_h":"Gaps & caveats","answers":"Answers these questions",
-        "no_q":"Not yet linked to a question.","back_claims":"← All claims","ev_time":"Evidence over time",
+        "no_q":"Not yet linked to a question.","back_claims":"← All claims","retired":"Retired in the claim consolidation (R-CLM-19): its source was judged not to be a finding on any question (e.g. a protocol, a truncated abstract or an off-topic paper). Kept for the record; see the change log below.","sup_done":"This single-paper claim was consolidated into general propositions (R-CLM-19); its evidence now sits under:","sup_part":"Part of this claim's evidence was consolidated into general propositions (R-CLM-19):","cons_from":"General proposition consolidated from","cons_from2":"earlier single-paper claims; each study's own result is shown as its finding.","ev_time":"Evidence over time",
         "rob":"risk of bias","rob_why":"Why this risk of bias: full-text methodological appraisal","rob_method":"Each point was checked against the full text and is shown with the verbatim passage. Positional or interpretive points were excluded.","auto_note":"Auto-compiled by the Layer 1 surveillance loop; not yet human-reviewed.",
         "v_verified":"verified","v_disputed":"needs review","v_unverified":"unverified",
         "v_title_ok":"Stance and quote independently confirmed by a second model.",
@@ -78,7 +80,7 @@ T = {
         "prev":"‹ Anterior","next":"Próximo ›","results":"resultados",
         "claim_word":"Claim","json_link":"JSON legível por máquina →","evidence_h":"Evidência",
         "context_h":"Contexto (PECO)","gaps_h":"Lacunas e ressalvas","answers":"Responde a estas perguntas",
-        "no_q":"Ainda não ligado a uma pergunta.","back_claims":"← Todos os claims","ev_time":"Evidência ao longo do tempo",
+        "no_q":"Ainda não ligado a uma pergunta.","back_claims":"← Todos os claims","retired":"Aposentado na consolidação dos claims (R-CLM-19): a fonte não foi considerada um achado sobre nenhuma pergunta (por exemplo, um protocolo, um resumo truncado ou um artigo fora do tema). Mantido como registro; ver o histórico abaixo.","sup_done":"Este claim de artigo único foi consolidado em proposições gerais (R-CLM-19); sua evidência agora está em:","sup_part":"Parte da evidência deste claim foi consolidada em proposições gerais (R-CLM-19):","cons_from":"Proposição geral consolidada a partir de","cons_from2":"claims anteriores de artigo único; o resultado de cada estudo aparece como achado.","ev_time":"Evidência ao longo do tempo",
         "rob":"risco de viés","rob_why":"Por que este risco de viés: avaliação metodológica do texto integral","rob_method":"Cada ponto foi conferido no texto integral e vem com o trecho literal. Pontos de posição ou de interpretação foram excluídos.","auto_note":"Compilado automaticamente pelo loop de vigilância da Layer 1; ainda não revisado por humano.",
         "v_verified":"verificado","v_disputed":"requer revisão","v_unverified":"não verificado",
         "v_title_ok":"Stance e citação confirmados de forma independente por um segundo modelo.",
@@ -276,7 +278,10 @@ def render_claim(c, lang):
             (str(x["year"]) if x.get("year") else None),
             (f'{t["rob"]}: {x["risk_of_bias"]}' if x.get("risk_of_bias") and x["risk_of_bias"] != "unknown" else None),
         ] if p)
+        # R-CLM-19: the study-specific result under a general proposition.
+        finding = f'<br><span class="evfinding">{e(x.get("finding"))}</span>' if x.get("finding") else ""
         note = f'<br><span class="muted small">{e(x.get("note"))}</span>' if x.get("note") else ""
+        note = finding + note
         # R-AI-14 — verification badge (verified / needs review / unverified) per evidence item.
         vd = (x.get("verification") or {}).get("verdict")
         if vd == "verified":
@@ -325,6 +330,14 @@ def render_claim(c, lang):
     if integ.get("fabricated") and integ.get("invented"):
         items = ", ".join(f'“{e(x)}”' for x in integ["invented"][:6])
         integ_html = f'<p class="frnote integ-warn">⚠ {t["integ_warn"]} {items}</p>'
+    sup_html = ""
+    if c.get("superseded_by"):
+        lk = ", ".join(f'<a href="{prefix}/c/{x}.html">{e(x)}</a>' for x in c["superseded_by"])
+        sup_html = (f'<p class="frnote sup-note">{t["sup_done"] if c.get("status") == "superseded" else t["sup_part"]} {lk}</p>')
+    elif c.get("status") == "retired":
+        sup_html = f'<p class="frnote sup-note">{t["retired"]}</p>'
+    elif c.get("consolidated_from"):
+        sup_html = f'<p class="frnote">{t["cons_from"]} {len(c["consolidated_from"])} {t["cons_from2"]}</p>'
     log = c.get("history") or []
     log_html = "".join(f'<li><span class="mono">{e(h.get("date"))}</span> — {e(h.get("event"))}'
                        f'{(" · " + e(h.get("detail"))) if h.get("detail") else ""}</li>' for h in log)
@@ -332,6 +345,7 @@ def render_claim(c, lang):
   <p class="qid mono">{e(cid)} · {t["claim_word"]} · <a href="/c/{cid}.json">{t["json_link"]}</a></p>
   <h1 class="qtitle">{e(stmt)}</h1>
   {integ_html}
+  {sup_html}
   <div class="glance">
     <span class="glance-h">{t["glance_h"]}</span>
     <dl>
@@ -372,18 +386,18 @@ def claim_json(c):
 
 for lang in ("en", "pt"):
     render(lang)
-    for c in claims:
+    for c in ALL_CLAIMS:
         render_claim(c, lang)
-for c in claims:
+for c in ALL_CLAIMS:
     claim_json(c)
 
 # Prune orphan claim pages/JSON left from removed (banned/merged) claims, so the site never drifts.
 import glob
-_ids = {c["id"] for c in claims}
+_ids = {c["id"] for c in ALL_CLAIMS}
 _pruned = 0
 for _pat in ("c/SCR-*.html", "pt/c/SCR-*.html", "c/SCR-*.json", "pt/c/SCR-*.json"):
     for _f in glob.glob(os.path.join(SITE, _pat)):
         if os.path.basename(_f).rsplit(".", 1)[0] not in _ids:
             os.remove(_f); _pruned += 1
-print(f"Generated claims.html + pt/claims.html + {len(claims)} claim pages ×2 + JSON. "
+print(f"Generated claims.html + pt/claims.html + {len(ALL_CLAIMS)} claim pages ×2 ({len(claims)} active) + JSON. "
       f"Pruned {_pruned} orphan file(s). States: {dict(counts)}")

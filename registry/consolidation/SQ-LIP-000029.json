@@ -1,0 +1,751 @@
+{
+ "question": "SQ-LIP-000029",
+ "text": "Can MRI differentiate lipedema from lymphedema and other fat distributions?",
+ "n_old_claims": 18,
+ "n_items": 22,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: P1 (no epifascial fluid in pure lipedema) and P6 (fluid and lymphatic changes may occur in lipedema) look contradictory without stating they refer to different compartments and to different subgroups.",
+  "[minor] set: E10 and E3 report dilated lymphatics in pure lipedema, supporting P6, but are listed only under P1.",
+  "[minor] set: Several propositions (P4, P5, P7) concern ultrasound, DXA and lymphoscintigraphy rather than MRI, though they are labelled context.",
+  "[minor] P1: overgeneralized — suggested: In small MRI series, pure lipedema tends to lack the epifascial fluid and T2 signal seen in lipolymphedema and lymphedema. (E10 and E3 compare pure lipedema with lipolymphedema, not pure lymphedema, and E3 found no honeycomb pattern in either group, so honeycomb does not discriminate there. E19 (n=5 lipedema) is the only item with lymphedema proper. E11 quote concerns ultrasound cut-offs; its MRI claim comes from the summary only. Hedged and small-series wording is appropriate.)",
+  "[minor] P6: two ideas (Bundles subcutaneous edema-like signal and dilated lymphatics; E10 (60% subclinical dilated lymphatics) and E3 (18.2%) directly support the second part but are placed under P1. E20 uses ICG, not MRI. Some tension with P1 (no epifascial fluid in pure lipedema) is explained by different compartments but should be explicit.)",
+  "[minor] P7: overgeneralized — suggested: Lymphoscintigraphy in lipedema is frequently normal, and dermal backflow appears to be uncommon. ('A hallmark of lymphedema' is not stated in any item. The item E11 summary says lymphoscintigraphy cannot separate lipedema from lymphedema, which this proposition does not mention.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1089/lrb.2024.0102",
+   "title": "Assessment Tools to Quantify the Physical Aspects of Lipedema: A Systematic Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Reporte limitado de clinimetria, derivado de pequenas coortes em populações heterogêneas, impactou a capacidade de recomendar ferramentas para prática clínica e pesquisa. Investigações adicionais são necessárias para estabelecer validade e reliability de ferramentas de medição e imagem",
+   "note": "Systematic review focused on objective measurement/imaging tools and their reliability/diagnostic performance in lipedema, which addresses the reliability aspect of the question, though it concerns quantification tools rather than clinical ",
+   "old_claims": [
+    "SCR-LIP-000195"
+   ],
+   "old_statements": [
+    "A review of 13 tools used to quantify lipedema limbs (8 imaging, 5 clinical measurement) found highly heterogeneous and poorly documented protocols — e.g., tape measurement used inconsistent anatomical sites and volume formulas, and ultrasound studies omitted machine settings — with clinimetric reliability reported in only a minority of studies, limiting reproducibility and cross-study comparison."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1007/s00330-022-09047-0",
+   "title": "Deep learning for standardized, MRI-based quantification of subcutaneous and subfascial tissue volume for patients with lipedema and lymphedema",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "comparação de paciente sem edema vs lipedema vs linfedema assimétrico; monitoramento pré- e pós-anastomose linfovenosa (1 ano follow-up) — pipeline permite quantificação independente de simetria e mudanças volumétricas",
+   "note": "Article develops and validates an MRI-based quantification method on 45 patients and explicitly demonstrates use cases comparing lipedema vs lymphedema vs no edema, directly bearing on whether MRI can characterize these tissue distributions [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000201"
+   ],
+   "old_statements": [
+    "A deep learning MRI pipeline using 3D DIXON MR-lymphangiography achieved standardized quantification of subcutaneous (Dice 0.989) and subfascial (Dice 0.994) tissue volumes in the lower limbs and demonstrated differentiation of patients without edema versus lipedema versus asymmetric lymphedema based on volume, distribution, and symmetry."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1016/j.mri.2020.06.010",
+   "title": "Non-contrast MR Lymphography of lipedema of the lower extremities",
+   "year": 2020,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "In all the extremities with lipolymphedema, high signal intensity areas in the epifascial region could be detected on the 3D-TSE sequence (p < .001) with evidence of mild epifascial fluid collections (p < .001).",
+   "note": "Retrospective imaging study (n=22 patients) directly comparing MR lymphography findings between lipedema and lipolymphedema, identifying distinguishing features for differential diagnosis; small sample limits confidence.",
+   "old_claims": [
+    "SCR-LIP-000202"
+   ],
+   "old_statements": [
+    "On non-contrast MR lymphography of 44 lower extremities, pure lipedema showed homogeneous subcutaneous fat without epifascial fluid (0%) while lipolymphedema showed epifascial fluid collections (100%, p<.001) and dilated peripheral lymphatics (90.9% vs 18.2%, p=.001), with no honeycomb pattern and normal iliac lymphatic trunks in both groups."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1002/jmri.28281",
+   "title": "Subcutaneous Adipose Tissue Edema in Lipedema Revealed by Noninvasive 3T MR Lymphangiography",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Os perfis linfangiográficos observados foram distintos quando comparados a participantes pareados por IMC sem essas condições e diferentes do padrão visto em linfedema oncológico avançado, apoiando o lipedema como entidade clínica distinta da obesidade",
+   "note": "The study directly applies MR lymphangiography and Dixon fat/water MRI to compare imaging patterns across lipedema, lymphedema, LWL and controls, reporting group differences and odds ratios; however interobserver agreement was only fair-to- [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000203"
+   ],
+   "old_statements": [
+    "Noninvasive 3T MR lymphangiography revealed distinct topographic patterns of subcutaneous adipose tissue hyperintensity (extravascular and vascular) that distinguished lipedema, lipedema-with-lymphedema, and cancer-related lymphedema from BMI-matched controls, with cancer lymphedema showing more frequent dilated vascular patterns (OR=12.27) and diffuse hyperintensity observed only in disease groups, supporting imaging-based differentiation."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1111/obr.13648",
+   "title": "Diagnostic imaging in lipedema: A systematic review",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "The diagnostic performance of currently available imaging modalities for assessing lipedema is limited. Prospective studies are needed to evaluate and compare the diagnostic performance of each imaging modality.",
+   "note": "Systematic review evaluating diagnostic imaging methods for lipedema; relevant to diagnostic criteria/reliability, refining by reporting that imaging-based diagnostic performance is currently limited rather than well-established.",
+   "old_claims": [
+    "SCR-LIP-000363"
+   ],
+   "old_statements": [
+    "In a systematic review of 32 studies (1154 patients), imaging methods proposed for characterizing lipedema include ultrasound (increased subcutaneous adipose tissue), lymphoscintigraphy (slowed lymphatic flow, inter-limb asymmetry), CT (symmetrical bilateral soft tissue enlargement without skin thickening or edema), MRI, MR lymphangiography (enlarged lymphatic vessels up to 2 mm), and DXA (leg fat mass/BMI ≥0.46 or leg fat/total fat ≥0.384), but their overall diagnostic performance was limited."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1002/jmri.28720",
+   "title": "Response to “Comments on ‘Subcutaneous Adipose Tissue Edema in Lipedema Revealed by Noninvasive 3T MR Lymphangiography’”",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "RM linfangiografia de membro inteiro é viável (demonstrada em caso-exemplo no artigo original) e requer menos tempo de varredura do que linfocintilografia clínica padrão",
+   "note": "This is a correspondence/author response, not primary data, but it describes specific MRI capabilities (subcutaneous edema detection, contrast-based fibrosis characterization, 23Na-MRI sodium quantification) directly bearing on whether MRI ",
+   "old_claims": [
+    "SCR-LIP-000376"
+   ],
+   "old_statements": [
+    "This author response clarifies that non-invasive 3T MR lymphangiography detects subcutaneous adipose tissue edema in lipedema, while contrast-enhanced T1-weighted MRI can identify fibrosis (early enhancement = developing granulation, late enhancement = mature fibrosis) and 23Na-MRI can quantify tissue sodium, supporting MRI's role in characterizing lipedema and lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1002/jmri.28400",
+   "title": "Editorial for “Subcutaneous Adipose Tissue Edema in Lipedema Revealed by Noninvasive 3T Magnetic Resonance Lymphangiography”",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Limitação central apontada: tamanhos amostrais pequenos em cada subgrupo (ex.: linfedema relacionado a tratamento de câncer, n = 8), o que pode comprometer a confiabilidade estatística e a suficiência de evidência para delinear a especificidade da linfangiografia por RM.",
+   "note": "Editorial commentary (not original data) discussing a primary study showing MR lymphangiography reveals SAT edema and increased lymphatic load in lipedema; supports MRI's potential role in differentiation but explicitly notes limited sample",
+   "old_claims": [
+    "SCR-LIP-000376"
+   ],
+   "old_statements": [
+    "This author response clarifies that non-invasive 3T MR lymphangiography detects subcutaneous adipose tissue edema in lipedema, while contrast-enhanced T1-weighted MRI can identify fibrosis (early enhancement = developing granulation, late enhancement = mature fibrosis) and 23Na-MRI can quantify tissue sodium, supporting MRI's role in characterizing lipedema and lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1016/j.bjps.2023.05.056",
+   "title": "Lipedema: What we don’t know",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico de imagem: ultrassom de alta resolução diferencia lipedema (espessura subcutânea aumentada) de linfedema (espessura dérmica aumentada + ecogenicidade reduzida)",
+   "note": "Narrative review explicitly covering differential imaging (ultrasound, DXA, MR lymphangiography, lymphoscintigraphy) with cited cut-offs and patterns distinguishing lipedema from lymphedema, while acknowledging the lack of a single objectiv",
+   "old_claims": [
+    "SCR-LIP-000378"
+   ],
+   "old_statements": [
+    "This review reports that high-resolution ultrasound distinguishes lipedema (increased subcutaneous thickness; cut-offs 11.7 mm pretibial, 17.9 mm anterior thigh, 8.4 mm lateral leg) from lymphedema (increased dermal thickness with reduced echogenicity), DXA differentiates lipedema via leg-fat/total-fat index (cut-off 0.383) and BMI-adjusted leg fat (cut-off 0.46), MR lymphangiography shows dilated lymphatic vessels with a 'beaded' appearance, and lymphoscintigraphy reveals delayed lymphatic flow with frequent inter-limb asymmetry, while noting that no easy, objective diagnostic imaging test currently exists."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "DEXA index (Buso et al.): leg-fat/total-fat ratio ≥0.384 suggests lipedema; <0.383 useful for exclusion — auxiliary tool for borderline cases",
+   "note": "The review explicitly cites a DEXA leg-fat/total-fat ratio cutoff suggesting lipedema fat distribution, directly addressing whether DXA can identify lipedema fat distribution, though it is a narrative synthesis citing secondary data.",
+   "old_claims": [
+    "SCR-LIP-000378"
+   ],
+   "old_statements": [
+    "This review reports that high-resolution ultrasound distinguishes lipedema (increased subcutaneous thickness; cut-offs 11.7 mm pretibial, 17.9 mm anterior thigh, 8.4 mm lateral leg) from lymphedema (increased dermal thickness with reduced echogenicity), DXA differentiates lipedema via leg-fat/total-fat index (cut-off 0.383) and BMI-adjusted leg fat (cut-off 0.46), MR lymphangiography shows dilated lymphatic vessels with a 'beaded' appearance, and lymphoscintigraphy reveals delayed lymphatic flow with frequent inter-limb asymmetry, while noting that no easy, objective diagnostic imaging test currently exists."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1016/j.mvr.2009.01.005",
+   "title": "MR imaging of the lymphatic system in patients with lipedema and lipo-lymphedema",
+   "year": 2009,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "LIPEDEMA PURO: 0/10 (0%) com sinal de linfedema na T2-TSE — derme e hipoderme normais à T2",
+   "note": "The study directly evaluates MR lymphangiography to distinguish lipedema from lipo-lymphedema, reporting specific imaging findings, signal differences, and lymphatic flow timing that differentiate the conditions, directly bearing on the que",
+   "old_claims": [
+    "SCR-LIP-000382"
+   ],
+   "old_statements": [
+    "MR lymphangiography with intracutaneous gadoteridol distinguished pure lipedema from lipo-lymphedema: epifascial high-signal edema on T2-TSE was present in 100% (16/16) of lipo-lymphedema limbs but 0% (0/10) of pure lipedema limbs, while subcutaneous fat was thickened in all 26 limbs; contrast peak in lower-leg lymphatics was delayed in lipo-lymphedema (peak 45–55 min) versus lipedema (peak 35 min), and 60% of pure lipedema limbs showed subclinical dilated lymphatics despite no T2 lymphedema signal."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.7759/cureus.55906",
+   "title": "Assessment Modalities for Lower Extremity Edema, Lymphedema, and Lipedema: A Scoping Review",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Valores de corte de US para diagnóstico de lipedema: espessura dérmica de 8,4 mm (região lateral da perna), 11,7 mm (pré-tibial) e 17,9 mm (coxa) — valores reportados por estudo de 2021; lipedema associado a aumento de espessura de pele e hipoecogenicidade subcutânea",
+   "note": "Scoping review directly comparing MRI/MRL, lymphoscintigraphy, CT and other modalities for differentiating lipedema from lymphedema, reporting sensitivity/specificity and distinguishing features.",
+   "old_claims": [
+    "SCR-LIP-000383"
+   ],
+   "old_statements": [
+    "In a systematic review of six diagnostic modalities, MRI/MRL achieved 100% sensitivity (calf subcutaneous water area) and reliably differentiated lymphedema from lipedema, with non-contrast MRL identifying increased subcutaneous adipose tissue in lipedema and epifascial collections in lipolymphedema; CT showed 95% sensitivity/100% specificity for lipedema with subcutaneous honeycombing being 100% specific for lymphedema and absent in lipedema; whereas lymphoscintigraphy (lymphedema gold standard) could NOT distinguish lipedema from lymphedema since lymphatic changes occur in both."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.4236/jbise.2025.184008",
+   "title": "The Challenge of a Qualitative Ultrasonographic Classification in Lipedema",
+   "year": 2025,
+   "design": "case_series",
+   "n": 34,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "propondo uma nova classificação qualitativa (Lipedema Dermal and Hypodermal Classification — LDHC) que complemente as classificações anatômica e funcional já existentes",
+   "note": "Vargas et al.; obese non-lipedema show preserved layered septa",
+   "old_claims": [
+    "SCR-LIP-000010"
+   ],
+   "old_statements": [
+    "Qualitative ultrasound patterns of the dermis and hypodermis (Lipedema Dermal and Hypodermal Classification, LDHC) describe structural changes (septal alteration, echogenic nodules, dermal-hypodermal junction disruption) that may correspond to stages of inflammation and fibrosis."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.4236/jbise.2025.188026",
+   "title": "Case Report of Painful Nodules in Lipedema: Correlation between Qualitative Ultrasonographic Classification and Histological Findings",
+   "year": 2025,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "LDHC como 'biópsia virtual': a combinação de nódulo ecogênico LDHC 3 com bordes irregulares, ausência de achados de lipoma e ponto doloroso correspondente permite dispensar biópsia invasiva em casos típicos",
+   "note": "The article provides evidence that ultrasound can classify lipedema through the identification of specific ultrasonographic features.",
+   "old_claims": [
+    "SCR-LIP-000010"
+   ],
+   "old_statements": [
+    "Qualitative ultrasound patterns of the dermis and hypodermis (Lipedema Dermal and Hypodermal Classification, LDHC) describe structural changes (septal alteration, echogenic nodules, dermal-hypodermal junction disruption) that may correspond to stages of inflammation and fibrosis."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1080/21623945.2026.2719267",
+   "title": "Lipedema and obesity: biological interactions, diagnostic challenges, and principles of interdisciplinary management - a narrative review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "This review synthesizes clinical overlap, biological evidence, diagnostic implications, and staged management for predominantly adult women with suspected or confirmed lipedema",
+   "note": "The review addresses diagnostic differentiation of lipedema broadly but does not test or report MRI-specific findings distinguishing lipedema from lymphedema or other fat distributions, so it is on-topic background rather than direct imagin",
+   "old_claims": [
+    "SCR-LIP-000437"
+   ],
+   "old_statements": [
+    "This narrative review of lipedema and obesity discusses diagnostic implications and clinical overlap but does not report specific MRI or imaging findings differentiating lipedema from lymphedema or other fat distributions."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1097/gox.0000000000008015",
+   "title": "Lymphoscintigraphic Findings in Patients With Lipedema: A Systematic Review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lymphoscintigraphy findings were normal in 61.4% of patients with lipedema. Tortuous lymph vessels were the most common abnormality (56.8%), followed by collateral lymph vessels (49.1%) and popliteal node visualization (44.0%). Dermal backflow (3.8%) and secondary lymphedema (11.8%) were less freque",
+   "note": "The review reports lymphoscintigraphy patterns in lipedema (mostly normal or overload signs, low dermal backflow) that help distinguish it from lymphedema, but stresses methodological heterogeneity and lack of standardized protocols, qualif",
+   "old_claims": [
+    "SCR-LIP-000429"
+   ],
+   "old_statements": [
+    "In a systematic review of 7 studies (470 patients, 311 with lipedema), lymphoscintigraphy was normal in 61.4% of lipedema patients, with tortuous lymph vessels (56.8%), collateral vessels (49.1%), and popliteal node visualization (44.0%) as the most common abnormalities and dermal backflow rare (3.8%), reflecting lymphatic overload rather than frank insufficiency."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.bj.2025.100932",
+   "title": "Lymphedema imaging and AI: A review of diagnostic modalities, biomarkers, and clinical integration.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "MRI and CT provide detailed visualization of advanced fibrotic and adipose changes",
+   "note": "The review discusses MRI for assessing lymphedema tissue changes but does not specifically test MRI's ability to distinguish lipedema from lymphedema or other fat distributions; it is on-topic background only.",
+   "old_claims": [
+    "SCR-LIP-000438"
+   ],
+   "old_statements": [
+    "This review reports that MRI and CT provide detailed visualization of advanced fibrotic and adipose tissue changes in lymphedema, but does not directly evaluate MRI's ability to differentiate lipedema from lymphedema."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1117/12.2611240",
+   "title": "Whole-leg chemical-shift encoded MRI analysis reveals differential subcutaneous adipose tissue accumulation in lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Metodologia permite distinguir lipedema de obesidade geral mesmo em pacientes com mesmo IMC",
+   "note": "Article reports CSE-MRI reveals a differential SAT pattern distinguishing lipedema from general obesity even at equivalent BMI, directly bearing on MRI's ability to differentiate lipedema from other fat distributions.",
+   "old_claims": [
+    "SCR-LIP-000540"
+   ],
+   "old_statements": [
+    "Whole-leg chemical-shift encoded MRI with semi-automated segmentation of subcutaneous adipose tissue revealed a differential SAT accumulation pattern that distinguishes lipedema from BMI-matched obesity controls."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1117/1.jmi.10.3.036001",
+   "title": "Semiautomated segmentation of lower extremity MRI reveals distinctive subcutaneous adipose tissue in lipedema: a pilot study",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "SAT and muscle volumes and the SAT-to-muscle volume ratio were calculated acro",
+   "note": "The study demonstrates MRI-quantified SAT metrics distinguish lipedema from BMI-matched controls (not obesity alone), supporting MRI as a differential diagnostic tool; small pilot sample lowers confidence.",
+   "old_claims": [
+    "SCR-LIP-000540"
+   ],
+   "old_statements": [
+    "Whole-leg chemical-shift encoded MRI with semi-automated segmentation of subcutaneous adipose tissue revealed a differential SAT accumulation pattern that distinguishes lipedema from BMI-matched obesity controls."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1148/radiology.184.1.1609085",
+   "title": "Swollen lower extremity: role of MR imaging",
+   "year": 1992,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A IRM permite diferenciação não-invasiva e acurada entre lipedema, linfedema e flebedema com base em três padrões de sinal inequívocos.",
+   "note": "The study directly tests whether MRI can differentiate lipedema from lymphedema and phlebedema, reporting distinct signal patterns and significant group differences, which directly supports the affirmative question.",
+   "old_claims": [
+    "SCR-LIP-000541"
+   ],
+   "old_statements": [
+    "In 14 patients (5 lipedema, 5 lymphedema, 4 phlebedema), MRI with Gd-DOTA distinguished three unequivocal patterns: lipedema showed homogeneously enlarged subcutaneous tissue without T2 signal increase (I_T2w=1.0) or Gd enhancement, lymphedema showed a honeycomb pattern with markedly elevated T2 (p<0.002 vs lipedema), and phlebedema showed fluid in muscle and subcutis with moderate muscular Gd uptake."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1089/lrb.2022.0010",
+   "title": "Lower Limb Lipedema–Superficial Lymph Flow, Skin Water Concentration, Skin and Subcutaneous Tissue Elasticity",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The studies demonstraram diferenças no fluxo linfático superficial e na concentração de água entre membros com lipedema e membros normais. Os dados comprovam a utilidade da linfografia ICG, da medição da concentração de água cutânea e das medições de elasticidade da pele e tecido subcutâneo no diagn",
+   "note": "Controlled cross-sectional study using lymphoscintigraphy, ICG lymphography, and tissue measurements to differentiate lipedema limbs from normal controls, directly addressing whether imaging/measurement modalities can characterize lipedema, [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000198"
+   ],
+   "old_statements": [
+    "In 50 lipedema patients versus 50 controls, ICG lymphography and lymphoscintigraphy revealed slower superficial lymph flow (ICG reached upper calf in 8% vs 56%, p<0.0001), more numerous and dilated/tortuous lymphatic vessels, higher fluorescence intensity, higher skin water concentration in the feet (p=0.000189), and increased subcutaneous tissue stiffness, supporting their utility in diagnosing lipedema."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1080/028418501127346909",
+   "title": "MR imaging of primary, secondary, and mixed forms of lymphedema of the lower leg",
+   "year": 2001,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "In 24 patients there was a honeycomb pattern in the subcutis with a signal intensity corresponding to fluid (n=11), fibrosis (n=3), or both (n=10). Five patients with primary lymphedema showed subfascial fluid accumulation.",
+   "note": "The article demonstrates MRI can characterize distinct tissue patterns across lymphedema subtypes and mixed forms including lipolymphedema, noting lipedema without lymphatic involvement would lack honeycomb/epifascial fluid, directly bearin",
+   "old_claims": [
+    "SCR-LIP-000542"
+   ],
+   "old_statements": [
+    "In 26 patients with lymphedema of the lower leg, MRI showed distinguishing features by subtype: a subcutaneous honeycomb pattern in 24/26, dermal edema in 23/26, subfascial fluid in primary lymphedema, and muscular fat/edema predominantly in phlebolymphedema, with fat-suppressed SPIR-T2 and coronal T1 sequences allowing anatomical stratification of pure versus mixed forms; pure lipedema without a lymphatic component would lack honeycomb and epifascial fluid lakes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.3390/ijms24087591",
+   "title": "A Comparative Analysis to Dissect the Histological and Molecular Differences among Lipedema, Lipohypertrophy and Secondary Lymphedema",
+   "year": 2023,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "VEGF-R3 aumentado exclusivamente em linfedema (3,227±1,067 fold) vs todas as condições (lipedema 1,006, lipohipertrofia 1,406) — marcador molecular específico de linfedema",
+   "note": "The article distinguishes these conditions by tissue histology and molecular markers, not by MRI imaging; it is on-topic (differentiation of lipedema from lymphedema and other fat distributions) but does not test MRI, so it is context.",
+   "old_claims": [
+    "SCR-LIP-000543"
+   ],
+   "old_statements": [
+    "Histological and molecular analysis identified distinguishing features among lipedema, lipohypertrophy, and secondary lymphedema, including VEGF-R3, GJA1/Connexin-43 and Claudin-5 upregulation exclusive to lymphedema, adipocyte hypertrophy in lipedema and lipohypertrophy, and dramatically reduced podoplanin lymphatic coverage in lipohypertrophy."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "In small MRI series, pure lipedema tends to show homogeneous subcutaneous fat without the epifascial fluid or honeycomb pattern of lymphedema.",
+   "role": "supporting",
+   "rationale": "Small, mostly older MRI and MR lymphangiography series report this contrast, best shown against lipolymphedema or established lymphedema; lymphatic changes in lipedema are handled in P6.",
+   "evidence": [
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "MR lymphangiography: epifascial T2 edema in 16/16 lipo-lymphedema limbs vs 0/10 pure lipedema; contrast peak delayed in lipo-lymphedema (45-55 vs 35 min); yet 60% of pure lipedema limbs had subclinical dilated lymphatics."
+    },
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Non-contrast MR lymphography of 44 limbs: pure lipedema had homogeneous fat without epifascial fluid (0%) vs 100% in lipolymphedema (p<.001); dilated lymphatics 90.9% vs 18.2%; no honeycomb pattern in either group."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "In 14 patients (5 lipedema), MRI distinguished lipedema (homogeneous enlarged subcutis without T2 increase or enhancement), lymphedema (honeycomb, elevated T2, p<0.002) and phlebedema (fluid in muscle and subcutis)."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Scoping review of six modalities: MRI/MRL reported 100% sensitivity (calf subcutaneous water area) separating lymphedema from lipedema; CT honeycombing 100% specific for lymphedema; also cites ultrasound thickness cut-offs for lipedema."
+    },
+    {
+     "e": "E21",
+     "stance": "context",
+     "finding": "In 26 patients with lower-leg lymphedema (no lipedema group), MRI showed a subcutaneous honeycomb pattern in 24/26 and dermal edema in 23/26, allowing stratification of pure and mixed lymphedema forms."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00183"
+  },
+  {
+   "key": "P6",
+   "statement": "Lymphatic and fluid changes, such as subcutaneous edema-like signal and dilated lymphatic vessels, may occur in lipedema and are not exclusive to lymphedema.",
+   "role": "refines",
+   "rationale": "Qualifies P1 and the lymphoscintigraphy proposition: MR lymphangiography and fluorescence lymphography report altered subcutaneous signal and lymph flow in lipedema versus controls.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "3T MR lymphangiography showed subcutaneous adipose hyperintensity patterns in lipedema and lipedema with lymphedema distinct from BMI-matched controls and from cancer-related lymphedema (dilated vascular patterns OR 12.27); diffuse hyperintensity only in disease groups."
+    },
+    {
+     "e": "E7",
+     "stance": "refines",
+     "finding": "Editorial on the 3T MR lymphangiography study: small subgroup sizes (e.g. cancer-related lymphedema n=8) may compromise statistical reliability and evidence on specificity."
+    },
+    {
+     "e": "E6",
+     "stance": "context",
+     "secondary_of": "E4",
+     "finding": "Author response: whole-limb MR lymphangiography detects subcutaneous edema in lipedema; contrast T1 MRI can identify fibrosis and sodium MRI quantify tissue sodium."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "In 50 lipedema vs 50 controls, ICG reached the upper calf in 8% vs 56% (p<0.0001), with more dilated tortuous vessels, higher foot skin water and stiffer subcutaneous tissue."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00184"
+  },
+  {
+   "key": "P2",
+   "statement": "MRI measurement of subcutaneous fat volume and distribution may help separate lipedema from BMI-matched controls, based on small pilot data.",
+   "role": "supporting",
+   "rationale": "Pilot segmentation studies, one a conference abstract, report distinctive subcutaneous fat patterns at equivalent BMI, without external validation.",
+   "evidence": [
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Whole-leg chemical-shift encoded MRI with semi-automated segmentation revealed a differential subcutaneous fat accumulation pattern distinguishing lipedema from BMI-matched obesity controls."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Pilot study: MRI-derived subcutaneous fat and muscle volumes and fat-to-muscle ratio across leg regions distinguished lipedema from BMI-matched controls."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Deep learning DIXON MRI pipeline quantified subcutaneous (Dice 0.989) and subfascial (Dice 0.994) volumes and separated no-edema, lipedema and asymmetric lymphedema by volume, distribution and symmetry."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00185"
+  },
+  {
+   "key": "P3",
+   "statement": "The overall diagnostic performance of imaging for lipedema remains limited, with inconsistent protocols and no single validated objective test.",
+   "role": "refines",
+   "rationale": "Systematic and narrative reviews find heterogeneous protocols, scarce reliability data and no validated objective imaging test. Worded like an existing store proposition, which this check does not allow reusing by key here.",
+   "evidence": [
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Systematic review of 32 studies (1,154 patients) covering ultrasound, lymphoscintigraphy, CT, MRI, MR lymphangiography and DXA: overall diagnostic performance limited; prospective comparative studies needed."
+    },
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Systematic review of 13 quantification tools (8 imaging): heterogeneous, poorly documented protocols and clinimetric reliability reported in a minority of studies, limiting recommendations for practice."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Review: ultrasound thickness cut-offs, DXA fat indices, beaded lymphatics on MR lymphangiography and delayed lymphoscintigraphic flow are reported, yet no easy objective diagnostic imaging test currently exists."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00108",
+   "statement_before_twin_merge": "The overall diagnostic performance of imaging for lipedema remains limited, with inconsistent protocols and no single validated objective test."
+  },
+  {
+   "key": "P4",
+   "statement": "Qualitative ultrasound patterns of dermis and hypodermis, including septal changes and hyperechoic nodules, may classify structural tissue alterations in lipedema.",
+   "role": "context",
+   "rationale": "Ultrasound is an alternative, non-MRI modality for characterising lipedema tissue; evidence is a descriptive series and a single case. Worded like an existing store proposition, which this check does not allow reusing by key here.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "In 34 women with lipedema, a qualitative Lipedema Dermal and Hypodermal Classification (septal alteration, echogenic nodules, junction disruption) was proposed to complement existing classifications."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Case report correlating an echogenic irregular ultrasound nodule with histology of a painful lipedema nodule, proposing the classification as a virtual biopsy in typical cases."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00061",
+   "statement_before_twin_merge": "Qualitative ultrasound patterns of dermis and hypodermis, including septal changes and hyperechoic nodules, may classify structural tissue alterations in lipedema."
+  },
+  {
+   "key": "P5",
+   "statement": "DXA leg-fat indices are proposed as an auxiliary tool to suggest or exclude lipedema in borderline cases.",
+   "role": "context",
+   "rationale": "Body-composition indices are a non-MRI alternative, here resting on a single review citation, hence 'proposed'.",
+   "evidence": [
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Review citing a DXA leg-fat/total-fat ratio of 0.384 or more as suggesting lipedema and below 0.383 as useful for exclusion in borderline cases."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00188"
+  },
+  {
+   "key": "P7",
+   "statement": "Lymphoscintigraphy in lipedema is frequently normal, and dermal backflow, a hallmark of lymphedema, is rare.",
+   "role": "context",
+   "rationale": "Lymphoscintigraphic findings frame what lymphatic imaging adds beside MRI; altered flow versus controls is captured in P6. Worded like an existing store proposition, which this check does not allow reusing by key here.",
+   "evidence": [
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Systematic review of 7 studies (311 lipedema patients): lymphoscintigraphy normal in 61.4%; tortuous vessels 56.8%, collaterals 49.1%, popliteal nodes 44.0%; dermal backflow 3.8%."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 1,
+   "store_key": "G-00103",
+   "statement_before_twin_merge": "Lymphoscintigraphy in lipedema is frequently normal, and dermal backflow, a hallmark of lymphedema, is rare."
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E14",
+   "reason": "Narrative review reports no imaging finding differentiating lipedema."
+  },
+  {
+   "e": "E16",
+   "reason": "Review of lymphedema imaging only; contains no finding about lipedema."
+  },
+  {
+   "e": "E22",
+   "reason": "Histological and molecular study; does not involve imaging, off-topic for whether MRI differentiates lipedema."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "In small MRI series, pure lipedema tends to lack the epifascial fluid and T2 signal seen in lipolymphedema and lymphedema.",
+    "severity": "minor",
+    "note": "E10 and E3 compare pure lipedema with lipolymphedema, not pure lymphedema, and E3 found no honeycomb pattern in either group, so honeycomb does not discriminate there. E19 (n=5 lipedema) is the only item with lymphedema proper. E11 quote concerns ultrasound cut-offs; its MRI claim comes from the summary only. Hedged and small-series wording is appropriate."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Bundles subcutaneous edema-like signal and dilated lymphatics; E10 (60% subclinical dilated lymphatics) and E3 (18.2%) directly support the second part but are placed under P1. E20 uses ICG, not MRI. Some tension with P1 (no epifascial fluid in pure lipedema) is explained by different compartments but should be explicit."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged and flagged as pilot data. E2 compares lipedema with no-edema and lymphedema patients rather than BMI-matched controls, and could also support differentiation from lymphedema."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Important caveat, well supported by two systematic reviews and a review; it correctly tempers P1 and P2."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged with 'may'; ultrasound, off the MRI question but legitimately context. E13 is a single case report."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Describes a proposal as a proposal; DXA, off the MRI question but fine as context. Rests on a review of the original study."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lymphoscintigraphy in lipedema is frequently normal, and dermal backflow appears to be uncommon.",
+    "severity": "minor",
+    "note": "'A hallmark of lymphedema' is not stated in any item. The item E11 summary says lymphoscintigraphy cannot separate lipedema from lymphedema, which this proposition does not mention."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "P1 (no epifascial fluid in pure lipedema) and P6 (fluid and lymphatic changes may occur in lipedema) look contradictory without stating they refer to different compartments and to different subgroups.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E10 and E3 report dilated lymphatics in pure lipedema, supporting P6, but are listed only under P1.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Several propositions (P4, P5, P7) concern ultrasound, DXA and lymphoscintigraphy rather than MRI, though they are labelled context.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000029.cons2.json",
+   "ver": "SQ-LIP-000029.ver2.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00186",
+   "into": "G-00108"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00189",
+   "into": "G-00103"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00187",
+   "into": "G-00061"
+  }
+ ]
+}

@@ -665,7 +665,7 @@
   },
   {
    "key": "P2",
-   "statement": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status.",
+   "statement": "Liposuction for lipedema is associated with reduced pain and other symptoms compared with preoperative status, mainly in uncontrolled studies.",
    "role": "supporting",
    "rationale": "Many before-after case series and pooled single-arm meta-analyses consistently report large symptom reductions across techniques.",
    "evidence": [
@@ -734,7 +734,8 @@
    ],
    "grade": "high",
    "n_findings": 10,
-   "store_key": "G-00005"
+   "store_key": "G-00179",
+   "statement_before_twin_merge": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status."
   },
   {
    "key": "P3",
@@ -812,7 +813,7 @@
   },
   {
    "key": "P5",
-   "statement": "Liposuction for lipedema is associated with reduced need for compression and other conservative decongestive therapy.",
+   "statement": "The need for ongoing decongestive therapy is reported to decline after liposuction, though many patients continue some conservative therapy.",
    "role": "supporting",
    "rationale": "Several series report fewer patients needing compression or decongestive therapy after surgery, though many still require some.",
    "evidence": [
@@ -829,7 +830,8 @@
    ],
    "grade": "low",
    "n_findings": 2,
-   "store_key": "G-00009"
+   "store_key": "G-00115",
+   "statement_before_twin_merge": "Liposuction for lipedema is associated with reduced need for compression and other conservative decongestive therapy."
   },
   {
    "key": "P6",
@@ -1064,6 +1066,16 @@
    "step": "verify",
    "round": 2,
    "problems": []
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00005",
+   "into": "G-00179"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00009",
+   "into": "G-00115"
   }
  ]
 }

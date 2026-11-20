@@ -73,7 +73,7 @@ def global_verify():
     """Registry-wide verification rollup (R-AI-14) from claims.json — verified/disputed/total evidence."""
     claims = json.load(open(os.path.join(REG, "claims.json")))["claims"]
     vd = [(ev.get("verification") or {}).get("verdict") or "unverified"
-          for c in claims for ev in c.get("evidence", [])]
+          for c in claims if c.get("status") not in ("superseded", "retired") for ev in c.get("evidence", [])]
     return {"verified": vd.count("verified"), "disputed": vd.count("disputed"), "total": len(vd)}
 
 _VSEAL = {

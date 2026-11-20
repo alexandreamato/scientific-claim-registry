@@ -1,0 +1,905 @@
+{
+ "question": "SQ-LIP-000008",
+ "text": "Is lipedema associated with fibromyalgia and other chronic-pain conditions?",
+ "n_old_claims": 28,
+ "n_items": 30,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E5 (34% fibromyalgia, 354-woman survey wording identical to E4) likely re-reports the same cohort as E4 but has no secondary_of, so prevalence may be counted twice.",
+  "[minor] set: P2 contains context items (E3, E27) that are unrelated to its statement; P5 mixes symptoms with comorbidities.",
+  "[minor] P2: not fully supported; overgeneralized; two ideas; misplaced ['E3', 'E27'] — suggested: Pain is reported by most people with lipedema and appears more frequent and more disabling than in matched comparison groups. (High prevalence of pain is supported (E6, E12, E26), but the comparative claim rests on E6 only among the listed items. E2 (90.3% vs 42.7% leg pain) would support the comparison and is placed under P5. E3 (fibromyalgia scores unchanged after a diet) and E27 (comorbidity list) do not bear on pain prevalence or disability.)",
+  "[minor] P5: not fully supported; overgeneralized; two ideas; misplaced ['E8', 'E2'] — suggested: Joint pain, arthritis and migraine are reported as comorbidities in a substantial share of people with lipedema, with prevalences varying across samples. (Bundles joint pain, arthritis and migraine whose prevalence differs a lot (migraine 8.4% to 35%); 'frequently' is too strong for the low end. E8 (hypermobility, fatigue) and E2 (knee/leg pain symptom) are symptoms, not comorbid conditions. The post-surgical migraine improvement in E14 is not a comorbidity finding.)",
+  "[minor] P6: not fully supported; overgeneralized — suggested: In obese women with lipedema on a low-carbohydrate or low-fat diet, pain reduction may not be mediated by changes in systemic inflammatory or fibrotic markers. (Single RCT secondary analysis restricted to dietary intervention; the statement generalises to any pain reduction. Also peripheral to the fibromyalgia/chronic-pain association question.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1177/02683555251321042",
+   "title": "Lipedema awareness in fibromyalgia",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 100,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Lipedema was observed in 50% of the patients (58% Stage 1 lipedema). In the lipedema group, age, duration of fibromyalgia diagnosis, hematoma tendency/presence of telangiectasias (for all; p < .001)",
+   "note": "Gunaydin; lipedema in 50%; pain correlated with widespread pain r=0.62",
+   "old_claims": [
+    "SCR-LIP-000021"
+   ],
+   "old_statements": [
+    "Lipedema and fibromyalgia frequently co-occur: a cross-sectional study found lipedema in 50% of women meeting ACR fibromyalgia criteria, with longer fibromyalgia diagnostic delay and younger menarche as risk factors."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1590/1677-5449.202101981",
+   "title": "Prevalência e fatores de risco para lipedema no Brasil",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": 253,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "dor nas pernas 90.3% vs 42.7%; retenção de líquido 64.5% vs 19.8%; roxos frequentes 54.8% vs 16.6%; inchaço/edema 51.6%; sensação de peso 51.6%; dificuldade de perder peso 51.6%; queimação nas pernas 48.4%; sensibilidade ao toque 35.5%",
+   "note": "58.1% knee pain in screen-positive women",
+   "old_claims": [
+    "SCR-LIP-000022"
+   ],
+   "old_statements": [
+    "Knee pain is a common musculoskeletal feature of lipedema, reported by 58.1% of women screening positive for lipedema in a Brazilian population study."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.3390/nu13020358",
+   "title": "Potential Effects of a Modified Mediterranean Diet on Body Composition in Lipoedema",
+   "year": 2021,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Escores de fibromialgia (FAS) e VAS não mostraram diferença significativa após 4 semanas (FAS p=0,75; VAS p=0,47) — período curto insuficiente para mudança em dor crônica medida por escala contínua",
+   "note": "The article provides relevant information about pain and discomfort in lipoedema patients but does not specifically address fibromyalgia or chronic-pain conditions.",
+   "old_claims": [
+    "SCR-LIP-000058"
+   ],
+   "old_statements": [
+    "The article discusses the effects of a modified Mediterranean diet on lipoedema patients, noting improvements in their ability to perform daily activities with less fatigue, pain, and anxiety, but does not directly establish a link between lipoedema and fibromyalgia or other chronic-pain conditions."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1089/lrb.2023.0038",
+   "title": "Prevalence of Fibromyalgia Syndrome in Women with Lipedema and Its Effect on Anxiety, Depression, and Quality of Life",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "One hundred twenty-four patients (35%) satisfied FMS criteria.",
+   "note": "The study directly measures fibromyalgia prevalence in a lipedema population using validated diagnostic criteria (ACR 2016), finding a 35% comorbidity rate. Limitations include self-reported data via online survey and potential selection bi",
+   "old_claims": [
+    "SCR-LIP-000104"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 354 women with lipedema, 35% (124/354) met ACR 2016 diagnostic criteria for fibromyalgia syndrome, and those with fibromyalgia had significantly higher anxiety, depression, and impaired quality of life compared to those without."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.2147/jpr.s315736",
+   "title": "Common and Contrasting Characteristics of the Chronic Soft-Tissue Pain Conditions Fibromyalgia and Lipedema",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "34% das mulheres com lipedema preenchem critérios ACR 2016 para fibromialgia comórbida",
+   "note": "Direct empirical comparison of fibromyalgia and lipedema cohorts with validated instruments; cross-sectional design limits causal inference, but the 34% comorbidity rate and phenotypic overlap data directly address the association between l",
+   "old_claims": [
+    "SCR-LIP-000104"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 354 women with lipedema, 35% (124/354) met ACR 2016 diagnostic criteria for fibromyalgia syndrome, and those with fibromyalgia had significantly higher anxiety, depression, and impaired quality of life compared to those without."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.3390/life14030295",
+   "title": "Health Implications of Lipedema: Analysis of Patient Questionnaires and Population-Based Matched Controls",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Dor mais intensa no lipedema (p<0,001): nenhum paciente relatou estar livre de dor (vs 29,2% dos controles); 13,5% relataram dor muito intensa vs 7,2%. Incapacidade relacionada a dor nas atividades diarias muito maior no lipedema (p<0,001)",
+   "note": "The article directly addresses chronic pain burden in lipedema versus matched controls, demonstrating significantly higher pain prevalence and severity, supporting the association between lipedema and chronic pain conditions; however, it do",
+   "old_claims": [
+    "SCR-LIP-000105"
+   ],
+   "old_statements": [
+    "In a cross-sectional study comparing lipedema patients to sex-, age-, and BMI-matched population controls, 100% of lipedema patients reported pain (vs. 70.8% of controls), with 43.2% reporting severe pain-related disability in daily activities vs. 9.2% of controls, and strong correlation between pain severity and depressive symptoms (rho=0.612, p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1111/ddg.15064",
+   "title": "Breaking the circle‐effectiveness of liposuction in lipedema",
+   "year": 2023,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades: 99% com ao menos uma; menstruação anormal 43%; insônia 36%; enxaqueca 35%; alergias 33%; depressão 31%; linfedema 30%; dor articular 58%; hipotireoidismo 13%",
+   "note": "The article provides extensive comorbidity data for a large lipedema cohort and documents high rates of chronic pain and pain-related conditions, which is contextually relevant to the question about fibromyalgia and chronic-pain association",
+   "old_claims": [
+    "SCR-LIP-000106"
+   ],
+   "old_statements": [
+    "In a cohort of 860 lipedema patients, 99% had at least one comorbidity, including joint pain (58%), abnormal menstruation (43%), insomnia (36%), migraine (35%), allergies (33%), depression (31%), and lymphedema (30%), but fibromyalgia was not specifically reported among the listed comorbidities."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1515/hmbci-2017-0076",
+   "title": "Lipedema: friend and foe",
+   "year": 2018,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "dor severa, peso refratário a dieta/exercício, gait abnormalities (genu valgum, overpronação), fatiga (~75%), hipermobilidade em >50%",
+   "note": "The article documents pain, fatigue, and hypermobility as features of lipedema from chart review and literature, providing contextual evidence that lipedema is a chronic pain condition, but does not directly assess or report prevalence of f",
+   "old_claims": [
+    "SCR-LIP-000107"
+   ],
+   "old_statements": [
+    "Lipedema is characterized as a painful fat disorder associated with fatigue (reported by ~75% of patients), joint abnormalities, psychosocial distress, and hypermobility in >50% of patients, but the article does not specifically quantify co-occurrence with fibromyalgia or other named chronic-pain conditions."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.3390/ijms231810313",
+   "title": "Indications of Peripheral Pain, Dermal Hypersensitivity, and Neurogenic Inflammation in Patients with Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "painDETECT cumulativo: 11,0±5,2 (S1) vs 10,5±4,9 (S2) vs 17,6±7,2 (S3); p=0,0271; apenas Stage 3 apresentou respondedores >19 (dor neuropática)",
+   "note": "The article characterizes pain mechanisms (peripheral neuropathic pain, dermal hypersensitivity, neurogenic inflammation) within lipedema across stages, supporting lipedema as a chronic-pain condition, but it does not examine fibromyalgia o",
+   "old_claims": [
+    "SCR-LIP-000147"
+   ],
+   "old_statements": [
+    "In lipedema patients, pain prevalence and von Frey cutaneous hypersensitivity increased with disease stage (60-100% leg pain across stages, painDETECT >19 only in Stage 3), with reduced dermal Tuj-1+ neuronal density in abdomen and elevated CGRP/NGF in Stage 3 tissues suggesting peripheral neuropathic pain and neurogenic inflammation, independent of BMI."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.47582/jompac.1301253",
+   "title": "Comorbidity of lipedema and fibromyalgia; effects on disease severity, pain and health-related quality of life",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "39,6% (21/53) das pacientes com lipedema preencheram critérios ACR 2016 de FM",
+   "note": "The study directly quantifies the co-occurrence of fibromyalgia in lipedema patients (39.6% met ACR 2016 criteria) and characterizes pain/QoL effects, with results converging with prior studies (34%, 50%). It is observational and unadjusted",
+   "old_claims": [
+    "SCR-LIP-000290"
+   ],
+   "old_statements": [
+    "In a comparative observational study, 39.6% (21/53) of lipedema patients met ACR 2016 criteria for fibromyalgia, and the comorbid lipedema+fibromyalgia subgroup had significantly higher pain (median VAS 60 vs 27 for lipedema alone, p<0.001) and worse SF-36 quality-of-life scores across all 8 domains."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1038/ijo.2016.205",
+   "title": "Differentiating lipedema and Dercum’s disease",
+   "year": 2017,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Fibromialgia: DD 28% vs lipedema 10% (P=0,0003). Enxaquecas: DD 21% vs lipedema 7% (P=0,005).",
+   "note": "The article documents fibromyalgia, migraines, and pain scores as comorbidities in lipedema patients, providing direct prevalence data bearing on the question. However, prevalences are crude (unadjusted) and the primary focus is differentia",
+   "old_claims": [
+    "SCR-LIP-000291"
+   ],
+   "old_statements": [
+    "In a comparative study, fibromyalgia prevalence was 10% in lipedema patients (versus 28% in Dercum's disease, P=0.0003) and migraines were reported in 7% of lipedema patients (versus 21% in Dercum's, P=0.005), with a mean pain score of 4±2.5 on a 0–10 scale among lipedema patients."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1371/journal.pone.0319099",
+   "title": "Clinical characteristics, comorbidities, and correlation with advanced lipedema stages: A retrospective study from a Swiss referral centre",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Sintomas mais prevalentes: dor 87,9%, desproporcionalidade 82,2%, hematomas fáceis 77,7%, peso/pesadez 76%",
+   "note": "The article documents high prevalence of pain and fatigue and includes a rheumatic comorbidity category, but does not specifically report fibromyalgia or other defined chronic-pain conditions, so it provides only contextual symptom data rat",
+   "old_claims": [
+    "SCR-LIP-000292"
+   ],
+   "old_statements": [
+    "In a Swiss cohort of 381 lipedema patients, pain was reported by 87.9% (high pain BPI≥7 in 14.2%) and high fatigue (FSS≥4) in 56.1%, but rheumatic comorbidities and chronic-pain-specific conditions such as fibromyalgia were not separately quantified, and joint hypermobility (Beighton≥5) was present in only 4.2%."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3390/jcm14207195",
+   "title": "Lipedema and Hypermobility Spectrum Disorders Sharing Pathophysiology: A Cross-Sectional Observational Study",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "dor articular em tornozelos 70%, coluna cervical 66%, joelhos 56%, pés 55%, sacro 46%",
+   "note": "The article reports high prevalence of chronic musculoskeletal pain and multisystem symptoms in lipedema versus lymphedema, supporting an association with chronic-pain conditions, but uses a non-validated questionnaire and explicitly states",
+   "old_claims": [
+    "SCR-LIP-000293"
+   ],
+   "old_statements": [
+    "In a cross-sectional online survey, lipedema patients reported higher frequencies of chronic joint pain (ankles 70%, cervical spine 66%, knees 56%) and multisystem symptoms than lymphedema patients, with 26% recalling frequent childhood limb/back pain versus 12.7% in lymphedema, though differences were not statistically tested."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1111/dth.14534",
+   "title": "Disease progression and comorbidities in lipedema patients: A 10‐year retrospective analysis",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Migrânea: 22,6% tinham diagnóstico prévio; 66,7% delas relataram redução em intensidade e/ou frequência das crises pós-op (p<0,0001)",
+   "note": "The article reports migraine prevalence (22.6%) among lipedema patients and pain-related VAS symptoms, providing contextual data on co-occurring pain conditions, but it does not assess fibromyalgia nor test an adjusted association between l",
+   "old_claims": [
+    "SCR-LIP-000294"
+   ],
+   "old_statements": [
+    "In a retrospective cohort of lipedema patients undergoing multistage liposuction, 22.6% had a prior migraine diagnosis, of whom 66.7% reported reduced intensity and/or frequency of attacks postoperatively (p<0.0001)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1007/s13555-018-0241-6",
+   "title": "Exploration of Patient Characteristics and Quality of Life in Patients with Lipoedema Using a Survey",
+   "year": 2018,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades relatadas em 92 casos (56,4–57,1%); mais frequentes: doença cardíaca (n=35), doença da tireoide (n=19), fibromialgia (n=14), diabetes mellitus (n=9), doença intestinal (n=8), asma (n=8), linfedema (n=5)",
+   "note": "Cross-sectional survey reports fibromyalgia as a comorbidity and high pain prevalence among lipedema patients, but only crude self-reported counts without adjusted association analysis or control comparison for fibromyalgia specifically.",
+   "old_claims": [
+    "SCR-LIP-000295"
+   ],
+   "old_statements": [
+    "In a survey of lipedema patients, all reported physical complaints including pain (88.3%, mean current NRS 4.2) and fibromyalgia was among the reported comorbidities (n=14), with comorbidities associated with significantly reduced quality of life."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.cdnut.2025.104571",
+   "title": "Changes in Cytokines and Fibrotic Growth Factors after Low-Carbohydrate or Low-Fat Low-Energy Diets in Females with Lipedema",
+   "year": 2025,
+   "design": "rct",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "NÃO houve associação significativa entre mudanças em dor e mudanças em hsCRP, citocinas, marcadores fibróticos ou cetose (βHB) na semana 9, tanto na análise ITT quanto PP",
+   "note": "This is an RCT directly measuring inflammatory cytokines, fibrosis markers, and pain in lipedema patients, providing evidence that systemic inflammation does not explain pain mechanisms in lipedema, thereby refining the understanding of the",
+   "old_claims": [
+    "SCR-LIP-000095"
+   ],
+   "old_statements": [
+    "In females with lipedema and obesity, reductions in pain after a low-carbohydrate diet were not significantly associated with changes in systemic inflammatory markers (hsCRP, TNF-α, MIP-1β) or fibrosis-associated markers (TGF-β1/2/3), suggesting systemic inflammation does not mediate pain reduction in lipedema, and that localized adipose tissue inflammation may be more relevant."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1097/gox.0000000000005436",
+   "title": "Lipedema Reduction Surgery Improves Pain, Mobility, Physical Function, and Quality of Life: Case Series Report",
+   "year": 2023,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades em 189 mulheres: hipermobilidade articular 50,5%, varizes 48,6%/aranhas vasculares 24,5%, artrite 29,1% (artrite de joelho 15,8%), hipotireoidismo 25,9%, depressão 22,8%, asma 19,5%, anemia 11,1%, migrânea 8,4%, diabetes 5,3%",
+   "note": "The article documents pain-related comorbidities (arthritis, joint hypermobility, migraine) in a lipedema surgical cohort and pain improvement after surgery, but does not specifically address fibromyalgia and provides only crude prevalence ",
+   "old_claims": [
+    "SCR-LIP-000297"
+   ],
+   "old_statements": [
+    "In a case series of 189 women undergoing lipedema reduction surgery, reported comorbidities included joint hypermobility (50.5%), arthritis (29.1%), depression (22.8%), and migraine (8.4%), but fibromyalgia was not specifically reported and no adjusted analysis of pain-condition associations was performed."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema leads to chronic pain, swelling, and other discomforts due to the bilateral and asymmetrical expansion of subcutaneous adipose tissue.",
+   "note": "The review mentions chronic pain as a feature of lipedema but provides no specific data on comorbidity with fibromyalgia or other chronic-pain syndromes; it offers only contextual mention, not direct evidence on the association.",
+   "old_claims": [
+    "SCR-LIP-000298"
+   ],
+   "old_statements": [
+    "This narrative review of lipedema morphology and pathophysiology states that lipedema leads to chronic pain, swelling, and other discomforts due to bilateral asymmetrical subcutaneous adipose tissue expansion, but it does not specifically examine an association with fibromyalgia or other defined chronic-pain conditions."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "z-score para limiar de dor por pressão (PPT) reduzido 2x no quadríceps femoral; z-score para limiar de detecção de vibração (VDT) aumentado 2,5x na patela — ambos seletivamente na coxa afetada, não na mão; ausência de alterações centrais sugere mecanismo periférico via rigidez de ECM e amplificação ",
+   "note": "The narrative review reports localized pain phenotype (reduced pressure pain threshold) in lipedema via QST, indicating a peripheral pain mechanism, but does not address fibromyalgia or systemic chronic-pain comorbidity; the cited QST findi",
+   "old_claims": [
+    "SCR-LIP-000299"
+   ],
+   "old_statements": [
+    "Quantitative sensory testing in non-obese women with lipedema showed a 2-fold reduced pressure pain threshold and 2.5-fold increased vibration detection threshold selectively in the affected thigh (quadriceps/patella) but not the hand, with no central alterations, suggesting a peripheral pain mechanism via ECM stiffness and mechanoceptive amplification."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.20944/preprints202605.1114.v1",
+   "title": "Lipedema as a Syndrome of Adipose",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "a 35–40% comorbidity with fibromyalgia, a 1.42 relative risk for ADHD",
+   "note": "Article reports a 35–40% comorbidity of lipedema with fibromyalgia and chronic neuropathic pain features, supporting the affirmative association, though it is a proposed framework/review citing reported observations.",
+   "old_claims": [
+    "SCR-LIP-000402"
+   ],
+   "old_statements": [
+    "A proposed mechanistic framework for lipedema cites a 35–40% comorbidity with fibromyalgia and characteristic histaminergic peripheral sensitization generating neuropathic pain in gluteofemoral adipose tissue."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1186/s12905-026-04580-2",
+   "title": "Exploring quality of life and physical-physiological characteristics in obese patients with and without lipedema: insights from the LipObes study.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "the Lip-Obes group reported higher pain intensity, lower pressure pain thresholds in the arms and legs, and greater pain interference than the nonLip-Obes group (p < 0.05)",
+   "note": "The study documents heightened and more widespread pain sensitivity (including in the arms, suggesting central sensitization) in lipedema versus obesity, which is on-topic for the chronic-pain dimension, but it does not test fibromyalgia or",
+   "old_claims": [
+    "SCR-LIP-000403"
+   ],
+   "old_statements": [
+    "In a cross-sectional comparison of obese women with lipedema (n=30) versus obesity alone (n=29), the lipedema group reported higher pain intensity, lower pressure pain thresholds in arms and legs, greater pain interference, and higher pain catastrophizing, but the study did not assess fibromyalgia or other named chronic-pain diagnoses."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1177/15578585261454778",
+   "title": "Neuropathic Pain Features in Lipedema Compared to Lymphedema: An Exploratory Cross-Sectional Study.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema patients reported higher pain severity (VAS 6.2 ± 1.4 vs. 5.5 ± 1.5, p = 0.02) and greater neuropathic pain prevalence (42% vs. 21%, p < 0.01) than lymphedema.",
+   "note": "The article documents a high burden of neuropathic chronic pain features and associated anxiety/catastrophizing in lipedema, supporting an association with chronic-pain phenomena, but it does not test fibromyalgia specifically, so it refine",
+   "old_claims": [
+    "SCR-LIP-000404"
+   ],
+   "old_statements": [
+    "In an exploratory cross-sectional study of 118 women, lipedema patients showed higher neuropathic pain prevalence (42% vs 21%) and higher painDETECT/LANSS scores than lymphedema patients, with strong correlations between pain intensity, catastrophizing, and anxiety, but the study did not assess fibromyalgia specifically."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1177/02683555261451571",
+   "title": "Modern approaches to the diagnosis and multimodal management of lipedema: A phlebology-oriented clinical framework.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Delayed diagnosis often results in progressive fibrosis, lymphatic dysfunction, chronic pain, and functional impairment.",
+   "note": "The review mentions chronic pain as a feature of lipedema but does not specifically address or test an association with fibromyalgia or other defined chronic-pain conditions, so it is on-topic background rather than a direct test.",
+   "old_claims": [
+    "SCR-LIP-000405"
+   ],
+   "old_statements": [
+    "This narrative phlebology review describes lipedema as a systemic vascular-lymphatic-inflammatory disorder in which delayed diagnosis leads to chronic pain and functional impairment, but it does not test an association between lipedema and fibromyalgia or other chronic-pain conditions."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1080/09593985.2025.2592718",
+   "title": "Effects of lipedema on lower limb muscle strength, muscle endurance, functionality, functional exercise capacity, pressure pain threshold and edema: A case-control study",
+   "year": 2026,
+   "design": "case_control",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "pressure pain threshold of all assessing regions, percent of predicted 6MWT distance (p < .001) and 6MWT distance (p = .001) were significantly lower in women with lipedema compared to healthy controls",
+   "note": "The study directly measured pressure pain threshold and found significant pressure hyperalgesia in lipedema versus controls independent of BMI, providing affirmative evidence of a chronic-pain feature in lipedema. Note study_design is case_",
+   "old_claims": [
+    "SCR-LIP-000462"
+   ],
+   "old_statements": [
+    "In a BMI-matched case-control study of 24 women with lipedema versus 20 healthy controls, lipedema patients showed significantly reduced pressure pain thresholds (pressure hyperalgesia) at all measured sites (p<0.001), independent of BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1177/02683555261490379",
+   "title": "Screening for lipedema in women with lower extremity pain and its associations with functional status, pain, mood, and quality of life: A questionnaire-based case–control study",
+   "year": 2026,
+   "design": "case_control",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Mulheres com dor em membros inferiores tiveram escores de LSQ maiores e mais lipedema provável que controles (36,8% contra 12,3%; p = 0,001)",
+   "note": "Study links lipedema probability with chronic lower-extremity and neuropathic pain, supporting an association, but it is screening-based (LSQ not diagnostic) and addresses neuropathic pain rather than fibromyalgia specifically, so it refine",
+   "old_claims": [
+    "SCR-LIP-000463"
+   ],
+   "old_statements": [
+    "Among women with lower extremity pain, probable lipedema (LSQ) was more frequent than in controls (36.8% vs 12.3%, p=0.001), and higher LSQ scores correlated with neuropathic pain features (PainDETECT r=0.446, p<0.001), with PainDETECT independently associated with LSQ in multivariable regression (β=0.382, p=0.004)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1016/j.jvsv.2026.102585",
+   "title": "Association between Pain, BMI, and Clinical Characteristics in Lipoedema: Segmental Analysis Using Bioimpedance",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Pain showed the strongest associations with touch hypersensitivity and leg heaviness.",
+   "note": "The article characterizes pain and touch hypersensitivity in lipedema but does not test any association with fibromyalgia or defined chronic-pain conditions; it is on-topic for lipedema pain but does not directly address the comorbidity rel",
+   "old_claims": [
+    "SCR-LIP-000464"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of women with lipedema, pain (VAS) was present in most participants regardless of BMI, clinical stage, or morphological type, and correlated most strongly with touch hypersensitivity and leg heaviness rather than morphological parameters; fibromyalgia and other chronic-pain conditions were not assessed."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "commonly comorbid with hypertension, anemia, anxiety, and depression",
+   "note": "The abstract discusses lipedema pain mechanisms and lists comorbidities (hypertension, anemia, anxiety, depression) but does not specifically test or report association with fibromyalgia or other chronic-pain conditions, so it is on-topic c",
+   "old_claims": [
+    "SCR-LIP-000465"
+   ],
+   "old_statements": [
+    "This narrative review of lipedema lists common comorbidities as hypertension, anemia, anxiety, and depression, and describes a multifactorial pain mechanism (microvascular dysfunction, chronic inflammation, nerve compression, neuroinflammation), but does not report an association with fibromyalgia or other chronic-pain conditions."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1016/j.jmv.2012.05.002",
+   "title": "[Lipedema: a misdiagnosed entity]",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a clinical entity frequently misdiagnosed or confound with primary lymphedema.",
+   "note": "The review directly asserts that lipedema is frequently underdiagnosed and describes clinical criteria that aid identification, supporting the question's affirmative direction, though it is a narrative review without screening-tool validati",
+   "old_claims": [
+    "SCR-LIP-000456"
+   ],
+   "old_statements": [
+    "A narrative review emphasizes that lipedema is frequently misdiagnosed and confused with primary lymphedema, and describes characteristic clinical diagnostic criteria (bilateral hip-to-ankle enlargement sparing the feet, pain, easy bruising, pressure sensitivity) that distinguish it."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.2147/ijwh.s106227",
+   "title": "Lipedema: diagnostic and management challenges",
+   "year": 2016,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although the condition is well described, it is relatively rare and often misdiagnosed. The purpose of this review is to describe the initial evaluation and diagnosis of lipedema and discuss treatment options.",
+   "note": "The review states lipedema is often misdiagnosed and describes clinical diagnostic features, but it does not test a screening tool or report diagnostic performance; it is on-topic background rather than a direct test of the underdiagnosis/s",
+   "old_claims": [
+    "SCR-LIP-000456"
+   ],
+   "old_statements": [
+    "A narrative review emphasizes that lipedema is frequently misdiagnosed and confused with primary lymphedema, and describes characteristic clinical diagnostic criteria (bilateral hip-to-ankle enlargement sparing the feet, pain, easy bruising, pressure sensitivity) that distinguish it."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1177/15578585261508256",
+   "title": "Multidimensional Assessment of Pain and Related Factors In Lipedema: A Controlled Clinical Study.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Patients with lipedema demonstrated clinically relevant pain and neuropathic pain features.",
+   "note": "The study characterizes pain and neuropathic pain in lipedema but does not test association with fibromyalgia or other named chronic-pain conditions, so it is on-topic background rather than a direct test of the comorbidity relationship.",
+   "old_claims": [
+    "SCR-LIP-000466"
+   ],
+   "old_statements": [
+    "In 20 women with lipedema versus 20 healthy controls, lipedema patients demonstrated clinically relevant pain and neuropathic pain features (VAS, LANSS, DN4), with LANSS correlating with VAS (ρ=0.529, p=0.017) and DN4 (ρ=0.521, p=0.018), but the study did not assess fibromyalgia or other chronic-pain comorbidities."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Fibromyalgia is frequently reported to co-occur with lipedema in cross-sectional studies, although reported frequencies vary widely between samples.",
+   "role": "supporting",
+   "rationale": "Several cross-sectional samples using fibromyalgia criteria find substantial co-occurrence in both directions, with one comparison reporting a lower frequency.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Among 100 women meeting fibromyalgia criteria, lipedema was found in 50% (58% stage 1); longer fibromyalgia diagnostic delay associated with lipedema."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In an online survey of 354 women with lipedema, 35% (124/354) met ACR 2016 fibromyalgia criteria; those with fibromyalgia had higher anxiety, depression and worse quality of life."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "34% of women with lipedema met ACR 2016 criteria for comorbid fibromyalgia; comparison of fibromyalgia and lipedema cohorts showed phenotypic overlap."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "39.6% (21/53) of lipedema patients met ACR 2016 fibromyalgia criteria; the comorbid subgroup had higher pain (median VAS 60 vs 27, p<0.001) and worse SF-36 scores in all domains."
+    },
+    {
+     "e": "E11",
+     "stance": "refines",
+     "finding": "Fibromyalgia was reported in 10% of lipedema patients versus 28% in Dercum's disease (P=0.0003); crude, unadjusted prevalences."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "In a survey of lipedema patients, fibromyalgia was among the most frequently reported comorbidities (n=14); comorbidities were associated with reduced quality of life."
+    },
+    {
+     "e": "E20",
+     "stance": "context",
+     "finding": "A proposed mechanistic framework cites a 35-40% comorbidity of lipedema with fibromyalgia.",
+     "secondary_of": "E4"
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00065"
+  },
+  {
+   "key": "P2",
+   "statement": "Pain is reported by most people with lipedema and is more frequent and more disabling than in matched comparison groups.",
+   "role": "supporting",
+   "rationale": "Controlled and uncontrolled cross-sectional data and reviews consistently describe pain as a near-universal, disabling feature of lipedema.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Versus sex-, age- and BMI-matched population controls, no lipedema patient was pain-free (vs 29.2% of controls); pain-related disability in daily activities much higher (p<0.001); pain correlated with depressive symptoms (rho=0.612)."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "In 381 lipedema patients, pain was reported by 87.9% (BPI>=7 in 14.2%) and high fatigue by 56.1%; fibromyalgia not separately quantified."
+    },
+    {
+     "e": "E26",
+     "stance": "supporting",
+     "finding": "Pain was present in most women with lipedema regardless of BMI, stage or morphological type, and correlated most strongly with touch hypersensitivity and leg heaviness."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "finding": "Fibromyalgia (FAS) and VAS pain scores did not change significantly after four weeks of a modified Mediterranean diet in lipoedema (FAS p=0.75; VAS p=0.47)."
+    },
+    {
+     "e": "E18",
+     "stance": "context",
+     "finding": "Narrative review states lipedema leads to chronic pain, swelling and other discomforts; no fibromyalgia data."
+    },
+    {
+     "e": "E23",
+     "stance": "context",
+     "finding": "Narrative review states delayed diagnosis of lipedema often results in fibrosis, lymphatic dysfunction, chronic pain and functional impairment."
+    },
+    {
+     "e": "E27",
+     "stance": "context",
+     "finding": "Narrative review lists hypertension, anemia, anxiety and depression as common comorbidities and describes a multifactorial pain mechanism; no fibromyalgia association reported."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 7,
+   "store_key": "G-00066"
+  },
+  {
+   "key": "P3",
+   "statement": "Lipedema is associated with lower pressure pain thresholds than in healthy or obese comparison groups.",
+   "role": "supporting",
+   "rationale": "Case-control and cross-sectional studies with quantitative sensory testing find pressure hyperalgesia in lipedema, with disagreement on whether it is localized or widespread.",
+   "evidence": [
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "In 24 women with lipedema vs 20 BMI-matched healthy controls, pressure pain thresholds were significantly lower at all assessed regions (p<0.001)."
+    },
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "Obese women with lipedema (n=30) vs obesity alone (n=29) had higher pain intensity, lower pressure pain thresholds in arms and legs, greater pain interference and catastrophizing (p<0.05)."
+    },
+    {
+     "e": "E19",
+     "stance": "refines",
+     "finding": "Cited quantitative sensory testing in non-obese women: pressure pain threshold reduced 2-fold and vibration detection threshold raised 2.5-fold selectively in the affected thigh, not the hand, suggesting a peripheral mechanism."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00067"
+  },
+  {
+   "key": "P4",
+   "statement": "Neuropathic pain features are frequently reported in lipedema and may be more common in advanced stages.",
+   "role": "supporting",
+   "rationale": "Several studies using neuropathic pain screening tools find such features in lipedema, more than in lymphedema, with stage-dependent findings.",
+   "evidence": [
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "In 118 women, lipedema patients had higher pain severity (VAS 6.2 vs 5.5, p=0.02) and neuropathic pain prevalence (42% vs 21%, p<0.01) than lymphedema patients."
+    },
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "In 20 women with lipedema vs 20 healthy controls, lipedema patients showed clinically relevant pain and neuropathic pain features (VAS, LANSS, DN4); LANSS correlated with VAS (rho=0.529)."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Among women with lower extremity pain, probable lipedema was more frequent than in controls (36.8% vs 12.3%, p=0.001); PainDETECT independently associated with LSQ score (beta=0.382, p=0.004)."
+    },
+    {
+     "e": "E9",
+     "stance": "refines",
+     "finding": "painDETECT scores were higher in stage 3 (17.6) than stages 1-2 (11.0, 10.5; p=0.0271), with neuropathic responders only in stage 3; cutaneous hypersensitivity and CGRP/NGF increased with stage."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00068"
+  },
+  {
+   "key": "P5",
+   "statement": "Other chronic pain conditions, such as joint pain, arthritis and migraine, are frequently reported as comorbidities of lipedema.",
+   "role": "supporting",
+   "rationale": "Descriptive cohorts and surveys report high crude frequencies of joint pain, arthritis, migraine and hypermobility in lipedema.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "In 860 lipedema patients, 99% had at least one comorbidity: joint pain 58%, insomnia 36%, migraine 35%, depression 31%; fibromyalgia not listed."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Online survey: lipedema patients reported chronic joint pain (ankles 70%, cervical spine 66%, knees 56%) more often than lymphedema patients; differences not statistically tested."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "In 189 women undergoing reduction surgery: joint hypermobility 50.5%, arthritis 29.1% (knee 15.8%), depression 22.8%, migraine 8.4%; crude prevalences."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "22.6% of lipedema patients undergoing liposuction had a prior migraine diagnosis; 66.7% of them reported reduced intensity or frequency after surgery (p<0.0001)."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Chart review and literature describe severe pain, fatigue (~75%), gait abnormalities and hypermobility in >50% of lipedema patients."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "In a population screening, knee pain was reported by 58.1% of screen-positive women; leg pain 90.3% vs 42.7% in screen-negative women."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00069"
+  },
+  {
+   "key": "P6",
+   "statement": "Pain reduction in lipedema may not be mediated by changes in systemic inflammatory or fibrotic markers.",
+   "role": "refines",
+   "rationale": "A randomised diet trial found pain changes unrelated to systemic cytokine or fibrosis marker changes, qualifying inflammatory explanations of lipedema pain.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "In a randomised low-carbohydrate vs low-fat diet trial, pain changes at week 9 were not associated with changes in hsCRP, cytokines, fibrotic markers or ketosis, in ITT or PP analyses."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 1,
+   "store_key": "G-00070"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E28",
+   "reason": "Off-topic: review about misdiagnosis of lipedema versus lymphedema, no finding on fibromyalgia or chronic-pain comorbidity."
+  },
+  {
+   "e": "E29",
+   "reason": "Off-topic: review about diagnostic and management challenges, no finding on fibromyalgia or chronic-pain comorbidity."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Supported by several ACR 2016 prevalence figures (35-40%), with E11 (10%) correctly as refines. E1 is the reverse direction (lipedema among fibromyalgia patients). E5 reports 34% and appears to re-report the same 354-woman cohort as E4 (identical old_statement) without secondary_of; E20 is a secondary citation."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E3",
+     "E27"
+    ],
+    "suggested_statement": "Pain is reported by most people with lipedema and appears more frequent and more disabling than in matched comparison groups.",
+    "severity": "minor",
+    "note": "High prevalence of pain is supported (E6, E12, E26), but the comparative claim rests on E6 only among the listed items. E2 (90.3% vs 42.7% leg pain) would support the comparison and is placed under P5. E3 (fibromyalgia scores unchanged after a diet) and E27 (comorbidity list) do not bear on pain prevalence or disability."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E24 and E21 are primary controlled comparisons; E19 is a review citing QST data consistent with the statement."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Stage-dependence rests on a single study (E9) but is hedged with 'may'. E25 is a screening association (reverse direction) but adds a PainDETECT link."
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E8",
+     "E2"
+    ],
+    "suggested_statement": "Joint pain, arthritis and migraine are reported as comorbidities in a substantial share of people with lipedema, with prevalences varying across samples.",
+    "severity": "minor",
+    "note": "Bundles joint pain, arthritis and migraine whose prevalence differs a lot (migraine 8.4% to 35%); 'frequently' is too strong for the low end. E8 (hypermobility, fatigue) and E2 (knee/leg pain symptom) are symptoms, not comorbid conditions. The post-surgical migraine improvement in E14 is not a comorbidity finding."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "In obese women with lipedema on a low-carbohydrate or low-fat diet, pain reduction may not be mediated by changes in systemic inflammatory or fibrotic markers.",
+    "severity": "minor",
+    "note": "Single RCT secondary analysis restricted to dietary intervention; the statement generalises to any pain reduction. Also peripheral to the fibromyalgia/chronic-pain association question."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E5 (34% fibromyalgia, 354-woman survey wording identical to E4) likely re-reports the same cohort as E4 but has no secondary_of, so prevalence may be counted twice.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P2 contains context items (E3, E27) that are unrelated to its statement; P5 mixes symptoms with comorbidities.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000008.cons.json",
+   "ver": "SQ-LIP-000008.ver.json"
+  }
+ ]
+}

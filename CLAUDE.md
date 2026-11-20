@@ -179,7 +179,16 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
 > registra-não-arbitra, machine-first). A versão inicial falava em "consenso vivo"/Delphi como
 > núcleo — isso virou a **Layer 2 opcional**.
 
-## Estado atual (2026-11-17)
+## Estado atual (2026-11-20)
+
+**Claims consolidados (R-CLM-19).** Os 514 claims de artigo único viraram **215 proposições gerais** (≤25 palavras,
+sem números), cada uma com os achados dos estudos em `evidence[].finding`. Os antigos ficam `superseded`/`retired`,
+com página e link para o novo; nada foi apagado. Ferramentas: `registry/consolidate.py` (modo API ou modo subagente
+`prep|check|prep-verify|repair-prompt|arbitrate|finish|store-listing|merge-twins`), `apply_consolidation.py` e
+`recompile_agent.py`. Para economizar, o trabalho pesado roda em **subagentes do Claude Code**, não no OpenRouter.
+O registro mudou de estrutura desde a v0.5.2: falta publicar a **v0.6** no Zenodo (exige confirmação).
+
+### Estado anterior (2026-11-17)
 
 **v0.5.2 publicada (`10.5281/zenodo.24325901`), corrigindo a v0.5.1 (`…24325390`) e a v0.5 (`…24324283`).** Backfill das 42 perguntas contra a biblioteca (agora em `~/lipedema`,
 4.563 fichas): 391 → 526 claims, 470 → 626 evidências. Cron semanal consertado (não avança sem rodar; sobe o `bib serve`;

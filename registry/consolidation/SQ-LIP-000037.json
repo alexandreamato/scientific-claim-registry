@@ -1,0 +1,995 @@
+{
+ "question": "SQ-LIP-000037",
+ "text": "Is lipedema underdiagnosed, misdiagnosed, or diagnosed late?",
+ "n_old_claims": 23,
+ "n_items": 33,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E32 and E33 share the same title (Lipedema: A Commonly Misdiagnosed Fat Disorder, different years) and appear to be versions of the same review, counted separately in P1 and P5; prevalence figures of about 11% recur across E4, E5, E22 as citation of one source.",
+  "[minor] set: Several 'supporting' findings across the set (P1, P4) are secondary assertions of misdiagnosis or under-recognition without primary data, so the set may look better supported than it is; no proposition states explicitly that data on misdiagnosis rates are lacking.",
+  "[minor] set: E16 (39% in the general German population) contradicts how E6 describes the same figure (62 working women); the stance should not be treated as independent support in P4.",
+  "[minor] P1: not fully supported; overgeneralized; misplaced ['E4', 'E33'] — suggested: Lipedema is widely reported to be misdiagnosed as obesity or lymphedema, although quantitative data on misdiagnosis rates are scarce. (Almost entirely repeated assertions in narrative reviews; no item measures a misdiagnosis rate. E30 is two cases, E20 and E4 mention misdiagnosis in passing, E33 is about overweight coexistence. E17 and E12 are the strongest sources, but the 'frequently' wording is not quantified.)",
+  "[minor] P2: misplaced ['E10'] (Two cohorts give consistent delays of about 25 to 26 years (E27, E23); onset ages are recalled. E10 reports only mean age at diagnosis (no onset age) so it does not show delay, though its context stance is acceptable. 'Typically' rests on two studies.)",
+  "[minor] P3: not fully supported; two ideas — suggested: Some women with lipedema remain without a formal diagnosis, and reaching one may require several consultations. (Two selected samples: a specialised clinic (E8) and a survey of self-identified respondents (E11, whose undiagnosed group is not confirmed). Multiple consultations come from E11 only. Bundles two outcomes with different evidence.)",
+  "[minor] P4: not fully supported; overgeneralized; misplaced ['E21'] — suggested: Prevalence estimates for lipedema vary widely and are often high compared with recognised diagnoses, which some authors interpret as under-recognition. (Estimates range from 1 in 72,000 to 39%; E18 is a questionnaire with sensitivity 0.46, E6/E16 cite a 62-woman sample, and E16 misdescribes it as a general population estimate. The 11% and 1-in-9 figures in E5, E7, E22 are repeated citations, not independent. No item compares estimated prevalence with actual diagnosis counts. E21 concerns hypermobility and does not inform prevalence.)",
+  "[minor] P6: not fully supported; overgeneralized; two ideas; misplaced ['E3'] — suggested: Reliance on body mass index and the lack of validated objective criteria or biomarkers are thought to hinder recognition of lipedema. (Bundles two ideas with different evidence: BMI reliance (E1 descriptive, E2 expert opinion) and absent biomarkers (E13, E19, E31). E1 does not show that BMI reliance hinders diagnosis; its ultrasound result concerns a possible aid. E3 concerns research interpretability in obesity studies, not clinical recognition.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1177/02683555211002340",
+   "title": "Ultrasound criteria for lipedema diagnosis",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": 89,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Região pré-tibial: melhor preditor isolado com AUC excelente — direita 0,9079 (p<0,001), esquerda 0,9092 (p<0,001); cutoff ótimo 11,6 mm (D: sens 0,79, spec 0,96) e 11,8 mm (E: sens 0,77, spec 0,92); cutoff recomendado 11,7 mm",
+   "note": "81% of lipedema group overweight/obese by BMI alone",
+   "old_claims": [
+    "SCR-LIP-000007"
+   ],
+   "old_statements": [
+    "Because obesity is commonly defined by BMI alone (which disregards fat distribution), lipedema is frequently underdiagnosed when workup stops at an established obesity diagnosis; ~81% of lipedema patients are classified overweight/obese by BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "Amato ACM, 2021",
+   "title": null,
+   "year": 2022,
+   "design": "expert_opinion",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "book chapter on overdiagnosis",
+   "old_claims": [
+    "SCR-LIP-000007"
+   ],
+   "old_statements": [
+    "Because obesity is commonly defined by BMI alone (which disregards fat distribution), lipedema is frequently underdiagnosed when workup stops at an established obesity diagnosis; ~81% of lipedema patients are classified overweight/obese by BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.36557/2674-8169.2026v8n2p869-884",
+   "title": "Dor crônica e biomarcadores inflamatórios em mulheres com obesidade: Impacto dos Fenótipos Adiposos e Lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Fenótipo ginoide pode simular lipedema — ausência de triagem sistemática compromete a interpretabilidade dos dados de dor-inflamação",
+   "note": "The article is a narrative review (not a systematic review or meta-analysis) that explicitly calls for systematic lipedema screening to avoid misclassification, directly supporting the premise that lipedema is underdiagnosed and that screen",
+   "old_claims": [
+    "SCR-LIP-000062"
+   ],
+   "old_statements": [
+    "A narrative review of 2020–2025 evidence concludes that systematic lipedema screening is necessary when studying pain–inflammation relationships in women with obesity, because unrecognized lipedema may cluster pain within peripheral fat phenotypes and bias comparisons between android and gynoid obesity groups."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1097/prs.0000000000012217",
+   "title": "Observational Study of Ultrasound-Assisted Liposuction for Lower Limb Lipedema on 191 Female Patients",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema, a chronic condition affecting 11% of women, causes abnormal fat buildup in the lower limbs, leading to disproportionate body shape and functional problems. Often misdiagnosed, its cause is unclear",
+   "note": "The article briefly mentions that lipedema is often misdiagnosed (supporting the underdiagnosis aspect of the question) but does not address screening tools; its primary focus is on surgical treatment outcomes, making it only tangentially r",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1097/gox.0000000000001043",
+   "title": "Lipedema: A Relatively Common Disease with Extremely Common Misconceptions",
+   "year": 2016,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema afeta ~1 em 9 mulheres adultas; apesar da prevalência estimada, poucos médicos reconhecem a constelação de sinais e sintomas para diagnosticá-lo corretamente",
+   "note": "This is a narrative review article that highlights underdiagnosis of lipedema and the need for better diagnostic tools, directly supporting the question's affirmative direction, but provides no original screening tool validation data.",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1002/oby.22597",
+   "title": "Lipedema: A Call to Action!",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência mínima: 1:72.000 na população geral (Child et al.), considerado subestimação — estudo alemão com 62 mulheres profissionais detectou lipedema em 39% (todos os estágios), 9,7% para apresentação moderada a grave",
+   "note": "This narrative review explicitly states that lipedema is underdiagnosed and misdiagnosed, and calls for increased awareness and better understanding of its clinical presentation to improve diagnosis, directly supporting the affirmative dire",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência estimada de 6–11% em mulheres na população geral; prevalência mundial ~10% — subestimada por ausência de código ICD-10 nos EUA e falta de biomarcador diagnóstico validado",
+   "note": "This systematic review directly addresses underrecognition and diagnostic challenges in lipedema, supporting the affirmative direction of the question, though it does not specifically evaluate screening tools.",
+   "old_claims": [
+    "SCR-LIP-000063"
+   ],
+   "old_statements": [
+    "Lipedema is often misdiagnosed and affects approximately 11% (about 1 in 9) of adult women."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Apenas 23% tinham diagnóstico prévio de lipedema (77% subdiagnosticadas); diagnóstico clínico confirmado em 71% (82/115)",
+   "note": "The study documents underdiagnosis of lipedema in a specialized clinic setting and calls for increased awareness, directly supporting the question's affirmative direction. However, it is a single-center retrospective cross-sectional study w",
+   "old_claims": [
+    "SCR-LIP-000064"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 115 female patients in Saudi Arabia, only 71% received a clinical diagnosis of lipedema despite presenting to a specialized clinic, and the study authors characterize this as a high underdiagnosis rate requiring increased awareness."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1177/02683555251332998",
+   "title": "Lipedema awareness and knowledge level among medical doctors in Turkey: A cross-sectional study highlighting the diagnosis and treatment gap",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Existem lacunas significativas no conhecimento e consciência dos médicos turcos sobre lipedema. Os achados enfatizam a necessidade de incorporar conteúdo específico nas grades curriculares de medicina e em programas de educação médica continuada",
+   "note": "The cross-sectional survey directly demonstrates low physician awareness and knowledge of lipedema, supporting the premise that the condition is underdiagnosed; however, it does not evaluate screening tools specifically.",
+   "old_claims": [
+    "SCR-LIP-000064"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 115 female patients in Saudi Arabia, only 71% received a clinical diagnosis of lipedema despite presenting to a specialized clinic, and the study authors characterize this as a high underdiagnosis rate requiring increased awareness."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.3390/biomedicines13123049",
+   "title": "Clinical Signs at Diagnosis and Comorbidities in a Large Cohort of Patients with Lipedema in Spain",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Sinais dolorosos no exame físico com prevalência >96%: dor por pressão profunda no compartimento safeno grande proximal 98,7% (1780) e distal 98,4% (1775); dor no compartimento safeno pequeno 96,4% (1738); tender points internos supracondilar 98,8% e infracondilar 99%",
+   "note": "This large descriptive cross-sectional study characterizes clinical signs and comorbidities in lipedema and proposes a novel clinical assessment framework, supporting the notion that lipedema has complex, recognizable features that could ai",
+   "old_claims": [
+    "SCR-LIP-000065"
+   ],
+   "old_statements": [
+    "In a cohort of 1803 Spanish lipedema patients, 60.6% were diagnosed during reproductive years with a mean age of 42.9 years, and the study presents a novel clinical assessment approach including multiple comorbidity markers (e.g., suspected high intestinal permeability in 99%, bilateral trochanteric pain in 97.4%, ligamentous hyperlaxity in 95.8%) that may help physicians better identify and understand the condition."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.3390/ijerph20176647",
+   "title": "The Advanced Care Study: Current Status of Lipedema in Spain, A Descriptive Cross-Sectional Study",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "32,9% dos respondentes totais (352/1069) não tinham diagnóstico formal de lipedema; 50,8% do grupo não diagnosticado ainda buscava ativamente um profissional para obter diagnóstico",
+   "note": "The article explicitly applies the Schingale type classification and a modified Wolf/Herbst symptom scale, and proposes/validates a ≥6/13 symptom diagnostic criterion, directly describing clinical criteria and classification systems used fo",
+   "old_claims": [
+    "SCR-LIP-000364"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 969 Spanish lipedema patients, diagnoses used the Schingale type I-IV classification (type III 41.7%, type IV 36.8%, type II 17.8%, type I 3.7%) and a modified Wolf/Herbst 13-criteria symptom scale; the authors validated a threshold of ≥6 of 13 symptoms (Mann-Whitney p=0.666 showing no distributional difference between diagnosed and undiagnosed groups), and diagnosis often required multiple consultations (51.2% needed ≥3 specialists)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1177/0268355516639421",
+   "title": "First Dutch guidelines on lipedema using the international classification of functioning, disability and health",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema é uma doença desafiadora frequentemente mal diagnosticada como linfedema ou obesidade. Apesar da ausência de critérios objetivos de diagnóstico e da compreensão limitada dos mecanismos fisiopatológicos",
+   "note": "This is a clinical guideline based on a systematic literature review up to June 2013, which directly states that lipedema is likely underdiagnosed/misdiagnosed and proposes screening/measurement tools for early detection, but the underlying",
+   "old_claims": [
+    "SCR-LIP-000068"
+   ],
+   "old_statements": [
+    "Dutch lipedema guidelines conclude that lipedema is frequently misdiagnosed or wrongly classified as an aesthetic problem, and recommend a minimum data set of repeated clinical measurements (waist circumference, limb circumferences, BMI, and psychosocial distress scoring) to ensure early detection."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3238/arztebl.2020.0396",
+   "title": "Lipedema—Pathogenesis, Diagnosis, and Treatment Options",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O diagnóstico do lipedema permanece desafiador devido à apresentação heterogênea e à ausência de instrumentos objetivos de caracterização.",
+   "note": "This selective literature review directly addresses underdiagnosis of lipedema and the absence of objective screening/diagnostic tools, supporting the affirmative direction of the question, though it does not evaluate a specific screening t",
+   "old_claims": [
+    "SCR-LIP-000069"
+   ],
+   "old_statements": [
+    "Lipedema is often unrecognized or misdiagnosed despite an estimated prevalence of 10% in the overall female population, and diagnosis currently relies on clinical grounds alone due to the lack of specific biomarkers or objective measuring instruments."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1055/a-2530-5875",
+   "title": "Lipedema: Clinical Features, Diagnosis, and Management",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "despite frequent misdiagnosis, enhanced recognition, and research into customized therapeutic strategies for this poorly characterized but likely underdiagnosed disorder represent promising steps forward",
+   "note": "The article is a narrative review that explicitly states lipedema is frequently misidentified and likely underdiagnosed, supporting the question's affirmative direction, but does not present original data or validated screening tools, limit",
+   "old_claims": [
+    "SCR-LIP-000069"
+   ],
+   "old_statements": [
+    "Lipedema is often unrecognized or misdiagnosed despite an estimated prevalence of 10% in the overall female population, and diagnosis currently relies on clinical grounds alone due to the lack of specific biomarkers or objective measuring instruments."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1111/iwj.12949",
+   "title": "Lipoedema is not lymphoedema: A review of current literature",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Algoritmo diagnóstico original proposto (Figura 3): 1º passo = unilateral vs bilateral; bilateral não-depressível sem eritema = suspeita de lipoedema vs Stemmer+ (linfedema) vs obesidade vs lipodermatoesclerose",
+   "note": "This is a narrative review that explicitly states lipedema is globally misdiagnosed or underdiagnosed and calls for better clinical guidance, directly supporting the question's affirmative direction, though it does not evaluate a specific s",
+   "old_claims": [
+    "SCR-LIP-000069"
+   ],
+   "old_statements": [
+    "Lipedema is often unrecognized or misdiagnosed despite an estimated prevalence of 10% in the overall female population, and diagnosis currently relies on clinical grounds alone due to the lack of specific biomarkers or objective measuring instruments."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.bjps.2023.05.056",
+   "title": "Lipedema: What we don’t know",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "prevalência estimada em até 39% na população geral alemã (Lipedema-3 trial) — doença significativamente subdiagnosticada",
+   "note": "This narrative review directly addresses underdiagnosis of lipedema and the diagnostic challenges, supporting the affirmative direction of the question. It does not specifically evaluate screening tools but highlights the diagnostic gap and",
+   "old_claims": [
+    "SCR-LIP-000069"
+   ],
+   "old_statements": [
+    "Lipedema is often unrecognized or misdiagnosed despite an estimated prevalence of 10% in the overall female population, and diagnosis currently relies on clinical grounds alone due to the lack of specific biomarkers or objective measuring instruments."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic, underdiagnosed adipose disorder marked by disproportionate fat accumulation, pain, and impaired mobility. Misdiagnosis as obesity or lymphedema delays care and increases morbidity.",
+   "note": "The review addresses diagnostic criteria for lipedema and notes the absence of standardized, validated criteria, refining the question's premise about reliability.",
+   "old_claims": [
+    "SCR-LIP-000359"
+   ],
+   "old_statements": [
+    "This systematic review of 61 articles found that lipedema diagnosis relies largely on clinical features from observational cohorts, case series, and expert consensus with few randomized trials, and concluded that standardized diagnostic criteria and validated patient-reported outcomes are still lacking."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1590/1677-5449.202101981",
+   "title": "Prevalência e fatores de risco para lipedema no Brasil",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A prevalência de lipedema na população feminina brasileira é de 12,3%, estimando-se conservadoramente 8,8 milhões de mulheres entre 18-69 anos com sintomas sugestivos",
+   "note": "The article applies a validated screening tool to estimate high lipedema prevalence in a large population, directly demonstrating that screening instruments can identify suspected lipedema cases and supporting the notion of substantial undi",
+   "old_claims": [
+    "SCR-LIP-000275"
+   ],
+   "old_statements": [
+    "Using a previously validated online screening questionnaire (cutoff ≥12 points, AUC 0.8615, specificity 0.88, sensitivity 0.46, PPV 0.767), a population-representative study estimated lipedema prevalence at 12.3% among Brazilian women aged 18-69, corresponding to roughly 8.8 million women with suggestive symptoms."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1002/jmri.28400",
+   "title": "Editorial for “Subcutaneous Adipose Tissue Edema in Lipedema Revealed by Noninvasive 3T Magnetic Resonance Lymphangiography”",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O editorial enfatiza a carência de biomarcadores confiáveis e eficazes do lipedema e o papel potencial das medidas de RM do conteúdo de gordura tecidual no diagnóstico diferencial entre lipedema e obesidade.",
+   "note": "Editorial commentary discussing the need for diagnostic biomarkers and a potential MR imaging tool for identifying lipedema, which contextually relates to underdiagnosis and detection/screening, but it is not a primary study quantifying und",
+   "old_claims": [
+    "SCR-LIP-000279"
+   ],
+   "old_statements": [
+    "This editorial commenting on Crescenzi et al. (2023) emphasizes the lack of reliable lipedema biomarkers and highlights noncontrast 3T MR lymphangiography—which reveals subcutaneous adipose tissue edema and increased lymphatic load—as a promising imaging biomarker that could aid differential diagnosis between lipedema and obesity, while noting small sample sizes limit current evidence."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1177/02683555211068953",
+   "title": "Reply letter to the editor regarding ultrasound examination for en-suite measurements in lipedema",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Medições próprias (Amato et al. 2021): espessura média do tecido subcutâneo na coxa — 20,9 mm (lipedema) vs 12,67 mm (controles)",
+   "note": "A correspondence/reply letter explicitly asserting that lipedema is frequently underdiagnosed and discussing ultrasound criteria as a diagnostic tool; it directly addresses both parts of the question but is opinion/letter-level evidence.",
+   "old_claims": [
+    "SCR-LIP-000280"
+   ],
+   "old_statements": [
+    "This reply letter states that lipedema is frequently underdiagnosed and confused with obesity and lymphedema (worsened by phonetic similarity among 'lipedema', 'lipidemia', and 'lipemia'), and defends an ultrasound diagnostic cutoff incorporating dermal and subcutaneous thickness (mean subcutaneous thigh thickness 20.9 mm in lipedema vs 12.67 mm in controls)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.3390/jcm14207195",
+   "title": "Lipedema and Hypermobility Spectrum Disorders Sharing Pathophysiology: A Cross-Sectional Observational Study",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Despite its considerable impact on patients' quality of life, it remains underdiagnosed.",
+   "note": "The article explicitly states lipedema remains underdiagnosed, providing context relevant to the question, but its primary aim concerns pathophysiological overlap with HSD rather than evaluating a screening tool; the instrument was a non-va",
+   "old_claims": [
+    "SCR-LIP-000281"
+   ],
+   "old_statements": [
+    "In a cross-sectional online survey, lipedema patients more frequently reported hypermobility (44% in adulthood, ~60% in childhood), joint pain, and multisystem symptoms than lymphedema patients, and the authors note lipedema remains underdiagnosed and should be reconceptualized as a systemic connective tissue disorder."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.3390/jpm13010098",
+   "title": "Lipedema Research—Quo Vadis?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência mundial estimada em 11% entre mulheres — dado ampliado por subdiagnóstico, mas com limitação diagnóstica reconhecida pelos autores",
+   "note": "The review mentions underdiagnosis ('subdiagnóstico') as a factor inflating prevalence estimates, which provides contextual support for underdiagnosis, but it does not directly study or evaluate any screening tools; its primary focus is mol",
+   "old_claims": [
+    "SCR-LIP-000282"
+   ],
+   "old_statements": [
+    "A systematic review of molecular and cellular lipedema research estimated worldwide prevalence at approximately 11% among women, noting this figure is inflated by underdiagnosis and acknowledged diagnostic limitations, but the review focused on molecular biology and did not evaluate screening tools."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1016/j.remn.2018.06.008",
+   "title": "Hallazgos linfogammagráficos en pacientes con lipedema",
+   "year": 2018,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "início dos sintomas em média aos 20,4 anos, diagnóstico em média aos 46,5 anos (atraso diagnóstico de 26,1 anos)",
+   "note": "The article documents a substantial diagnostic delay (26.1 years on average), which contextually supports the notion that lipedema is underdiagnosed, but the study's primary aim concerns lymphoscintigraphic findings rather than evaluating s",
+   "old_claims": [
+    "SCR-LIP-000283"
+   ],
+   "old_statements": [
+    "In a cohort of 83 women with clinically diagnosed lipedema, symptoms began at a mean age of 20.4 years but diagnosis occurred at a mean age of 46.5 years, indicating a mean diagnostic delay of 26.1 years, while lymphoscintigraphy showed lymphatic alterations in 47% of patients across all clinical stages."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1556/oh.2008.28490",
+   "title": "Lipedema, a hardly known disease: diagnosis, associated illnesses and therapy",
+   "year": 2008,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a common but rarely diagnosed disease or frequently confused with obesity.",
+   "note": "The review explicitly states lipedema is underdiagnosed and frequently confused with obesity, and describes diagnostic criteria (the cardinal symptom triad and differential diagnoses) that aid identification, directly addressing the questio",
+   "old_claims": [
+    "SCR-LIP-000284"
+   ],
+   "old_statements": [
+    "This narrative review describes lipedema as a common but rarely diagnosed condition frequently confused with obesity, emphasizing that early recognition based on the diagnostic triad of spontaneous pain, pressure pain, and easy bruising is essential to prevent progression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1016/j.jpra.2026.01.004",
+   "title": "Lipedema and obesity: A narrative review and treatment protocol.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Despite improvements in diagnosis and treatment, lipedema is often misdiagnosed as obesity or lymphedema.",
+   "note": "The review addresses underdiagnosis/misdiagnosis of lipedema and calls for improved recognition, but does not test or validate a specific screening tool, so it refines rather than directly supports the screening-tool aspect of the question.",
+   "old_claims": [
+    "SCR-LIP-000284"
+   ],
+   "old_statements": [
+    "This narrative review describes lipedema as a common but rarely diagnosed condition frequently confused with obesity, emphasizing that early recognition based on the diagnostic triad of spontaneous pain, pressure pain, and easy bruising is essential to prevent progression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "apenas 46,2% dos 251 consultores do Vascular Society of Great Britain and Ireland reconheciam lipedema em levantamento (Tiwari 2006)",
+   "note": "The review explicitly documents widespread under-recognition of lipedema (low clinician recognition rate, absence from coding systems, 'hidden epidemic') and describes diagnostic criteria and imaging tools (clinical staging, CT sensitivity/",
+   "old_claims": [
+    "SCR-LIP-000285"
+   ],
+   "old_statements": [
+    "A systematic review reported that lipedema is poorly recognized clinically—only 46.2% of 251 Vascular Society of Great Britain and Ireland consultants recognized it (Tiwari 2006)—and that it was absent from MeSH/EMBASE and ICD-WHO as of 2012, while non-contrast CT showed 95% sensitivity and 100% specificity and the spared foot dorsum (negative Stemmer sign) helps distinguish lipedema from lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.23736/s0392-9590.25.05207-1",
+   "title": "Building evidence for diagnosis of lipedema: using a classification and regression tree (CART) algorithm to differentiate lipedema from lymphedema patients",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tempo do início ao diagnóstico marcadamente maior em lipedema: 25,5 anos vs 12,1 anos em linfedema (p<0,0001) — confirma atraso diagnóstico crônico.",
+   "note": "The article reports a chronic diagnostic delay in lipedema (25.5 years to diagnosis), supporting underdiagnosis, and develops a simple 3-variable screening/classification tree to identify lipedema versus lymphedema, directly addressing both",
+   "old_claims": [
+    "SCR-LIP-000288"
+   ],
+   "old_statements": [
+    "In a prospective cohort of 138 lipedema and 111 lymphedema patients, a CART algorithm using only three clinical variables (bruising, body disproportion, and non-swollen/spared feet) classified lipedema versus lymphedema with 100% accuracy, and the median time from symptom onset to diagnosis was markedly longer in lipedema (25.5 years vs 12.1 years for lymphedema, p<0.0001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1016/j.jmv.2012.05.002",
+   "title": "[Lipedema: a misdiagnosed entity]",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a clinical entity frequently misdiagnosed or confound with primary lymphedema.",
+   "note": "The review directly asserts that lipedema is frequently underdiagnosed and describes clinical criteria that aid identification, supporting the question's affirmative direction, though it is a narrative review without screening-tool validati",
+   "old_claims": [
+    "SCR-LIP-000456"
+   ],
+   "old_statements": [
+    "A narrative review emphasizes that lipedema is frequently misdiagnosed and confused with primary lymphedema, and describes characteristic clinical diagnostic criteria (bilateral hip-to-ankle enlargement sparing the feet, pain, easy bruising, pressure sensitivity) that distinguish it."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.2147/ijwh.s106227",
+   "title": "Lipedema: diagnostic and management challenges",
+   "year": 2016,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although the condition is well described, it is relatively rare and often misdiagnosed. The purpose of this review is to describe the initial evaluation and diagnosis of lipedema and discuss treatment options.",
+   "note": "The review states lipedema is often misdiagnosed and describes clinical diagnostic features, but it does not test a screening tool or report diagnostic performance; it is on-topic background rather than a direct test of the underdiagnosis/s",
+   "old_claims": [
+    "SCR-LIP-000456",
+    "SCR-LIP-000562"
+   ],
+   "old_statements": [
+    "A narrative review emphasizes that lipedema is frequently misdiagnosed and confused with primary lymphedema, and describes characteristic clinical diagnostic criteria (bilateral hip-to-ankle enlargement sparing the feet, pain, easy bruising, pressure sensitivity) that distinguish it.",
+    "This review states that lipedema is a frequently misdiagnosed and underdiagnosed condition that requires specific clinical recognition and differentiation from lymphedema and obesity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.4103/jpgm.jpgm_273_25",
+   "title": "Report of two cases of lipedema: An under-recognized, misdiagnosed, and under-reported disorder in India",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Frequently misdiagnosed as lymphedema or obesity, lipedema presents with pain, easy bruising, bilateral nonpitting edema, and swelling that worsens throughout the day.",
+   "note": "The report explicitly states lipedema is under-recognized, misdiagnosed, and under-reported, and demonstrates how established clinical criteria and a diagnostic algorithm (screening-type tool) correctly identified it, directly supporting th",
+   "old_claims": [
+    "SCR-LIP-000457"
+   ],
+   "old_statements": [
+    "In two cases in India, lipedema was initially misdiagnosed as filarial lymphedema or obesity, and normal lymphoscintigraphy plus application of six clinical criteria (foot/hand sparing, negative Stemmer's sign) redirected the diagnosis to lipedema, prompting a published diagnostic algorithm for filariasis-endemic settings."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "addressing the persistent underdiagnosis and misdiagnosis of the condition",
+   "note": "The review explicitly addresses persistent underdiagnosis and describes imaging screening/diagnostic aids with cutoffs and performance, supporting the affirmative but noting the ultrasound cutoffs are not yet externally validated (a caveat)",
+   "old_claims": [
+    "SCR-LIP-000455"
+   ],
+   "old_statements": [
+    "This narrative review reports persistent underdiagnosis and misdiagnosis of lipedema and describes imaging-based diagnostic aids, including high-frequency ultrasound cutoffs (pretibial ≥11.7 mm, thigh ≥11.9 mm, lateral leg ≥8.4 mm; sensitivity 0.77–0.79, specificity up to 0.96, not yet externally validated) and a DEXA leg-fat/total-fat ratio ≥0.384 as auxiliary tools for borderline cases."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E32",
+   "ref": "DOI:10.1097/psn.0000000000000245",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a fat disorder that is often misdiagnosed. It was first identified at the Mayo Clinic in 1940, but medical schools do not include it in their curriculum and is therefore poorly understood.",
+   "note": "The review explicitly states lipedema is often misdiagnosed, poorly understood due to absence from medical curricula, and that early diagnosis is crucial, directly affirming underdiagnosis/misdiagnosis/late diagnosis.",
+   "old_claims": [
+    "SCR-LIP-000561"
+   ],
+   "old_statements": [
+    "A literature review for plastic surgical nurses reports that lipedema is often misdiagnosed and poorly understood because it is absent from medical and nursing curricula, with about 50% of diagnosed patients also having obesity/overweight that complicates diagnosis, and emphasizes that early diagnosis is crucial as the disease is progressive."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E33",
+   "ref": "DOI:10.1097/psn.0000000000000316",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "~50% dos diagnosticados também apresentam sobrepeso/obesidade — o que complica o diagnóstico diferencial e perpetua o mal-diagnóstico como 'apenas obesidade'",
+   "note": "The article's title and content explicitly frame lipedema as a commonly misdiagnosed fat disorder, often mistaken for obesity, directly supporting the question's affirmative direction.",
+   "old_claims": [
+    "SCR-LIP-000561"
+   ],
+   "old_statements": [
+    "A literature review for plastic surgical nurses reports that lipedema is often misdiagnosed and poorly understood because it is absent from medical and nursing curricula, with about 50% of diagnosed patients also having obesity/overweight that complicates diagnosis, and emphasizes that early diagnosis is crucial as the disease is progressive."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema is frequently misdiagnosed as obesity or lymphedema.",
+   "role": "supporting",
+   "rationale": "Guidelines, reviews and case reports consistently describe confusion with obesity and lymphedema, though largely as expert assertion.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "National guideline based on systematic literature review: lipedema is frequently misdiagnosed as lymphedema or obesity or classed as aesthetic; recommends repeated clinical measurements for early detection."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Systematic review of 61 articles: lipedema is underdiagnosed and misdiagnosis as obesity or lymphedema delays care; standardised diagnostic criteria and validated outcomes are lacking."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Narrative review describing lipedema as frequently misdiagnosed and a poorly characterised but likely underdiagnosed disorder."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Review stating lipoedema is globally misdiagnosed or underdiagnosed; proposes a diagnostic algorithm separating it from lymphoedema, obesity and lipodermatosclerosis."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Review: lipedema is common but rarely diagnosed or frequently confused with obesity; early recognition via spontaneous pain, pressure pain and easy bruising is emphasised."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Narrative review: despite improvements in diagnosis and treatment, lipedema is often misdiagnosed as obesity or lymphedema."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Review: lipedema is frequently misdiagnosed or confused with primary lymphedema; describes foot-sparing enlargement, pain, bruising and pressure sensitivity as distinguishing criteria."
+    },
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Review describing lipedema as often misdiagnosed and requiring specific recognition and differentiation from lymphedema and obesity."
+    },
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "Two cases initially misdiagnosed as filarial lymphedema or obesity were redirected to lipedema by normal lymphoscintigraphy and clinical criteria (foot and hand sparing, negative Stemmer sign)."
+    },
+    {
+     "e": "E33",
+     "stance": "supporting",
+     "finding": "Review: about 50% of diagnosed patients are also overweight or obese, complicating differential diagnosis and perpetuating misdiagnosis as obesity alone."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Reply letter: lipedema is frequently underdiagnosed and confused with obesity and lymphedema; reports mean thigh subcutaneous thickness 20.9 mm in lipedema vs 12.67 mm in controls on ultrasound."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Liposuction cohort paper describing lipedema as often misdiagnosed and affecting about 11% of women."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 12,
+   "store_key": "G-00116"
+  },
+  {
+   "key": "P2",
+   "statement": "Lipedema is typically diagnosed many years after symptom onset.",
+   "role": "supporting",
+   "rationale": "Cohort data report diagnostic delays of decades, longer than for lymphedema.",
+   "evidence": [
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "Prospective cohort of 138 lipedema and 111 lymphedema patients: median onset-to-diagnosis 25.5 vs 12.1 years (p<0.0001); a three-variable tree (bruising, disproportion, spared feet) classified them with 100% accuracy."
+    },
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "In 83 women with lipedema, symptoms began at mean age 20.4 and diagnosis came at mean age 46.5, a mean delay of 26.1 years."
+    },
+    {
+     "e": "E10",
+     "stance": "context",
+     "finding": "In 1,803 lipedema patients, mean age at diagnosis was 42.9 years, with 60.6% diagnosed during reproductive years; tender points and comorbidity markers were very frequent at diagnosis."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00117"
+  },
+  {
+   "key": "P3",
+   "statement": "A substantial share of women with lipedema have no prior diagnosis, and reaching one often requires several consultations.",
+   "role": "supporting",
+   "rationale": "Clinic and patient surveys document many previously undiagnosed patients and multiple specialist visits.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Of 115 women attending a specialised clinic, lipedema was clinically confirmed in 71% (82), and only 23% had a previous lipedema diagnosis."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Survey of 1,069 respondents: 32.9% had no formal diagnosis and half of them were still seeking one; 51.2% of diagnosed patients needed three or more specialists."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00118"
+  },
+  {
+   "key": "P4",
+   "statement": "Prevalence estimates suggest lipedema is common among women, far exceeding recorded diagnoses, although estimates vary widely.",
+   "role": "supporting",
+   "rationale": "Population screening and reviews report prevalence estimates far above clinical recognition, although estimates vary widely with diagnostic method.",
+   "evidence": [
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Population-representative survey with a validated screening questionnaire (AUC 0.86, sensitivity 0.46, specificity 0.88) estimated lipedema prevalence of 12.3% among women aged 18-69."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Review: minimum prevalence of 1:72,000 considered an underestimate, versus 39% (9.7% moderate-severe) in a sample of 62 working women; calls for awareness to improve diagnosis."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Review: lipedema affects about 1 in 9 adult women, yet few physicians recognise the constellation of signs and symptoms needed to diagnose it."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Review: estimated prevalence 6-11% in women, underestimated because of absence of a US ICD-10 code and lack of a validated diagnostic biomarker."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Review citing prevalence up to 39% in a general population sample, describing lipedema as significantly underdiagnosed."
+    },
+    {
+     "e": "E22",
+     "stance": "refines",
+     "finding": "Review estimating worldwide prevalence at about 11% of women, while acknowledging the figure is affected by underdiagnosis and diagnostic limitations."
+    },
+    {
+     "e": "E21",
+     "stance": "context",
+     "finding": "Survey linking lipedema with hypermobility (44% in adulthood) more often than lymphedema; authors state lipedema remains underdiagnosed despite its impact on quality of life."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 7,
+   "store_key": "G-00031",
+   "statement_before_twin_merge": "Estimated lipedema prevalence among women is high relative to recognised diagnoses, which is interpreted as under-recognition."
+  },
+  {
+   "key": "P5",
+   "statement": "Low clinician awareness and knowledge of lipedema are reported to contribute to its under-recognition.",
+   "role": "supporting",
+   "rationale": "Clinician surveys and reviews report limited recognition and absence from training curricula.",
+   "evidence": [
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Cross-sectional survey of medical doctors found significant gaps in lipedema awareness and knowledge, calling for curricular and continuing education content."
+    },
+    {
+     "e": "E26",
+     "stance": "supporting",
+     "finding": "Systematic review citing that only 46.2% of 251 vascular consultants recognised lipedema, and that it was absent from MeSH, EMBASE and ICD as of 2012."
+    },
+    {
+     "e": "E32",
+     "stance": "supporting",
+     "finding": "Review: lipedema is often misdiagnosed and poorly understood because medical and nursing curricula do not include it; early diagnosis described as crucial given progression."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00120"
+  },
+  {
+   "key": "P6",
+   "statement": "Reliance on body mass index and the absence of validated objective criteria or biomarkers are reported to hinder recognition of lipedema.",
+   "role": "supporting",
+   "rationale": "Diagnosis remains clinical; BMI ignores fat distribution and proposed imaging cut-offs are not externally validated.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "In 89 participants, 81% of the lipedema group were overweight or obese by BMI alone; pretibial ultrasound thickness gave AUC about 0.91, cut-off 11.7 mm (sensitivity 0.77-0.79, specificity 0.92-0.96)."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Expert book chapter arguing that defining obesity by BMI alone disregards fat distribution, so lipedema is missed when workup stops at an obesity diagnosis."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Review: lipedema often unrecognised despite estimated 10% prevalence; diagnosis relies on clinical grounds because of heterogeneous presentation and no objective characterisation instruments."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Editorial emphasising the lack of reliable lipedema biomarkers and the potential of MR fat and edema measures to aid differential diagnosis from obesity, with small samples limiting evidence."
+    },
+    {
+     "e": "E31",
+     "stance": "supporting",
+     "finding": "Review addressing persistent underdiagnosis; ultrasound cut-offs (pretibial 11.7 mm, sensitivity 0.77-0.79) and DXA leg-fat ratio 0.384 proposed as auxiliary aids, not yet externally validated."
+    },
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Narrative review: gynoid obesity phenotype can mimic lipedema, and lack of systematic lipedema screening in obesity studies compromises interpretation of pain-inflammation data."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 6,
+   "store_key": "G-00121"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E4",
+     "E33"
+    ],
+    "suggested_statement": "Lipedema is widely reported to be misdiagnosed as obesity or lymphedema, although quantitative data on misdiagnosis rates are scarce.",
+    "severity": "minor",
+    "note": "Almost entirely repeated assertions in narrative reviews; no item measures a misdiagnosis rate. E30 is two cases, E20 and E4 mention misdiagnosis in passing, E33 is about overweight coexistence. E17 and E12 are the strongest sources, but the 'frequently' wording is not quantified."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E10"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Two cohorts give consistent delays of about 25 to 26 years (E27, E23); onset ages are recalled. E10 reports only mean age at diagnosis (no onset age) so it does not show delay, though its context stance is acceptable. 'Typically' rests on two studies."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Some women with lipedema remain without a formal diagnosis, and reaching one may require several consultations.",
+    "severity": "minor",
+    "note": "Two selected samples: a specialised clinic (E8) and a survey of self-identified respondents (E11, whose undiagnosed group is not confirmed). Multiple consultations come from E11 only. Bundles two outcomes with different evidence."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E21"
+    ],
+    "suggested_statement": "Prevalence estimates for lipedema vary widely and are often high compared with recognised diagnoses, which some authors interpret as under-recognition.",
+    "severity": "minor",
+    "note": "Estimates range from 1 in 72,000 to 39%; E18 is a questionnaire with sensitivity 0.46, E6/E16 cite a 62-woman sample, and E16 misdescribes it as a general population estimate. The 11% and 1-in-9 figures in E5, E7, E22 are repeated citations, not independent. No item compares estimated prevalence with actual diagnosis counts. E21 concerns hypermobility and does not inform prevalence."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E9 shows knowledge gaps and E26 low recognition (a 2006 survey), but neither shows that these gaps cause under-recognition; E32 is an assertion. Wording 'reported to contribute' is acceptable but causal."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E3"
+    ],
+    "suggested_statement": "Reliance on body mass index and the lack of validated objective criteria or biomarkers are thought to hinder recognition of lipedema.",
+    "severity": "minor",
+    "note": "Bundles two ideas with different evidence: BMI reliance (E1 descriptive, E2 expert opinion) and absent biomarkers (E13, E19, E31). E1 does not show that BMI reliance hinders diagnosis; its ultrasound result concerns a possible aid. E3 concerns research interpretability in obesity studies, not clinical recognition."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E32 and E33 share the same title (Lipedema: A Commonly Misdiagnosed Fat Disorder, different years) and appear to be versions of the same review, counted separately in P1 and P5; prevalence figures of about 11% recur across E4, E5, E22 as citation of one source.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Several 'supporting' findings across the set (P1, P4) are secondary assertions of misdiagnosis or under-recognition without primary data, so the set may look better supported than it is; no proposition states explicitly that data on misdiagnosis rates are lacking.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E16 (39% in the general German population) contradicts how E6 describes the same figure (62 working women); the stance should not be treated as independent support in P4.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000037.cons.json",
+   "ver": "SQ-LIP-000037.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00119",
+   "into": "G-00031"
+  }
+ ]
+}

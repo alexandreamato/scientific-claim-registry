@@ -1,0 +1,1064 @@
+{
+ "question": "SQ-LIP-000011",
+ "text": "What is known about the inflammation and pain mechanism in lipedema tissue?",
+ "n_old_claims": 31,
+ "n_items": 33,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: Mast cell and neuroimmune activation (E1, E20 substance P release, E27, E7) has no proposition. E1 is filed under macrophage infiltration while E25 found no mast cell difference, so the finding is mixed and unrepresented.",
+  "[minor] set: Oxidative stress markers (MDA, protein carbonyls in E13, E28, E3) are scattered across P2, P4 and P7 with no proposition. E20 and E28 re-report the same serum cytokine finding, and E13 and E28 the same oxidative stress finding, without secondary_of.",
+  "[minor] set: Tension between P3 (local inflammatory pathways downregulated), P1 and the stage-dependent upregulation of IL6 and TNF in E8 is not reconciled. A stage-dependent proposition could resolve it.",
+  "[minor] P1: misplaced ['E1', 'E22'] (E23 and E25 (BMI-matched controls) carry it. E1 is a histamine/mast-cell hint that does not show immune-cell infiltration, and E25 found no mast cell difference, so E1 is not a refinement. E22 (CD45+ and CD68+ increased vs controls) is a primary study placed only under P4 and belongs here as supporting.)",
+  "[minor] P2: not fully supported; overgeneralized; stance errors ['E8']; misplaced ['E3', 'E26'] — suggested: Macrophages in lipedema tissue are reported to be predominantly M2-polarized, with a possible shift toward M1-like phenotype in advanced stages. (E8 reports M2-dominant at stage I shifting to M1-like with IL6/TNF up at stages II-III, and E20 describes M1-like predominance; both partly contradict a stage-free 'rather than pro-inflammatory'. E18 calls the M2 profile chronic low-grade inflammation, so 'anti-inflammatory' is interpretive. E26's note that one transcriptomic study found suppressed inflammation fits P3. E3 is a review framing M2 as a driver; it supports M2 but its biomarker finding is not about macrophage phenotype.)",
+  "[minor] P3: two ideas (Hedged ('some') and supported by E17. It bundles 'inflammation downregulated' with 'favouring metabolic mechanisms'; only the first is directly shown. E2 (M1 genes IL1b, IL6, IL1R1 down), E26 (a transcriptomic study with suppressed inflammation) and E18 (dissociating lipedema from hypertrophic fat) bear on this and are filed elsewhere. It sits in tension with E8 (IL6/TNF up at stages II-III), which the set should reconcile, for example by stage.)",
+  "[minor] P4: misplaced ['E22'] (Evidence is genuinely mixed: E31, E28, E20 show elevation; E22 contradicts. E23 (no systemic inflammation markers), E3 (CRP normal) and E17 (minimal systemic changes) also support 'inconsistent' and are not here. E20 and E28 both report the same serum cytokine finding (IL-11, IL-28A, IL-29) from one underlying study, so they count as one.)",
+  "[minor] P7: not fully supported; overgeneralized; two ideas; stance errors ['E13']; misplaced ['E13', 'E32'] — suggested: Neuropathic pain features and peripheral nerve involvement, possibly including neurogenic inflammation, are reported in lipedema. (E30 and E6 carry the evidence, but E6 reports painDETECT >19 only at stage 3 and neurogenic inflammation rests on CGRP/NGF in stage 3 tissue, so 'frequently' is generous. E7 is a single case report. E13 is a hypothesis and E32 a general review; neither shows that nerve involvement is reported. Neuropathic pain and neurogenic inflammation are two ideas with different evidence.)",
+  "[minor] P8: not fully supported; two ideas; misplaced ['E15', 'E9', 'E24'] — suggested: Microvascular dysfunction and tissue sodium accumulation are proposed contributors to inflammation in lipedema tissue. (Hedged ('proposed') and supported by E10, E19 and E12, all of which are proposals. The two mechanisms are different ideas. E15 (extracellular vesicle crosstalk) is neither microvascular nor sodium. E9 is a 5-patient uncontrolled series with a non-significant sodium change (p=0.12), so it adds almost nothing. E24 describes vascular pathology but not pain.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.7417/CT.2023.2496",
+   "title": "Targeting Mast Cells: Sodium Cromoglycate as a Possible Treatment of Lipedema",
+   "year": 2023,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "Mast cells may play a role in the pathology of lipedema.",
+   "note": "Bonetti et al.; preliminary metabolomics; needs replication",
+   "old_claims": [
+    "SCR-LIP-000041"
+   ],
+   "old_statements": [
+    "Lipedema-affected subcutaneous adipose tissue shows elevated tissue histamine (~2.2-fold vs controls) in a preliminary metabolomic study."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.3389/fimmu.2022.1004609",
+   "title": "A distinct M2 macrophage infiltrate and transcriptomic profile decisively influence adipocyte differentiation in lipedema",
+   "year": 2022,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Genes M1 downregulados em lipedema: IL1b, IL6, IL23a, IL1R1 (via IL-1 como pathway mais downregulado), TNFAIP8, TLR4, IRF-1",
+   "note": "Wolf et al.; CyTOF + RNA-seq; in vitro functional causality (IPI-549)",
+   "old_claims": [
+    "SCR-LIP-000042"
+   ],
+   "old_statements": [
+    "Lipedema gluteofemoral adipose tissue displays a dominant M2 macrophage transcriptomic signature with CD163+ macrophage enrichment (2.58-fold by qPCR; 1171 differentially expressed genes), indicating a type-2 immune microenvironment."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.3390/biomedicines13030561",
+   "title": "Lipedema: A Disease Triggered by M2 Polarized Macrophages?",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "marcadores inflamatórios e oxidativos (CRP normal, mas TNFSF14, S100-A12, MDA elevados em estágio 3)",
+   "note": "This comprehensive narrative review directly addresses inflammation and pain mechanisms in lipedema tissue, highlighting the anti-inflammatory M2 macrophage phenotype (rather than classical pro-inflammatory pathways) and vascular permeabili",
+   "old_claims": [
+    "SCR-LIP-000042"
+   ],
+   "old_statements": [
+    "Lipedema gluteofemoral adipose tissue displays a dominant M2 macrophage transcriptomic signature with CD163+ macrophage enrichment (2.58-fold by qPCR; 1171 differentially expressed genes), indicating a type-2 immune microenvironment."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1097/PR9.0000000000001155",
+   "title": "Non-obese lipedema patients show a distinctly altered quantitative sensory testing profile with high diagnostic potential",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "high",
+   "quote": "Pressão é mediada por fibras C/Aδ; vibração por fibras Aβ → o padrão alterado sugere envolvimento seletivo destes subgrupos de fibras, com inflamação sistêmica e hormonal descartadas como causadores principais (não há sensibilização da mão); inflamação local clássica também improvável (ausência de h",
+   "note": "Dinnendahl/Bertsch; only PPT-down and VDT-up of 13 parameters; pattern in thigh, absent in hand",
+   "old_claims": [
+    "SCR-LIP-000043"
+   ],
+   "old_statements": [
+    "Lipedema has a distinctive quantitative sensory testing (QST) signature in the affected limb — isolated lowered pressure pain threshold and raised vibration detection threshold with spared thermal thresholds — yielding high diagnostic accuracy (PVTH-score AUC 0.958)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1177/02683555251357094",
+   "title": "Relationship of the tissue stiffness measured using shear wave elastography with the pain threshold and quality of life of patients with lipedema: A cross-sectional study",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Algometria (PPT) significativamente menor no Grupo 1 em todas as 4 regiões (coxa e panturrilha, bilateral) em ambos estratos de IMC (p < 0,001) — confirmando hipersensibilidade pressórica como sinal cardinal independente de IMC",
+   "note": "Cross-sectional study with 71 participants directly measuring pain thresholds and tissue mechanical properties in lipedema versus controls; provides mechanistic insight into pain (pressure hyperalgesia independent of BMI) but does not eluci",
+   "old_claims": [
+    "SCR-LIP-000043"
+   ],
+   "old_statements": [
+    "Lipedema has a distinctive quantitative sensory testing (QST) signature in the affected limb — isolated lowered pressure pain threshold and raised vibration detection threshold with spared thermal thresholds — yielding high diagnostic accuracy (PVTH-score AUC 0.958)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.3390/ijms231810313",
+   "title": "Indications of Peripheral Pain, Dermal Hypersensitivity, and Neurogenic Inflammation in Patients with Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "painDETECT cumulativo: 11,0±5,2 (S1) vs 10,5±4,9 (S2) vs 17,6±7,2 (S3); p=0,0271; apenas Stage 3 apresentou respondedores >19 (dor neuropática)",
+   "note": "The article characterizes pain mechanisms (peripheral neuropathic pain, dermal hypersensitivity, neurogenic inflammation) within lipedema across stages, supporting lipedema as a chronic-pain condition, but it does not examine fibromyalgia o",
+   "old_claims": [
+    "SCR-LIP-000147"
+   ],
+   "old_statements": [
+    "In lipedema patients, pain prevalence and von Frey cutaneous hypersensitivity increased with disease stage (60-100% leg pain across stages, painDETECT >19 only in Stage 3), with reduced dermal Tuj-1+ neuronal density in abdomen and elevated CGRP/NGF in Stage 3 tissues suggesting peripheral neuropathic pain and neurogenic inflammation, independent of BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.29011/2574-7754.102581",
+   "title": "Vascular and Nerve-Associated Inflammation in Lipedema Hand and Foot Tissue: A Case Report",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Macrófagos observados ao longo das fibras nervosas e camadas externas dos nervos — consistente com inflamação nervosa localizada (nerve-associated inflammation)",
+   "note": "This is a single case report providing novel histological characterization of nerve-associated inflammation in lipedema tissue; findings are descriptive and hypothesis-generating but cannot establish causality or generalizability due to the",
+   "old_claims": [
+    "SCR-LIP-000091"
+   ],
+   "old_statements": [
+    "Histological analysis of lipedema hand and foot tissue reveals perineurial/endoneurial macrophage infiltration (nerve-associated inflammation) concurrent with increased microvascular density, perivascular fibrosis, adipocyte hypertrophy, and mast cell infiltration, suggesting pain in lipedema involves both vascular and neurogenic inflammatory mechanisms."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.3389/fimmu.2023.1223264",
+   "title": "Lipedema stage affects adipocyte hypertrophy, subcutaneous adipose tissue inflammation and interstitial fibrosis",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Nos estágios II e III das coxas: upregulation significativa de IL6, TNF, VEGFC, CD86 e CD206; downregulation de leptina (LEP)",
+   "note": "This is a cross-sectional biopsy study with histological, immunohistochemical, and gene expression analyses comparing lipedema stages to controls; it directly characterizes inflammatory mediators, macrophage phenotypes, fibrosis, and molecu",
+   "old_claims": [
+    "SCR-LIP-000092"
+   ],
+   "old_statements": [
+    "In lipedema subcutaneous adipose tissue, interstitial fibrosis precedes adipocyte hypertrophy (present at stage I), crown-like structures appear at all stages, IL-6 and TNF are upregulated at stages II–III in affected thighs, macrophage polarization shifts from M2-dominant (anti-inflammatory) at stage I toward M1-like (pro-inflammatory) at stage III, and VEGFC is upregulated in advanced disease—collectively delineating a stage-dependent inflammatory and fibrotic progression in affected tissue."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1089/lrb.2021.0039",
+   "title": "Physical Therapy in Women with Early Stage Lipedema: Potential Impact of Multimodal Manual Therapy, Compression, Exercise, and Education Interventions",
+   "year": 2021,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Sódio do TCS da perna: redução de 10,5 ± 1,4 para 9,7 ± 1,5 mmol/L (-8%, p=0,12), Cohen's d = -0,9 (efeito grande), corroborando hipótese de redução de inflamação tecidual.",
+   "note": "Small uncontrolled proof-of-principle study (n=5) of a multimodal therapy that includes manual lymphatic drainage and compression, reporting significant reductions in pain and improvements in function and QoL, plus objective imaging biomark",
+   "old_claims": [
+    "SCR-LIP-000185"
+   ],
+   "old_statements": [
+    "In a proof-of-principle study of 5 women with Stage 1-2 lipedema, a 6-week multimodal physical therapy program (manual lymphatic drainage, myofascial release, negative-pressure device, exercise, compression, education) reduced pain VAS from 4.6 to 0.0 (p=0.005), improved PSFS function by 3.8 points (p<0.001), and lowered skin and subcutaneous sodium on MRI (-9% p=0.059; -8% p=0.12) with QoL improvement in 4/5 participants."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1089/whr.2020.0086",
+   "title": "Interstitial Fluid in Lipedema and Control Skin",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Sódio tecidual elevado em lipedema (referenciando Crescenzi 2018) proposto como mecanismo de dano ao glicocalix endotelial → inflamação endotelial → microangiopatia",
+   "note": "The article directly addresses tissue-level mechanisms in lipedema (interstitial fluid accumulation, microangiopathy, endothelial inflammation via sodium-glycocalyx hypothesis) using histological analysis of skin biopsies with quantitative ",
+   "old_claims": [
+    "SCR-LIP-000094"
+   ],
+   "old_statements": [
+    "Lipedema thigh skin shows significantly increased dermal interstitial spaces (~46% vs 42% in controls, p=0.003) and abnormal vessel phenotype (microangiopathy) concentrated in hydrostatic-pressure-exposed areas, with elevated tissue sodium proposed as a mechanism of endothelial glycocalyx damage leading to endothelial inflammation and microangiopathy."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1016/j.cdnut.2025.104571",
+   "title": "Changes in Cytokines and Fibrotic Growth Factors after Low-Carbohydrate or Low-Fat Low-Energy Diets in Females with Lipedema",
+   "year": 2025,
+   "design": "rct",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "NÃO houve associação significativa entre mudanças em dor e mudanças em hsCRP, citocinas, marcadores fibróticos ou cetose (βHB) na semana 9, tanto na análise ITT quanto PP",
+   "note": "This is an RCT directly measuring inflammatory cytokines, fibrosis markers, and pain in lipedema patients, providing evidence that systemic inflammation does not explain pain mechanisms in lipedema, thereby refining the understanding of the",
+   "old_claims": [
+    "SCR-LIP-000095"
+   ],
+   "old_statements": [
+    "In females with lipedema and obesity, reductions in pain after a low-carbohydrate diet were not significantly associated with changes in systemic inflammatory markers (hsCRP, TNF-α, MIP-1β) or fibrosis-associated markers (TGF-β1/2/3), suggesting systemic inflammation does not mediate pain reduction in lipedema, and that localized adipose tissue inflammation may be more relevant."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1055/a-2181-8469",
+   "title": "Lipedema associated with Skin Hypoperfusion and Ulceration: Soft Tissue Debulking Improving Skin Perfusion",
+   "year": 2024,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Inflamacao e microangiopatia explicariam a dor associada; o acumulo de proteinas de matriz (GAGs) e sodio levaria a fragilidade microvascular, petequias, hematomas e isquemia tecidual.",
+   "note": "The article is a single case report that briefly mentions inflammation and microangiopathy as proposed mechanisms for pain in lipedema, but does not provide direct experimental or mechanistic evidence; the primary focus is on surgical debul",
+   "old_claims": [
+    "SCR-LIP-000096"
+   ],
+   "old_statements": [
+    "In a case of atypical lipedema with skin hypoperfusion and ulceration, the authors propose that inflammation and microangiopathy explain the associated pain, while accumulation of matrix proteins (GAGs) and sodium leads to microvascular fragility, petechiae, bruising, and tissue ischemia."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1016/j.mehy.2014.08.011",
+   "title": "Pathophysiological dilemmas of lipedema",
+   "year": 2014,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Marcadores de estresse oxidativo (malondialdeído, carbonilas proteicas) elevados no lipedema (Siems)",
+   "note": "This is a narrative/critical review proposing an integrative pathomechanism hypothesis for lipedema. It synthesizes existing clinical, experimental, and animal model data to suggest that inflammation of peripheral nerves, sympathetic innerv",
+   "old_claims": [
+    "SCR-LIP-000097"
+   ],
+   "old_statements": [
+    "The article proposes that peripheral nerve inflammation and sympathetic innervation abnormalities of subcutaneous adipose tissue—mediated by estrogen—are responsible for neuropathy and pain in lipedema, with elevated oxidative stress markers (malondialdehyde, protein carbonyls) and primary vasculo-lymphangiopathy contributing to the inflammatory milieu."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1007/s00105-023-05189-4",
+   "title": "Lipödemschmerz – das vernachlässigte Symptom",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Inflamação sistêmica generalizada como driver é improvável: hiperalgesia inflamatória clássica envolve calor + mecânica (não observado); ausência de sensibilização em áreas não afetadas; refratariedade aos anti-inflamatórios (AINEs, corticoides) e opioides. Inflamação localizada profunda no tecido l",
+   "note": "This is a narrative review article summarizing current knowledge on lipedema pain mechanisms; it refines the question by specifying peripheral sensory changes as emerging evidence while downplaying systemic inflammation as a primary driver,",
+   "old_claims": [
+    "SCR-LIP-000098"
+   ],
+   "old_statements": [
+    "Lipedema pain is causally linked to lipedema fat tissue with peripheral sensory changes identified as a contributing mechanism, while tissue weight and systemic inflammation are becoming less likely as primary causes."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.3389/fcell.2026.1804905",
+   "title": "The role of extracellular vesicles in the context of (inter‐)cellular communication contributing to adipose tissue dysfunction in lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "extracellular vesicle (EV)-mediated crosstalk between endothelial cells, adipocytes, and immune cells as a driver of localized inflammation and fibrosis",
+   "note": "This is a hypothesis/perspective article (not empirical) that proposes mechanistic concepts—EV-mediated intercellular communication, organelle contact site dynamics, and estrogen signaling—as drivers of inflammation and fibrosis in lipedema",
+   "old_claims": [
+    "SCR-LIP-000099"
+   ],
+   "old_statements": [
+    "This hypothesis perspective proposes that extracellular vesicle-mediated crosstalk between endothelial cells, adipocytes, and immune cells drives localized inflammation and fibrosis in lipedema, with estrogen-linked signaling imprinting EV cargo in a sex-specific manner."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.3389/fcell.2025.1691161",
+   "title": "Lipedema and adipose tissue: current understanding, controversies, and future directions",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "estágios avançados exibem crown-like structures de adipócitos necróticos circundados por macrófagos CD68+ e proliferação de células-tronco derivadas do tecido adiposo",
+   "note": "This is a narrative mini-review synthesizing current literature on lipedema adipose tissue biology. It directly addresses inflammation mechanisms in lipedema tissue, characterizing the inflammatory profile and distinguishing it from obesity",
+   "old_claims": [
+    "SCR-LIP-000100"
+   ],
+   "old_statements": [
+    "Lipedema adipose tissue exhibits M2 macrophage predominance (anti-inflammatory phenotype), stage-dependent adipocyte hypertrophy, progressive fibrosis, and altered lymphatic/vascular function, differing markedly from the pro-inflammatory M1 macrophage response seen in obesity."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1016/j.metabol.2025.156191",
+   "title": "Defining lipedema's molecular hallmarks by multi-omics approach for disease prediction in women",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "convergência das vias UPREGULADAS ('cellular respiration', 'oxidative phosphorylation', 'mitochondrial organization') e das DOWNREGULADAS ('immune effector process', 'leukocyte mediated immunity', 'innate immune response', 'inflammatory response')",
+   "note": "The study directly investigates molecular mechanisms in lipedema tissue using transcriptomics, proteomics, metabolomics, and lipidomics, providing specific findings about inflammation pathways; however, it is cross-sectional and observation",
+   "old_claims": [
+    "SCR-LIP-000101"
+   ],
+   "old_statements": [
+    "Multi-omics analysis of lipedema tissue revealed local downregulation of inflammation-related factors alongside upregulation of mitochondrial and oxidative phosphorylation pathways, with minimal systemic inflammatory changes but altered sphingolipid, glutamic acid, and glutathione levels suggesting metabolic rather than classical inflammatory mechanisms."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1097/gox.0000000000006288",
+   "title": "Transcriptomics of Subcutaneous Tissue of Lipedema Identified Differentially Expressed Genes Involved in Adipogenesis, Inflammation, and Pain",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Inflamação/macrófagos M2 (upregulated): MAFB, C1Q, C2, CD68, CD209, CD163, CD84, BCAT1, TREM2, MRC1, F13A1, NTRK3 — perfil claramente polarizado para M2 (CD163+/CD209+/MRC1+) sustentando inflamação crônica de baixo grau",
+   "note": "Whole transcriptome analysis directly addresses inflammation and pain mechanisms in lipedema tissue by identifying specific differentially expressed genes; limited by small sample sizes per stage and lack of functional validation.",
+   "old_claims": [
+    "SCR-LIP-000102"
+   ],
+   "old_statements": [
+    "Transcriptomic analysis of lipedema subcutaneous tissue identified differentially expressed genes linked to inflammation (MAFB, C1Q, C2, CD68, CD163, TREM2), adipogenesis (PRKG2, MEDAG, CSF1R, ERBB4), and pain transmission (SHTN1, SCN7A, SLC12A2), distinguishing lipedema from hypertrophied adipose tissue."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Tecido lipedematoso tem ↑ concentração de sódio impairando glicocálice endotelial → propensão à inflamação",
+   "note": "The review directly synthesizes proposed inflammatory and pain-related mechanisms in lipedema tissue (macrophage infiltration, ECM remodeling, sodium accumulation, endothelial dysfunction, hormonal influence), bearing on the question, thoug",
+   "old_claims": [
+    "SCR-LIP-000303"
+   ],
+   "old_statements": [
+    "This narrative review reports that lipedema tissue shows M2-polarized macrophage infiltration (CD163+/CD68+), crown-like structures, intercellular fibrosis, elevated tissue sodium impairing the endothelial glycocalyx, increased tissue aromatase (CYP19A1) driving local estrogen production, and endothelial dysfunction (reduced VE-cadherin, ZO-1, TIE-2) with increased permeability, mechanisms proposed to underlie the chronic inflammation and pain in lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.3390/ijms262211130",
+   "title": "The Molecular Mechanisms Underlying Dercum’s Disease: Exploring the Intersection of Obesity, Pain, and Inflammation",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Imunoensaio multiplex de 37 citocinas em soro de lipedema identificou 22 citocinas presentes, com níveis significativamente elevados de IL-11, IL-28A e IL-29.",
+   "note": "Narrative review synthesizing molecular evidence on adipose dysfunction, immune cell infiltration, neuroinflammation, and pain mechanisms, with explicit reference to lipedema cytokine profiles and proposed pathogenesis; relevant to the infl",
+   "old_claims": [
+    "SCR-LIP-000304"
+   ],
+   "old_statements": [
+    "This review of Dercum's disease describes inflammatory and pain mechanisms overlapping with lipedema, including serum multiplex immunoassay of 37 cytokines identifying 22 present with significantly elevated IL-11, IL-28A, and IL-29, near-infrared fluorescence imaging showing abnormal fibrotic dilated lymphatic vessels, M1-like pro-inflammatory macrophage predominance, mast cell activation with substance P-induced release of histamine, TNF-alpha, and IL-1beta sensitizing nociceptors, and proposes lipedema as an estrogen-sensitive adipose disorder possibly initiated by caveolin-1 dysfunction."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.3390/metabo13101105",
+   "title": "Involvement of the Macrophage Migration Inhibitory Factor (MIF) in Lipedema",
+   "year": 2023,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "mRNA de MIF-1 significativamente elevado no lipedema vs. controle (media fold-change 1,256; DP 0,303; p=0,0485) e de CD74 (media 1,514; DP 0,397; p=0,0097)",
+   "note": "Small descriptive cross-sectional tissue study (n=11 per group) reporting elevated MIF-1/CD74 expression and macrophage-related inflammatory mechanisms in lipedema adipose tissue, directly addressing inflammation mechanisms; no functional v",
+   "old_claims": [
+    "SCR-LIP-000305"
+   ],
+   "old_statements": [
+    "In subcutaneous adipose tissue of 11 lipedema patients versus BMI-matched controls, MIF-1 mRNA (fold-change 1.256; p=0.0485) and CD74 mRNA (1.514; p=0.0097) were elevated, with CD74 also overexpressed at the cellular level by immunohistochemistry (7.73 vs 5.18; p=0.0026), while MIF-2 was unchanged and CXCR2 was higher in controls, implicating the MIF-1/CD74 axis in inflammatory macrophage recruitment and polarization in lipedema independent of BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1016/j.jss.2020.03.055",
+   "title": "Adipose Tissue Hypertrophy, An Aberrant Biochemical Profile and Distinct Gene Expression in Lipedema",
+   "year": 2020,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Infiltrado imune aumentado no lipedema: CD45+ total C 28±7,8 vs L 45,7±7,2 células/campo (P<0,001; 1,62×); CD68+ macrófagos C 12,3±3,7 vs L 19,5±6,8 células/campo (P=0,01; 1,58×); CD3+ células T SEM diferença",
+   "note": "The article directly characterizes tissue-level inflammation in lipedema, reporting a predominantly macrophage-based infiltrate without a T-cell component and no systemic adipokine elevation, which informs the inflammation mechanism but doe",
+   "old_claims": [
+    "SCR-LIP-000306"
+   ],
+   "old_statements": [
+    "In lipedema adipose tissue, immunohistochemistry showed increased CD45+ leukocytes (45.7 vs 28 cells/field, P<0.001) and CD68+ macrophages (19.5 vs 12.3, P=0.01) without increased CD3+ T cells, while systemic adipokines IL-6, IL-18, lipocalin-2 and leptin did not differ from controls."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1038/s41598-020-67987-3",
+   "title": "Increased levels of VEGF-C and macrophage infiltration in lipedema patients without changes in lymphatic vascular morphology",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic adipose tissue disorder characterized by the disproportional subcutaneous deposition of fat and is commonly misdiagnosed as lymphedema or obesity.",
+   "note": "The article directly characterizes inflammatory mechanisms in lipedema tissue, demonstrating macrophage infiltration with M2 polarization and a VEGF-C/lymphatic-axis profile, which bears on the inflammation mechanism component of the questi",
+   "old_claims": [
+    "SCR-LIP-000307"
+   ],
+   "old_statements": [
+    "In anatomically-matched biopsies from 11 lipedema versus 10 BMI-matched healthy patients, lipedema tissue showed roughly doubled CD45+ leukocyte infiltration (40.7 vs 20 cells/field, p<0.0001) and increased CD68+ macrophages (21.2 vs 13 cells/field, p=0.009) with predominantly M2 polarization (CD163 increased 3.4x), alongside elevated serum VEGF-C (4364 vs 3275 pg/mL, p=0.02), reduced tissue Tie2 (5.7x lower), VEGF-A and VEGF-D, but no morphological lymphatic changes or systemic inflammation markers."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1002/oby.24281",
+   "title": "Vascular remodeling of adipose tissue in lipedema: endothelial dysfunction as an emerging culprit in a mysterious disease",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Estudo demonstra que a patologia vascular e adipocitária do lipedema é INDEPENDENTE da obesidade (pacientes com BMI < 24,9 afetadas)",
+   "note": "This is a commentary/review contextualizing histopathological findings (Michelini et al.) that describe inflammatory (CD68+ macrophages) and vascular/endothelial dysfunction mechanisms in lipedema tissue, directly bearing on the question ab",
+   "old_claims": [
+    "SCR-LIP-000308"
+   ],
+   "old_statements": [
+    "High-resolution histopathology and transmission electron microscopy of lipedema adipose tissue (normal-BMI, stages 1-2) showed CD68+ macrophage infiltration increased exclusively in affected areas (similar to obesity but in normal-weight patients), along with endothelial/pericyte hyperproliferation (Ki-67+), severe endothelial barrier degeneration, calcium crystal and collagen (fibrosis) accumulation, and adipocyte cytoplasmic projections into the capillary lumen, indicating vascular and adipocyte pathology independent of obesity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1155/2019/8747461",
+   "title": "Dilated Blood and Lymphatic Microvessels, Angiogenesis, Increased Macrophages, and Adipocyte Hypertrophy in Lipedema Thigh Skin and Fat Tissue",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "MACRÓFAGOS CD68+ — Significativamente aumentados em pele E gordura de Lipedema Não-Obesa (p<0,005) e Lipedema Obesa (p<0,05) vs controles pareados por IMC. Crown-like structures (CLS — macrófagos circulando adipócitos mortos) em 12,5% de Lipedema Não-Obesa e 14% de Lipedema Obesa; AUSENTES em todos ",
+   "note": "Histological cross-sectional study directly examining inflammatory cells, vascular changes, and adipocyte structure in lipedema tissue stratified by BMI, providing evidence on inflammation mechanisms (macrophage infiltration, crown-like str",
+   "old_claims": [
+    "SCR-LIP-000309"
+   ],
+   "old_statements": [
+    "In thigh skin and fat biopsies, lipedema (non-obese and obese) showed significantly increased CD68+ macrophages versus BMI-matched controls (p<0.005 and p<0.05) and crown-like structures absent in all controls (12.5-14% of lipedema cases), while CD3+ T-lymphocytes and CD117+ mast cells did not differ; dermal vessel number correlated with macrophage count (r²=0.45, p=0.05), and focal angiogenesis with fibrosis occurred in 30% of non-obese lipedema cases but no controls."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.3389/fcell.2026.1816014",
+   "title": "New Frontiers in modeling the lipedema microenvironment in vitro",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Macrófagos M2 (CD163+, CD206+): aumento significativo em lipedema — distinto da obesidade (predominância M1) e linfedema (predomínio T cells)",
+   "note": "The review directly addresses inflammatory mechanisms in lipedema tissue, describing M2 macrophage infiltration, crown-like structures, and fibrosis, while noting a contradictory transcriptomic finding and acknowledging gaps in understandin",
+   "old_claims": [
+    "SCR-LIP-000310"
+   ],
+   "old_statements": [
+    "This review reports that lipedema tissue shows a significant increase in M2 macrophages (CD163+, CD206+), crown-like structures around dead adipocytes across all disease stages, and ECM fibrosis, with M2-conditioned media promoting adipogenesis, though one transcriptomic study (Straub 2025, n=14) found suppressed inflammation, possibly attributable to comorbidities."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.5772/intechopen.88632",
+   "title": "Lipedema: A Painful Adipose Tissue Disorder",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "adipócitos hipertróficos + infiltração de macrófagos CD68+ em coroas perinecróticas e ao redor de vasos; mastócitos e linfócitos T detectados em áreas hipervasculares — mastócitos contribuem para aumento de fluido intersticial, deterioração de adipócitos e fragmentação de fibras elásticas (elastase,",
+   "note": "Narrative review directly describing the inflammatory cellular components (macrophages, mast cells, T cells), vascular changes (VEGF, hypoxia), and pain as a defining feature of lipedema tissue, addressing the question's mechanism; review d",
+   "old_claims": [
+    "SCR-LIP-000311"
+   ],
+   "old_statements": [
+    "This review reports that lipedema adipose tissue exhibits hypertrophic adipocytes with CD68+ macrophage infiltration in perinecrotic crown-like structures and around vessels, mast cells and T lymphocytes in hypervascular areas, and elevated blood VEGF leading to vessel proliferation, capillary dilation, hypoxia and fibrosis, with mast cells contributing to increased interstitial fluid, adipocyte deterioration and elastic fiber fragmentation; pain is described as a hallmark symptom."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.3390/jpm13010098",
+   "title": "Lipedema Research—Quo Vadis?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "IL-8 elevada em sobrenadantes de ASCs de lipedema; IL-28A, IL-29 e IL-11 elevadas no soro; lipoaspiração reduz INFα2 e IL-34 sistêmicos",
+   "note": "The review synthesizes molecular/cellular findings including inflammatory cytokines (IL-8, IL-28A, IL-29, IL-11) and oxidative stress markers in lipedema tissue, directly bearing on inflammation mechanisms, though it notes methodological li",
+   "old_claims": [
+    "SCR-LIP-000312"
+   ],
+   "old_statements": [
+    "This systematic review reports that lipedema adipose tissue and ASCs show elevated IL-8 in ASC supernatants, elevated serum IL-28A, IL-29 and IL-11, increased oxidative stress markers (malondialdehyde and protein carbonyls), and VE-cadherin downregulation suggesting vascular barrier dysfunction, indicating inflammatory and stress-related mechanisms."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.4236/jbise.2026.193011",
+   "title": "The Etiology of Pain in Lipedema Is Not Yet Fully Understood. An Integrative Synthesis of Inflammatory, Hypoxic-Hemorrhagic, Adipomyofascial, and Neuromolecular Mechanisms Based on Histopathological Evidences",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Eixo inflamatório (gatilho inicial, evidência moderada a alta): hipertrofia adipocitária em 7/10 estudos; infiltrados inflamatórios difusos ou perivasculares em 5/10; enriquecimento de macrófagos em 5/10",
+   "note": "The article directly synthesizes histopathological evidence on inflammation and pain mechanisms in lipedema tissue, describing chronic low-grade inflammation with cytokine-mediated nociceptor sensitization as the initial pain trigger, provi",
+   "old_claims": [
+    "SCR-LIP-000468"
+   ],
+   "old_statements": [
+    "An integrative review of 10 biopsy-based studies (2017-2025) reports that lipedema tissue pain is linked to chronic low-grade inflammation (adipocyte hypertrophy in 7/10, inflammatory infiltrates in 5/10, macrophage enrichment in 5/10) with TNF-alpha and IL-6 sensitizing C and A-delta nociceptors, amplified by hypoxic-hemorrhagic, adipomyofascial, and neuromolecular axes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1177/15578585261454778",
+   "title": "Neuropathic Pain Features in Lipedema Compared to Lymphedema: An Exploratory Cross-Sectional Study.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema patients reported higher pain severity (VAS 6.2 ± 1.4 vs. 5.5 ± 1.5, p = 0.02) and greater neuropathic pain prevalence (42% vs. 21%, p < 0.01) than lymphedema.",
+   "note": "The article documents a high burden of neuropathic chronic pain features and associated anxiety/catastrophizing in lipedema, supporting an association with chronic-pain phenomena, but it does not test fibromyalgia specifically, so it refine",
+   "old_claims": [
+    "SCR-LIP-000404"
+   ],
+   "old_statements": [
+    "In an exploratory cross-sectional study of 118 women, lipedema patients showed higher neuropathic pain prevalence (42% vs 21%) and higher painDETECT/LANSS scores than lymphedema patients, with strong correlations between pain intensity, catastrophizing, and anxiety, but the study did not assess fibromyalgia specifically."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1177/15578585261454779",
+   "title": "Inflammatory Markers in Lipedema: A Comparative Analysis of Neutrophil-to-Lymphocyte Ratio, Platelet-to-Lymphocyte Ratio, and Mean Platelet Volume",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Marcadores hematológicos de inflamação sistêmica de baixo grau — NLR, PLR e PCR — estão elevados no lipedema em comparação com controles, apoiando um componente inflamatório na doença.",
+   "note": "The study reports elevated systemic low-grade inflammation markers in lipedema vs controls, not explained by BMI, directly supporting an inflammatory component in the disease.",
+   "old_claims": [
+    "SCR-LIP-000470"
+   ],
+   "old_statements": [
+    "In lipedema patients, platelet count, CRP, neutrophil-to-lymphocyte ratio (NLR), and platelet-to-lymphocyte ratio (PLR) were significantly higher than in controls (p<0.05), while MPV and PDW did not differ, and the inflammatory findings were not explained by BMI differences, supporting a low-grade systemic inflammatory component in lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E32",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Pain mechanism: multifactorial — microvascular dysfunction, chronic inflammation, increased interstitial pressure compressing peripheral nerves, neuroinflammatory processes, altered sympathetic nerve signaling, and micro-neuropathic changes; not explained by mechanical load or obesity alone",
+   "note": "The review directly synthesizes evidence on inflammation (M2 macrophage-predominant immune infiltration) and multifactorial pain mechanisms in lipedema tissue, affirmatively addressing the question, though as a narrative synthesis of second",
+   "old_claims": [
+    "SCR-LIP-000471"
+   ],
+   "old_statements": [
+    "This narrative review describes lipedema tissue inflammation as chronic low-grade immune dysfunction with increased CD45+, CD68+, and CD163+ immune cell infiltration and M2 macrophage predominance, and characterizes pain as multifactorial — driven by microvascular dysfunction, chronic inflammation, increased interstitial pressure compressing peripheral nerves, neuroinflammatory processes, altered sympathetic signaling, and micro-neuropathic changes rather than mechanical load or obesity alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E33",
+   "ref": "DOI:10.21203/rs.3.rs-7041394/v1",
+   "title": "Assessment of the elasticity of lipedematous tissue and the examination of the relationship between pain and fibrosis in lipedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A elasticidade subcutânea por SWE não correlaciona com espessura adiposa ou IMC, mas correlaciona com dor (geral e neuropática) na coxa de pacientes com lipedema, especialmente quando avaliada pelo PainDetect",
+   "note": "Cross-sectional study directly tests the relationship between tissue stiffness/fibrosis and pain (including neuropathic component) in lipedema, finding significant correlations in the thigh independent of adiposity, supporting a pain/tissue",
+   "old_claims": [
+    "SCR-LIP-000472"
+   ],
+   "old_statements": [
+    "In 35 lipedema patients, subcutaneous tissue stiffness measured by shear-wave elastography (SWE) correlated with general pain (VAS, rho 0.35-0.36) and neuropathic pain (PainDetect, rho 0.38-0.47) in the thigh, while SWE did not correlate with BMI or fat thickness, suggesting an adiposity-independent tissue property linked to pain."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema subcutaneous tissue shows increased immune cell infiltration, predominantly macrophages, compared with matched controls.",
+   "role": "supporting",
+   "rationale": "Several histological studies and reviews report more CD45+ leukocytes and CD68+ macrophages in affected tissue.",
+   "evidence": [
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "Lipedema biopsies (11 vs 10 BMI-matched) showed doubled CD45+ infiltration (40.7 vs 20 cells/field) and more CD68+ macrophages (21.2 vs 13), mainly CD163+, without systemic inflammation markers or lymphatic morphological change."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "CD68+ macrophages increased in skin and fat of non-obese and obese lipedema vs BMI-matched controls; crown-like structures in 12.5-14% of cases, absent in controls; CD3+ T cells and CD117+ mast cells did not differ."
+    },
+    {
+     "e": "E21",
+     "stance": "refines",
+     "finding": "MIF-1 (fold-change 1.256) and CD74 (1.514) mRNA elevated in lipedema vs BMI-matched controls, implicating the MIF-1/CD74 axis in macrophage recruitment and polarization."
+    },
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Integrative review of 10 biopsy studies: adipocyte hypertrophy in 7/10, inflammatory infiltrates in 5/10 and macrophage enrichment in 5/10, linked to TNF-alpha/IL-6 nociceptor sensitization."
+    },
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "Review describes CD68+ macrophages in perinecrotic crown-like structures and around vessels, with mast cells and T lymphocytes in hypervascular areas contributing to interstitial fluid and elastic fibre fragmentation."
+    },
+    {
+     "e": "E1",
+     "stance": "refines",
+     "finding": "Preliminary metabolomic study found tissue histamine about 2.2-fold higher than controls, suggesting a possible mast cell role."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00042"
+  },
+  {
+   "key": "P2",
+   "statement": "Macrophages in lipedema tissue are reported to show a predominantly alternatively activated, anti-inflammatory phenotype rather than a classical pro-inflammatory one.",
+   "role": "supporting",
+   "rationale": "Transcriptomic and immunohistochemical studies report CD163+/CD206+ enrichment, distinct from the pro-inflammatory profile of obesity.",
+   "evidence": [
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Gluteofemoral tissue showed dominant M2 signature with CD163+ enrichment (2.58-fold; 1171 DEGs), while M1 genes (IL1b, IL6, TNFAIP8, TLR4) were downregulated."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Whole-transcriptome analysis found upregulated M2-associated genes (CD163, CD209, MRC1, TREM2, C1Q) and pain-transmission genes (SCN7A, SLC12A2), distinguishing lipedema from hypertrophied adipose tissue."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Review reports M2 macrophage predominance in lipedema, contrasting with the M1 response of obesity, with stage-dependent hypertrophy and progressive fibrosis."
+    },
+    {
+     "e": "E26",
+     "stance": "supporting",
+     "finding": "Review reports significant M2 (CD163+, CD206+) increase and crown-like structures across stages, noting one transcriptomic study (n=14) found suppressed inflammation."
+    },
+    {
+     "e": "E8",
+     "stance": "refines",
+     "finding": "Stage-stratified biopsies: M2-dominant polarization at stage I shifting toward M1-like at stage III; IL6, TNF, VEGFC upregulated at stages II-III; crown-like structures at all stages; fibrosis precedes hypertrophy."
+    },
+    {
+     "e": "E3",
+     "stance": "refines",
+     "finding": "Review frames lipedema as M2-macrophage-driven; CRP normal but TNFSF14, S100-A12 and MDA elevated in stage 3."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 6,
+   "store_key": "G-00043"
+  },
+  {
+   "key": "P3",
+   "statement": "Some molecular profiling suggests local inflammatory pathways are downregulated in lipedema tissue, favouring metabolic over classical inflammatory mechanisms.",
+   "role": "contradicting",
+   "rationale": "A multi-omics study challenges the view of lipedema as a classically inflamed tissue.",
+   "evidence": [
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Multi-omics showed downregulated immune effector, innate immune and inflammatory response pathways with upregulated oxidative phosphorylation and mitochondrial pathways; minimal systemic inflammation; altered sphingolipids, glutamic acid and glutathione."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00044"
+  },
+  {
+   "key": "P4",
+   "statement": "Systemic inflammatory markers are inconsistently elevated in lipedema.",
+   "role": "context",
+   "rationale": "Some studies report raised serum cytokines or blood ratios while others find systemic adipokines unchanged.",
+   "evidence": [
+    {
+     "e": "E31",
+     "stance": "supporting",
+     "finding": "Platelet count, CRP, NLR and PLR higher in lipedema than controls (p<0.05), not explained by BMI; MPV and PDW did not differ."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Review reports elevated IL-8 in ASC supernatants, elevated serum IL-28A, IL-29 and IL-11, raised malondialdehyde and protein carbonyls, and VE-cadherin downregulation."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Review cites a 37-cytokine serum multiplex in lipedema detecting 22 cytokines with significantly elevated IL-11, IL-28A and IL-29."
+    },
+    {
+     "e": "E22",
+     "stance": "contradicting",
+     "finding": "Systemic IL-6, IL-18, lipocalin-2 and leptin did not differ from controls, despite increased tissue CD45+ (45.7 vs 28) and CD68+ (19.5 vs 12.3) cells without CD3+ increase."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 4,
+   "store_key": "G-00045"
+  },
+  {
+   "key": "P5",
+   "statement": "Lipedema pain does not appear to be driven primarily by systemic inflammation.",
+   "role": "refines",
+   "rationale": "A randomised trial and a review find pain changes unrelated to systemic markers and a sensory pattern unlike inflammatory hyperalgesia.",
+   "evidence": [
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "In an RCT of low-carbohydrate vs low-fat diets, pain reductions were not associated with changes in hsCRP, cytokines, TGF-beta fibrotic markers or ketosis, in ITT and PP analyses."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Review: classical inflammatory hyperalgesia (heat plus mechanical) is absent, unaffected areas are not sensitized, and pain is refractory to NSAIDs, corticosteroids and opioids; localized deep tissue mechanisms are favoured."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 2,
+   "store_key": "G-00046"
+  },
+  {
+   "key": "P6",
+   "statement": "Lipedema is associated with pressure pain hypersensitivity in affected limbs, independent of body mass index.",
+   "role": "supporting",
+   "rationale": "Sensory testing studies consistently find lowered pressure pain thresholds in affected regions.",
+   "evidence": [
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Pressure pain thresholds significantly lower in lipedema in all four thigh and calf regions in both BMI strata (p<0.001)."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In non-obese lipedema, QST showed isolated lowered pressure pain threshold and raised vibration detection threshold in the thigh, absent in the hand, with spared thermal thresholds (PVTH-score AUC 0.958)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00047"
+  },
+  {
+   "key": "P7",
+   "statement": "Neuropathic pain features and peripheral nerve involvement, including neurogenic inflammation, are frequently reported in lipedema.",
+   "role": "supporting",
+   "rationale": "Questionnaire, histological and review evidence points to a neuropathic or neuroinflammatory pain component.",
+   "evidence": [
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "In 118 women, lipedema showed higher pain (VAS 6.2 vs 5.5) and neuropathic pain prevalence (42% vs 21%) than lymphedema, correlating with catastrophizing and anxiety."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Pain and von Frey hypersensitivity increased with stage (painDETECT >19 only in stage 3), with reduced dermal Tuj-1+ neuronal density and elevated CGRP/NGF in stage 3, independent of BMI."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Case report: perineurial and endoneurial macrophage infiltration in hand and foot tissue, with increased microvascular density, perivascular fibrosis and mast cells."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Hypothesis review proposing estrogen-mediated peripheral nerve inflammation and sympathetic innervation abnormalities cause neuropathy and pain, with elevated malondialdehyde and protein carbonyls."
+    },
+    {
+     "e": "E32",
+     "stance": "supporting",
+     "finding": "Review describes pain as multifactorial: microvascular dysfunction, chronic inflammation, interstitial pressure on nerves, neuroinflammation, altered sympathetic signalling and micro-neuropathy; tissue shows CD45+, CD68+, CD163+ infiltration."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00048"
+  },
+  {
+   "key": "P8",
+   "statement": "Microvascular dysfunction and tissue sodium accumulation are proposed contributors to inflammation and pain in lipedema tissue.",
+   "role": "supporting",
+   "rationale": "Histological and imaging studies and reviews link endothelial changes and sodium to tissue inflammation.",
+   "evidence": [
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Thigh skin showed increased dermal interstitial spaces (46% vs 42%, p=0.003) and microangiopathy in hydrostatic-pressure areas; elevated sodium proposed to damage the glycocalyx."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Histopathology and electron microscopy in normal-BMI stage 1-2 lipedema: CD68+ macrophages only in affected areas, endothelial/pericyte hyperproliferation, endothelial barrier degeneration, calcium and collagen deposits."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Review reports elevated tissue sodium impairing the endothelial glycocalyx, M2 macrophages, crown-like structures, aromatase-driven local estrogen and reduced VE-cadherin, ZO-1, TIE-2 with increased permeability."
+    },
+    {
+     "e": "E12",
+     "stance": "context",
+     "finding": "Case report authors propose inflammation and microangiopathy explain pain, with GAG and sodium accumulation causing microvascular fragility, bruising and ischemia."
+    },
+    {
+     "e": "E9",
+     "stance": "refines",
+     "finding": "In 5 women with early-stage lipedema, multimodal physical therapy reduced pain VAS from 4.6 to 0.0 and subcutaneous sodium on MRI (-8%, p=0.12)."
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "finding": "Hypothesis article proposes extracellular-vesicle crosstalk among endothelial cells, adipocytes and immune cells drives localized inflammation and fibrosis, with estrogen-linked cargo."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 6,
+   "store_key": "G-00049"
+  },
+  {
+   "key": "P9",
+   "statement": "Subcutaneous tissue stiffness may be associated with pain intensity in lipedema, independent of adiposity.",
+   "role": "supporting",
+   "rationale": "An elastography study links tissue stiffness to general and neuropathic pain but not to fat thickness.",
+   "evidence": [
+    {
+     "e": "E33",
+     "stance": "supporting",
+     "finding": "In 35 patients, thigh shear-wave elastography correlated with VAS pain (rho 0.35-0.36) and PainDetect (rho 0.38-0.47), but not with BMI or fat thickness."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00050"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E1",
+     "E22"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E23 and E25 (BMI-matched controls) carry it. E1 is a histamine/mast-cell hint that does not show immune-cell infiltration, and E25 found no mast cell difference, so E1 is not a refinement. E22 (CD45+ and CD68+ increased vs controls) is a primary study placed only under P4 and belongs here as supporting."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [
+     "E8"
+    ],
+    "misplaced": [
+     "E3",
+     "E26"
+    ],
+    "suggested_statement": "Macrophages in lipedema tissue are reported to be predominantly M2-polarized, with a possible shift toward M1-like phenotype in advanced stages.",
+    "severity": "minor",
+    "note": "E8 reports M2-dominant at stage I shifting to M1-like with IL6/TNF up at stages II-III, and E20 describes M1-like predominance; both partly contradict a stage-free 'rather than pro-inflammatory'. E18 calls the M2 profile chronic low-grade inflammation, so 'anti-inflammatory' is interpretive. E26's note that one transcriptomic study found suppressed inflammation fits P3. E3 is a review framing M2 as a driver; it supports M2 but its biomarker finding is not about macrophage phenotype."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Hedged ('some') and supported by E17. It bundles 'inflammation downregulated' with 'favouring metabolic mechanisms'; only the first is directly shown. E2 (M1 genes IL1b, IL6, IL1R1 down), E26 (a transcriptomic study with suppressed inflammation) and E18 (dissociating lipedema from hypertrophic fat) bear on this and are filed elsewhere. It sits in tension with E8 (IL6/TNF up at stages II-III), which the set should reconcile, for example by stage."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E22"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Evidence is genuinely mixed: E31, E28, E20 show elevation; E22 contradicts. E23 (no systemic inflammation markers), E3 (CRP normal) and E17 (minimal systemic changes) also support 'inconsistent' and are not here. E20 and E28 both report the same serum cytokine finding (IL-11, IL-28A, IL-29) from one underlying study, so they count as one."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged ('does not appear'). The RCT (E11) and the review (E14) agree. E4 also argues against systemic inflammation as the cause and could be added."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E5 shows lowered pressure pain thresholds in both BMI strata; E4 shows the same in non-obese patients. Wording is fine."
+   },
+   {
+    "key": "P7",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [
+     "E13"
+    ],
+    "misplaced": [
+     "E13",
+     "E32"
+    ],
+    "suggested_statement": "Neuropathic pain features and peripheral nerve involvement, possibly including neurogenic inflammation, are reported in lipedema.",
+    "severity": "minor",
+    "note": "E30 and E6 carry the evidence, but E6 reports painDETECT >19 only at stage 3 and neurogenic inflammation rests on CGRP/NGF in stage 3 tissue, so 'frequently' is generous. E7 is a single case report. E13 is a hypothesis and E32 a general review; neither shows that nerve involvement is reported. Neuropathic pain and neurogenic inflammation are two ideas with different evidence."
+   },
+   {
+    "key": "P8",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E15",
+     "E9",
+     "E24"
+    ],
+    "suggested_statement": "Microvascular dysfunction and tissue sodium accumulation are proposed contributors to inflammation in lipedema tissue.",
+    "severity": "minor",
+    "note": "Hedged ('proposed') and supported by E10, E19 and E12, all of which are proposals. The two mechanisms are different ideas. E15 (extracellular vesicle crosstalk) is neither microvascular nor sodium. E9 is a 5-patient uncontrolled series with a non-significant sodium change (p=0.12), so it adds almost nothing. E24 describes vascular pathology but not pain."
+   },
+   {
+    "key": "P9",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Hedged ('may'), but based on one cross-sectional study that is a preprint (DOI 10.21203/rs.3). E5, an item titled as a shear wave elastography and pain threshold study, appears to address the same question and could be added as support."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "Mast cell and neuroimmune activation (E1, E20 substance P release, E27, E7) has no proposition. E1 is filed under macrophage infiltration while E25 found no mast cell difference, so the finding is mixed and unrepresented.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Oxidative stress markers (MDA, protein carbonyls in E13, E28, E3) are scattered across P2, P4 and P7 with no proposition. E20 and E28 re-report the same serum cytokine finding, and E13 and E28 the same oxidative stress finding, without secondary_of.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Tension between P3 (local inflammatory pathways downregulated), P1 and the stage-dependent upregulation of IL6 and TNF in E8 is not reconciled. A stage-dependent proposition could resolve it.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000011.cons.json",
+   "ver": "SQ-LIP-000011.ver.json"
+  }
+ ]
+}

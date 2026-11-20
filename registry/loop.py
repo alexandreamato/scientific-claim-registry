@@ -215,7 +215,7 @@ def claim_brief(c, role):
                           "risk_of_bias": e.get("risk_of_bias"), "stance": e.get("stance"),
                           "extraction_confidence": e.get("extraction_confidence"),
                           "verified": (e.get("verification") or {}).get("verdict", "unverified"),
-                          "finding": e.get("note")} for e in c.get("evidence", [])]}
+                          "finding": e.get("finding") or e.get("note")} for e in c.get("evidence", [])]}
 
 
 def recompile(q, links, claims_by_id, prior_answer, added):
@@ -280,7 +280,10 @@ def add_evidence(claim, art, cl, ref, ver=None):
     """Append a corroborating source to an existing claim (multi-evidence)."""
     g = cl.get("confidence_grade") if cl.get("confidence_grade") in ("high", "moderate", "low", "very_low") else "low"
     g = design_cap(cap_grade(g, art), cl.get("study_design"))  # R-CLM-13 + design ceiling
-    claim["evidence"].append(_evidence_entry(art, cl, ref, g, ver))
+    ev = _evidence_entry(art, cl, ref, g, ver)
+    if claim.get("consolidated_from") and cl.get("statement"):
+        ev.setdefault("finding", cl["statement"])  # R-CLM-19: the study's own result under a general proposition
+    claim["evidence"].append(ev)
     claim["updated"] = TODAY
     detail = f"corroborated by {ref}" + (" (extraction disputed — needs review)"
                                          if ver and ver.get("verdict") == "disputed" else "")
@@ -379,6 +382,8 @@ def main():
     # claimed under another question can be LINKED here (graph) instead of minting a parallel duplicate.
     doi_index = {}
     for c in claims:
+        if c.get("status") == "superseded":
+            continue  # R-CLM-19: link the general proposition, never the retired single-paper claim
         for ev in c.get("evidence", []):
             r = (ev.get("ref") or "")
             if r.upper().startswith("DOI:"):
