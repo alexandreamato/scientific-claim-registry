@@ -358,7 +358,7 @@ def build_lang(lang):
         refs_line = f'<br><span class="ctext-refs mono">{ev_refs}</span>' if ev_refs else ""
         return (f'<li><a class="cid mono" href="{prefix}/c/{l["id"]}.html">{e(l["id"])}</a> '
                 f'<span class="role role-{l["role"]}">{e(t.get(l["role"], l["role"]))}</span><br>'
-                f'<span class="ctext">{e(claim_text(l["id"], lang))}</span>{refs_line}</li>')
+                f'<a class="ctext" href="{prefix}/c/{l["id"]}.html">{e(claim_text(l["id"], lang))}</a>{refs_line}</li>')
 
     for q in Q["questions"]:
         qid = q["id"]; links = q.get("claims", [])

@@ -107,7 +107,7 @@ def render(lang):
         rows.append(f'''<article class="claim-row" data-state="{c['knowledge_state']}" data-search="{e(blob)}">
   <div class="cr-head"><a class="mono id" href="{prefix}/c/{c['id']}.html">{e(c['id'])}</a><span class="chip">{e(ctype_label(c['claim_type'], lang))}</span><span class="badge st-{c['knowledge_state']}">{e(STATE.get(c['knowledge_state']))}</span></div>
   {tl_html}
-  <p class="cr-text">{e(stmt)}</p>
+  <p class="cr-text"><a href="{prefix}/c/{c['id']}.html">{e(stmt)}</a></p>
   <div class="cr-meta"><span>{t["certainty"]}</span>: <strong>{e(grade_label(c['evidence_confidence'], lang))}</strong> (GRADE) · <span>{len(evs)} {t["sources"]}{amato_txt}</span></div>
   <p class="cr-evi mono">{refs}</p>
   <p class="cr-gap"><strong>{t["gaps"]}</strong> {e(c['gaps'])}</p>
