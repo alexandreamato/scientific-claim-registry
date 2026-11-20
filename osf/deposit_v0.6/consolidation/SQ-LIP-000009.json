@@ -1,0 +1,329 @@
+{
+ "question": "SQ-LIP-000009",
+ "text": "Is lipedema linked to gluten sensitivity, celiac disease, or HLA-DQ2/DQ8?",
+ "n_old_claims": 6,
+ "n_items": 7,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E3 and E4 are two papers on the same NHANES sample (n=3833, same 11 celiac cases) used for P2 and P3; they should be read as one dataset, not independent confirmations.",
+  "[minor] set: No proposition addresses gluten sensitivity or celiac disease prevalence in lipedema directly; the only direct evidence is HLA typing (E1), so the question's celiac/gluten parts remain unanswered.",
+  "[minor] P1: stance errors ['E6'] — suggested: Limited evidence suggests celiac-associated HLA-DQ risk haplotypes are somewhat more frequent in women with lipedema than in the general population. (E1 carries the claim. E6 is one typed patient, not a frequency (and the authors cite E1 figures), so it should be context. 'Small effect size' rests on a contingency coefficient; relative differences for DQ8 and both haplotypes are not small. E2 has an empty quote.)",
+  "[minor] P3: not fully supported; overgeneralized — suggested: Limited, underpowered evidence suggests a lipedema-like fat phenotype may not differ in prevalence between women with and without celiac disease autoimmunity. (Null result from 1 of 11 celiac cases; the phenotype is a proxy from body composition. A non-difference at this power is weak.)",
+  "[minor] P4: not fully supported; overgeneralized — suggested: Food-specific IgG reactivity to barley may be similar in women with and without lipedema, although total IgG appears lower in lipedema. (Only barley (93.8 vs 93.2%) is shown; 'gluten-containing cereals' (wheat, rye) is not in the item. Near-universal positivity makes the comparison uninformative.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.7759/cureus.41594",
+   "title": "Assessing the Prevalence of HLA-DQ2 and HLA-DQ8 in Lipedema Patients and the Potential Benefits of a Gluten-Free Diet",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": 95,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "Comparação com população geral brasileira mostrou diferenças estatisticamente significativas (χ²=26,128; gl=3; p<0,0001): HLA-DQ2 47,37% vs 41,20%, HLA-DQ8 22,11% vs 11,30%, qualquer HLA 61,05% vs 53,70%, ambos HLAs 7,37% vs 1,2% — coeficiente de contingência muito próximo de zero indicando tamanho ",
+   "note": "convenience sample; historical comparator (Cecilio 2015)",
+   "old_claims": [
+    "SCR-LIP-000023"
+   ],
+   "old_statements": [
+    "Women with clinically diagnosed lipedema show a higher prevalence of the celiac-associated HLA-DQ2/DQ8 haplotypes than the general population (any HLA 61.1% vs 53.7%; both haplotypes 7.4% vs 1.2%)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1590/S0102-67202015000300009",
+   "title": "THE PREVALENCE OF HLA DQ2 AND DQ8 IN PATIENTS WITH CELIAC DISEASE, IN FAMILY AND IN GENERAL POPULATION",
+   "year": 2015,
+   "design": "cross_sectional",
+   "n": 80,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "",
+   "note": "general-population HLA comparator",
+   "old_claims": [
+    "SCR-LIP-000023"
+   ],
+   "old_statements": [
+    "Women with clinically diagnosed lipedema show a higher prevalence of the celiac-associated HLA-DQ2/DQ8 haplotypes than the general population (any HLA 61.1% vs 53.7%; both haplotypes 7.4% vs 1.2%)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.64898/2025.12.01.25341350",
+   "title": "The Lipedema Phenotype is Inversely Associated with Celiac Disease Autoimmunity: Testing the Immunological Shield Hypothesis in NHANES",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 3833,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Mulheres com DC tiveram gordura ginóide significativamente menor: 39,5±3,6% vs 42,6±5,2% (p=0,0007) — redução relativa de 7,4%; gordura de pernas 20,3% menor (9,3 vs 11,7 kg; p<0,0001); LTR 14,1% menor (0,77 vs 0,89; p=0,040)",
+   "note": "only 11 celiac cases; ethnic imbalance; cross-sectional",
+   "old_claims": [
+    "SCR-LIP-000025",
+    "SCR-LIP-000026"
+   ],
+   "old_statements": [
+    "In a nationally representative NHANES sample, women with serologically confirmed celiac disease had significantly lower gynoid percent fat than non-celiac women (39.5% vs 42.6%; -7.4%; p=0.0007).",
+    "The reduced gynoid adiposity associated with celiac disease in NHANES persisted among overweight/obese women (-8.7% overall, p=0.005; -11.3% in obese, p=0.039), arguing against leanness/malnutrition as the sole explanation."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.7759/cureus.104222",
+   "title": "Exploring the Immunological Shield Hypothesis: A Population-Based Exploration of Phenotypic Divergence Between Lipedema and Celiac Disease Autoimmunity",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": 3833,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Prevalência do fenótipo lipedema NÃO diferiu entre grupos: 1/11 celíacas (9,1%) vs 282/3.822 não celíacas (7,4%); p=0,570 (Fisher). Sem padrão dose-resposta entre quartis de razão perna/tronco (p de tendência=0,893; Spearman rho=-0,002)",
+   "note": "peer-reviewed version, same dataset",
+   "old_claims": [
+    "SCR-LIP-000025"
+   ],
+   "old_statements": [
+    "In a nationally representative NHANES sample, women with serologically confirmed celiac disease had significantly lower gynoid percent fat than non-celiac women (39.5% vs 42.6%; -7.4%; p=0.0007)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.7759/cureus.93788",
+   "title": "The IgG Paradox in Lipedema: More Food Sensitivities, Less Antibody Production",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 234,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "cevada/barley 93,8% vs 93,2%",
+   "note": "higher positive count NS (p=0.186); lower total IgG highly significant",
+   "old_claims": [
+    "SCR-LIP-000024"
+   ],
+   "old_statements": [
+    "In women with lipedema, food-specific IgG testing shows a paradox: a slightly higher number of positive food reactions despite markedly lower total IgG (1747 vs 2975 AU; p<0.001)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.7759/cureus.87332",
+   "title": "Lipedema in Men: A Retrospective Case Series of Five Patients From a Brazilian Referral Center",
+   "year": 2025,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "HLA-DQ2+ e HLA-DQ8+ — único da série com tipagem HLA",
+   "note": "The article reports HLA-DQ2+/DQ8+ positivity in one male lipedema patient and references prior prevalence data linking these alleles to lipedema, plus use of gluten-free diet, directly bearing on the question. However, this is a single HLA-",
+   "old_claims": [
+    "SCR-LIP-000148"
+   ],
+   "old_statements": [
+    "In a case series of five male lipedema patients, the one patient who underwent HLA typing was positive for both HLA-DQ2 and HLA-DQ8, and the authors cite prior data reporting HLA-DQ2 in 47.4% and HLA-DQ8 in 22.2% of women with lipedema; gluten-free dietary intervention was applied based on this positivity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.5772/intechopen.95837",
+   "title": "The Association of HLA-DQ2 with Celiac Disease",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "HLA-DQ2 é o principal determinante genético de risco para celíaca. Apresentação de gliadina por DQ2 a células T CD4+ central na patogênese.",
+   "note": "The article reviews the HLA-DQ2–celiac disease association but makes no mention of lipedema; it is on-topic for the celiac/HLA component only and does not test any link to lipedema, so it provides background context rather than direct evide",
+   "old_claims": [
+    "SCR-LIP-000467"
+   ],
+   "old_statements": [
+    "HLA-DQ2 is described as the principal genetic risk determinant for celiac disease, with DQ2 presentation of gliadin to CD4+ T cells central to its pathogenesis."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Celiac-associated HLA-DQ risk haplotypes are reported more frequently in women with lipedema than in the general population, with a small effect size.",
+   "role": "supporting",
+   "rationale": "One cross-sectional sample compared against a historical population comparator found higher HLA-DQ2/DQ8 carriage, with a near-zero contingency coefficient; a male case adds an isolated observation.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "In 95 women with lipedema, HLA-DQ2 47.4% vs 41.2%, HLA-DQ8 22.1% vs 11.3%, any HLA 61.1% vs 53.7%, both 7.4% vs 1.2% versus a Brazilian population comparator (p<0.0001), but contingency coefficient near zero."
+    },
+    {
+     "e": "E2",
+     "stance": "context",
+     "finding": "Provides the general-population HLA-DQ2/DQ8 prevalence data (Brazilian population, celiac patients and relatives) used as the historical comparator for the lipedema HLA comparison."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "In a case series of five men with lipedema, the only patient who underwent HLA typing was positive for both HLA-DQ2 and HLA-DQ8; a gluten-free diet was applied based on this positivity."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00122"
+  },
+  {
+   "key": "P2",
+   "statement": "Women with serologically confirmed celiac disease may have lower gynoid and leg fat than women without celiac disease, including among those with overweight or obesity.",
+   "role": "refines",
+   "rationale": "A population sample found an inverse association between celiac autoimmunity and the gynoid fat distribution typical of lipedema, based on very few celiac cases.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "In NHANES (n=3833, only 11 celiac cases), celiac women had lower gynoid fat (39.5% vs 42.6%, p=0.0007), 20.3% less leg fat and lower leg/trunk ratio; reduction persisted among overweight/obese women (-8.7%, p=0.005)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00123"
+  },
+  {
+   "key": "P3",
+   "statement": "The prevalence of a lipedema-like fat phenotype does not appear to differ between women with and without celiac disease autoimmunity.",
+   "role": "contradicting",
+   "rationale": "In the same population sample the lipedema phenotype was not more or less frequent among celiac women and showed no dose-response pattern.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Lipedema phenotype in 1/11 celiac (9.1%) vs 282/3822 non-celiac women (7.4%), p=0.570; no dose-response across leg/trunk ratio quartiles (p for trend 0.893; rho=-0.002)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00124"
+  },
+  {
+   "key": "P4",
+   "statement": "Food-specific IgG reactivity to gluten-containing cereals appears similar in women with lipedema and in comparison women.",
+   "role": "context",
+   "rationale": "Food-specific IgG testing showed near-identical barley reactivity, alongside fewer total IgG and a non-significantly higher count of positive reactions in lipedema.",
+   "evidence": [
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "In 234 women, barley IgG positivity was 93.8% in lipedema vs 93.2% in comparators; positive food reactions were slightly but not significantly more numerous (p=0.186) while total IgG was markedly lower (1747 vs 2975 AU; p<0.001)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00125"
+  },
+  {
+   "key": "P5",
+   "statement": "The main celiac-associated HLA-DQ haplotype is the principal genetic risk determinant for celiac disease, through presentation of gliadin peptides to helper T cells.",
+   "role": "context",
+   "rationale": "Background on the celiac side of the hypothesis; it does not address lipedema directly.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Review describes HLA-DQ2 as the main genetic risk determinant for celiac disease, with DQ2 presentation of gliadin to CD4+ T cells central to its pathogenesis; lipedema is not discussed."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 1,
+   "store_key": "G-00126"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [
+     "E6"
+    ],
+    "misplaced": [],
+    "suggested_statement": "Limited evidence suggests celiac-associated HLA-DQ risk haplotypes are somewhat more frequent in women with lipedema than in the general population.",
+    "severity": "minor",
+    "note": "E1 carries the claim. E6 is one typed patient, not a frequency (and the authors cite E1 figures), so it should be context. 'Small effect size' rests on a contingency coefficient; relative differences for DQ8 and both haplotypes are not small. E2 has an empty quote."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged with 'may'; rests on only 11 celiac cases in one NHANES sample, and the outcome is fat distribution, not lipedema."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Limited, underpowered evidence suggests a lipedema-like fat phenotype may not differ in prevalence between women with and without celiac disease autoimmunity.",
+    "severity": "minor",
+    "note": "Null result from 1 of 11 celiac cases; the phenotype is a proxy from body composition. A non-difference at this power is weak."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Food-specific IgG reactivity to barley may be similar in women with and without lipedema, although total IgG appears lower in lipedema.",
+    "severity": "minor",
+    "note": "Only barley (93.8 vs 93.2%) is shown; 'gluten-containing cereals' (wheat, rye) is not in the item. Near-universal positivity makes the comparison uninformative."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Background context from a review; fine."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E3 and E4 are two papers on the same NHANES sample (n=3833, same 11 celiac cases) used for P2 and P3; they should be read as one dataset, not independent confirmations.",
+    "severity": "minor"
+   },
+   {
+    "issue": "No proposition addresses gluten sensitivity or celiac disease prevalence in lipedema directly; the only direct evidence is HLA typing (E1), so the question's celiac/gluten parts remain unanswered.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000009.cons.json",
+   "ver": "SQ-LIP-000009.ver.json"
+  }
+ ]
+}

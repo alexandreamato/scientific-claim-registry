@@ -1,0 +1,774 @@
+{
+ "question": "SQ-LIP-000019",
+ "text": "What are the historical milestones in the description and surgical treatment of lipedema?",
+ "n_old_claims": 15,
+ "n_items": 24,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: G-00005, G-00006 and G-00008 are efficacy propositions rather than historical milestones, and G-00005/G-00006 overlap on quality of life and mobility (twin-like).",
+  "[minor] set: E4 (liposuction used for about 10 years by 2011) supports the P3 timeline but is filed only under G-00008.",
+  "[minor] set: The set gives no milestone between 1994 and 2004 and none on formal recognition or classification; the surgical timeline rests on thin dated sources.",
+  "[minor] P1: two ideas; misplaced ['E20'] — suggested: Lipedema was first delineated in the mid-twentieth century as a syndrome of symmetric, foot-sparing leg fat with orthostatic edema, later distinguished from lymphedema. (E22 (1994) supports the lymphedema distinction, not the mid-century delineation, so the statement merges two dates. E20 (art iconography) is not evidence on the clinical delineation and fits poorly under this proposition. E1 and E2 have no quotes to check.)",
+  "[minor] P2: not fully supported; overgeneralized — suggested: Excisional correction of trochanteric fat deposits was described in the 1960s, before liposuction was developed in the 1970s and later applied to lipedema. ('Began with' asserts priority that one 1964 description of trochanteric lipodystrophy cannot establish; E3 is not about lipedema as such and has no quote. Sequence (1964 then 1970s liposuction) is supported.)",
+  "[minor] P3: two ideas; misplaced ['E15'] — suggested: Tumescent liposuction with vibrating microcannulas emerged around the turn of the century and is now described as the main surgical treatment for lipedema. (Bundles timing, 'main' status and complementing decongestive therapy. E21 and E8 support emergence; E23 and E24 support current role. E15 (ultrasound dermal thickness) says nothing historical. E4 ('used for only about 10 years' in 2011) supports the timing and is filed under G-00008.)",
+  "[minor] G-00005: overgeneralized — suggested: Liposuction for lipedema is associated with reductions in pain, edema and bruising compared with preoperative status, mostly in uncontrolled studies. ('Heaviness' appears in none of the findings. Evidence is predominantly uncontrolled pre-post and self-reported; this is also tangential to the historical question.)",
+  "[minor] G-00006: not fully supported; overgeneralized; two ideas — suggested: Liposuction for lipedema is associated with improved disease-specific quality of life. (Single cohort (about 20 patients) addresses QoL only; 'mobility' is not in its finding (it appears under G-00005). Near-twin of G-00005, which already lists QoL and mobility.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "Allen EV, Hines EA Jr. Lipedema of the legs: a syndrome characterized by fat legs and edema. Proc Staff Meet Mayo Clin 1940;15:184-7",
+   "title": null,
+   "year": 1940,
+   "design": "clinical_description",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "Original description; coined the term 'lipedema'. Pre-MEDLINE (no DOI/PMID).",
+   "old_claims": [
+    "SCR-LIP-000051"
+   ],
+   "old_statements": [
+    "Lipedema was first delineated as a distinct clinical syndrome by Allen and Hines at the Mayo Clinic in 1940, who coined the term and described the disproportionate, bilateral, foot-sparing leg fat with edema that defines it."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "Wold LE, Hines EA Jr, Allen EV. Lipedema of the legs: a syndrome characterized by fat legs and orthostatic edema. Ann Intern Med 1951;34(5):1243-50",
+   "title": null,
+   "year": 1951,
+   "design": "case_series",
+   "n": 119,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "First large clinical series (~119 patients). Early-MEDLINE; cited bibliographically.",
+   "old_claims": [
+    "SCR-LIP-000052"
+   ],
+   "old_statements": [
+    "The clinical syndrome was consolidated in 1951 when Wold, Hines and Allen reported a large case series (about 119 patients) detailing lipedema's orthostatic edema, pain and strong predominance in women."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1097/00006534-196409000-00010",
+   "title": "TROCHANTERIC LIPODYSTROPHY",
+   "year": 1964,
+   "design": "surgical_technique",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "Pitanguy I. Trochanteric lipodystrophy. Plast Reconstr Surg 1964;34:280-6 (PMID 14209176). Excisional correction of trochanteric fat — an early landmark in the surgical lineage later refined by liposuction.",
+   "old_claims": [
+    "SCR-LIP-000053"
+   ],
+   "old_statements": [
+    "The first surgical approach to the disproportionate gynoid/trochanteric fat deposits characteristic of lipedema is attributed to Ivo Pitanguy's 1964 description of the surgical correction of 'trochanteric lipodystrophy' (the 'saddlebag' deformity)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1111/j.1365-2133.2011.10566.x",
+   "title": "Tumescent liposuction in lipoedema yields good long-term results",
+   "year": 2011,
+   "design": "cohort",
+   "n": 112,
+   "grade": "moderate",
+   "risk_of_bias": "moderate",
+   "quote": "surgical therapy with tumescent liposuction has only been used for about 10years and long-term results are unknown",
+   "note": "Schmeller W, Hueppe M, Meier-Vollrath I. Tumescent liposuction in lipoedema yields good long-term results. Br J Dermatol 2011;166(1):161-8 (PMID 21824127).",
+   "old_claims": [
+    "SCR-LIP-000054"
+   ],
+   "old_statements": [
+    "Modern surgical treatment of lipedema is tumescent liposuction with blunt vibrating microcannulas, established from the 2000s; single-centre cohorts report sustained reductions in pain, edema and need for conservative therapy at up to 12 years of follow-up."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1177/0268355520949775",
+   "title": "Improvements in patients with lipedema 4, 8 and 12 years after liposuction",
+   "year": 2020,
+   "design": "cohort",
+   "n": 60,
+   "grade": "moderate",
+   "risk_of_bias": "moderate",
+   "quote": "As melhorias em todos os parâmetros de lipedema persistem por 12 anos sem piora clinicamente relevante.",
+   "note": "Baumgartner A, Hueppe M, Meier-Vollrath I, Schmeller W. Improvements 4, 8 and 12 years after liposuction. Phlebology 2020;36(2):152-9 (PMID 32847472).",
+   "old_claims": [
+    "SCR-LIP-000054"
+   ],
+   "old_statements": [
+    "Modern surgical treatment of lipedema is tumescent liposuction with blunt vibrating microcannulas, established from the 2000s; single-centre cohorts report sustained reductions in pain, edema and need for conservative therapy at up to 12 years of follow-up."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.7759/cureus.55260",
+   "title": "Efficacy of Liposuction in the Treatment of Lipedema: A Meta-Analysis",
+   "year": 2024,
+   "design": "meta_analysis",
+   "n": 451,
+   "grade": "high",
+   "risk_of_bias": "moderate",
+   "quote": "Dor espontânea: redução significativa MD 3,41 (IC 95% 1,92–4,90; p<0,00001)",
+   "note": "7 studies; pooled MD pain 3.41, all p<0.00001; high heterogeneity; before-after data",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1007/s00266-025-05456-w",
+   "title": "Cutaneous Sensory Alterations After Lower Limb Liposuction for Lipedema: A Comparative Study with Aesthetic Liposuction Patients",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração de perna no lipedema proporciona alívio sintomático e funcional significativo com satisfação consistentemente alta, apesar de alterações sensitivas persistentes nos Estágios II-III.",
+   "note": "The study provides evidence on the outcomes of liposuction in lipedema patients, focusing on sensory changes, which is relevant to assessing its effectiveness and safety.",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1007/7140.2006.00006",
+   "title": "Tumescent Liposuction: A New and Successful Therapy for Lipedema",
+   "year": 2006,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração tumescente mostrou-se tratamento seguro e eficaz para lipedema. Correção definitiva das proporções corporais e melhora impressionante dos sintomas são alcançadas.",
+   "note": "Uncontrolled case series of 28 patients (21 evaluated) with no comparison group, but directly addresses both efficacy and safety of tumescent liposuction for lipedema with detailed outcome reporting.",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1093/asjof/ojag039",
+   "title": "Safety and Efficacy of Surgical Techniques in Treating Lipedema: Systematic Review",
+   "year": 2026,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "Liposuction, mainly using the tumescent infiltration, reduced pain, BMI, and functional limitations, with improvements in mobility and quality of life. Mean aspirated fat volume was 3077 mL per session and 6111 mL per treatment course. Complications were uncommon",
+   "note": "This is a systematic review of 25 studies with 2373 patients directly addressing the safety and efficacy of liposuction for lipedema, concluding it is safe and effective; confidence is moderate rather than high due to high methodological he",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1097/gox.0000000000005952",
+   "title": "Liposuction as a Treatment for Lipedema: A Scoping Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Studies found self-reported improvements in pain, mobility, bruising, and overall quality of life for patients following liposuction, many of whom had previously been on compressive therapy. Studies reported low rates of serious adverse events following liposuction",
+   "note": "Scoping review of 13 studies (mostly case series and retrospective analyses) with no randomized controlled trials, heterogeneous outcome measures, and no direct comparator arm; conclusions are limited to patients unresponsive to compression",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1111/j.1610-0387.2010.07504.x",
+   "title": "Liposuction is an effective treatment for lipedema–results of a study with 25 patients",
+   "year": 2010,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Dor (sintoma dominante do lipedema): melhora altamente significativa de 7,2 ± 2,2 para 2,1 ± 2,1 em VAS (p < 0,001)",
+   "note": "Uncontrolled case series of 25 patients with no comparison group; results are consistent and statistically significant within the cohort, but lack of randomization and control limits causal inference. Supports effectiveness and safety of li",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1111/dth.14364",
+   "title": "Cause and management of lipedema‐associated pain",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipoaspiração tumescente microcannular reduziu dor de 7,8 ± 2,1 para 2,2 ± 1,3 na VAS (10 pontos) em 111 pacientes (Wollina & Heinig, 2019)",
+   "note": "This is a narrative review synthesizing multiple studies on pain mechanisms and treatments in lipedema, reporting specific outcome data from cited cohort studies (Wollina & Heinig 2019, Schmeller et al. 2012, Baumgartner et al. 2016) suppor",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1111/iwj.13608",
+   "title": "Liposuction treatment improves disease‐specific quality of life in lipoedema patients",
+   "year": 2021,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Before treatment with liposuction, disease-specific QoL in patients with lipoedema was low on every single subscale as well as on the global score and showed a significant improvement in all aspects after liposuction.",
+   "note": "Prospective QoL assessment in only 20 patients with pre/post design (no control group), embedded within a larger retrospective case series of 69 patients; no randomization or blinding, short follow-up of 6 months, and small sample limit gen",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.61164/rmnm.v11i1.4080",
+   "title": "CONDIÇÕES PATOLÓGICAS RELACIONADAS AO LIPEDEMA: CAUSAS E TRATAMENTOS",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "tratamentos disponíveis (conservadores, cirúrgicos e psicossociais), com ênfase na negligência histórica e institucional e na necessidade de abordagem multidisciplinar humanizada",
+   "note": "The article reviews existing literature on lipedema, including its treatment history, but does not provide specific historical milestones.",
+   "old_claims": [
+    "SCR-LIP-000060"
+   ],
+   "old_statements": [
+    "The article provides a literature review on lipedema, discussing its pathological conditions, treatments including surgical options, and the need for recognition of lipedema as a distinct clinical entity, which relates to the historical milestones in its description and treatment."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1007/s00266-026-05889-x",
+   "title": "Optimizing Liposuction in Lipedema Patients: A Novel Approach with Perioperative and Intraoperative Ultrasound",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "D1 reduziu de 9,9 mm (pré) para 6,3 mm (pós-op imediato), p<0,05, mantendo 5,8 mm aos 3 meses.",
+   "note": "The article provides insights into current surgical practices for lipedema but does not address historical milestones.",
+   "old_claims": [
+    "SCR-LIP-000061"
+   ],
+   "old_statements": [
+    "This article discusses the use of ultrasound in optimizing liposuction for lipedema patients, highlighting advancements in surgical techniques but does not detail historical milestones in the description and treatment of lipedema."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.amsu.2017.10.024",
+   "title": "A journey through liposuction and liposculture: Review",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "it can be largely used for the treatment of innumerable pathologies in reconstructive surgery such as lipomas, lipedema, lipodystrophies",
+   "note": "The review covers the historical development of liposuction technique and mentions lipedema as one of its clinical applications, providing contextual background on surgical treatment history relevant to the question, though it is not focuse",
+   "old_claims": [
+    "SCR-LIP-000345"
+   ],
+   "old_statements": [
+    "This review traces the historical evolution of liposuction from its first experimentation by A. and G. Fischer in the 1970s, describing its technical transformations and clinical applications including the reconstructive treatment of lipedema, lipomas, and lymphedema, with a reported low complication rate."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.21037/atm-24-165",
+   "title": "Outcomes of liposuction techniques for management of lipedema: a case series and narrative review",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Revisão narrativa: 19 estudos com >1.500 pacientes acumulados, 1996-2024; maior série publicada foi Fischer et al. (n=691), seguida de Siems et al. (n=111)",
+   "note": "The article is primarily a case series with a narrative review tracing surgical liposuction literature from 1996-2024, including key historical series and follow-up milestones, which provides contextual information on the historical develop",
+   "old_claims": [
+    "SCR-LIP-000346"
+   ],
+   "old_statements": [
+    "A narrative review of 19 studies (>1,500 patients, 1996-2024) accompanying a 24-patient Latin American case series notes the largest published series was Fischer et al. (n=691) and that maintained benefits have been documented at 12-year follow-up (Baumgartner et al. 2021), while the Lima, Peru series represents the only Latin American report in a literature dominated by European series."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1097/psn.0000000000000245",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema identificado pela primeira vez em 1940 por Allen e Hines na Mayo Clinic; ainda ausente dos currículos de medicina e enfermagem",
+   "note": "The article explicitly notes the historical milestone of lipedema's first description in 1940 by Allen and Hines and reviews surgical treatment techniques, directly bearing on the question.",
+   "old_claims": [
+    "SCR-LIP-000347"
+   ],
+   "old_statements": [
+    "This review states that lipedema was first identified in 1940 by Allen and Hines at the Mayo Clinic and describes its clinical staging (stages I-IV, types I-V) and surgical treatment options including tumescent and water jet-assisted (WAL) liposuction that preserve lymphatic vessels."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.9734/bjmmr/2015/13894",
+   "title": "Lipedema: A Clinical Challenge-revisited",
+   "year": 2015,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Termo 'lipedema' cunhado por Allen e Hines (Mayo Clinic, 1940) descrevendo síndrome de 'pernas gordas e edema ortostático'",
+   "note": "The review provides the historical origin of the term 'lipedema' (Allen and Hines, 1940) and discusses surgical treatment evolution (liposuction methods), directly touching on historical/treatment milestones, but as background narrative rat",
+   "old_claims": [
+    "SCR-LIP-000347"
+   ],
+   "old_statements": [
+    "This review states that lipedema was first identified in 1940 by Allen and Hines at the Mayo Clinic and describes its clinical staging (stages I-IV, types I-V) and surgical treatment options including tumescent and water jet-assisted (WAL) liposuction that preserve lymphatic vessels."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1016/j.clindermatol.2025.09.026",
+   "title": "Lipedema and fine arts: From prehistoric times to contemporary art",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although underrecognized for decades, lipedema has gained increased interest since the turn of the century. The treatment is complex and includes conservative and surgical methods.",
+   "note": "The article addresses the historical recognition of lipedema (1940 medical description, prior artistic representations) and mentions that treatment includes surgical methods, partially bearing on the question's historical-milestone scope, b",
+   "old_claims": [
+    "SCR-LIP-000348"
+   ],
+   "old_statements": [
+    "This iconographic review notes that lipedema received formal medical recognition by Allen and Hines in 1940 and that contemporary treatment includes both conservative and surgical methods, while tracing artistic depictions of lipedema-compatible morphology from prehistoric Maltese sculptures (~3000 BC) and ancient Egyptian reliefs to modern works."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1046/j.1439-0353.2004.04051.x",
+   "title": "Lipödem – aktueller Stand, neue Perspektiven (Lipoedema – current status, new perspectives)",
+   "year": 2004,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Complex physical therapy programs were introduced as a standard therapy years ago and can achieve an impressive oedema reduction. Liposuction in tumescent local anesthesia with vibrating microcannulas has proved to be a new effective treatment.",
+   "note": "The article is a review covering lipedema staging, classification, and the evolution of treatment from conservative complex decongestive therapy to the newer tumescent liposuction technique; it describes the development of surgical treatmen",
+   "old_claims": [
+    "SCR-LIP-000504"
+   ],
+   "old_statements": [
+    "A narrative review describes lipedema's clinical staging (I-III) and anatomic types, and reports that tumescent liposuction with vibrating cannulas emerged as a newer surgical treatment complementing complex decongestive therapy, with a case series of 18 patients followed up to 6 years showing durable reduction in circumference, pressure pain, and bruising."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1097/00006534-199411000-00014",
+   "title": "Lipedema",
+   "year": 1994,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "These findings are representative of a clinical entity known as lipedema, which is distinct from lymphedema and for which treatment may be different.",
+   "note": "The article argues that lipedema is distinct from lymphedema and does not progress to it, contradicting the premise that lipedema progresses to lymphedema. However, it is a small retrospective case series (n=9) and does not directly study l",
+   "old_claims": [
+    "SCR-LIP-000128"
+   ],
+   "old_statements": [
+    "In a retrospective review of 250 lower extremity lymphedema cases, 9 patients with lipedema showed bilateral symmetric swelling sparing the feet, absent Stemmer sign, and consistent fat pads anterior to the lateral malleoli, distinguishing lipedema as a separate clinical entity from lymphedema that requires different treatment."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.17116/plast.hirurgia202403186",
+   "title": "Modern aspects of etiopathogenesis, diagnosis and treatment of lipedema [Современные аспекты этиопатогенеза, диагностики и лечения липедемы]",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Schmeller et al. relataram redução média de 9846 mL de volume, melhora subjetiva da dor e função em mais de 50% dos pacientes (p<0,001), com baixa taxa de complicações",
+   "note": "The review covers modern etiopathogenesis, diagnosis and surgical treatment and reports surgical outcomes, but it does not focus on historical milestones in the description and surgical treatment of lipedema; it is on-topic but does not dir",
+   "old_claims": [
+    "SCR-LIP-000505"
+   ],
+   "old_statements": [
+    "A contemporary review of lipedema reports liposuction as the main surgical treatment, citing Schmeller et al. (mean reduction 9846 mL, pain/function improvement in >50%, p<0.001) and Wollina/Heinig (n=111, mean aspirate 4700 mL, VAS pain from 7.8 to 2.2), but does not systematically trace the historical milestones of its description or surgical treatment."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "surgical (WAL/PAL/TAL liposuction)",
+   "note": "The article covers classification and current surgical treatment (liposuction) but does not provide a historical account of milestones in the description or surgical treatment of lipedema; it is on-topic background rather than a test or doc",
+   "old_claims": [
+    "SCR-LIP-000506"
+   ],
+   "old_statements": [
+    "This narrative review on lipedema pathophysiology and management describes clinical classification systems (Amato distribution types I-V, morphological stages I-IV), imaging diagnostics, and therapeutic strategies including WAL/PAL/TAL liposuction, but does not present a historical timeline of milestones in the condition's description or surgical treatment."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema was first delineated in the mid-twentieth century as a distinct syndrome of symmetric, foot-sparing leg fat with orthostatic edema, separate from lymphedema.",
+   "role": "supporting",
+   "rationale": "The original description, the first large series and later clinical reports define the founding milestone of the condition's description.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Allen and Hines at the Mayo Clinic in 1940 coined the term lipedema and described disproportionate, bilateral, foot-sparing leg fat with edema."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Wold, Hines and Allen in 1951 reported a series of about 119 patients detailing orthostatic edema, pain and strong female predominance."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Among 250 lower extremity lymphedema cases, 9 lipedema patients showed bilateral symmetric foot-sparing swelling, absent Stemmer sign and fat pads anterior to the lateral malleoli, distinguishing lipedema from lymphedema."
+    },
+    {
+     "e": "E18",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Review states lipedema was first identified in 1940 by Allen and Hines at the Mayo Clinic and remains absent from medical and nursing curricula."
+    },
+    {
+     "e": "E19",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Review states the term lipedema was coined by Allen and Hines (Mayo Clinic, 1940) describing a syndrome of fat legs and orthostatic edema."
+    },
+    {
+     "e": "E20",
+     "stance": "refines",
+     "finding": "Iconographic review traces lipedema-compatible morphology in art from prehistoric Maltese sculptures and Egyptian reliefs onward, before formal medical recognition in 1940; interest increased since the turn of the century."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00017"
+  },
+  {
+   "key": "P2",
+   "statement": "Surgical correction of disproportionate lower-body fat began with excisional techniques before liposuction was developed and applied to lipedema.",
+   "role": "supporting",
+   "rationale": "Historical surgical reports place excisional contouring and the invention of liposuction before its use in lipedema.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Pitanguy in 1964 described surgical (excisional) correction of trochanteric lipodystrophy, the saddlebag deformity resembling lipedema fat deposits."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Review traces liposuction from its first experimentation by A. and G. Fischer in the 1970s through technical transformations, with reconstructive applications including lipedema and a reported low complication rate."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00018"
+  },
+  {
+   "key": "P3",
+   "statement": "Tumescent liposuction with vibrating microcannulas emerged around the turn of the century as the main surgical treatment for lipedema, complementing decongestive therapy.",
+   "role": "supporting",
+   "rationale": "Early reports and later reviews describe tumescent liposuction as the new, then dominant, surgical option.",
+   "evidence": [
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "Review (2004): complex physical therapy was standard; tumescent liposuction with vibrating microcannulas proved a new effective treatment, with 18 patients followed up to 6 years showing durable reductions in circumference, pressure pain and bruising."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Case series (2006, 28 patients, 21 evaluated) presented tumescent liposuction as a new, safe and effective therapy correcting body proportions and improving symptoms."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Narrative review of 19 studies (>1,500 patients, 1996-2024): largest series Fischer et al. (n=691), then Siems et al. (n=111); literature dominated by European series."
+    },
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "Review describes liposuction as the main surgical treatment, citing mean volume reduction 9846 mL and pain/function improvement in >50% of patients with low complication rates."
+    },
+    {
+     "e": "E24",
+     "stance": "context",
+     "finding": "Narrative review lists water-jet, power-assisted and tumescent liposuction as current surgical strategies alongside classification systems and imaging."
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "finding": "Perioperative and intraoperative ultrasound was used to optimize liposuction; a dermal thickness measure fell from 9.9 mm to 6.3 mm post-op (p<0.05), 5.8 mm at 3 months."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 6,
+   "store_key": "G-00019"
+  },
+  {
+   "key": "G-00005",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Meta-analysis of 7 studies (n=451): significant post-operative reduction in spontaneous pain (MD 3.41; 95%CI 1.92-4.90), edema, bruising, mobility and QoL impairment versus pre-operative status; high heterogeneity."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Systematic review of 25 studies (2373 patients): mainly tumescent liposuction reduced pain, BMI and functional limitations, improved mobility and QoL; complications uncommon."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Scoping review of 13 mostly uncontrolled studies: self-reported improvements in pain, mobility, bruising and QoL after liposuction, with low rates of serious adverse events."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "In 25 patients, VAS pain improved from 7.2 to 2.1 after liposuction (p<0.001)."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Review cites microcannular tumescent liposuction reducing VAS pain from 7.8 to 2.2 in 111 patients."
+    },
+    {
+     "e": "E7",
+     "stance": "refines",
+     "finding": "Leg liposuction gave significant symptomatic and functional relief with consistently high satisfaction, despite persistent cutaneous sensory alterations in stages II-III."
+    }
+   ],
+   "role": "context",
+   "rationale": "Liposuction symptom outcomes are context for the history of surgical treatment.",
+   "statement": "Liposuction for lipedema is associated with reduced pain and other symptoms compared with preoperative status, mainly in uncontrolled studies.",
+   "grade": "high",
+   "n_findings": 6,
+   "store_key": "G-00179",
+   "statement_before_twin_merge": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status."
+  },
+  {
+   "key": "G-00006",
+   "evidence": [
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "In 20 prospectively assessed patients, disease-specific QoL was low on every subscale before liposuction and improved significantly in all aspects afterwards."
+    }
+   ],
+   "role": "context",
+   "rationale": "Quality-of-life outcomes are context for the history of surgical treatment.",
+   "statement": "Liposuction for lipedema is associated with improved quality of life and mobility.",
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00006"
+  },
+  {
+   "key": "G-00008",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In 112 patients, tumescent liposuction yielded sustained reductions in pain, edema and need for conservative therapy at long-term follow-up."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "In 60 patients, improvements in all lipedema parameters persisted at 4, 8 and 12 years after liposuction without clinically relevant deterioration."
+    }
+   ],
+   "role": "context",
+   "rationale": "Long-term follow-up documents the maturation of liposuction as treatment.",
+   "statement": "Improvements after liposuction for lipedema are reported to persist for years without clinically relevant deterioration.",
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00008"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E14",
+   "reason": "General review that, by its own summary, provides no specific historical milestone or result relevant to the question."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E20"
+    ],
+    "suggested_statement": "Lipedema was first delineated in the mid-twentieth century as a syndrome of symmetric, foot-sparing leg fat with orthostatic edema, later distinguished from lymphedema.",
+    "severity": "minor",
+    "note": "E22 (1994) supports the lymphedema distinction, not the mid-century delineation, so the statement merges two dates. E20 (art iconography) is not evidence on the clinical delineation and fits poorly under this proposition. E1 and E2 have no quotes to check."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Excisional correction of trochanteric fat deposits was described in the 1960s, before liposuction was developed in the 1970s and later applied to lipedema.",
+    "severity": "minor",
+    "note": "'Began with' asserts priority that one 1964 description of trochanteric lipodystrophy cannot establish; E3 is not about lipedema as such and has no quote. Sequence (1964 then 1970s liposuction) is supported."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E15"
+    ],
+    "suggested_statement": "Tumescent liposuction with vibrating microcannulas emerged around the turn of the century and is now described as the main surgical treatment for lipedema.",
+    "severity": "minor",
+    "note": "Bundles timing, 'main' status and complementing decongestive therapy. E21 and E8 support emergence; E23 and E24 support current role. E15 (ultrasound dermal thickness) says nothing historical. E4 ('used for only about 10 years' in 2011) supports the timing and is filed under G-00008."
+   },
+   {
+    "key": "G-00005",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Liposuction for lipedema is associated with reductions in pain, edema and bruising compared with preoperative status, mostly in uncontrolled studies.",
+    "severity": "minor",
+    "note": "'Heaviness' appears in none of the findings. Evidence is predominantly uncontrolled pre-post and self-reported; this is also tangential to the historical question."
+   },
+   {
+    "key": "G-00006",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Liposuction for lipedema is associated with improved disease-specific quality of life.",
+    "severity": "minor",
+    "note": "Single cohort (about 20 patients) addresses QoL only; 'mobility' is not in its finding (it appears under G-00005). Near-twin of G-00005, which already lists QoL and mobility."
+   },
+   {
+    "key": "G-00008",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged with 'reported'; two single-centre cohorts. E4 and E5 may overlap in centre or patients, which should not be read as independent replication."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "G-00005, G-00006 and G-00008 are efficacy propositions rather than historical milestones, and G-00005/G-00006 overlap on quality of life and mobility (twin-like).",
+    "severity": "minor"
+   },
+   {
+    "issue": "E4 (liposuction used for about 10 years by 2011) supports the P3 timeline but is filed only under G-00008.",
+    "severity": "minor"
+   },
+   {
+    "issue": "The set gives no milestone between 1994 and 2004 and none on formal recognition or classification; the surgical timeline rests on thin dated sources.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000019.cons.json",
+   "ver": "SQ-LIP-000019.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00005",
+   "into": "G-00179"
+  }
+ ]
+}

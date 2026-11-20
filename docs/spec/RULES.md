@@ -661,7 +661,8 @@
   evidência não descartada se perdeu (conferido por código). As 42 respostas foram recompiladas a partir das
   proposições. Um DOI errado veio à tona na verificação e foi corrigido: SCR-LIP-000121 citava 10.1111/iwj.13071
   (custo de lesão por pressão), mas a citação é de Shavit, Wollina & Alavi 2018, 10.1111/iwj.12949. Nenhuma
-  chamada ao OpenRouter: tudo por subagentes do Claude Code.
+  chamada ao OpenRouter: tudo por subagentes do Claude Code. Publicado como **v0.6** no Zenodo,
+  `10.5281/zenodo.24396402`.
 
 - **2026-11-18** — **`first_mention` refeito nas 42 perguntas.** O anel vazado da linha do tempo ("primeira menção na
   literatura") estava errado em 20 perguntas e ausente em 19. Havia duas causas. A busca no texto integral do Europe PMC

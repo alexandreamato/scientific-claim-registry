@@ -1,0 +1,941 @@
+{
+ "question": "SQ-LIP-000003",
+ "text": "Can ultrasound diagnose or classify lipedema?",
+ "n_old_claims": 26,
+ "n_items": 31,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: Negative findings on ultrasound morphology (E20 sonomorphology unspecific; E16 lipedema skin indistinguishable from controls) are shown only under P1/P2 and not as caveats to P3's qualitative classification.",
+  "[minor] set: Many P1 context items are secondary_of E1 and restate the same Amato cutoffs; evidence for cutoffs rests largely on one primary study, which the statement does not convey.",
+  "[minor] P1: not fully supported; misplaced ['E7'] — suggested: Increased subcutaneous thickness on ultrasound is associated with lipedema and may help discriminate it from non-lipedema limbs, though specificity and reproducibility vary between studies. (Hedged with 'may', but the contradicting E20 (no reliable discrimination vs lipohypertrophy/obesity/controls) and the low specificity in E27 are only implicit. E7 (abdominal nodules/thickness, no discrimination data) fits poorly as supporting for limb cutoffs.)",
+  "[minor] P3: not fully supported; overgeneralized — suggested: Qualitative ultrasound patterns of dermis and hypodermis, such as septal changes and hyperechoic nodules, may describe structural alterations in lipedema, but classification is not validated. (Evidence is case reports and small series (E3, E4, E5, E29) plus a descriptive 3D study; 'classify' implies a validated scheme. E20 (sonomorphology 'completely unspecific') and E16 (lipedema appears identical to normal skin) cut against it and are not shown under P3.)",
+  "[minor] P4: not fully supported; overgeneralized; two ideas; misplaced ['E17'] — suggested: Microvascular ultrasound imaging may show increased subcutaneous vascularization in advanced lipedema, and elastography stiffness may relate to pain, though both are preliminary and unvalidated. (Bundles microvascular imaging and elastography. E17 shows correlation of stiffness with pain, not detection of altered stiffness vs controls, so 'detect stiffness alterations' overreaches. E30 caveat (no histology, single study, conventional Doppler fails) is correctly included.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1177/02683555211002340",
+   "title": "Ultrasound criteria for lipedema diagnosis",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": 89,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Região pré-tibial: melhor preditor isolado com AUC excelente — direita 0,9079 (p<0,001), esquerda 0,9092 (p<0,001); cutoff ótimo 11,6 mm (D: sens 0,79, spec 0,96)",
+   "note": "two blinded examiners; ROC cutoffs; pre-tibial best discriminator",
+   "old_claims": [
+    "SCR-LIP-000005",
+    "SCR-LIP-000006"
+   ],
+   "old_statements": [
+    "In women undergoing venous ultrasound, dermal/subcutaneous thickness measurements at the pre-tibial region, anterior thigh and lateral leg can distinguish clinically diagnosed lipedema from non-lipedema in the lower limbs.",
+    "For ultrasound diagnosis of lower-limb lipedema, subcutaneous thickness cutoffs of >11.7 mm (pre-tibial), >17.9 mm (anterior thigh), >8.4 mm (lateral leg) and >7.0 mm (medial supramalleolar) provide reproducible reference values."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1016/j.bjps.2023.05.056",
+   "title": "Lipedema: What we don’t know",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico de imagem: ultrassom de alta resolução diferencia lipedema (espessura subcutânea aumentada) de linfedema (espessura dérmica aumentada + ecogenicidade reduzida); cut-offs propostos por Amato et al.: subcutânea 11,7 mm pré-tibial, 17,9 mm coxa anterior, 8,4 mm lateral da perna",
+   "note": "Narrative review summarizing that high-resolution ultrasound can characterize lipedema via increased subcutaneous thickness with proposed quantitative cut-offs, while acknowledging no objective standardized imaging diagnostic exists.",
+   "old_claims": [
+    "SCR-LIP-000006"
+   ],
+   "old_statements": [
+    "For ultrasound diagnosis of lower-limb lipedema, subcutaneous thickness cutoffs of >11.7 mm (pre-tibial), >17.9 mm (anterior thigh), >8.4 mm (lateral leg) and >7.0 mm (medial supramalleolar) provide reproducible reference values."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.4236/jbise.2025.184008",
+   "title": "The Challenge of a Qualitative Ultrasonographic Classification in Lipedema",
+   "year": 2025,
+   "design": "case_series",
+   "n": 34,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "propondo uma nova classificação qualitativa (Lipedema Dermal and Hypodermal Classification — LDHC) que complemente as classificações anatômica e funcional já existentes",
+   "note": "Vargas et al.; obese non-lipedema show preserved layered septa",
+   "old_claims": [
+    "SCR-LIP-000010"
+   ],
+   "old_statements": [
+    "Qualitative ultrasound patterns of the dermis and hypodermis (Lipedema Dermal and Hypodermal Classification, LDHC) describe structural changes (septal alteration, echogenic nodules, dermal-hypodermal junction disruption) that may correspond to stages of inflammation and fibrosis."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.4236/jbise.2025.188026",
+   "title": "Case Report of Painful Nodules in Lipedema: Correlation between Qualitative Ultrasonographic Classification and Histological Findings",
+   "year": 2025,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "LDHC como 'biópsia virtual': a combinação de nódulo ecogênico LDHC 3 com bordes irregulares, ausência de achados de lipoma e ponto doloroso correspondente permite dispensar biópsia invasiva em casos típicos",
+   "note": "The article provides evidence that ultrasound can classify lipedema through the identification of specific ultrasonographic features.",
+   "old_claims": [
+    "SCR-LIP-000010"
+   ],
+   "old_statements": [
+    "Qualitative ultrasound patterns of the dermis and hypodermis (Lipedema Dermal and Hypodermal Classification, LDHC) describe structural changes (septal alteration, echogenic nodules, dermal-hypodermal junction disruption) that may correspond to stages of inflammation and fibrosis."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.4236/jbise.2025.1810029",
+   "title": "The Hyperechoic Nodules in Lipedema Are Not All the Same: Description of Criteria and Their Qualitative Patterns",
+   "year": 2025,
+   "design": "case_series",
+   "n": 20,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "62 nódulos hiperecogênicos identificados nos 20 pacientes com LDHC 3",
+   "note": "Foureaux et al.; 62 nodules; distribution tied to most painful site, not BMI/age",
+   "old_claims": [
+    "SCR-LIP-000011"
+   ],
+   "old_statements": [
+    "Echogenic (hyperechoic) subcutaneous nodules in lipedema can be subclassified into at least four morphological variants (LDHC 3a-3d) whose distribution corresponds most strongly to the patient's most painful site."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "ferramentas diagnósticas objetivas como DXA, bioimpedância, razão cintura-altura e questionários QuASiL/SF-36 endossadas",
+   "note": "consensus agreement 4.44, level B; diagnosis relies on history, exam, exclusion of differentials",
+   "old_claims": [
+    "SCR-LIP-000048"
+   ],
+   "old_statements": [
+    "The diagnosis of lipedema is primarily clinical, relying on the patient's medical history, physical examination, and exclusion of differential diagnoses (notably obesity and lymphedema)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1007/s00266-025-05192-1",
+   "title": "Abdominal Lipedema: Clinical Diagnosis and Management Through a Proposed Diagnostic Algorithm",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Ultrassonografia mostrou nódulos hiperecoicos no tecido adiposo abdominal e aumento da espessura subcutânea, replicando o padrão descrito para membros inferiores",
+   "note": "The article provides evidence that ultrasound findings can be used to establish diagnostic criteria for abdominal lipedema, supporting the question's affirmative direction.",
+   "old_claims": [
+    "SCR-LIP-000048"
+   ],
+   "old_statements": [
+    "The diagnosis of lipedema is primarily clinical, relying on the patient's medical history, physical examination, and exclusion of differential diagnoses (notably obesity and lymphedema)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1177/02683555211068953",
+   "title": "Reply letter to the editor regarding ultrasound examination for en-suite measurements in lipedema",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Medições próprias (Amato et al. 2021): espessura média do tecido subcutâneo na coxa — 20,9 mm (lipedema) vs 12,67 mm (controles)",
+   "note": "A correspondence/reply letter explicitly asserting that lipedema is frequently underdiagnosed and discussing ultrasound criteria as a diagnostic tool; it directly addresses both parts of the question but is opinion/letter-level evidence.",
+   "old_claims": [
+    "SCR-LIP-000280"
+   ],
+   "old_statements": [
+    "This reply letter states that lipedema is frequently underdiagnosed and confused with obesity and lymphedema (worsened by phonetic similarity among 'lipedema', 'lipidemia', and 'lipemia'), and defends an ultrasound diagnostic cutoff incorporating dermal and subcutaneous thickness (mean subcutaneous thigh thickness 20.9 mm in lipedema vs 12.67 mm in controls)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1089/lrb.2022.0082",
+   "title": "Lipedema: Usefulness of 3D Ultrasound Diagnostics",
+   "year": 2023,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "fibrotic connective areas in the connective septa that correspond to the palpable nodules has been highlighted. The structural feature, present in all the clinical stages, unexpectedly, was the presence along the superficial fascia of anechogenicity due to the presence of fluid",
+   "note": "The study is a case series of 40 patients without a healthy control group or blinded assessment, limiting diagnostic validity conclusions, but it directly addresses ultrasound as a diagnostic tool for lipedema and reports specific imaging f",
+   "old_claims": [
+    "SCR-LIP-000084"
+   ],
+   "old_statements": [
+    "3D ultrasound (17 MHz) identified specific structural features in lipedema patients (stages I-III) including adipose lobule hypertrophy, fibrotic connective septa, thickened superficial fascia, and fluid anechogenicity along the superficial fascia not previously detected by 2D ultrasound."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1089/lrb.2023.29151.editorial",
+   "title": "Three-Dimensional Ultrasonography for Lipedema Diagnosis",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O estudo descritivo oferece primeira visão da utilidade da US 3D na caracterização tecidual do tecido adiposo e dos planos fasciais nas regiões afetadas.",
+   "note": "Editorial commentary on a descriptive ultrasound study, suggesting 3D ultrasonography is useful for tissue characterization in lipedema; supports the question but is an opinion/editorial referencing a small descriptive study.",
+   "old_claims": [
+    "SCR-LIP-000084"
+   ],
+   "old_statements": [
+    "3D ultrasound (17 MHz) identified specific structural features in lipedema patients (stages I-III) including adipose lobule hypertrophy, fibrotic connective septa, thickened superficial fascia, and fluid anechogenicity along the superficial fascia not previously detected by 2D ultrasound."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1038/s44324-025-00093-y",
+   "title": "Unraveling lipedema: comprehensive insights and the path to future discoveries",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "ultrassom só detecta fluido livre, não o ligado a GAGs (típico do lipedema isolado), o que explicaria a textura gelatinosa",
+   "note": "This is a narrative review that mentions ultrasound as one of several imaging modalities used in lipedema but explicitly states it is not definitive; it does not report original imaging data or systematic evidence synthesis.",
+   "old_claims": [
+    "SCR-LIP-000085"
+   ],
+   "old_statements": [
+    "Ultrasound, along with DXA and MRI, provides valuable diagnostic insights in lipedema but is not considered definitive for diagnosis or classification."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1111/obr.13648",
+   "title": "Diagnostic imaging in lipedema: A systematic review",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Features for lipedema have been defined using ultrasound (increased subcutaneous adipose tissue)",
+   "note": "Systematic review directly addressing diagnostic imaging for lipedema, including ultrasound; reports ultrasound can identify a feature (increased subcutaneous adipose tissue) but concludes overall diagnostic performance is limited, refining",
+   "old_claims": [
+    "SCR-LIP-000085"
+   ],
+   "old_statements": [
+    "Ultrasound, along with DXA and MRI, provides valuable diagnostic insights in lipedema but is not considered definitive for diagnosis or classification."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1016/j.jmv.2012.05.002",
+   "title": "[Lipedema: a misdiagnosed entity]",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Imaging studies using computed tomography, magnetic resonance imaging, ultrasound, lymphoscintigraphy are not indicated, except if the diagnosis is atypic or doubtful.",
+   "note": "The review explicitly states imaging including ultrasound is not routinely indicated for diagnosis, contradicting the affirmative that ultrasound can diagnose/classify lipedema.",
+   "old_claims": [
+    "SCR-LIP-000085"
+   ],
+   "old_statements": [
+    "Ultrasound, along with DXA and MRI, provides valuable diagnostic insights in lipedema but is not considered definitive for diagnosis or classification."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.3233/ch-238103",
+   "title": "The value of sonographic microvascular imaging in the diagnosis of lipedema",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Vascularização subcutânea aumentada foi a característica marcante nas pacientes com lipedema graus clínicos 2 e 3, consistente com a hipótese de perfusão subcutânea aumentada nos estágios avançados da doença. Microaneurismas, variações de calibre e fragilidade vascular foram observados apenas espora",
+   "note": "Small sample (25 patients, 10 controls), no blinding or standardized diagnostic criteria described, single-center, and no validation of the grading system; however, it directly addresses ultrasound diagnosis of lipedema with a novel techniq",
+   "old_claims": [
+    "SCR-LIP-000086"
+   ],
+   "old_statements": [
+    "Ultra Micro Angiography (UMA) ultrasound technique visualized subcutaneous microvascular structures in lipedema patients with superior detail compared to conventional color Doppler, revealing grade 2–3 microvascular flow patterns in most of the 25 lipedema patients studied."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.7759/cureus.55906",
+   "title": "Assessment Modalities for Lower Extremity Edema, Lymphedema, and Lipedema: A Scoping Review",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Valores de corte de US para diagnóstico de lipedema: espessura dérmica de 8,4 mm (região lateral da perna), 11,7 mm (pré-tibial) e 17,9 mm (coxa) — valores reportados por estudo de 2021; lipedema associado a aumento de espessura de pele e hipoecogenicidade subcutânea",
+   "note": "Scoping review directly comparing MRI/MRL, lymphoscintigraphy, CT and other modalities for differentiating lipedema from lymphedema, reporting sensitivity/specificity and distinguishing features.",
+   "old_claims": [
+    "SCR-LIP-000383"
+   ],
+   "old_statements": [
+    "In a systematic review of six diagnostic modalities, MRI/MRL achieved 100% sensitivity (calf subcutaneous water area) and reliably differentiated lymphedema from lipedema, with non-contrast MRL identifying increased subcutaneous adipose tissue in lipedema and epifascial collections in lipolymphedema; CT showed 95% sensitivity/100% specificity for lipedema with subcutaneous honeycombing being 100% specific for lymphedema and absent in lipedema; whereas lymphoscintigraphy (lymphedema gold standard) could NOT distinguish lipedema from lymphedema since lymphatic changes occur in both."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1111/j.1365-2133.2010.09810.x",
+   "title": "High-resolution cutaneous ultrasonography to differentiate lipoedema from lymphoedema",
+   "year": 2010,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Expert NÃO conseguiu distinguir lipedema de controles — lipedema e peles normais têm aparência ultrassonográfica idêntica",
+   "note": "The study directly addresses ultrasound diagnosis/classification of lipedema versus lymphedema with blinded expert evaluation and excellent interobserver agreement, but is limited by small sample size (8 lipedema patients, 16 legs) and sing",
+   "old_claims": [
+    "SCR-LIP-000088"
+   ],
+   "old_statements": [
+    "High-resolution 20 MHz cutaneous ultrasonography correctly differentiated lymphedema from lipedema in all cases, with lymphedema showing significantly increased dermal thickness and diffuse hypoechogenicity, while lipedema showed no significant difference in dermal thickness compared to controls and only localized upper-dermal hypoechogenicity at the ankle."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1038/s41366-026-02049-8",
+   "title": "Assessment of the elasticity of lipedematous tissue and the examination of the relationship between pain and fibrosis in lipedema",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "While SWE measurements were not correlated with skin adipose tissue, SWE measurements were correlated with pain and neuropathic pain in patients with lipedema.",
+   "note": "The article uses ultrasound elastography (SWE) in lipedema patients and demonstrates its ability to measure tissue stiffness and correlate with pain, supporting the use of ultrasound as a diagnostic/assessment tool in lipedema. However, the",
+   "old_claims": [
+    "SCR-LIP-000089"
+   ],
+   "old_statements": [
+    "Shear-wave elastography (SWE) measurements of thigh tissue stiffness correlate with pain and neuropathic pain scores in lipedema patients, suggesting SWE can quantify tissue alterations beyond subcutaneous fat thickness alone."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1089/lrb.2017.0090",
+   "title": "Characterizing Lower Extremity Lymphedema and Lipedema with Cutaneous Ultrasonography and an Objective Computer-Assisted Measurement of Dermal Echogenicity",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Ultrassom cutâneo com medições assistidas por computador pode diferenciar linfedema de lipedema. Linfedema está associado com aumento de espessura dérmica e hipoecogenicidade dérmica, principalmente distal. Lipedema está associado com aumento de espessura e hipoecogenicidade do tecido subcutâneo em ",
+   "note": "Comparative ultrasound study directly addressing whether cutaneous ultrasonography can characterize/differentiate lipedema, reporting specific quantitative sonographic features; limitations include age imbalance between groups noted by auth",
+   "old_claims": [
+    "SCR-LIP-000269"
+   ],
+   "old_statements": [
+    "Using 15 MHz cutaneous ultrasonography with computer-assisted (ImageJ) measurement of dermal echogenicity, lipedema was characterized by increased subcutaneous thickness and subcutaneous hypoechogenicity throughout the limb (subcutaneous echogenicity at calf ~60 vs 79 in lymphedema, p=0.005) and a preserved dermal:subcutaneous echogenicity ratio, distinguishing it from lymphedema which showed predominantly distal dermal thickening and dermal hypoechogenicity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1089/lrb.2024.0102",
+   "title": "Assessment Tools to Quantify the Physical Aspects of Lipedema: A Systematic Review",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Amato 2021 (ultrassom): único a propor pontos de corte diagnósticos (espessura pretibial >11,8 mm) — referência metodológica importante",
+   "note": "Systematic review identifying ultrasound as an objective measurement tool for lipedema, including a proposed diagnostic thickness cut-off, while noting standardization and reproducibility limitations.",
+   "old_claims": [
+    "SCR-LIP-000270"
+   ],
+   "old_statements": [
+    "In a systematic review of objective lipedema assessment tools, two ultrasound studies documented anatomical measurement points (mid-thigh, mid-shin, supra-malleolar), and one (Amato 2021) proposed a diagnostic cut-off of pretibial subcutaneous thickness >11.8 mm, though no study reported machine frequency/gain or acquisition time, limiting reproducibility."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.12687/phleb2431-4-2018",
+   "title": "Ist die Differenzialdiagnostik des Lipödems mittels hochauflösender Sonografie möglich?",
+   "year": 2018,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O ultrassom de alta resolução no setting de rotina não permite diferenciação confiável entre lipedema, lipohipertrofia, obesidade e controles saudáveis. A compressibilidade e a sonomorfolgia são parâmetros completamente inespec",
+   "note": "The article directly tests whether high-resolution ultrasound can diagnose/classify lipedema and concludes it cannot reliably differentiate lipedema from lipohypertrophy, obesity, or healthy controls in routine settings, with non-specific c",
+   "old_claims": [
+    "SCR-LIP-000271"
+   ],
+   "old_statements": [
+    "High-resolution ultrasound (10–13 MHz) measuring cutis-subcutis thickness, compressibility, and sonomorphology could not reliably differentiate lipedema from lipohypertrophy, obesity, or healthy controls (lipedema vs lipohypertrophy compressibility 22.2% vs 22.7%; blinded reviewer failed to classify entities), though it could distinguish lipedema from lymphedema (which shows cutaneous hypoechogenicity)."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "TC sem contraste: sensibilidade 95% e especificidade 100% para diagnóstico de lipedema (Monnin-Delhom)",
+   "note": "The review summarizes imaging diagnostic performance (CT sensitivity/specificity) and differential diagnostic criteria distinguishing lipedema from lymphedema, directly addressing whether imaging can differentiate these conditions, though i",
+   "old_claims": [
+    "SCR-LIP-000205"
+   ],
+   "old_statements": [
+    "In this systematic review, non-contrast CT showed 95% sensitivity and 100% specificity for diagnosing lipedema (Monnin-Delhom), and imaging plus clinical signs (sparing of the foot dorsum, negative Stemmer sign) differentiate lipedema from lymphedema."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1159/000527138",
+   "title": "Body Composition Assessment by Dual-Energy X-Ray Absorptiometry: A Useful Tool for the Diagnosis of Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "ultrassom subcutâneo AUC=0,91 (Amato et al. 2021)",
+   "note": "The article primarily evaluates DXA for lipedema diagnosis, not ultrasound. It only mentions ultrasound's diagnostic AUC (0.91) as a cited comparison from another study (Amato et al. 2021), so it provides indirect contextual support rather ",
+   "old_claims": [
+    "SCR-LIP-000273"
+   ],
+   "old_statements": [
+    "In a DXA body composition study comparing lipedema patients to controls, the article cites subcutaneous ultrasound as achieving an AUC of 0.91 for lipedema diagnosis (Amato et al. 2021), while reporting DXA's own leg FM/total FM index reached AUC=0.90 with sensitivity 0.95 and specificity 0.73."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1055/s-0037-1621766",
+   "title": "Prävalenz des Lipödems bei berufstätigen Frauen in Deutschland",
+   "year": 2011,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A avaliação sonográfica e a medição de subcutis e cutis são bem adequadas para confirmação diagnóstica e avaliação de severidade do lipedema",
+   "note": "Cross-sectional prevalence study (n=62) explicitly validating quantitative ultrasonographic criteria for diagnosing and grading lipedema and differentiating it from lymphedema, directly supporting that ultrasound can diagnose/classify liped",
+   "old_claims": [
+    "SCR-LIP-000274"
+   ],
+   "old_statements": [
+    "High-resolution duplex sonography (11-12 MHz) measuring subcutis+cutis thickness 8 cm above the medial malleolus distinguished lipedema (~16 mm) from non-lipedema (11±2.8 mm) and at the medial knee (25.5 mm vs 14.7±5 mm), with proposed severity grading (12-15 mm mild, 15-20 mm moderate, >20 mm distinct, >30 mm marked) and a homogeneously hyperechogenic 'snow storm' subcutis without echo-free clefts differentiating lipedema from lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1007/s00266-026-05889-x",
+   "title": "Optimizing Liposuction in Lipedema Patients: A Novel Approach with Perioperative and Intraoperative Ultrasound.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Perioperative US was used to measure the thickness of the superficial subcutaneous fat (D1) and the deep fat layer (D2) at a standardized anatomical site.",
+   "note": "The article uses ultrasound to measure and monitor fat reduction during liposuction, not to diagnose or classify lipedema; it is on-topic regarding ultrasound in lipedema but does not test diagnostic/classification utility.",
+   "old_claims": [
+    "SCR-LIP-000399"
+   ],
+   "old_statements": [
+    "In 24 women with lipedema undergoing liposuction, perioperative ultrasound measured superficial subcutaneous fat (D1) thickness, which decreased significantly from 9.9 mm preoperatively to 6.3 mm postoperatively, but the study assessed treatment monitoring rather than diagnostic classification of lipedema."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1177/02683555261451555",
+   "title": "Clinical, ultrasound, elastography and bioimpedance changes after radial extracorporeal shock wave therapy in patients with lipedema: A prospective within-patient study.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Ultrasound and elastography were used to evaluate subcutaneous tissue thickness and stiffness at predefined leg and thigh sites",
+   "note": "Ultrasound/elastography were used for tissue measurement and treatment monitoring, not to diagnose or classify lipedema; diagnosis was clinical. The article is on-topic regarding ultrasound imaging in lipedema but does not test its diagnost",
+   "old_claims": [
+    "SCR-LIP-000400"
+   ],
+   "old_statements": [
+    "In women with clinically diagnosed lipedema, ultrasound and elastography were used to measure subcutaneous tissue thickness and stiffness for treatment monitoring, but the study assessed treatment-related changes rather than diagnostic or classification accuracy."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1007/s00266-026-05638-0",
+   "title": "Serrapeptase After Liposuction for Lipedema: Limited Evidence for Antifibrotic Efficacy.",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The primary outcome was tissue stiffness measured by quantitative ultrasound elastography (QUS). Secondary outcomes included B-mode ultrasonography, patient-reported pain (VAS), and clinical assessment of induration.",
+   "note": "The article uses ultrasound (QUS and B-mode) to assess postoperative tissue stiffness/fibrosis in lipedema patients, but does not test ultrasound's ability to diagnose or classify lipedema itself; it studies serrapeptase efficacy, making it",
+   "old_claims": [
+    "SCR-LIP-000401"
+   ],
+   "old_statements": [
+    "In a cohort of 50 women with confirmed lipedema undergoing tumescent liposuction, quantitative ultrasound elastography (QUS) and B-mode ultrasonography were used to measure postoperative tissue stiffness (e.g., 14.8 ± 3.1 kPa) and fibrotic changes, though the study evaluated serrapeptase efficacy rather than diagnosis."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.1177/02683555261475099",
+   "title": "Ultrasound criteria for upper extremity lipedema diagnosis",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Subcutaneous thickness was significantly greater in the lipedema group at all sites, independent of BMI (p < .05). The mid-arm region (10 cm distal to the axillary line) showed the best diagnostic performance (AUC 0.74; sensitivity 82.4%; specificity 51.9%; cutoff >11.4 mm)",
+   "note": "Case-control study establishing ultrasound cutoffs that discriminate lipedema from controls independent of BMI, directly supporting ultrasound's diagnostic/classificatory capacity, though specificity is modest.",
+   "old_claims": [
+    "SCR-LIP-000451"
+   ],
+   "old_statements": [
+    "In 102 women (51 with lipedema, 51 BMI-matched controls), ultrasound subcutaneous thickness was significantly greater in lipedema at all six upper-extremity points independent of BMI, with mid-arm cutoff >11.4 mm achieving AUC 0.74, 82.4% sensitivity, and 51.9% specificity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1007/s00266-026-05988-9",
+   "title": "The Utility of Ultrasound in the Management of Lipedema: Preoperative, Intraoperative, and Postoperative Applications",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Valores de corte de espessura dérmica para diagnóstico de lipedema (Amato ACM 2021, ref. 5): 8,4 mm na região lateral da perna; 11,7 mm na região pré-tibial; 17,9 mm na coxa.",
+   "note": "The review compiles sonographic criteria, dermal thickness cut-offs, and a subcutaneous-thickness severity classification distinguishing lipedema from lymphedema and obesity, directly addressing ultrasound diagnosis and classification, thou",
+   "old_claims": [
+    "SCR-LIP-000452"
+   ],
+   "old_statements": [
+    "A review describes sonographic diagnostic criteria for lipedema—diffusely thickened subcutaneous tissue with homogeneous hyperechoic honeycomb pattern and preserved dermis, non-compressible lipedematous fat, dermal thickness cut-offs (8.4 mm lateral leg, 11.7 mm pretibial, 17.9 mm thigh), and a severity classification by subcutaneous thickness (mild <20 mm, moderate 20–30 mm, severe >30 mm)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.7759/cureus.114807",
+   "title": "Differentiation of Lipedema Nodules and Angiolipomas Based on the Ultrasound and Histopathologic Findings: A Case Series",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Nódulos hiperecogênicos dolorosos do lipedema diferem de angiolipomas por ocorrerem em fundo hipodérmico remodelado e corresponderem a alteração hemorrágico-inflamatória crônica, não a neoplasia. O ultrassom pode ser ferramenta-chave nessa distinção",
+   "note": "The article proposes specific ultrasound criteria to identify and characterize lipedema nodules, directly supporting ultrasound's role in diagnosing/classifying lipedema features, though as a small case series.",
+   "old_claims": [
+    "SCR-LIP-000453"
+   ],
+   "old_statements": [
+    "In a case series, ultrasound distinguished lipedema hyperechoic nodules from angiolipomas by the presence of a remodeled hypodermic background, irregular septa, deep hypodermis bulging, and dermo-hypodermic junction irregularity, with lipedema nodules histologically corresponding to chronic hemorrhagic-inflammatory change rather than adipocytic neoplasia."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.4236/jbise.2026.195015",
+   "title": "A Review of Microvascular Dysfunction in Lipedema: Dissociation between Histopathology and Doppler Ultrasound",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Kempa et al. 2024 (n=35): UMA® detectou maior número de vasos subcutâneos em lipedema vs. controles — promissora mas estudo único, sem validação histopatológica, sem reprodutibilidade",
+   "note": "The review concludes conventional Doppler cannot diagnose or stage lipedema (its role is to exclude macrovascular disease), while emerging ultrasensitive ultrasound shows promise in a single unvalidated study — a qualified, caveat-laden sta",
+   "old_claims": [
+    "SCR-LIP-000454"
+   ],
+   "old_statements": [
+    "In this narrative review of 7 studies, conventional Doppler ultrasound does not detect the microvascular changes of lipedema (whose central event is capillary hyperpermeability rather than increased flow) and should serve mainly to exclude macrovascular conditions; one single study using ultra-microangiography (UMA®, n=35) detected more subcutaneous vessels in lipedema versus controls but lacks histopathological validation and reproducibility."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1080/21623945.2026.2719267",
+   "title": "Lipedema and obesity: biological interactions, diagnostic challenges, and principles of interdisciplinary management - a narrative review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "This review synthesizes clinical overlap, biological evidence, diagnostic implications, and staged management for predominantly adult women with suspected or confirmed lipedema",
+   "note": "The review addresses diagnostic differentiation of lipedema broadly but does not test or report MRI-specific findings distinguishing lipedema from lymphedema or other fat distributions, so it is on-topic background rather than direct imagin",
+   "old_claims": [
+    "SCR-LIP-000437"
+   ],
+   "old_statements": [
+    "This narrative review of lipedema and obesity discusses diagnostic implications and clinical overlap but does not report specific MRI or imaging findings differentiating lipedema from lymphedema or other fat distributions."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Increased subcutaneous thickness on ultrasound is associated with lipedema and may discriminate affected limbs from non-lipedema limbs using site-specific cutoffs.",
+   "role": "supporting",
+   "rationale": "Several cross-sectional studies report greater subcutaneous thickness in lipedema with proposed diagnostic cutoffs, while one blinded study found no reliable discrimination from obesity or controls.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "In 89 women, pre-tibial subcutaneous thickness was the best single discriminator (AUC 0.91; cutoff about 11.6-11.7 mm, sensitivity 0.79, specificity 0.96); cutoffs also proposed for anterior thigh, lateral leg and medial supramalleolar sites."
+    },
+    {
+     "e": "E2",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Narrative review cites proposed ultrasound cutoffs (11.7 mm pre-tibial, 17.9 mm anterior thigh, 8.4 mm lateral leg) while noting no standardized objective imaging diagnosis exists."
+    },
+    {
+     "e": "E8",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Reply letter defends the ultrasound cutoff approach, citing mean thigh subcutaneous thickness of 20.9 mm in lipedema vs 12.67 mm in controls."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Systematic review of diagnostic imaging reports lipedema features defined by ultrasound as increased subcutaneous adipose tissue, with overall diagnostic performance still limited."
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Scoping review reports ultrasound cutoffs of 8.4 mm lateral leg, 11.7 mm pre-tibial and 17.9 mm thigh, and associates lipedema with increased thickness and subcutaneous hypoechogenicity."
+    },
+    {
+     "e": "E19",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Systematic review notes a single study proposed a pretibial cutoff (>11.8 mm); no ultrasound study reported machine frequency, gain or acquisition time, limiting reproducibility."
+    },
+    {
+     "e": "E22",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "DXA study cites subcutaneous ultrasound AUC of 0.91 for lipedema diagnosis as comparison to its own DXA index (AUC 0.90)."
+    },
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "Subcutis plus cutis thickness above the medial malleolus (~16 vs 11 mm) and at the medial knee (25.5 vs 14.7 mm) distinguished lipedema from non-lipedema, with a proposed thickness-based severity grading."
+    },
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "In 51 lipedema vs 51 BMI-matched controls, upper-limb subcutaneous thickness was greater at all sites independent of BMI; mid-arm cutoff >11.4 mm gave AUC 0.74, sensitivity 82.4%, specificity 51.9%."
+    },
+    {
+     "e": "E28",
+     "stance": "context",
+     "secondary_of": "E1",
+     "finding": "Review compiles sonographic criteria (thickened hyperechoic subcutis, preserved dermis), cites cutoffs of 8.4, 11.7 and 17.9 mm, and a severity classification by subcutaneous thickness (<20, 20-30, >30 mm)."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "In abdominal lipedema, ultrasound showed hyperechoic nodules and increased subcutaneous thickness, replicating the lower-limb pattern, used within a proposed diagnostic algorithm."
+    },
+    {
+     "e": "E20",
+     "stance": "contradicting",
+     "finding": "High-resolution ultrasound (10-13 MHz) of cutis-subcutis thickness, compressibility and sonomorphology did not reliably differentiate lipedema from lipohypertrophy, obesity or healthy controls; a blinded reviewer failed to classify entities."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00059"
+  },
+  {
+   "key": "P2",
+   "statement": "Ultrasound may differentiate lipedema from lymphedema, since lymphedema shows dermal thickening and hypoechogenicity whereas lipedema mainly shows subcutaneous changes.",
+   "role": "supporting",
+   "rationale": "Cross-sectional ultrasound studies consistently separate lymphedema dermal changes from lipedema subcutaneous changes.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "20 MHz cutaneous ultrasound correctly separated lymphedema from lipedema in all cases; lymphedema had increased dermal thickness and diffuse hypoechogenicity, whereas lipedema dermis did not differ from controls and experts could not distinguish lipedema from normal skin."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "15 MHz ultrasound with computer-assisted echogenicity: lipedema showed increased subcutaneous thickness and hypoechogenicity throughout the limb with preserved dermal:subcutaneous ratio; lymphedema showed distal dermal thickening and hypoechogenicity (calf subcutaneous echogenicity ~60 vs 79, p=0.005)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00060"
+  },
+  {
+   "key": "P3",
+   "statement": "Qualitative ultrasound patterns of dermis and hypodermis, including septal changes and hyperechoic nodules, may classify structural tissue alterations in lipedema.",
+   "role": "supporting",
+   "rationale": "Case series and case reports propose qualitative sonographic classifications of lipedema tissue, some correlated with histology or pain.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "In 34 patients, a qualitative Lipedema Dermal and Hypodermal Classification (LDHC) described septal alteration, echogenic nodules and dermal-hypodermal junction disruption; obese non-lipedema showed preserved layered septa."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Case report: an LDHC 3 echogenic nodule with irregular borders matching a painful point correlated with histology, proposed as a 'virtual biopsy' avoiding invasive biopsy in typical cases."
+    },
+    {
+     "e": "E5",
+     "stance": "refines",
+     "finding": "62 hyperechoic nodules in 20 LDHC 3 patients were subclassified into four morphological variants (3a-3d), whose distribution related to the most painful site rather than BMI or age."
+    },
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Case series: painful hyperechoic lipedema nodules differed from angiolipomas by a remodeled hypodermic background, irregular septa and dermo-hypodermic junction irregularity, histologically chronic hemorrhagic-inflammatory change."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "3D ultrasound (17 MHz) in stages I-III showed adipose lobule hypertrophy, fibrotic septa matching palpable nodules, thickened superficial fascia and fluid anechogenicity along the fascia not seen on 2D ultrasound."
+    },
+    {
+     "e": "E10",
+     "stance": "context",
+     "secondary_of": "E9",
+     "finding": "Editorial states the descriptive 3D ultrasound study offers a first view of its utility for characterizing adipose tissue and fascial planes in lipedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00061"
+  },
+  {
+   "key": "P4",
+   "statement": "Ultrasound techniques beyond conventional imaging, such as microvascular imaging and elastography, may detect vascular and stiffness alterations in lipedema tissue.",
+   "role": "refines",
+   "rationale": "Small studies report added microvascular and stiffness information, while conventional Doppler is reported not to capture lipedema microvascular changes.",
+   "evidence": [
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Ultra Micro Angiography in 25 lipedema patients vs 10 controls showed increased subcutaneous vascularization (grade 2-3 flow) in advanced clinical grades, with more detail than color Doppler."
+    },
+    {
+     "e": "E30",
+     "stance": "refines",
+     "finding": "Review of 7 studies: conventional Doppler does not detect lipedema microvascular changes and mainly excludes macrovascular disease; the single UMA study (n=35) lacks histopathological validation and reproducibility."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Shear-wave elastography stiffness correlated with pain and neuropathic pain in lipedema but not with skin adipose tissue thickness."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00062"
+  },
+  {
+   "key": "P5",
+   "statement": "Lipedema diagnosis is primarily clinical, based on history and physical examination, because no specific biomarker or confirmatory imaging test exists.",
+   "role": "refines",
+   "rationale": "Consensus and reviews place diagnosis on history, examination and exclusion, treating imaging as supportive or reserved for doubtful cases.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Delphi consensus (113 panelists): diagnosis relies on history, examination and exclusion of differentials; objective tools such as DXA, bioimpedance, waist-height ratio and questionnaires endorsed as aids."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Narrative review: ultrasound, DXA and MRI give diagnostic insight but are not definitive; ultrasound detects only free fluid, not GAG-bound fluid typical of lipedema."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Review states CT, MRI, ultrasound and lymphoscintigraphy are not indicated except when the diagnosis is atypical or doubtful."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 3,
+   "store_key": "G-00094",
+   "statement_before_twin_merge": "Lipedema diagnosis remains primarily clinical, with ultrasound and other imaging considered adjunctive rather than definitive."
+  },
+  {
+   "key": "P6",
+   "statement": "Ultrasound is used to measure subcutaneous thickness and stiffness for monitoring lipedema treatment, separately from diagnosis.",
+   "role": "context",
+   "rationale": "Several treatment studies use ultrasound as an outcome measure without testing diagnostic accuracy.",
+   "evidence": [
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "In 24 women undergoing liposuction, perioperative ultrasound showed superficial subcutaneous fat (D1) decreasing from 9.9 mm to 6.3 mm."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Ultrasound and elastography measured subcutaneous thickness and stiffness at predefined leg and thigh sites to evaluate changes after radial shock wave therapy."
+    },
+    {
+     "e": "E26",
+     "stance": "supporting",
+     "finding": "In 50 women after tumescent liposuction, quantitative ultrasound elastography and B-mode measured postoperative stiffness (e.g., 14.8 +/- 3.1 kPa) and fibrotic changes to assess serrapeptase."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00064"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E21",
+   "reason": "Off-topic: reports CT performance and clinical signs, no ultrasound finding."
+  },
+  {
+   "e": "E31",
+   "reason": "Not a finding: states the review does not report specific imaging findings."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E7"
+    ],
+    "suggested_statement": "Increased subcutaneous thickness on ultrasound is associated with lipedema and may help discriminate it from non-lipedema limbs, though specificity and reproducibility vary between studies.",
+    "severity": "minor",
+    "note": "Hedged with 'may', but the contradicting E20 (no reliable discrimination vs lipohypertrophy/obesity/controls) and the low specificity in E27 are only implicit. E7 (abdominal nodules/thickness, no discrimination data) fits poorly as supporting for limb cutoffs."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E16 and E18 support. E20's old_statement also reports lipedema vs lymphedema separation, but its quote is about other entities, so omission is acceptable. Small studies; 'may' is appropriate."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Qualitative ultrasound patterns of dermis and hypodermis, such as septal changes and hyperechoic nodules, may describe structural alterations in lipedema, but classification is not validated.",
+    "severity": "minor",
+    "note": "Evidence is case reports and small series (E3, E4, E5, E29) plus a descriptive 3D study; 'classify' implies a validated scheme. E20 (sonomorphology 'completely unspecific') and E16 (lipedema appears identical to normal skin) cut against it and are not shown under P3."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E17"
+    ],
+    "suggested_statement": "Microvascular ultrasound imaging may show increased subcutaneous vascularization in advanced lipedema, and elastography stiffness may relate to pain, though both are preliminary and unvalidated.",
+    "severity": "minor",
+    "note": "Bundles microvascular imaging and elastography. E17 shows correlation of stiffness with pain, not detection of altered stiffness vs controls, so 'detect stiffness alterations' overreaches. E30 caveat (no histology, single study, conventional Doppler fails) is correctly included."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E6, E11, E13 support clinical primacy and adjunctive imaging. Consistent with P1 hedging."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E24, E25, E26 use ultrasound for monitoring; wording is descriptive of usage and matches them."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "Negative findings on ultrasound morphology (E20 sonomorphology unspecific; E16 lipedema skin indistinguishable from controls) are shown only under P1/P2 and not as caveats to P3's qualitative classification.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Many P1 context items are secondary_of E1 and restate the same Amato cutoffs; evidence for cutoffs rests largely on one primary study, which the statement does not convey.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000003.cons.json",
+   "ver": "SQ-LIP-000003.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00063",
+   "into": "G-00094"
+  }
+ ]
+}

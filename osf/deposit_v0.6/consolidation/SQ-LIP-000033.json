@@ -1,0 +1,727 @@
+{
+ "question": "SQ-LIP-000033",
+ "text": "What is the role of weight management, diet, and lifestyle in lipedema?",
+ "n_old_claims": 16,
+ "n_items": 22,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E8 is cited under DOI 10.1111/iwj.13071, titled as a study on the national cost of hospital-acquired pressure injuries, yet the quote concerns lipoedema management; the reference appears mismatched and should be verified before counting it as support in P1.",
+  "[minor] set: P2 and P3 rest on overlapping evidence and pull in different directions (benefit versus 'limited and inconclusive, use caution' in E17); the caution and the transience of the pain effect (E9) are not carried into P2, and E17 is not listed under P2.",
+  "[minor] set: Several P1 items (E2, E13, E14, E15, E3, E8) are narrative reviews or a case report placed as guideline support, inflating the apparent weight of the first-line claim; E12 and E10 (liposuction, bariatric surgery) findings on surgery and weight have no proposition.",
+  "[minor] P1: not fully supported; overgeneralized; two ideas; misplaced ['E2', 'E8', 'E13', 'E14', 'E15', 'E3'] — suggested: Guidelines and consensus statements generally recommend multimodal conservative management, including exercise, compression and weight or diet advice, with surgery considered when conservative care is insufficient. (Guideline/consensus support is E1, E11, E12, E4 and E5. E4 (S1 guideline) does not mention diet or weight control, and E11 recommends compression only when edema is present and advises against manual lymphatic drainage, so 'diet, weight control, exercise and compression' is not common to all. S2k (E12) names liposuction as the surgical method of choice and pairs conservative care with it rather than stating a strict first-line order. E2, E8, E13, E14, E15 and E3 are reviews or a case report, not guidelines; E8 has a title unrelated to lipedema (see set issues).)",
+  "[minor] P2: not fully supported; overgeneralized; two ideas; misplaced ['E10'] — suggested: Ketogenic and low-carbohydrate diets may be associated with short-term reductions in weight, fat mass and pain in people with lipedema, though evidence is limited. (Primary evidence is a pilot of nine patients whose pain returned to baseline after stopping the diet (E9), plus a single case; E18 and E22 are reviews; E17 (the systematic review, filed under P3) calls the evidence limited and inconclusive and urges caution. E10 pools ketogenic diet with compression and aquatic exercise, so it does not isolate diet.)",
+  "[minor] P4: not fully supported; overgeneralized; two ideas — suggested: Conventional weight-loss diets are reported to improve lipedema symptoms little in many patients, though weight loss may still help coexisting obesity. (Rests on a self-reported online survey (E19; same item also says most who tried anti-inflammatory, ketogenic or RAD diets found them effective) and an unreferenced assertion in a narrative review (E21). 'Lipedema-specific fat' is not measured in either item, and there are no controlled data.)",
+  "[minor] P5: not fully supported; two ideas (Coexistence is supported by E16 (review) and, indirectly, by E19 (95% overweight or obese, filed under P4). 'May aggravate' rests on a review's hypothesis and an in vitro study of cultured cells (E20), which is not clinical evidence. Hedged with 'may'.)",
+  "[minor] P6: not fully supported; overgeneralized — suggested: In severe lipedema, decongestive therapy with exercise may reduce limb volume and pain more than exercise alone or pneumatic compression with exercise, over the short term. (Single six-week RCT in severe lipedema (E7); all three arms improved, so the design cannot isolate the contribution of exercise, and the superiority is of decongestive therapy plus exercise over the comparators. E6 is a consensus citing E7, correctly secondary.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "lipedema requer abordagem multidisciplinar (4,66/5)",
+   "note": "consensus: conservative management first-line 4.52; surgery only after ~1y clinical treatment 4.46; prioritize mobility/symptom relief over aesthetics 4.09; level B/C",
+   "old_claims": [
+    "SCR-LIP-000050",
+    "SCR-LIP-000049"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes.",
+    "Comprehensive management of lipedema requires a multidisciplinary team addressing both physical and mental health."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies – An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "management — conservative (CDT, flat-knit garments class II/III, anti-inflammatory diets, physical activity), pharmacological (off-label GLP-1/GIP agonists), surgical (WAL/PAL/TAL liposuction)",
+   "note": "The article provides an overview of management strategies for lipedema, indicating a focus on symptom management and the need for psychological support, which aligns with the question regarding overall management recommendations.",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.5535/arm.2011.35.6.922",
+   "title": "Lipedema, a Rare Disease",
+   "year": 2025,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The well-known therapies for lipedema include complex decongestive therapy, pneumatic compression, and diet modifications. However, whether these treatments help reduce swelling is debatable.",
+   "note": "The article is primarily focused on fascial remodeling in hEDS with adipose disorders; the lipedema management content appears embedded in a case report section and provides only a brief, non-systematic overview of treatment options without",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1111/ddg.13036",
+   "title": "S1 guidelines: Lipedema",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "TRATAMENTO — TERAPIA FÍSICA COMPLEXA (TFC): (a) drenagem linfática manual (DLM); (b) terapia compressiva — meia de malha plana (flat-knit) sob medida na maioria dos casos, circular-knit apenas em lipedema leve; (c) exercício; (d) cuidados de pele.",
+   "note": "This is an S1 guideline (lowest formal evidence level in German guideline hierarchy) based on systematic literature review and expert consensus from 8 medical societies; it directly addresses overall management of lipedema but lacks higher-",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.26779/2786-832x.2025.2.69",
+   "title": "Treatment of lipedema in men",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "A evidência contemporânea sustenta uma abordagem escalonada e individualizada, começando pelo cuidado conservador otimizado e progredindo para a cirurgia de redução do lipedema em pacientes apropriadamente selecionados; a decisão compartilhada e a medida padronizada de desfechos são essenciais",
+   "note": "This systematic review directly addresses the overall management of lipedema, synthesizing evidence on both surgical and non-surgical treatments, and explicitly recommends a stepwise individualized approach. Confidence is moderate due to ac",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1007/s13679-024-00579-8",
+   "title": "The Role of Physical Exercise as a Therapeutic Tool to Improve Lipedema: A Consensus Statement from the Italian Society of Motor and Sports Sciences (Società Italiana di Scienze Motorie e Sportive, SISMeS) and the Italian Society of Phlebology (Società Italiana di Flebologia, SIF)",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "CDT + exercício físico produz redução significativa do volume de membros vs IPCT + exercício ou exercício isolado (Atan & Bahar-Özdemir RCT 2021)",
+   "note": "This is a consensus/review article synthesizing evidence on exercise and multimodal management of lipedema; it directly addresses overall management recommendations but is based on expert consensus and review of limited RCT evidence, limiti",
+   "old_claims": [
+    "SCR-LIP-000120"
+   ],
+   "old_statements": [
+    "A consensus statement from Italian scientific societies recommends that lipedema management combine physical exercise (aquatic, aerobic, strength training) with complete decongestive therapy (CDT) including manual lymphatic drainage, compression, and dietary interventions, with CDT plus exercise showing superior limb volume reduction compared to intermittent pneumatic compression plus exercise or exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1089/lrb.2020.0019",
+   "title": "The Effects of Complete Decongestive Therapy or Intermittent Pneumatic Compression Therapy or Exercise Only in the Treatment of Severe Lipedema: A Randomized Controlled Trial",
+   "year": 2021,
+   "design": "rct",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Os três protocolos (CDT+exercício, CIP+exercício e exercício isolado) com 30 sessões em 6 semanas foram benéficos no tratamento de lipedema grave; entretanto, CDT associada a exercícios foi superior aos outros braços para reduzir volume dos membros, dor e melhorar o funcionamento físico do SF-36",
+   "note": "RCT directly testing conservative therapies (CDT, IPCT, exercise) in lipedema shows all were beneficial with CDT+exercise superior, providing affirmative evidence on effectiveness.",
+   "old_claims": [
+    "SCR-LIP-000120"
+   ],
+   "old_statements": [
+    "A consensus statement from Italian scientific societies recommends that lipedema management combine physical exercise (aquatic, aerobic, strength training) with complete decongestive therapy (CDT) including manual lymphatic drainage, compression, and dietary interventions, with CDT plus exercise showing superior limb volume reduction compared to intermittent pneumatic compression plus exercise or exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1111/iwj.13071",
+   "title": "The national cost of hospital‐acquired pressure injuries in the United States",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Management of lipoedema includes weight loss, control of oedema, complex decongestive physiotherapy, liposuction, and laser-assisted lipolysis. However; there are increasing reports on tumescent liposuction as the preferred surgical option with long-lasting results.",
+   "note": "This is a narrative/literature review summarizing management strategies for lipedema without randomized controlled trials; it directly addresses overall management recommendations but is limited by the absence of high-quality primary studie",
+   "old_claims": [
+    "SCR-LIP-000121"
+   ],
+   "old_statements": [
+    "Management of lipedema includes weight loss, edema control, complex decongestive physiotherapy, tumescent liposuction, and laser-assisted lipolysis, with tumescent liposuction reported as the preferred surgical option with long-lasting results."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1007/s13679-023-00536-x",
+   "title": "Ketogenic Diet: A Nutritional Therapeutic Tool for Lipedema?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "LIPODIET — dor VAS: 4,6±0,69 → 2,3±0,69 cm na semana 7 (p=0,018; redução de 50%); dor retornou ao basal na semana 13 após suspensão da LCHF (4,2±0,69 cm, p=0,69)",
+   "note": "The article is a narrative review focused specifically on a dietary intervention (VLCKD) rather than comprehensive overall management of lipedema; it refines the management question by offering nutritional therapy evidence drawn from small  [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000165"
+   ],
+   "old_statements": [
+    "A narrative review proposes the very-low-calorie ketogenic diet (VLCKD) as a nutritional therapy for lipedema, citing anti-inflammatory effects; reported cases include a 6-month ketogenic diet (Cannataro 2021) yielding 41 kg total weight loss, reduced affected-limb circumferences (e.g., arm -10.5 to -11.5 cm), HOMA-IR reduction of 54%, and CRP reduction of 67%, and the LIPODIET trial (n=9) showing -4.5% weight loss and a 50% VAS pain reduction at 7 weeks that returned to baseline after diet cessation, while noting conventional decongestive therapy reduces tissue volume only 5-10%."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation, evidence quality 2-3).",
+   "note": "Systematic review directly addressing lipedema management options (conservative and surgical) with graded recommendations, directly answering the question on recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000316"
+   ],
+   "old_statements": [
+    "A systematic review of 61 articles found that conservative therapies (ketogenic/RAD diets, compression, aquatic exercise) reduced pain and swelling (Grade 2A-2B), while tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation), supporting early recognition with combined conservative and surgical management."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1177/0268355516639421",
+   "title": "First Dutch guidelines on lipedema using the international classification of functioning, disability and health",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tratamento conservador baseia-se em quatro pilares: (1) promoção de estilo de vida saudável com controle de peso individualizado e dieta com balanço calórico ajustado; (2) graded activity training para força, condicionamento e otimização da bomba muscular vascular/linfática; (3) redução do edema com",
+   "note": "Article presents national clinical practice guidelines directly addressing the overall management of lipedema, including conservative and surgical treatment recommendations, diagnostic criteria, and follow-up.",
+   "old_claims": [
+    "SCR-LIP-000317"
+   ],
+   "old_statements": [
+    "The first Dutch lipedema guidelines, framed by the ICF and Chronic Care Model, recommend a four-pillar conservative management (healthy lifestyle with weight control, graded activity training, flat-knit compression only when edema is present, and psychosocial support; manual lymphatic drainage not recommended) plus tumescent liposuction (TLA/STLA) for abnormal adipose tissue, with structured follow-up and clinical diagnostic criteria."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1111/ddg.15513",
+   "title": "S2k guideline lipedema",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Avaliação abrangente de todas as estratégias diagnósticas e terapêuticas disponíveis, incluindo compressão, drenagem linfática, nutrição, lipoaspiração e cirurgia bariátrica 60 recomendações formais acordadas em diagnóstico, opções terapêuticas conservadoras e cirúrgicas, fatores psicossociais e aut",
+   "note": "This is a formal S2k consensus guideline that directly addresses overall management of lipedema with 60 graded recommendations spanning diagnosis, conservative and surgical treatment, psychosocial factors, and self-management, directly answ",
+   "old_claims": [
+    "SCR-LIP-000320"
+   ],
+   "old_statements": [
+    "The S2k guideline issues 60 formal recommendations advocating multidisciplinary management of lipedema combining conservative measures (compression including MCS flat-knit and intermittent pneumatic compression for pain relief, manual lymphatic drainage, exercise, Mediterranean hypocaloric or ketogenic diet, weight management), psychosocial support, bariatric surgery for BMI >=40 (or >=35 with comorbidity), and liposuction as the surgical method of choice, while explicitly recommending against diuretics."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.56238/levv16n53-097",
+   "title": "SURGICAL AND NON-SURGICAL APPROACHES IN THE MANAGEMENT OF LIPEDEMA: A SYSTEMATIC REVIEW",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Mortada et al. (meta-análise, >1200 pacientes, múltiplas técnicas cirúrgicas): todas as técnicas (tumescente, PAL, WAL) produziram redução de dor e melhora funcional significativas",
+   "note": "Systematic review explicitly synthesizing comparative efficacy of conservative and surgical lipedema treatments to inform standardized management, directly addressing recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000321"
+   ],
+   "old_statements": [
+    "A systematic review of 20 studies (>1200 patients) found that multimodal management of lipedema combining conservative measures (compression, structured exercise, pneumatic compression devices, ketogenic/low-carb diet) and surgical liposuction (tumescent, PAL, WAL) yields significant improvements in pain, mobility, limb circumference and HRQoL; the LIPLEG RCT showed greater early pain reduction and mobility in the surgical group at 6 months, while combined compression plus exercise outperformed exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "ensaios clínicos de intervenção (cetogênica, exercício, compressão, lipoaspiração)",
+   "note": "The review mentions intervention modalities (ketogenic, exercise, compression, liposuction) as part of its synthesis, providing contextual background on management options, but its primary focus is pathophysiology rather than defining a rec",
+   "old_claims": [
+    "SCR-LIP-000324"
+   ],
+   "old_statements": [
+    "This narrative review synthesizes lipedema treatment modalities including ketogenic diet, exercise, compression, and liposuction alongside its pathophysiology, but does not establish a single recommended overall management protocol."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.12775/jehs.2026.87.67421",
+   "title": "BIESZCZAD, Dominika, BARCZEWSKA, Magdalena, KOWALCZYK, Dominika, REIZER, Barbara, KRYSTEK, Klaudia, FELISIAK,",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema: Current Understanding, Diagnosis and Multimodal Management Approaches.",
+   "note": "The title indicates the article is a review addressing multimodal management of lipedema, directly on-topic for the management question, though the abstract text itself contains only bibliographic metadata rather than findings.",
+   "old_claims": [
+    "SCR-LIP-000324"
+   ],
+   "old_statements": [
+    "This narrative review synthesizes lipedema treatment modalities including ketogenic diet, exercise, compression, and liposuction alongside its pathophysiology, but does not establish a single recommended overall management protocol."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1080/21623945.2026.2719267",
+   "title": "Lipedema and obesity: biological interactions, diagnostic challenges, and staged interdisciplinary management",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although often approached as differential diagnoses, they frequently coexist and may aggravate one another.",
+   "note": "The review emphasizes overlap and bidirectional interaction between lipedema and obesity (and lymphatic dysfunction) rather than affirming lipedema as a cleanly separate entity; it qualifies the distinctness by stressing coexistence and sha",
+   "old_claims": [
+    "SCR-LIP-000445"
+   ],
+   "old_statements": [
+    "This narrative review argues that lipedema and obesity, though often treated as mutually exclusive differential diagnoses, frequently coexist and interact via a bidirectional loop between adiposity and lymphatic function, supporting a staged interdisciplinary approach rather than treatment as mutually exclusive entities."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1016/j.maturitas.2025.108716",
+   "title": "Clinical or cultural? Dietary interventions for lipedema: a systematic review",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "As evidências sobre intervenções dietéticas no lipedema são limitadas e inconclusivas. Dietas cetogênicas e low-carb devem ser abordadas com cautela",
+   "note": "This is a systematic review with 9 included studies (only 2 RCTs), most with high risk of bias, small samples, no meta-analysis performed, and the highest-quality RCT did not show significant anti-inflammatory effects; findings support some",
+   "old_claims": [
+    "SCR-LIP-000117"
+   ],
+   "old_statements": [
+    "A systematic review of 9 studies (269 women) found that ketogenic and low-carbohydrate diets consistently reduced weight and fat mass and improved pain and quality of life in lipedema, but evidence is limited by high risk of bias in 7 of 9 studies, lack of disease-stage stratification, absence of muscle mass assessment, and no significant reduction in inflammation (hsCRP) in the only low-risk RCT."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1093/nutrit/nuaf203",
+   "title": "Current Evidence-Based Clinical Nutritional Approaches in Lipedema: A Scoping Review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Certain dietary approaches such as ketogenic, low-carbohydrate, and modified Mediterranean diets have been explored for weight management and inflammation reduction in lipedema, with studies showing positive effects on body composition and pain. However, according to the current literature no eviden",
+   "note": "The review notes positive effects of ketogenic/low-carb diets on body composition and pain but simultaneously states no evidence-based nutritional treatment is proven effective, qualifying the affirmative answer.",
+   "old_claims": [
+    "SCR-LIP-000117"
+   ],
+   "old_statements": [
+    "A systematic review of 9 studies (269 women) found that ketogenic and low-carbohydrate diets consistently reduced weight and fat mass and improved pain and quality of life in lipedema, but evidence is limited by high risk of bias in 7 of 9 studies, lack of disease-stage stratification, absence of muscle mass assessment, and no significant reduction in inflammation (hsCRP) in the only low-risk RCT."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1093/cdn/nzac070.023",
+   "title": "An Investigation Into the Impact of Diet and Lifestyle on the Management of Lipoedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "20% dos participantes que tentaram dietas para perda de peso relataram melhora nas condições do lipoedema",
+   "note": "Directly addresses diet/weight management in lipedema but reports only self-reported outcomes with modest improvement (20% from weight-loss diets), qualifying the affirmative role rather than fully supporting it.",
+   "old_claims": [
+    "SCR-LIP-000552"
+   ],
+   "old_statements": [
+    "In a UK online survey of 257 people with lipedema, 66% had tried diets (most reported effective: anti-inflammatory, ketogenic, and RAD diets), but only 20% of those trying weight-loss diets reported improvement in lipedema symptoms, while 95% were overweight or obese by BMI."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1097/prs.0000000000010392",
+   "title": "Lipedema: The Use of Cultured Adipocytes for Identification of Diagnostic Markers",
+   "year": 2023,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The adiponectin/leptin ratio was significantly reduced in adipocytes from obese lipedema donors compared with their nonobese lipedema counterparts.",
+   "note": "The article does not test weight management or lifestyle interventions, but demonstrates that donor BMI/obesity substantially influences adipocyte biology in lipedema, underscoring the relevance of co-occurring obesity — a qualified/refinin",
+   "old_claims": [
+    "SCR-LIP-000553"
+   ],
+   "old_statements": [
+    "In cultured adipose-derived stromal/stem cells, adipogenic gene expression was affected by donor BMI as well as lipedema, and the adiponectin/leptin ratio was significantly reduced and myofibroblast-like cells increased in obese lipedema adipocytes compared with nonobese lipedema counterparts."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1590/1806-9282.20240801",
+   "title": "Lipedema: clinical characteristics, complications, and the importance of evidence-based practice",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "A inflamação e fibrose do tecido adiposo afetado tornam os tratamentos convencionais de perda de peso frequentemente ineficazes",
+   "note": "The review discusses the role of weight control and diet but qualifies it: conventional weight loss is often ineffective due to tissue inflammation/fibrosis, supervised dietary guidance is part of conservative care, and unsupervised diets p",
+   "old_claims": [
+    "SCR-LIP-000554"
+   ],
+   "old_statements": [
+    "A narrative review on lipedema reports that inflammation and fibrosis of affected adipose tissue often render conventional weight-loss treatments ineffective, recommends supervised dietary weight management within a multidisciplinary conservative approach, and warns against unsupervised ketogenic diets and weight stigma."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.19251/pwod/2025.3(3)",
+   "title": "Dietary Interventions in the Management of Lipedema: A Literature Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "há evidência emergente de que estratégias dietéticas — anti-inflamatórias, baixas em carboidratos, cetogênicas, sem glúten e baixas em sódio — podem aliviar dor, reduzir retenção de fluido e melhorar a composição corporal. A dieta sozinha não reverte o lipedema",
+   "note": "The review directly synthesizes evidence that diet and weight management reduce symptom burden in lipedema while noting diet alone does not reverse the condition, supporting a role for diet/lifestyle in management.",
+   "old_claims": [
+    "SCR-LIP-000555"
+   ],
+   "old_statements": [
+    "A literature review of dietary strategies in lipedema reports that anti-inflammatory, low-carbohydrate, ketogenic/VLCKD, gluten-free, and low-sodium diets can reduce pain, fluid retention, and improve body composition and quality of life (e.g., a LCHF pilot achieved -4.5% weight loss with reduced pain), concluding personalized nutrition should be a central component of multidisciplinary care alongside conservative treatment."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Guidelines and consensus statements recommend conservative management, including diet, weight control, exercise and compression, as first-line care for lipedema.",
+   "role": "supporting",
+   "rationale": "National guidelines, consensus documents and reviews converge on a multidisciplinary conservative approach before surgery, though benefit on swelling is debated.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Delphi consensus: conservative management (lifestyle and dietary changes, compression, low-impact exercise) is first-line; multidisciplinary approach endorsed (4.66/5); liposuction after an adequate conservative trial."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "S1 guideline: complex physical therapy comprising manual lymphatic drainage, flat-knit compression, exercise and skin care."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Dutch guideline: four conservative pillars including healthy lifestyle with individualised weight control and calorie-adjusted diet, graded activity training, compression when edema is present, psychosocial support."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "S2k guideline: 60 recommendations for multidisciplinary management combining compression, lymphatic drainage, exercise, Mediterranean hypocaloric or ketogenic diet, weight management and bariatric surgery at high BMI."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Evidence synthesis on men with lipedema supports a stepped, individualised approach starting with optimised conservative care and progressing to reduction surgery in selected patients."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Review lists conservative management (decongestive therapy, flat-knit garments, anti-inflammatory diets, physical activity), off-label GLP-1/GIP agonists and liposuction."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Review states management includes weight loss, edema control, complex decongestive physiotherapy, liposuction and laser-assisted lipolysis."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Systematic review of 20 studies (>1200 patients): multimodal management combining compression, exercise, pneumatic compression, ketogenic or low-carb diet and liposuction improved pain, mobility, circumference and HRQoL."
+    },
+    {
+     "e": "E3",
+     "stance": "refines",
+     "finding": "Case report notes decongestive therapy, pneumatic compression and diet modification are used, but whether they reduce swelling is debatable."
+    },
+    {
+     "e": "E14",
+     "stance": "context",
+     "finding": "Narrative review summarises intervention trials of ketogenic diet, exercise, compression and liposuction without a single recommended protocol."
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "finding": "Narrative review of multimodal management approaches in lipedema, covering diet, exercise, compression and liposuction."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 11,
+   "store_key": "G-00141"
+  },
+  {
+   "key": "P2",
+   "statement": "Ketogenic and low-carbohydrate diets are associated with reductions in weight, fat mass and pain in people with lipedema.",
+   "role": "supporting",
+   "rationale": "Small trials, case reports and reviews consistently report weight, body composition and pain benefits with carbohydrate-restricted diets.",
+   "evidence": [
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Review cites a low-carbohydrate high-fat pilot with VAS pain falling from 4.6 to 2.3 at week 7 (p=0.018), returning to baseline after stopping, and a ketogenic case with 41 kg weight loss."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Scoping review: ketogenic, low-carbohydrate and modified Mediterranean diets showed positive effects on body composition and pain in lipedema."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Literature review: anti-inflammatory, low-carbohydrate, ketogenic, gluten-free and low-sodium diets may relieve pain, reduce fluid retention and improve body composition; diet alone does not reverse lipedema."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Systematic review of 61 articles: ketogenic/RAD diets, compression and aquatic exercise reduced pain and swelling (Grade 2A-2B); tumescent liposuction had the strongest evidence (Grade 1)."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00142"
+  },
+  {
+   "key": "P3",
+   "statement": "Evidence for dietary interventions in lipedema is limited, mostly at high risk of bias and without consistent effects on inflammation.",
+   "role": "refines",
+   "rationale": "A systematic review finds most dietary studies at high risk of bias, unstratified by stage, and the low-risk trial shows no inflammatory marker reduction.",
+   "evidence": [
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Systematic review of 9 studies (269 women): ketogenic and low-carb diets reduced weight, fat mass and pain, but 7/9 studies at high risk of bias and no significant hsCRP reduction in the only low-risk RCT."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 1,
+   "store_key": "G-00143"
+  },
+  {
+   "key": "P4",
+   "statement": "Conventional weight-loss approaches often fail to improve lipedema-specific fat and symptoms.",
+   "role": "refines",
+   "rationale": "Patient-reported survey data and reviews indicate that general weight-loss dieting rarely relieves lipedema symptoms, attributed to tissue inflammation and fibrosis.",
+   "evidence": [
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "In an online survey of 257 people with lipedema, 66% had tried diets, but only 20% of those trying weight-loss diets reported improvement in lipedema; 95% were overweight or obese."
+    },
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "Narrative review: inflammation and fibrosis of affected tissue often render conventional weight-loss ineffective; recommends supervised dietary management and warns against unsupervised ketogenic diets."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00144"
+  },
+  {
+   "key": "P5",
+   "statement": "Obesity frequently coexists with lipedema and may aggravate its adipose tissue abnormalities.",
+   "role": "refines",
+   "rationale": "Review and cell-culture evidence describe an interaction in which obesity worsens lipedema adipocyte profiles, supporting combined weight management.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Narrative review: lipedema and obesity frequently coexist and may aggravate each other via a bidirectional adiposity-lymphatic loop, supporting staged interdisciplinary care."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "In cultured adipose stromal cells, adiponectin/leptin ratio was reduced and myofibroblast-like cells increased in obese vs nonobese lipedema donors; adipogenic gene expression affected by BMI."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00145"
+  },
+  {
+   "key": "P6",
+   "statement": "Structured exercise combined with decongestive therapy reduces limb volume and pain in lipedema.",
+   "role": "supporting",
+   "rationale": "A randomised trial found exercise plus decongestive therapy superior to other exercise-based arms, and a consensus statement endorses exercise.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "RCT in severe lipedema, 30 sessions over 6 weeks: all three protocols were beneficial, but decongestive therapy plus exercise was superior for limb volume, pain and SF-36 physical function."
+    },
+    {
+     "e": "E6",
+     "stance": "context",
+     "finding": "Italian consensus recommends aquatic, aerobic and strength exercise with decongestive therapy and diet, citing superiority of decongestive therapy plus exercise.",
+     "secondary_of": "E7"
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 1,
+   "store_key": "G-00146"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E2",
+     "E8",
+     "E13",
+     "E14",
+     "E15",
+     "E3"
+    ],
+    "suggested_statement": "Guidelines and consensus statements generally recommend multimodal conservative management, including exercise, compression and weight or diet advice, with surgery considered when conservative care is insufficient.",
+    "severity": "minor",
+    "note": "Guideline/consensus support is E1, E11, E12, E4 and E5. E4 (S1 guideline) does not mention diet or weight control, and E11 recommends compression only when edema is present and advises against manual lymphatic drainage, so 'diet, weight control, exercise and compression' is not common to all. S2k (E12) names liposuction as the surgical method of choice and pairs conservative care with it rather than stating a strict first-line order. E2, E8, E13, E14, E15 and E3 are reviews or a case report, not guidelines; E8 has a title unrelated to lipedema (see set issues)."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E10"
+    ],
+    "suggested_statement": "Ketogenic and low-carbohydrate diets may be associated with short-term reductions in weight, fat mass and pain in people with lipedema, though evidence is limited.",
+    "severity": "minor",
+    "note": "Primary evidence is a pilot of nine patients whose pain returned to baseline after stopping the diet (E9), plus a single case; E18 and E22 are reviews; E17 (the systematic review, filed under P3) calls the evidence limited and inconclusive and urges caution. E10 pools ketogenic diet with compression and aquatic exercise, so it does not isolate diet."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Faithful to E17 (7/9 at high risk of bias; no significant hsCRP change in the only low-risk RCT). Still, E17 also supports P2, so the two propositions rest on the same review."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Conventional weight-loss diets are reported to improve lipedema symptoms little in many patients, though weight loss may still help coexisting obesity.",
+    "severity": "minor",
+    "note": "Rests on a self-reported online survey (E19; same item also says most who tried anti-inflammatory, ketogenic or RAD diets found them effective) and an unreferenced assertion in a narrative review (E21). 'Lipedema-specific fat' is not measured in either item, and there are no controlled data."
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Coexistence is supported by E16 (review) and, indirectly, by E19 (95% overweight or obese, filed under P4). 'May aggravate' rests on a review's hypothesis and an in vitro study of cultured cells (E20), which is not clinical evidence. Hedged with 'may'."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "In severe lipedema, decongestive therapy with exercise may reduce limb volume and pain more than exercise alone or pneumatic compression with exercise, over the short term.",
+    "severity": "minor",
+    "note": "Single six-week RCT in severe lipedema (E7); all three arms improved, so the design cannot isolate the contribution of exercise, and the superiority is of decongestive therapy plus exercise over the comparators. E6 is a consensus citing E7, correctly secondary."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E8 is cited under DOI 10.1111/iwj.13071, titled as a study on the national cost of hospital-acquired pressure injuries, yet the quote concerns lipoedema management; the reference appears mismatched and should be verified before counting it as support in P1.",
+    "severity": "minor",
+    "resolution": "Registry data error (wrong DOI on SCR-LIP-000121), not a consolidation error; DOI corrected to 10.1111/iwj.12949 after apply."
+   },
+   {
+    "issue": "P2 and P3 rest on overlapping evidence and pull in different directions (benefit versus 'limited and inconclusive, use caution' in E17); the caution and the transience of the pain effect (E9) are not carried into P2, and E17 is not listed under P2.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Several P1 items (E2, E13, E14, E15, E3, E8) are narrative reviews or a case report placed as guideline support, inflating the apparent weight of the first-line claim; E12 and E10 (liposuction, bariatric surgery) findings on surgery and weight have no proposition.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000033.cons.json",
+   "ver": "SQ-LIP-000033.ver.json"
+  }
+ ]
+}

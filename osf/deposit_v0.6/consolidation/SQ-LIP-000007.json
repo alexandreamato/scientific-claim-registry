@@ -1,0 +1,397 @@
+{
+ "question": "SQ-LIP-000007",
+ "text": "Is lipedema associated with thyroid disease?",
+ "n_old_claims": 9,
+ "n_items": 11,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [],
+ "models": {
+  "primary": "anthropic/claude-opus-5.5",
+  "verifier": "openai/gpt-5.5"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.3390/jcm14207195",
+   "title": "Lipedema and Hypermobility Spectrum Disorders Sharing Pathophysiology: A Cross-Sectional Observational Study",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 716,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Distúrbios tireoidianos (nódulos, hipotireoidismo, tireoidite ou tireoidectomia) em 24,4% do grupo lipedema vs. 14,89% do grupo linfedema",
+   "note": "Fiengo & Sbarbati; 24.4% vs 14.89%",
+   "old_claims": [
+    "SCR-LIP-000020"
+   ],
+   "old_statements": [
+    "Thyroid disorders may be more frequent in lipedema than in lymphedema, with a cross-sectional cohort reporting thyroid disease in 24.4% of lipedema vs 14.89% of lymphedema patients."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1097/prs.0000000000006280",
+   "title": "New Insights on Lipedema: The Enigmatic Disease of the Peripheral Fat",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "hipotireoidismo 35,9% (75/209) vs ~10% na população alemã (Vanderpump 2011)",
+   "note": "The study reports a high prevalence of hypothyroidism in lipedema patients compared to the general population, directly supporting an association between lipedema and thyroid disease; however, confidence is limited by the self-selected onli",
+   "old_claims": [
+    "SCR-LIP-000134"
+   ],
+   "old_statements": [
+    "In a survey of 209 German women with lipedema who underwent liposuction, hypothyroidism was present in 35.9% of participants, a frequency described as far beyond the average prevalence in the general German population."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1111/dth.14534",
+   "title": "Disease progression and comorbidities in lipedema patients: A 10‐year retrospective analysis",
+   "year": 2020,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "",
+   "note": "The study reports increased prevalence of hypothyroidism in lipedema patients compared to general population, directly supporting the association, but is limited by retrospective design, lack of a matched control group, and reliance on self",
+   "old_claims": [
+    "SCR-LIP-000134"
+   ],
+   "old_statements": [
+    "In a survey of 209 German women with lipedema who underwent liposuction, hypothyroidism was present in 35.9% of participants, a frequency described as far beyond the average prevalence in the general German population."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.3390/biomedicines13123049",
+   "title": "Clinical Signs at Diagnosis and Comorbidities in a Large Cohort of Patients with Lipedema in Spain",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades endócrinas: disfunção ovárica inflamatória 76% (1368); doença tireoidiana 59,5% (1073",
+   "note": "This large descriptive cross-sectional study explicitly identifies thyroid disorders as a common comorbidity in lipedema patients, directly supporting the association, though no control group or prevalence comparison is provided.",
+   "old_claims": [
+    "SCR-LIP-000135"
+   ],
+   "old_statements": [
+    "In a cohort of 1803 lipedema patients in Spain, thyroid disorders were reported as a common comorbidity alongside other inflammatory and connective tissue conditions."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.20944/preprints202510.1397.v1",
+   "title": "Clinical Signs at Diagnosis and Comorbidities in a Large Cohort of Patients with Lipedema in Spain",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Thyroid disorders, inflammatory ovarian dysfunction, and psychological impairment were also common.",
+   "note": "Large descriptive cross-sectional cohort lists thyroid disorders among frequent comorbidities, but reports only unquantified co-occurrence with no comparator, prevalence figure, or adjusted analysis.",
+   "old_claims": [
+    "SCR-LIP-000135"
+   ],
+   "old_statements": [
+    "In a cohort of 1803 lipedema patients in Spain, thyroid disorders were reported as a common comorbidity alongside other inflammatory and connective tissue conditions."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.3390/ijms25031599",
+   "title": "Observational Study on a Large Italian Population with Lipedema: Biochemical and Hormonal Profile, Anatomical and Clinical Evaluation, Self-Reported History",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "História familiar positiva: 81,2% (289/356); 40,2% materna, 32,6% paterna, 4,8% ambas; sem diferença entre estágios",
+   "note": "The study characterizes a large clinical sample of women with lipedema, providing data on demographics, clinical features, and comorbidities relevant to who is affected, but does not report population-level prevalence estimates.",
+   "old_claims": [
+    "SCR-LIP-000081"
+   ],
+   "old_statements": [
+    "In a cohort of 360 Italian women with lipedema of the lower limbs (stages 1–3), the condition was found exclusively in women and was associated with comorbidities including vitamin D insufficiency, chronic venous disease, and dyslipidemia."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1590/1677-5449.202101982",
+   "title": "Lipedema prevalence and risk factors in Brazil",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "hipotiroidismo 19,4% no Brasil vs 31,6% na Polônia e 11,7% na Holanda",
+   "note": "The article reports hypothyroidism prevalence in lipedema patients across different cohorts but does not statistically test the association between lipedema and thyroid disease as a primary outcome; the data are descriptive and based on sel",
+   "old_claims": [
+    "SCR-LIP-000137"
+   ],
+   "old_statements": [
+    "In a Brazilian cross-sectional screening study, hypothyroidism was common in women with lipedema (crude prevalence 19.4%) but was NOT an independent factor associated with lipedema on multivariate analysis (p=0.141) — the raw co-occurrence may reflect confounding (e.g. by obesity) rather than a true independent association."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades: hipotireoidismo 16%, varizes 10%, enxaqueca 6%",
+   "note": "The article reports hypothyroidism prevalence of 16% among lipedema patients as a comorbidity, providing descriptive evidence bearing on the question, but offers only crude prevalence with no control group or adjusted analysis to establish ",
+   "old_claims": [
+    "SCR-LIP-000245"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of patients diagnosed with lipedema in Saudi Arabia, hypothyroidism was reported as a comorbidity in 16% of patients, though no adjusted analysis of the lipedema-thyroid association was performed."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1007/s10238-026-02157-9",
+   "title": "Comorbidities in lipedema: toward a systemic perspective – a narrative review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Endócrino-tireoidiano: hipotireoidismo em 22,5% (Patton), 35,9% (Bauer), 31% (Kruppa); tireoidite autoimune em 35,5% (Patton); doença tireoidiana em 59,5% com nódulos em 88,7% dos ultrassonografados (Simarro Blasco)",
+   "note": "Narrative review without abstract content; addresses comorbidities broadly but does not itself test the lipedema-thyroid relationship with adjusted analysis.",
+   "old_claims": [
+    "SCR-LIP-000394"
+   ],
+   "old_statements": [
+    "This narrative review of lipedema comorbidities lists thyroid disorders among reported associated conditions but does not provide a quantitative or adjusted test of an independent lipedema-thyroid association."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1177/02683555261435120",
+   "title": "Prevalence of comorbidities associated with lipedema. A comparative study with the general population",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "patients with lipedema were more likely to suffer from venous insufficiency (OR= 5.05; 95% CI: 4.3-5.8), urinary incontinence (OR= 4.93; 95% CI: 4.1-5.8), migraine (OR= 3.9; 95% CI: 3.4-4.5), thyroid disease (OR= 2.21; 95% CI: 1.8-2.6)",
+   "note": "The study directly compares thyroid disease prevalence in lipedema patients versus the general population, finding a significantly elevated odds ratio. However, the comparison is based on self-reported online questionnaire data versus surve",
+   "old_claims": [
+    "SCR-LIP-000395"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 1001 Spanish women with lipedema, thyroid disease was significantly more prevalent than in the general female population (OR=2.21; 95% CI: 1.8-2.6)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1177/1358863x231219006",
+   "title": "Venous thromboembolic outcomes in patients with lymphedema and lipedema: An analysis from the National Inpatient Sample",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades do lipedema (vs sem lipedema): DRC 20,3% vs 17,3% (p < 0,01); hipotireoidismo 23,3% vs 19% (p < 0,01)",
+   "note": "The article reports a statistically significant higher crude prevalence of hypothyroidism in lipedema patients (23.3% vs 19%, p<0.01), which bears on the thyroid-lipedema association. However, this is an unadjusted prevalence comparison (no",
+   "old_claims": [
+    "SCR-LIP-000396"
+   ],
+   "old_statements": [
+    "In a weighted National Inpatient Sample cohort of obese women, hypothyroidism was more prevalent among patients with lipedema than without (23.3% vs 19%, p<0.01), though this was an unadjusted comorbidity comparison rather than a multivariate-adjusted test."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Thyroid disorders, particularly hypothyroidism, are frequently reported as comorbidities among people with lipedema.",
+   "role": "supporting",
+   "rationale": "Descriptive cohorts without a comparator group report high crude frequencies of thyroid disease in lipedema. The preprint and the narrative review are marked secondary because they re-report figures from primary items such as E4.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In a large Spanish lipedema cohort (n≈1803), thyroid disease was present in 59.5% (1073 patients), alongside other common endocrine comorbidities such as inflammatory ovarian dysfunction (76%). There was no comparator group."
+    },
+    {
+     "e": "E5",
+     "stance": "context",
+     "secondary_of": "E4",
+     "finding": "This preprint version of the same Spanish cohort lists thyroid disorders among common comorbidities in lipedema, without quantification or a comparator."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "In Saudi patients with lipedema, hypothyroidism was reported as a comorbidity in 16%, ahead of varicose veins (10%) and migraine (6%). There was no control group or adjusted analysis."
+    },
+    {
+     "e": "E9",
+     "stance": "context",
+     "secondary_of": "E4",
+     "finding": "This narrative review compiles hypothyroidism frequencies of 22.5%, 35.9% and 31%, and autoimmune thyroiditis in 35.5%. It also reports thyroid disease in 59.5% with nodules in 88.7% of those scanned, re-reporting primary studies that include item studies."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00001"
+  },
+  {
+   "key": "P2",
+   "statement": "Thyroid disease or hypothyroidism is reported more often in lipedema than in general-population or clinical comparison groups in unadjusted cross-sectional comparisons.",
+   "role": "supporting",
+   "rationale": "Several cross-sectional datasets report higher crude thyroid disease prevalence in lipedema than in comparison populations. E3 carries the same German survey result as E2 and no separate quote, so it is marked secondary to E2 rather than counted as independent support.",
+   "evidence": [
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Among 1001 Spanish women with lipedema, thyroid disease was more prevalent than in the general female population (OR 2.21; 95% CI 1.8–2.6). This was based on self-reported online questionnaire data compared with population survey data."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "In a weighted national inpatient sample of obese women, hypothyroidism was more common in those with lipedema than in those without (23.3% vs 19%, p<0.01). This was an unadjusted comparison."
+    },
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Thyroid disorders (nodules, hypothyroidism, thyroiditis or thyroidectomy) were reported in 24.4% of lipedema patients vs 14.89% of lymphedema patients (n=716)."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "In a self-selected survey of 209 German women with lipedema who had undergone liposuction, 35.9% had hypothyroidism, versus roughly 10% reported for the general German population."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "secondary_of": "E2",
+     "finding": "This item restates the German survey result: 35.9% of 209 women with lipedema after liposuction had hypothyroidism, described as far beyond general-population prevalence."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00002"
+  },
+  {
+   "key": "P3",
+   "statement": "After multivariable adjustment for other factors, hypothyroidism may not be independently associated with lipedema.",
+   "role": "refines",
+   "rationale": "The verifier notes that the E7 quote shows only crude cross-country prevalence. However, the item's recorded old statement explicitly reports the multivariate result (p=0.141), so it is kept as a separate caveat, worded cautiously and without the speculative confounding interpretation.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "In a Brazilian screening study, crude hypothyroidism prevalence among women with lipedema was 19.4% (vs 31.6% in Poland and 11.7% in Netherlands cohorts). It was reported as not independently associated with lipedema on multivariate analysis (p=0.141)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00003"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E6",
+   "reason": "The reported findings (family history, vitamin D insufficiency, venous disease, dyslipidemia) contain no thyroid result, so the item is off-topic for this question."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The supporting findings report thyroid disease or hypothyroidism as comorbidities in lipedema cohorts. Context items are appropriately treated as secondary or non-comparative."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The supporting findings consistently describe higher thyroid disease or hypothyroidism prevalence in lipedema versus general-population, non-lipedema, or lymphedema comparison groups, without claiming causality or adjusted independence."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The statement is cautious and limited to possible lack of independent association after adjustment, matching the single Brazilian multivariable finding."
+   }
+  ],
+  "set_issues": []
+ },
+ "log": [
+  {
+   "step": "format_check",
+   "attempt": 1,
+   "errors": []
+  },
+  {
+   "step": "verify",
+   "round": 0,
+   "problems": [
+    "[major] set: E9 is a narrative review that re-reports specific thyroid prevalence figures from primary studies also present as items, especially E2 and E4/E5, but is counted as independent supporting evidence without secondary_of.",
+    "[minor] P2: stance errors ['E3'] — suggested: Several studies report higher thyroid disease or hypothyroidism prevalence in lipedema than in general or clinical comparison groups. (E10, E11, E1 and E2 support higher observed prevalence versus comparators. E3 has no quoted thyroid result supporting the distinct retrospective-analysis claim.)"
+   ]
+  },
+  {
+   "step": "format_check",
+   "attempt": 1,
+   "errors": []
+  },
+  {
+   "step": "verify",
+   "round": 1,
+   "problems": [
+    "[major] set: The set includes an adjusted-analysis caveat in P3 that is not supported by the quoted E7 evidence, overstating evidence for confounding.",
+    "[minor] set: E3 is used as an independent supporting finding for P2 despite having no supporting quote and duplicating E2's German survey result.",
+    "[minor] P2: stance errors ['E3'] — suggested: Several cross-sectional datasets report higher thyroid disease or hypothyroidism prevalence in lipedema than in comparison populations. (E10, E11, E1 and E2 support higher prevalence versus comparison groups. E3 has no quoted thyroid result and appears to duplicate E2's German liposuction survey finding.)",
+    "[major] P3: not fully supported; overgeneralized; stance errors ['E7'] — suggested: A Brazilian study reported crude hypothyroidism prevalence among women with lipedema, but the quoted item gives no adjusted result. (The quoted E7 text reports crude hypothyroidism prevalence across countries, but not the claimed multivariate analysis, p-value, or confounding interpretation.)"
+   ]
+  },
+  {
+   "step": "format_check",
+   "attempt": 1,
+   "errors": []
+  },
+  {
+   "step": "verify",
+   "round": 2,
+   "problems": []
+  }
+ ]
+}

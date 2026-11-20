@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "Scientific Claim Registry (SCR): A Versioned Memory of How Scientific Answers Evolve — Framework v0.6: General Propositions Backed by Study-Level Findings",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p><strong>v0.6 restructures the registry: a claim is now a general proposition that several papers can support or contradict, and each study&rsquo;s own result is stored as its finding (R-CLM-19).</strong></p><p>Up to v0.5.2, 87% of claims had a single source and read like a paper&rsquo;s abstract. In v0.6 a claim has at most 25 words and one idea, contains no numbers and never describes a study, and is worded no more strongly than its evidence licenses. The study-specific result (numbers, population, verbatim quote, verification, risk of bias) sits on the evidence row under the proposition. A proposition&rsquo;s GRADE follows a fixed rule from its findings.</p><p><strong>Dataset:</strong> 42 versioned questions; 215 active claims (general propositions) under 288 question&ndash;claim links; 168 rest on more than one primary study and 40 are shared across questions (46 duplicates merged). 837 study-level findings (823 verified, 6 disputed, 8 unverified), 356 distinct DOIs. The 514 single-paper claims of v0.5.2 are kept as superseded (490) or retired (24), never deleted. All answers were recompiled.</p><p><strong>Method:</strong> per question, a consolidator model proposed the propositions. Deterministic code checked every proposal. An independent verifier with a fresh context reviewed each proposition and the whole set, and questions with major problems got a repair round. All 42 ended with no major problem left. Both models are from the same vendor (Claude Opus 5.5 and Claude Sonnet, run as Claude Code subagents), so verification is less independent than a cross-vendor check. All per-question results, verifier reports and tools are included. One wrong reference DOI was corrected (SCR-LIP-000121, now 10.1111/iwj.12949). It registers; it does not arbitrate.</p>",
+    "creators": [
+      {
+        "name": "Amato, Alexandre Campos Moraes",
+        "affiliation": "Amato Duo; Associacao Brasileira de Lipedema",
+        "orcid": "0000-0003-4008-4029"
+      }
+    ],
+    "keywords": [
+      "scientific claims",
+      "scientific questions",
+      "versioned memory",
+      "living evidence",
+      "evidence registry",
+      "claim verification",
+      "AI verification",
+      "sentence-level provenance",
+      "quote grounding",
+      "adversarial verification",
+      "persistent identifiers",
+      "knowledge freshness",
+      "evidence decay",
+      "claim-centric science",
+      "registers not arbitrates",
+      "GRADE",
+      "machine-readable",
+      "biomedical informatics",
+      "lipedema",
+      "nanopublications",
+      "living evidence surveillance",
+      "unattended operation",
+      "claim consolidation",
+      "general propositions"
+    ],
+    "license": "cc-by-4.0",
+    "version": "0.6",
+    "language": "eng",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "relation": "isPartOf",
+        "identifier": "https://osf.io/n97ez/",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isSupplementedBy",
+        "identifier": "https://scientificclaims.org",
+        "resource_type": "other"
+      },
+      {
+        "relation": "isNewVersionOf",
+        "identifier": "10.5281/zenodo.24325901",
+        "resource_type": "publication"
+      }
+    ]
+  }
+}

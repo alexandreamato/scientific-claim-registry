@@ -1,0 +1,642 @@
+{
+ "question": "SQ-LIP-000034",
+ "text": "What is the role of psychosocial support and quality-of-life care in lipedema?",
+ "n_old_claims": 15,
+ "n_items": 18,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: No proposition states that the effect of psychosocial interventions on quality of life or mood has not been tested; the question on the role of psychosocial support is answered only by recommendations (P3) and associations.",
+  "[minor] set: P5 and G-00006 are about treatment sequence and surgical outcomes and are only tangential to the psychosocial/QoL question.",
+  "[minor] P1: stance errors ['E17']; misplaced ['E17'] — suggested: Lipedema is associated with reduced health-related quality of life compared with general-population norms and healthy controls. (E16, E15 and E13 support. E17 is qualitative with no comparison to norms or controls; it fits the stigma/social proposition (P4).)",
+  "[minor] P2: two ideas — suggested: Lipedema is associated with more depressive symptoms, psychological distress and body image dissatisfaction, which correlate with lower quality of life in cross-sectional data. (Bundles psychological excess versus controls (E18) with correlation to QoL (E14, a narrative review of cross-sectional data). E15 also supports the first part.)",
+  "[minor] P3: stance errors ['E2']; misplaced ['E2'] — suggested: Guidelines and consensus statements recommend multidisciplinary lipedema care that includes psychosocial support or psychological assessment, though this rests largely on expert opinion. (E7, E9, E11 and E1 support. E2's quote lists conservative, drug and surgical options with no psychological support, and it is a review, not a guideline.)",
+  "[minor] P4: overgeneralized — suggested: Higher health-related stigma may be associated with lower quality of life in lipedema, and stronger perceived social support with better social and emotional functioning. (One cross-sectional survey (E12) stated as a general rule; correlational. E17 (social judgement) would add qualitative support.)",
+  "[minor] P5: not fully supported; stance errors ['E4', 'E3']; misplaced ['E11'] — suggested: Guidance favours a stepwise approach starting with optimised conservative care and reserving liposuction for carefully selected patients. (E5 and E8 support the stepwise logic. E4 lists complex physical therapy with no stepwise or surgery statement; E3 is a case report on efficacy, not on sequence. E11 (selection criteria after failed conservative care) belongs here. Marginal to the psychosocial question.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "lipedema requer abordagem multidisciplinar (4,66/5)",
+   "note": "consensus: conservative management first-line 4.52; surgery only after ~1y clinical treatment 4.46; prioritize mobility/symptom relief over aesthetics 4.09; level B/C",
+   "old_claims": [
+    "SCR-LIP-000050",
+    "SCR-LIP-000049",
+    "SCR-LIP-000047"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes.",
+    "Comprehensive management of lipedema requires a multidisciplinary team addressing both physical and mental health.",
+    "Lipedema can negatively impact mental health and quality of life, and delayed diagnosis or late treatment worsens symptom burden and psychological well-being."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies – An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "management — conservative (CDT, flat-knit garments class II/III, anti-inflammatory diets, physical activity), pharmacological (off-label GLP-1/GIP agonists), surgical (WAL/PAL/TAL liposuction)",
+   "note": "The article provides an overview of management strategies for lipedema, indicating a focus on symptom management and the need for psychological support, which aligns with the question regarding overall management recommendations.",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.5535/arm.2011.35.6.922",
+   "title": "Lipedema, a Rare Disease",
+   "year": 2025,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The well-known therapies for lipedema include complex decongestive therapy, pneumatic compression, and diet modifications. However, whether these treatments help reduce swelling is debatable.",
+   "note": "The article is primarily focused on fascial remodeling in hEDS with adipose disorders; the lipedema management content appears embedded in a case report section and provides only a brief, non-systematic overview of treatment options without",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1111/ddg.13036",
+   "title": "S1 guidelines: Lipedema",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "TRATAMENTO — TERAPIA FÍSICA COMPLEXA (TFC): (a) drenagem linfática manual (DLM); (b) terapia compressiva — meia de malha plana (flat-knit) sob medida na maioria dos casos, circular-knit apenas em lipedema leve; (c) exercício; (d) cuidados de pele.",
+   "note": "This is an S1 guideline (lowest formal evidence level in German guideline hierarchy) based on systematic literature review and expert consensus from 8 medical societies; it directly addresses overall management of lipedema but lacks higher-",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.26779/2786-832x.2025.2.69",
+   "title": "Treatment of lipedema in men",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "A evidência contemporânea sustenta uma abordagem escalonada e individualizada, começando pelo cuidado conservador otimizado e progredindo para a cirurgia de redução do lipedema em pacientes apropriadamente selecionados; a decisão compartilhada e a medida padronizada de desfechos são essenciais",
+   "note": "This systematic review directly addresses the overall management of lipedema, synthesizing evidence on both surgical and non-surgical treatments, and explicitly recommends a stepwise individualized approach. Confidence is moderate due to ac",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation, evidence quality 2-3).",
+   "note": "Systematic review directly addressing lipedema management options (conservative and surgical) with graded recommendations, directly answering the question on recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000316"
+   ],
+   "old_statements": [
+    "A systematic review of 61 articles found that conservative therapies (ketogenic/RAD diets, compression, aquatic exercise) reduced pain and swelling (Grade 2A-2B), while tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation), supporting early recognition with combined conservative and surgical management."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1177/0268355516639421",
+   "title": "First Dutch guidelines on lipedema using the international classification of functioning, disability and health",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tratamento conservador baseia-se em quatro pilares: (1) promoção de estilo de vida saudável com controle de peso individualizado e dieta com balanço calórico ajustado; (2) graded activity training para força, condicionamento e otimização da bomba muscular vascular/linfática; (3) redução do edema com",
+   "note": "Article presents national clinical practice guidelines directly addressing the overall management of lipedema, including conservative and surgical treatment recommendations, diagnostic criteria, and follow-up.",
+   "old_claims": [
+    "SCR-LIP-000317"
+   ],
+   "old_statements": [
+    "The first Dutch lipedema guidelines, framed by the ICF and Chronic Care Model, recommend a four-pillar conservative management (healthy lifestyle with weight control, graded activity training, flat-knit compression only when edema is present, and psychosocial support; manual lymphatic drainage not recommended) plus tumescent liposuction (TLA/STLA) for abnormal adipose tissue, with structured follow-up and clinical diagnostic criteria."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1097/gox.0000000000005952",
+   "title": "Liposuction as a Treatment for Lipedema: A Scoping Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Abordagem gradual e individualizada é recomendada: conservador otimizado → cirurgia quando indicada",
+   "note": "The article directly addresses overall lipedema management, recommending a stepwise individualized approach from optimized conservative care to surgery, which supports the question's affirmative direction. Heterogeneity in diagnostic criter",
+   "old_claims": [
+    "SCR-LIP-000318"
+   ],
+   "old_statements": [
+    "A systematic review of surgical and non-surgical lipedema treatments concluded that a stepwise, individualized approach is recommended—starting with optimized conservative therapy (compression, exercise, intermittent pneumatic compression) which reduces pain and edema, and progressing to reduction surgery (tumescent, water-assisted, or power-assisted liposuction) in appropriately selected patients, with liposuction showing substantial symptom and quality-of-life improvements and acceptable complication rates."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1111/ddg.15513",
+   "title": "S2k guideline lipedema",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Avaliação abrangente de todas as estratégias diagnósticas e terapêuticas disponíveis, incluindo compressão, drenagem linfática, nutrição, lipoaspiração e cirurgia bariátrica 60 recomendações formais acordadas em diagnóstico, opções terapêuticas conservadoras e cirúrgicas, fatores psicossociais e aut",
+   "note": "This is a formal S2k consensus guideline that directly addresses overall management of lipedema with 60 graded recommendations spanning diagnosis, conservative and surgical treatment, psychosocial factors, and self-management, directly answ",
+   "old_claims": [
+    "SCR-LIP-000320"
+   ],
+   "old_statements": [
+    "The S2k guideline issues 60 formal recommendations advocating multidisciplinary management of lipedema combining conservative measures (compression including MCS flat-knit and intermittent pneumatic compression for pain relief, manual lymphatic drainage, exercise, Mediterranean hypocaloric or ketogenic diet, weight management), psychosocial support, bariatric surgery for BMI >=40 (or >=35 with comorbidity), and liposuction as the surgical method of choice, while explicitly recommending against diuretics."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.56238/levv16n53-097",
+   "title": "SURGICAL AND NON-SURGICAL APPROACHES IN THE MANAGEMENT OF LIPEDEMA: A SYSTEMATIC REVIEW",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Mortada et al. (meta-análise, >1200 pacientes, múltiplas técnicas cirúrgicas): todas as técnicas (tumescente, PAL, WAL) produziram redução de dor e melhora funcional significativas",
+   "note": "Systematic review explicitly synthesizing comparative efficacy of conservative and surgical lipedema treatments to inform standardized management, directly addressing recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000321"
+   ],
+   "old_statements": [
+    "A systematic review of 20 studies (>1200 patients) found that multimodal management of lipedema combining conservative measures (compression, structured exercise, pneumatic compression devices, ketogenic/low-carb diet) and surgical liposuction (tumescent, PAL, WAL) yields significant improvements in pain, mobility, limb circumference and HRQoL; the LIPLEG RCT showed greater early pain reduction and mobility in the surgical group at 6 months, while combined compression plus exercise outperformed exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1016/j.bjps.2022.12.004",
+   "title": "Summary document on safety and recommendations on liposuction for lipoedema: Joint British association of aesthetic plastic surgeons (BAAPS)/British association of plastic reconstructive and aesthetic surgeons (BAPRAS) expert liposuction group",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Critérios de seleção para lipoaspiração no lipedema: persistência de sintomas por >12 meses, incapacidade funcional considerável, peso estável por 12 meses, e IMC < 35 kg/m²",
+   "note": "Consensus recommendation document based on literature review and expert opinion that directly addresses management of lipedema, specifically liposuction criteria, perioperative care, and multidisciplinary team composition.",
+   "old_claims": [
+    "SCR-LIP-000322"
+   ],
+   "old_statements": [
+    "A BAAPS/BAPRAS expert consensus recommends managing lipedema with conservative measures and selecting liposuction (tumescent, often staged large-volume) only when symptoms persist >12 months, functional impairment is considerable, weight is stable for 12 months, and BMI is <35 kg/m², performed in a level 2-3 hospital by an experienced surgeon supported by a multidisciplinary team including a lymphedema nurse, with mandatory preoperative psychological assessment and immediate postoperative compression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1080/07399332.2025.2499487",
+   "title": "Health-related stigma, perceived social support, and their role in quality of life among women with lipedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "we found significantly more health-related stigma compared to an aged-matched general female population (N = 1872), leading to an overall lower quality of life. Conversely, strong social support was associated with better social and emotional functioning.",
+   "note": "The article directly examines quality of life and emotional well-being in lipedema patients, reporting that higher stigma is associated with lower HRQoL and worse emotional functioning, supporting the question's affirmative direction regard [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000174"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 245 women with lipedema, health-related stigma was significantly higher than in an age-matched general female population (Distress 49.5 vs 17.1–28.7; 65% with moderate/severe distress) and correlated negatively with all RAND-36 quality-of-life domains (strongest for social functioning r=−0.54 and emotional well-being r=−0.50), while greater perceived social support correlated positively with HRQoL."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3390/ijerph181910223",
+   "title": "Lipoedema as a Social Problem. A Scoping Review",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Qualidade de vida (Romejn, n=163): EQ-5D-3L 66,1/100 vs 85/100 população holandesa; RAND-36 59,3/100 vs 74,9/100; dificuldade em atividades diárias (trabalho/estudo/tarefas domésticas) em 64,8%; dor em 74,1%; depressão em 42%",
+   "note": "Scoping review synthesizing multiple studies directly reporting reduced quality of life, high depression/anxiety prevalence, and correlations with QoL in lipedema patients, directly addressing the question. [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000171"
+   ],
+   "old_statements": [
+    "In this scoping review, lipedema patients showed reduced quality of life (EQ-5D-3L 66.1 vs 85 in the Dutch population; WHOQOL-BREF physical/mental domains below midpoint), depression prevalence of 22.7%-42%, 51.1% with mental disorders, and QoL strongly correlated with depression severity (r=-0.75)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1007/s40519-019-00703-x",
+   "title": "The effect of lipedema on health-related quality of life and psychological status: a narrative review of the literature",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Ansiedade/depressão em 42,0% (1,2% extremamente) DUDEK 2019 (n=328, online, WHOQOL-BREF): maior coorte de QoL no lipedema. HRQOL inversamente correlacionada com: severidade de sintomas (r=-0,651), depressão (r=-0,750), distress de aparência (r=-0,654)",
+   "note": "Narrative review synthesizing four moderate-quality cross-sectional studies directly measuring HRQOL and psychological status in lipedema; all studies cross-sectional preventing causal inference, with heterogeneous instruments precluding me",
+   "old_claims": [
+    "SCR-LIP-000171"
+   ],
+   "old_statements": [
+    "In this scoping review, lipedema patients showed reduced quality of life (EQ-5D-3L 66.1 vs 85 in the Dutch population; WHOQOL-BREF physical/mental domains below midpoint), depression prevalence of 22.7%-42%, 51.1% with mental disorders, and QoL strongly correlated with depression severity (r=-0.75)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1371/journal.pone.0355488",
+   "title": "Lipedema in Sweden – “The LISE-study”: Quality of life and body image in women with lipedema compared to healthy controls and women with cancer",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Women with lipedema experienced significantly more symptoms than healthy controls, including more pain, fatigue, depression, anxiety, loss of appetite, dyspnea and reduced QoL (<0.001 for all).",
+   "note": "Study directly measures quality of life, body image, depression and anxiety in lipedema patients versus controls, finding significantly worse outcomes across all measures.",
+   "old_claims": [
+    "SCR-LIP-000507"
+   ],
+   "old_statements": [
+    "In a comparative cross-sectional study, women with lipedema (n=104) had significantly lower HR-QoL (RAND-36) than healthy controls across all eight dimensions (p<0.001), scores comparable to women with advanced cancer in several dimensions (even lower in general health), greater body image concern (BSQ, p=0.001), and higher symptom burden including depression and anxiety (ESAS, p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1177/02683555251410009",
+   "title": "Health-related quality of life among lipedema patients: A systematic review and meta-analysis",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Emotional well-being: 64,19 (IC 95% 59,86–68,52) vs norma 73,2 — ansiedade/depressão frequentes; I²=89,41%",
+   "note": "Meta-analysis directly quantifying HRQoL and psychosocial impacts in lipedema patients with pooled effect sizes; high heterogeneity (I²=83–93%) lowers confidence.",
+   "old_claims": [
+    "SCR-LIP-000351"
+   ],
+   "old_statements": [
+    "In a systematic review and meta-analysis of cross-sectional cohorts, women with lipedema showed reduced HRQoL across all SF-36/RAND-36 domains versus population norms, with the largest deficits in energy/fatigue (43.50 vs 59.4), bodily pain (51.77 vs 77.4), role physical (51.10 vs 82.4), and general health (49.64 vs 73.1), plus impaired emotional well-being (64.19 vs 73.2) reflecting frequent anxiety/depression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1080/17482631.2026.2734666",
+   "title": "A qualitative study exploring the experiences of individuals living with lipoedema and the impacts it has on their quality of life.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Individuals living with lipoedema experience impacts on their quality-of-life across physical, psychological, and social aspects of life.",
+   "note": "Qualitative study directly exploring how lipoedema affects quality of life across physical, psychological, and social domains, supporting the affirmative direction; psychological burden addressed though not via standardized depression/anxie",
+   "old_claims": [
+    "SCR-LIP-000512"
+   ],
+   "old_statements": [
+    "In a qualitative study of 16 individuals with lipoedema, participants reported impacts on quality of life across physical, psychological, and social domains, driven by symptom burden, social judgement, and healthcare-related challenges."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.3390/women6030050",
+   "title": "Body Image, Psychological Distress, and Well-Being in Italian Women with Lipedema: A Controlled Cross-Sectional Study",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Mulheres com lipedema: maior insatisfação com imagem corporal, maior sofrimento percebido, mais sintomas clinicamente inexplicados (M.U.S.), mais sintomas depressivos, mais atitudes alimentares desordenadas e mais dor (todos p < 0,001)",
+   "note": "Controlled study directly comparing psychological outcomes shows lipedema patients have significantly worse depression, distress, and well-being, directly supporting the affirmative.",
+   "old_claims": [
+    "SCR-LIP-000510"
+   ],
+   "old_statements": [
+    "In a controlled cross-sectional study, Italian women with lipedema showed greater body image dissatisfaction, more depressive symptoms, higher psychological distress, and lower psychological well-being and life satisfaction than women without lipedema (all p<0.001), with PHQ-9 depression scores predicted by medically unexplained symptoms, maladaptive cognitions, and pain intensity."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Health-related quality of life in lipedema is reduced across physical, psychological and social domains compared with population norms or healthy controls.",
+   "role": "supporting",
+   "rationale": "A meta-analysis, a scoping review, controlled cross-sectional studies and qualitative work consistently describe impaired quality of life in lipedema; the evidence is cross-sectional.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Meta-analysis of cross-sectional cohorts: HRQoL below population norms in all SF-36/RAND-36 domains, largest deficits in energy/fatigue (43.50 vs 59.4), bodily pain (51.77 vs 77.4) and role physical (51.10 vs 82.4); emotional well-being 64.19 vs 73.2; high heterogeneity."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "In 104 Swedish women with lipedema, RAND-36 HRQoL was lower than in healthy controls across all eight dimensions (p<0.001), comparable to women with advanced cancer in several dimensions, with greater body image concern."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Scoping review: EQ-5D-3L 66.1 vs 85 and RAND-36 59.3 vs 74.9 versus the Dutch population; difficulty in daily activities in 64.8%, pain in 74.1%, depression prevalence 22.7%-42%."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "In a qualitative study of 16 individuals, lipoedema affected quality of life across physical, psychological and social domains, driven by symptom burden, social judgement and healthcare-related challenges."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00222",
+   "statement_before_twin_merge": "Lipedema is associated with reduced health-related quality of life compared with general-population norms and healthy controls."
+  },
+  {
+   "key": "P2",
+   "statement": "Lipedema is associated with more depressive symptoms, psychological distress and body image dissatisfaction, and these are linked to lower quality of life.",
+   "role": "supporting",
+   "rationale": "Controlled and uncontrolled cross-sectional data show psychological burden in lipedema that correlates with quality of life.",
+   "evidence": [
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Italian women with lipedema had greater body image dissatisfaction, more depressive symptoms, higher distress and lower well-being and life satisfaction than women without lipedema (all p<0.001)."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Narrative review of four cross-sectional studies: anxiety/depression in 42.0%; HRQoL inversely correlated with symptom severity (r=-0.651), depression (r=-0.750) and appearance distress (r=-0.654); causal inference not possible."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00128"
+  },
+  {
+   "key": "P3",
+   "statement": "Guidelines and consensus statements recommend multidisciplinary lipedema care that includes psychosocial support or psychological assessment alongside physical treatment.",
+   "role": "supporting",
+   "rationale": "National guidelines, a Delphi consensus and a surgical consensus explicitly include psychosocial care, based on expert opinion and low-level evidence.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Brazilian Delphi consensus: lipedema requires a multidisciplinary approach (4.66/5) addressing physical and mental health; lipedema can impair mental health and quality of life, worsened by delayed diagnosis; level B/C."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Dutch ICF-based guidelines recommend four-pillar conservative care including psychosocial support, together with healthy lifestyle and weight control, graded activity and compression when edema is present."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "German S2k guideline with 60 formal recommendations covers conservative and surgical therapy and psychosocial factors, advocating multidisciplinary management including psychosocial support."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "BAAPS/BAPRAS consensus requires a multidisciplinary team and mandatory preoperative psychological assessment before liposuction for lipoedema."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Dermatology review outlines conservative, pharmacological and surgical management of lipedema and notes the need for psychological support."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 5,
+   "store_key": "G-00129"
+  },
+  {
+   "key": "P4",
+   "statement": "In lipedema, higher health-related stigma is associated with lower quality of life, while stronger perceived social support is associated with better social and emotional functioning.",
+   "role": "supporting",
+   "rationale": "A cross-sectional survey links psychosocial factors amenable to support with quality of life.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "In 245 women, stigma distress was higher than in age-matched general women (49.5 vs 17.1-28.7) and correlated negatively with all RAND-36 domains (social functioning r=-0.54, emotional well-being r=-0.50); social support correlated positively with HRQoL."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00130"
+  },
+  {
+   "key": "P5",
+   "statement": "Guidelines and expert consensus recommend conservative therapy as first-line lipedema management, reserving liposuction for symptoms that persist despite it.",
+   "role": "context",
+   "rationale": "Guidelines and reviews frame the overall care pathway within which quality-of-life care sits.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "German S1 guideline: treatment by complex physical therapy, comprising manual lymphatic drainage, compression (mostly custom flat-knit), exercise and skin care."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Systematic review supports a stepwise, individualised approach from optimised conservative care to reduction surgery in selected patients, with shared decision-making and standardised outcome measurement."
+    },
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Scoping review recommends a gradual, individualised approach: optimised conservative therapy first, then surgery when indicated."
+    },
+    {
+     "e": "E3",
+     "stance": "refines",
+     "finding": "Case report notes that complex decongestive therapy, pneumatic compression and diet are used for lipedema, but whether they reduce swelling is debatable."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 4,
+   "store_key": "G-00037",
+   "statement_before_twin_merge": "A stepwise approach is recommended, starting with optimised conservative care and reserving liposuction for selected patients after adequate conservative treatment."
+  },
+  {
+   "key": "G-00006",
+   "statement": "Liposuction for lipedema is associated with improved quality of life and mobility.",
+   "role": "context",
+   "rationale": "Quality-of-life improvement after treatment, especially liposuction, is part of quality-of-life care.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Systematic review of 61 articles: tumescent liposuction had the strongest evidence for sustained symptom improvement, mobility and quality of life (Grade 1 recommendation); conservative therapies reduced pain and swelling (Grade 2A-2B)."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Systematic review of 20 studies (>1200 patients): multimodal conservative and surgical management improved pain, mobility, limb circumference and HRQoL; an RCT showed greater early pain reduction and mobility with surgery at six months."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00006"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [
+     "E17"
+    ],
+    "misplaced": [
+     "E17"
+    ],
+    "suggested_statement": "Lipedema is associated with reduced health-related quality of life compared with general-population norms and healthy controls.",
+    "severity": "minor",
+    "note": "E16, E15 and E13 support. E17 is qualitative with no comparison to norms or controls; it fits the stigma/social proposition (P4)."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema is associated with more depressive symptoms, psychological distress and body image dissatisfaction, which correlate with lower quality of life in cross-sectional data.",
+    "severity": "minor",
+    "note": "Bundles psychological excess versus controls (E18) with correlation to QoL (E14, a narrative review of cross-sectional data). E15 also supports the first part."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [
+     "E2"
+    ],
+    "misplaced": [
+     "E2"
+    ],
+    "suggested_statement": "Guidelines and consensus statements recommend multidisciplinary lipedema care that includes psychosocial support or psychological assessment, though this rests largely on expert opinion.",
+    "severity": "minor",
+    "note": "E7, E9, E11 and E1 support. E2's quote lists conservative, drug and surgical options with no psychological support, and it is a review, not a guideline."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Higher health-related stigma may be associated with lower quality of life in lipedema, and stronger perceived social support with better social and emotional functioning.",
+    "severity": "minor",
+    "note": "One cross-sectional survey (E12) stated as a general rule; correlational. E17 (social judgement) would add qualitative support."
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [
+     "E4",
+     "E3"
+    ],
+    "misplaced": [
+     "E11"
+    ],
+    "suggested_statement": "Guidance favours a stepwise approach starting with optimised conservative care and reserving liposuction for carefully selected patients.",
+    "severity": "minor",
+    "note": "E5 and E8 support the stepwise logic. E4 lists complex physical therapy with no stepwise or surgery statement; E3 is a case report on efficacy, not on sequence. E11 (selection criteria after failed conservative care) belongs here. Marginal to the psychosocial question."
+   },
+   {
+    "key": "G-00006",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E6 and E10 support; E10 is multimodal but includes an RCT of surgery for mobility. Tangential to the psychosocial focus."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "No proposition states that the effect of psychosocial interventions on quality of life or mood has not been tested; the question on the role of psychosocial support is answered only by recommendations (P3) and associations.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P5 and G-00006 are about treatment sequence and surgical outcomes and are only tangential to the psychosocial/QoL question.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000034.cons.json",
+   "ver": "SQ-LIP-000034.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00127",
+   "into": "G-00222"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00131",
+   "into": "G-00037"
+  }
+ ]
+}

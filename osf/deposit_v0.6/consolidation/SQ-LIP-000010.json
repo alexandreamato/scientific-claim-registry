@@ -1,0 +1,601 @@
+{
+ "question": "SQ-LIP-000010",
+ "text": "Does a lipedema-like (peripheral/gynoid) fat distribution protect against cancer or metabolic disease?",
+ "n_old_claims": 15,
+ "n_items": 17,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E2 and E3 carry the same NHANES DXA phenotype analysis (identical old_statement, a preprint and a likely published version) and E1 uses the same dataset. They are counted as independent in P1, P2 and P5. E1 and E2 DOIs look like medRxiv preprints.",
+  "[minor] set: E12 shows stage-dependent worsening of CRP, HOMA-IR and glucose alterations in lipedema, but no proposition carries the caveat that any metabolic advantage may not persist with progression or higher adiposity. It appears only inside P4.",
+  "[minor] set: E10 re-reports the E5 clamp study without secondary_of, and E13 states the lower-diabetes claim without primary data. Neither changes any statement but both inflate the apparent count of supporting studies.",
+  "[minor] set: P2 (lower diabetes) and P4 (systemic inflammation) draw on E13, which reports normal CRP, and E4, which reports a strong inflammatory profile. The set does not state this tension.",
+  "[minor] P1: not fully supported; overgeneralized — suggested: Lipedema and lipedema-like peripheral fat distribution may be associated with greater insulin sensitivity, including in obesity-matched comparisons, though other metabolic indices often do not differ. (Only E5 is an obesity-matched comparison (clamp-measured). E2 compares a DXA-defined phenotype with other women, not with obesity. E10 reports no differences in fasting glucose, insulin, HbA1c or OGTT in that same matched study, which supports the 'mixed' hedge. E9 is correctly marked secondary_of E5.)",
+  "[minor] P2: not fully supported — suggested: Diabetes is reported less frequently in lipedema and lipedema-like peripheral fat distribution than in general population comparators, though adiposity-matched data are limited and mixed. (E3 uses a DXA phenotype, not diagnosed lipedema, and E7 compares with age-matched population women, so neither is adiposity-matched. E13 is a review without data. In the matched clamp study (E10 and E5) there was no HbA1c or fasting glucose difference. The statement already hedges adiposity matching, so this is wording only.)",
+  "[minor] P3: not fully supported; overgeneralized — suggested: Lipedema may be associated with a more favorable plasma lipid profile than comparison groups, though adiposity-matched comparisons are inconsistent and some report higher LDL. (E8 compares with controls, not obesity, and no difference in glucose or HOMA-IR. E4 reports higher LDL-cholesterol versus BMI-matched controls and belongs here as contradicting. E12 shows HDL falling with stage. E10 is correctly contradicting, although it re-reports E5 and should carry secondary_of E5.)",
+  "[minor] P4: not fully supported; overgeneralized — suggested: Lipedema is reported to involve adipose tissue inflammation, with mixed evidence for systemic inflammation. (Adipose inflammation is supported (E15 is a case report). Systemic inflammation rests on E4 (proteomics) and E12 (CRP rising with stage), while E13, filed under P2 as a finding, reports normal CRP. E8 also reports inflammatory tissue changes but is placed only under P3. The role 'contradicting' is acceptable for the question.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.64898/2025.12.02.25341445",
+   "title": "Lipedema-like Phenotype and Cancer Prevalence in US Women: A Cross-Sectional Analysis of NHANES 2011–2014",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 2818,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "Modelo primário ajustado (efeito total, sem idade como mediadora): cada aumento de 1-DP na LTR associou-se a 20% menor chance de câncer (OR 0,795; IC 95% 0,666–0,948; p=0,011)",
+   "note": "prevalence/survivorship not incidence; reverse causation possible; E-value 1.83",
+   "old_claims": [
+    "SCR-LIP-000028",
+    "SCR-LIP-000029"
+   ],
+   "old_statements": [
+    "In NHANES women aged 20-59, a lipedema-like peripheral fat distribution was inversely associated with cancer prevalence: each 1-SD increase in leg-to-trunk fat ratio was associated with 20% lower adjusted odds of cancer (OR 0.795; 95%CI 0.666-0.948; p=0.011).",
+    "The inverse association between lipedema-like peripheral fat distribution and cancer prevalence was most robust in women without obesity (OR 0.67 per 1-SD LTR; 95%CI 0.53-0.85; p=0.0007)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.64898/2025.12.01.25341350",
+   "title": "The Lipedema Phenotype is Inversely Associated with Celiac Disease Autoimmunity: Testing the Immunological Shield Hypothesis in NHANES",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 3833,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "HOMA-IR mediano 44,2% menor no fenótipo lipedema (1,35 [IQR 0,95–2,01] vs 2,42 [IQR 1,47–4,30]; p<0,001)",
+   "note": "exploratory; DXA proxy may capture gynoid obesity",
+   "old_claims": [
+    "SCR-LIP-000027"
+   ],
+   "old_statements": [
+    "In NHANES women, a DXA-defined lipedema-like phenotype (leg-to-trunk fat ratio >90th percentile) was associated with a favorable immunometabolic profile, including 44.2% lower HOMA-IR (p<0.001) and 7.6% lower neutrophil-to-lymphocyte ratio (p=0.012)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.7759/cureus.104222",
+   "title": "Exploring the Immunological Shield Hypothesis: A Population-Based Exploration of Phenotypic Divergence Between Lipedema and Celiac Disease Autoimmunity",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "fenótipo lipedema fortemente protetor contra diabetes (prevalência 1,8% vs 8,1%; OR 0,21; IC95% 0,08-0,51; p<0,001)",
+   "note": "Exploratory cross-sectional population study directly examines whether a peripheral/gynoid (lipedema-like) fat distribution confers metabolic protection, reporting lower HOMA-IR and reduced diabetes prevalence with dose-response; supports t",
+   "old_claims": [
+    "SCR-LIP-000027"
+   ],
+   "old_statements": [
+    "In NHANES women, a DXA-defined lipedema-like phenotype (leg-to-trunk fat ratio >90th percentile) was associated with a favorable immunometabolic profile, including 44.2% lower HOMA-IR (p<0.001) and 7.6% lower neutrophil-to-lymphocyte ratio (p=0.012)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.3389/fendo.2022.1000094",
+   "title": "Is subcutaneous adipose tissue expansion in people living with lipedema healthier and reflected by circulating parameters?",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "21 de 78 proteínas inflamatórias significativamente elevadas no lipedema vs controles (p_adj<0.05); nenhuma foi maior nos controles — perfil pró-inflamatório sistêmico forte",
+   "note": "This cross-sectional study directly compares metabolic and inflammatory biomarkers in lipedema versus BMI-matched obese controls, providing nuanced evidence that partially supports (glycemic protection, higher adiponectin) but also contradi",
+   "old_claims": [
+    "SCR-LIP-000108"
+   ],
+   "old_statements": [
+    "Women with lipedema show better glycemic control (lower HbA1c, higher adiponectin) compared to BMI-matched obese controls, but also exhibit higher LDL-cholesterol, elevated liver enzymes, greater oxidative stress, and a broad pro-inflammatory proteomic profile with 21 upregulated inflammatory proteins, suggesting a mixed rather than uniformly protective metabolic phenotype."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.2337/db24-0890",
+   "title": "Adipose Tissue Biology and Effect of Weight Loss in Women With Lipedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "people with Obese-LIP had ∼23% greater leg fat mass, ∼11% lower android-to-gynoid ratio, and ∼48% greater insulin sensitivity (all P < 0.05) than women matched on age, BMI, and whole-body adiposity",
+   "note": "The study directly compares metabolic health (insulin sensitivity) between women with lipedema (gynoid/peripheral fat distribution) and matched obese controls, finding significantly better insulin sensitivity in the lipedema group, which su",
+   "old_claims": [
+    "SCR-LIP-000108"
+   ],
+   "old_statements": [
+    "Women with lipedema show better glycemic control (lower HbA1c, higher adiponectin) compared to BMI-matched obese controls, but also exhibit higher LDL-cholesterol, elevated liver enzymes, greater oxidative stress, and a broad pro-inflammatory proteomic profile with 21 upregulated inflammatory proteins, suggesting a mixed rather than uniformly protective metabolic phenotype."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.7759/cureus.88809",
+   "title": "The Evolutionary Theory of Lipedema: A Perspective on Energy Storage and Chronic Inflammation",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "gordura subcutânea ginóide (9 kcal/g) é reserva energética eficiente que conferiu vantagem evolutiva às mulheres em gestação/lactação durante escassez pré-histórica, em contraste com gordura visceral masculina (mobilização rápida/maior risco cardiovascular) — diferença que explica os ~7 anos de maio",
+   "note": "The article is a theoretical/evolutionary perspective that contrasts gynoid (peripheral) versus visceral fat regarding metabolic/cardiovascular risk and longevity, which bears conceptually on the question, but it offers no direct study of c",
+   "old_claims": [
+    "SCR-LIP-000149"
+   ],
+   "old_statements": [
+    "This integrative theoretical perspective hypothesizes that gynoid subcutaneous fat is an evolutionarily adaptive energy reserve that confers metabolic and longevity advantages to women (citing ~7 years greater female lifespan) compared to visceral male fat, while framing lipedema as a maladaptive activation of this ancestral storage mechanism by chronic inflammatory triggers."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1515/hmbci-2017-0076",
+   "title": "Lipedema: friend and foe",
+   "year": 2018,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Perfil cardiometabólico PROTETOR apesar de IMC obeso médio 35,3±1,7 kg/m²: diabetes apenas 2% (vs. ~10% mulheres NHANES idade-pareada); dislipidemia 11,7% (vs. 33,5%); hipertensão 13% (vs. 32,4% mulheres 40-59 anos)",
+   "note": "The article describes lipedema as a distinct disorder frequently misdiagnosed as obesity or lymphedema, with characteristic fat distribution, staging, inheritance pattern, and a metabolic profile differing from obesity; supports the affirma",
+   "old_claims": [
+    "SCR-LIP-000259"
+   ],
+   "old_statements": [
+    "In a chart review of 46 women with lipedema (mean BMI 35.3 kg/m²), lipedema fat was associated with notably lower rates of metabolic dysfunction than expected for obesity (diabetes 2%, dyslipidemia 11.7%), is not reduced by lifestyle change, and is frequently misdiagnosed as obesity or lymphedema, with distinct distribution types and clinical staging."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.3389/fimmu.2023.1223264",
+   "title": "Lipedema stage affects adipocyte hypertrophy, subcutaneous adipose tissue inflammation and interstitial fibrosis",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "HDL colesterol lipedema 1,65±0,46 vs controles 1,04±0,27 mmol/l (p<0,0001); razão LDL:HDL 1,65±0,65 vs 2,96±0,62 (p<0,0001); razão triglicérides:HDL 0,72±0,36 vs 1,21±0,33 (p=0,0001)",
+   "note": "The article reports a favorable lipid profile and preserved metabolic parameters in lipedema patients, indirectly relevant to the metabolic protection aspect of the question, but it does not directly test whether gynoid/peripheral fat distr",
+   "old_claims": [
+    "SCR-LIP-000151"
+   ],
+   "old_statements": [
+    "In a study of women with lipedema (mean BMI 28.9) versus controls, lipedema patients showed a favorable plasma lipid profile (HDL 1.65 vs 1.04 mmol/L, p<0.0001; lower LDL:HDL and triglyceride:HDL ratios) and preserved metabolic indices (no difference in fasting glucose, insulin, or HOMA-IR), despite stage-dependent adipocyte hypertrophy, interstitial fibrosis, and inflammatory changes in affected thigh subcutaneous adipose tissue."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.3389/fcell.2025.1691161",
+   "title": "Lipedema and adipose tissue: current understanding, controversies, and future directions",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "razões android-ginoide menores e sensibilidade à insulina preservada vs. controles pareados por IMC (Nankam et al., 2022); apesar do IMC elevado, prevalência de diabetes de apenas 5% e de dislipidemia de 7%; pacientes obesas com lipedema mostram sensibilidade à insulina 48% maior; HbA1c menor (5,55%",
+   "note": "Narrative review synthesizing evidence that lipedema's peripheral/gynoid fat shows a metabolically favorable profile (preserved insulin sensitivity, low diabetes/dyslipidemia prevalence, anti-inflammatory M2 bias), which supports the affirm [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000152"
+   ],
+   "old_statements": [
+    "This review reports that lipedema subcutaneous adipose tissue exhibits a 'healthy expansion' phenotype with preserved insulin sensitivity (48% higher in obese lipedema patients), lower HbA1c (5.55% vs 6.73%), low diabetes prevalence (~5%) and dyslipidemia (~7%) despite elevated BMI, alongside anti-inflammatory M2 macrophage predominance in thigh fat."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "whole-body insulin sensitivity ~48% maior (p<0,05) em Obese-LIP vs. Obese por clamp hiperinsulinêmico-euglicêmico; sem diferenças significativas em glicemia de jejum, insulina, HbA1c, lipídios plasmáticos, OGTT ou sensibilidade hepática à insulina entre grupos",
+   "note": "The review reports that femoral/gynoid fat accumulation in lipedema is associated with higher whole-body insulin sensitivity and reduced inflammation versus BMI-matched obesity, supporting a metabolically protective peripheral fat phenotype",
+   "old_claims": [
+    "SCR-LIP-000152"
+   ],
+   "old_statements": [
+    "This review reports that lipedema subcutaneous adipose tissue exhibits a 'healthy expansion' phenotype with preserved insulin sensitivity (48% higher in obese lipedema patients), lower HbA1c (5.55% vs 6.73%), low diabetes prevalence (~5%) and dyslipidemia (~7%) despite elevated BMI, alongside anti-inflammatory M2 macrophage predominance in thigh fat."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.3390/biomedicines13040867",
+   "title": "Metabolic Alterations in Women with Lipedema Compared to Women with Lifestyle-Induced Overweight/Obesity",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Maior proporção de gordura nas extremidades protege o perfil metabólico independentemente do peso total. Apesar do IMC elevado, mulheres com lipedema apresentam menos alterações metabólicas do que mulheres com sobrepeso/obesidade de origem comportamental.",
+   "note": "The article directly tests whether gynoid/peripheral fat distribution is associated with better metabolic markers, finding via multivariate PCA that greater limb (vs abdominal) fat independently predicts more favorable lipid, glycemic and u",
+   "old_claims": [
+    "SCR-LIP-000300"
+   ],
+   "old_statements": [
+    "In a cross-sectional comparison of 53 women with lipedema versus 55 with lifestyle-induced overweight/obesity, despite lower BMI the lipedema group showed more favorable metabolic profiles (lower TG, LDL-C, HbA1c, HOMA-IR, uric acid; higher HDL-C; insulin resistance 11.3% vs 34.5%, p=0.01), and PCA identified the fat-distribution component (more peripheral/limb fat vs abdominal, higher PC3) as the strongest predictor of better metabolic markers independent of total body weight."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.3390/ijms25031599",
+   "title": "Observational Study on a Large Italian Population with Lipedema: Biochemical and Hormonal Profile, Anatomical and Clinical Evaluation, Self-Reported History",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "PCR aumenta com estágio: Estágio 1: 1,38±1,29 mg/L → Estágio 2: 1,94±1,69 mg/L → Estágio 3: 4,93±4,35 mg/L (p<0,001); diferença mantida após correção para idade e IMC",
+   "note": "Large observational study showing lipedema (peripheral fat) is associated with increasing inflammation, insulin resistance, and adverse lipid profile with stage, with CRP elevation persisting after adjustment for BMI — contradicting the not",
+   "old_claims": [
+    "SCR-LIP-000301"
+   ],
+   "old_statements": [
+    "In 360 Italian women with lipedema (a peripheral/gynoid fat distribution), inflammatory and metabolic markers worsened with disease stage: CRP rose from 1.38 to 4.93 mg/L (p<0.001, persisting after adjustment for age and BMI), HOMA-IR increased from 1.75 to 2.92, 34% had glucose metabolism alterations, HDL fell and obesity prevalence climbed from 6.3% to 91.8% across stages."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3390/biomedicines13030561",
+   "title": "Lipedema: A Disease Triggered by M2 Polarized Macrophages?",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diabetes tipo 2: incidência MENOR em pacientes com lipedema vs. controles femininos BMI-matched — efeito 'protetor' da deposição adiposa subcutânea gluteofemoral",
+   "note": "The review explicitly reports lower type 2 diabetes incidence and a favorable metabolic profile in lipedema despite high BMI, describing the gluteofemoral fat deposition as 'protective' — directly affirmative to the question regarding metab",
+   "old_claims": [
+    "SCR-LIP-000573"
+   ],
+   "old_statements": [
+    "In this review, lipedema patients show a metabolic paradox (frequent BMI ≥30 but preserved insulin sensitivity, normal blood pressure, no hepatic steatosis, normal adiponectin/leptin/CRP) and a LOWER incidence of type 2 diabetes compared with BMI-matched female controls, attributed to a 'protective' effect of gluteofemoral subcutaneous fat deposition."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "DEXA index (Buso et al.): leg-fat/total-fat ratio ≥0.384 suggests lipedema; <0.383 useful for exclusion",
+   "note": "Narrative review mentions a 'metabolic paradox' but the abstract is cut off before describing any specific protective findings for cancer or metabolic disease; it provides background/context rather than a direct test of the protective relat",
+   "old_claims": [
+    "SCR-LIP-000574"
+   ],
+   "old_statements": [
+    "This narrative review of lipedema notes a 'metabolic paradox' and a DEXA leg-fat/total-fat ratio ≥0.384 characterizing the peripheral fat distribution, but the abstract is truncated and does not report specific cancer or metabolic-disease outcome data quantifying protection."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1111/j.1600-0560.2009.01256.x",
+   "title": "Adipose tissue remodeling in lipedema: adipocyte death and concurrent regeneration",
+   "year": 2009,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "characterized by crown-like structures (necrotizing adipocytes surrounded by infiltrating CD68+ macrophages; a feature commonly seen in obese adipose tissue)",
+   "note": "The article reports that lipedema fat exhibits obesity-like inflammatory and degenerative features (crown-like structures, macrophage recruitment, hypertrophy, hypoxia cycle), which argues against the notion that peripheral/gynoid fat is me",
+   "old_claims": [
+    "SCR-LIP-000575"
+   ],
+   "old_statements": [
+    "Histopathology of severe lipedema tissue showed obesity-like crown-like structures (necrotizing adipocytes surrounded by CD68+ macrophages), adipocyte hypertrophy (>150 μm vs ~100 μm) and Ki67+CD34+ adipose stem cell proliferation, suggesting a self-perpetuating hypoxia-necrosis-regeneration cycle rather than a benign metabolic phenotype."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.3390/cells15191820",
+   "title": "The Adipovascular Unit in Lipedema: A Framework for Regional Adipose Tissue Dysregulation.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "lipedema is regionally patterned and may coexist with relatively preserved systemic metabolic function, whereas obesity-related adipose dysfunction is more closely linked to whole-body energy excess, ectopic fat, insulin resistance and cardiometabolic risk",
+   "note": "The review asserts (as a conceptual framing, not a tested result) that lipedema's regionally patterned fat may coexist with preserved metabolic function, distinguishing it from cardiometabolically harmful obesity. This is a qualified, hypot",
+   "old_claims": [
+    "SCR-LIP-000576"
+   ],
+   "old_statements": [
+    "This conceptual review proposes that lipedema represents a regionally patterned adipose dysregulation that may coexist with relatively preserved systemic metabolic function, in contrast to obesity-related adipose dysfunction linked to insulin resistance and cardiometabolic risk."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.3390/cimb48090892",
+   "title": "Molecular Distinctions, Diagnosis, and Mechanism-Based Therapies in Lipedema and Obesity.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema patients maintain metabolic health, exhibit gluteofemoral fat distribution and experience neuropathic pain via nociceptor sensitization",
+   "note": "The review states lipedema patients maintain metabolic health with gluteofemoral fat distribution versus obesity's cardiometabolic dysfunction, which is on-topic for the peripheral-fat-protection hypothesis; however, it does not itself test",
+   "old_claims": [
+    "SCR-LIP-000577"
+   ],
+   "old_statements": [
+    "This narrative review asserts that lipedema patients maintain metabolic health with a gluteofemoral fat distribution, in contrast to obesity's visceral adiposity and cardiometabolic comorbidities, but describes this as a largely hypothesis-generating characterization requiring confirmation in human studies."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema and lipedema-like peripheral fat distribution may be associated with greater insulin sensitivity than comparable obesity, though findings are mixed.",
+   "role": "supporting",
+   "rationale": "Only the matched clamp study and a population phenotype analysis support it; the clamp study found no fasting glycemic differences (see E10 under P3), E8 found no HOMA-IR difference and E12 reports HOMA-IR rising with stage.",
+   "evidence": [
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "In NHANES women, a DXA-defined lipedema-like phenotype (leg-to-trunk fat ratio >90th percentile, not diagnosed lipedema) had 44.2% lower median HOMA-IR (p<0.001) than other women, not obesity-matched."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Women with obesity and lipedema had ~23% greater leg fat mass, ~11% lower android-to-gynoid ratio and ~48% greater insulin sensitivity than women matched on age, BMI and whole-body adiposity."
+    },
+    {
+     "e": "E9",
+     "stance": "context",
+     "secondary_of": "E5",
+     "finding": "Review reports preserved insulin sensitivity (48% higher in obese lipedema), lower HbA1c, low diabetes (~5%) and dyslipidemia (~7%) prevalence, and M2 macrophage predominance in thigh fat."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00239"
+  },
+  {
+   "key": "P2",
+   "statement": "Diabetes is reported less frequently in lipedema and lipedema-like peripheral fat distribution than in comparison groups, although adiposity matching is limited.",
+   "role": "supporting",
+   "rationale": "Comparators are age-matched general women or other population women rather than adiposity-matched groups, and E3 uses an imaging-defined phenotype, not diagnosed lipedema.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "In a population-based NHANES analysis, the DXA-defined lipedema phenotype was associated with lower diabetes prevalence (1.8% vs 8.1%; OR 0.21; 95%CI 0.08-0.51; p<0.001)."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Chart review of 46 women with lipedema (mean BMI 35.3): diabetes 2% (vs ~10% in age-matched NHANES women), dyslipidemia 11.7% (vs 33.5%), hypertension 13% (vs 32.4%)."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Review reports lower type 2 diabetes incidence in lipedema than in BMI-matched female controls, plus preserved insulin sensitivity and normal CRP, attributed to protective gluteofemoral fat."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00240"
+  },
+  {
+   "key": "P3",
+   "statement": "Lipedema may be associated with a more favorable plasma lipid profile than obesity, though adiposity-matched comparisons are inconsistent.",
+   "role": "supporting",
+   "rationale": "Favorable lipids come from comparisons not shown to be adiposity-matched; the matched clamp study found no lipid difference (E10) and E4, placed under P4, reports higher LDL-cholesterol than BMI-matched controls.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Lipedema vs controls: HDL 1.65 vs 1.04 mmol/L (p<0.0001), lower LDL:HDL (1.65 vs 2.96) and triglyceride:HDL ratios; no difference in fasting glucose, insulin or HOMA-IR."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "53 lipedema vs 55 lifestyle-induced overweight/obesity (higher BMI): lower TG, LDL-C, HbA1c, HOMA-IR, uric acid, higher HDL-C, insulin resistance 11.3% vs 34.5%; limb-vs-abdominal fat best predicted favorable markers."
+    },
+    {
+     "e": "E10",
+     "stance": "contradicting",
+     "finding": "Review of the matched clamp study reports ~48% higher insulin sensitivity in obese lipedema but no significant differences in plasma lipids, fasting glucose, insulin, HbA1c or OGTT versus obese controls."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00241"
+  },
+  {
+   "key": "P4",
+   "statement": "Lipedema is reported to involve systemic and adipose tissue inflammation.",
+   "role": "contradicting",
+   "rationale": "Inflammatory findings qualify the protection hypothesis; reviews reporting normal CRP or M2-biased macrophages (E13, E9) sit under P2 and P1.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "21 of 78 inflammatory proteins elevated in lipedema vs BMI-matched controls (none higher in controls); also lower HbA1c and higher adiponectin but higher LDL-cholesterol, liver enzymes and oxidative stress."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "In 360 Italian women with lipedema, CRP rose from 1.38 to 4.93 mg/L across stages (p<0.001, persisting after age and BMI adjustment); HOMA-IR rose, 34% had glucose metabolism alterations, HDL fell."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Case report of severe lipedema tissue: obesity-like crown-like structures with CD68+ macrophages, adipocyte hypertrophy (>150 μm) and adipose stem cell proliferation, suggesting a hypoxia-necrosis-regeneration cycle."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00242"
+  },
+  {
+   "key": "P5",
+   "statement": "A lipedema-like peripheral fat distribution may be inversely associated with cancer prevalence in women.",
+   "role": "supporting",
+   "rationale": "A single cross-sectional preprint analysis of an imaging-defined phenotype reports this, with prevalence rather than incidence data.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "NHANES women 20-59: each 1-SD increase in leg-to-trunk fat ratio associated with lower adjusted odds of cancer (OR 0.795; 95%CI 0.666-0.948); strongest without obesity (OR 0.67); prevalence data, reverse causation possible."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00243"
+  },
+  {
+   "key": "P6",
+   "statement": "Regionally patterned gluteofemoral fat is proposed to coexist with preserved systemic metabolic health, in contrast to visceral obesity.",
+   "role": "context",
+   "rationale": "Conceptual and evolutionary reviews frame the hypothesis without testing it.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Theoretical perspective hypothesizing gynoid subcutaneous fat as an adaptive energy reserve conferring metabolic and longevity advantages vs visceral fat, with lipedema as maladaptive activation by inflammatory triggers."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Conceptual review proposes lipedema as regionally patterned adipose dysregulation that may coexist with relatively preserved systemic metabolic function, unlike obesity-related insulin resistance and cardiometabolic risk."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Narrative review states lipedema patients maintain metabolic health with gluteofemoral fat distribution vs obesity's visceral adiposity, described as hypothesis-generating and requiring confirmation in human studies."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00244"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E14",
+   "reason": "Truncated abstract mentions a 'metabolic paradox' but reports no cancer or metabolic outcome result; only a DEXA diagnostic index, off-topic for protection."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema and lipedema-like peripheral fat distribution may be associated with greater insulin sensitivity, including in obesity-matched comparisons, though other metabolic indices often do not differ.",
+    "severity": "minor",
+    "note": "Only E5 is an obesity-matched comparison (clamp-measured). E2 compares a DXA-defined phenotype with other women, not with obesity. E10 reports no differences in fasting glucose, insulin, HbA1c or OGTT in that same matched study, which supports the 'mixed' hedge. E9 is correctly marked secondary_of E5."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Diabetes is reported less frequently in lipedema and lipedema-like peripheral fat distribution than in general population comparators, though adiposity-matched data are limited and mixed.",
+    "severity": "minor",
+    "note": "E3 uses a DXA phenotype, not diagnosed lipedema, and E7 compares with age-matched population women, so neither is adiposity-matched. E13 is a review without data. In the matched clamp study (E10 and E5) there was no HbA1c or fasting glucose difference. The statement already hedges adiposity matching, so this is wording only."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema may be associated with a more favorable plasma lipid profile than comparison groups, though adiposity-matched comparisons are inconsistent and some report higher LDL.",
+    "severity": "minor",
+    "note": "E8 compares with controls, not obesity, and no difference in glucose or HOMA-IR. E4 reports higher LDL-cholesterol versus BMI-matched controls and belongs here as contradicting. E12 shows HDL falling with stage. E10 is correctly contradicting, although it re-reports E5 and should carry secondary_of E5."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema is reported to involve adipose tissue inflammation, with mixed evidence for systemic inflammation.",
+    "severity": "minor",
+    "note": "Adipose inflammation is supported (E15 is a case report). Systemic inflammation rests on E4 (proteomics) and E12 (CRP rising with stage), while E13, filed under P2 as a finding, reports normal CRP. E8 also reports inflammatory tissue changes but is placed only under P3. The role 'contradicting' is acceptable for the question."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Single cross-sectional NHANES analysis using a fat-ratio proxy, stated with 'may' and a prevalence and reverse-causation caveat. Adequate."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Properly framed as proposed or hypothetical, with context role. E17 states it is hypothesis-generating."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E2 and E3 carry the same NHANES DXA phenotype analysis (identical old_statement, a preprint and a likely published version) and E1 uses the same dataset. They are counted as independent in P1, P2 and P5. E1 and E2 DOIs look like medRxiv preprints.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E12 shows stage-dependent worsening of CRP, HOMA-IR and glucose alterations in lipedema, but no proposition carries the caveat that any metabolic advantage may not persist with progression or higher adiposity. It appears only inside P4.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E10 re-reports the E5 clamp study without secondary_of, and E13 states the lower-diabetes claim without primary data. Neither changes any statement but both inflate the apparent count of supporting studies.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P2 (lower diabetes) and P4 (systemic inflammation) draw on E13, which reports normal CRP, and E4, which reports a strong inflammatory profile. The set does not state this tension.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000010.cons2.json",
+   "ver": "SQ-LIP-000010.ver2.json"
+  }
+ ]
+}

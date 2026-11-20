@@ -133,7 +133,10 @@ Ciclo automático: **retrieval → classify → promove/corrobora → recompila 
   https://zenodo.org/record/20517114 (spec autônoma disease-agnostic = `docs/spec/PROTOCOL.md`; PDF+MD;
   `isPartOf` o concept DOI; publicado 2026-06-02). Ver R-PROTO-2.
 - **Concept DOI** (sempre a última versão): **10.5281/zenodo.20466195**
-- **Version DOI (v0.5.2, ATUAL):** **10.5281/zenodo.24325901** · Registro: https://zenodo.org/records/24325901
+- **Version DOI (v0.6, ATUAL):** **10.5281/zenodo.24396402** · Registro: https://zenodo.org/records/24396402
+  (consolidação R-CLM-19: 514 claims de artigo único → 215 proposições gerais com o achado de cada estudo; 837 achados,
+  356 DOIs; antigos mantidos como superseded/retired; publicado 2026-11-20)
+- **Version DOI (v0.5.2, substituída):** **10.5281/zenodo.24325901** · Registro: https://zenodo.org/records/24325901
   (correção da v0.5.1: sem nenhum resíduo de autoria banida; dataset igual ao da v0.5.1; publicado 2026-11-17)
 - **Version DOI (v0.5.1, substituída):** **10.5281/zenodo.24325390** · Registro: https://zenodo.org/records/24325390
   (correção da v0.5 no mesmo dia: 11 referências de autoria banida removidas, R-CLM-10 `author_ban`; risco de viés por
@@ -186,7 +189,7 @@ sem números), cada uma com os achados dos estudos em `evidence[].finding`. Os a
 com página e link para o novo; nada foi apagado. Ferramentas: `registry/consolidate.py` (modo API ou modo subagente
 `prep|check|prep-verify|repair-prompt|arbitrate|finish|store-listing|merge-twins`), `apply_consolidation.py` e
 `recompile_agent.py`. Para economizar, o trabalho pesado roda em **subagentes do Claude Code**, não no OpenRouter.
-O registro mudou de estrutura desde a v0.5.2: falta publicar a **v0.6** no Zenodo (exige confirmação).
+Publicado como **v0.6** no Zenodo (`10.5281/zenodo.24396402`).
 
 ### Estado anterior (2026-11-17)
 

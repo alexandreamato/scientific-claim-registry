@@ -1,0 +1,850 @@
+{
+ "question": "SQ-LIP-000025",
+ "text": "What specific genetic variants or inheritance patterns have been identified in lipedema?",
+ "n_old_claims": 19,
+ "n_items": 25,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: Tension between P2 (autosomal dominant inheritance most consistent) and the polygenic/heterogeneous architecture in E2, E11 and E12 and the no-single-gene statement in P3; no proposition states the polygenic model explicitly.",
+  "[minor] set: E18 (narrative review of AKR1C variants) re-reports E19 without secondary_of, and E11 re-reports E4, E12, E14 and E19 (used only for family history, acceptable).",
+  "[minor] set: E16 (systematic review: no confirmed gene, syndromic associations) supports P3 but is filed only under P2; syndromic gene associations (POU1F1, NSD1, ELN) have no proposition.",
+  "[minor] P1: two ideas — suggested: A positive family history is commonly reported in people with lipedema, with estimates varying widely and affected relatives mostly female. (Frequency rests on E21 (46%) and a review (E11, 30-89%); E9 (14.9% with an affected first-degree relative) and E16 (up to 64%), placed under P2, show how widely it varies. Bundles frequency with the sex of relatives, which only E21 (and E9) support.)",
+  "[minor] P2: not fully supported; overgeneralized; two ideas — suggested: Small pedigree series and reviews suggest autosomal dominant inheritance with sex limitation, although heterogeneous or polygenic contributions are also reported. (Primary support is one pedigree series (E9) and a brief description in E24; E16, E10 and E17 are reviews restating it. 'Reduced penetrance in males' is stated only in E24 (and 'incomplete penetrance' in E16). Items E2, E11 and E12 point to heterogeneous/polygenic architecture, which conflicts with an unqualified 'most consistent with autosomal dominant'.)",
+  "[minor] P3: two ideas; misplaced ['E15'] (Supported by E2 (no gene shared across 9 families) and by E16/E24 (no confirmed gene), but E16 and E24 sit under P2. E15 (estrogen signalling and sex-hormone gene variants) does not bear on whether a single gene exists. Statement is in mild tension with P4/E7 ('first mutated gene').)",
+  "[minor] P5: not fully supported; overgeneralized — suggested: Common variants at several loci are associated with a lipedema-like phenotype in genome-wide studies, though samples are small and replication is limited. ('Linked to body fat distribution' is not stated in any finding; E13/E14 loci relate to lipoma formation and hormone biosynthesis. E12 uses an inferred phenotype in a biobank rather than clinically diagnosed lipedema, and E14 is only suggestive (not genome-wide significant, n=130). E13 is the preprint of E14, correctly marked secondary.)",
+  "[minor] P6: overgeneralized — suggested: Rare predicted-deleterious variants in genes of lipid metabolism and insulin signalling are reported in a minority of people with lipedema. (Single uncontrolled panel study (E4), E5 is a secondary citation. Stated as established fact; no control or replication, and several listed genes (POMC, RYR1, GHR) are not clearly lipid or adipogenesis genes.)",
+  "[minor] P7: not fully supported (One small case-control study, wide confidence interval (1.98-17.71), no replication; the quoted passage concerns body-composition indices, with the OR only in old_statement. Hedged with 'may', so acceptable.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.26355/eurrev_202003_20690",
+   "title": "The role of IL-6 gene polymorphisms in the risk of lipedema",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Índices compostos — leg index, trunk index, abdominal index, total index — combinados com análise genética do IL-6, são ferramentas promissoras para diagnóstico e predição da evolução do lipedema.",
+   "note": "The article proposes composite body-composition indices and IL-6 genotyping as promising tools for diagnosis and differential analysis of lipedema, indirectly supporting that screening/diagnostic tools can help identify it; however it does ",
+   "old_claims": [
+    "SCR-LIP-000287"
+   ],
+   "old_statements": [
+    "In a case-control study, carriers of the IL-6 rs1800795 G allele had a 5.92-fold higher risk of lipedema (OR=5.92, 95%CI 1.983–17.711, p<0.001), and DXA-derived body composition indices (reduced WHR 0.73 vs 0.79, higher lower-limb FM% 48.90% vs 42.55%) combined with genetic analysis were proposed as tools for differential diagnosis between lipedema, normal-weight obesity, and obesity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1089/lrb.2023.0065",
+   "title": "A Family-Based Study of Inherited Genetic Risk in Lipedema",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Historical evaluation of individuals with lipedema indicates a positive family history in 60%-80% of cases; however, genetic investigation of larger family cohorts is required.",
+   "note": "The article directly addresses the question by reporting specific candidate genes/pathways and inheritance patterns; it refines the affirmative by concluding lipedema shows polygenic heterogeneity rather than a single Mendelian variant.",
+   "old_claims": [
+    "SCR-LIP-000215"
+   ],
+   "old_statements": [
+    "Family-based exome sequencing of 31 individuals from 9 lipedema families identified candidate variants in 469 genes with no single gene shared across all families, supporting genetic heterogeneity rather than a Mendelian single-gene cause, with gene ontology enrichment in vasopressin receptor activity (AVPR1A, AVPR2), microfibril binding (FBN, ELN, LTBP), and patched binding (PTCH1/2, Hedgehog pathway)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1089/lrb.2024.29161.editorial",
+   "title": "Focus on Lipedema: Unraveling the Mysteries Through Research",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "análise de DNA de 31 indivíduos de 9 famílias afetadas por lipedema rendeu 469 variantes gênicas candidatas; avaliação de ontologia gênica sugeriu que atividade do receptor de vasopressina, ligação a microfibrilas e ligação a patched podem ser contribuintes importantes do risco genético",
+   "note": "Editorial commentary describing a familial genetic study that identified multiple candidate variants and ontology categories, emphasizing a multigenic (not single-gene) inheritance; these are preliminary candidates for future analysis, so i",
+   "old_claims": [
+    "SCR-LIP-000215"
+   ],
+   "old_statements": [
+    "Family-based exome sequencing of 31 individuals from 9 lipedema families identified candidate variants in 469 genes with no single gene shared across all families, supporting genetic heterogeneity rather than a Mendelian single-gene cause, with gene ontology enrichment in vasopressin receptor activity (AVPR1A, AVPR2), microfibril binding (FBN, ELN, LTBP), and patched binding (PTCH1/2, Hedgehog pathway)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.3390/jpm12020268",
+   "title": "A Multi-Gene Panel to Identify Lipedema-Predisposing Genetic Variants by a Next-Generation Sequencing Strategy",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "21 variantes deletérias heterozigóticas identificadas em 17 de 162 pacientes (10,5% da coorte) Variantes distribuídas em 12 genes: PLIN1, LIPE, PPARG, POMC, NR0B2, GCKR, NPC1",
+   "note": "The article directly identifies specific genetic variants in candidate genes from a lipedema patient cohort using NGS, directly addressing the question on genetic variants in lipedema. [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000216"
+   ],
+   "old_statements": [
+    "A 305-gene NGS panel applied to 162 lipedema patients identified 21 heterozygous deleterious variants in 17 patients (10.5%) across 12 genes (PLIN1, LIPE, PPARG, POMC, NR0B2, GCKR, NPC1, ALDH18A1, GHR, INSR, RYR1, PPARA), most involved in steroidogenesis, lipid homeostasis, and insulin signaling, including PLIN1 c.722T>C linked to familial partial lipodystrophy type 4."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "21 variantes deletérias em 12 genes (PLIN1, LIPE, ALDH18A1, PPARG, GHR, INSR, RYR1, NPC1, POMC, NR0B2, GCKR, PPARA) identificadas em 17 desses 162 pacientes",
+   "note": "The article directly summarizes specific genetic variants, candidate genes, GWAS risk loci, and monogenic mutations associated with lipedema, directly addressing the question. As a narrative review synthesizing primary studies, confidence i [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000216"
+   ],
+   "old_statements": [
+    "A 305-gene NGS panel applied to 162 lipedema patients identified 21 heterozygous deleterious variants in 17 patients (10.5%) across 12 genes (PLIN1, LIPE, PPARG, POMC, NR0B2, GCKR, NPC1, ALDH18A1, GHR, INSR, RYR1, PPARA), most involved in steroidogenesis, lipid homeostasis, and insulin signaling, including PLIN1 c.722T>C linked to familial partial lipodystrophy type 4."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1007/s00404-026-08318-1",
+   "title": "Impact of hormones on lipedema development: a systematic literature review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "AKR1C1 missense variant (Michelini 2020): clearance de progesterona reduzido, aumento adipogênese via ADD1/SREBP1c, redução PGF2",
+   "note": "The review explicitly cites a familial genetic study and a specific AKR1C1 missense variant plus other gene-level findings (ZNF423, CAV1), directly bearing on genetic variants in lipedema, though genetics is a secondary focus of this hormon",
+   "old_claims": [
+    "SCR-LIP-000217"
+   ],
+   "old_statements": [
+    "This systematic review reports specific genetic findings in lipedema including an AKR1C1 missense variant (Michelini 2020) associated with reduced progesterone clearance and increased adipogenesis, a familial Pit1 mutation causing GH and testosterone deficiency (Bano 2010), and upregulation of ZNF423 and CAV1 dysfunction, supporting a possible genetic susceptibility component."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.3390/jpm13010098",
+   "title": "Lipedema Research—Quo Vadis?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Variante missense no gene AKR1C1 (aldo-ceto redutase envolvida no metabolismo da progesterona) — primeiro gene mutado identificado em família com lipedema primário não sindrômico",
+   "note": "The review explicitly describes inheritance patterns (X-linked dominant/autosomal dominant with incomplete penetrance, oligogenic) and names a specific variant (AKR1C1 missense) identified in primary lipedema, directly addressing the questi [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000217"
+   ],
+   "old_statements": [
+    "This systematic review reports specific genetic findings in lipedema including an AKR1C1 missense variant (Michelini 2020) associated with reduced progesterone clearance and increased adipogenesis, a familial Pit1 mutation causing GH and testosterone deficiency (Bano 2010), and upregulation of ZNF423 and CAV1 dysfunction, supporting a possible genetic susceptibility component."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1055/a-2183-7414",
+   "title": "Auf der Suche nach der Evidenz: Eine systematische Übersichtsarbeit zur Pathologie des Lipödems",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "3429 genes diferencialmente expressos (Ishaq) — genes de ciclo celular (Bub1, CDC20, BIRC5) proeminentemente afetados",
+   "note": "The review addresses molecular/pathogenesis findings including differential gene expression but does not identify specific genetic variants or inheritance patterns; it explicitly states aetiology remains uncertain. It provides background co",
+   "old_claims": [
+    "SCR-LIP-000218"
+   ],
+   "old_statements": [
+    "A systematic review of lipedema pathology reported that, despite growing histological and molecular research, the aetiology remains largely uncertain; it noted differential gene expression in lipedema adipose-derived stem cells (3429 genes, including cell-cycle genes Bub1, CDC20, BIRC5 per Ishaq) but did not identify specific inherited variants or defined inheritance patterns."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1002/ajmg.a.33313",
+   "title": "Lipedema: An inherited condition",
+   "year": 2010,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "We present a series of pedigrees and propose that lipedema is a genetic condition with either X-linked dominant inheritance or more likely, autosomal dominant inheritance with sex limitation. Lipedema appears to be a condition almost exclusively affecting females, presumably estrogen-requiring as it",
+   "note": "The article directly addresses both heredity (familial pedigrees, linkage analysis indicating autosomal dominant inheritance with sex limitation) and hormonal influence (puberty onset, near-exclusive female occurrence suggesting estrogen de",
+   "old_claims": [
+    "SCR-LIP-000219"
+   ],
+   "old_statements": [
+    "In a series of 67 probands, 14.9% had at least one affected first-degree relative (all affected relatives female), X-chromosome linkage analysis in the largest family excluded X-linked dominant inheritance (lod scores < -2) favoring autosomal dominant inheritance with sex limitation, and onset at puberty in 55% of probands plus near-exclusive female occurrence suggested estrogen-dependent expression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.3390/ijms23126621",
+   "title": "Current Mechanistic Understandings of Lymphedema and Lipedema: Tales of Fluid, Fat, and Fibrosis",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "GENÉTICA DO LIPEDEMA: her",
+   "note": "The article includes a dedicated genetics domain on lipedema and references heredity, making it relevant, but the abstract text is cut off and does not state specific variants or inheritance patterns, so it provides context rather than spec [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000234"
+   ],
+   "old_statements": [
+    "This narrative review describes lipedema as having a hereditary component with autosomal dominant familial inheritance, and notes shared and distinct genetic markers between lipedema and lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1038/s44324-025-00093-y",
+   "title": "Unraveling lipedema: comprehensive insights and the path to future discoveries",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Genética poligênica: história familiar em 30-89% dos casos; GWAS de 2022 com 130 portadoras identificou 6 regiões (CPE, ZNF25, ZNF33A — biologia do estrogênio); estudo no UK Biobank com fenótipo inferido em 24.450 mulheres achou 18 loci (replicando VEGFA e GRB14-COBLL1). Variante missense em AKR1C1 ",
+   "note": "The review directly synthesizes genetic findings in lipedema, naming specific GWAS loci, candidate genes, and a missense variant, and characterizes the inheritance as polygenic, directly addressing the question. [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000235"
+   ],
+   "old_statements": [
+    "This review reports lipedema as polygenic with familial history in 30-89% of cases, citing a 2022 GWAS (130 carriers) identifying 6 regions (CPE, ZNF25, ZNF33A linked to estrogen biology), a UK Biobank study (24,450 women) finding 18 loci replicating VEGFA and GRB14-COBLL1, a partial loss-of-function missense variant in AKR1C1 in a non-syndromic lipedema family, and a multigene panel of 305 loci finding 17 probable deleterious lesions in 21/162 participants, with no single causal gene and no overlap with primary lymphedema or lipodystrophies."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1038/s41431-022-01231-6",
+   "title": "Genome-wide association study of a lipedema phenotype among women in the UK Biobank identifies multiple genetic risk factors",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "18 loci genome-wide significativos (p<5x10^-9) associados ao fenótipo lipedêmico: RSPO3 (rs72959041, OR=1,24, p=2,7x10^-19), GRB14-COBLL1 (rs1128249, OR=0,92, p=3,0x10^-16)",
+   "note": "First GWAS of a lipedema phenotype directly identifying specific genetic variants and a polygenic inheritance pattern, with partial replication; uses an inferred phenotype rather than clinical diagnosis in the discovery cohort, limiting cer",
+   "old_claims": [
+    "SCR-LIP-000235"
+   ],
+   "old_statements": [
+    "This review reports lipedema as polygenic with familial history in 30-89% of cases, citing a 2022 GWAS (130 carriers) identifying 6 regions (CPE, ZNF25, ZNF33A linked to estrogen biology), a UK Biobank study (24,450 women) finding 18 loci replicating VEGFA and GRB14-COBLL1, a partial loss-of-function missense variant in AKR1C1 in a non-syndromic lipedema family, and a multigene panel of 305 loci finding 17 probable deleterious lesions in 21/162 participants, with no single causal gene and no overlap with primary lymphedema or lipodystrophies."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1101/2021.06.15.21258988",
+   "title": "Investigation of clinical characteristics and genome associations in the ‘UK Lipoedema’ cohort",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Top SNPs included loci associated with lipoma formation, biosynthesis of hormones and lipid hydroxylation.",
+   "note": "The article reports a GWAS identifying specific genetic loci suggestively associated with lipedema, directly addressing the question about genetic variants; findings are described as suggestive and requiring replication.",
+   "old_claims": [
+    "SCR-LIP-000235"
+   ],
+   "old_statements": [
+    "This review reports lipedema as polygenic with familial history in 30-89% of cases, citing a 2022 GWAS (130 carriers) identifying 6 regions (CPE, ZNF25, ZNF33A linked to estrogen biology), a UK Biobank study (24,450 women) finding 18 loci replicating VEGFA and GRB14-COBLL1, a partial loss-of-function missense variant in AKR1C1 in a non-syndromic lipedema family, and a multigene panel of 305 loci finding 17 probable deleterious lesions in 21/162 participants, with no single causal gene and no overlap with primary lymphedema or lipodystrophies."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1371/journal.pone.0274867",
+   "title": "Investigation of clinical characteristics and genome associations in the ‘UK Lipoedema’ cohort",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "SNP top: rs1409440 (OR_meta 2,01; P_meta 4 × 10⁻⁶) — significância sugestiva (não genome-wide significativa, P<5×10⁻⁸), localizado upstream de LHFPL6 (Lipoma HMGIC Fusion Partner-Like 6)",
+   "note": "Article reports a dedicated GWAS identifying a specific genetic locus (rs1409440 near LHFPL6) associated with lipedema, directly addressing the question; association is only suggestive due to small sample size.",
+   "old_claims": [
+    "SCR-LIP-000236"
+   ],
+   "old_statements": [
+    "A GWAS of a UK lipedema cohort (n=130) identified a suggestive association (not genome-wide significant) at SNP rs1409440 (OR_meta 2.01; P_meta 4×10⁻⁶) located upstream of LHFPL6, a gene involved in lipoma formation, with additional support from an independent 100,000 Genomes replication cohort."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.3390/ijms222111720",
+   "title": "Lipedema and the Potential Role of Estrogen in Excessive Adipose Tissue Accumulation",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The onset of lipedema pathophysiology is thought to occur during periods of hormonal fluctuation, such as puberty, pregnancy, or menopause.",
+   "note": "Narrative/mechanistic review proposing hormonal (estrogen receptor) and genetic bases for lipedema onset, directly addressing both hormonal influence and heredity; supports the affirmative direction but is hypothesis-generating with no orig [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000225"
+   ],
+   "old_statements": [
+    "This review proposes that dysregulated estrogen signaling in adipose tissue—via an increased ERα/ERβ ratio in gluteofemoral adipocytes or excessive local paracrine estrogen production by adipocyte steroidogenic enzymes—drives the excessive subcutaneous fat accumulation in lipedema, and cites whole-exome sequencing linking lipedema to variants in sex hormone genes, with onset coinciding with hormonal fluctuation periods such as puberty, pregnancy, and menopause."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.26355/eurrev_201907_18292",
+   "title": "Genetics of lipedema: new perspectives on genetic research and molecular diagnoses",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "herança autossômica dominante com penetrância incompleta e limitação sexual (principalmente mulheres afetadas) = modo mais provável de herança. História familiar positiva autorrelatada em até 64% das mulheres",
+   "note": "The article directly addresses the question by reviewing inheritance patterns and specific genetic variants/candidate genes in lipedema, including the proposed autosomal dominant mode and named syndromic mutations and GWAS candidates. [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000238"
+   ],
+   "old_statements": [
+    "This systematic review reports that lipedema most likely follows autosomal dominant inheritance with incomplete penetrance and sex limitation (positive family history in up to 64% of women), identifies no confirmed gene for primary non-syndromic lipedema, and catalogs syndromic associations (POU1F1A c.196C>T p.Pro24Leu; NSD1 p.Cys2175Ser/Sotos; 7q11.23 deletion/Williams-Beuren with ELN, FZD9, MLXIPL; ABCC6/PXE; ALDH18A1/cutis laxa III) plus 17 GWAS/animal-model candidate genes (e.g., LYPLAL1, TBX15, HOXC13, RSPO3, VEGFA, PROX1, VEGFR3, PRDM16)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Genética como causa substancial mas com estudos subdimensionados; herança autossômica dominante feminino-preferencial",
+   "note": "The review explicitly discusses genetic implications, citing autosomal dominant female-preferential inheritance and specific genes (CCND1, ZNF423, CYP19A1, COL6A3, MMP14), directly addressing the question, though as a narrative synthesis wi [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000239"
+   ],
+   "old_statements": [
+    "This narrative review reports that lipedema follows a female-preferential autosomal dominant inheritance pattern and is associated with altered expression of specific genes including CCND1, ZNF423, CYP19A1 (aromatase), COL6A3, and MMP14, while noting that genetic studies remain underpowered."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.4081/vl.2026.15495",
+   "title": "From rare familial mutations to multifactorial disease: aldo-keto reductase 1C enzymes as a central biological pathway in lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Variante AKR1C1 p.Leu213Gln (L213Q) — descrita por Michelini et al. — segrega com lipedema em 3 gerações",
+   "note": "The article directly reviews specific genetic variants and inheritance patterns in lipedema (familial AKR1C1 L213Q segregating in 3 generations, AKR1C2 mutation, regulatory SNPs), proposing a mono-to-multifactorial genetic model. As a narra",
+   "old_claims": [
+    "SCR-LIP-000240"
+   ],
+   "old_statements": [
+    "This review identifies specific lipedema-associated variants in AKR1C genes, including the familial AKR1C1 p.Leu213Gln (L213Q) mutation segregating across three generations and reducing catalytic efficiency ~50%, the gain-of-function AKR1C2 Ser320PheTer2 mutation, AKR1C2 overexpression in 24% (5/21) of patients without coding mutations, and regulatory SNPs rs28571848 (glucocorticoid receptor site) and rs34477787 (RORα site) that increase AKR1C2/AKR1C3 expression and truncal fat mass independent of BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.3390/ijms21176264",
+   "title": "Aldo-Keto Reductase 1C1 (AKR1C1) as the First Mutated Gene in a Family with Nonsyndromic Primary Lipedema",
+   "year": 2020,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Variante AKR1C1 c.638T>A; p.L213Q identificada exclusivamente nas 3 pacientes afetadas e ausente nos 9 membros não afetados da família",
+   "note": "The article directly identifies a specific genetic variant (AKR1C1 p.L213Q) and an autosomal dominant inheritance pattern in a single lipedema family, directly addressing the question; evidence is from one family with functional predictions",
+   "old_claims": [
+    "SCR-LIP-000240"
+   ],
+   "old_statements": [
+    "This review identifies specific lipedema-associated variants in AKR1C genes, including the familial AKR1C1 p.Leu213Gln (L213Q) mutation segregating across three generations and reducing catalytic efficiency ~50%, the gain-of-function AKR1C2 Ser320PheTer2 mutation, AKR1C2 overexpression in 24% (5/21) of patients without coding mutations, and regulatory SNPs rs28571848 (glucocorticoid receptor site) and rs34477787 (RORα site) that increase AKR1C2/AKR1C3 expression and truncal fat mass independent of BMI."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.26355/eurrev_202312_34698",
+   "title": "AKR1C1 and hormone metabolism in lipedema pathogenesis: a computational biology approach",
+   "year": 2023,
+   "design": "basic_science",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Três variantes missense em AKR1C1 identificadas em pacientes com lipedema: Leu54Val (L54V), Leu54Phe (L54F) e Asn280Lys (N280K) — todas disruptivas à função enzimática",
+   "note": "The article directly identifies specific AKR1C1 genetic variants in lipedema patients and characterizes their predicted pathogenicity via computational/structural biology, directly addressing the question on genetic variants. Confidence is ",
+   "old_claims": [
+    "SCR-LIP-000241"
+   ],
+   "old_statements": [
+    "Targeted NGS and molecular dynamics simulations identified three missense AKR1C1 variants (L54V, L54F, N280K) in lipedema patients that disrupt substrate or cofactor (NADP+) binding, and screening of gnomAD identified 8 rare AKR1C1 polymorphisms as potentially pathogenic, extending AKR1C1 as a candidate gene for autosomal dominant non-syndromic lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Apenas 23% tinham diagnóstico prévio de lipedema (77% subdiagnosticadas)",
+   "note": "The article reports demographic and epidemiological characteristics directly bearing on who lipedema affects (women, age of onset, family history, BMI) and its underdiagnosis, supporting the question's affirmative direction; it does not pro [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000141"
+   ],
+   "old_statements": [
+    "In a Saudi cross-sectional study of 115 patients with lower-limb edema, lipedema was clinically confirmed in 71%, affected only women with mean age 38.6 years and mean BMI 30.5, with disease onset typically at ages 20-39, perceived triggers being puberty (49%), pregnancy (22%), and massive weight loss (22%), a positive family history in 46% (predominantly mothers and sisters), and 77% being previously undiagnosed."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1016/j.jss.2020.03.055",
+   "title": "Adipose Tissue Hypertrophy, An Aberrant Biochemical Profile and Distinct Gene Expression in Lipedema",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "PCR array de adipogênese (84 genes): apenas 5 genes diferencialmente expressos. Upregulado: CCND1 (2,16×, P=0,016). Downregulados: CEBPD (-2,7×, P<0,001), CFD (-1,88×, P=0,01), NCOR2 (-1,81×, P=0,037), KLF4 (-3,57×, P=0,01).",
+   "note": "The article reports differential gene EXPRESSION (transcript-level) in lipedema adipose tissue, not specific genetic variants or inheritance patterns. It provides molecular context relevant to lipedema genetics but does not directly address",
+   "old_claims": [
+    "SCR-LIP-000393"
+   ],
+   "old_statements": [
+    "A PCR adipogenesis array of 84 genes in lipedema adipose tissue versus matched controls found 5 differentially expressed genes (upregulated CCND1 2.16x; downregulated CEBPD -2.7x, CFD -1.88x, NCOR2 -1.81x, KLF4 -3.57x), reflecting altered gene expression rather than identifying germline genetic variants or inheritance patterns."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1186/s12967-026-07726-w",
+   "title": "Santella et al. Journal of Translational Medicine",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Genome-wide DNA methylation profiling identified over 5,000 differentially methylated CpG sites affecting genes involved in receptor tyrosine kinase signaling, phospho-metabolism, and immune pathways.",
+   "note": "The article reports epigenetic (DNA methylation) alterations, not germline genetic variants or Mendelian inheritance patterns; it identifies AKT1 promoter hypomethylation rather than a specific inherited variant, so it refines the question ",
+   "old_claims": [
+    "SCR-LIP-000431"
+   ],
+   "old_statements": [
+    "Multi-omics profiling of late-stage lipedema identified over 5,000 differentially methylated CpG sites and hypomethylation of the AKT1 promoter correlating with increased AKT1 expression and phosphorylation, positioning enhanced AKT pathway signaling as a central epigenetic and molecular alteration rather than a defined germline inheritance pattern."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1016/j.jbiotec.2019.05.040",
+   "title": "Target and whole exome sequencing in families with lymphedema and lipedema",
+   "year": 2019,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Herança no lipedema: padrão autossômico dominante com penetrância completa em mulheres e penetrância reduzida em homens",
+   "note": "The article reports an autosomal dominant inheritance pattern with sex-dependent penetrance for lipedema but explicitly states no causative gene was identified as of 2019; it refines the question by describing an inheritance pattern while n",
+   "old_claims": [
+    "SCR-LIP-000527"
+   ],
+   "old_statements": [
+    "In families with lipedema, lipedema inheritance is described as an autosomal dominant pattern with complete penetrance in women and reduced penetrance in men, but as of 2019 no causative gene had been identified, prompting the use of combined targeted gene sequencing and whole exome sequencing to search for candidate variants."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1093/nutrit/nuaf203",
+   "title": "Current Evidence-Based Clinical Nutritional Approaches in Lipedema: A Scoping Review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "This disease is associated with genetic predisposition, hormonal imbalances, impaired lymphatic function, and vascular dysfunction.",
+   "note": "The article is about clinical nutrition, not genetics, and only mentions genetic predisposition in passing without specifying any variants or inheritance patterns.",
+   "old_claims": [
+    "SCR-LIP-000528"
+   ],
+   "old_statements": [
+    "This scoping review on nutritional approaches in lipedema mentions that the condition is associated with genetic predisposition but does not identify specific genetic variants or inheritance patterns."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "A positive family history is frequently reported in people with lipedema, with affected relatives predominantly female.",
+   "role": "supporting",
+   "rationale": "Clinical cross-sectional samples and reviews report familial clustering, though reported frequencies vary widely.",
+   "evidence": [
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "In 115 patients with lower-limb edema, lipedema confirmed in 71%; positive family history in 46%, predominantly mothers and sisters."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Review reports a family history in 30-89% of lipedema cases and describes lipedema as polygenic."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00071"
+  },
+  {
+   "key": "P2",
+   "statement": "Pedigree data in lipedema are most consistent with autosomal dominant inheritance with sex limitation and reduced penetrance in males.",
+   "role": "supporting",
+   "rationale": "The main pedigree series excluded X-linked dominant inheritance, and reviews and family sequencing studies converge on sex-limited autosomal dominant transmission.",
+   "evidence": [
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "In 67 probands, 14.9% had an affected first-degree relative (all female); X-linkage analysis in the largest family excluded X-linked dominant inheritance (lod < -2), favouring sex-limited autosomal dominant inheritance."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Systematic review: autosomal dominant inheritance with incomplete penetrance and sex limitation most likely; family history in up to 64%; no confirmed gene for non-syndromic lipedema; syndromic associations catalogued (POU1F1, NSD1, Williams-Beuren)."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "In families with lipedema, inheritance described as autosomal dominant with complete penetrance in women and reduced penetrance in men; no causative gene identified as of 2019."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Narrative review describes a hereditary component with autosomal dominant familial inheritance and shared and distinct genetic markers with lymphedema."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Narrative review describes female-preferential autosomal dominant inheritance and notes genetic studies remain underpowered."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00072"
+  },
+  {
+   "key": "P3",
+   "statement": "Lipedema may be genetically heterogeneous, with no single causal gene shared across affected families.",
+   "role": "refines",
+   "rationale": "Family exome sequencing found no gene shared across families, qualifying single-gene Mendelian models.",
+   "evidence": [
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Exome sequencing of 31 individuals from 9 families: candidate variants in 469 genes, none shared by all families; enrichment in vasopressin receptor, microfibril binding and patched binding pathways."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "finding": "Editorial summarises the family study: 469 candidate variants from 9 families, implicating vasopressin receptor activity, microfibril binding and patched binding.",
+     "secondary_of": "E2"
+    },
+    {
+     "e": "E15",
+     "stance": "context",
+     "finding": "Review proposes dysregulated estrogen signalling in adipose tissue and cites exome sequencing linking lipedema to variants in sex hormone genes."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00196",
+   "statement_before_twin_merge": "No single causative gene has been established for non-syndromic lipedema, and its genetic basis appears heterogeneous."
+  },
+  {
+   "key": "P4",
+   "statement": "Rare variants in hormone-metabolism genes such as AKR1C1 have been reported in isolated lipedema families, but replication is lacking.",
+   "role": "supporting",
+   "rationale": "A variant segregating in one family, further variants in patients with computational support, and reviews support AKR1C1 as a candidate gene.",
+   "evidence": [
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "AKR1C1 c.638T>A (p.L213Q) found in all 3 affected family members and absent in 9 unaffected relatives."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Targeted sequencing found three missense AKR1C1 variants (L54V, L54F, N280K) in lipedema patients; molecular dynamics predicted disrupted substrate or cofactor binding; 8 rare gnomAD variants flagged as potentially pathogenic."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Review: AKR1C1 L213Q segregates over three generations and reduces catalytic efficiency ~50%; also AKR1C2 Ser320PheTer2 gain-of-function, AKR1C2 overexpression in 5/21 patients, regulatory SNPs."
+    },
+    {
+     "e": "E7",
+     "stance": "context",
+     "finding": "Review cites the AKR1C1 missense variant as the first mutated gene identified in a family with non-syndromic lipedema.",
+     "secondary_of": "E19"
+    },
+    {
+     "e": "E6",
+     "stance": "context",
+     "finding": "Systematic review cites the AKR1C1 variant with reduced progesterone clearance and increased adipogenesis, plus a familial Pit1 mutation with GH and testosterone deficiency.",
+     "secondary_of": "E19"
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00198",
+   "statement_before_twin_merge": "Rare missense variants in an aldo-keto reductase gene involved in progesterone metabolism are proposed as a cause of familial non-syndromic lipedema."
+  },
+  {
+   "key": "P5",
+   "statement": "Common genetic variants at loci linked to body fat distribution are associated with lipedema phenotypes in genome-wide studies.",
+   "role": "supporting",
+   "rationale": "A large biobank study with an inferred phenotype found genome-wide significant loci, while a smaller clinical cohort found only suggestive signals.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "In UK Biobank women with an inferred lipedema phenotype, 18 genome-wide significant loci, including RSPO3 (OR 1.24, p=2.7e-19) and GRB14-COBLL1 (OR 0.92, p=3.0e-16)."
+    },
+    {
+     "e": "E14",
+     "stance": "refines",
+     "finding": "GWAS of a UK lipedema cohort (n=130): top SNP rs1409440 upstream of LHFPL6 (OR 2.01, P=4e-6), suggestive but not genome-wide significant; independent replication support."
+    },
+    {
+     "e": "E13",
+     "stance": "context",
+     "finding": "Preprint of the UK lipoedema cohort: top SNPs at loci associated with lipoma formation, hormone biosynthesis and lipid hydroxylation.",
+     "secondary_of": "E14"
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00075"
+  },
+  {
+   "key": "P6",
+   "statement": "Deleterious variants in genes of lipid metabolism, adipogenesis and insulin signalling are found in a minority of people with lipedema.",
+   "role": "supporting",
+   "rationale": "A multigene sequencing panel found heterozygous deleterious variants across several metabolic genes in a minority of patients.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "305-gene NGS panel in 162 patients: 21 heterozygous deleterious variants in 17 (10.5%) across 12 genes (PLIN1, LIPE, PPARG, POMC and others), including PLIN1 c.722T>C linked to partial lipodystrophy."
+    },
+    {
+     "e": "E5",
+     "stance": "context",
+     "finding": "Review cites 21 deleterious variants in 12 genes identified in 17 of 162 lipedema patients.",
+     "secondary_of": "E4"
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00076"
+  },
+  {
+   "key": "P7",
+   "statement": "A polymorphism in the interleukin-six gene may be associated with increased lipedema risk.",
+   "role": "supporting",
+   "rationale": "A single case-control study reports an association with an inflammatory gene polymorphism; it is hedged pending replication.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Carriers of the IL-6 rs1800795 G allele had higher lipedema risk (OR 5.92, 95% CI 1.98-17.71, p<0.001)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00077"
+  },
+  {
+   "key": "P8",
+   "statement": "Lipedema adipose tissue and stem cells show altered gene expression and DNA methylation compared with controls.",
+   "role": "context",
+   "rationale": "Expression and methylation differences describe tissue biology rather than identifying inherited variants or transmission patterns.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Systematic review notes 3429 differentially expressed genes in lipedema adipose-derived stem cells, including cell-cycle genes; aetiology uncertain and no inherited variants identified."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Adipogenesis PCR array of 84 genes: CCND1 upregulated (2.16x) and CEBPD, CFD, NCOR2, KLF4 downregulated in lipedema tissue vs matched controls."
+    },
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "In late-stage lipedema, over 5000 differentially methylated CpG sites and AKT1 promoter hypomethylation correlating with increased AKT1 expression and phosphorylation."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00078"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E25",
+   "reason": "Not a finding: nutritional scoping review only mentions genetic predisposition without any variant or inheritance result."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "A positive family history is commonly reported in people with lipedema, with estimates varying widely and affected relatives mostly female.",
+    "severity": "minor",
+    "note": "Frequency rests on E21 (46%) and a review (E11, 30-89%); E9 (14.9% with an affected first-degree relative) and E16 (up to 64%), placed under P2, show how widely it varies. Bundles frequency with the sex of relatives, which only E21 (and E9) support."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Small pedigree series and reviews suggest autosomal dominant inheritance with sex limitation, although heterogeneous or polygenic contributions are also reported.",
+    "severity": "minor",
+    "note": "Primary support is one pedigree series (E9) and a brief description in E24; E16, E10 and E17 are reviews restating it. 'Reduced penetrance in males' is stated only in E24 (and 'incomplete penetrance' in E16). Items E2, E11 and E12 point to heterogeneous/polygenic architecture, which conflicts with an unqualified 'most consistent with autosomal dominant'."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E15"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Supported by E2 (no gene shared across 9 families) and by E16/E24 (no confirmed gene), but E16 and E24 sit under P2. E15 (estrogen signalling and sex-hormone gene variants) does not bear on whether a single gene exists. Statement is in mild tension with P4/E7 ('first mutated gene')."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Missense variants in the progesterone-metabolising enzyme gene AKR1C1 have been reported in a lipedema family and in patients and are proposed as a cause of familial lipedema.",
+    "severity": "minor",
+    "note": "Hedged by 'proposed'. Evidence is one three-affected family (E19, segregation only), a computational/targeted study without a family design (E20) and a review (E18) that re-reports E19 without secondary_of. 'An aldo-keto reductase gene' is vaguer than the evidence, which is mostly AKR1C1."
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Common variants at several loci are associated with a lipedema-like phenotype in genome-wide studies, though samples are small and replication is limited.",
+    "severity": "minor",
+    "note": "'Linked to body fat distribution' is not stated in any finding; E13/E14 loci relate to lipoma formation and hormone biosynthesis. E12 uses an inferred phenotype in a biobank rather than clinically diagnosed lipedema, and E14 is only suggestive (not genome-wide significant, n=130). E13 is the preprint of E14, correctly marked secondary."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Rare predicted-deleterious variants in genes of lipid metabolism and insulin signalling are reported in a minority of people with lipedema.",
+    "severity": "minor",
+    "note": "Single uncontrolled panel study (E4), E5 is a secondary citation. Stated as established fact; no control or replication, and several listed genes (POMC, RYR1, GHR) are not clearly lipid or adipogenesis genes."
+   },
+   {
+    "key": "P7",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "One small case-control study, wide confidence interval (1.98-17.71), no replication; the quoted passage concerns body-composition indices, with the OR only in old_statement. Hedged with 'may', so acceptable."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Context proposition; E8 is a review of expression findings (Ishaq), E22 and E23 are primary. Not about inherited variants, as the findings themselves say."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "Tension between P2 (autosomal dominant inheritance most consistent) and the polygenic/heterogeneous architecture in E2, E11 and E12 and the no-single-gene statement in P3; no proposition states the polygenic model explicitly.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E18 (narrative review of AKR1C variants) re-reports E19 without secondary_of, and E11 re-reports E4, E12, E14 and E19 (used only for family history, acceptable).",
+    "severity": "minor"
+   },
+   {
+    "issue": "E16 (systematic review: no confirmed gene, syndromic associations) supports P3 but is filed only under P2; syndromic gene associations (POU1F1, NSD1, ELN) have no proposition.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000025.cons.json",
+   "ver": "SQ-LIP-000025.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00073",
+   "into": "G-00196"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00074",
+   "into": "G-00198"
+  }
+ ]
+}

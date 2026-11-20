@@ -1,0 +1,679 @@
+{
+ "question": "SQ-LIP-000018",
+ "text": "How does lipedema relate to varicose veins and venous disease?",
+ "n_old_claims": 17,
+ "n_items": 18,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: P1 (venous disease frequently coexists) and P2 (not more frequent than in comparison groups) are not reconciled; a reader could take them as conflicting. The prevalence figures from E1, E18 and E15 sit under P2/P3 rather than informing P1's range.",
+  "[minor] set: E8 (lipedema symptoms unchanged by venous ablation) supports the 'not primarily venous' direction of P3 and P4 but is only under P7.",
+  "[minor] P2: not fully supported; overgeneralized — suggested: Limited comparisons suggest varicose veins may not be more frequent in lipedema than in women without lipedema, though comparison groups were not well matched. (E1 compares with a general-population prevalence figure, not a matched control; E18 compares with patients of a vein clinic selected for venous disease. Neither is a clean non-lipedema comparison. E15 (20% varicosities) may belong here; E2 cites an opposing 'association described in the literature'.)",
+  "[minor] P3: not fully supported; overgeneralized; two ideas — suggested: Impaired venous function may not be a primary feature of lipedema, although the evidence is limited to a small series. (One 10-patient photoplethysmography series; 'chronic venous disease often coexists' is not in that finding (it comes from P1). E8 (lipedema symptoms unchanged after venous ablation) supports this proposition but sits only in P7.)",
+  "[minor] P6: overgeneralized — suggested: Lipedema may be associated with a modestly higher risk of venous thromboembolism in hospitalised women with obesity, after adjustment for obesity and comorbidities. ('Independent of' overstates a single administrative-database association (lipedema coding, residual confounding). Association after adjustment is what the item shows. E10 reports rare DVT/PE, which is not a comparison.)",
+  "[minor] P7: two ideas — suggested: In people with chronic venous insufficiency, concomitant lipedema may be associated with smaller quality-of-life gains after endovenous ablation, with lipedema symptoms persisting. (Single cohort stated as established ('is associated'); bundles quality-of-life gain and persistence of lipedema symptoms, though both come from the same study.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1177/02683555211002340",
+   "title": "Ultrasound criteria for lipedema diagnosis",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": 89,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "45,1% das pacientes com lipedema apresentavam varizes concomitantes (C1–C2); comparado com 49% de prevalência de varizes primárias na população feminina geral",
+   "note": "45.1% of lipedema patients had varicose veins",
+   "old_claims": [
+    "SCR-LIP-000013"
+   ],
+   "old_statements": [
+    "During the standard venous Doppler mapping exam, lipedema can be identified by ultrasound: dermal–subcutaneous thickness at predefined lower-limb points is roughly twice as high in women with lipedema as in controls, with applicable ROC cut-offs — making venous ultrasound an opportunity to screen for lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.4103/jpgm.jpgm_273_25",
+   "title": "Report of two cases of lipedema: An under-recognized, misdiagnosed, and under-reported disorder in India",
+   "year": 2025,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Ambas as pacientes tinham varizes bilaterais associadas, confirmando associação descrita na literatura (Földi 2000; Amato 2022)",
+   "note": "This is a two-case report from India that documents bilateral varicose veins in both lipedema patients, directly addressing the association between lipedema and venous disease, but the evidence level is very low due to the small sample size",
+   "old_claims": [
+    "SCR-LIP-000131"
+   ],
+   "old_statements": [
+    "Both reported lipedema cases presented with bilateral varicose veins alongside characteristic disproportionate subcutaneous fat distribution, consistent with a described association between lipedema and varicose veins in the literature."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1038/s41598-020-67987-3",
+   "title": "Increased levels of VEGF-C and macrophage infiltration in lipedema patients without changes in lymphatic vascular morphology",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic adipose tissue disorder characterized by the disproportional subcutaneous deposition of fat and is commonly misdiagnosed as lymphedema or obesity.",
+   "note": "The article directly characterizes inflammatory mechanisms in lipedema tissue, demonstrating macrophage infiltration with M2 polarization and a VEGF-C/lymphatic-axis profile, which bears on the inflammation mechanism component of the questi",
+   "old_claims": [
+    "SCR-LIP-000307"
+   ],
+   "old_statements": [
+    "In anatomically-matched biopsies from 11 lipedema versus 10 BMI-matched healthy patients, lipedema tissue showed roughly doubled CD45+ leukocyte infiltration (40.7 vs 20 cells/field, p<0.0001) and increased CD68+ macrophages (21.2 vs 13 cells/field, p=0.009) with predominantly M2 polarization (CD163 increased 3.4x), alongside elevated serum VEGF-C (4364 vs 3275 pg/mL, p=0.02), reduced tissue Tie2 (5.7x lower), VEGF-A and VEGF-D, but no morphological lymphatic changes or systemic inflammation markers."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1177/1358863x231219006",
+   "title": "Venous thromboembolic outcomes in patients with lymphedema and lipedema: An analysis from the National Inpatient Sample",
+   "year": 2024,
+   "design": "unknown",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Regressão multivariada (Tabela 2) — linfedema: OR 1,48 (IC95% 1,41-1,55; p < 0,01); lipedema: OR 1,22 (IC95% 1,10-1,34; p < 0,01): risco residual independente após ajuste para obesidade e comorbidades.",
+   "note": "",
+   "old_claims": [
+    "SCR-LIP-000133"
+   ],
+   "old_statements": [
+    "A National Inpatient Sample analysis assessed the association between lymphedema/lipedema and venous thromboembolism in hospitalized obese women, adjusting for obesity and comorbidities."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Critério diagnóstico diferencial chave: pele do dorso do pé poupada no lipedema (sinal do cuffing), Stemmer negativo; ao contrário do linfedema.",
+   "note": "The review addresses vascular/microvascular pathophysiology and differential diagnosis from venous/lymphatic disease, providing contextual background, but does not report a specific epidemiological association between lipedema and varicose ",
+   "old_claims": [
+    "SCR-LIP-000166"
+   ],
+   "old_statements": [
+    "This systematic review describes lipedema diagnostic criteria distinguishing it from venous and lymphatic disease (negative Stemmer sign, foot-sparing 'cuffing' sign) and reports a microangiopathy with increased capillary permeability, plasma VEGF approximately 4-fold above normal, and capillary fragility (13.95 petechiae pre-CDT reduced to 8.78 post-CDT, P<0.001), but does not directly quantify an association between lipedema and varicose veins."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1371/journal.pone.0319099",
+   "title": "Clinical characteristics, comorbidities, and correlation with advanced lipedema stages: A retrospective study from a Swiss referral centre",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "doença vascular crônica 86,2% (dominante)",
+   "note": "Large retrospective cohort directly reports chronic venous disease as the dominant comorbidity (86.2%) in lipedema patients, bearing on the question of venous disease association; however the comorbidity-stage link lost independence after a",
+   "old_claims": [
+    "SCR-LIP-000341"
+   ],
+   "old_statements": [
+    "In a Swiss referral cohort of 381 lipedema patients, chronic vascular disease was the dominant comorbidity affecting 86.2% (predominantly chronic venous disease rather than atherosclerosis), and comorbidity burden increased with stage on univariate analysis (OR 1.59, 95% CI 1.39–1.81) but lost independent significance after adjusting for age and BMI in multivariate regression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.3389/fcell.2026.1819443",
+   "title": "Vascular changes and their implications in lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Prevalência de insuficiência venosa crônica (IVC) de 86,2% em coorte suíça (n=381, Luta 2025) e 50% em clínica vascular norte-americana (Dean 2020)",
+   "note": "Review reports high co-occurrence of chronic venous insufficiency in lipedema cohorts and describes endothelial dysfunction and vessel fragility, directly bearing on the lipedema–venous disease relationship; graded low because figures are d",
+   "old_claims": [
+    "SCR-LIP-000341"
+   ],
+   "old_statements": [
+    "In a Swiss referral cohort of 381 lipedema patients, chronic vascular disease was the dominant comorbidity affecting 86.2% (predominantly chronic venous disease rather than atherosclerosis), and comorbidity burden increased with stage on univariate analysis (OR 1.59, 95% CI 1.39–1.81) but lost independent significance after adjusting for age and BMI in multivariate regression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1177/02683555261418968",
+   "title": "Lipedema symptoms are not influenced by endothermal ablation in patients with varicose veins",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Embora a ETA melhore significativamente a QoL em pacientes com IVC, aqueles com lipedema concomitante apresentam ganhos menores e maior taxa de parestesia pós-operatória.",
+   "note": "Cohort comparing patients with chronic venous insufficiency with versus without concomitant lipedema undergoing endovenous ablation, directly addressing how lipedema coexists with and modifies venous disease outcomes; multivariate analysis ",
+   "old_claims": [
+    "SCR-LIP-000342"
+   ],
+   "old_statements": [
+    "In a cohort of patients undergoing endothermal ablation for chronic venous insufficiency, those with concomitant lipedema had worse baseline CIVIQ-20 quality-of-life scores (median 61.0 vs 46.0, p=0.001) and significantly smaller post-procedure improvement (4.0 vs 13.5 points, p=0.012); lipedema was an independent predictor of worse postoperative CIVIQ-20 (β=12.44, p<0.001), and venous symptoms attributable to lipedema remained unchanged by venous intervention."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1097/gox.0000000000005436",
+   "title": "Lipedema Reduction Surgery Improves Pain, Mobility, Physical Function, and Quality of Life: Case Series Report",
+   "year": 2023,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Comorbidades em 189 mulheres: hipermobilidade articular 50,5%, varizes 48,6%/aranhas vasculares 24,5%",
+   "note": "The article reports crude prevalence of varicose veins (48.6%) and spider veins (24.5%) as comorbidities in a lipedema surgical cohort, bearing on the lipedema-venous disease relationship; however, this is unadjusted prevalence without comp",
+   "old_claims": [
+    "SCR-LIP-000343"
+   ],
+   "old_statements": [
+    "In a case series of 189 women undergoing lipedema reduction surgery, varicose veins were present in 48.6% and spider veins (telangiectasias) in 24.5% as documented comorbidities, alongside joint hypermobility (50.5%) and arthritis (29.1%)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "telangiectasias 64%, varizes 36%",
+   "note": "The article reports prevalence of varicose veins (10-36%) and telangiectasias (64%) as observed features in lipedema patients, providing descriptive co-occurrence data relevant to the venous disease question, but it performs no adjusted ana",
+   "old_claims": [
+    "SCR-LIP-000344"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 82 clinically confirmed lipedema patients in Saudi Arabia, varicose veins were reported as a comorbidity in 10% and observed on physical examination in 36%, telangiectasias were present in 64%, while deep vein thrombosis history was rare (4%) and pulmonary embolism 3%."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.4236/jbise.2026.193011",
+   "title": "J. Biomedical Science and Engineering,",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "promote progressive compression of the microcirculation, resulting in sustained hypoxia, venous congestion, and vascular remodeling",
+   "note": "The review proposes mechanisms of lipedema pain including venous congestion, but does not directly examine lipedema's relationship to varicose veins or venous disease, so it is on-topic background rather than a test of the relationship.",
+   "old_claims": [
+    "SCR-LIP-000419"
+   ],
+   "old_statements": [
+    "A proposed pain-mechanism model for lipedema describes adipose tissue hypertrophy compressing the microcirculation and producing sustained hypoxia, venous congestion, and vascular remodeling, but the article does not test an association between lipedema and varicose veins or venous disease."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1177/02683555251410002",
+   "title": "What is the recommended compression pressure for different clinical indications?",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Early CVD stages and lipedema benefit from a compression pressure <30 mmHg, while severe venous or lymphatic disease requires ≥40 mmHg",
+   "note": "The article addresses lipedema and venous disease together only in the context of compression therapy management, listing them as separate indications; it does not test how lipedema relates to varicose veins or venous disease, so it provide",
+   "old_claims": [
+    "SCR-LIP-000420"
+   ],
+   "old_statements": [
+    "A review of compression therapy recommends compression pressure <30 mmHg for early chronic venous disease stages and lipedema, while severe venous or lymphatic disease requires ≥40 mmHg, treating lipedema and venous disease as distinct indications along the same compression framework."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.3390/diseases14070251",
+   "title": "Reduced Serum Endostatin in Premenopausal Women with Lipedema Suggests Altered Vascular Homeostasis.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Reduced serum endostatin levels support a potential role for vascular dysfunction in the pathophysiology of lipedema.",
+   "note": "The study examines vascular dysfunction biomarkers in lipedema, addressing vascular pathophysiology broadly, but does not directly test the relationship between lipedema and varicose veins or clinical venous disease; it provides background ",
+   "old_claims": [
+    "SCR-LIP-000421"
+   ],
+   "old_statements": [
+    "In premenopausal women with lipedema, serum endostatin (an angiogenesis inhibitor) was significantly reduced compared to controls (p=0.038), while adiponectin, chemerin, LBP, PCSK9, sCD163, sCD137, and IGFBP2 did not differ, suggesting altered vascular homeostasis without directly assessing varicose veins."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1177/02683555261480910",
+   "title": "Lipedema and venous insufficiency: A pilot intraoperative study of saphenous compartment pressure",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "NENHUMA diferença significativa de pressão do compartimento safeno entre lipedema+DVV e DVV isolada",
+   "note": "The study tests a mechanical mechanism for the lipedema-venous disease link, finds no pressure difference (null result refuting compartment compression), and cites an OR 5.05 for venous insufficiency in lipedema; it refines the understandin",
+   "old_claims": [
+    "SCR-LIP-000499"
+   ],
+   "old_statements": [
+    "In a pilot intraoperative study measuring saphenous compartment pressure at three levels, no significant pressure difference was found between limbs with lipedema plus varicose veins and limbs with isolated varicose veins, arguing that the lipedema-venous disease association is not explained by mechanical compartment compression but rather by microvascular dysfunction or connective tissue changes."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1046/j.1365-2133.1996.d01-741.x",
+   "title": "Lymphatic and venous function in lipoedema",
+   "year": 1996,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Função venosa: apenas 2/10 pacientes com tempo de reenchimento reduzido (paciente 8: 26 s D / 23 s E; paciente 10: 27 s D / 19 s E); a paciente 2 tinha 25 s à direita com lado esquerdo normal. O comprometimento foi de grau leve e considerado improvável como processo patológico primário.",
+   "note": "The article directly tested venous function in lipedema and found it generally normal with mild impairment unlikely to be primary; superficial varicosities present in only 20%. This contradicts an affirmative primary link between lipedema a",
+   "old_claims": [
+    "SCR-LIP-000500"
+   ],
+   "old_statements": [
+    "In 10 women with lipedema, venous function by photoplethysmography was generally normal (only 2/10 with mildly reduced refill time, deemed unlikely to be a primary pathology), and superficial varicosities were present in only 20%, indicating venous dysfunction is not a primary feature of lipedema."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.24875/rma.23000040",
+   "title": "Lipedema: a revision and new lines of investigation in the comprehensive vascular field",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Alterações vasculares: doença venosa, linfedema, predisposição a dermatopatias e equimoses espontâneas",
+   "note": "The review mentions venous disease as a vascular manifestation of lipedema but does not test or quantify the relationship, so it provides background context rather than direct affirmative evidence.",
+   "old_claims": [
+    "SCR-LIP-000501"
+   ],
+   "old_statements": [
+    "A narrative review redefining lipedema as a fibrous loose connective tissue disorder lists venous disease and lymphedema among its vascular manifestations without quantifying the association."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "differential diagnosis (lymphedema, obesity, lipohypertrophy, cellulite, chronic venous insufficiency, Dercum, Madelung)",
+   "note": "The review mentions chronic venous insufficiency only as a differential diagnosis and describes microvascular dysfunction, without directly testing the relationship between lipedema and varicose veins/venous disease, so it is on-topic conte",
+   "old_claims": [
+    "SCR-LIP-000502"
+   ],
+   "old_statements": [
+    "This narrative review lists chronic venous insufficiency as a differential diagnosis for lipedema and describes early microangiopathy with increased endothelial permeability, capillary fragility, livedo reticularis, and easy bruising in lipedema, but does not quantify co-occurrence of varicose veins or test an association with venous disease."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1016/j.jdmv.2023.06.002",
+   "title": "Frequency of lipoedema in patients consulting a vein clinic for mild to moderate superficial venous disorder with symptoms: A retrospective analysis",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Veias varicosas presentes em apenas 19,4% (7/36) do grupo lipedema vs 25,6% na IVC isolada",
+   "note": "The study reports lipedema co-occurring in a venous-disease clinic population but finds varicose veins LESS frequent in lipedema than in isolated CVI and edema no more frequent, qualifying the relationship rather than straightforwardly supp",
+   "old_claims": [
+    "SCR-LIP-000503"
+   ],
+   "old_statements": [
+    "Among 464 women consulting a vein clinic for mild-to-moderate chronic superficial venous disease, lipedema frequency was 7.7% (36/464); within the lipedema group varicose veins were present in only 19.4% versus 25.6% in isolated chronic venous insufficiency, and ankle edema by ultrasound was no more frequent in lipedema (44.4%) than in isolated CVI (40.5%)."
+   ],
+   "old_role_in_question": "refines"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Varicose veins, telangiectasias and chronic venous disease are reported in a variable and sometimes large proportion of people with lipedema.",
+   "role": "supporting",
+   "rationale": "Uncontrolled cohorts, case series and case reports give crude co-occurrence figures ranging from low self-reported rates to a large majority in a referral cohort; the review re-reports that cohort.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "In a Swiss referral cohort of 381 lipedema patients, chronic vascular disease was the dominant comorbidity (86.2%), predominantly chronic venous disease; comorbidity burden rose with stage univariately but not after adjustment for age and BMI."
+    },
+    {
+     "e": "E7",
+     "stance": "context",
+     "finding": "Review reports chronic venous insufficiency in 86.2% of a Swiss lipedema cohort and 50% in a North American vascular clinic, and describes endothelial dysfunction and vessel fragility in lipedema.",
+     "secondary_of": "E6"
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Among 189 women undergoing lipedema reduction surgery, varicose veins were documented in 48.6% and spider veins in 24.5%."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "In 82 lipedema patients in Saudi Arabia, varicose veins were reported as comorbidity in 10% and seen on examination in 36%, telangiectasias in 64%; history of deep vein thrombosis (4%) and pulmonary embolism (3%) was rare."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Both patients in a two-case report of lipedema had bilateral varicose veins."
+    },
+    {
+     "e": "E16",
+     "stance": "context",
+     "finding": "Narrative review lists venous disease and lymphedema among the vascular manifestations of lipedema, without quantifying the association."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 5,
+   "store_key": "G-00155"
+  },
+  {
+   "key": "P2",
+   "statement": "Varicose veins may not be more frequent in lipedema than in comparison groups without lipedema.",
+   "role": "contradicting",
+   "rationale": "Comparators are a literature figure for the general female population and vein-clinic patients with isolated venous insufficiency, not matched controls, so the evidence is limited.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Among 89 women in a venous ultrasound study, 45.1% of lipedema patients had varicose veins (C1-C2), compared with 49% primary varicose vein prevalence in the general female population; dermal-subcutaneous thickness was roughly double in lipedema."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Among 464 women at a vein clinic, lipedema was found in 7.7%; varicose veins were present in 19.4% of the lipedema group vs 25.6% in isolated chronic venous insufficiency, and ankle edema was no more frequent (44.4% vs 40.5%)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00156"
+  },
+  {
+   "key": "P3",
+   "statement": "Impaired venous function may not be a primary feature of lipedema, even though chronic venous disease often coexists.",
+   "role": "refines",
+   "rationale": "Reconciles with P1: venous disease is common as a comorbidity in referral cohorts, while the only functional test (a small photoplethysmography series) found mostly normal venous refill; evidence is limited and conflicting.",
+   "evidence": [
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "In 10 women with lipedema, photoplethysmography venous refill time was mildly reduced in only 2/10, judged unlikely to be a primary pathology; superficial varicosities were present in 20%."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00157"
+  },
+  {
+   "key": "P4",
+   "statement": "Saphenous compartment pressure may not differ between limbs with lipedema plus varicose veins and limbs with varicose veins alone.",
+   "role": "refines",
+   "rationale": "Pilot intraoperative data only; it does not by itself explain why the conditions coexist.",
+   "evidence": [
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "In a pilot intraoperative study measuring saphenous compartment pressure at three levels, there was no significant difference between limbs with lipedema plus varicose veins and limbs with isolated varicose veins."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00158"
+  },
+  {
+   "key": "P5",
+   "statement": "Lipedema is reported to involve microvascular alterations such as capillary fragility and increased permeability.",
+   "role": "context",
+   "rationale": "Mostly reviews and a hypothesis model; the fragility figure is before versus after therapy, not versus controls.",
+   "evidence": [
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Review describes a lipedema microangiopathy with increased capillary permeability, plasma VEGF about four-fold above normal and capillary fragility (petechiae 13.95 before vs 8.78 after decongestive therapy, P<0.001), and diagnostic signs separating lipedema from venous and lymphatic disease."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Narrative review describes early microangiopathy in lipedema with increased endothelial permeability, capillary fragility, livedo reticularis and easy bruising, and lists chronic venous insufficiency as a differential diagnosis."
+    },
+    {
+     "e": "E11",
+     "stance": "context",
+     "finding": "Proposed pain model in which adipose hypertrophy compresses the microcirculation, producing sustained hypoxia, venous congestion and vascular remodeling; the association with venous disease is not tested."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 3,
+   "store_key": "G-00159"
+  },
+  {
+   "key": "P9",
+   "statement": "Angiogenic and lymphangiogenic markers in serum or tissue may be altered in lipedema.",
+   "role": "context",
+   "rationale": "Two small case-control studies with differing markers; separated from capillary fragility because the evidence differs.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "In 11 lipedema vs 10 BMI-matched controls, lipedema tissue showed more leukocytes and M2 macrophages, serum VEGF-C was higher (4364 vs 3275 pg/mL, p=0.02) and tissue Tie2 was 5.7-fold lower, without morphological lymphatic changes."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "In premenopausal women with lipedema, serum endostatin was lower than in controls (p=0.038), while other adipokine and inflammatory markers did not differ; varicose veins were not assessed."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00160"
+  },
+  {
+   "key": "P6",
+   "statement": "Lipedema may be associated with a modestly higher risk of venous thromboembolism in hospitalised women with obesity, independent of obesity and comorbidities.",
+   "role": "supporting",
+   "rationale": "An adjusted analysis of a national inpatient database found residual association between lipedema and venous thromboembolism.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In a National Inpatient Sample analysis of hospitalised obese women, multivariable regression gave OR 1.22 (95% CI 1.10-1.34) for venous thromboembolism with lipedema and OR 1.48 with lymphedema, after adjustment for obesity and comorbidities."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00161"
+  },
+  {
+   "key": "P7",
+   "statement": "In people with chronic venous insufficiency, concomitant lipedema is associated with smaller quality-of-life gains after endovenous ablation, and lipedema symptoms persist after treatment.",
+   "role": "refines",
+   "rationale": "A comparative cohort shows that treating the venous disease does not address lipedema symptoms.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Patients with lipedema had worse baseline CIVIQ-20 (61.0 vs 46.0, p=0.001) and smaller improvement after endothermal ablation (4.0 vs 13.5 points, p=0.012); lipedema independently predicted worse postoperative CIVIQ-20 and its symptoms were unchanged; more postoperative paresthesia."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 1,
+   "store_key": "G-00162"
+  },
+  {
+   "key": "P8",
+   "statement": "Guidance recommends low compression pressure for lipedema and early venous disease, and higher pressure for severe venous or lymphatic disease.",
+   "role": "context",
+   "rationale": "Compression guidance placing lipedema and early venous disease in the same low pressure band; marginal to the venous relation.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Review recommends compression below 30 mmHg for early chronic venous disease stages and lipedema, and at least 40 mmHg for severe venous or lymphatic disease."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00163"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Variable range is well documented (10% to 86%); E7 correctly marked secondary of E6. E2 and E16 are weak but do not carry the statement."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Limited comparisons suggest varicose veins may not be more frequent in lipedema than in women without lipedema, though comparison groups were not well matched.",
+    "severity": "minor",
+    "note": "E1 compares with a general-population prevalence figure, not a matched control; E18 compares with patients of a vein clinic selected for venous disease. Neither is a clean non-lipedema comparison. E15 (20% varicosities) may belong here; E2 cites an opposing 'association described in the literature'."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Impaired venous function may not be a primary feature of lipedema, although the evidence is limited to a small series.",
+    "severity": "minor",
+    "note": "One 10-patient photoplethysmography series; 'chronic venous disease often coexists' is not in that finding (it comes from P1). E8 (lipedema symptoms unchanged after venous ablation) supports this proposition but sits only in P7."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "The association of lipedema with venous disease may not be explained by mechanical compression within the saphenous compartment.",
+    "severity": "minor",
+    "note": "The wording describes the result of a single pilot study rather than a general proposition about the condition; the finding itself is accurately reported."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Reported by two reviews with hedged framing. E11 is a proposed mechanism and appropriately 'context'."
+   },
+   {
+    "key": "P9",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged and matches E3 and E13. E5's VEGF elevation also supports it. Peripheral to the venous question but acceptable as context."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema may be associated with a modestly higher risk of venous thromboembolism in hospitalised women with obesity, after adjustment for obesity and comorbidities.",
+    "severity": "minor",
+    "note": "'Independent of' overstates a single administrative-database association (lipedema coding, residual confounding). Association after adjustment is what the item shows. E10 reports rare DVT/PE, which is not a comparison."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "In people with chronic venous insufficiency, concomitant lipedema may be associated with smaller quality-of-life gains after endovenous ablation, with lipedema symptoms persisting.",
+    "severity": "minor",
+    "note": "Single cohort stated as established ('is associated'); bundles quality-of-life gain and persistence of lipedema symptoms, though both come from the same study."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Treatment recommendation from one review, only indirectly about the lipedema-venous relationship; acceptable as context but is guidance, not evidence of relationship."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "P1 (venous disease frequently coexists) and P2 (not more frequent than in comparison groups) are not reconciled; a reader could take them as conflicting. The prevalence figures from E1, E18 and E15 sit under P2/P3 rather than informing P1's range.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E8 (lipedema symptoms unchanged by venous ablation) supports the 'not primarily venous' direction of P3 and P4 but is only under P7.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000018.cons2.json",
+   "ver": "SQ-LIP-000018.ver2.json"
+  }
+ ]
+}

@@ -1,0 +1,1156 @@
+{
+ "question": "SQ-LIP-000022",
+ "text": "What clinical criteria and stage/type classification systems are used to diagnose and grade lipedema, and how reliable are they?",
+ "n_old_claims": 35,
+ "n_items": 36,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: The question asks how reliable the systems are, yet no proposition states that inter-rater reliability or validation of clinical criteria and staging has not been shown (E9 limited clinimetrics, E13 no objective criteria, E11); reliability is only implied through P4, P7 and P8.",
+  "[minor] set: Guideline divergence is not captured: S2k (E7) makes pain a required symptom and discards staging and the nodular criterion, S1 (E25) and Dutch (E13) differ, and E12 reports pain in only 70% at stage 1. P2 reads as if criteria agree, and E7's diagnostic content is filed only under P4.",
+  "[minor] set: E20 is a preprint (DOI 10.20944/preprints...) and E22, E27, E28, E29 have placeholder titles; E20 only describes stage distribution and adds little to P3.",
+  "[minor] set: E29 dropped as off-topic is appropriate.",
+  "[minor] P2: misplaced ['E7'] (Bruising is in E35 but not in E25's criteria list; E13 requires all Wold anamnestic criteria, which is stricter than 'commonly include'. The guidelines do not agree (S2k E7 requires pain with disproportion, S1 E25 lists pain on palpation, E12 shows pain in 70% at stage 1); this divergence is only implied. E7's diagnostic criteria are filed only under P4.)",
+  "[minor] P4: not fully supported; overgeneralized; two ideas — suggested: Evidence is inconsistent on whether morphological stage tracks symptom burden or lymphatic function, and some guidelines advise against using it as a severity measure. (E21 (pain rises with stage, p<0.001), E12 (BMI, body water, hypothermia rise with stage) and E24 (cuff sign with advanced stage) point the other way; E21 is correctly labelled contradicting but 'correlates poorly' is stated too firmly. E18 itself found stage related to age and BMI. E7 is a guideline recommendation, not data. Symptom burden and lymphatic function are two ideas.)",
+  "[minor] P5: misplaced ['E10'] (E10 is a diagnostic algorithm for abdominal lipedema, not a staging revision. E6 'insufficient' is one review's view; E12 and E22 are single-centre proposals without validation, which the 'proposed' wording respects.)",
+  "[minor] P6: not fully supported; overgeneralized; stance errors ['E16'] — suggested: Small studies suggest combinations of clinical signs or screening questionnaires may discriminate lipedema from lymphedema or controls, but external validation is lacking. (E16: a Mann-Whitney p=0.666 between diagnosed and undiagnosed groups says nothing about accuracy, so it should be context or removed. E4 'classified with 100% accuracy' conflicts with the quoted tree (14 lipedema in the no-bruising node) and is internal derivation without validation. E2 AUC 0.86-0.91 is in 109 women against clinical judgement. 'Good accuracy' needs a validation caveat.)",
+  "[minor] P7: two ideas; misplaced ['E3', 'E8'] (E1 (AUC 0.90) and E8 (CT 95%/100%) are promising and single-study, so 'insufficiently established' is fair. E9 concerns limb quantification tools rather than diagnostic imaging. Performance and reliability are two aspects.)",
+  "[minor] P9: two ideas; misplaced ['E11', 'E34', 'E16', 'E23'] (Misdiagnosis as lymphedema is supported by E32; as obesity only by E17 (and E11 quote), so the obesity half is thinner. E34 (9% correct at first consultation), E16 (many specialists) and E23 (46.2% of consultants recognize it) are stronger and sit elsewhere. E36 is a distinct claim about lymphedema progression.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1159/000527138",
+   "title": "Body Composition Assessment by Dual-Energy X-Ray Absorptiometry: A Useful Tool for the Diagnosis of Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Leg FM/total FM (índice principal): AUC=0,90 (IC95% 0,86–0,94), melhor índice de Youden (0,68), sensibilidade=0,95, especificidade=0,73 para ponto de corte=0,383 — valores <0,383 permitem excluir lipedema com razoável grau de certeza",
+   "note": "The article directly evaluates DXA's ability to differentiate lipedema from controls and characterize its fat distribution, providing specific diagnostic accuracy metrics that support DXA's discriminative role. [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000199"
+   ],
+   "old_statements": [
+    "In a DXA body composition study, the leg fat mass/total fat mass index distinguished lipedema patients from healthy controls with AUC=0.90 (sensitivity 0.95, specificity 0.73 at cutoff 0.383) across all BMI strata, with elevated leg fat proportion (0.451 vs 0.354) and inverted trunk/legs ratio (0.960 vs 1.502), while appendicular lean mass and total bone density did not differ."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1590/1677-5449.200114",
+   "title": "Criação de questionário e modelo de rastreamento de lipedema",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "aumentando o nível de suspeição clínica em uma doença historicamente subdiagnosticada",
+   "note": "The article develops and validates a screening tool grounded in standard clinical diagnostic criteria for lipedema and reports diagnostic accuracy (AUC) against expert clinical reference, directly bearing on diagnostic criteria and their re [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000188"
+   ],
+   "old_statements": [
+    "A simplified 9-item self-applied screening questionnaire (derived from the validated QuASiL) based on clinical diagnostic criteria (post-pubertal women, bilateral symmetric fat deposit below the hip sparing feet, negative Stemmer and Godet signs, pain on palpation, spontaneous bruising) achieved diagnostic discrimination of AUC=0.912 for an individual 7-question predictive model and AUC=0.8615 for a total-score model against expert clinical diagnosis in 109 women (59 with lipedema, 50 without), with the item 'feeling something wrong in the legs' being most discriminative (OR=4.328)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1016/j.remn.2018.06.008",
+   "title": "Hallazgos linfogammagráficos en pacientes con lipedema",
+   "year": 2018,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnosis is currently based on clinical criteria, since there is no accurate diagnostic imaging for the condition.",
+   "note": "The article applies clinical stage and type classification systems to a lipedema cohort and reports their lack of association with lymphoscintigraphic severity, providing contextual data on the classification systems used, though its primar",
+   "old_claims": [
+    "SCR-LIP-000189"
+   ],
+   "old_statements": [
+    "In a prospective cohort of 83 women diagnosed with lipedema using clinical criteria, lipedema was classified by clinical stage (most often stage 1, 39.8%) and type (most often type III, hips to ankles, 74.7%), and lymphoscintigraphic abnormality grade showed no significant association with clinical stage (p=0.142), type (p=0.505), Stemmer's sign (p=0.506), age, or BMI."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.23736/s0392-9590.25.05207-1",
+   "title": "Building evidence for diagnosis of lipedema: using a classification and regression tree (CART) algorithm to differentiate lipedema from lymphedema patients",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Modelo final CART reteve apenas 3 variáveis: hematomas, desproporção e pés poupados. Árvore: ausência de hematomas → linfedema (124 pacientes, 110 linfedema/14 lipedema); presença de hematomas + desproporção → lipedema (125/125 lipedema)",
+   "note": "The article directly addresses clinical diagnostic criteria and the stage classification system (stages 1-4) used in lipedema, and quantifies the discriminative reliability of clinical features via a validated CART model, bearing directly o",
+   "old_claims": [
+    "SCR-LIP-000190"
+   ],
+   "old_statements": [
+    "In a prospective cohort of 138 lipedema and 111 lymphedema patients, a CART algorithm using three clinical variables—bruising, body disproportion, and non-swollen feet (cuffing sign)—classified patients with 100% accuracy; lipedema was characterized by symmetry (100%), spared feet (93.5%), pain (92%), bruising (90.6%), telangiectasias (89.9%), and family history (84.7%), and staged 1-4 (stage I 37.7%, II 34.8%, III 22.5%, IV 5.1%)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1089/lrb.2019.0011",
+   "title": "Lipedema and Dercum's Disease: A New Application of Bioimpedance",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Medidas regionais de bioimpedância diferenciam lipedema de doença de Dercum (razão perna/braço menor em lipedema, p<0,001) e identificam estágio 1 de lipedema vs controles pareados (p=0,01).",
+   "note": "The question concerns clinical criteria and stage/type classification systems and their reliability. This study uses the conventional clinical stage classification (stage 1-3) as a reference and proposes an objective bioimpedance biomarker  [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000191"
+   ],
+   "old_statements": [
+    "Bioimpedance spectroscopy of regional tissue fluid distinguished lipedema from Dercum's disease (lower leg/arm R0 ratio in lipedema, p<0.001) and detected stage 1 lipedema versus matched controls (leg/arm ratio R0 p=0.01, R1 p=0.007), with leg extracellular water increasing across lipedema stages (p=0.03), proposing BIS as an objective adjunct biomarker for diagnosis and staging."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.3390/jpm13010098",
+   "title": "Lipedema Research—Quo Vadis?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Proposta de revisão do estadiamento atual para incluir: comorbidades (obesidade, linfedema), peso original pré-cirurgia, histórico familiar — estadiamento atual baseado em Wold 1951 é insuficiente para heterogeneidade clínica",
+   "note": "The article primarily reviews molecular/cellular research but explicitly addresses the staging classification, stating the current Wold 1951-based staging is insufficient and proposing revisions, which bears directly on the question about c [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000192"
+   ],
+   "old_statements": [
+    "This systematic review of molecular and cellular lipedema studies argues that the current staging system based on Wold (1951) is insufficient for the disease's clinical heterogeneity and proposes its revision to incorporate comorbidities (obesity, lymphedema), pre-surgical weight, and family history."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1111/ddg.15513",
+   "title": "S2k guideline lipedema",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Rec 2.2–2.5: Diagnóstico exige disproproção + sintomas concomitantes; estadiamento morfológico NÃO deve ser usado como medida de gravidade; critério 'nodular' não deve ser usado para diagnóstico",
+   "note": "This consensus guideline directly addresses diagnostic criteria and explicitly refines/critiques the reliability of stage/type classification systems, recommending against using morphological staging as a severity measure and against the no [grade capped moderate->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000193"
+   ],
+   "old_statements": [
+    "The S2k lipedema guideline defines lipedema as painful, disproportionate, symmetrical adipose distribution occurring almost exclusively in women, and states that diagnosis is clinical, requiring disproportion plus concomitant symptoms (pain), while morphological staging should NOT be used as a measure of severity, the 'nodular' criterion should not be used for diagnosis, and no instrument (duplex, ultrasound, MRI, lymphoscintigraphy, laboratory tests) can confirm lipedema (they serve only for differential diagnosis)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico e tratamento devem ser realizados o mais cedo possível para prevenir complicações funcionais e cosméticas.",
+   "note": "The systematic review directly compiles the clinical criteria, 3-stage staging and 5-type classification systems used to diagnose and grade lipedema, plus a differential diagnostic imaging accuracy figure, but it explicitly notes the absenc",
+   "old_claims": [
+    "SCR-LIP-000194"
+   ],
+   "old_statements": [
+    "This systematic review describes lipedema diagnosis as primarily clinical and outlines a 3-stage clinical staging system (Stage I normal skin with small palpable nodules; Stage II irregular surface with liposclerosis; Stage III lobular deformation with peau d'orange) plus Schingale's 5-type classification (I hips/thighs, II to knees, III to ankles, IV arms+legs, V lipo-lymphedema), with key differential signs (negative Stemmer, foot dorsum sparing) and noncontrast CT reported at 95% sensitivity and 100% specificity."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1089/lrb.2024.0102",
+   "title": "Assessment Tools to Quantify the Physical Aspects of Lipedema: A Systematic Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Reporte limitado de clinimetria, derivado de pequenas coortes em populações heterogêneas, impactou a capacidade de recomendar ferramentas para prática clínica e pesquisa. Investigações adicionais são necessárias para estabelecer validade e reliability de ferramentas de medição e imagem",
+   "note": "Systematic review focused on objective measurement/imaging tools and their reliability/diagnostic performance in lipedema, which addresses the reliability aspect of the question, though it concerns quantification tools rather than clinical ",
+   "old_claims": [
+    "SCR-LIP-000195"
+   ],
+   "old_statements": [
+    "A review of 13 tools used to quantify lipedema limbs (8 imaging, 5 clinical measurement) found highly heterogeneous and poorly documented protocols — e.g., tape measurement used inconsistent anatomical sites and volume formulas, and ultrasound studies omitted machine settings — with clinimetric reliability reported in only a minority of studies, limiting reproducibility and cross-study comparison."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1007/s00266-025-05192-1",
+   "title": "Abdominal Lipedema: Clinical Diagnosis and Management Through a Proposed Diagnostic Algorithm",
+   "year": 2025,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema abdominal é manifestação significativa e subreconhecida da doença, exigindo critérios diagnósticos específicos para garantir diagnóstico correto e tratamento adequado. Os autores propõem um framework diagnóstico baseado em achados clínicos e de imagem que pode melhorar reconhecimento e ma",
+   "note": "The article proposes new diagnostic criteria and an algorithm for abdominal lipedema, correlating findings with existing lipedema staging, directly addressing clinical criteria and classification; it refines/extends existing diagnostic fram",
+   "old_claims": [
+    "SCR-LIP-000358"
+   ],
+   "old_statements": [
+    "The authors propose a clinical-ultrasonographic diagnostic algorithm for abdominal lipedema using maximum criteria (symmetric abdominal fat deposition + ultrasonographic evidence + inelastic skin), major criteria (pain on palpation + non-response to diet/exercise), and minor criteria (easy bruising + heaviness), correlating abdominal involvement with lipedema stage (31% in stage II, 70% in stage III)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic, underdiagnosed adipose disorder marked by disproportionate fat accumulation, pain, and impaired mobility. Misdiagnosis as obesity or lymphedema delays care and increases morbidity.",
+   "note": "The review addresses diagnostic criteria for lipedema and notes the absence of standardized, validated criteria, refining the question's premise about reliability.",
+   "old_claims": [
+    "SCR-LIP-000359"
+   ],
+   "old_statements": [
+    "This systematic review of 61 articles found that lipedema diagnosis relies largely on clinical features from observational cohorts, case series, and expert consensus with few randomized trials, and concluded that standardized diagnostic criteria and validated patient-reported outcomes are still lacking."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.3390/life15091397",
+   "title": "New Characterization of Lipedema Stages: Focus on Pain, Water, Fat and Skeletal Muscle",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Os estágios intermediários se encaixam precisamente no contínuo, sustentando sua adição",
+   "note": "The article directly addresses lipedema staging classification, proposing a refinement (intermediate stages 1.5/2.5) to the standard 3-stage system and applying objective measures to characterize stages, which refines and extends existing g",
+   "old_claims": [
+    "SCR-LIP-000360"
+   ],
+   "old_statements": [
+    "This study proposes adding two intermediate stages (1.5 and 2.5) to the classical 3-stage lipedema system and objectively characterizes progression using standardized item-by-item physical exam (modified Wold criteria), Beighton hypermobility score, infrared thermography, and bioimpedance spectroscopy, finding that BMI increases linearly with stage (r2=0.5628, p<0.0001), peripheral hypothermia and total body water rise with stage, L-Dex lymphedema risk is significantly elevated only at stage 3, and pain is present in 70% at stage 1 (not obligatory early)."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1177/0268355516639421",
+   "title": "First Dutch guidelines on lipedema using the international classification of functioning, disability and health",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Apesar da ausência de critérios objetivos de diagnóstico e da compreensão limitada dos mecanismos fisiopatológicos",
+   "note": "The article is a national guideline proposing explicit clinical diagnostic criteria (Wold criteria plus physical-exam criteria) and a clinimetric data set for lipedema, directly addressing the diagnostic criteria portion of the question; it",
+   "old_claims": [
+    "SCR-LIP-000361"
+   ],
+   "old_statements": [
+    "The first Dutch lipedema guidelines define clinical diagnostic criteria requiring all five Wold anamnestic criteria (disproportionate fat distribution, poor fat response to weight loss, pain/easy bruising, touch sensitivity/extremity fatigue, no pain reduction with elevation) plus at least one regional physical-examination criterion pair, with extra criteria (bimanual palpation pain, distal-knee lipomas) compensating when up to two criteria are absent, while noting the absence of objective diagnostic criteria."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1016/j.bjps.2023.05.056",
+   "title": "Lipedema: What we don’t know",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "apresentação clínica (tipos I-V, estágios I-IV)",
+   "note": "The review summarizes the type I-V and stage I-IV classification systems and diagnostic imaging criteria/cut-offs used for lipedema, directly addressing the classification component of the question, but provides no formal reliability/reprod",
+   "old_claims": [
+    "SCR-LIP-000362"
+   ],
+   "old_statements": [
+    "This narrative review describes the lipedema clinical classification into types I-V and stages I-IV, lists differential diagnoses (lymphedema, phlebedema, lipohypertrophy, Dercum's disease, Launois-Bensaude lipomatosis), and reports proposed imaging cut-offs (e.g., high-resolution ultrasound subcutaneous thickness 11.7 mm pretibial, DXA leg-fat/total-fat ratio 0.383), while identifying the absence of an objective, easy-to-perform diagnostic imaging test as a critical gap."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1111/obr.13648",
+   "title": "Diagnostic imaging in lipedema: A systematic review",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "The diagnostic performance of currently available imaging modalities for assessing lipedema is limited. Prospective studies are needed to evaluate and compare the diagnostic performance of each imaging modality.",
+   "note": "Systematic review evaluating diagnostic imaging methods for lipedema; relevant to diagnostic criteria/reliability, refining by reporting that imaging-based diagnostic performance is currently limited rather than well-established.",
+   "old_claims": [
+    "SCR-LIP-000363"
+   ],
+   "old_statements": [
+    "In a systematic review of 32 studies (1154 patients), imaging methods proposed for characterizing lipedema include ultrasound (increased subcutaneous adipose tissue), lymphoscintigraphy (slowed lymphatic flow, inter-limb asymmetry), CT (symmetrical bilateral soft tissue enlargement without skin thickening or edema), MRI, MR lymphangiography (enlarged lymphatic vessels up to 2 mm), and DXA (leg fat mass/BMI ≥0.46 or leg fat/total fat ≥0.384), but their overall diagnostic performance was limited."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.3390/ijerph20176647",
+   "title": "The Advanced Care Study: Current Status of Lipedema in Spain, A Descriptive Cross-Sectional Study",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "32,9% dos respondentes totais (352/1069) não tinham diagnóstico formal de lipedema; 50,8% do grupo não diagnosticado ainda buscava ativamente um profissional para obter diagnóstico",
+   "note": "The article explicitly applies the Schingale type classification and a modified Wolf/Herbst symptom scale, and proposes/validates a ≥6/13 symptom diagnostic criterion, directly describing clinical criteria and classification systems used fo",
+   "old_claims": [
+    "SCR-LIP-000364"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 969 Spanish lipedema patients, diagnoses used the Schingale type I-IV classification (type III 41.7%, type IV 36.8%, type II 17.8%, type I 3.7%) and a modified Wolf/Herbst 13-criteria symptom scale; the authors validated a threshold of ≥6 of 13 symptoms (Mann-Whitney p=0.666 showing no distributional difference between diagnosed and undiagnosed groups), and diagnosis often required multiple consultations (51.2% needed ≥3 specialists)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1055/a-2530-5875",
+   "title": "Lipedema: Clinical Features, Diagnosis, and Management",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "This review aimed to examine the existing literature on the epidemiology, pathogenesis, clinical presentation, differential diagnosis, and treatments for lipedema.",
+   "note": "The review addresses clinical presentation and differential diagnosis of lipedema in general terms but does not specifically detail named stage/type classification systems or evaluate their diagnostic reliability, so it provides only backgr",
+   "old_claims": [
+    "SCR-LIP-000365"
+   ],
+   "old_statements": [
+    "This narrative review describes lipedema as a clinical entity diagnosed by clinical presentation and differentiated from obesity and lymphedema, but notes it remains poorly characterized with frequent misdiagnosis and a lack of high-quality studies precisely defining its features."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1371/journal.pone.0319099",
+   "title": "Clinical characteristics, comorbidities, and correlation with advanced lipedema stages: A retrospective study from a Swiss referral centre",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "QV baixa: PCS-SF36 em 71,5%, MCS-SF36 em 67,4% — NENHUM desses parâmetros diferiu significativamente entre estágios (p>0,5), revelando dissociação entre morfologia e sintomas",
+   "note": "The article applies the standard type (I-V) and stage (1-4) classification systems and reports their clinical correlates, including a dissociation between morphological stage and symptoms and the diagnostic relevance of negative Stemmer sig",
+   "old_claims": [
+    "SCR-LIP-000366"
+   ],
+   "old_statements": [
+    "In a Swiss cohort of 381 lipedema patients classified by type (I-V) and stage (1-4), advanced stage correlated with age and BMI, but a Stemmer sign was positive in only 4.0% and validated questionnaire scores (HADS, BPI, FSS, SF-36) did not differ significantly between stages (p>0.5), revealing a dissociation between morphological stage and symptom burden."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.3238/arztebl.2020.0396",
+   "title": "Lipedema—Pathogenesis, Diagnosis, and Treatment Options",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico exclusivamente clínico; sem biomarcador específico disponível; exames complementares usados apenas para excluir diagnósticos diferenciais",
+   "note": "The review addresses clinical diagnostic criteria and references staging (stage III), and explicitly comments on the lack of objective diagnostic instruments, providing context on diagnostic reliability though without formal reliability met",
+   "old_claims": [
+    "SCR-LIP-000367"
+   ],
+   "old_statements": [
+    "This selective review states that lipedema diagnosis is exclusively clinical with no specific biomarker available, complementary exams used only to exclude differential diagnoses, and notes that diagnosis remains challenging due to heterogeneous presentation and the absence of objective characterization instruments; in Germany liposuction was approved for stage III patients."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.20944/preprints202510.1397.v1",
+   "title": "Clinical Signs at Diagnosis and Comorbidities in a Large Cohort of Patients with Lipedema in Spain",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A total of 46.6% were classified as Schingale stage IV or V. The most frequent comorbidities were chronic low-grade inflammatory alterations and connective tissue damage.",
+   "note": "The article uses the Schingale staging system and introduces a clinical examination approach for diagnosis, directly touching on clinical criteria and staging, but it does not formally evaluate the reliability or validity of these classific",
+   "old_claims": [
+    "SCR-LIP-000368"
+   ],
+   "old_statements": [
+    "In a Spanish cohort of 1,803 lipedema patients, 46.6% were classified as Schingale stage IV or V, and the authors propose a novel clinical examination approach (including signs such as bilateral trochanteritis and ligamentous hyperlaxity) to support rapid diagnosis."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.3390/ijms25031599",
+   "title": "Observational Study on a Large Italian Population with Lipedema: Biochemical and Hormonal Profile, Anatomical and Clinical Evaluation, Self-Reported History",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Avaliação clínica estruturada: estadiamento (3 estágios), tipo anatômico (1-5), envolvimento de membros superiores, sintomatologia subjetiva com pontuação de dor",
+   "note": "The article applies and describes the standard 3-stage staging and 1-5 anatomical type classification systems for lipedema diagnosis and grading, reporting their distribution and correlation with clinical/biochemical findings in a large pop",
+   "old_claims": [
+    "SCR-LIP-000369"
+   ],
+   "old_statements": [
+    "In an observational study of 360 Italian women with lipedema, structured clinical evaluation applied a 3-stage staging system and anatomical type classification (1-5), with stage distribution of 39.7% stage 1, 40.0% stage 2, and 20.3% stage 3, and anatomical type 3 most prevalent (89.7%), while clinical signs including pinch pain (99.4%), subcutaneous nodules (98.9%), and progressive pain scores by stage (p<0.001) were documented."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.4236/jbise.2025.184008",
+   "title": "The Challenge of a Qualitative Ultrasonographic Classification in Lipedema",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "propondo uma nova classificação qualitativa (Lipedema Dermal and Hypodermal Classification — LDHC) que complemente as classificações anatômica e funcional já existentes",
+   "note": "The article proposes a new qualitative ultrasonographic classification system for lipedema, directly addressing classification/grading approaches in the question, and reports an initial assessment of cross-platform reproducibility, refining",
+   "old_claims": [
+    "SCR-LIP-000370"
+   ],
+   "old_statements": [
+    "A retrospective study of 34 women with lipedema using high-frequency B-mode ultrasound (10-15 MHz) across three platforms proposes a new qualitative Lipedema Dermal and Hypodermal Classification (LDHC) with four stages distinguishing preserved architecture (LDHC 1), bulging architecture (LDHC 2), inflammatory phenotype with hyperechoic nodules (LDHC 3), and fibrotic 'marbled' phenotype with septal verticalization (LDHC 4), intended to complement existing anatomical and functional classifications."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1002/oby.22597",
+   "title": "Lipedema: A Call to Action!",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "5 tipos por distribuição (I: quadril/nádegas; II: quadril até joelho; III: quadril até tornozelo; IV: ~80% das mulheres têm também braços; V: panturrilha apenas — raro); 4 estágios (I: pele lisa, hipodermis aumentada; II: nódulos palpáveis peau d'orange; III: pregas/reentrâncias com massas deformant",
+   "note": "The narrative review explicitly presents the type (5-type distribution) and stage (4-stage) classification systems used to diagnose and grade lipedema, directly addressing the question's criteria component, and notes low clinical recognitio",
+   "old_claims": [
+    "SCR-LIP-000371"
+   ],
+   "old_statements": [
+    "This review describes lipedema clinical presentation using a classification of 5 types by anatomical fat distribution (I: hip/buttocks; II: hip to knee; III: hip to ankle; IV: also arms in ~80% of women; V: calf only) and 4 stages (I: smooth skin with enlarged hypodermis; II: palpable nodules with peau d'orange; III: deforming fat masses with folds; IV: lipolymphedema with positive Stemmer sign), and notes that only 46.2% of surveyed vascular consultants could recognize the disease."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1097/gox.0000000000006173",
+   "title": "Characteristics and Clinical Features of Patients with Lipedema in Saudi Arabia: A Cross-sectional Comprehensive Assessment",
+   "year": 2024,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Sinal de colar correlacionou-se com estágios avançados (80% dos com sinal de colar eram ≥G2); ausência do sinal correlacionou com G1 ou nenhum (68%).",
+   "note": "The study explicitly applies clinical diagnostic criteria, a 1-4 grading system, and a 1-5 type classification, reporting their distribution and a correlation between the collar sign and disease stage, directly bearing on the question of cl",
+   "old_claims": [
+    "SCR-LIP-000372"
+   ],
+   "old_statements": [
+    "In a cross-sectional study of 115 Saudi patients with lower-limb edema, clinical diagnosis of lipedema used a structured assessment including signs (cuff/collar sign, Stemmer sign, telangiectasias, non-pitting orthostatic edema), severity grading 1-4 and anatomical type classification 1-5; clinical criteria confirmed lipedema in 71% (82/115), grade 2 was most common (31%), type 3 (hip-to-ankle) predominant (47%), and the cuff/collar sign correlated with advanced stages (80% of those with the sign were ≥grade 2)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1111/ddg.13036",
+   "title": "S1 guidelines: Lipedema",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "CRITÉRIOS DIAGNÓSTICOS CLÍNICOS (Tabela 3): início em puberdade/gestação/menopausa; proliferação adiposa desproporcional (extremidades > tronco); cuffing periarticular; MÃOS E PÉS NÃO AFETADOS (critério diferencial crucial)",
+   "note": "This consensus-based guideline directly specifies the clinical diagnostic criteria and stage/location classification systems for lipedema, but it is an S1 (lowest evidence-level) guideline based on expert consensus and notes diagnostic unce",
+   "old_claims": [
+    "SCR-LIP-000373"
+   ],
+   "old_statements": [
+    "The German S1 guideline defines lipedema diagnostic criteria (onset at puberty/pregnancy/menopause, disproportional adipose proliferation sparing hands and feet, periarticular cuffing, palpation hypersensitivity, increasing edema, negative Stemmer sign) and classifies it by three morphological stages and by anatomical location, with differential criteria distinguishing it from lipohypertrophy, obesity, and lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1016/j.mvr.2021.104298",
+   "title": "Indocyanine green lymphography as novel tool to assess lymphatics in patients with lipedema",
+   "year": 2021,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O funcionamento linfático em pacientes com lipedema correlaciona-se com a duração dos sintomas, sugerindo que a velocidade do ICG nos linfáticos superficiais depende principalmente do tempo de evolução da doença, e não do grau de acúmulo de gordura ou do estadiamento. Não foram encontradas alteraçõe",
+   "note": "The article applies lipedema type/stage classification to its cohort but focuses on ICG lymphographic assessment of lymphatic function, not on the diagnostic criteria or reliability of classification systems themselves; it notes that lympha",
+   "old_claims": [
+    "SCR-LIP-000374"
+   ],
+   "old_statements": [
+    "Using ICG lymphography in 45 women with lipedema classified by different types and stages, lymphatic function (dye transit speed) correlated with symptom duration (T25' vs duration r=-0.469, p=0.037) rather than with lipedema stage or fat accumulation, and a linear lymphatic pattern was found in 100% of patients with no major anatomical abnormalities."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.4236/jbise.2026.193011",
+   "title": "J. Biomedical Science and Engineering,",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnosis is clinical, with the most frequent symptoms being pain, sensation of heaviness in legs, and spontaneous bruising.",
+   "note": "The abstract notes only that diagnosis is clinical and lists symptoms; it focuses on a proposed pain-mechanism model and does not test or assess stage/type classification systems or their reliability, so it is on-topic background rather tha",
+   "old_claims": [
+    "SCR-LIP-000423"
+   ],
+   "old_statements": [
+    "This article states that lipedema diagnosis is clinical, with the most frequent symptoms being pain, sensation of heaviness in the legs, and spontaneous bruising, and proposes a four-mechanism model of pain without evaluating any formal staging or classification system."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Anais Brasileiros de Dermatologia 2026;101(1):501270",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnosis is primarily clinical, as no speciﬁc biomarkers or imaging modalities have been proven sufﬁciently reliable for identiﬁcation",
+   "note": "The review addresses diagnosis of lipedema and notes the lack of reliable biomarkers/imaging and the need for standardized criteria, but does not itself test or validate specific criteria or classification systems, so it is on-topic backgro",
+   "old_claims": [
+    "SCR-LIP-000424"
+   ],
+   "old_statements": [
+    "This review of lipedema states that diagnosis is primarily clinical, with no specific biomarkers or imaging modalities proven sufficiently reliable, and emphasizes a critical need for standardized diagnostic criteria."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.1007/s00266-025-05548-7",
+   "title": "Aesth Plast Surg (2026) 50:3583–3584",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Response to the Letter to the Editor: Improving Abdominal Lipedema Diagnosis with Lymphatic Imaging Validation and Standard-Based Clinical Implementation",
+   "note": "This is an editorial correspondence (Level of Evidence V) referencing a proposed diagnostic algorithm but the abstract provides no specific criteria, classification data, or reliability metrics; it is on-topic background only.",
+   "old_claims": [
+    "SCR-LIP-000425"
+   ],
+   "old_statements": [
+    "This author response to a letter discusses a proposed diagnostic algorithm for abdominal lipedema and addresses suggestions regarding lymphatic imaging validation and standard-based clinical implementation, without reporting new diagnostic accuracy or reliability data."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1177/02683555261451571",
+   "title": "Modern approaches to the diagnosis and multimodal management of lipedema: A phlebology-oriented clinical framework",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O diagnóstico de lipedema apoia-se primariamente na avaliação clínica: avaliação da dor, palpação do tecido, distribuição característica da gordura e exclusão de linfedema e de obesidade simples.",
+   "note": "The article describes clinical diagnostic criteria and stage-based classification for lipedema, which is on-topic, but it is a proposed clinical framework/opinion piece that does not test or measure the reliability of these criteria, so it ",
+   "old_claims": [
+    "SCR-LIP-000518"
+   ],
+   "old_statements": [
+    "A phlebology-oriented clinical framework describes lipedema diagnosis as resting primarily on clinical assessment—pain evaluation, tissue palpation, characteristic fat distribution, and exclusion of lymphedema and simple obesity—with stage-specific management, but proposes rather than validates these criteria."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1136/bmjopen-2024-086869",
+   "title": "Lipoedema research priorities: a Swedish priority-setting partnership for future treatment and diagnostic studies",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The following five research questions were selected as a top priority: (1) what criteria should apply for a diagnosis of lipoedema?",
+   "note": "The article identifies the lack of consensus diagnostic criteria as a top research priority but does not itself propose or evaluate any diagnostic or staging criteria, so it is on-topic context rather than direct evidence.",
+   "old_claims": [
+    "SCR-LIP-000519"
+   ],
+   "old_statements": [
+    "A Swedish James Lind Alliance priority-setting partnership involving 255 participants identified 'what criteria should apply for a diagnosis of lipoedema?' as the top-ranked research priority, highlighting diagnostic criteria as an unresolved question rather than testing any specific criteria."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E32",
+   "ref": "DOI:10.1016/j.jmv.2012.05.002",
+   "title": "[Lipedema: a misdiagnosed entity]",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a clinical entity frequently misdiagnosed or confound with primary lymphedema.",
+   "note": "The review directly asserts that lipedema is frequently underdiagnosed and describes clinical criteria that aid identification, supporting the question's affirmative direction, though it is a narrative review without screening-tool validati",
+   "old_claims": [
+    "SCR-LIP-000456"
+   ],
+   "old_statements": [
+    "A narrative review emphasizes that lipedema is frequently misdiagnosed and confused with primary lymphedema, and describes characteristic clinical diagnostic criteria (bilateral hip-to-ankle enlargement sparing the feet, pain, easy bruising, pressure sensitivity) that distinguish it."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E33",
+   "ref": "DOI:10.2147/ijwh.s106227",
+   "title": "Lipedema: diagnostic and management challenges",
+   "year": 2016,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although the condition is well described, it is relatively rare and often misdiagnosed. The purpose of this review is to describe the initial evaluation and diagnosis of lipedema and discuss treatment options.",
+   "note": "The review states lipedema is often misdiagnosed and describes clinical diagnostic features, but it does not test a screening tool or report diagnostic performance; it is on-topic background rather than a direct test of the underdiagnosis/s",
+   "old_claims": [
+    "SCR-LIP-000456"
+   ],
+   "old_statements": [
+    "A narrative review emphasizes that lipedema is frequently misdiagnosed and confused with primary lymphedema, and describes characteristic clinical diagnostic criteria (bilateral hip-to-ankle enlargement sparing the feet, pain, easy bruising, pressure sensitivity) that distinguish it."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E34",
+   "ref": "DOI:10.12775/qs.2025.38.57746",
+   "title": "Lipedema: diagnosis, treatment and the vicious cycle - a review of the literature",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O diagnóstico atual baseia-se em história clínica e exame físico, com critérios duros escassos.",
+   "note": "The review directly addresses lipedema classification systems (types I-V, stages I-III) and diagnostic criteria, but emphasizes that hard criteria are scarce, diagnostic error is frequent (only 9% correct at first visit), and imaging has li",
+   "old_claims": [
+    "SCR-LIP-000520"
+   ],
+   "old_statements": [
+    "This literature review describes lipedema diagnosis as based on clinical history and physical examination with scarce hard criteria, classifying five distribution types (I-V) and three stages (I-III) and listing exclusion criteria (e.g., WHR >0.85 in women, no ankle folds, subcutaneous tissue thickness <12 mm above the ankle), while noting that imaging had limited diagnostic efficacy in a systematic review (van la Parra 2023, n=1154) and that only 9% of patients receive a correct diagnosis at first consultation."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E35",
+   "ref": "DOI:10.1007/s00105-018-4304-5",
+   "title": "Differenzialdiagnostik von Lipödem und Lymphödem: Ein Leitfaden für die Praxis",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Critérios diagnósticos do lipedema (segundo Buck e Herbst): ocorrência quase exclusiva em mulheres, acometimento bilateral e simétrico de pernas (e braços em ~30%), poupança de pés e mãos com formação de 'colarinho' (cuﬀ sign)",
+   "note": "The review describes which diagnostic criteria and staging systems are used (Buck/Herbst criteria, Stößenreuther grades, Shavit comparative table) but does not test or report their reliability/reproducibility; it is descriptive background o",
+   "old_claims": [
+    "SCR-LIP-000521"
+   ],
+   "old_statements": [
+    "This practice-oriented review compiles lipedema diagnostic criteria (per Buck and Herbst: near-exclusive female occurrence, bilateral symmetric leg involvement, foot sparing with cuff sign, negative Stemmer sign, tenderness, bruising tendency) and a staging system (per Stößenreuther: Grade 1 smooth surface, Grade 2 nodular, Grade 3 severe contour deformities, Grade 4 combined with secondary lymphedema)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E36",
+   "ref": "DOI:10.1007/s00105-010-1987-7",
+   "title": "Dicker durch Fett oder Wasser — Lipohyperplasia dolorosa vs. Lymphödem",
+   "year": 2010,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipohyperplasia dolorosa and lymphedema are completely different disease entities, which are both, however, classified under lymphology.",
+   "note": "The article explicitly frames lipedema and lymphedema as completely different entities with distinct etiologies, which argues against the premise that lipedema progresses into lymphedema; it does not report longitudinal progression or funct",
+   "old_claims": [
+    "SCR-LIP-000495"
+   ],
+   "old_statements": [
+    "This review characterizes lipohyperplasia dolorosa (lipedema) and lymphedema as completely different disease entities, with lipedema being a congenital fat distribution disorder rather than a precursor that progresses into lymphedema."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema diagnosis is primarily clinical, based on history and physical examination, because no specific biomarker or confirmatory imaging test exists.",
+   "role": "supporting",
+   "rationale": "Reviews and frameworks consistently describe diagnosis as clinical, with ancillary tests used for exclusion.",
+   "evidence": [
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Selective review: diagnosis is exclusively clinical, no specific biomarker is available, and complementary exams serve only to exclude differential diagnoses."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Review states diagnosis is primarily clinical, as no specific biomarkers or imaging modalities have been proven sufficiently reliable, and calls for standardized criteria."
+    },
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "Phlebology framework bases diagnosis on pain evaluation, tissue palpation, characteristic fat distribution and exclusion of lymphedema and simple obesity; criteria proposed, not validated."
+    },
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "Article states diagnosis is clinical, with pain, leg heaviness and spontaneous bruising as the most frequent symptoms."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00094"
+  },
+  {
+   "key": "P2",
+   "statement": "Clinical criteria for lipedema commonly include disproportionate symmetric limb fat sparing hands and feet, tenderness, easy bruising and a negative Stemmer sign.",
+   "role": "supporting",
+   "rationale": "Guidelines and practice reviews converge on a similar set of anamnestic and examination criteria.",
+   "evidence": [
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "German S1 guideline criteria: onset at puberty/pregnancy/menopause, disproportional fat sparing hands and feet, periarticular cuffing, palpation hypersensitivity, increasing edema, negative Stemmer sign; three morphological stages plus anatomical location."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Dutch guideline requires all five Wold anamnestic criteria plus at least one regional examination criterion pair, with extra criteria compensating for up to two absent ones; notes absence of objective criteria."
+    },
+    {
+     "e": "E35",
+     "stance": "supporting",
+     "finding": "Practice review compiles criteria per Buck and Herbst (female, bilateral symmetric legs, foot sparing with cuff sign, negative Stemmer, tenderness, bruising) and a four-grade staging system."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00095"
+  },
+  {
+   "key": "P3",
+   "statement": "Lipedema is commonly classified by anatomical type of fat distribution and by morphological stage of skin and tissue change.",
+   "role": "supporting",
+   "rationale": "Reviews describe type and stage systems and clinical cohorts routinely apply them.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Systematic review outlines a 3-stage clinical staging system and Schingale's 5-type classification, with negative Stemmer and foot dorsum sparing as differential signs; noncontrast CT reported at 95% sensitivity, 100% specificity."
+    },
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "Review describes 5 types by fat distribution and 4 stages (stage IV lipolymphedema with positive Stemmer); only 46.2% of surveyed vascular consultants recognized the disease."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "In 1,803 Spanish patients, 46.6% were Schingale stage IV or V; authors propose a clinical examination approach including bilateral trochanteritis and ligamentous hyperlaxity."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Among 115 patients with leg edema, structured clinical assessment with grades 1-4 and types 1-5 confirmed lipedema in 71%; cuff sign correlated with advanced stage (80% of those with it were grade 2 or higher)."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00096"
+  },
+  {
+   "key": "P4",
+   "statement": "Morphological lipedema stage correlates poorly with symptom burden and lymphatic function, so it may not be a valid measure of severity.",
+   "role": "refines",
+   "rationale": "Several cohorts find symptoms and lymphatic findings independent of stage, and a guideline advises against staging as a severity measure, though one cohort found pain rising with stage.",
+   "evidence": [
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "In 381 Swiss patients, advanced stage correlated with age and BMI, but HADS, BPI, FSS and SF-36 scores did not differ between stages (p>0.5)."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "S2k guideline: diagnosis requires disproportion plus concomitant symptoms; morphological staging should not be used as a severity measure; the nodular criterion should not be used for diagnosis; no instrument confirms lipedema."
+    },
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "In 83 women diagnosed by clinical criteria, lymphoscintigraphic abnormality grade was not associated with clinical stage (p=0.142), type (p=0.505), Stemmer sign, age or BMI."
+    },
+    {
+     "e": "E26",
+     "stance": "supporting",
+     "finding": "ICG lymphography in 45 women: lymphatic transit speed correlated with symptom duration (r=-0.469, p=0.037) rather than with stage or fat accumulation."
+    },
+    {
+     "e": "E21",
+     "stance": "contradicting",
+     "finding": "In 360 Italian women staged by a 3-stage system and 5 anatomical types, pain scores increased progressively with stage (p<0.001); pinch pain 99.4%, nodules 98.9%."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 5,
+   "store_key": "G-00097"
+  },
+  {
+   "key": "P5",
+   "statement": "Current lipedema staging systems are considered insufficient, and modified or additional classifications have been proposed.",
+   "role": "refines",
+   "rationale": "Several authors propose revisions, intermediate stages, ultrasound-based or region-specific classifications.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Review argues staging based on Wold is insufficient for clinical heterogeneity and proposes adding comorbidities, pre-surgical weight and family history."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Proposes intermediate stages 1.5 and 2.5; BMI increased linearly with stage (r2=0.5628), body water and hypothermia rose with stage, L-Dex elevated only at stage 3, pain present in 70% at stage 1."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "In 34 women, high-frequency ultrasound supported a new four-stage qualitative dermal and hypodermal classification (LDHC) to complement anatomical and functional classifications."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Proposed clinical-ultrasonographic algorithm for abdominal lipedema with maximum, major and minor criteria; abdominal involvement 31% in stage II and 70% in stage III."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00098"
+  },
+  {
+   "key": "P6",
+   "statement": "Screening questionnaires and simple clinical-criteria algorithms are reported to discriminate lipedema from non-lipedema or lymphedema with good accuracy.",
+   "role": "supporting",
+   "rationale": "Algorithm and questionnaire studies report high discrimination against expert clinical diagnosis.",
+   "evidence": [
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "In 138 lipedema and 111 lymphedema patients, a CART model using bruising, disproportion and spared feet classified patients with 100% accuracy."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "A 9-item self-applied screening questionnaire achieved AUC 0.912 (7-item model) and 0.8615 (total score) against expert diagnosis in 109 women."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "In 969 Spanish patients, a threshold of at least 6 of 13 modified Wolf/Herbst symptom criteria was proposed; diagnosed and undiagnosed groups did not differ (p=0.666); 51.2% needed three or more specialists."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00032",
+   "statement_before_twin_merge": "Structured combinations of clinical signs or screening questionnaires can discriminate lipedema from lymphedema or non-lipedema with good accuracy."
+  },
+  {
+   "key": "P7",
+   "statement": "Imaging and body-composition measures are proposed as diagnostic adjuncts, but their diagnostic performance and reliability remain insufficiently established.",
+   "role": "refines",
+   "rationale": "Single studies report promising discrimination, while systematic reviews find limited performance and poorly reported reliability.",
+   "evidence": [
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Systematic review of 32 studies (1154 patients): ultrasound, lymphoscintigraphy, CT, MRI, MR lymphangiography and DXA have been proposed, but overall diagnostic performance was limited."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Review of 13 quantification tools found heterogeneous, poorly documented protocols, with clinimetric reliability reported in only a minority of studies."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Review lists proposed cut-offs (pretibial ultrasound thickness 11.7 mm, DXA leg/total fat 0.383) and identifies absence of an objective, easy imaging test as a critical gap."
+    },
+    {
+     "e": "E1",
+     "stance": "refines",
+     "finding": "DXA leg fat/total fat index distinguished lipedema from controls with AUC 0.90, sensitivity 0.95, specificity 0.73 at cut-off 0.383, across BMI strata."
+    },
+    {
+     "e": "E5",
+     "stance": "refines",
+     "finding": "Bioimpedance spectroscopy distinguished lipedema from Dercum's disease (p<0.001) and stage 1 lipedema from matched controls (p=0.01); leg extracellular water rose with stage."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 5,
+   "store_key": "G-00100"
+  },
+  {
+   "key": "P8",
+   "statement": "Standardized, universally accepted diagnostic criteria for lipedema are still lacking.",
+   "role": "refines",
+   "rationale": "Systematic reviews and a research priority-setting exercise identify diagnostic criteria as unresolved.",
+   "evidence": [
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Systematic review of 61 articles: diagnosis relies on clinical features from observational studies and expert consensus; standardized criteria and validated patient-reported outcomes are lacking."
+    },
+    {
+     "e": "E31",
+     "stance": "supporting",
+     "finding": "Priority-setting partnership of 255 participants ranked 'what criteria should apply for a diagnosis of lipoedema?' as the top research priority."
+    },
+    {
+     "e": "E34",
+     "stance": "supporting",
+     "finding": "Review: diagnosis based on history and examination with scarce hard criteria; lists exclusion criteria (WHR >0.85, subcutaneous thickness <12 mm); only 9% correctly diagnosed at first consultation."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00101"
+  },
+  {
+   "key": "P9",
+   "statement": "Lipedema is frequently misdiagnosed as obesity or lymphedema.",
+   "role": "context",
+   "rationale": "Reviews repeatedly report misdiagnosis and describe lipedema as an entity distinct from lymphedema.",
+   "evidence": [
+    {
+     "e": "E32",
+     "stance": "supporting",
+     "finding": "Review: lipedema is frequently misdiagnosed or confused with primary lymphedema; distinguishing criteria include hip-to-ankle enlargement sparing feet, pain, easy bruising and pressure sensitivity."
+    },
+    {
+     "e": "E33",
+     "stance": "supporting",
+     "finding": "Review describes lipedema as well described but often misdiagnosed, and outlines initial evaluation and diagnosis."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Review: lipedema is diagnosed clinically and differentiated from obesity and lymphedema, but remains poorly characterized and frequently misdiagnosed."
+    },
+    {
+     "e": "E36",
+     "stance": "context",
+     "finding": "Review characterizes lipedema and lymphedema as completely different disease entities, lipedema being a fat distribution disorder rather than a precursor of lymphedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00116",
+   "statement_before_twin_merge": "Lipedema is frequently misdiagnosed or confused with obesity or lymphedema."
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E29",
+   "reason": "Author response to a letter; reports no diagnostic, classification or reliability finding."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Consistent across E19, E28, E30, E27; E3 (no accurate diagnostic imaging) and E34 also fit. Compatible with P7, which says imaging adjuncts exist but are unproven."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E7"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Bruising is in E35 but not in E25's criteria list; E13 requires all Wold anamnestic criteria, which is stricter than 'commonly include'. The guidelines do not agree (S2k E7 requires pain with disproportion, S1 E25 lists pain on palpation, E12 shows pain in 70% at stage 1); this divergence is only implied. E7's diagnostic criteria are filed only under P4."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E21",
+     "E25",
+     "E14",
+     "E18",
+     "E35"
+    ],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Types and stages are used across E8, E23, E24, E20, though stage count differs (3 vs 4, E35 grades 1-4). E20 and E24 are descriptive uses, not evidence of validity; E20 is a preprint."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Evidence is inconsistent on whether morphological stage tracks symptom burden or lymphatic function, and some guidelines advise against using it as a severity measure.",
+    "severity": "minor",
+    "note": "E21 (pain rises with stage, p<0.001), E12 (BMI, body water, hypothermia rise with stage) and E24 (cuff sign with advanced stage) point the other way; E21 is correctly labelled contradicting but 'correlates poorly' is stated too firmly. E18 itself found stage related to age and BMI. E7 is a guideline recommendation, not data. Symptom burden and lymphatic function are two ideas."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E10"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E10 is a diagnostic algorithm for abdominal lipedema, not a staging revision. E6 'insufficient' is one review's view; E12 and E22 are single-centre proposals without validation, which the 'proposed' wording respects."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [
+     "E16"
+    ],
+    "misplaced": [],
+    "suggested_statement": "Small studies suggest combinations of clinical signs or screening questionnaires may discriminate lipedema from lymphedema or controls, but external validation is lacking.",
+    "severity": "minor",
+    "note": "E16: a Mann-Whitney p=0.666 between diagnosed and undiagnosed groups says nothing about accuracy, so it should be context or removed. E4 'classified with 100% accuracy' conflicts with the quoted tree (14 lipedema in the no-bruising node) and is internal derivation without validation. E2 AUC 0.86-0.91 is in 109 women against clinical judgement. 'Good accuracy' needs a validation caveat."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E3",
+     "E8"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E1 (AUC 0.90) and E8 (CT 95%/100%) are promising and single-study, so 'insufficiently established' is fair. E9 concerns limb quantification tools rather than diagnostic imaging. Performance and reliability are two aspects."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E34"
+    ],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Supported by E11, E31, E34, E13 (no objective criteria) and E28. Guidelines (E7, E13, E25) do exist but differ, which supports 'not standardized or universally accepted'."
+   },
+   {
+    "key": "P9",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E11",
+     "E34",
+     "E16",
+     "E23"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Misdiagnosis as lymphedema is supported by E32; as obesity only by E17 (and E11 quote), so the obesity half is thinner. E34 (9% correct at first consultation), E16 (many specialists) and E23 (46.2% of consultants recognize it) are stronger and sit elsewhere. E36 is a distinct claim about lymphedema progression."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "The question asks how reliable the systems are, yet no proposition states that inter-rater reliability or validation of clinical criteria and staging has not been shown (E9 limited clinimetrics, E13 no objective criteria, E11); reliability is only implied through P4, P7 and P8.",
+    "severity": "minor"
+   },
+   {
+    "issue": "Guideline divergence is not captured: S2k (E7) makes pain a required symptom and discards staging and the nodular criterion, S1 (E25) and Dutch (E13) differ, and E12 reports pain in only 70% at stage 1. P2 reads as if criteria agree, and E7's diagnostic content is filed only under P4.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E20 is a preprint (DOI 10.20944/preprints...) and E22, E27, E28, E29 have placeholder titles; E20 only describes stage distribution and adds little to P3.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E29 dropped as off-topic is appropriate.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000022.cons.json",
+   "ver": "SQ-LIP-000022.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00102",
+   "into": "G-00116"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00099",
+   "into": "G-00032"
+  }
+ ]
+}

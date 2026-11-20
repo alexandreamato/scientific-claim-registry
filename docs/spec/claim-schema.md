@@ -138,3 +138,18 @@ do conselho de IAs).
   e expor `evidence_confidence` em GRADE — facilita adoção e cumpre o reuso de padrões.
 - IDs nunca são reciclados; claims "retiradas" recebem `knowledge_state` + nota no `history`,
   não são apagadas.
+
+## 10. Proposição geral e achado por estudo (R-CLM-19, desde a v0.6)
+
+- `statement`: proposição geral (até 25 palavras, sem números, não descreve um estudo), sustentável ou contestável
+  por vários artigos.
+- `evidence[].finding`: o resultado específico daquele estudo sob a proposição (números, população). `stance` passa a
+  ser relativo à proposição; `stance_in_source_claim` guarda o rótulo que a evidência tinha no claim de origem.
+- `evidence[].secondary_of`: a `ref` de outro item quando uma revisão só relata o resultado dele (não conta para o
+  GRADE nem para `n_findings`).
+- `evidence[].from_claims`: o(s) claim(s) de artigo único de onde a evidência veio.
+- `consolidated_from` / `questions_consolidated` / `provenance.store_key`: de onde a proposição foi montada.
+- Claims de artigo único antigos nunca são apagados: `superseded_by` (lista de proposições que receberam sua
+  evidência) e `status: "superseded"` quando nenhuma pergunta os liga mais; `status: "retired"` quando toda a evidência
+  deles foi descartada na consolidação (não era achado, ou fora do tema), com o motivo no `history`.
+- `evidence[].correction`: correção de metadado de referência (`from`, `why`, `date`).

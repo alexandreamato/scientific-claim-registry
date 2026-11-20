@@ -1,0 +1,481 @@
+{
+ "question": "SQ-LIP-000031",
+ "text": "Can DXA (dual-energy X-ray absorptiometry) help identify lipedema fat distribution?",
+ "n_old_claims": 12,
+ "n_items": 14,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: P4 states DXA is used without testing diagnostic accuracy, contradicting the accuracy studies under P1.",
+  "[minor] set: E6 and E7 analyse the same DXA-defined NHANES phenotype and appear as two independent supporting findings under P4, though they are likely overlapping analyses.",
+  "[minor] set: The rule-out use of the leg fat cut-off (E2: values below the cut-off exclude lipedema with reasonable certainty) and the absence of external validation are not stated as a proposition.",
+  "[minor] P3: not fully supported; overgeneralized — suggested: A gynoid fat phenotype may mimic lipedema, so unscreened gynoid obesity may confound lipedema studies. (E10 is a very low grade narrative review about confounding in pain-inflammation research, not about DXA accuracy; the claim about fat distribution not separating lipedema from gynoid obesity is an inference. E13 separates lipedema from general obesity with high AUC, though not specifically gynoid obesity.)",
+  "[minor] P4: overgeneralized; two ideas — suggested: DXA regional fat measures are used in lipedema studies as descriptive variables or as proxy definitions of a lipedema-like phenotype. ('Without testing its diagnostic accuracy' contradicts P1, where E2, E11 and E13 test diagnostic accuracy, so the statement is misleading as a general proposition. It also bundles quantification and phenotype definition. E6 and E7 report metabolic findings from the same NHANES proxy and add nothing about DXA identifying lipedema.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round + arbitration)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1089/lrb.2024.0102",
+   "title": "Assessment Tools to Quantify the Physical Aspects of Lipedema: A Systematic Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Reporte limitado de clinimetria, derivado de pequenas coortes em populações heterogêneas, impactou a capacidade de recomendar ferramentas para prática clínica e pesquisa. Investigações adicionais são necessárias para estabelecer validade e reliability de ferramentas de medição e imagem",
+   "note": "Systematic review focused on objective measurement/imaging tools and their reliability/diagnostic performance in lipedema, which addresses the reliability aspect of the question, though it concerns quantification tools rather than clinical ",
+   "old_claims": [
+    "SCR-LIP-000195"
+   ],
+   "old_statements": [
+    "A review of 13 tools used to quantify lipedema limbs (8 imaging, 5 clinical measurement) found highly heterogeneous and poorly documented protocols — e.g., tape measurement used inconsistent anatomical sites and volume formulas, and ultrasound studies omitted machine settings — with clinimetric reliability reported in only a minority of studies, limiting reproducibility and cross-study comparison."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1159/000527138",
+   "title": "Body Composition Assessment by Dual-Energy X-Ray Absorptiometry: A Useful Tool for the Diagnosis of Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Leg FM/total FM (índice principal): AUC=0,90 (IC95% 0,86–0,94), melhor índice de Youden (0,68), sensibilidade=0,95, especificidade=0,73 para ponto de corte=0,383 — valores <0,383 permitem excluir lipedema com razoável grau de certeza",
+   "note": "The article directly evaluates DXA's ability to differentiate lipedema from controls and characterize its fat distribution, providing specific diagnostic accuracy metrics that support DXA's discriminative role. [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000199"
+   ],
+   "old_statements": [
+    "In a DXA body composition study, the leg fat mass/total fat mass index distinguished lipedema patients from healthy controls with AUC=0.90 (sensitivity 0.95, specificity 0.73 at cutoff 0.383) across all BMI strata, with elevated leg fat proportion (0.451 vs 0.354) and inverted trunk/legs ratio (0.960 vs 1.502), while appendicular lean mass and total bone density did not differ."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1111/obr.13648",
+   "title": "Diagnostic imaging in lipedema: A systematic review",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "The diagnostic performance of currently available imaging modalities for assessing lipedema is limited. Prospective studies are needed to evaluate and compare the diagnostic performance of each imaging modality.",
+   "note": "Systematic review evaluating diagnostic imaging methods for lipedema; relevant to diagnostic criteria/reliability, refining by reporting that imaging-based diagnostic performance is currently limited rather than well-established.",
+   "old_claims": [
+    "SCR-LIP-000363"
+   ],
+   "old_statements": [
+    "In a systematic review of 32 studies (1154 patients), imaging methods proposed for characterizing lipedema include ultrasound (increased subcutaneous adipose tissue), lymphoscintigraphy (slowed lymphatic flow, inter-limb asymmetry), CT (symmetrical bilateral soft tissue enlargement without skin thickening or edema), MRI, MR lymphangiography (enlarged lymphatic vessels up to 2 mm), and DXA (leg fat mass/BMI ≥0.46 or leg fat/total fat ≥0.384), but their overall diagnostic performance was limited."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1016/j.bjps.2023.05.056",
+   "title": "Lipedema: What we don’t know",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico de imagem: ultrassom de alta resolução diferencia lipedema (espessura subcutânea aumentada) de linfedema (espessura dérmica aumentada + ecogenicidade reduzida)",
+   "note": "Narrative review explicitly covering differential imaging (ultrasound, DXA, MR lymphangiography, lymphoscintigraphy) with cited cut-offs and patterns distinguishing lipedema from lymphedema, while acknowledging the lack of a single objectiv",
+   "old_claims": [
+    "SCR-LIP-000378"
+   ],
+   "old_statements": [
+    "This review reports that high-resolution ultrasound distinguishes lipedema (increased subcutaneous thickness; cut-offs 11.7 mm pretibial, 17.9 mm anterior thigh, 8.4 mm lateral leg) from lymphedema (increased dermal thickness with reduced echogenicity), DXA differentiates lipedema via leg-fat/total-fat index (cut-off 0.383) and BMI-adjusted leg fat (cut-off 0.46), MR lymphangiography shows dilated lymphatic vessels with a 'beaded' appearance, and lymphoscintigraphy reveals delayed lymphatic flow with frequent inter-limb asymmetry, while noting that no easy, objective diagnostic imaging test currently exists."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "DEXA index (Buso et al.): leg-fat/total-fat ratio ≥0.384 suggests lipedema; <0.383 useful for exclusion — auxiliary tool for borderline cases",
+   "note": "The review explicitly cites a DEXA leg-fat/total-fat ratio cutoff suggesting lipedema fat distribution, directly addressing whether DXA can identify lipedema fat distribution, though it is a narrative synthesis citing secondary data.",
+   "old_claims": [
+    "SCR-LIP-000378"
+   ],
+   "old_statements": [
+    "This review reports that high-resolution ultrasound distinguishes lipedema (increased subcutaneous thickness; cut-offs 11.7 mm pretibial, 17.9 mm anterior thigh, 8.4 mm lateral leg) from lymphedema (increased dermal thickness with reduced echogenicity), DXA differentiates lipedema via leg-fat/total-fat index (cut-off 0.383) and BMI-adjusted leg fat (cut-off 0.46), MR lymphangiography shows dilated lymphatic vessels with a 'beaded' appearance, and lymphoscintigraphy reveals delayed lymphatic flow with frequent inter-limb asymmetry, while noting that no easy, objective diagnostic imaging test currently exists."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.64898/2025.12.01.25341350",
+   "title": "The Lipedema Phenotype is Inversely Associated with Celiac Disease Autoimmunity: Testing the Immunological Shield Hypothesis in NHANES",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": 3833,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "HOMA-IR mediano 44,2% menor no fenótipo lipedema (1,35 [IQR 0,95–2,01] vs 2,42 [IQR 1,47–4,30]; p<0,001)",
+   "note": "exploratory; DXA proxy may capture gynoid obesity",
+   "old_claims": [
+    "SCR-LIP-000027"
+   ],
+   "old_statements": [
+    "In NHANES women, a DXA-defined lipedema-like phenotype (leg-to-trunk fat ratio >90th percentile) was associated with a favorable immunometabolic profile, including 44.2% lower HOMA-IR (p<0.001) and 7.6% lower neutrophil-to-lymphocyte ratio (p=0.012)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.7759/cureus.104222",
+   "title": "Exploring the Immunological Shield Hypothesis: A Population-Based Exploration of Phenotypic Divergence Between Lipedema and Celiac Disease Autoimmunity",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "fenótipo lipedema fortemente protetor contra diabetes (prevalência 1,8% vs 8,1%; OR 0,21; IC95% 0,08-0,51; p<0,001)",
+   "note": "Exploratory cross-sectional population study directly examines whether a peripheral/gynoid (lipedema-like) fat distribution confers metabolic protection, reporting lower HOMA-IR and reduced diabetes prevalence with dose-response; supports t",
+   "old_claims": [
+    "SCR-LIP-000027"
+   ],
+   "old_statements": [
+    "In NHANES women, a DXA-defined lipedema-like phenotype (leg-to-trunk fat ratio >90th percentile) was associated with a favorable immunometabolic profile, including 44.2% lower HOMA-IR (p<0.001) and 7.6% lower neutrophil-to-lymphocyte ratio (p=0.012)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1210/jcemcr/luag018",
+   "title": "JCEM Case Reports, 2026, 4, luag018",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Total body, trunk, leg and arm fat masses, the android-to-gynoid fat ratio (in general, the android region is the area between the lower ribs and the pelvis and the gynoid region is the area below the pelvis to the upper thighs) and fat-free mass were assessed by using dual-energy X-ray absorptiomet",
+   "note": "The abstract describes DXA being applied to a lipedema patient to measure regional fat distribution, but as a single case report it does not test or validate DXA's ability to identify a characteristic lipedema fat distribution pattern; it i",
+   "old_claims": [
+    "SCR-LIP-000439"
+   ],
+   "old_statements": [
+    "In a single lipedema patient case report, DXA was used to assess total body, trunk, leg, and arm fat masses and the android-to-gynoid fat ratio, alongside MRI for regional adipose tissue volumes."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1177/02683555251360606",
+   "title": "Unveiling kinesiophobia: A hidden challenge",
+   "year": 2026,
+   "design": "case_control",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "the lipedema patients were evaluated in terms of extremity volumes, and total and mean lower extremity fat mass by dualenergy X-ray absorptiometry",
+   "note": "DXA is used to measure lower extremity fat mass in lipedema patients, but the abstract does not test whether DXA identifies a lipedema-specific fat distribution pattern; it only uses DXA as a measurement tool within a kinesiophobia study, m",
+   "old_claims": [
+    "SCR-LIP-000440"
+   ],
+   "old_statements": [
+    "In 40 lipedema patients, dual-energy X-ray absorptiometry was used to measure total and mean lower extremity fat mass and extremity volumes, but no difference in these measures was found between patients with high versus low kinesiophobia."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.36557/2674-8169.2026v8n2p869-884",
+   "title": "Dor crônica e biomarcadores inflamatórios em mulheres com obesidade: Impacto dos Fenótipos Adiposos e Lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Fenótipo ginoide pode simular lipedema — ausência de triagem sistemática compromete a interpretabilidade dos dados de dor-inflamação",
+   "note": "The article is a narrative review (not a systematic review or meta-analysis) that explicitly calls for systematic lipedema screening to avoid misclassification, directly supporting the premise that lipedema is underdiagnosed and that screen",
+   "old_claims": [
+    "SCR-LIP-000062"
+   ],
+   "old_statements": [
+    "A narrative review of 2020–2025 evidence concludes that systematic lipedema screening is necessary when studying pain–inflammation relationships in women with obesity, because unrecognized lipedema may cluster pain within peripheral fat phenotypes and bias comparisons between android and gynoid obesity groups."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1111/bjd.13697",
+   "title": "Body composition in lipoedema of the legs using dual-energy X-ray absorptiometry: A case-control study",
+   "year": 2015,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "AUC para gordura de pernas/IMC = 0,82 (IC95% 0,75–0,90) — melhor discriminador entre os indicadores testados Valor de corte ótimo: 0,4637 kg gordura de pernas/IMC — sensibilidade 87%, especificidade 68%",
+   "note": "The article directly tests whether DXA body composition measures can differentiate lipedema fat distribution from controls and reports leg fat/BMI as a strong BMI-independent discriminator (AUC 0.82), with a peripheral-only deposition patte",
+   "old_claims": [
+    "SCR-LIP-000547"
+   ],
+   "old_statements": [
+    "In a case-control DXA study, BMI-adjusted leg fat was ~1.3× higher in lipedema versus controls across all BMI categories, with leg fat/BMI being the best discriminator (AUC 0.82, cutoff 0.4637, sensitivity 87%, specificity 68%), while trunk fat/BMI and leg lean mass/BMI did not differ, confirming an exclusively peripheral fat deposition pattern."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1002/oby.22090",
+   "title": "Tissue Sodium Content is Elevated in the Skin and Subcutaneous Adipose Tissue in Women with Lipedema",
+   "year": 2018,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Dixon MRI was employed to quantify tissue fat and water volumes of the calf.",
+   "note": "The study uses MRI (Dixon/sodium), not DXA, to characterize lipedema fat and sodium distribution. It is on-topic regarding imaging-based identification of lipedema fat distribution but does not test or involve DXA, so it provides context ra",
+   "old_claims": [
+    "SCR-LIP-000548"
+   ],
+   "old_statements": [
+    "In 10 women with lipedema versus 11 BMI- and calf-circumference-matched controls, multimodal MRI (23Na sodium MRI plus proton Dixon) showed elevated skin (14.9±2.9 vs 11.9±2.0 mmol/L, P=0.01) and SAT (11.9±3.1 vs 9.4±1.6 mmol/L, P=0.04) sodium content and nearly doubled calf fat-to-water ratio (1.2 vs 0.63, P<0.001), proposing these as discriminatory biomarkers versus obesity."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1007/s12020-026-04723-3",
+   "title": "Dual-Energy X-Ray absorptiometry based differentiation of lipoedema and familial partial lipodystrophy from general obesity in women.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipoedema was best distinguished by a lower trunk fat mass (FM)/leg FM ratio (AUC: 0.964; p < 0.001).",
+   "note": "The study directly evaluates DXA-derived regional fat ratios and shows high discriminative performance for identifying lipedema's characteristic leg-predominant fat distribution, though authors frame indices as exploratory/hypothesis-genera",
+   "old_claims": [
+    "SCR-LIP-000549"
+   ],
+   "old_statements": [
+    "In 72 women, whole-body DXA distinguished lipedema by a lower trunk fat mass/leg fat mass ratio (AUC 0.964) and separated lipedema from FPLD using total fat percentage ≥43.5% (AUC 0.990)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.3389/fendo.2026.1857893",
+   "title": "Distinct systemic metabolic signatures in premenopausal women with lipedema revealed by composite indices.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Regional body composition was additionally assessed in an exploratory matched DXA subset (n=12).",
+   "note": "The study used DXA to assess regional body composition and found a significant fat distribution composite index difference indicating peripheral fat, supporting DXA's role in characterizing lipedema fat distribution, though the DXA subset w",
+   "old_claims": [
+    "SCR-LIP-000550"
+   ],
+   "old_statements": [
+    "In an exploratory DXA subset (n=12) of premenopausal women, regional body composition contributed to a composite fat distribution index that differed significantly between lipedema and BMI-matched controls (g=1.26; p<0.001), reflecting a more peripheral fat distribution."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "DXA regional fat indices, such as leg fat relative to total fat or a low trunk-to-leg fat ratio, may help discriminate lipedema from controls.",
+   "role": "supporting",
+   "rationale": "Several cross-sectional DXA studies report good discrimination with leg-predominant indices, but specificity is moderate, cutoffs differ and discrimination from obesity rests mainly on one study.",
+   "evidence": [
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Leg fat mass/total fat mass index distinguished lipedema from controls with AUC 0.90 (sensitivity 0.95, specificity 0.73, cutoff 0.383) across BMI strata; lean mass and bone density did not differ."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Case-control DXA: BMI-adjusted leg fat ~1.3 times higher in lipedema across BMI categories; leg fat/BMI best discriminator (AUC 0.82, cutoff 0.4637, sensitivity 87%, specificity 68%); trunk fat/BMI and leg lean mass did not differ."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "In 72 women, lower trunk fat/leg fat ratio best distinguished lipedema from general obesity (AUC 0.964); total fat >=43.5% separated lipedema from familial partial lipodystrophy (AUC 0.990)."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Exploratory matched DXA subset (n=12): a composite fat distribution index differed between lipedema and BMI-matched controls (g=1.26; p<0.001), reflecting more peripheral fat."
+    },
+    {
+     "e": "E5",
+     "stance": "context",
+     "secondary_of": "E2",
+     "finding": "Dermatology review cites the DEXA leg-fat/total-fat ratio >=0.384 as suggesting lipedema and <0.383 as useful for exclusion, an auxiliary tool in borderline cases."
+    },
+    {
+     "e": "E4",
+     "stance": "context",
+     "secondary_of": "E2",
+     "finding": "Narrative review cites DXA differentiation via leg-fat/total-fat index (cutoff 0.383) and BMI-adjusted leg fat (cutoff 0.46), noting no easy objective imaging test exists."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00190"
+  },
+  {
+   "key": "P2",
+   "statement": "Evidence on DXA and other imaging tools for lipedema remains limited, with small heterogeneous samples and poorly reported reliability.",
+   "role": "refines",
+   "rationale": "Systematic reviews judge imaging diagnostic performance limited and measurement protocols poorly standardized.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Systematic review of 32 studies (1154 patients) lists DXA cutoffs (leg fat/BMI >=0.46, leg fat/total fat >=0.384) among imaging methods, but overall diagnostic performance was limited."
+    },
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Review of 13 quantification tools: heterogeneous, poorly documented protocols and rarely reported clinimetric reliability, from small heterogeneous cohorts, preventing recommendations."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00191"
+  },
+  {
+   "key": "P3",
+   "statement": "A gynoid fat phenotype may mimic lipedema, so fat distribution alone may not reliably separate lipedema from gynoid obesity without clinical screening.",
+   "role": "refines",
+   "rationale": "Hedged caveat resting on one narrative review; it qualifies P1, whose DXA evidence is stronger, by noting that peripheral fat distribution is not specific to lipedema.",
+   "evidence": [
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Narrative review: a gynoid phenotype can mimic lipedema, and lack of systematic lipedema screening compromises interpretation of pain-inflammation data in women with obesity."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00192"
+  },
+  {
+   "key": "P4",
+   "statement": "DXA regional fat measures are used in lipedema studies as descriptive variables or as proxy definitions of a lipedema-like phenotype.",
+   "role": "context",
+   "rationale": "Clinical, case and population studies apply DXA as a measurement or phenotype-defining tool; the population studies use an unvalidated DXA proxy and report metabolic outcomes, not diagnostic performance.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Case report: DXA assessed total, trunk, leg and arm fat masses and android-to-gynoid ratio in a lipedema patient, alongside MRI regional volumes."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "In 40 lipedema patients, DXA lower-extremity fat mass did not differ between high and low kinesiophobia groups."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "In NHANES women, a lipedema-like phenotype defined by DXA leg-to-trunk fat ratio >90th percentile had 44.2% lower HOMA-IR (p<0.001); exploratory, unvalidated proxy."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "The same DXA-defined lipedema-like phenotype was associated with lower diabetes prevalence (1.8% vs 8.1%; OR 0.21) in an exploratory population analysis."
+    }
+   ],
+   "statement_before_arbitration": "DXA is used in lipedema research to quantify regional fat and to define lipedema-like phenotypes, without testing its diagnostic accuracy.",
+   "wording_source": "verifier",
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00193"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E12",
+   "reason": "Off-topic: uses sodium and Dixon MRI, not DXA."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Four primary cross-sectional studies agree; hedged with 'may help'. Specificity is moderate (0.68-0.73) and E14 is an exploratory n=12 subset. E4 additionally cites the BMI-adjusted cut-off from E11 but is marked secondary only of E2; bookkeeping."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Two systematic reviews state limited diagnostic performance and heterogeneous, poorly reported protocols; appropriate caveat to P1."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "A gynoid fat phenotype may mimic lipedema, so unscreened gynoid obesity may confound lipedema studies.",
+    "severity": "minor",
+    "note": "E10 is a very low grade narrative review about confounding in pain-inflammation research, not about DXA accuracy; the claim about fat distribution not separating lipedema from gynoid obesity is an inference. E13 separates lipedema from general obesity with high AUC, though not specifically gynoid obesity."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "DXA regional fat measures are used in lipedema studies as descriptive variables or as proxy definitions of a lipedema-like phenotype.",
+    "severity": "minor",
+    "note": "'Without testing its diagnostic accuracy' contradicts P1, where E2, E11 and E13 test diagnostic accuracy, so the statement is misleading as a general proposition. It also bundles quantification and phenotype definition. E6 and E7 report metabolic findings from the same NHANES proxy and add nothing about DXA identifying lipedema.",
+    "resolution": "arbitration: verifier's suggested wording adopted (not re-verified)"
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "P4 states DXA is used without testing diagnostic accuracy, contradicting the accuracy studies under P1.",
+    "severity": "minor",
+    "resolution": "resolved by arbitration on P4 (verifier wording adopted, not re-verified)"
+   },
+   {
+    "issue": "E6 and E7 analyse the same DXA-defined NHANES phenotype and appear as two independent supporting findings under P4, though they are likely overlapping analyses.",
+    "severity": "minor"
+   },
+   {
+    "issue": "The rule-out use of the leg fat cut-off (E2: values below the cut-off exclude lipedema with reasonable certainty) and the absence of external validation are not stated as a proposition.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000031.cons3.json",
+   "ver": "SQ-LIP-000031.ver3.json"
+  }
+ ]
+}

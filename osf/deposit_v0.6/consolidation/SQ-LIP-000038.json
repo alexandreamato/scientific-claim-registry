@@ -1,0 +1,709 @@
+{
+ "question": "SQ-LIP-000038",
+ "text": "Can screening tools or questionnaires help identify lipedema cases?",
+ "n_old_claims": 20,
+ "n_items": 20,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E14 (diagnostic delay of 25.5 vs 12.1 years) and E15 (persistent underdiagnosis) support P7 but are placed elsewhere or nowhere.",
+  "[minor] set: P1 and P3 overlap (screening questionnaire discriminates vs flags probable cases without establishing diagnosis); P6 (IL-6 polymorphism) is only tangential to screening tools or questionnaires.",
+  "[minor] P3: not fully supported; misplaced ['E3'] (E20 shows higher screening scores in women with leg pain, not diagnostic accuracy; E19 (probable lipedema in undiagnosed Turkish women) fits here and is placed under P2. E3 is about screening in pain-inflammation research, only weakly relevant. 'Do not establish the diagnosis' is stated by authors of E20 and E1.)",
+  "[minor] P4: not fully supported; misplaced ['E4'] (Only E14 (internally derived CART, 100 percent accuracy, likely overfit) addresses lipedema vs lymphedema. E8 (abdominal algorithm, no accuracy) and E4 (no comparison group) do not bear on that separation. E17 (six criteria) and E11 (negative Stemmer, foot sparing) are better candidates and sit under P7.)",
+  "[minor] P5: two ideas; misplaced ['E11'] (Bundles 'proposed as adjuncts' (E9, E12, E15, E10, E11 CT sensitivity 95 percent / specificity 100 percent not placed here) with 'insufficiently established' (E16, E18, E10). Stance labels all 'supporting' hide that some support the first clause and some the second. Imaging adjuncts are diagnostic, not screening.)",
+  "[minor] P6: not fully supported; misplaced ['E13'] — suggested: A genetic polymorphism such as an interleukin-six variant has been proposed, on limited evidence, as a possible adjunct marker of lipedema risk. (Single case-control study with a very wide confidence interval; weakly relevant to screening tools. 'May be associated' is hedged but the single-study basis is not signalled.)",
+  "[minor] P7: not fully supported; overgeneralized — suggested: Lipedema is frequently reported to be under-recognised or misdiagnosed, often as obesity or lymphedema, with long delays to diagnosis. ('Most often as obesity or lymphedema' is a ranking no item gives (E6 states it; E17 is two cases; E5 shows lack of formal diagnosis and many specialists, not misdiagnosis type). E14 (25.5-year delay) and E15 (persistent underdiagnosis) directly support this but are not placed here. E11's CT figures are irrelevant to this proposition.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.200114",
+   "title": "Criação de questionário e modelo de rastreamento de lipedema",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "aumentando o nível de suspeição clínica em uma doença historicamente subdiagnosticada",
+   "note": "The article develops and validates a screening tool grounded in standard clinical diagnostic criteria for lipedema and reports diagnostic accuracy (AUC) against expert clinical reference, directly bearing on diagnostic criteria and their re [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000188"
+   ],
+   "old_statements": [
+    "A simplified 9-item self-applied screening questionnaire (derived from the validated QuASiL) based on clinical diagnostic criteria (post-pubertal women, bilateral symmetric fat deposit below the hip sparing feet, negative Stemmer and Godet signs, pain on palpation, spontaneous bruising) achieved diagnostic discrimination of AUC=0.912 for an individual 7-question predictive model and AUC=0.8615 for a total-score model against expert clinical diagnosis in 109 women (59 with lipedema, 50 without), with the item 'feeling something wrong in the legs' being most discriminative (OR=4.328)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1590/1677-5449.200049",
+   "title": "Tradução, adaptação cultural e validação do questionário de avaliação sintomática do lipedema (QuASiL)",
+   "year": 2020,
+   "design": "validation",
+   "n": 154,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "QuASiL — instrumento para quantificar sintomas e monitorar evolução terapêutica em pacientes brasileiras",
+   "note": "96.4% comprehension; symptom intensity correlated with limb volume",
+   "old_claims": [
+    "SCR-LIP-000009"
+   ],
+   "old_statements": [
+    "The Brazilian Portuguese lipedema symptoms questionnaire (QuASiL) was translated, culturally adapted and validated, showing high comprehension and symptom-intensity scores that correlate with limb volume by segmental bioimpedance."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.36557/2674-8169.2026v8n2p869-884",
+   "title": "Dor crônica e biomarcadores inflamatórios em mulheres com obesidade: Impacto dos Fenótipos Adiposos e Lipedema",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Fenótipo ginoide pode simular lipedema — ausência de triagem sistemática compromete a interpretabilidade dos dados de dor-inflamação",
+   "note": "The article is a narrative review (not a systematic review or meta-analysis) that explicitly calls for systematic lipedema screening to avoid misclassification, directly supporting the premise that lipedema is underdiagnosed and that screen",
+   "old_claims": [
+    "SCR-LIP-000062"
+   ],
+   "old_statements": [
+    "A narrative review of 2020–2025 evidence concludes that systematic lipedema screening is necessary when studying pain–inflammation relationships in women with obesity, because unrecognized lipedema may cluster pain within peripheral fat phenotypes and bias comparisons between android and gynoid obesity groups."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.3390/biomedicines13123049",
+   "title": "Clinical Signs at Diagnosis and Comorbidities in a Large Cohort of Patients with Lipedema in Spain",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Sinais dolorosos no exame físico com prevalência >96%: dor por pressão profunda no compartimento safeno grande proximal 98,7% (1780) e distal 98,4% (1775); dor no compartimento safeno pequeno 96,4% (1738); tender points internos supracondilar 98,8% e infracondilar 99%",
+   "note": "This large descriptive cross-sectional study characterizes clinical signs and comorbidities in lipedema and proposes a novel clinical assessment framework, supporting the notion that lipedema has complex, recognizable features that could ai",
+   "old_claims": [
+    "SCR-LIP-000065"
+   ],
+   "old_statements": [
+    "In a cohort of 1803 Spanish lipedema patients, 60.6% were diagnosed during reproductive years with a mean age of 42.9 years, and the study presents a novel clinical assessment approach including multiple comorbidity markers (e.g., suspected high intestinal permeability in 99%, bilateral trochanteric pain in 97.4%, ligamentous hyperlaxity in 95.8%) that may help physicians better identify and understand the condition."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.3390/ijerph20176647",
+   "title": "The Advanced Care Study: Current Status of Lipedema in Spain, A Descriptive Cross-Sectional Study",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "32,9% dos respondentes totais (352/1069) não tinham diagnóstico formal de lipedema; 50,8% do grupo não diagnosticado ainda buscava ativamente um profissional para obter diagnóstico",
+   "note": "The article explicitly applies the Schingale type classification and a modified Wolf/Herbst symptom scale, and proposes/validates a ≥6/13 symptom diagnostic criterion, directly describing clinical criteria and classification systems used fo",
+   "old_claims": [
+    "SCR-LIP-000364"
+   ],
+   "old_statements": [
+    "In a cross-sectional survey of 969 Spanish lipedema patients, diagnoses used the Schingale type I-IV classification (type III 41.7%, type IV 36.8%, type II 17.8%, type I 3.7%) and a modified Wolf/Herbst 13-criteria symptom scale; the authors validated a threshold of ≥6 of 13 symptoms (Mann-Whitney p=0.666 showing no distributional difference between diagnosed and undiagnosed groups), and diagnosis often required multiple consultations (51.2% needed ≥3 specialists)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1177/0268355516639421",
+   "title": "First Dutch guidelines on lipedema using the international classification of functioning, disability and health",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema é uma doença desafiadora frequentemente mal diagnosticada como linfedema ou obesidade. Apesar da ausência de critérios objetivos de diagnóstico e da compreensão limitada dos mecanismos fisiopatológicos",
+   "note": "This is a clinical guideline based on a systematic literature review up to June 2013, which directly states that lipedema is likely underdiagnosed/misdiagnosed and proposes screening/measurement tools for early detection, but the underlying",
+   "old_claims": [
+    "SCR-LIP-000068"
+   ],
+   "old_statements": [
+    "Dutch lipedema guidelines conclude that lipedema is frequently misdiagnosed or wrongly classified as an aesthetic problem, and recommend a minimum data set of repeated clinical measurements (waist circumference, limb circumferences, BMI, and psychosocial distress scoring) to ensure early detection."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1590/1677-5449.202101981",
+   "title": "Prevalência e fatores de risco para lipedema no Brasil",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A prevalência de lipedema na população feminina brasileira é de 12,3%, estimando-se conservadoramente 8,8 milhões de mulheres entre 18-69 anos com sintomas sugestivos",
+   "note": "The article applies a validated screening tool to estimate high lipedema prevalence in a large population, directly demonstrating that screening instruments can identify suspected lipedema cases and supporting the notion of substantial undi",
+   "old_claims": [
+    "SCR-LIP-000275"
+   ],
+   "old_statements": [
+    "Using a previously validated online screening questionnaire (cutoff ≥12 points, AUC 0.8615, specificity 0.88, sensitivity 0.46, PPV 0.767), a population-representative study estimated lipedema prevalence at 12.3% among Brazilian women aged 18-69, corresponding to roughly 8.8 million women with suggestive symptoms."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1007/s00266-025-05192-1",
+   "title": "Abdominal Lipedema: Clinical Diagnosis and Management Through a Proposed Diagnostic Algorithm",
+   "year": 2025,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema abdominal é manifestação significativa e subreconhecida da doença, exigindo critérios diagnósticos específicos para garantir diagnóstico correto e tratamento adequado. Os autores propõem um framework diagnóstico baseado em achados clínicos e de imagem que pode melhorar reconhecimento e ma",
+   "note": "The article proposes new diagnostic criteria and an algorithm for abdominal lipedema, correlating findings with existing lipedema staging, directly addressing clinical criteria and classification; it refines/extends existing diagnostic fram",
+   "old_claims": [
+    "SCR-LIP-000358"
+   ],
+   "old_statements": [
+    "The authors propose a clinical-ultrasonographic diagnostic algorithm for abdominal lipedema using maximum criteria (symmetric abdominal fat deposition + ultrasonographic evidence + inelastic skin), major criteria (pain on palpation + non-response to diet/exercise), and minor criteria (easy bruising + heaviness), correlating abdominal involvement with lipedema stage (31% in stage II, 70% in stage III)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1159/000527138",
+   "title": "Body Composition Assessment by Dual-Energy X-Ray Absorptiometry: A Useful Tool for the Diagnosis of Lipedema",
+   "year": 2022,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Leg FM/total FM (índice principal): AUC=0,90 (IC95% 0,86–0,94), melhor índice de Youden (0,68), sensibilidade=0,95, especificidade=0,73 para ponto de corte=0,383 — valores <0,383 permitem excluir lipedema com razoável grau de certeza",
+   "note": "The article directly evaluates DXA's ability to differentiate lipedema from controls and characterize its fat distribution, providing specific diagnostic accuracy metrics that support DXA's discriminative role. [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000199"
+   ],
+   "old_statements": [
+    "In a DXA body composition study, the leg fat mass/total fat mass index distinguished lipedema patients from healthy controls with AUC=0.90 (sensitivity 0.95, specificity 0.73 at cutoff 0.383) across all BMI strata, with elevated leg fat proportion (0.451 vs 0.354) and inverted trunk/legs ratio (0.960 vs 1.502), while appendicular lean mass and total bone density did not differ."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1002/jmri.28400",
+   "title": "Editorial for “Subcutaneous Adipose Tissue Edema in Lipedema Revealed by Noninvasive 3T Magnetic Resonance Lymphangiography”",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O editorial enfatiza a carência de biomarcadores confiáveis e eficazes do lipedema e o papel potencial das medidas de RM do conteúdo de gordura tecidual no diagnóstico diferencial entre lipedema e obesidade.",
+   "note": "Editorial commentary discussing the need for diagnostic biomarkers and a potential MR imaging tool for identifying lipedema, which contextually relates to underdiagnosis and detection/screening, but it is not a primary study quantifying und",
+   "old_claims": [
+    "SCR-LIP-000279"
+   ],
+   "old_statements": [
+    "This editorial commenting on Crescenzi et al. (2023) emphasizes the lack of reliable lipedema biomarkers and highlights noncontrast 3T MR lymphangiography—which reveals subcutaneous adipose tissue edema and increased lymphatic load—as a promising imaging biomarker that could aid differential diagnosis between lipedema and obesity, while noting small sample sizes limit current evidence."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "apenas 46,2% dos 251 consultores do Vascular Society of Great Britain and Ireland reconheciam lipedema em levantamento (Tiwari 2006)",
+   "note": "The review explicitly documents widespread under-recognition of lipedema (low clinician recognition rate, absence from coding systems, 'hidden epidemic') and describes diagnostic criteria and imaging tools (clinical staging, CT sensitivity/",
+   "old_claims": [
+    "SCR-LIP-000285"
+   ],
+   "old_statements": [
+    "A systematic review reported that lipedema is poorly recognized clinically—only 46.2% of 251 Vascular Society of Great Britain and Ireland consultants recognized it (Tiwari 2006)—and that it was absent from MeSH/EMBASE and ICD-WHO as of 2012, while non-contrast CT showed 95% sensitivity and 100% specificity and the spared foot dorsum (negative Stemmer sign) helps distinguish lipedema from lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1089/lrb.2019.0011",
+   "title": "Lipedema and Dercum's Disease: A New Application of Bioimpedance",
+   "year": 2019,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Medidas regionais de bioimpedância diferenciam lipedema de doença de Dercum (razão perna/braço menor em lipedema, p<0,001) e identificam estágio 1 de lipedema vs controles pareados (p=0,01).",
+   "note": "The question concerns clinical criteria and stage/type classification systems and their reliability. This study uses the conventional clinical stage classification (stage 1-3) as a reference and proposes an objective bioimpedance biomarker  [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000191"
+   ],
+   "old_statements": [
+    "Bioimpedance spectroscopy of regional tissue fluid distinguished lipedema from Dercum's disease (lower leg/arm R0 ratio in lipedema, p<0.001) and detected stage 1 lipedema versus matched controls (leg/arm ratio R0 p=0.01, R1 p=0.007), with leg extracellular water increasing across lipedema stages (p=0.03), proposing BIS as an objective adjunct biomarker for diagnosis and staging."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.26355/eurrev_202003_20690",
+   "title": "The role of IL-6 gene polymorphisms in the risk of lipedema",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Índices compostos — leg index, trunk index, abdominal index, total index — combinados com análise genética do IL-6, são ferramentas promissoras para diagnóstico e predição da evolução do lipedema.",
+   "note": "The article proposes composite body-composition indices and IL-6 genotyping as promising tools for diagnosis and differential analysis of lipedema, indirectly supporting that screening/diagnostic tools can help identify it; however it does ",
+   "old_claims": [
+    "SCR-LIP-000287"
+   ],
+   "old_statements": [
+    "In a case-control study, carriers of the IL-6 rs1800795 G allele had a 5.92-fold higher risk of lipedema (OR=5.92, 95%CI 1.983–17.711, p<0.001), and DXA-derived body composition indices (reduced WHR 0.73 vs 0.79, higher lower-limb FM% 48.90% vs 42.55%) combined with genetic analysis were proposed as tools for differential diagnosis between lipedema, normal-weight obesity, and obesity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.23736/s0392-9590.25.05207-1",
+   "title": "Building evidence for diagnosis of lipedema: using a classification and regression tree (CART) algorithm to differentiate lipedema from lymphedema patients",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tempo do início ao diagnóstico marcadamente maior em lipedema: 25,5 anos vs 12,1 anos em linfedema (p<0,0001) — confirma atraso diagnóstico crônico.",
+   "note": "The article reports a chronic diagnostic delay in lipedema (25.5 years to diagnosis), supporting underdiagnosis, and develops a simple 3-variable screening/classification tree to identify lipedema versus lymphedema, directly addressing both",
+   "old_claims": [
+    "SCR-LIP-000288"
+   ],
+   "old_statements": [
+    "In a prospective cohort of 138 lipedema and 111 lymphedema patients, a CART algorithm using only three clinical variables (bruising, body disproportion, and non-swollen/spared feet) classified lipedema versus lymphedema with 100% accuracy, and the median time from symptom onset to diagnosis was markedly longer in lipedema (25.5 years vs 12.1 years for lymphedema, p<0.0001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies — An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "addressing the persistent underdiagnosis and misdiagnosis of the condition",
+   "note": "The review explicitly addresses persistent underdiagnosis and describes imaging screening/diagnostic aids with cutoffs and performance, supporting the affirmative but noting the ultrasound cutoffs are not yet externally validated (a caveat)",
+   "old_claims": [
+    "SCR-LIP-000455"
+   ],
+   "old_statements": [
+    "This narrative review reports persistent underdiagnosis and misdiagnosis of lipedema and describes imaging-based diagnostic aids, including high-frequency ultrasound cutoffs (pretibial ≥11.7 mm, thigh ≥11.9 mm, lateral leg ≥8.4 mm; sensitivity 0.77–0.79, specificity up to 0.96, not yet externally validated) and a DEXA leg-fat/total-fat ratio ≥0.384 as auxiliary tools for borderline cases."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1089/lrb.2024.0102",
+   "title": "Assessment Tools to Quantify the Physical Aspects of Lipedema: A Systematic Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Reporte limitado de clinimetria, derivado de pequenas coortes em populações heterogêneas, impactou a capacidade de recomendar ferramentas para prática clínica e pesquisa. Investigações adicionais são necessárias para estabelecer validade e reliability de ferramentas de medição e imagem",
+   "note": "Systematic review focused on objective measurement/imaging tools and their reliability/diagnostic performance in lipedema, which addresses the reliability aspect of the question, though it concerns quantification tools rather than clinical ",
+   "old_claims": [
+    "SCR-LIP-000195"
+   ],
+   "old_statements": [
+    "A review of 13 tools used to quantify lipedema limbs (8 imaging, 5 clinical measurement) found highly heterogeneous and poorly documented protocols — e.g., tape measurement used inconsistent anatomical sites and volume formulas, and ultrasound studies omitted machine settings — with clinimetric reliability reported in only a minority of studies, limiting reproducibility and cross-study comparison."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.4103/jpgm.jpgm_273_25",
+   "title": "Report of two cases of lipedema: An under-recognized, misdiagnosed, and under-reported disorder in India",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Frequently misdiagnosed as lymphedema or obesity, lipedema presents with pain, easy bruising, bilateral nonpitting edema, and swelling that worsens throughout the day.",
+   "note": "The report explicitly states lipedema is under-recognized, misdiagnosed, and under-reported, and demonstrates how established clinical criteria and a diagnostic algorithm (screening-type tool) correctly identified it, directly supporting th",
+   "old_claims": [
+    "SCR-LIP-000457"
+   ],
+   "old_statements": [
+    "In two cases in India, lipedema was initially misdiagnosed as filarial lymphedema or obesity, and normal lymphoscintigraphy plus application of six clinical criteria (foot/hand sparing, negative Stemmer's sign) redirected the diagnosis to lipedema, prompting a published diagnostic algorithm for filariasis-endemic settings."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.3238/arztebl.2020.0396",
+   "title": "Lipedema—Pathogenesis, Diagnosis, and Treatment Options",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico exclusivamente clínico; sem biomarcador específico disponível; exames complementares usados apenas para excluir diagnósticos diferenciais",
+   "note": "The review addresses clinical diagnostic criteria and references staging (stage III), and explicitly comments on the lack of objective diagnostic instruments, providing context on diagnostic reliability though without formal reliability met",
+   "old_claims": [
+    "SCR-LIP-000367"
+   ],
+   "old_statements": [
+    "This selective review states that lipedema diagnosis is exclusively clinical with no specific biomarker available, complementary exams used only to exclude differential diagnoses, and notes that diagnosis remains challenging due to heterogeneous presentation and the absence of objective characterization instruments; in Germany liposuction was approved for stage III patients."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1080/07399332.2026.2720245",
+   "title": "Assessment of lipedema awareness and symptom levels in women: A cross-sectional study",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Consistência interna do QuASiL nesta amostra: alfa de Cronbach 0,84 — bem acima do 0,587 relatado no estudo de validação turca.",
+   "note": "The article applies and evaluates a lipedema screening questionnaire (QuASiL), reporting its internal consistency and probability categorization, directly bearing on whether screening tools can help identify lipedema cases.",
+   "old_claims": [
+    "SCR-LIP-000563"
+   ],
+   "old_statements": [
+    "The QuASiL lipedema screening questionnaire applied to undiagnosed Turkish women showed good internal consistency (Cronbach's alpha 0.84) and classified 15.4% as high probability and 63% as low probability of having lipedema, with scores correlating with age, BMI, chronic disease, and parity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1177/02683555261490379",
+   "title": "Screening for lipedema in women with lower extremity pain and its associations with functional status, pain, mood, and quality of life: A questionnaire-based case–control study",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Mulheres com dor em membros inferiores tiveram escores de LSQ maiores e mais lipedema provável que controles (36,8% contra 12,3%; p = 0,001)",
+   "note": "The study uses a validated screening questionnaire (LSQ) to identify probable lipedema cases at different frequencies between groups, directly demonstrating that a screening tool can help identify lipedema cases, while noting it is not diag",
+   "old_claims": [
+    "SCR-LIP-000564"
+   ],
+   "old_statements": [
+    "Using the validated Lipedema Screening Questionnaire (LSQ), probable lipedema was detected in 36.8% of women with lower extremity pain versus 12.3% of controls (p=0.001), and high-probability lipedema in 19.1% vs 3.1% (p=0.003), though the authors caution the LSQ is not diagnostic."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "A self-administered lipedema screening questionnaire may discriminate lipedema from non-lipedema, though sensitivity at a population cut-off is low and external validation lacking.",
+   "role": "supporting",
+   "rationale": "Discrimination comes from one small derivation sample; the population application of the same model reports low sensitivity, and no item reports external validation of accuracy.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "A 9-item self-applied questionnaire achieved AUC 0.912 (7-question model) and 0.8615 (total score) against expert diagnosis in 109 women; 'feeling something wrong in the legs' was most discriminative (OR 4.328)."
+    },
+    {
+     "e": "E7",
+     "stance": "refines",
+     "finding": "Prevalence study using the same online questionnaire at cut-off 12 points reported specificity 0.88 but sensitivity 0.46 (PPV 0.767); estimated 12.3% prevalence among Brazilian women aged 18-69."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00202"
+  },
+  {
+   "key": "P2",
+   "statement": "The QuASiL questionnaire has shown acceptable comprehension, convergent validity and internal consistency in some populations, although reliability has varied between studies.",
+   "role": "supporting",
+   "rationale": "Validation reports comprehension and correlation with limb volume; internal consistency differed markedly between two Turkish samples.",
+   "evidence": [
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Brazilian Portuguese QuASiL was translated, culturally adapted and validated, with 96.4% comprehension and symptom-intensity scores correlating with limb volume by segmental bioimpedance."
+    },
+    {
+     "e": "E19",
+     "stance": "refines",
+     "finding": "QuASiL applied to undiagnosed Turkish women had Cronbach's alpha 0.84, versus 0.587 in the Turkish validation study; 15.4% classified as high probability of lipedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00203"
+  },
+  {
+   "key": "P3",
+   "statement": "Screening questionnaires can flag probable lipedema among undiagnosed women, but they do not by themselves establish the diagnosis.",
+   "role": "refines",
+   "rationale": "Questionnaire screening detects probable cases in at-risk groups, with authors cautioning that results require clinical confirmation.",
+   "evidence": [
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Using the Lipedema Screening Questionnaire, probable lipedema was found in 36.8% of women with leg pain vs 12.3% of controls (p=0.001); authors caution the LSQ is not diagnostic."
+    },
+    {
+     "e": "E3",
+     "stance": "context",
+     "finding": "Narrative review argues systematic lipedema screening is needed in pain-inflammation studies of women with obesity, noting that a gynoid phenotype can mimic lipedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00204"
+  },
+  {
+   "key": "P4",
+   "statement": "Structured clinical criteria or sign-based algorithms may help separate lipedema from lymphedema, but their validation is limited.",
+   "role": "supporting",
+   "rationale": "Only one internally derived algorithm gives discrimination data against lymphedema; other items are proposals or sign prevalence without a comparison group.",
+   "evidence": [
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "In 138 lipedema and 111 lymphedema patients, a CART model using bruising, disproportion and spared feet classified with 100% accuracy (internal derivation); onset-to-diagnosis 25.5 vs 12.1 years."
+    },
+    {
+     "e": "E8",
+     "stance": "context",
+     "finding": "Proposed clinical-ultrasonographic algorithm with maximum, major and minor criteria for abdominal lipedema; no accuracy data reported."
+    },
+    {
+     "e": "E4",
+     "stance": "context",
+     "finding": "In 1803 Spanish patients, painful examination signs exceeded 96% prevalence (saphenous compartment pressure pain 98.7%, supracondylar tender points 98.8%); no comparison group."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 3,
+   "store_key": "G-00205"
+  },
+  {
+   "key": "P5",
+   "statement": "Imaging and body-composition measures are proposed as diagnostic adjuncts, but their diagnostic performance and reliability remain insufficiently established.",
+   "role": "refines",
+   "rationale": "Single case-control studies report promising discrimination (likely optimistic against healthy controls), while reviews note heterogeneous protocols, no external validation and that tests mainly exclude differentials.",
+   "evidence": [
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "DXA leg fat/total fat index distinguished lipedema from healthy controls with AUC 0.90, sensitivity 0.95, specificity 0.73 at cut-off 0.383 across BMI strata."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Bioimpedance spectroscopy distinguished lipedema from Dercum's disease (p<0.001) and stage 1 lipedema from matched controls (p=0.01)."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Review reports ultrasound cut-offs (pretibial 11.7 mm; sensitivity 0.77-0.79, specificity up to 0.96, not externally validated) and DXA ratio 0.384 as auxiliary tools for borderline cases."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Systematic review of 13 quantification tools found heterogeneous, poorly documented protocols with clinimetric reliability reported in only a minority of studies."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Editorial stresses the lack of reliable lipedema biomarkers and highlights noncontrast 3T MR lymphangiography as promising versus obesity, limited by small samples."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Selective review states diagnosis is exclusively clinical, no specific biomarker exists, and complementary exams serve only to exclude differential diagnoses."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00100",
+   "statement_before_twin_merge": "Imaging and body-composition measures are proposed as diagnostic adjuncts, but their diagnostic performance and reliability remain insufficiently established."
+  },
+  {
+   "key": "P6",
+   "statement": "A polymorphism in the interleukin-six gene may be associated with increased lipedema risk.",
+   "role": "context",
+   "rationale": "A genetic risk association, not a validated identification tool. Same idea as G-00077, which the checker does not accept for this question, so stated as a new proposition with its wording.",
+   "evidence": [
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "IL-6 rs1800795 G allele carriers had higher lipedema risk (OR 5.92); DXA indices combined with genotyping were proposed for differential diagnosis versus obesity."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00077",
+   "statement_before_twin_merge": "A polymorphism in the interleukin-six gene may be associated with increased lipedema risk."
+  },
+  {
+   "key": "P7",
+   "statement": "Lipedema is frequently reported to be underdiagnosed or misdiagnosed, most often as obesity or lymphedema.",
+   "role": "context",
+   "rationale": "Under-recognition by clinicians and undiagnosed cases are the rationale for screening tools.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Dutch guideline: lipedema often misdiagnosed as lymphedema or obesity; recommends repeated waist and limb circumferences, BMI and distress scoring for early detection."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Two women misdiagnosed with filarial lymphedema or obesity were redirected to lipedema by normal lymphoscintigraphy and six clinical criteria including foot/hand sparing and negative Stemmer sign."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Systematic review cites a survey where only 46.2% of 251 UK vascular consultants recognised lipedema; also reports non-contrast CT 95% sensitivity, 100% specificity."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "In a Spanish survey, 32.9% (352/1069) had no formal diagnosis and 51.2% of diagnosed needed three or more specialists; a 6-of-13 symptom threshold was proposed."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00028",
+   "statement_before_twin_merge": "Lipedema is frequently reported to be under-recognised, undiagnosed or misdiagnosed, most often as obesity or lymphedema."
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "AUC 0.912 is for a derived 7-question model in 109 women (likely optimistic, no external validation reported); 'external validation lacking' is not stated in any item, though E7 shows low sensitivity (0.46) at the cut-off. Hedged with 'may'."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E2 and E19 support acceptable validity/consistency and the between-study variability in reliability (alpha 0.84 vs 0.587)."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E3"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E20 shows higher screening scores in women with leg pain, not diagnostic accuracy; E19 (probable lipedema in undiagnosed Turkish women) fits here and is placed under P2. E3 is about screening in pain-inflammation research, only weakly relevant. 'Do not establish the diagnosis' is stated by authors of E20 and E1."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E4"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Only E14 (internally derived CART, 100 percent accuracy, likely overfit) addresses lipedema vs lymphedema. E8 (abdominal algorithm, no accuracy) and E4 (no comparison group) do not bear on that separation. E17 (six criteria) and E11 (negative Stemmer, foot sparing) are better candidates and sit under P7."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E11"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Bundles 'proposed as adjuncts' (E9, E12, E15, E10, E11 CT sensitivity 95 percent / specificity 100 percent not placed here) with 'insufficiently established' (E16, E18, E10). Stance labels all 'supporting' hide that some support the first clause and some the second. Imaging adjuncts are diagnostic, not screening."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E13"
+    ],
+    "suggested_statement": "A genetic polymorphism such as an interleukin-six variant has been proposed, on limited evidence, as a possible adjunct marker of lipedema risk.",
+    "severity": "minor",
+    "note": "Single case-control study with a very wide confidence interval; weakly relevant to screening tools. 'May be associated' is hedged but the single-study basis is not signalled."
+   },
+   {
+    "key": "P7",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Lipedema is frequently reported to be under-recognised or misdiagnosed, often as obesity or lymphedema, with long delays to diagnosis.",
+    "severity": "minor",
+    "note": "'Most often as obesity or lymphedema' is a ranking no item gives (E6 states it; E17 is two cases; E5 shows lack of formal diagnosis and many specialists, not misdiagnosis type). E14 (25.5-year delay) and E15 (persistent underdiagnosis) directly support this but are not placed here. E11's CT figures are irrelevant to this proposition."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E14 (diagnostic delay of 25.5 vs 12.1 years) and E15 (persistent underdiagnosis) support P7 but are placed elsewhere or nowhere.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P1 and P3 overlap (screening questionnaire discriminates vs flags probable cases without establishing diagnosis); P6 (IL-6 polymorphism) is only tangential to screening tools or questionnaires.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000038.cons2.json",
+   "ver": "SQ-LIP-000038.ver2.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00207",
+   "into": "G-00077"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00206",
+   "into": "G-00100"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00208",
+   "into": "G-00028"
+  }
+ ]
+}

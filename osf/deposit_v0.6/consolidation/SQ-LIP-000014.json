@@ -1,0 +1,725 @@
+{
+ "question": "SQ-LIP-000014",
+ "text": "Does a ketogenic or low-carbohydrate diet help lipedema?",
+ "n_old_claims": 19,
+ "n_items": 22,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: P1 and P3 state causal 'reduce' while P6 and E8 say evidence is limited and inconclusive; the certainty caveat is not reflected in the effect propositions.",
+  "[minor] set: No proposition on comparisons with low-fat or other control diets (E4, E11, E12, E20, E18), where several RCTs show differing effects on limb adiposity and pain; E1 and E4 are the best controlled evidence.",
+  "[minor] P1: overgeneralized; misplaced ['E1'] — suggested: Ketogenic or low-carbohydrate diets are associated with short-term reductions in body weight and fat mass in women with lipedema, usually under calorie restriction. (Unqualified causal 'reduce' ignores that most diets are calorie-restricted and that low-fat comparators (E11, E12) also lost weight; E1 meta-analysis weight/BMI result is the strongest support but is placed under P3. E17 is secondary.)",
+  "[minor] P2: misplaced ['E16', 'E20'] (Supported by E12, E7, E14 (E20 limb circumferences sits in P1). E16 is about weight loss generally, not low-carb diets, so context stance is weak. E21 is confounded by tirzepatide and exercise. E22 contradicting is an unsupported review assertion but is stance-correctly flagged.)",
+  "[minor] P3: overgeneralized; two ideas; misplaced ['E12', 'E7', 'E18', 'E20'] — suggested: Ketogenic or low-carbohydrate diets are associated with reduced pain in women with lipedema, mostly in short, small studies; whether the effect depends on weight loss is unclear. ('Although the pooled effect is small' is an interpretation: MD 1.12 on VAS is not obviously small, pilot shows 50%. E1 includes uncontrolled studies. Pain data in E12, E7, E18, E20 are placed elsewhere. E13/E15 refine mechanism, a separate idea.)",
+  "[minor] P4: not fully supported; overgeneralized — suggested: Improvements with ketogenic or low-carbohydrate diets may persist while the diet is maintained, but long-term evidence is uncontrolled and pain returned after stopping in a pilot. (Only an uncontrolled 22-month series and a single case report. E10 and E13 report pain returning to baseline after the diet ended, a caveat not stated in the proposition.)",
+  "[minor] P5: not fully supported; two ideas; misplaced ['E14'] — suggested: Low-carbohydrate diets are associated with lower inflammatory markers in lipedema in small studies, but not clearly more than low-fat diets. (E6 is uncontrolled; E11 shows within-group changes only. E14 (decreased cytokines) fits here. E8 reports no significant hsCRP reduction in the only low-risk RCT, which weakens the first clause and is not represented.)",
+  "[minor] P6: not fully supported; two ideas — suggested: Evidence for dietary interventions in lipedema is limited and inconclusive, with most studies at high risk of bias. (High risk of bias (7 of 9) rests on E8 alone; E9 states only that no definitive recommendation exists, and its source text appears duplicated from E8. Stage stratification is from E8's summary. E8's caution on ketogenic diets is the key caveat.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.3390/nu16193276",
+   "title": "The Efficacy of Ketogenic Diets (Low Carbohydrate; High Fat) as a Potential Nutritional Intervention for Lipedema: A Systematic Review and Meta-Analysis",
+   "year": 2024,
+   "design": "meta_analysis",
+   "n": 329,
+   "grade": "high",
+   "risk_of_bias": "moderate",
+   "quote": "Melhora significativa da sensibilidade dolorosa pela EVA (MD 1,12; IC 95% 0,44–1,79; p=0,001); heterogeneidade moderada não significativa (I²=53%; Chi²=6,43; p=0,09) — 4 estudos incluídos; este é o achado mais específico para lipedema",
+   "note": "7 studies; MD weight 7.94, BMI 4.23, all p<0.0001; mean 15.85 weeks",
+   "old_claims": [
+    "SCR-LIP-000035",
+    "SCR-LIP-000036"
+   ],
+   "old_statements": [
+    "In women with lipedema, a low-carbohydrate high-fat (ketogenic) diet significantly reduces body weight, BMI and waist/hip circumferences over a mean of ~16 weeks.",
+    "In women with lipedema, a ketogenic (low-carbohydrate, high-fat) diet produces a small but statistically significant reduction in pain sensitivity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.3390/life11121402",
+   "title": "Management of Lipedema with Ketogenic Diet: 22-Month Follow-Up",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A dieta cetogênica mostrou-se segura e eficaz como intervenção isolada para lipedema em longo prazo (22 meses), resultando em melhora substancial de dor, qualidade de vida, composição corporal e parâmetros metabólicos.",
+   "note": "The abstract describes a pilot study (LIPODIET) with a small sample, no control group, and non-randomized design, combined with what appears to be a single case report element; findings are promising but limited by small sample size and pil",
+   "old_claims": [
+    "SCR-LIP-000036"
+   ],
+   "old_statements": [
+    "In women with lipedema, a ketogenic (low-carbohydrate, high-fat) diet produces a small but statistically significant reduction in pain sensitivity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1002/osp4.580",
+   "title": "Effect of a ketogenic diet on pain and quality of life in patients with lipedema: The LIPODIET pilot study",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "DOR: redução significativa de 4,6±0,7 cm para 2,3±0,7 cm na semana 7 (Δ=−2,3, p=0,018, redução de 50%)",
+   "note": "Pilot study (n=9) with no control group and crossover design comparing LCHF to conventional diet; findings are promising but limited by very small sample size and lack of randomization.",
+   "old_claims": [
+    "SCR-LIP-000036"
+   ],
+   "old_statements": [
+    "In women with lipedema, a ketogenic (low-carbohydrate, high-fat) diet produces a small but statistically significant reduction in pain sensitivity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1002/oby.24026",
+   "title": "Effect of a low‐carbohydrate diet on pain and quality of life in female patients with lipedema: a randomized controlled trial",
+   "year": 2024,
+   "design": "rct",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "A total of 70 female patients (age, mean [SD], 47 [11] years; BMI 37 [5] kg/m2) were included. The LCD group had greater weight loss (-2.8 kg; 95% CI: -4.1 to -1.0; p < 0.001) and larger reduction in pain",
+   "note": "Randomized controlled trial directly comparing a low-carbohydrate diet to a control diet in lipedema patients, showing superior pain reduction and quality-of-life improvement; moderate confidence due to small sample and short duration as no",
+   "old_claims": [
+    "SCR-LIP-000036"
+   ],
+   "old_statements": [
+    "In women with lipedema, a ketogenic (low-carbohydrate, high-fat) diet produces a small but statistically significant reduction in pain sensitivity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.3390/nu15163654",
+   "title": "Modified Mediterranean-Ketogenic Diet and Carboxytherapy as Personalized Therapeutic Strategies in Lipedema: A Pilot Study",
+   "year": 2023,
+   "design": "rct",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "A MMKD induziu perda significativa de peso e gordura corporal, incluindo nos membros inferiores (áreas consideradas resistentes à dietoterapia no lipedema). Os melhores resultados foram obtidos com a combinação KDCB",
+   "note": "This is a small pilot RCT (n=30, 26.7% dropout) with short follow-up (10 weeks) and no control group receiving standard diet, but it directly tests a ketogenic/low-carbohydrate diet in lipedema patients and reports significant improvements ",
+   "old_claims": [
+    "SCR-LIP-000114"
+   ],
+   "old_statements": [
+    "A modified Mediterranean-ketogenic diet (<30g carbohydrates/day, 70% lipids) over 10 weeks produced significant reductions in body weight, total fat mass, and leg fat mass (including by DXA) in women with lipedema, with lean mass preserved, and the combination with carboxytherapy additionally reduced pain and improved quality of life."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.3390/nu17183014",
+   "title": "Exploring the Anti-Inflammatory Potential of a Mediterranean-Style Ketogenic Diet in Women with Lipedema",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Inflamação sistêmica no lipedema: hs-CRP 3,44 -> 2,99 mg/dL, change -0,39 (p=0,016); IL-6 8,93 -> 8,54 pg/mL, change -0,33 (p=0,034)",
+   "note": "Non-randomized intervention study without a true control group for lipedema (comparison group had overweight/obesity without lipedema), no blinding, and relatively small sample (n=21-24 lipedema patients); results are promising but limited ",
+   "old_claims": [
+    "SCR-LIP-000115"
+   ],
+   "old_statements": [
+    "A 7-month Mediterranean-style ketogenic diet (<50g carbohydrates/day) in women with lipedema significantly reduced body weight (86.1→74.1 kg), body fat, visceral fat, thigh and calf circumferences, and systemic inflammation markers (hs-CRP and IL-6), with reductions attributed to nutrient composition rather than caloric restriction alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1155/2023/5826630",
+   "title": "The Benefits of Low-Carbohydrate, High-Fat (LCHF) Diet on Body Composition, Leg Volume, and Pain in Women with Lipedema",
+   "year": 2023,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Dor (VAS) no lipedema reduziu de 4,6 ± 2,6 para 3,0 ± 2,3 (p<0,001) após 7 meses de LCHF",
+   "note": "Prospective controlled study with a comparator group (overweight/obese without lipedema), 7-month follow-up, and objective measurements; however, it is non-randomized, lacks a control arm without dietary intervention, and had notable dropou",
+   "old_claims": [
+    "SCR-LIP-000116"
+   ],
+   "old_statements": [
+    "A 7-month LCHF diet in women with lipedema produced significant reductions in body weight (~10.8 kg), fat mass (~7.4 kg), leg volume (~1395–1524 mL), ankle circumference (−1.0 cm), and pain scores (VAS 4.6→3.0), with outcomes comparable to overweight/obese controls except for greater ankle circumference reduction in the lipedema group."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1016/j.maturitas.2025.108716",
+   "title": "Clinical or cultural? Dietary interventions for lipedema: a systematic review",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "As evidências sobre intervenções dietéticas no lipedema são limitadas e inconclusivas. Dietas cetogênicas e low-carb devem ser abordadas com cautela",
+   "note": "This is a systematic review with 9 included studies (only 2 RCTs), most with high risk of bias, small samples, no meta-analysis performed, and the highest-quality RCT did not show significant anti-inflammatory effects; findings support some",
+   "old_claims": [
+    "SCR-LIP-000117"
+   ],
+   "old_statements": [
+    "A systematic review of 9 studies (269 women) found that ketogenic and low-carbohydrate diets consistently reduced weight and fat mass and improved pain and quality of life in lipedema, but evidence is limited by high risk of bias in 7 of 9 studies, lack of disease-stage stratification, absence of muscle mass assessment, and no significant reduction in inflammation (hsCRP) in the only low-risk RCT."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1093/nutrit/nuaf203",
+   "title": "Current Evidence-Based Clinical Nutritional Approaches in Lipedema: A Scoping Review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Certain dietary approaches such as ketogenic, low-carbohydrate, and modified Mediterranean diets have been explored for weight management and inflammation reduction in lipedema, with studies showing positive effects on body composition and pain. However, according to the current literature no eviden",
+   "note": "The review notes positive effects of ketogenic/low-carb diets on body composition and pain but simultaneously states no evidence-based nutritional treatment is proven effective, qualifying the affirmative answer.",
+   "old_claims": [
+    "SCR-LIP-000117"
+   ],
+   "old_statements": [
+    "A systematic review of 9 studies (269 women) found that ketogenic and low-carbohydrate diets consistently reduced weight and fat mass and improved pain and quality of life in lipedema, but evidence is limited by high risk of bias in 7 of 9 studies, lack of disease-stage stratification, absence of muscle mass assessment, and no significant reduction in inflammation (hsCRP) in the only low-risk RCT."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1007/s13679-023-00536-x",
+   "title": "Ketogenic Diet: A Nutritional Therapeutic Tool for Lipedema?",
+   "year": 2023,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "LIPODIET — dor VAS: 4,6±0,69 → 2,3±0,69 cm na semana 7 (p=0,018; redução de 50%); dor retornou ao basal na semana 13 após suspensão da LCHF (4,2±0,69 cm, p=0,69)",
+   "note": "The article is a narrative review focused specifically on a dietary intervention (VLCKD) rather than comprehensive overall management of lipedema; it refines the management question by offering nutritional therapy evidence drawn from small  [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000165"
+   ],
+   "old_statements": [
+    "A narrative review proposes the very-low-calorie ketogenic diet (VLCKD) as a nutritional therapy for lipedema, citing anti-inflammatory effects; reported cases include a 6-month ketogenic diet (Cannataro 2021) yielding 41 kg total weight loss, reduced affected-limb circumferences (e.g., arm -10.5 to -11.5 cm), HOMA-IR reduction of 54%, and CRP reduction of 67%, and the LIPODIET trial (n=9) showing -4.5% weight loss and a 50% VAS pain reduction at 7 weeks that returned to baseline after diet cessation, while noting conventional decongestive therapy reduces tissue volume only 5-10%."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1016/j.cdnut.2025.104571",
+   "title": "Changes in Cytokines and Fibrotic Growth Factors after Low-Carbohydrate or Low-Fat Low-Energy Diets in Females with Lipedema",
+   "year": 2025,
+   "design": "rct",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "Mudanças em citocinas e marcadores associados à fibrose não diferiram entre dietas LCD e low-fat hipocalóricas em mulheres com lipedema, apesar do perfil benéfico observado no grupo LCD",
+   "note": "RCT directly comparing low-carbohydrate vs low-fat diet in lipedema; LCD showed greater fat loss and favorable within-group inflammatory profile but no between-group superiority, and pain reduction was not mediated by systemic inflammation,",
+   "old_claims": [
+    "SCR-LIP-000161"
+   ],
+   "old_statements": [
+    "In an 8-week RCT of 70 females with lipedema and obesity, a 1200 kcal/d low-carbohydrate diet produced greater fat mass loss (-7.0 vs -5.1 kg) and significant within-group reductions in hsCRP, TNF-α and MIP-1β versus a low-fat diet, but no between-group differences in cytokines or fibrosis markers were found, and changes in pain were not associated with changes in inflammatory markers or ketosis."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.3389/fnut.2024.1484612",
+   "title": "The effect of a low-carbohydrate diet on subcutaneous adipose tissue in females with lipedema",
+   "year": 2024,
+   "design": "rct",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A significant reduction in calf SAT area, calf circumference, and pain was observed in the LCD group only.",
+   "note": "Randomized controlled trial directly testing a low-carbohydrate diet in lipedema patients, showing benefits on SAT and pain; however, very small sample (n=13, only 5 in LCD group) limits confidence.",
+   "old_claims": [
+    "SCR-LIP-000253"
+   ],
+   "old_statements": [
+    "In an 8-week RCT of 13 females with obesity and lipedema, a 1,200 kcal/day low-carbohydrate diet (75 g/day carbohydrates) produced significant reductions in calf subcutaneous adipose tissue area, calf circumference, and pain not seen in the isoenergetic low-fat control group, while both diets reduced body weight, fat mass, and muscle area."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1016/j.mehy.2020.110435",
+   "title": "Ketogenic diet as a potential intervention for lipedema",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "dor significativamente reduzida após 7 semanas de KD; retornou após 6 semanas de dieta norueguesa padrão apesar da manutenção do peso perdido — evidência de que o efeito analgésico é independente do peso",
+   "note": "The article is a mechanistic, hypothesis-generating review proposing a ketogenic diet as a therapeutic intervention for lipedema, directly addressing the question and reporting supporting mechanisms and small uncontrolled clinical observati",
+   "old_claims": [
+    "SCR-LIP-000254"
+   ],
+   "old_statements": [
+    "This hypothesis-generating review proposes a modified ketogenic diet (<20g carbohydrate/day) for lipedema across 7 target outcomes, rating evidence as 'strong' for weight/adipose tissue reduction, pain reduction, and quality-of-life improvement, and 'promising' for hormonal normalization, edema reduction, inflammation (BHB-mediated NLRP3 inhibition), and fibrosis; it cites a clinical observation that pain was significantly reduced after 7 weeks of KD and returned after 6 weeks of standard diet despite maintained weight loss, suggesting a weight-independent analgesic effect."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.3390/nu18091381",
+   "title": "Changes in Vascular, Lymphatic, Inflammatory, and Lipid Mediators During a 7-Month Calorie-Restricted Low-Carbohydrate, High-Fat Dietary Intervention in Women with Lipedema: A Preliminary Prospective Study.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The intervention was associated with significant reductions in BMI, leg volume, and adipose tissue pain (<i>p</i> < 0.001).",
+   "note": "Prospective single-arm pre-post study reporting clinical improvement in lipedema outcomes with an LCHF diet; supports the affirmative direction but uncontrolled and unable to establish causality (authors note calorie restriction confound an",
+   "old_claims": [
+    "SCR-LIP-000412"
+   ],
+   "old_statements": [
+    "In 24 women with lipedema, a 7-month calorie-restricted low-carbohydrate high-fat diet was associated with significant reductions in BMI, leg volume, and adipose tissue pain (p<0.001), alongside decreased pro-inflammatory cytokines and endothelial adhesion molecules."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1186/s12937-026-01304-y",
+   "title": "Changes in plasma fatty acid composition in females with lipedema following low-carbohydrate vs low-fat diets and associations with pain reduction.",
+   "year": 2026,
+   "design": "rct",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Notably, reductions in SFAs seem to be associated with the reduction in pain seen in the LCD group, especially myristic acid.",
+   "note": "The RCT reports pain reduction in the LCD group associated with saturated fatty acid changes, supporting a benefit of low-carbohydrate diet but qualified by the mechanistic/associational framing and the fact that both diets reduced fatty ac",
+   "old_claims": [
+    "SCR-LIP-000413"
+   ],
+   "old_statements": [
+    "In a secondary analysis of an RCT of 70 females with lipedema and obesity, both isocaloric low-carbohydrate and low-fat diets reduced most plasma fatty acids over 8 weeks, but reductions in saturated fatty acids (especially myristic acid) were associated with pain reduction seen in the low-carbohydrate group."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1210/jcemcr/luag018",
+   "title": "Moderate weight loss decreases lipedema-affected body fat mass in a woman who is lean with lipedema.",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "These data suggest weight loss decreases lipedema-affected adipose tissue and demonstrate the therapeutic effect of weight loss on body composition in women with lipedema even if they are normal weight.",
+   "note": "The article tests diet-induced weight loss (not specifically ketogenic/low-carbohydrate) on body fat in lipedema; the dietary macronutrient composition is not specified, so it is on-topic for diet in lipedema but does not directly test a ke",
+   "old_claims": [
+    "SCR-LIP-000414"
+   ],
+   "old_statements": [
+    "In a 56-year-old normal-weight woman with lipedema, 11% diet-induced weight loss reduced upper and lower body fat proportionally (leg fat 44.8% to 45.1% of total; arm fat 9.1% to 9.6%), suggesting weight loss decreases lipedema-affected adipose tissue."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1007/s13679-025-00642-y",
+   "title": "Therapeutic Applications of Ketogenic Diets in Lipedema: A Narrative Review of Current Evidence",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Estudo controlado: dieta low-carb reduziu significativamente área de SAT (subcutaneous adipose tissue) na panturrilha e dor (NRS)",
+   "note": "The review synthesizes evidence (including a cited meta-analysis and a controlled study) concluding ketogenic diets are a promising therapeutic option for lipedema, reducing pain, inflammation, and improving body composition, while cautioni",
+   "old_claims": [
+    "SCR-LIP-000480"
+   ],
+   "old_statements": [
+    "A narrative review reports that ketogenic/low-carbohydrate diets in women with lipedema reduce insulin resistance (lower HOMA-IR and basal insulin), promote weight loss (cited meta-analysis: BMI reduction of 4.23 kg/m² and 7.94 kg over ~15.85 weeks), and a controlled study showed low-carb diet significantly reduced calf subcutaneous adipose tissue area and pain (NRS), though the authors note data are limited and long-term studies are needed."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.47363/jghr/2024(5)163",
+   "title": "Lipedema and Nutrition: High Fat Ketogenic Diet as Treatment of Choice",
+   "year": 2024,
+   "design": "rct",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "HFKD: redução significativa de peso (86,18 → 77,59 kg; Δ 8,59 kg; p=0,022), cintura (95,12 → 88,08 cm; Δ 7,04 cm; p=0,006)",
+   "note": "The study reports significant within-group improvements in affected-limb circumferences and lipedema symptoms with a ketogenic diet, supporting its therapeutic use; however it lacks formal intergroup statistical analysis and has an uncontro",
+   "old_claims": [
+    "SCR-LIP-000481"
+   ],
+   "old_statements": [
+    "In a comparative trial of women with lipedema, an 8-week high-fat ketogenic diet (70% fat, 10% carbohydrate, ~1100 kcal/day) produced significant reductions in weight (86.18→77.59 kg, p=0.022), thigh circumferences, and all VAS symptoms including pain (5.33→2.71, p<0.00001), with larger anthropometric deltas than a non-ketogenic low-carb anti-inflammatory diet."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.3389/fnut.2026.1728651",
+   "title": "Management of lipedema with a biphasic ketogenic/low-carbohydrate diet: a case report",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "resulting in a weight loss of 12 kg",
+   "note": "Single case report describing improvements in weight, pain, and quality of life with a ketogenic/low-carb dietary intervention for lipedema, providing affirmative but very-low-grade evidence.",
+   "old_claims": [
+    "SCR-LIP-000482"
+   ],
+   "old_statements": [
+    "In a single case report, a woman with lipedema following 6 months of ketogenic diet then 6 months of low-carbohydrate diet (~100 g/day) plus resistance training lost 12 kg (fat mass by BIA), with WOMAC and sleep quality reduced >50%, pain (VAS) improved ~67%, and improved RAND-36 quality-of-life domains sustained through the low-carb phase."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.2147/dmso.s377720",
+   "title": "The Effect of a Low-Carbohydrate, High-Fat Diet versus Moderate-Carbohydrate and Fat Diet on Body Composition in Patients with Lipedema",
+   "year": 2022,
+   "design": "rct",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A dieta LCHF foi mais eficaz que a MFMC na redução de peso corporal, gordura corporal e circunferências de membros inferiores em pacientes com lipedema. Observou-se redução de dor nas extremidades e melhora da mobilidade no grupo LCHF.",
+   "note": "This controlled dietary comparison directly tests a low-carbohydrate diet in lipedema patients and reports greater anthropometric improvement plus reduced extremity pain and improved mobility with LCHF, providing affirmative evidence; note ",
+   "old_claims": [
+    "SCR-LIP-000483"
+   ],
+   "old_statements": [
+    "In 91 women with lipedema over 16 weeks, a calorie-restricted low-carbohydrate-high-fat diet produced significantly greater reductions in body weight (-8.2 vs -2.1 kg), body fat, and lower-limb circumferences than a medium-fat/medium-carbohydrate diet, with reported pain reduction and improved mobility in the LCHF group."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.3390/jcm15218643",
+   "title": "A Multimodal Intervention Including Tirzepatide in Women with Lipedema and Excess Body Weight: A Pilot Case Series.",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "During the first 8-9 weeks, all participants received only a low-carbohydrate Mediterranean diet and recommendations for aerobic and resistance exercise; no participant received tirzepatide during this phase.",
+   "note": "The study included a low-carbohydrate Mediterranean diet phase relevant to the question, but as an uncontrolled multimodal pilot case series it cannot isolate the diet's effect; the authors explicitly state changes cannot be attributed to a",
+   "old_claims": [
+    "SCR-LIP-000484"
+   ],
+   "old_statements": [
+    "In a pilot case series of five women with lipedema and excess body weight, an 8-9 week low-carbohydrate Mediterranean diet plus exercise (T1-T2), followed by tirzepatide in four participants, was associated with weight loss of 7.7-17.1 kg and generally decreased lower-limb circumferences and subcutaneous fat thickness, though changes could not be attributed to any single component."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.3390/cimb48090892",
+   "title": "Molecular Distinctions, Diagnosis, and Mechanism-Based Therapies in Lipedema and Obesity.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Weight-loss interventions are ineffective, necessitating targeted strategies.",
+   "note": "The review states weight-loss interventions are ineffective in lipedema; it does not specifically test ketogenic/low-carb diets but frames general dietary weight loss as ineffective, which bears against the affirmative while not directly ev",
+   "old_claims": [
+    "SCR-LIP-000485"
+   ],
+   "old_statements": [
+    "In this mechanistic review, weight-loss interventions are described as ineffective for lipedema, with the condition driven by genetic, hormonal, inflammatory and mechanotransduction pathways rather than metabolic dysfunction, prompting calls for targeted mechanism-based therapies instead."
+   ],
+   "old_role_in_question": "contradicting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Ketogenic or low-carbohydrate diets reduce body weight and total fat mass in women with lipedema.",
+   "role": "supporting",
+   "rationale": "Randomised and uncontrolled studies consistently report weight and fat loss, including greater loss than comparison diets.",
+   "evidence": [
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "In 91 women over 16 weeks, a calorie-restricted LCHF diet produced greater reductions in weight (-8.2 vs -2.1 kg), body fat and lower-limb circumferences than a medium-fat/medium-carbohydrate diet."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "A modified Mediterranean-ketogenic diet over 10 weeks reduced body weight, total fat mass and leg fat mass (DXA) with lean mass preserved; combination with carboxytherapy also reduced pain and improved quality of life."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "An 8-week high-fat ketogenic diet reduced weight (86.18 to 77.59 kg, p=0.022), waist and thigh circumferences and VAS pain (5.33 to 2.71), with larger deltas than a non-ketogenic low-carb diet."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Narrative review reports ketogenic/low-carb diets lower HOMA-IR and insulin and promote weight loss (cited meta-analysis: BMI -4.23 kg/m2, -7.94 kg over about 16 weeks); notes limited data and need for long-term studies."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 4,
+   "store_key": "G-00088"
+  },
+  {
+   "key": "P2",
+   "statement": "Ketogenic or low-carbohydrate diets are associated with reductions in lipedema-affected limb fat, leg volume and limb circumferences.",
+   "role": "supporting",
+   "rationale": "Controlled and uncontrolled studies report reductions in affected-limb adipose tissue, though one review holds weight loss ineffective for lipedema fat.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "In an 8-week RCT of 13 women, a 1,200 kcal low-carbohydrate diet reduced calf subcutaneous adipose tissue area, calf circumference and pain, not seen with an isoenergetic low-fat diet."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "A 7-month LCHF diet reduced weight (about 10.8 kg), fat mass, leg volume (about 1395-1524 mL), ankle circumference and VAS pain (4.6 to 3.0), comparable to overweight/obese controls."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "In 24 women, a 7-month calorie-restricted LCHF diet was associated with reduced BMI, leg volume and adipose tissue pain (p<0.001), with decreased pro-inflammatory cytokines and endothelial adhesion molecules."
+    },
+    {
+     "e": "E16",
+     "stance": "context",
+     "finding": "In a normal-weight woman, 11% diet-induced weight loss reduced upper and lower body fat proportionally, suggesting weight loss decreases lipedema-affected adipose tissue even at normal weight."
+    },
+    {
+     "e": "E21",
+     "stance": "refines",
+     "finding": "In five women, a low-carbohydrate Mediterranean diet plus exercise followed by tirzepatide was associated with 7.7-17.1 kg weight loss and decreased limb circumferences, not attributable to any single component."
+    },
+    {
+     "e": "E22",
+     "stance": "contradicting",
+     "finding": "Mechanistic review describes weight-loss interventions as ineffective for lipedema, which it attributes to genetic, hormonal, inflammatory and mechanotransduction pathways rather than metabolic dysfunction."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 6,
+   "store_key": "G-00089"
+  },
+  {
+   "key": "P3",
+   "statement": "Ketogenic or low-carbohydrate diets reduce pain in women with lipedema, although the pooled effect is small.",
+   "role": "supporting",
+   "rationale": "A meta-analysis and randomised trial show pain reduction, supported by uncontrolled studies.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Meta-analysis of 4 studies: significant improvement in VAS pain sensitivity (MD 1.12; 95% CI 0.44-1.79; p=0.001; I2=53%); ketogenic diets also reduced weight, BMI and waist/hip circumferences over about 16 weeks."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "RCT of 70 women (BMI 37): the low-carbohydrate diet group had greater weight loss (-2.8 kg; p<0.001) and larger pain reduction than control."
+    },
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "LIPODIET pilot: pain fell from 4.6 to 2.3 cm at week 7 (p=0.018, 50% reduction)."
+    },
+    {
+     "e": "E10",
+     "stance": "context",
+     "secondary_of": "E3",
+     "finding": "Review re-reports LIPODIET: 50% VAS pain reduction at 7 weeks that returned to baseline at week 13 after stopping the diet."
+    },
+    {
+     "e": "E13",
+     "stance": "refines",
+     "finding": "Review cites pain reduced after 7 weeks of ketogenic diet that returned after 6 weeks of standard diet despite maintained weight loss, suggesting a weight-independent analgesic effect."
+    },
+    {
+     "e": "E15",
+     "stance": "refines",
+     "finding": "RCT secondary analysis of 70 women: both diets reduced most plasma fatty acids; reductions in saturated fatty acids, especially myristic acid, were associated with pain reduction in the low-carbohydrate group."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 5,
+   "store_key": "G-00090"
+  },
+  {
+   "key": "P4",
+   "statement": "Benefits of ketogenic or low-carbohydrate diets in lipedema may be sustained over long-term follow-up.",
+   "role": "supporting",
+   "rationale": "Uncontrolled long-term reports describe sustained improvement, a separate idea from short-term efficacy.",
+   "evidence": [
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "At 22-month follow-up, ketogenic diet as sole intervention was safe and associated with substantial improvement in pain, quality of life, body composition and metabolic parameters."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Case report: 6 months ketogenic then 6 months low-carbohydrate diet plus resistance training gave 12 kg loss, pain improved about 67%, and quality-of-life gains sustained through the low-carb phase."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00091"
+  },
+  {
+   "key": "P5",
+   "statement": "Ketogenic or low-carbohydrate diets are associated with reduced systemic inflammatory markers in lipedema, but not clearly more than low-fat diets.",
+   "role": "refines",
+   "rationale": "Within-group inflammatory reductions are reported, while a randomised comparison found no between-diet difference.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "A 7-month Mediterranean-style ketogenic diet reduced hs-CRP (3.44 to 2.99, p=0.016) and IL-6 (8.93 to 8.54, p=0.034), along with weight, body fat and limb circumferences."
+    },
+    {
+     "e": "E11",
+     "stance": "refines",
+     "finding": "In an 8-week RCT of 70 women, the low-carbohydrate diet lowered hsCRP, TNF-alpha and MIP-1beta within group, but cytokines and fibrosis markers did not differ from the low-fat diet; pain change was unrelated to inflammation or ketosis."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00092"
+  },
+  {
+   "key": "P6",
+   "statement": "The certainty of evidence for dietary interventions in lipedema remains limited because most studies have high risk of bias and lack stage stratification.",
+   "role": "refines",
+   "rationale": "Systematic and scoping reviews judge the overall evidence inconclusive despite consistent positive findings.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Systematic review of 9 studies (269 women): ketogenic and low-carb diets reduced weight and fat and improved pain and QoL, but 7 of 9 studies had high risk of bias; evidence judged limited and inconclusive."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Scoping review: ketogenic, low-carbohydrate and modified Mediterranean diets showed positive effects on body composition and pain, but current literature provides no definitive evidence-based dietary recommendation."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 2,
+   "store_key": "G-00093"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E1"
+    ],
+    "suggested_statement": "Ketogenic or low-carbohydrate diets are associated with short-term reductions in body weight and fat mass in women with lipedema, usually under calorie restriction.",
+    "severity": "minor",
+    "note": "Unqualified causal 'reduce' ignores that most diets are calorie-restricted and that low-fat comparators (E11, E12) also lost weight; E1 meta-analysis weight/BMI result is the strongest support but is placed under P3. E17 is secondary."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E16",
+     "E20"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "Supported by E12, E7, E14 (E20 limb circumferences sits in P1). E16 is about weight loss generally, not low-carb diets, so context stance is weak. E21 is confounded by tirzepatide and exercise. E22 contradicting is an unsupported review assertion but is stance-correctly flagged."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E12",
+     "E7",
+     "E18",
+     "E20"
+    ],
+    "suggested_statement": "Ketogenic or low-carbohydrate diets are associated with reduced pain in women with lipedema, mostly in short, small studies; whether the effect depends on weight loss is unclear.",
+    "severity": "minor",
+    "note": "'Although the pooled effect is small' is an interpretation: MD 1.12 on VAS is not obviously small, pilot shows 50%. E1 includes uncontrolled studies. Pain data in E12, E7, E18, E20 are placed elsewhere. E13/E15 refine mechanism, a separate idea."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Improvements with ketogenic or low-carbohydrate diets may persist while the diet is maintained, but long-term evidence is uncontrolled and pain returned after stopping in a pilot.",
+    "severity": "minor",
+    "note": "Only an uncontrolled 22-month series and a single case report. E10 and E13 report pain returning to baseline after the diet ended, a caveat not stated in the proposition."
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E14"
+    ],
+    "suggested_statement": "Low-carbohydrate diets are associated with lower inflammatory markers in lipedema in small studies, but not clearly more than low-fat diets.",
+    "severity": "minor",
+    "note": "E6 is uncontrolled; E11 shows within-group changes only. E14 (decreased cytokines) fits here. E8 reports no significant hsCRP reduction in the only low-risk RCT, which weakens the first clause and is not represented."
+   },
+   {
+    "key": "P6",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Evidence for dietary interventions in lipedema is limited and inconclusive, with most studies at high risk of bias.",
+    "severity": "minor",
+    "note": "High risk of bias (7 of 9) rests on E8 alone; E9 states only that no definitive recommendation exists, and its source text appears duplicated from E8. Stage stratification is from E8's summary. E8's caution on ketogenic diets is the key caveat."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "P1 and P3 state causal 'reduce' while P6 and E8 say evidence is limited and inconclusive; the certainty caveat is not reflected in the effect propositions.",
+    "severity": "minor"
+   },
+   {
+    "issue": "No proposition on comparisons with low-fat or other control diets (E4, E11, E12, E20, E18), where several RCTs show differing effects on limb adiposity and pain; E1 and E4 are the best controlled evidence.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000014.cons.json",
+   "ver": "SQ-LIP-000014.ver.json"
+  }
+ ]
+}

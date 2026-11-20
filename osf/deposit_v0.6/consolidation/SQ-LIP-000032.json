@@ -1,0 +1,969 @@
+{
+ "question": "SQ-LIP-000032",
+ "text": "How effective is conservative therapy (compression, MLD, CDT, exercise) in lipedema?",
+ "n_old_claims": 25,
+ "n_items": 31,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: E8 pain and SF-36 benefit is used only under P2 and E27 conservative-arm result is not reflected in P3, so the symptom proposition lacks the strongest caveat.",
+  "[minor] set: P1 treats guideline recommendation as efficacy evidence and mixes reviews that only list modalities; E13 disagrees with other guidelines on MLD.",
+  "[minor] P1: not fully supported; overgeneralized; two ideas; stance errors ['E2', 'E9', 'E19']; misplaced ['E9'] — suggested: Guidelines and expert consensus generally recommend conservative therapy first for lipedema, with liposuction considered when symptoms persist, although components such as manual lymphatic drainage are disputed. (Only E1, E5, E14, E18 explicitly sequence conservative care before surgery. E2, E9, E11 and E19 merely list modalities and are not recommendations (E9 title is about pressure injuries, a probable reference mismatch). E13 (Dutch) recommends against MLD while E4/E16 recommend it, so conservative therapy is not uniform. The consensus rests on evidence level B/C, not efficacy.)",
+  "[minor] P2: not fully supported; stance errors ['E22']; misplaced ['E22'] (E8 RCT supports (CDT plus exercise superior; all arms improved, including exercise alone). E6 measures fluid volumes by bioimpedance, uncontrolled. E28 tested ESWT-based regimen, not CDT. E21 had co-interventions. E22 is lipo-lymphedema with no volume outcome and should be dropped. E3 questions benefit on swelling.)",
+  "[minor] P3: not fully supported; two ideas; misplaced ['E8'] — suggested: Conservative therapy, including compression and exercise, may reduce pain and related symptoms in lipedema, although evidence is limited and effects appear modest. (E29 is a six-woman pilot; E12 groups diet, compression and exercise; E17 mixes surgical and conservative. E27 (high-grade RCT) shows only 8% of conservative arm reaching the pain endpoint, a caveat not reflected here. E8 pain result sits under P2 instead. E15 says relieves symptoms but does not prevent progression (supporting, not refining).)",
+  "[minor] P4: stance errors ['E25'] (E31 is one RCT with six sessions; may hedge is adequate. E25 concerns edema and pain, not limb volume, and is a low-grade integrative review, so contradicting is overstated (context).)",
+  "[minor] G-00004: overgeneralized — suggested: Liposuction appears to reduce pain in painful lipedema more than conservative therapy alone at about one year. (Single multicentre RCT (E27, high grade; unblinded surgical comparison by nature) stated as a general rule; corroborated by E12 and E24 but those sit elsewhere. Specify horizon.)",
+  "[minor] G-00005: not fully supported; overgeneralized; two ideas — suggested: Liposuction for lipedema is associated with reduced pain compared with preoperative status in patients refractory to conservative management. (E24 single-arm pooled pain only (wide CI); edema, bruising and heaviness appear in no finding. Pre/post design without control.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "lipedema requer abordagem multidisciplinar (4,66/5)",
+   "note": "consensus: conservative management first-line 4.52; surgery only after ~1y clinical treatment 4.46; prioritize mobility/symptom relief over aesthetics 4.09; level B/C",
+   "old_claims": [
+    "SCR-LIP-000050",
+    "SCR-LIP-000049"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes.",
+    "Comprehensive management of lipedema requires a multidisciplinary team addressing both physical and mental health."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1016/j.abd.2025.501270",
+   "title": "Lipedema: pathophysiological insights and therapeutic strategies – An update for dermatologists",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "management — conservative (CDT, flat-knit garments class II/III, anti-inflammatory diets, physical activity), pharmacological (off-label GLP-1/GIP agonists), surgical (WAL/PAL/TAL liposuction)",
+   "note": "The article provides an overview of management strategies for lipedema, indicating a focus on symptom management and the need for psychological support, which aligns with the question regarding overall management recommendations.",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.5535/arm.2011.35.6.922",
+   "title": "Lipedema, a Rare Disease",
+   "year": 2025,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The well-known therapies for lipedema include complex decongestive therapy, pneumatic compression, and diet modifications. However, whether these treatments help reduce swelling is debatable.",
+   "note": "The article is primarily focused on fascial remodeling in hEDS with adipose disorders; the lipedema management content appears embedded in a case report section and provides only a brief, non-systematic overview of treatment options without",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1111/ddg.13036",
+   "title": "S1 guidelines: Lipedema",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "TRATAMENTO — TERAPIA FÍSICA COMPLEXA (TFC): (a) drenagem linfática manual (DLM); (b) terapia compressiva — meia de malha plana (flat-knit) sob medida na maioria dos casos, circular-knit apenas em lipedema leve; (c) exercício; (d) cuidados de pele.",
+   "note": "This is an S1 guideline (lowest formal evidence level in German guideline hierarchy) based on systematic literature review and expert consensus from 8 medical societies; it directly addresses overall management of lipedema but lacks higher-",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.26779/2786-832x.2025.2.69",
+   "title": "Treatment of lipedema in men",
+   "year": 2025,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "A evidência contemporânea sustenta uma abordagem escalonada e individualizada, começando pelo cuidado conservador otimizado e progredindo para a cirurgia de redução do lipedema em pacientes apropriadamente selecionados; a decisão compartilhada e a medida padronizada de desfechos são essenciais",
+   "note": "This systematic review directly addresses the overall management of lipedema, synthesizing evidence on both surgical and non-surgical treatments, and explicitly recommends a stepwise individualized approach. Confidence is moderate due to ac",
+   "old_claims": [
+    "SCR-LIP-000050"
+   ],
+   "old_statements": [
+    "Conservative management (lifestyle and dietary changes, compression therapy, low-impact exercise) is first-line for lipedema, and surgery (liposuction) should be considered only after an adequate trial of conservative treatment, prioritizing mobility and symptom relief over aesthetic outcomes."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1089/lrb.2024.0065",
+   "title": "Can Physical Therapy Techniques Slow Down the Progression of Lipedema?",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A decrease in intracellular (p = 0.010) and extracellular (p = 0.002) fluid volumes was observed after the treatment.",
+   "note": "The article directly addresses management of lipedema using CDT (a recognized component of overall lipedema management), reporting measurable fluid reduction outcomes. However, it is a small uncontrolled case series (n=22) without a compari",
+   "old_claims": [
+    "SCR-LIP-000119"
+   ],
+   "old_statements": [
+    "Complex decongestive therapy (CDT) combined with pneumatic compression applied 6 days/week for 1 month significantly reduced both extracellular (p=0.002) and intracellular (p=0.010) fluid volumes in 22 lipedema patients, suggesting CDT may slow disease progression since extracellular fluid accumulation is considered an accelerating factor."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1007/s13679-024-00579-8",
+   "title": "The Role of Physical Exercise as a Therapeutic Tool to Improve Lipedema: A Consensus Statement from the Italian Society of Motor and Sports Sciences (Società Italiana di Scienze Motorie e Sportive, SISMeS) and the Italian Society of Phlebology (Società Italiana di Flebologia, SIF)",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "CDT + exercício físico produz redução significativa do volume de membros vs IPCT + exercício ou exercício isolado (Atan & Bahar-Özdemir RCT 2021)",
+   "note": "This is a consensus/review article synthesizing evidence on exercise and multimodal management of lipedema; it directly addresses overall management recommendations but is based on expert consensus and review of limited RCT evidence, limiti",
+   "old_claims": [
+    "SCR-LIP-000120"
+   ],
+   "old_statements": [
+    "A consensus statement from Italian scientific societies recommends that lipedema management combine physical exercise (aquatic, aerobic, strength training) with complete decongestive therapy (CDT) including manual lymphatic drainage, compression, and dietary interventions, with CDT plus exercise showing superior limb volume reduction compared to intermittent pneumatic compression plus exercise or exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1089/lrb.2020.0019",
+   "title": "The Effects of Complete Decongestive Therapy or Intermittent Pneumatic Compression Therapy or Exercise Only in the Treatment of Severe Lipedema: A Randomized Controlled Trial",
+   "year": 2021,
+   "design": "rct",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Os três protocolos (CDT+exercício, CIP+exercício e exercício isolado) com 30 sessões em 6 semanas foram benéficos no tratamento de lipedema grave; entretanto, CDT associada a exercícios foi superior aos outros braços para reduzir volume dos membros, dor e melhorar o funcionamento físico do SF-36",
+   "note": "RCT directly testing conservative therapies (CDT, IPCT, exercise) in lipedema shows all were beneficial with CDT+exercise superior, providing affirmative evidence on effectiveness.",
+   "old_claims": [
+    "SCR-LIP-000120"
+   ],
+   "old_statements": [
+    "A consensus statement from Italian scientific societies recommends that lipedema management combine physical exercise (aquatic, aerobic, strength training) with complete decongestive therapy (CDT) including manual lymphatic drainage, compression, and dietary interventions, with CDT plus exercise showing superior limb volume reduction compared to intermittent pneumatic compression plus exercise or exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1111/iwj.13071",
+   "title": "The national cost of hospital‐acquired pressure injuries in the United States",
+   "year": 2019,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Management of lipoedema includes weight loss, control of oedema, complex decongestive physiotherapy, liposuction, and laser-assisted lipolysis. However; there are increasing reports on tumescent liposuction as the preferred surgical option with long-lasting results.",
+   "note": "This is a narrative/literature review summarizing management strategies for lipedema without randomized controlled trials; it directly addresses overall management recommendations but is limited by the absence of high-quality primary studie",
+   "old_claims": [
+    "SCR-LIP-000121"
+   ],
+   "old_statements": [
+    "Management of lipedema includes weight loss, edema control, complex decongestive physiotherapy, tumescent liposuction, and laser-assisted lipolysis, with tumescent liposuction reported as the preferred surgical option with long-lasting results."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Diagnóstico e tratamento devem ser realizados o mais cedo possível para prevenir complicações funcionais e cosméticas.",
+   "note": "The systematic review directly addresses overall lipedema management, describing conservative (CDT) and surgical (tumescent liposuction) options with quantitative outcomes and recommending early diagnosis/treatment.",
+   "old_claims": [
+    "SCR-LIP-000163"
+   ],
+   "old_statements": [
+    "This systematic review (1995-2011) reports that lipedema management consists of conservative complex decongestive therapy (CDT) — achieving up to ~10% leg circumference reduction and reduced capillary fragility (13.95 to 8.78 petechiae, P<0.001) — and tumescent liposuction, with early diagnosis and treatment recommended to prevent functional and cosmetic complications, though no clinical guideline or Cochrane recommendation existed as of 2012."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1556/oh.2008.28490",
+   "title": "Lipedema, a hardly known disease: diagnosis, associated illnesses and therapy",
+   "year": 2008,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Until recently only conservative treatment was possible (combination of manual or intermittent pneumatic drainage, compression bandages and garments and physiotherapy). More recently surgical intervention (liposuction) is also included in the treatment options.",
+   "note": "The article is a narrative review explicitly describing the recommended management of lipedema, including conservative measures, surgical liposuction, and the importance of early recognition and follow-up, directly addressing the question. [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000164"
+   ],
+   "old_statements": [
+    "This narrative review recommends combined conservative therapy (manual or intermittent pneumatic lymphatic drainage, compression bandages and garments, and physiotherapy) with surgical liposuction as a more recent option, plus early recognition, specialized treatment, and regular follow-up to prevent progression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation, evidence quality 2-3).",
+   "note": "Systematic review directly addressing lipedema management options (conservative and surgical) with graded recommendations, directly answering the question on recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000316"
+   ],
+   "old_statements": [
+    "A systematic review of 61 articles found that conservative therapies (ketogenic/RAD diets, compression, aquatic exercise) reduced pain and swelling (Grade 2A-2B), while tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation), supporting early recognition with combined conservative and surgical management."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1177/0268355516639421",
+   "title": "First Dutch guidelines on lipedema using the international classification of functioning, disability and health",
+   "year": 2017,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tratamento conservador baseia-se em quatro pilares: (1) promoção de estilo de vida saudável com controle de peso individualizado e dieta com balanço calórico ajustado; (2) graded activity training para força, condicionamento e otimização da bomba muscular vascular/linfática; (3) redução do edema com",
+   "note": "Article presents national clinical practice guidelines directly addressing the overall management of lipedema, including conservative and surgical treatment recommendations, diagnostic criteria, and follow-up.",
+   "old_claims": [
+    "SCR-LIP-000317"
+   ],
+   "old_statements": [
+    "The first Dutch lipedema guidelines, framed by the ICF and Chronic Care Model, recommend a four-pillar conservative management (healthy lifestyle with weight control, graded activity training, flat-knit compression only when edema is present, and psychosocial support; manual lymphatic drainage not recommended) plus tumescent liposuction (TLA/STLA) for abnormal adipose tissue, with structured follow-up and clinical diagnostic criteria."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1097/gox.0000000000005952",
+   "title": "Liposuction as a Treatment for Lipedema: A Scoping Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Abordagem gradual e individualizada é recomendada: conservador otimizado → cirurgia quando indicada",
+   "note": "The article directly addresses overall lipedema management, recommending a stepwise individualized approach from optimized conservative care to surgery, which supports the question's affirmative direction. Heterogeneity in diagnostic criter",
+   "old_claims": [
+    "SCR-LIP-000318"
+   ],
+   "old_statements": [
+    "A systematic review of surgical and non-surgical lipedema treatments concluded that a stepwise, individualized approach is recommended—starting with optimized conservative therapy (compression, exercise, intermittent pneumatic compression) which reduces pain and edema, and progressing to reduction surgery (tumescent, water-assisted, or power-assisted liposuction) in appropriately selected patients, with liposuction showing substantial symptom and quality-of-life improvements and acceptable complication rates."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.51731/cjht.2022.413",
+   "title": "Liposuction for Lipedema: 2022 Update",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Tratamento conservador (compressão, MLD, exercício, nutrição) alivia sintomas mas NÃO previne progressão; lipoaspiração é único método para remover tecido anormal (consenso US, contestado pelo UK)",
+   "note": "The article synthesizes evidence and guidelines directly addressing management of lipedema (conservative treatment first, liposuction debate, multidisciplinary specialized centers), providing context on recommended overall management while ",
+   "old_claims": [
+    "SCR-LIP-000319"
+   ],
+   "old_statements": [
+    "A 2022 CADTH update found zero randomized or controlled comparative trials of liposuction for lipedema and reported divergent guidelines: the UK NICE 2022 (IPG721) restricts liposuction to research contexts due to inadequate efficacy/safety data, while the US 2021 standard of care (Herbst et al.) recommends conservative treatment first and recognizes liposuction as the only technique to remove abnormal lipedema tissue, with both guidelines endorsing specialized multidisciplinary centers."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1111/ddg.15513",
+   "title": "S2k guideline lipedema",
+   "year": 2024,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Avaliação abrangente de todas as estratégias diagnósticas e terapêuticas disponíveis, incluindo compressão, drenagem linfática, nutrição, lipoaspiração e cirurgia bariátrica 60 recomendações formais acordadas em diagnóstico, opções terapêuticas conservadoras e cirúrgicas, fatores psicossociais e aut",
+   "note": "This is a formal S2k consensus guideline that directly addresses overall management of lipedema with 60 graded recommendations spanning diagnosis, conservative and surgical treatment, psychosocial factors, and self-management, directly answ",
+   "old_claims": [
+    "SCR-LIP-000320"
+   ],
+   "old_statements": [
+    "The S2k guideline issues 60 formal recommendations advocating multidisciplinary management of lipedema combining conservative measures (compression including MCS flat-knit and intermittent pneumatic compression for pain relief, manual lymphatic drainage, exercise, Mediterranean hypocaloric or ketogenic diet, weight management), psychosocial support, bariatric surgery for BMI >=40 (or >=35 with comorbidity), and liposuction as the surgical method of choice, while explicitly recommending against diuretics."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.56238/levv16n53-097",
+   "title": "SURGICAL AND NON-SURGICAL APPROACHES IN THE MANAGEMENT OF LIPEDEMA: A SYSTEMATIC REVIEW",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Mortada et al. (meta-análise, >1200 pacientes, múltiplas técnicas cirúrgicas): todas as técnicas (tumescente, PAL, WAL) produziram redução de dor e melhora funcional significativas",
+   "note": "Systematic review explicitly synthesizing comparative efficacy of conservative and surgical lipedema treatments to inform standardized management, directly addressing recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000321"
+   ],
+   "old_statements": [
+    "A systematic review of 20 studies (>1200 patients) found that multimodal management of lipedema combining conservative measures (compression, structured exercise, pneumatic compression devices, ketogenic/low-carb diet) and surgical liposuction (tumescent, PAL, WAL) yields significant improvements in pain, mobility, limb circumference and HRQoL; the LIPLEG RCT showed greater early pain reduction and mobility in the surgical group at 6 months, while combined compression plus exercise outperformed exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1016/j.bjps.2022.12.004",
+   "title": "Summary document on safety and recommendations on liposuction for lipoedema: Joint British association of aesthetic plastic surgeons (BAAPS)/British association of plastic reconstructive and aesthetic surgeons (BAPRAS) expert liposuction group",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Critérios de seleção para lipoaspiração no lipedema: persistência de sintomas por >12 meses, incapacidade funcional considerável, peso estável por 12 meses, e IMC < 35 kg/m²",
+   "note": "Consensus recommendation document based on literature review and expert opinion that directly addresses management of lipedema, specifically liposuction criteria, perioperative care, and multidisciplinary team composition.",
+   "old_claims": [
+    "SCR-LIP-000322"
+   ],
+   "old_statements": [
+    "A BAAPS/BAPRAS expert consensus recommends managing lipedema with conservative measures and selecting liposuction (tumescent, often staged large-volume) only when symptoms persist >12 months, functional impairment is considerable, weight is stable for 12 months, and BMI is <35 kg/m², performed in a level 2-3 hospital by an experienced surgeon supported by a multidisciplinary team including a lymphedema nurse, with mandatory preoperative psychological assessment and immediate postoperative compression."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1111/obr.13953",
+   "title": "Lipedema: Progress, Challenges, and the Road Ahead",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "ensaios clínicos de intervenção (cetogênica, exercício, compressão, lipoaspiração)",
+   "note": "The review mentions intervention modalities (ketogenic, exercise, compression, liposuction) as part of its synthesis, providing contextual background on management options, but its primary focus is pathophysiology rather than defining a rec",
+   "old_claims": [
+    "SCR-LIP-000324"
+   ],
+   "old_statements": [
+    "This narrative review synthesizes lipedema treatment modalities including ketogenic diet, exercise, compression, and liposuction alongside its pathophysiology, but does not establish a single recommended overall management protocol."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.12775/jehs.2026.87.67421",
+   "title": "BIESZCZAD, Dominika, BARCZEWSKA, Magdalena, KOWALCZYK, Dominika, REIZER, Barbara, KRYSTEK, Klaudia, FELISIAK,",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema: Current Understanding, Diagnosis and Multimodal Management Approaches.",
+   "note": "The title indicates the article is a review addressing multimodal management of lipedema, directly on-topic for the management question, though the abstract text itself contains only bibliographic metadata rather than findings.",
+   "old_claims": [
+    "SCR-LIP-000324"
+   ],
+   "old_statements": [
+    "This narrative review synthesizes lipedema treatment modalities including ketogenic diet, exercise, compression, and liposuction alongside its pathophysiology, but does not establish a single recommended overall management protocol."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.12659/AJCR.934406",
+   "title": "Lipedema Can Be Treated Non-Surgically: A Report of 5 Cases",
+   "year": 2021,
+   "design": "case_series",
+   "n": 5,
+   "grade": "low",
+   "risk_of_bias": "high",
+   "quote": "Demonstrar a viabilidade do tratamento não cirúrgico do lipedema em casos selecionados, contestando o viés da literatura que apresenta a lipoaspiração como tratamento definitivo único",
+   "note": "QuASiL improvements and volume losses; uncontrolled, multiple co-interventions",
+   "old_claims": [
+    "SCR-LIP-000037"
+   ],
+   "old_statements": [
+    "Non-surgical management of lipedema (anti-inflammatory diet, manual lymphatic drainage, aquatic exercise, antioxidant phytotherapeutics) can improve symptoms and reduce limb volume across disease stages in selected patients."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.26890/dgym6676",
+   "title": "Clinical Management of a Patient with Lipo-Lymphedema Using Adjustable Compression Wraps: A Case Report",
+   "year": 2026,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O sucesso terapêutico depende da combinação de todos os componentes da CDT, não apenas das ACWs.",
+   "note": "The article provides a case report that illustrates a management strategy for lipo-lymphedema, which is relevant to the overall management of lipedema.",
+   "old_claims": [
+    "SCR-LIP-000037"
+   ],
+   "old_statements": [
+    "Non-surgical management of lipedema (anti-inflammatory diet, manual lymphatic drainage, aquatic exercise, antioxidant phytotherapeutics) can improve symptoms and reduce limb volume across disease stages in selected patients."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1016/j.jpra.2026.01.004",
+   "title": "JPRAS Open 48 (2026) 993–1007",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic condition characterized by abnormal fat accumulation, primarily in the lower extremities, affecting mostly women.",
+   "note": "Narrative review broadly covering lipedema, obesity, and lymphedema; the truncated abstract does not present a specific finding testing progression to lymphedema or functional disability, so it is on-topic background rather than direct evid",
+   "old_claims": [
+    "SCR-LIP-000418"
+   ],
+   "old_statements": [
+    "A narrative review of lipedema and obesity discusses lymphedema among keywords and treatment approaches including liposuction and compression therapy, but does not itself test whether lipedema progresses to lymphedema or causes functional disability."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1007/s00266-025-05507-2",
+   "title": "Aesth Plast Surg (2026) 50:1931–1939",
+   "year": 2026,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "surgical treatment with tumescent liposuction resulted in significant clinical improvements for patients with lipedema. The pooled mean preoperative pain score was 5.64 (95% CI: 3.67–8.69), which decreased to 1.19 (95% CI: 0.91–4.22) postoperatively",
+   "note": "Meta-analysis reports significant postoperative reduction in pain following tumescent liposuction, providing affirmative evidence for effectiveness.",
+   "old_claims": [
+    "SCR-LIP-000408"
+   ],
+   "old_statements": [
+    "In a single-arm meta-analysis of 6 studies (429 patients), tumescent liposuction reduced pooled mean pain scores from 5.64 preoperatively to 1.19 postoperatively in patients with lipedema refractory to conservative management."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.69849/g5mp1531",
+   "title": "Revista FT | ISSN 1678-0817 | v. 30, n. 158, 2026 | DOI: 10.69849/g5mp1531",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The findings reinforce MLD as an essential therapeutic modality for reducing edema and pain.",
+   "note": "Integrative literature review synthesizing evidence that conservative management (notably MLD) reduces edema and pain in lipedema, directly supporting the question's affirmative direction, though it is a narrative review without quantified ",
+   "old_claims": [
+    "SCR-LIP-000441"
+   ],
+   "old_statements": [
+    "An integrative review of 30 studies reinforces manual lymphatic drainage as an essential conservative therapeutic modality for reducing edema and pain in lipedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1186/s12905-026-04271-y",
+   "title": "Åström Malm et al. BMC Women's Health",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Findings indicated that individuals with lipedema generally exhibit lower walking capacity and muscle strength compared to healthy or BMI-matc",
+   "note": "The review characterizes physical function limitations in lipedema and notes physical activity as a component of conservative management, but it maps functional deficits rather than testing the effectiveness of conservative therapy (compres",
+   "old_claims": [
+    "SCR-LIP-000442"
+   ],
+   "old_statements": [
+    "A scoping review of six studies using objective measures (accelerometry, six-minute walk test, sit-to-stand, dynamometry) found that women with lipedema generally exhibit lower walking capacity and muscle strength compared to healthy or BMI-matched controls."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.1016/s0140-6736(26)00910-4",
+   "title": "Liposuction versus conservative therapy for patients with lipoedema in Germany: a multicentre, randomised controlled clinical trial.",
+   "year": 2026,
+   "design": "rct",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "After 12 months, 190 (68%) of 278 randomisly assigned patients undergoing liposuction achieved the primary endpoint of pain reduction versus ten (8%) of 132 randomly assigned to conservative therapy (odds ratio 26·2 [95% CI 13·1-52·5]; p<0·0001).",
+   "note": "This RCT demonstrates liposuction benefit but its measured endpoints are pain and quality of life, not limb volume; it is on-topic but does not directly test volume reduction.",
+   "old_claims": [
+    "SCR-LIP-000434"
+   ],
+   "old_statements": [
+    "In an RCT of 410 women with lipedema, liposuction reduced leg pain (68% vs 8% achieving ≥2-point reduction; OR 26.2) and improved quality of life versus conservative therapy, but the trial's primary endpoint was pain rather than limb volume."
+   ],
+   "old_role_in_question": "contradicting"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1177/02683555261503720",
+   "title": "Short-term outcomes of combined ESWT-based conservative therapy in lipedema: A retrospective cohort study",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Reduções de circunferência maiores no período de tratamento combinado do que no período só de estilo de vida em 5 dos 6 pontos",
+   "note": "Non-randomized cohort reporting greater circumference reductions and significant pain reduction with the combined conservative therapy, supporting its effectiveness while noting causal inference is limited by design.",
+   "old_claims": [
+    "SCR-LIP-000551"
+   ],
+   "old_statements": [
+    "In a retrospective cohort of lipedema patients, a 5-week combined conservative regimen (focal ESWT, manual lymphatic drainage, intermittent pneumatic compression, and lifestyle guidance) produced greater lower-limb circumference reductions than 5 weeks of lifestyle guidance alone at 5 of 6 measurement points (e.g. above-right-knee median change -2.2 vs -1.0 cm, p=0.002) and pain fell from NRS median 4 to 2 (p<0.001)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.3390/ijerph20020914",
+   "title": "The Usefulness of the Application of Compression Therapy among Lipedema Patients—Pilot Study",
+   "year": 2023,
+   "design": "rct",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "There was a significant decrease in the subjectively reported tendency for bruising and pain at palpation among patients that received compression therapy.",
+   "note": "Pilot RCT reporting significant symptomatic improvements (pain, bruising, edema) with compression therapy; supports the affirmative direction but with very small sample (n=6) and no supervised full-term adherence, so confidence is very low.",
+   "old_claims": [
+    "SCR-LIP-000515"
+   ],
+   "old_statements": [
+    "In a pilot RCT of six women with lipedema, those receiving class-2 flat-knit compression leggings plus exercise showed statistically significant reductions in bruising tendency (p=0.034) and pain at palpation (p=0.016), a 30.2% reduction in perimalleolar swelling, and a 31% improvement in SF-36 physical functioning versus exercise alone."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1590/1677-5449.202501962",
+   "title": "The role of physical therapy in the treatment of lipedema: an integrative review of therapeutic strategies and the current clinical landscape",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "These interventions show potential benefits in reducing pain, improving functional capacity, controlling edema, and preventing disease progression. However, the available evidence remains limited",
+   "note": "Review reports potential benefits of CDT/compression on pain and edema but explicitly qualifies that evidence is limited and based on few RCTs, warranting a 'refines' stance rather than firm support.",
+   "old_claims": [
+    "SCR-LIP-000517"
+   ],
+   "old_statements": [
+    "An integrative review of 28 studies (predominantly observational and quasi-experimental, few RCTs) reports that complete decongestive therapy, compression, exercise, and manual therapy show potential benefits in reducing pain, improving functional capacity, and controlling edema in lipedema, but concludes the available evidence remains limited."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1080/09593985.2018.1479474",
+   "title": "Low-frequency vibrotherapy considerably improves the effectiveness of manual lymphatic drainage (MLD) in patients with lipedema: A two-armed, randomized, controlled pragmatic trial",
+   "year": 2020,
+   "design": "rct",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "MLD isolada: redução de circunferência apenas 0,2-0,6 cm (efeito desprezível, d≈0,1) — eficácia subótima em monoterapia",
+   "note": "The RCT reports that MLD alone (a component of complete decongestive therapy) produced only negligible volume reduction and negligible QoL improvement in monotherapy, qualifying the affirmative claim; meaningful benefit required added vibro",
+   "old_claims": [
+    "SCR-LIP-000513"
+   ],
+   "old_statements": [
+    "In 30 women with lipedema stage 2-3, six sessions of manual lymphatic drainage alone produced negligible circumference reduction (0.2-0.6 cm, d≈0.1) and negligible quality-of-life change, whereas adding low-frequency vibrotherapy yielded large volume reductions (1.1<d<3.2) and improved quality of life (d=1.0)."
+   ],
+   "old_role_in_question": "refines"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Guidelines and expert consensus recommend conservative therapy as first-line lipedema management, reserving liposuction for symptoms that persist despite it.",
+   "role": "context",
+   "rationale": "Recommendations frame how conservative therapy is used but do not themselves measure its effectiveness.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Brazilian Delphi consensus (113 panelists): conservative management first-line (4.52/5); surgery only after about one year of clinical treatment (4.46); multidisciplinary approach (4.66); evidence level B/C."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "German S1 guideline recommends complex physical therapy: manual lymphatic drainage, mostly custom flat-knit compression (circular-knit only in mild lipedema), exercise and skin care."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Systematic review supports a stepwise individualised approach starting with optimised conservative care and progressing to reduction surgery in selected patients, with shared decision-making."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Dutch guideline: four-pillar conservative care (lifestyle and weight control, graded activity, flat-knit compression only when edema is present, psychosocial support); manual lymphatic drainage not recommended; tumescent liposuction for abnormal fat."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "Review recommends a stepwise individualised approach: optimised conservative therapy (compression, exercise, pneumatic compression), which reduces pain and edema, then reduction surgery in selected patients."
+    },
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "S2k guideline with 60 recommendations: multidisciplinary care combining compression (flat-knit, intermittent pneumatic compression for pain), lymphatic drainage, exercise, diet and psychosocial support; liposuction surgical method of choice; diuretics advised against."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "BAAPS/BAPRAS expert consensus: conservative measures first; liposuction only with symptoms persisting >12 months, considerable functional impairment, stable weight for 12 months and BMI <35."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Dermatology review lists conservative management (CDT, flat-knit class II/III garments, anti-inflammatory diet, physical activity) alongside off-label GLP-1/GIP agonists and liposuction."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Narrative review recommends combined conservative therapy (manual or pneumatic drainage, compression bandages and garments, physiotherapy) with liposuction as a more recent option, plus early recognition and follow-up."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Review lists weight loss, edema control, complex decongestive physiotherapy, tumescent liposuction and laser-assisted lipolysis, with tumescent liposuction reported as preferred surgical option."
+    },
+    {
+     "e": "E19",
+     "stance": "context",
+     "finding": "Narrative review lists ketogenic diet, exercise, compression and liposuction as treatment modalities without establishing a recommended management protocol."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 11,
+   "store_key": "G-00037"
+  },
+  {
+   "key": "P2",
+   "statement": "Multimodal decongestive therapy combined with exercise is associated with reductions in limb volume or circumference in lipedema.",
+   "role": "supporting",
+   "rationale": "A randomised trial, cohorts and case series report volume or circumference reduction with combined conservative regimens.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "RCT in severe lipedema: CDT+exercise, pneumatic compression+exercise and exercise alone (30 sessions over 6 weeks) were all beneficial; CDT+exercise was superior for limb volume, pain and SF-36 physical functioning."
+    },
+    {
+     "e": "E7",
+     "stance": "context",
+     "secondary_of": "E8",
+     "finding": "Italian SISMeS/SIF consensus recommends exercise plus complete decongestive therapy, citing the RCT showing superior limb volume reduction with CDT plus exercise."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "22 patients: CDT plus pneumatic compression 6 days/week for 1 month reduced extracellular (p=0.002) and intracellular (p=0.010) fluid volumes; uncontrolled."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Systematic review (1995-2011): CDT achieved up to ~10% leg circumference reduction and reduced capillary fragility (13.95 to 8.78 petechiae, P<0.001)."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Retrospective cohort: 5-week combined regimen (focal ESWT, MLD, pneumatic compression, lifestyle guidance) reduced circumference more than lifestyle guidance alone at 5 of 6 points (e.g. -2.2 vs -1.0 cm, p=0.002); pain NRS 4 to 2 (p<0.001)."
+    },
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "5 selected patients across stages: anti-inflammatory diet, MLD, aquatic exercise and antioxidant phytotherapeutics improved QuASiL scores and reduced limb volume; uncontrolled with multiple co-interventions."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Case of lipo-lymphedema managed with adjustable compression wraps; success depended on combining all CDT components, not the wraps alone."
+    },
+    {
+     "e": "E3",
+     "stance": "refines",
+     "finding": "Case report notes complex decongestive therapy, pneumatic compression and diet are used, but whether they reduce swelling is debatable."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 7,
+   "store_key": "G-00038"
+  },
+  {
+   "key": "P3",
+   "statement": "Conservative therapy, including compression and exercise, is associated with reduced pain and related symptoms in lipedema.",
+   "role": "supporting",
+   "rationale": "Systematic reviews and a small randomised pilot report symptom relief with conservative measures.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Systematic review of 61 articles: ketogenic/RAD diets, compression and aquatic exercise reduced pain and swelling (Grade 2A-2B); tumescent liposuction had the strongest evidence (Grade 1)."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Systematic review of 20 studies (>1200 patients): multimodal conservative and surgical management improves pain, mobility, circumference and HRQoL; compression plus exercise outperformed exercise alone."
+    },
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Pilot RCT (6 women): flat-knit class-2 compression plus exercise reduced bruising tendency (p=0.034), palpation pain (p=0.016) and perimalleolar swelling (30.2%) and improved SF-36 physical functioning by 31% versus exercise alone."
+    },
+    {
+     "e": "E15",
+     "stance": "refines",
+     "finding": "Health technology update: conservative treatment (compression, MLD, exercise, nutrition) relieves symptoms but does not prevent progression; guidelines diverge on liposuction, which is the only method removing abnormal tissue."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00039"
+  },
+  {
+   "key": "P4",
+   "statement": "Manual lymphatic drainage used alone may have little effect on limb volume in lipedema.",
+   "role": "refines",
+   "rationale": "A randomised trial found negligible effect of drainage monotherapy, while a review regards drainage as essential for edema and pain.",
+   "evidence": [
+    {
+     "e": "E31",
+     "stance": "supporting",
+     "finding": "RCT in 30 women (stage 2-3): six MLD sessions alone reduced circumference only 0.2-0.6 cm (d~0.1) with negligible QoL change; adding low-frequency vibrotherapy gave large volume reductions (1.1<d<3.2) and improved QoL (d=1.0)."
+    },
+    {
+     "e": "E25",
+     "stance": "contradicting",
+     "finding": "Integrative review of 30 studies reinforces manual lymphatic drainage as an essential modality for reducing edema and pain in lipedema."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 2,
+   "store_key": "G-00040"
+  },
+  {
+   "key": "P5",
+   "statement": "Evidence on conservative therapy for lipedema is predominantly observational and quasi-experimental, with few randomised trials.",
+   "role": "refines",
+   "rationale": "The certainty of conservative-therapy benefits is limited by study design.",
+   "evidence": [
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "Integrative review of 28 studies (mostly observational and quasi-experimental, few RCTs): CDT, compression, exercise and manual therapy show potential benefits for pain, function and edema, but evidence remains limited."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00041"
+  },
+  {
+   "key": "G-00004",
+   "statement": "In women with painful lipedema, liposuction reduces leg pain more than conservative therapy alone.",
+   "role": "contradicting",
+   "rationale": "Randomised evidence shows conservative therapy alone rarely achieves meaningful pain reduction compared with liposuction.",
+   "evidence": [
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "Multicentre RCT (410 women): at 12 months 68% (190/278) after liposuction vs 8% (10/132) with conservative therapy achieved the pain-reduction endpoint (OR 26.2, p<0.0001)."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 1,
+   "store_key": "G-00004"
+  },
+  {
+   "key": "G-00005",
+   "statement": "Liposuction for lipedema is associated with reduced pain and other symptoms compared with preoperative status, mainly in uncontrolled studies.",
+   "role": "context",
+   "rationale": "Liposuction outcomes in patients refractory to conservative care give context for conservative-therapy effectiveness.",
+   "evidence": [
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Single-arm meta-analysis of 6 studies (429 patients refractory to conservative management): tumescent liposuction reduced pooled pain from 5.64 to 1.19."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 1,
+   "store_key": "G-00179",
+   "statement_before_twin_merge": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status."
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E20",
+   "reason": "Abstract contains only bibliographic metadata and a title, no finding."
+  },
+  {
+   "e": "E23",
+   "reason": "Truncated abstract with only a definitional sentence; no finding on conservative therapy."
+  },
+  {
+   "e": "E26",
+   "reason": "Off-topic: maps functional deficits in lipedema and does not test the effectiveness of conservative therapy."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [
+     "E2",
+     "E9",
+     "E19"
+    ],
+    "misplaced": [
+     "E9"
+    ],
+    "suggested_statement": "Guidelines and expert consensus generally recommend conservative therapy first for lipedema, with liposuction considered when symptoms persist, although components such as manual lymphatic drainage are disputed.",
+    "severity": "minor",
+    "note": "Only E1, E5, E14, E18 explicitly sequence conservative care before surgery. E2, E9, E11 and E19 merely list modalities and are not recommendations (E9 title is about pressure injuries, a probable reference mismatch). E13 (Dutch) recommends against MLD while E4/E16 recommend it, so conservative therapy is not uniform. The consensus rests on evidence level B/C, not efficacy."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [
+     "E22"
+    ],
+    "misplaced": [
+     "E22"
+    ],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E8 RCT supports (CDT plus exercise superior; all arms improved, including exercise alone). E6 measures fluid volumes by bioimpedance, uncontrolled. E28 tested ESWT-based regimen, not CDT. E21 had co-interventions. E22 is lipo-lymphedema with no volume outcome and should be dropped. E3 questions benefit on swelling."
+   },
+   {
+    "key": "P3",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E8"
+    ],
+    "suggested_statement": "Conservative therapy, including compression and exercise, may reduce pain and related symptoms in lipedema, although evidence is limited and effects appear modest.",
+    "severity": "minor",
+    "note": "E29 is a six-woman pilot; E12 groups diet, compression and exercise; E17 mixes surgical and conservative. E27 (high-grade RCT) shows only 8% of conservative arm reaching the pain endpoint, a caveat not reflected here. E8 pain result sits under P2 instead. E15 says relieves symptoms but does not prevent progression (supporting, not refining)."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [
+     "E25"
+    ],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "minor",
+    "note": "E31 is one RCT with six sessions; may hedge is adequate. E25 concerns edema and pain, not limb volume, and is a low-grade integrative review, so contradicting is overstated (context)."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Consistent with the item set: only E8, E27, E29, E31 are RCTs; rests on E30 as a single source."
+   },
+   {
+    "key": "G-00004",
+    "supported": "yes",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Liposuction appears to reduce pain in painful lipedema more than conservative therapy alone at about one year.",
+    "severity": "minor",
+    "note": "Single multicentre RCT (E27, high grade; unblinded surgical comparison by nature) stated as a general rule; corroborated by E12 and E24 but those sit elsewhere. Specify horizon."
+   },
+   {
+    "key": "G-00005",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Liposuction for lipedema is associated with reduced pain compared with preoperative status in patients refractory to conservative management.",
+    "severity": "minor",
+    "note": "E24 single-arm pooled pain only (wide CI); edema, bruising and heaviness appear in no finding. Pre/post design without control."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "E8 pain and SF-36 benefit is used only under P2 and E27 conservative-arm result is not reflected in P3, so the symptom proposition lacks the strongest caveat.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P1 treats guideline recommendation as efficacy evidence and mixes reviews that only list modalities; E13 disagrees with other guidelines on MLD.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000032.cons.json",
+   "ver": "SQ-LIP-000032.ver.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00005",
+   "into": "G-00179"
+  }
+ ]
+}

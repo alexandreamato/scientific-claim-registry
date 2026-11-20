@@ -1,0 +1,1094 @@
+{
+ "question": "SQ-LIP-000001",
+ "text": "Is lipedema a distinct disease, separate from obesity and lymphedema?",
+ "n_old_claims": 26,
+ "n_items": 34,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] set: The core claim in P1 rests on consensus and expert opinion. E2 and E12 have null quotes, so their findings cannot be checked against text. E34, E10 and E27 qualify the picture (frequent coexistence, almost exclusively in obese women, lymphedema rising with BMI) but only partly reach P1's wording.",
+  "[minor] set: P5 and P7 sit in tension with E26 (frequent lymphatic abnormalities in lipedema, unrelated to BMI), which is filed only as 'refines' under P5. A caveat on the imaging-based distinction should carry through to P1.",
+  "[minor] set: P8 (metabolic comorbidity) and P9 (blood count) are tangential to the question and are single-study findings. They add little to the answer on distinctness and could be context-only.",
+  "[minor] set: E10 is labelled supporting in P1 although its quote concerns occurrence in obese women. E1's finding text mentions BMI of limited value, which is not in the quote, so that detail is unverifiable.",
+  "[minor] P1: not fully supported; overgeneralized; two ideas; stance errors ['E10'] — suggested: Lipedema is widely regarded as a clinical entity distinct from obesity and lymphedema, based mainly on expert opinion and clinical features, though overlap and coexistence occur. (Support is almost entirely consensus, expert opinion and narrative reviews (E2 and E12 have no quote and cannot be checked; E2 is labelled expert_opinion yet summarised as a narrative review). Distinctness from obesity and from lymphedema rests on different evidence. E10 says lipedema occurs almost exclusively in obese women, which is context, not support for distinctness. Data-based support sits in P4 and P5, and E34 and E26 qualify the categorical wording.)",
+  "[minor] P3: misplaced ['E5'] — suggested: Foot sparing, negative Stemmer sign, bilateral symmetry, easy bruising and painful fat are reported to help distinguish early lipedema from lymphedema clinically. (E12 itself says Stemmer becomes positive with lipolymphedema, and E26 found lymphatic involvement unrelated to Stemmer, so the signs apply mainly to early or pure lipedema. The CT sensitivity and specificity in E5 belong with imaging (P5), not clinical signs. E22 is only 9 patients.)",
+  "[minor] P4: not fully supported; overgeneralized; two ideas; misplaced ['E13'] — suggested: Lipedema adipose tissue is reported to show histological and molecular features that differ from BMI-matched controls, and some that differ from lymphedema. (The BMI-matched comparator evidence is E16 and E20 (small samples). The lymphedema comparator evidence is only E17 and E15. E13 is a commentary on normal-BMI patients with no stated comparator, and E15 and E18 are reviews with no stated obesity comparator, so they do not show differences from tissue of similar body mass. The statement bundles two comparisons.)",
+  "[minor] P5: not fully supported; overgeneralized; misplaced ['E3'] — suggested: Lymphatic imaging in lipedema often shows patterns that differ from lymphedema, although lymphatic abnormalities are also frequent in lipedema and do not exclude it. (E3 compares pure lipedema with lipolymphedema, not lymphedema, and fits coexistence better. E24 and E29 are small series. E26 (47% abnormal lymphoscintigraphy) shows that imaging does not cleanly separate the two, which the flat wording hides.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent, 1 repair round)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.1590/1677-5449.202301832",
+   "title": "Brazilian Consensus Statement on Lipedema using the Delphi methodology",
+   "year": 2025,
+   "design": "consensus",
+   "n": 113,
+   "grade": "very_low",
+   "risk_of_bias": "moderate",
+   "quote": "distribuição desproporcional de TAS e ausência de relação causal com obesidade",
+   "note": "Brazilian Delphi consensus (expert agreement, not primary evidence)",
+   "old_claims": [
+    "SCR-LIP-000001",
+    "SCR-LIP-000044",
+    "SCR-LIP-000003",
+    "SCR-LIP-000002",
+    "SCR-LIP-000045"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist.",
+    "Lipedema is defined by a disproportionate, symmetrical accumulation of subcutaneous adipose tissue in the limbs relative to the trunk that is characteristically resistant to conventional weight-loss methods (diet and exercise), distinguishing it from common obesity.",
+    "In the Brazilian Delphi consensus, experts agreed that lipedema and obesity do not have a causal relationship and that BMI is of limited value in differentiating lipedema from obesity.",
+    "Clinical signs that help diagnose lipedema and distinguish it from lymphedema include a usually negative Kaposi-Stemmer sign, the cuff sign with foot sparing, fat painful on palpation, easy bruising, and minimal pitting edema (Stemmer becomes positive only when secondary lymphedema/lipolymphedema develops).",
+    "Patients with lipedema frequently report swelling and a sensation of heaviness in the affected limbs."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "Amato ACM, 2020",
+   "title": null,
+   "year": 2020,
+   "design": "expert_opinion",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "narrative review",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1016/j.mri.2020.06.010",
+   "title": "Non-contrast MR Lymphography of lipedema of the lower extremities",
+   "year": 2020,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The fat tissue was homogeneous, without any signs of edema in pure lipedema patients. In all the extremities with lipolymphedema, high signal intensity areas in the epifascial region could be detected on the 3D-TSE sequence (p < .001)",
+   "note": "The article provides evidence of distinct imaging findings in lipedema patients, supporting the notion that it is a separate disease from obesity and lymphedema.",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1007/s00404-026-08318-1",
+   "title": "Impact of hormones on lipedema development: a systematic literature review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Os achados apoiam a reclassificação do lipedema como distúrbio hormonalmente influenciado, distinto da obesidade",
+   "note": "The systematic review evaluates the pathophysiological mechanisms of lipedema and supports its distinction from obesity.",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1111/j.1758-8111.2012.00045.x",
+   "title": "Lipedema: an overview of its clinical manifestations, diagnosis and treatment of the disproportional fatty deposition syndrome – systematic review",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "TC sem contraste: sensibilidade 95% e especificidade 100% para diagnóstico de lipedema (Monnin-Delhom). Critério diagnóstico diferencial chave: pele do dorso do pé poupada no lipedema (sinal do cuffing), Stemmer negativo; ao contrário do linfedema.",
+   "note": "This is a systematic review of available literature on lipedema that explicitly lists differential diagnoses (lymphedema, obesity, lipohypertrophy, phlebedema), supporting lipedema as a distinct clinical entity, but the evidence base is des",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1177/1534734614554284",
+   "title": "Lipedema",
+   "year": 2015,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema não responde a dieta restrita nas pernas — principal distinção clínica com obesidade simples",
+   "note": "This is a narrative literature review that explicitly states lipedema is distinct from lymphedema and obesity, supporting the question's affirmative direction, but provides no primary data and is limited by the low quality of evidence inher",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1055/a-2530-5875",
+   "title": "Lipedema: Clinical Features, Diagnosis, and Management",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "the current research indicates that lipedema appears to be a clinical entity related to genetic factors and fat distribution, although distinct from lymphedema and obesity",
+   "note": "Narrative review directly addressing the question, explicitly stating lipedema is distinct from obesity and lymphedema; supports the affirmative, but evidence level is low (non-systematic review noting scarcity of high-quality trials).",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1177/02683555261451571",
+   "title": "Modern approaches to the diagnosis and multimodal management of lipedema: A phlebology-oriented clinical framework.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Accurate diagnosis of lipedema relies primarily on clinical evaluation, including pain assessment, tissue palpation, characteristic fat distribution, and exclusion of lymphedema and simple obesity.",
+   "note": "A narrative review that frames lipedema as a distinct systemic disorder requiring exclusion of obesity and lymphedema, but presents no original comparative evidence testing the distinction; on-topic background rather than a direct test.",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1007/s00105-010-1987-7",
+   "title": "Dicker durch Fett oder Wasser — Lipohyperplasia dolorosa vs. Lymphödem",
+   "year": 2010,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipohyperplasia dolorosa and lymphedema are completely different disease entities, which are both, however, classified under lymphology.",
+   "note": "The review explicitly states lipedema and lymphedema are completely different disease entities and that lipedema is a congenital fat distribution disorder commonly confused with obesity, directly supporting the distinctness of lipedema.",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1016/j.jmv.2012.05.002",
+   "title": "[Lipedema: a misdiagnosed entity]",
+   "year": 2012,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a clinical entity frequently misdiagnosed or confound with primary lymphedema. Lipedema is a disorder of adipose tissue that occurs almost exclusively in obese women.",
+   "note": "A narrative review describing lipedema as a distinct clinical entity distinguished from primary lymphedema (different management, sparing of feet) and from obesity (weight loss poorly improves appearance/discomfort), but as a non-testing re",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.1556/oh.2008.28490",
+   "title": "[Lipedema, a barely known disease: diagnosis, associated diseases and therapy]",
+   "year": 2008,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Main differential diagnoses are obesity, lipohypertrophy and primary and secondary lymphedema.",
+   "note": "Narrative review discussing lipedema as an entity frequently confused with obesity and distinguished from lymphedema, but it does not itself test or establish distinctness; it provides background/diagnostic framing rather than a primary com",
+   "old_claims": [
+    "SCR-LIP-000001"
+   ],
+   "old_statements": [
+    "Lipedema is a distinct clinical entity separate from obesity and lymphedema, although all three can coexist."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "Amato ACM, 2019",
+   "title": null,
+   "year": 2019,
+   "design": "case_report",
+   "n": 1,
+   "grade": "very_low",
+   "risk_of_bias": "high",
+   "quote": null,
+   "note": "comparative table",
+   "old_claims": [
+    "SCR-LIP-000002"
+   ],
+   "old_statements": [
+    "Clinical signs that help diagnose lipedema and distinguish it from lymphedema include a usually negative Kaposi-Stemmer sign, the cuff sign with foot sparing, fat painful on palpation, easy bruising, and minimal pitting edema (Stemmer becomes positive only when secondary lymphedema/lipolymphedema develops)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1002/oby.24281",
+   "title": "Vascular remodeling of adipose tissue in lipedema: endothelial dysfunction as an emerging culprit in a mysterious disease",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Estudo demonstra que a patologia vascular e adipocitária do lipedema é INDEPENDENTE da obesidade (pacientes com BMI < 24,9 afetadas)",
+   "note": "This is a commentary/review contextualizing histopathological findings (Michelini et al.) that describe inflammatory (CD68+ macrophages) and vascular/endothelial dysfunction mechanisms in lipedema tissue, directly bearing on the question ab",
+   "old_claims": [
+    "SCR-LIP-000308"
+   ],
+   "old_statements": [
+    "High-resolution histopathology and transmission electron microscopy of lipedema adipose tissue (normal-BMI, stages 1-2) showed CD68+ macrophage infiltration increased exclusively in affected areas (similar to obesity but in normal-weight patients), along with endothelial/pericyte hyperproliferation (Ki-67+), severe endothelial barrier degeneration, calcium crystal and collagen (fibrosis) accumulation, and adipocyte cytoplasmic projections into the capillary lumen, indicating vascular and adipocyte pathology independent of obesity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1002/jmri.28281",
+   "title": "Subcutaneous Adipose Tissue Edema in Lipedema Revealed by Noninvasive 3T MR Lymphangiography",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Os perfis linfangiográficos observados foram distintos quando comparados a participantes pareados por IMC sem essas condições e diferentes do padrão visto em linfedema oncológico avançado, apoiando o lipedema como entidade clínica distinta da obesidade",
+   "note": "The study directly applies MR lymphangiography and Dixon fat/water MRI to compare imaging patterns across lipedema, lymphedema, LWL and controls, reporting group differences and odds ratios; however interobserver agreement was only fair-to- [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000203"
+   ],
+   "old_statements": [
+    "Noninvasive 3T MR lymphangiography revealed distinct topographic patterns of subcutaneous adipose tissue hyperintensity (extravascular and vascular) that distinguished lipedema, lipedema-with-lymphedema, and cancer-related lymphedema from BMI-matched controls, with cancer lymphedema showing more frequent dilated vascular patterns (OR=12.27) and diffuse hyperintensity observed only in disease groups, supporting imaging-based differentiation."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.3390/ijms23126621",
+   "title": "Current Mechanistic Understandings of Lymphedema and Lipedema: Tales of Fluid, Fat, and Fibrosis",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "AUSÊNCIA da assinatura T cell do linfedema. ECM fibrótica identificada em 2 coortes independentes (Felmerer 2020; Suga 2009). VEGF-C elevado SEM alterações na arquitetura linfática (Felmerer 2020) — contraste direto com linfedema",
+   "note": "This narrative review directly addresses the distinction between lipedema and lymphedema by comparing their pathophysiology, molecular regulators, and genetics, supporting the notion that lipedema is a distinct condition; however, as a revi",
+   "old_claims": [
+    "SCR-LIP-000073"
+   ],
+   "old_statements": [
+    "Review analysis indicates that lymphedema and lipedema diverge in time course, molecular regulators, pathophysiology, and genetics, suggesting unique routes to interstitial fluid accumulation and inflammation despite shared clinical features of edema, adipose expansion, and fibrosis."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.jss.2020.03.055",
+   "title": "Adipose Tissue Hypertrophy, An Aberrant Biochemical Profile and Distinct Gene Expression in Lipedema",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema apresenta-se como uma doença distinguível com arquitetura tecidual típica (hipertrofia de adipócitos, fibrose intercelular, espessamento epidérmico) e metabolismo lipídico aberrante, diferente da obesidade e do linfedema.",
+   "note": "The study directly compares lipedema patients to BMI-matched controls using histopathology, serum analysis, and gene expression arrays, finding distinct molecular and morphological hallmarks; however, the sample size is small (10 lipedema, ",
+   "old_claims": [
+    "SCR-LIP-000074"
+   ],
+   "old_statements": [
+    "Lipedema adipose tissue shows distinct histopathologic features (adipocyte hypertrophy, increased intercellular fibrosis, macrophage infiltration), aberrant lipid metabolism, and a unique adipogenesis gene expression profile compared to BMI-matched controls, differentiating it from obesity and lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.3390/ijms24087591",
+   "title": "A Comparative Analysis to Dissect the Histological and Molecular Differences among Lipedema, Lipohypertrophy and Secondary Lymphedema",
+   "year": 2023,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "VEGF-R3 aumentado exclusivamente em linfedema (3,227±1,067 fold) vs todas as condições (lipedema 1,006, lipohipertrofia 1,406) — marcador molecular específico de linfedema",
+   "note": "The study directly compares lipedema, lipohypertrophy, and secondary lymphedema using histological and molecular methods in matched samples, identifying distinct characteristics that support lipedema as a separate condition from both obesit",
+   "old_claims": [
+    "SCR-LIP-000074"
+   ],
+   "old_statements": [
+    "Lipedema adipose tissue shows distinct histopathologic features (adipocyte hypertrophy, increased intercellular fibrosis, macrophage infiltration), aberrant lipid metabolism, and a unique adipogenesis gene expression profile compared to BMI-matched controls, differentiating it from obesity and lymphedema."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.3390/biomedicines10123081",
+   "title": "Lipedema: Insights into Morphology, Pathophysiology, and Challenges",
+   "year": 2022,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Biomarcadores em investigação: exossomas, lipidômica, metabolômica, perfil de citocinas — sugerem condição distinta de obesidade e linfedema",
+   "note": "This is a narrative review that explicitly states promising biomarkers distinguish lipedema from obesity and lymphedema, and describes unique morphological and pathophysiological features; however, as a review it synthesizes existing limite",
+   "old_claims": [
+    "SCR-LIP-000075"
+   ],
+   "old_statements": [
+    "Exosome, cytokine, lipidomic, and metabolomic profiling studies suggest lipedema is a condition distinct from obesity and lymphedema, characterized by hyperproliferation of fat cells, fibrosis, inflammation, and resistance to conventional weight-loss interventions."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.1111/iwj.12949",
+   "title": "Lipoedema is not lymphoedema: A review of current literature",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipoedema é distinto do linfedema: sinal de Stemmer negativo, sem envolvimento dos pés, dor e equimoses espontâneas, bilateral e simétrico",
+   "note": "The article is an informal systematic literature review explicitly arguing lipedema is a distinct entity differentiable from lymphedema and obesity, with histopathologic and clinical differentiators and a proposed diagnostic algorithm, dire",
+   "old_claims": [
+    "SCR-LIP-000255"
+   ],
+   "old_statements": [
+    "A systematic review reports that lipedema is a distinct clinical entity differentiable from lymphedema (negative Stemmer sign, no foot involvement, bilateral symmetry, spontaneous pain and bruising) and from obesity, supported by distinct histopathology (enlarged adipocytes, increased capillaries, macrophage infiltration, CD68+ cells, and Ki67+/CD34+ progenitor proliferation), and proposes a diagnostic algorithm."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1038/s41598-020-67987-3",
+   "title": "Increased levels of VEGF-C and macrophage infiltration in lipedema patients without changes in lymphatic vascular morphology",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Lipedema is a chronic adipose tissue disorder characterized by the disproportional subcutaneous deposition of fat and is commonly misdiagnosed as lymphedema or obesity.",
+   "note": "The article directly characterizes inflammatory mechanisms in lipedema tissue, demonstrating macrophage infiltration with M2 polarization and a VEGF-C/lymphatic-axis profile, which bears on the inflammation mechanism component of the questi",
+   "old_claims": [
+    "SCR-LIP-000307"
+   ],
+   "old_statements": [
+    "In anatomically-matched biopsies from 11 lipedema versus 10 BMI-matched healthy patients, lipedema tissue showed roughly doubled CD45+ leukocyte infiltration (40.7 vs 20 cells/field, p<0.0001) and increased CD68+ macrophages (21.2 vs 13 cells/field, p=0.009) with predominantly M2 polarization (CD163 increased 3.4x), alongside elevated serum VEGF-C (4364 vs 3275 pg/mL, p=0.02), reduced tissue Tie2 (5.7x lower), VEGF-A and VEGF-D, but no morphological lymphatic changes or systemic inflammation markers."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1097/psn.0000000000000245",
+   "title": "Lipedema: A Commonly Misdiagnosed Fat Disorder",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Gordura do lipedema resistente a dieta e exercício — característica central que diferencia da obesidade comum; peso se perde em áreas não afetadas",
+   "note": "Narrative clinical review compiling literature on lipedema pathophysiology, diagnostic differentiation from obesity and lymphedema, and treatment; explicitly characterizes lipedema as a distinct clinical entity with specific distinguishing ",
+   "old_claims": [
+    "SCR-LIP-000257"
+   ],
+   "old_statements": [
+    "This review describes lipedema as a distinct fat disorder differentiated from obesity by adipose tissue resistant to diet/exercise and ineffective bariatric surgery, and from lymphedema by absence of foot involvement (cuff sign, negative Stemmer sign in early stages) and helical/corkscrew-shaped lymphatic vessels."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1097/00006534-199411000-00014",
+   "title": "Lipedema",
+   "year": 1994,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "These findings are representative of a clinical entity known as lipedema, which is distinct from lymphedema and for which treatment may be different.",
+   "note": "The article argues that lipedema is distinct from lymphedema and does not progress to it, contradicting the premise that lipedema progresses to lymphedema. However, it is a small retrospective case series (n=9) and does not directly study l",
+   "old_claims": [
+    "SCR-LIP-000128"
+   ],
+   "old_statements": [
+    "In a retrospective review of 250 lower extremity lymphedema cases, 9 patients with lipedema showed bilateral symmetric swelling sparing the feet, absent Stemmer sign, and consistent fat pads anterior to the lateral malleoli, distinguishing lipedema as a separate clinical entity from lymphedema that requires different treatment."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1515/hmbci-2017-0076",
+   "title": "Lipedema: friend and foe",
+   "year": 2018,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Perfil cardiometabólico PROTETOR apesar de IMC obeso médio 35,3±1,7 kg/m²: diabetes apenas 2% (vs. ~10% mulheres NHANES idade-pareada); dislipidemia 11,7% (vs. 33,5%); hipertensão 13% (vs. 32,4% mulheres 40-59 anos)",
+   "note": "The article describes lipedema as a distinct disorder frequently misdiagnosed as obesity or lymphedema, with characteristic fat distribution, staging, inheritance pattern, and a metabolic profile differing from obesity; supports the affirma",
+   "old_claims": [
+    "SCR-LIP-000259"
+   ],
+   "old_statements": [
+    "In a chart review of 46 women with lipedema (mean BMI 35.3 kg/m²), lipedema fat was associated with notably lower rates of metabolic dysfunction than expected for obesity (diabetes 2%, dyslipidemia 11.7%), is not reduced by lifestyle change, and is frequently misdiagnosed as obesity or lymphedema, with distinct distribution types and clinical staging."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.1002/oby.23458",
+   "title": "Lymphatic function and anatomy in early stages of lipedema",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "AUSÊNCIA DE DERMAL BACKFLOW nas pernas em todos os 20 indivíduos com lipedema (estágios I-II), em contraste marcante com linfedema",
+   "note": "Pilot imaging study directly addressing whether functional lymphatic imaging differentiates lipedema from lymphedema, finding distinct features (no dermal backflow, increased propulsion, foot fat-sparing) that distinguish early lipedema; th [grade capped moderate->low per curated Oxford N4]",
+   "old_claims": [
+    "SCR-LIP-000204"
+   ],
+   "old_statements": [
+    "Near-infrared fluorescence lymphatic imaging (NIRF-LI) of 20 individuals with Stage I-II lipedema showed dilated lymphatic vessels (94-100% of legs), increased lymphatic propulsion rate (1.4 events/min vs 0.9 in controls, p=0.0102/0.0258), and complete ABSENCE of dermal backflow, in contrast to lymphedema; foot fat-sparing attenuation was seen in ~81% of legs, and absence of dermal backflow correctly excluded lymphedema in a previously misdiagnosed patient."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.14740/jmc3806",
+   "title": "Lipedema in Male Progressing to Subclinical and Clinical Systemic Lymphedema",
+   "year": 2022,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "The physical examination revealed lipedema and lymphedema in the right lower limb.",
+   "note": "Single case report describing co-occurrence and progression of lipedema with lymphedema and obesity as aggravating factor; it documents overlap and progression rather than directly testing whether lipedema is a distinct disease entity, so i",
+   "old_claims": [
+    "SCR-LIP-000261"
+   ],
+   "old_statements": [
+    "In a 3-year follow-up case report of a 53-year-old male, lipedema co-occurred with post-surgical right lower-limb lymphedema and progressed from subclinical to clinical systemic lymphedema detected by multi-segment bioimpedance, with the authors reporting that lymphedema is detected in 50% of individuals with lipedema and BMI over 30 kg/m2."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1016/j.remn.2018.06.008",
+   "title": "Hallazgos linfogammagráficos en pacientes con lipedema",
+   "year": 2018,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Embora a linfocintilografia tenha sido usada para diferenciar lipedema de linfedema, foram encontradas alterações frequentes da função linfática em pacientes com lipedema; a presença de achados linfocintilográficos não descarta o diagnóstico de lipedema",
+   "note": "The article directly evaluates lymphoscintigraphy in lipedema patients and addresses its diagnostic value for differentiating lipedema from lymphedema, but refines the question by showing lymphatic alterations are frequent in lipedema, limi",
+   "old_claims": [
+    "SCR-LIP-000196"
+   ],
+   "old_statements": [
+    "In a cohort of 83 women with clinically diagnosed lipedema, lymphoscintigraphy showed lymphatic alterations in 47% (mostly low or low-moderate grade, none severe), with the degree of involvement unrelated to age, Stemmer's sign, BMI, clinical stage, or lipedema type, indicating that abnormal findings do not exclude lipedema while normal findings would support the diagnosis."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.7759/cureus.11854",
+   "title": "Lipedema and the Evolution to Lymphedema With the Progression of Obesity",
+   "year": 2020,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Patients with lipedema can develop edema even when their weight is within the standards of normality. However, obesity is an aggravating factor, as the prevalence of lipedema increases progressively with the increase in weight.",
+   "note": "The study treats lipedema as a clinically diagnosed entity and examines its relationship to obesity and lymphedema, showing lipedema can occur at normal weight (distinct from obesity) but progresses toward lymphedema with rising BMI. This r",
+   "old_claims": [
+    "SCR-LIP-000263"
+   ],
+   "old_statements": [
+    "In 258 women with clinically diagnosed lipedema, the prevalence of subclinical systemic lymphedema and clinical lower-limb lymphedema increased progressively with BMI (Group I <30: 16.3% subclinical, 6.1% clinical; Group II 30-40: 48.3% and 51.6%; Group III 40-50: 72.2% and 77.8%; p=0.0001), and lipedema patients could develop edema even at normal weight."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1007/s00105-018-4304-5",
+   "title": "Differenzialdiagnostik von Lipödem und Lymphödem",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "lipedema NÃO é adiposidade (dieta e exercício não reduzem as extremidades acometidas); cirurgia bariátrica não faz o lipedema desaparecer",
+   "note": "Narrative review explicitly contrasting lipedema with lymphedema and obesity via systematic differential diagnostic criteria, supporting its status as a distinct entity.",
+   "old_claims": [
+    "SCR-LIP-000264"
+   ],
+   "old_statements": [
+    "A practical guide distinguishes lipedema from lymphedema, obesity (adiposity), Dercum's disease, and lipomatoses, citing features such as bilateral symmetric proximal fat distribution, negative Stemmer sign, foot sparing, easy bruising, and resistance to diet/exercise and bariatric surgery, in contrast to lymphedema (positive Stemmer, pitting edema, foot involvement) and obesity."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.1024/0301-1526.37.1.39",
+   "title": "Lymphoedema and lipoedema of the extremities",
+   "year": 2008,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "ausência de visualização de linfonodos inguinais em 14/15 casos de linfedema e apenas 1/15 de lipedema (p<0,001); meia-vida do colóide maior no membro patológico de linfedema (230±92 vs. 121±36 min, p<0,01)",
+   "note": "Comparative review explicitly distinguishing lipedema from lymphedema via clinical sign (Stemmer) and lymphoscintigraphy data, and from obesity via fat distribution response to weight loss; directly addresses the question's affirmative dire",
+   "old_claims": [
+    "SCR-LIP-000265"
+   ],
+   "old_statements": [
+    "In a comparative lymphoscintigraphy study (15 women with lipedema vs 15 with primary lymphedema), inguinal lymph nodes were absent in 14/15 lymphedema cases but only 1/15 lipedema cases (p<0.001) and colloid half-life was longer in lymphedema (230±92 vs 121±36 min, p<0.01), and the Stemmer sign is positive in lymphedema but negative in lipedema, with the review describing lymphedema and lipedema as distinct entities and lipedema's fat distinct from obesity (weight loss reduces truncal but not limb fat)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E30",
+   "ref": "PMID:42249859",
+   "title": "Hematological Profiles in Women with Lipedema: Exploratory Analysis of Platelet Distribution Width and Mean Platelet Volume. .",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "No statistically significant between group differences were observed in complete blood count parameters after correction for multiple comparisons, although PDW and MPV were numerically higher in the lipedema group.",
+   "note": "The study sought hematological/inflammatory markers to distinguish lipedema but found no statistically significant differences after correction, and was not BMI-matched; it provides a null result against blood-based distinguishing biomarker",
+   "old_claims": [
+    "SCR-LIP-000397"
+   ],
+   "old_statements": [
+    "In an exploratory retrospective study of 45 women with lipedema versus 40 age-matched controls, platelet indices PDW and MPV were numerically higher in the lipedema group but showed no statistically significant between-group differences in any CBC parameter after correction for multiple comparisons, arguing against these as standalone diagnostic markers."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1016/j.jpsychores.2026.112562",
+   "title": "A retrospective cross-sectional study comparing health-related quality-of-life in females with lipoedema and bilateral leg lymphoedema.",
+   "year": 2026,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "LSIDS-L — Lipedema scored worse in: sensação neurológica (2,67 ± 2,22 vs 1,88 ± 2,22; p=0,003; rB=0,29) refletindo dor alodínica/neuropática, picadas e formigamento",
+   "note": "The study found lipoedema and lymphoedema differ in specific HRQoL outcomes while sharing similar symptoms, supporting a qualified distinction between the conditions but only via patient-reported outcomes, not pathophysiology.",
+   "old_claims": [
+    "SCR-LIP-000398"
+   ],
+   "old_statements": [
+    "In 151 women, those with lipoedema (N=90) reported significantly higher LYMQOL-leg burden scores for symptoms (p=0.003), appearance (p=0.003) and mood (p=0.011), and worse LSIDS-L neurological, biobehavioral and resource scores than those with bilateral leg lymphoedema (N=61), indicating distinguishable HRQoL profiles despite similar symptoms."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E32",
+   "ref": "DOI:10.19080/oajs.2024.15.555923",
+   "title": "Comparison of Lymphedema and Lipedema: A Case Report",
+   "year": 2024,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "O lipedema é frequentemente negligenciado globalmente e confundido com linfedema, levando a tratamento inadequado. Ambas as condições têm diagnóstico, tratamento e complicações distintos.",
+   "note": "The article explicitly compares lipedema and lymphedema across diagnostic signs, histopathology, imaging and treatment, concluding they are distinct conditions, directly supporting the distinctness claim relative to lymphedema; however it i",
+   "old_claims": [
+    "SCR-LIP-000443"
+   ],
+   "old_statements": [
+    "A comparative clinical and bibliographic analysis of two cases found lipedema and lymphedema differ in epidemiology, histopathology (adipocyte hypertrophy, CD68+ crown-like structures, microangiopathy), clinical signs (negative Stemmer, cuff sign, symmetric bilateral distribution sparing feet in lipedema vs positive Stemmer, peau d'orange, honeycomb MR pattern in lymphedema), and treatment, concluding they are distinct conditions often confused with one another."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E33",
+   "ref": "DOI:10.1159/000342073",
+   "title": "Is Lymphostasis an Aggravant of Lipedema?",
+   "year": 2012,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "A intervenção terapêutica apenas reduz o tamanho dos membros, mas as características do lipedema (acúmulo de tecido adiposo) permanecem.",
+   "note": "The article treats lipedema and lymphedema as distinct co-occurring diagnoses and notes that lymphatic drainage reduces limb size while the lipedema adipose accumulation persists, implying lipedema is separate from lymphedema but that regio",
+   "old_claims": [
+    "SCR-LIP-000444"
+   ],
+   "old_statements": [
+    "In a 54-year-old woman diagnosed with concomitant lipedema and grade I lymphedema, manual and mechanical lymph drainage with compression reduced leg volume by 10.6% (right) and 6.78% (left) in 3 days, while the lipedema-associated adipose accumulation itself remained unchanged, suggesting regional cutaneous lymphostasis aggravates lipedema."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E34",
+   "ref": "DOI:10.1080/21623945.2026.2719267",
+   "title": "Lipedema and obesity: biological interactions, diagnostic challenges, and staged interdisciplinary management",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although often approached as differential diagnoses, they frequently coexist and may aggravate one another.",
+   "note": "The review emphasizes overlap and bidirectional interaction between lipedema and obesity (and lymphatic dysfunction) rather than affirming lipedema as a cleanly separate entity; it qualifies the distinctness by stressing coexistence and sha",
+   "old_claims": [
+    "SCR-LIP-000445"
+   ],
+   "old_statements": [
+    "This narrative review argues that lipedema and obesity, though often treated as mutually exclusive differential diagnoses, frequently coexist and interact via a bidirectional loop between adiposity and lymphatic function, supporting a staged interdisciplinary approach rather than treatment as mutually exclusive entities."
+   ],
+   "old_role_in_question": "refines"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Lipedema is a clinical entity distinct from obesity and lymphedema, although the three conditions can coexist.",
+   "role": "supporting",
+   "rationale": "Consensus statements and reviews (low-grade, mostly expert opinion) consistently frame lipedema as a separate entity; E8 and E11 only frame differential diagnosis (context) and E31 adds a patient-reported distinction.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Brazilian Delphi consensus (113 experts) agreed on disproportionate subcutaneous fat distribution and absence of a causal relationship with obesity; BMI judged of limited value to separate lipedema from obesity."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Narrative review describing lipedema as a distinct clinical entity separate from obesity and lymphedema, while noting the three can coexist."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Systematic review of hormonal mechanisms concluded findings support reclassifying lipedema as a hormonally influenced disorder distinct from obesity."
+    },
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Narrative review stated lipedema appears to be a clinical entity related to genetic factors and fat distribution, distinct from lymphedema and obesity, while noting scarce high-quality trials."
+    },
+    {
+     "e": "E8",
+     "stance": "context",
+     "finding": "Narrative review stated diagnosis relies on clinical evaluation of pain, palpation and fat distribution with exclusion of lymphedema and simple obesity; no original comparative data."
+    },
+    {
+     "e": "E9",
+     "stance": "supporting",
+     "finding": "Review stated lipohyperplasia dolorosa and lymphedema are completely different disease entities, both classified under lymphology, with lipedema commonly confused with obesity."
+    },
+    {
+     "e": "E10",
+     "stance": "supporting",
+     "finding": "Review described lipedema as an adipose tissue disorder, occurring almost exclusively in obese women, frequently misdiagnosed as primary lymphedema, distinguished by foot sparing and poor response to weight loss."
+    },
+    {
+     "e": "E11",
+     "stance": "context",
+     "finding": "Review listed obesity, lipohypertrophy and primary and secondary lymphedema as the main differential diagnoses of lipedema."
+    },
+    {
+     "e": "E32",
+     "stance": "supporting",
+     "finding": "Comparative analysis of two cases concluded lipedema and lymphedema differ in epidemiology, histopathology, clinical signs, imaging and treatment, and are often confused."
+    },
+    {
+     "e": "E31",
+     "stance": "refines",
+     "finding": "In 151 women, lipoedema (90) had higher LYMQOL symptom, appearance and mood burden and worse LSIDS-L neurological scores than bilateral leg lymphoedema (61), despite similar symptoms."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 10,
+   "store_key": "G-00230"
+  },
+  {
+   "key": "P2",
+   "statement": "Lipedema fat in the affected limbs is reported to resist diet, exercise and bariatric weight loss, unlike common obesity.",
+   "role": "supporting",
+   "rationale": "Several reviews cite resistance of limb fat to weight-loss interventions as a central clinical difference from obesity.",
+   "evidence": [
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Narrative review stated lipedema of the legs does not respond to restrictive diet, the main clinical distinction from simple obesity."
+    },
+    {
+     "e": "E21",
+     "stance": "supporting",
+     "finding": "Review described lipedema fat as resistant to diet and exercise, with weight lost in unaffected areas and bariatric surgery ineffective for affected limbs."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "Practical guide stated diet and exercise do not reduce affected extremities and bariatric surgery does not make lipedema disappear, separating it from adiposity."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 3,
+   "store_key": "G-00231"
+  },
+  {
+   "key": "P3",
+   "statement": "Foot sparing, a negative Stemmer sign, bilateral symmetry, easy bruising and painful fat help distinguish lipedema from lymphedema clinically.",
+   "role": "supporting",
+   "rationale": "Clinical series and reviews describe a consistent set of bedside signs separating lipedema from lymphedema.",
+   "evidence": [
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Case report with comparative table: usually negative Kaposi-Stemmer sign, cuff sign with foot sparing, painful fat, easy bruising and minimal pitting; Stemmer turns positive when lipolymphedema develops."
+    },
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Literature review: lipoedema differs from lymphoedema by negative Stemmer sign, no foot involvement, spontaneous pain and bruising, bilateral symmetry, plus distinct histopathology; proposes a diagnostic algorithm."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Among 250 lower extremity lymphedema referrals, 9 lipedema patients showed bilateral symmetric swelling sparing the feet, absent Stemmer sign and fat pads anterior to the lateral malleoli."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Systematic review: foot sparing (cuff sign) and negative Stemmer sign are key differentials from lymphedema; non-contrast CT reported sensitivity 95% and specificity 100% for lipedema."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 4,
+   "store_key": "G-00232"
+  },
+  {
+   "key": "P4",
+   "statement": "Lipedema adipose tissue is reported to show histological and molecular features that differ from control tissue of similar body mass and from lymphedema.",
+   "role": "supporting",
+   "rationale": "Small tissue studies, a commentary and reviews report distinct adipocyte, inflammatory, vascular and gene expression profiles versus BMI-matched (not obese) controls, lipohypertrophy and lymphedema.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Versus BMI-matched controls, lipedema tissue showed adipocyte hypertrophy, intercellular fibrosis, epidermal thickening, aberrant lipid metabolism and a distinct adipogenesis gene expression profile (small sample)."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Comparing lipedema, lipohypertrophy and secondary lymphedema, VEGF-R3 was increased only in lymphedema (3.2-fold vs 1.0 in lipedema), indicating distinct histological and molecular profiles."
+    },
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Biopsies from 11 lipedema vs 10 BMI-matched healthy controls: CD45+ leukocytes 40.7 vs 20 per field, CD68+ macrophages increased with M2 polarisation, serum VEGF-C elevated, no lymphatic morphology changes."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "Commentary on histopathology in normal-BMI early-stage lipedema: macrophage infiltration only in affected areas, endothelial and pericyte hyperproliferation and barrier degeneration, indicating pathology independent of obesity."
+    },
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Review: lipedema lacks the T-cell signature of lymphedema, shows fibrotic extracellular matrix and elevated VEGF-C without altered lymphatic architecture; the two diverge in time course, regulators and genetics."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "Review: exosome, cytokine, lipidomic and metabolomic profiling suggest lipedema is distinct from obesity and lymphedema, with fat cell hyperproliferation, fibrosis and inflammation."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 6,
+   "store_key": "G-00233"
+  },
+  {
+   "key": "P5",
+   "statement": "Lymphatic imaging shows patterns in lipedema that differ from lymphedema.",
+   "role": "supporting",
+   "rationale": "MR, fluorescence and lymphoscintigraphic studies report distinguishing lymphatic features (only E14 adds BMI-matched controls), though lymphatic abnormalities also occur in lipedema (E26).",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Non-contrast MR lymphography: fat homogeneous without edema in pure lipedema, whereas all lipolymphedema extremities showed epifascial high-signal areas on 3D-TSE (p<.001)."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "3T MR lymphangiography showed distinct subcutaneous hyperintensity patterns separating lipedema, lipedema with lymphedema and cancer-related lymphedema from BMI-matched controls; dilated vascular pattern more frequent in cancer lymphedema (OR 12.27)."
+    },
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "Near-infrared fluorescence imaging of 20 stage I-II lipedema patients: dilated lymphatics, increased propulsion (1.4 vs 0.9 events/min) and no dermal backflow in any leg, in contrast to lymphedema."
+    },
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Lymphoscintigraphy in 15 lipedema vs 15 primary lymphedema: inguinal nodes absent in 14/15 lymphedema vs 1/15 lipedema (p<0.001); colloid half-life 230 vs 121 min; weight loss spares limb fat."
+    },
+    {
+     "e": "E26",
+     "stance": "refines",
+     "finding": "In 83 women with lipedema, lymphoscintigraphy showed lymphatic alterations in 47% (mostly low grade), unrelated to stage or BMI; abnormal findings do not exclude lipedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 5,
+   "store_key": "G-00234"
+  },
+  {
+   "key": "P6",
+   "statement": "Lipedema may coexist with obesity and with lymphedema in the same patient.",
+   "role": "refines",
+   "rationale": "A narrative review and case reports document overlap, qualifying a clean separation; whether one condition aggravates the other is not shown here, and E1 states no causal relation with obesity.",
+   "evidence": [
+    {
+     "e": "E34",
+     "stance": "supporting",
+     "finding": "Narrative review: although approached as differential diagnoses, lipedema and obesity frequently coexist and may aggravate one another through a loop between adiposity and lymphatic function."
+    },
+    {
+     "e": "E33",
+     "stance": "supporting",
+     "finding": "Woman with lipedema and grade I lymphedema: lymph drainage and compression reduced leg volume by 10.6% and 6.8% in three days while lipedema fat accumulation persisted."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Male with lipedema and post-surgical lymphedema progressed from subclinical to clinical systemic lymphedema over three years by bioimpedance; authors cite lymphedema in half of lipedema with BMI over 30."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 3,
+   "store_key": "G-00235"
+  },
+  {
+   "key": "P7",
+   "statement": "Lymphedema in people with lipedema is reported to be more frequent at higher body mass index.",
+   "role": "refines",
+   "rationale": "A single cross-sectional study links lymphedema frequency to BMI within lipedema, a distinct idea from mere coexistence (P6), so it is hedged.",
+   "evidence": [
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "In 258 women with lipedema, clinical lymphedema rose from 6.1% (BMI<30) to 51.6% (30-40) and 77.8% (40-50), p=0.0001; edema also occurred at normal weight."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00149",
+   "statement_before_twin_merge": "Lymphedema in women with lipedema appears more frequent with higher body mass."
+  },
+  {
+   "key": "P8",
+   "statement": "Limited evidence suggests lipedema may be accompanied by lower rates of metabolic comorbidity than in women of similar age in the general population.",
+   "role": "supporting",
+   "rationale": "A single chart review compared with age-matched general-population women, not with obese women, so selection bias is likely and wording is hedged.",
+   "evidence": [
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "In 46 women with lipedema (mean BMI 35.3), diabetes 2% vs about 10% in age-matched NHANES women, dyslipidemia 11.7% vs 33.5%, hypertension 13% vs 32.4%; fat not reduced by lifestyle change."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00237"
+  },
+  {
+   "key": "P9",
+   "statement": "Routine blood count parameters may not distinguish women with lipedema from controls.",
+   "role": "refines",
+   "rationale": "A null blood-based finding is a separate axis from tissue histology, so it gets its own hedged proposition.",
+   "evidence": [
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "In 45 women with lipedema vs 40 age-matched (not BMI-matched) controls, no complete blood count parameter differed significantly after multiple-comparison correction; PDW and MPV only numerically higher."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00238"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [
+     "E10"
+    ],
+    "misplaced": [],
+    "suggested_statement": "Lipedema is widely regarded as a clinical entity distinct from obesity and lymphedema, based mainly on expert opinion and clinical features, though overlap and coexistence occur.",
+    "severity": "minor",
+    "note": "Support is almost entirely consensus, expert opinion and narrative reviews (E2 and E12 have no quote and cannot be checked; E2 is labelled expert_opinion yet summarised as a narrative review). Distinctness from obesity and from lymphedema rests on different evidence. E10 says lipedema occurs almost exclusively in obese women, which is context, not support for distinctness. Data-based support sits in P4 and P5, and E34 and E26 qualify the categorical wording."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Three narrative or practical reviews with no primary data, but the wording is 'is reported', which matches the evidence."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E5"
+    ],
+    "suggested_statement": "Foot sparing, negative Stemmer sign, bilateral symmetry, easy bruising and painful fat are reported to help distinguish early lipedema from lymphedema clinically.",
+    "severity": "minor",
+    "note": "E12 itself says Stemmer becomes positive with lipolymphedema, and E26 found lymphatic involvement unrelated to Stemmer, so the signs apply mainly to early or pure lipedema. The CT sensitivity and specificity in E5 belong with imaging (P5), not clinical signs. E22 is only 9 patients."
+   },
+   {
+    "key": "P4",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": true,
+    "stance_errors": [],
+    "misplaced": [
+     "E13"
+    ],
+    "suggested_statement": "Lipedema adipose tissue is reported to show histological and molecular features that differ from BMI-matched controls, and some that differ from lymphedema.",
+    "severity": "minor",
+    "note": "The BMI-matched comparator evidence is E16 and E20 (small samples). The lymphedema comparator evidence is only E17 and E15. E13 is a commentary on normal-BMI patients with no stated comparator, and E15 and E18 are reviews with no stated obesity comparator, so they do not show differences from tissue of similar body mass. The statement bundles two comparisons."
+   },
+   {
+    "key": "P5",
+    "supported": "partly",
+    "overgeneralized": true,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [
+     "E3"
+    ],
+    "suggested_statement": "Lymphatic imaging in lipedema often shows patterns that differ from lymphedema, although lymphatic abnormalities are also frequent in lipedema and do not exclude it.",
+    "severity": "minor",
+    "note": "E3 compares pure lipedema with lipolymphedema, not lymphedema, and fits coexistence better. E24 and E29 are small series. E26 (47% abnormal lymphoscintigraphy) shows that imaging does not cleanly separate the two, which the flat wording hides."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged with 'may'. Case reports plus a narrative review are adequate for a coexistence claim. E27 also supports it and is placed under P7."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "A single cross-sectional study, but the wording 'appears' is suitably hedged. Mild tension with E26, where lymphoscintigraphic involvement was unrelated to BMI; the outcomes differ, so it is not a direct contradiction."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Hedged and the comparator (general population, not obese women) is stated correctly. It is tangential to the question of whether lipedema is a distinct disease, and does not itself separate lipedema from obesity."
+   },
+   {
+    "key": "P9",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "One exploratory study with a non-BMI-matched comparator, and the wording is 'may not'. Marginal relevance to distinctness."
+   }
+  ],
+  "set_issues": [
+   {
+    "issue": "The core claim in P1 rests on consensus and expert opinion. E2 and E12 have null quotes, so their findings cannot be checked against text. E34, E10 and E27 qualify the picture (frequent coexistence, almost exclusively in obese women, lymphedema rising with BMI) but only partly reach P1's wording.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P5 and P7 sit in tension with E26 (frequent lymphatic abnormalities in lipedema, unrelated to BMI), which is filed only as 'refines' under P5. A caveat on the imaging-based distinction should carry through to P1.",
+    "severity": "minor"
+   },
+   {
+    "issue": "P8 (metabolic comorbidity) and P9 (blood count) are tangential to the question and are single-study findings. They add little to the answer on distinctness and could be context-only.",
+    "severity": "minor"
+   },
+   {
+    "issue": "E10 is labelled supporting in P1 although its quote concerns occurrence in obese women. E1's finding text mentions BMI of limited value, which is not in the quote, so that detail is unverifiable.",
+    "severity": "minor"
+   }
+  ]
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000001.cons2.json",
+   "ver": "SQ-LIP-000001.ver2.json"
+  },
+  {
+   "step": "merge_twins",
+   "from": "G-00236",
+   "into": "G-00149"
+  }
+ ]
+}

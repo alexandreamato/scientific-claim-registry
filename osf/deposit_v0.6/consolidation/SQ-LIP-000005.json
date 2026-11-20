@@ -1,0 +1,268 @@
+{
+ "question": "SQ-LIP-000005",
+ "text": "Does lipedema increase the prevalence of joint hypermobility?",
+ "n_old_claims": 7,
+ "n_items": 7,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [
+  "[minor] P2: not fully supported — suggested: Joint hypermobility is reported more often in women with lipedema than in comparison groups, though comparisons are observational and may be confounded. (E1 (vs lymphedema) and E2 (OR vs controls, via a narrative review) support a comparison; 'unadjusted' is not stated in the items and E2 also includes non-comparative figures (31.59% Beighton-positive). Only one primary comparison is directly visible.)"
+ ],
+ "models": {
+  "primary": "claude-opus-5.5 (Claude Code subagent)",
+  "verifier": "claude-sonnet (Claude Code subagent, fresh context)",
+  "mode": "agent"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.3390/jcm14207195",
+   "title": "Lipedema and Hypermobility Spectrum Disorders Sharing Pathophysiology: A Cross-Sectional Observational Study",
+   "year": 2025,
+   "design": "cross_sectional",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Despite its considerable impact on patients' quality of life, it remains underdiagnosed.",
+   "note": "The article explicitly states lipedema remains underdiagnosed, providing context relevant to the question, but its primary aim concerns pathophysiological overlap with HSD rather than evaluating a screening tool; the instrument was a non-va",
+   "old_claims": [
+    "SCR-LIP-000281"
+   ],
+   "old_statements": [
+    "In a cross-sectional online survey, lipedema patients more frequently reported hypermobility (44% in adulthood, ~60% in childhood), joint pain, and multisystem symptoms than lymphedema patients, and the authors note lipedema remains underdiagnosed and should be reconceptualized as a systemic connective tissue disorder."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1007/s10238-026-02157-9",
+   "title": "Comorbidities in lipedema: toward a systemic perspective – a narrative review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "hipermobilidade articular (Beighton ≥5) em 31,59% (Patton, n=232); regiões corporais hipermóveis em 44% e hipermobilidade na infância em ~60% (Fiengo & Sbarbati JCM 2025); luxações/entorses em 20,9% e fraturas em 29% (Patton); OR de hipermobilidade articular 12,88 (p<0,0001) vs controles (Aday 2024)",
+   "note": "The article reviews clinical and epidemiological studies that indicate a clustering of conditions, including hypermobility, in patients with lipedema.",
+   "old_claims": [
+    "SCR-LIP-000055"
+   ],
+   "old_statements": [
+    "The article reports that patients with lipedema frequently exhibit connective tissue laxity and hypermobility, suggesting a potential association between lipedema and increased prevalence of joint hypermobility."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.7759/cureus.95299",
+   "title": "Chondromalacia in Lipedema: The Sarcopenic–Valgus Cascade That Keeps Getting Missed",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Hipermobilidade articular generalizada (HAG) presente em ≥50% das mulheres com lipedema",
+   "note": "The article provides a framework that connects lipedema with joint hypermobility, indicating a potential increase in joint loading.",
+   "old_claims": [
+    "SCR-LIP-000056"
+   ],
+   "old_statements": [
+    "The article discusses the high prevalence of generalized joint hypermobility in women with lipedema, suggesting a link that may increase joint loading and contribute to knee pain."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1007/s44162-025-00113-x",
+   "title": "Intersection between hypermobile Ehlers-Danlos syndrome and adipose disorders: investigating fascial remodeling with ultrasound imaging",
+   "year": 2025,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Tipos de lipedema (I 17,6%, II 23,5%, III 58,8%) e estágios (1: 23,5%, 2: 47,1%, 3: 29,4%, 4: 0%) compatíveis com dados epidemiológicos prévios em lipedema com hipermobilidade",
+   "note": "The study includes participants with both hEDS and lipedema, providing insights into their relationship, but does not establish a direct causal link between lipedema and increased joint hypermobility.",
+   "old_claims": [
+    "SCR-LIP-000057"
+   ],
+   "old_statements": [
+    "The article investigates the relationship between joint hypermobility and adipose disorders, including lipedema, but does not provide direct evidence on whether lipedema increases the prevalence of joint hypermobility."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1515/hmbci-2017-0076",
+   "title": "Lipedema: friend and foe",
+   "year": 2018,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "hipermobilidade em >50% (160 pacientes outro estudo)",
+   "note": "The narrative review reports a >50% prevalence of joint hypermobility among lipedema patients (citing prior data) and links hypermobility to lipedema, but provides no comparison group or adjusted analysis, so it offers only crude supportive",
+   "old_claims": [
+    "SCR-LIP-000145"
+   ],
+   "old_statements": [
+    "In a review citing a prior study of 160 lipedema patients, joint hypermobility was reported in over 50% of patients, and hypermobility associated with lipedema was noted as a risk factor for joint disease and aortic stiffness."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1177/02683555211015887",
+   "title": "Standard of care for lipedema in the United States",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "1.9 [A]: Comorbidades: hipermobilidade articular em 50% das mulheres (consistente com hEDS)",
+   "note": "The guideline reports a 50% prevalence of joint hypermobility among women with lipedema as a comorbidity, but this is an unadjusted prevalence within a consensus guideline (Delphi/GRADE review) without a non-lipedema comparison group, so it [grade capped low->very_low per curated Oxford N6]",
+   "old_claims": [
+    "SCR-LIP-000146"
+   ],
+   "old_statements": [
+    "An American consensus standard-of-care guideline reports that joint hypermobility occurs in approximately 50% of women with lipedema, consistent with hypermobile Ehlers-Danlos syndrome (hEDS), listed as a comorbidity (GRADE 1.9 [A])."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1177/02683555261499760",
+   "title": "Recognizing fibromyalgia-like pain phenotypes in lipedema: A narrative review.",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Observational studies have also reported joint and periarticular pain, axial symptoms, hypermobility, and biomechanical dysfunction in patient subsets.",
+   "note": "A narrative review that mentions hypermobility being reported in lipedema subsets but does not itself test or quantify the association and explicitly states observational evidence is inconclusive; on-topic background rather than a direct te",
+   "old_claims": [
+    "SCR-LIP-000459"
+   ],
+   "old_statements": [
+    "This narrative review notes that observational studies report joint hypermobility, instability, and biomechanical dysfunction in subsets of lipedema patients, but concludes that observational evidence does not establish whether these features or widespread pain are intrinsic to lipedema."
+   ],
+   "old_role_in_question": "context"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "Joint hypermobility is frequently reported among women with lipedema.",
+   "role": "supporting",
+   "rationale": "Several reviews and a guideline report high crude prevalence of hypermobility in lipedema without comparison groups.",
+   "evidence": [
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Review states generalized joint hypermobility is present in at least 50% of women with lipedema, possibly increasing joint loading and knee pain."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Review citing a prior study of 160 lipedema patients reports joint hypermobility in over 50%, noted as a risk factor for joint disease and aortic stiffness."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "US standard-of-care consensus guideline lists joint hypermobility in about 50% of women with lipedema as a comorbidity, consistent with hypermobile Ehlers-Danlos syndrome."
+    },
+    {
+     "e": "E4",
+     "stance": "context",
+     "finding": "Ultrasound study of fascial remodeling included participants with both hypermobile Ehlers-Danlos syndrome and lipedema; lipedema types and stages matched prior data, without testing whether lipedema raises hypermobility prevalence."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 4,
+   "store_key": "G-00013"
+  },
+  {
+   "key": "P2",
+   "statement": "Joint hypermobility is reported more often in lipedema than in comparison groups in unadjusted observational comparisons.",
+   "role": "supporting",
+   "rationale": "Comparative observational data show higher hypermobility in lipedema than in lymphedema patients or controls, without adjustment.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Cross-sectional online survey: lipedema patients reported hypermobility more often than lymphedema patients (44% in adulthood, about 60% in childhood), plus joint pain and multisystem symptoms."
+    },
+    {
+     "e": "E2",
+     "stance": "supporting",
+     "finding": "Narrative review compiles Beighton-positive hypermobility in 31.59% (n=232), dislocations/sprains 20.9%, and an odds ratio for joint hypermobility of 12.88 versus controls."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00014"
+  },
+  {
+   "key": "P3",
+   "statement": "Observational evidence has not established whether joint hypermobility is an intrinsic feature of lipedema or present only in patient subsets.",
+   "role": "refines",
+   "rationale": "A review cautions that hypermobility reports come from subsets and observational data that cannot establish intrinsic association.",
+   "evidence": [
+    {
+     "e": "E7",
+     "stance": "supporting",
+     "finding": "Narrative review notes hypermobility, instability and biomechanical dysfunction reported in subsets of lipedema patients, but concludes observational evidence does not establish whether these features are intrinsic to lipedema."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 1,
+   "store_key": "G-00015"
+  }
+ ],
+ "dropped": [],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "E3, E5, E6 consistently report about 50% or more; all are secondary/review sources, but the wording 'frequently reported' fits. E4 correctly context."
+   },
+   {
+    "key": "P2",
+    "supported": "partly",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Joint hypermobility is reported more often in women with lipedema than in comparison groups, though comparisons are observational and may be confounded.",
+    "severity": "minor",
+    "note": "E1 (vs lymphedema) and E2 (OR vs controls, via a narrative review) support a comparison; 'unadjusted' is not stated in the items and E2 also includes non-comparative figures (31.59% Beighton-positive). Only one primary comparison is directly visible."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "Whether joint hypermobility is intrinsic to lipedema remains unestablished, since observational reports come from patient subsets.",
+    "severity": "minor",
+    "note": "E7 supports the caveat but the wording 'or present only in patient subsets' is muddled; single review source."
+   }
+  ],
+  "set_issues": []
+ },
+ "log": [
+  {
+   "step": "agent_mode",
+   "cons": "SQ-LIP-000005.cons.json",
+   "ver": "SQ-LIP-000005.ver.json"
+  }
+ ]
+}
