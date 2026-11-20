@@ -1,0 +1,1069 @@
+{
+ "question": "SQ-LIP-000013",
+ "text": "Is liposuction effective and safe for lipedema?",
+ "n_old_claims": 27,
+ "n_items": 33,
+ "status": "clean",
+ "major_problems": [],
+ "minor_problems": [],
+ "models": {
+  "primary": "anthropic/claude-opus-5.5",
+  "verifier": "openai/gpt-5.5"
+ },
+ "created": "2026-11-20",
+ "items": [
+  {
+   "e": "E1",
+   "ref": "DOI:10.7759/cureus.55260",
+   "title": "Efficacy of Liposuction in the Treatment of Lipedema: A Meta-Analysis",
+   "year": 2024,
+   "design": "meta_analysis",
+   "n": 451,
+   "grade": "high",
+   "risk_of_bias": "moderate",
+   "quote": "Dor espontânea: redução significativa MD 3,41 (IC 95% 1,92–4,90; p<0,00001)",
+   "note": "7 studies; pooled MD pain 3.41, all p<0.00001; high heterogeneity; before-after data",
+   "old_claims": [
+    "SCR-LIP-000030",
+    "SCR-LIP-000244"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status.",
+    "In a meta-analysis of 7 studies on liposuction for lipedema, approximately 51% of patients still required conservative therapy postoperatively, with one study (Witte) reporting manual lymphatic drainage use declining from 88.9% to 39.7% and compression from 95.2% to 31.7% at 21.5 months, but the analysis did not directly evaluate complete decongestive therapy as a primary intervention."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E2",
+   "ref": "DOI:10.1007/s00266-025-05456-w",
+   "title": "Cutaneous Sensory Alterations After Lower Limb Liposuction for Lipedema: A Comparative Study with Aesthetic Liposuction Patients",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração de perna no lipedema proporciona alívio sintomático e funcional significativo com satisfação consistentemente alta, apesar de alterações sensitivas persistentes nos Estágios II-III.",
+   "note": "The study provides evidence on the outcomes of liposuction in lipedema patients, focusing on sensory changes, which is relevant to assessing its effectiveness and safety.",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E3",
+   "ref": "DOI:10.1007/7140.2006.00006",
+   "title": "Tumescent Liposuction: A New and Successful Therapy for Lipedema",
+   "year": 2006,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração tumescente mostrou-se tratamento seguro e eficaz para lipedema. Correção definitiva das proporções corporais e melhora impressionante dos sintomas são alcançadas.",
+   "note": "Uncontrolled case series of 28 patients (21 evaluated) with no comparison group, but directly addresses both efficacy and safety of tumescent liposuction for lipedema with detailed outcome reporting.",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E4",
+   "ref": "DOI:10.1093/asjof/ojag039",
+   "title": "Safety and Efficacy of Surgical Techniques in Treating Lipedema: Systematic Review",
+   "year": 2026,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "Liposuction, mainly using the tumescent infiltration, reduced pain, BMI, and functional limitations, with improvements in mobility and quality of life. Mean aspirated fat volume was 3077 mL per session and 6111 mL per treatment course. Complications were uncommon",
+   "note": "This is a systematic review of 25 studies with 2373 patients directly addressing the safety and efficacy of liposuction for lipedema, concluding it is safe and effective; confidence is moderate rather than high due to high methodological he",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E5",
+   "ref": "DOI:10.1097/gox.0000000000005952",
+   "title": "Liposuction as a Treatment for Lipedema: A Scoping Review",
+   "year": 2025,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Studies found self-reported improvements in pain, mobility, bruising, and overall quality of life for patients following liposuction, many of whom had previously been on compressive therapy. Studies reported low rates of serious adverse events following liposuction",
+   "note": "Scoping review of 13 studies (mostly case series and retrospective analyses) with no randomized controlled trials, heterogeneous outcome measures, and no direct comparator arm; conclusions are limited to patients unresponsive to compression",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E6",
+   "ref": "DOI:10.1111/j.1610-0387.2010.07504.x",
+   "title": "Liposuction is an effective treatment for lipedema–results of a study with 25 patients",
+   "year": 2010,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Dor (sintoma dominante do lipedema): melhora altamente significativa de 7,2 ± 2,2 para 2,1 ± 2,1 em VAS (p < 0,001)",
+   "note": "Uncontrolled case series of 25 patients with no comparison group; results are consistent and statistically significant within the cohort, but lack of randomization and control limits causal inference. Supports effectiveness and safety of li",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E7",
+   "ref": "DOI:10.1111/dth.14364",
+   "title": "Cause and management of lipedema‐associated pain",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipoaspiração tumescente microcannular reduziu dor de 7,8 ± 2,1 para 2,2 ± 1,3 na VAS (10 pontos) em 111 pacientes (Wollina & Heinig, 2019)",
+   "note": "This is a narrative review synthesizing multiple studies on pain mechanisms and treatments in lipedema, reporting specific outcome data from cited cohort studies (Wollina & Heinig 2019, Schmeller et al. 2012, Baumgartner et al. 2016) suppor",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E8",
+   "ref": "DOI:10.1111/iwj.13608",
+   "title": "Liposuction treatment improves disease‐specific quality of life in lipoedema patients",
+   "year": 2021,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Before treatment with liposuction, disease-specific QoL in patients with lipoedema was low on every single subscale as well as on the global score and showed a significant improvement in all aspects after liposuction.",
+   "note": "Prospective QoL assessment in only 20 patients with pre/post design (no control group), embedded within a larger retrospective case series of 69 patients; no randomization or blinding, short follow-up of 6 months, and small sample limit gen",
+   "old_claims": [
+    "SCR-LIP-000030"
+   ],
+   "old_statements": [
+    "In women with lipedema, liposuction (tumescent/large-volume) produces significant post-operative reductions in spontaneous pain, edema, bruising, mobility impairment and quality-of-life impairment versus pre-operative status."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E9",
+   "ref": "DOI:10.1007/s00266-026-05774-7",
+   "title": "Postoperative Seroma in Lipedema Surgery: A Retrospective Analysis of 93 Cases from a Single Surgical Team",
+   "year": 2026,
+   "design": "cohort",
+   "n": 93,
+   "grade": "low",
+   "risk_of_bias": "moderate",
+   "quote": "A lipoaspiração para lipedema, realizada em ambiente clínico controlado por equipe experiente, é procedimento seguro e eficaz com baixa incidência de complicações maiores. O seroma ocorreu em 18,3% dos casos",
+   "note": "retrospective; 1 infection + 1 hematoma (1.07%); seroma 18.3%; no major AE",
+   "old_claims": [
+    "SCR-LIP-000032",
+    "SCR-LIP-000033",
+    "SCR-LIP-000034"
+   ],
+   "old_statements": [
+    "Liposuction for lipedema by an experienced team is a safe procedure with a low rate of major complications (no DVT, PE, necrosis or severe anemia observed; minor complications ~1%), though seroma occurs in ~18%.",
+    "In lipedema liposuction, higher relative aspirated fat volume (per 1% body weight) and concomitant minor surgical procedures are independent risk factors for postoperative seroma.",
+    "Ultrasound-assisted liposuction may reduce postoperative seroma risk in lipedema surgery (0 seromas among ultrasound-assisted cases vs 18.4% otherwise), although this finding is hypothesis-generating only."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E10",
+   "ref": "DOI:10.1016/j.jpra.2026.01.004",
+   "title": "Lipedema and obesity: A narrative review and treatment protocol",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "WAL e lipoaspiração tumescente preservam estruturas linfáticas e produzem reduções sustentadas de dor, volume e melhora de qualidade de vida (estudo de Rapprich et al.: redução de 6.9% do volume da perna e VAS de dor caindo de 7.2 para 2.1 em 6 meses)",
+   "note": "The article reviews treatment options for lipedema, including liposuction, but does not present new empirical evidence or conclusive findings regarding its effectiveness and safety.",
+   "old_claims": [
+    "SCR-LIP-000059"
+   ],
+   "old_statements": [
+    "The article provides a narrative review of lipedema and discusses treatment protocols, including liposuction, but does not provide definitive evidence on its effectiveness and safety specifically for lipedema."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E11",
+   "ref": "DOI:10.21037/atm-24-165",
+   "title": "Outcomes of liposuction techniques for management of lipedema: a case series and narrative review",
+   "year": 2024,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Taxa de complicações: seroma 4,2% (n=1), infecção 4,2% (n=1) e epidermólise 4,2% (n=1); total 12,5% (3/24); sem complicações maiores, sem internações não programadas, sem mortalidade",
+   "note": "The article directly addresses the safety and efficacy of liposuction for lipedema, reporting clinically meaningful improvements in pain, edema, BMI, and quality of life with a low major complication rate. However, evidence quality is limit",
+   "old_claims": [
+    "SCR-LIP-000112"
+   ],
+   "old_statements": [
+    "In a case series of 24 lipedema patients treated with three liposuction techniques (TLAL, VASER, WAL), median BMI decreased from 29.65 to 26.95 kg/m², spontaneous pain VAS scores dropped from 7.10 to 2.00, edema scores from 8.50 to 2.10, and the overall complication rate was 12.5% with no major complications or mortality, with benefits sustained over a median 19-month follow-up."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E12",
+   "ref": "DOI:10.3205/iprs000161",
+   "title": "Lipedema in a male patient: report of a rare case - management and review of the literature",
+   "year": 2021,
+   "design": "case_report",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Três sessões de lipoaspiração tumescente sem intercorrências; 8.000 ml de gordura removida no total Redução significativa de volume e circunferência da coxa em 4 meses pós-primeira sessão Ausência de recidiva após 2,5 anos de seguimento",
+   "note": "Single case report of an atypical (male) lipedema patient treated with tumescent liposuction; results support effectiveness and safety but evidence level is very low due to n=1 and absence of control or systematic outcome measures.",
+   "old_claims": [
+    "SCR-LIP-000113"
+   ],
+   "old_statements": [
+    "A 62-year-old male patient with lipedema stage IV underwent three sessions of tumescent liposuction (total ~8,000 mL aspirated) with significant volume reduction, symptom resolution, and no recurrence over 2.5 years of follow-up despite 20 kg weight gain, with no major complications reported."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E13",
+   "ref": "DOI:10.1097/prs.0000000000012217",
+   "title": "Observational Study of Ultrasound-Assisted Liposuction for Lower Limb Lipedema on 191 Female Patients",
+   "year": 2025,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Os achados destacam eficácia e segurança da lipoaspiração no tratamento do lipedema.",
+   "note": "Observational single-arm study of 191 patients reporting significant reductions in circumference and pain plus complication rates, directly supporting liposuction efficacy and safety for lipedema; no control group and short 6-month follow-u",
+   "old_claims": [
+    "SCR-LIP-000158"
+   ],
+   "old_statements": [
+    "In 191 women with lower-limb lipedema (stages 1–3), a standardized two-stage lymph-sparing VASER ultrasound-assisted liposuction protocol reduced mean total limb circumference by 6.40 cm and mean VAS symptom score from 6.04 to 3.17 (p<0.001), with 89.8% patient satisfaction and complications including seroma (5.75%), skin necrosis (2.09%), and transfusion (3.14-4.18%)."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E14",
+   "ref": "DOI:10.1016/j.bjps.2025.06.031",
+   "title": "Selective combined liposuction (SCL) for lipedema treatment: Outcomes in symptoms improvement and aesthetic self-perception",
+   "year": 2025,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Dor (VAS): pré-op 6,4 → pós-op 2,7 (redução de 58%; p<0,001); 89% dos 123 pacientes com dor pré-operatória reportaram melhora",
+   "note": "Single-arm case series reporting symptom and aesthetic outcomes after liposuction for lipedema, directly supporting effectiveness; no control group and uncontrolled design limit confidence.",
+   "old_claims": [
+    "SCR-LIP-000159"
+   ],
+   "old_statements": [
+    "In a case series of 126 lipedema patients (stages I–III) treated with selective combined liposuction (PAL with microcannulas plus VASER on proximal thighs), VAS scores significantly decreased for pain (6.4→2.7), heaviness (7.9→2.9), edema (5.0→1.6), and mobility limitation (5.0→1.6) at 6 months (all p<0.001), with 89% reporting pain improvement and BMI falling from 27.0 to 25.2 kg/m²."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E15",
+   "ref": "DOI:10.1177/0268355520949775",
+   "title": "Improvements in patients with lipedema 4, 8 and 12 years after liposuction",
+   "year": 2020,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "As melhorias em todos os parâmetros de lipedema persistem por 12 anos sem piora clinicamente relevante. A manutenção da taxa de 27% de pacientes sem necessidade de qualquer tratamento conservador corrobora a durabilidade do efeito.",
+   "note": "Prospective single-centre cohort of 60 stage I-II lipedema patients with 12-year follow-up via validated questionnaire shows durable, statistically significant symptom and quality-of-life improvements after liposuction, directly supporting ",
+   "old_claims": [
+    "SCR-LIP-000160"
+   ],
+   "old_statements": [
+    "In a 60-patient single-centre prospective cohort with stage I-II lipedema, tumescent liposuction produced large symptom improvements (effect sizes d=1.04-2.18 for spontaneous pain, pressure sensitivity, edema, bruising, movement restriction, cosmetic impairment and quality of life) that persisted at 12 years post-operatively with no clinically relevant deterioration, and 27% of patients no longer required any conservative therapy."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E16",
+   "ref": "DOI:10.1016/j.bjps.2024.07.038",
+   "title": "Comparing the safety and effectiveness of different liposuction techniques for lipedema",
+   "year": 2024,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "TTL, PAL e WAL produzem melhora significativa dos sintomas do lipedema (dor, equimose, edema, tensão, sensibilidade à pressão, QoL, comprometimento estético e geral) com taxa global de complicações relativamente baixa.",
+   "note": "Meta-analysis directly evaluating both effectiveness (symptom and QoL improvement) and safety (complication rates) of liposuction for lipedema, with high heterogeneity (I² up to 89%) and limited WAL evidence noted as limitations.",
+   "old_claims": [
+    "SCR-LIP-000246"
+   ],
+   "old_statements": [
+    "In a meta-analysis comparing TTL, PAL, and WAL liposuction techniques for lipedema, all techniques produced significant improvements across all combined outcomes (pain MD=45.89, QoL MD=52.47, all P<0.00001) with an adjusted overall complication rate of 2.3% per procedure and 6.4% per patient, with hematoma the most frequent complication (8.4%) attributed to capillary fragility."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E17",
+   "ref": "DOI:10.1055/a-2334-9260",
+   "title": "Safety and Effectiveness of Liposuction Modalities in Managing Lipedema: Systematic Review and Meta-analysis",
+   "year": 2024,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração, especialmente por técnica tumescente, é intervenção terapêutica segura e eficaz para o manejo do lipedema, produzindo melhoras clinicamente significativas em qualidade de vida, dor, sensibilidade à pressão, mobilidade e aparência cosmética com perfil de complicações favorável.",
+   "note": "Directly addresses safety and effectiveness of liposuction for lipedema with pooled effect sizes and complication rates; however authors note limited methodological quality (MINORS ~10, no RCTs) and high heterogeneity in some outcomes, lowe",
+   "old_claims": [
+    "SCR-LIP-000247"
+   ],
+   "old_statements": [
+    "In a meta-analysis of 20 studies (1785 patients, mostly tumescent technique), liposuction for lipedema produced significant improvements in quality of life (SMD 2.48), pain (SMD 2.04, 72% reduction), and pressure sensitivity (SMD 2.20), with a low complication profile (seroma 0.82%, hematoma 0.71%, infection 0.59%) and zero mortality over ~15 months follow-up."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E18",
+   "ref": "DOI:10.1097/prs.0000000000008880",
+   "title": "A 10-Year Retrospective before-and-after Study of Lipedema Surgery: Patient-Reported Lipedema-Associated Symptom Improvement after Multistage Liposuction",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Lipoaspiração poupadora de linfático é tratamento seguro com resultados duradouros para redução de necessidade de TDC e melhora de sintomas.",
+   "note": "Retrospective, single-center, noncomparative study reporting significant patient-reported symptom improvement and low complication rates after liposuction, directly addressing efficacy and safety; uncontrolled design and reliance on subject",
+   "old_claims": [
+    "SCR-LIP-000248"
+   ],
+   "old_statements": [
+    "In a 10-year retrospective study of 106 lipedema patients undergoing multistage lymphatic-sparing liposuction (PAL/WAL), median CDT composite scores dropped 37.5% and pain VAS fell from 80 to 30 (p<0.0001), with 34.9% no longer needing compression garments, low complication rates (1.3% wound infection, 0.7% seroma), and better outcomes in younger patients with BMI ≤35 and earlier disease stage."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E19",
+   "ref": "DOI:10.3390/jcm14010279",
+   "title": "Comparative Analysis of Liposuction and Conservative Treatment in Lipedema Patients: A Modified Body-Q Questionnaire Study",
+   "year": 2022,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "the patients who received liposuction treatment reported a better outcome in the body image (p < 0.01), physical function (p = 0.05), physical symptoms (p = 0.04), and psychological function (p < 0.01) scales",
+   "note": "Retrospective before-and-after study (level IV evidence) directly evaluating liposuction outcomes in lipedema, reporting symptom improvement and reduced need for conservative therapy; supports effectiveness with patient-selection caveats.",
+   "old_claims": [
+    "SCR-LIP-000248"
+   ],
+   "old_statements": [
+    "In a 10-year retrospective study of 106 lipedema patients undergoing multistage lymphatic-sparing liposuction (PAL/WAL), median CDT composite scores dropped 37.5% and pain VAS fell from 80 to 30 (p<0.0001), with 34.9% no longer needing compression garments, low complication rates (1.3% wound infection, 0.7% seroma), and better outcomes in younger patients with BMI ≤35 and earlier disease stage."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E20",
+   "ref": "DOI:10.1007/s00266-020-01910-z",
+   "title": "Liposuction for Lipoedema: Functional Therapy or Aesthetic Procedure?",
+   "year": 2021,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "The patients reported a significant reduction in lipedema-associated complaints and improvement in quality of life. The need for conservative therapy was significantly reduced. No serious complications were reported.",
+   "note": "Level IV case series reporting self-reported symptom relief, quality-of-life improvement, reduced conservative therapy, and favorable safety (no serious complications) after liposuction for lipedema — affirmative on both efficacy and safety",
+   "old_claims": [
+    "SCR-LIP-000248"
+   ],
+   "old_statements": [
+    "In a 10-year retrospective study of 106 lipedema patients undergoing multistage lymphatic-sparing liposuction (PAL/WAL), median CDT composite scores dropped 37.5% and pain VAS fell from 80 to 30 (p<0.0001), with 34.9% no longer needing compression garments, low complication rates (1.3% wound infection, 0.7% seroma), and better outcomes in younger patients with BMI ≤35 and earlier disease stage."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E21",
+   "ref": "DOI:10.1186/s13063-021-05727-2",
+   "title": "A randomised controlled multicentre investigator-blinded clinical trial comparing efficacy and safety of surgery versus complex physical decongestive therapy for lipedema (LIPLEG)",
+   "year": 2021,
+   "design": "rct",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Protocolo de estudo — sem resultados disponíveis ainda; recrutamento iniciado dezembro 2020; último paciente/última visita esperado verão 2025 (NCT04272827)",
+   "note": "This is a published RCT protocol directly designed to evaluate liposuction efficacy and safety in lipedema, but it reports no outcome data yet, so it provides methodological context rather than evidence supporting or contradicting the quest",
+   "old_claims": [
+    "SCR-LIP-000249"
+   ],
+   "old_statements": [
+    "LIPLEG is a planned multicentre investigator-blinded RCT randomising 405 women with painful lipedema (2:1) to liposuction plus CDT versus CDT alone, with the primary endpoint being a ≥2-point pain reduction on the NRS at 12 months, but the article is a study protocol with no results yet (recruitment started December 2020; NCT04272827)."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E22",
+   "ref": "DOI:10.1111/ijd.70227",
+   "title": "Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation, evidence quality 2-3).",
+   "note": "Systematic review directly addressing lipedema management options (conservative and surgical) with graded recommendations, directly answering the question on recommended overall management.",
+   "old_claims": [
+    "SCR-LIP-000316"
+   ],
+   "old_statements": [
+    "A systematic review of 61 articles found that conservative therapies (ketogenic/RAD diets, compression, aquatic exercise) reduced pain and swelling (Grade 2A-2B), while tumescent liposuction showed the strongest evidence for sustained symptom improvement, mobility, and quality of life (Grade 1 recommendation), supporting early recognition with combined conservative and surgical management."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E23",
+   "ref": "DOI:10.1111/dth.12820",
+   "title": "Treatment of lipedema by low‐volume micro‐cannular liposuction in tumescent anesthesia: Results in 111 patients",
+   "year": 2019,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "Redução de dor (VAS 10 pontos): de 7,8 ± 2,1 para 2,2 ± 1,3 ao final do tratamento (p<0,3) — redução de 72% na dor",
+   "note": "Large consecutive case series directly reporting efficacy (pain, circumference, mobility, reduced therapy need) and safety outcomes of liposuction for lipedema, supporting the affirmative direction; no control group limits grade.",
+   "old_claims": [
+    "SCR-LIP-000251"
+   ],
+   "old_statements": [
+    "In 111 lipedema patients undergoing 334 low-volume micro-cannular liposuction sessions under exclusive tumescent anesthesia, pain dropped 72% (VAS 7.8 to 2.2), thigh circumference reduced 6±1.6 cm, mobility improved in 100%, and 16.4% no longer required complex decongestive therapy, with 1.2% serious adverse events and no fatalities over a median 2-year follow-up."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E24",
+   "ref": "DOI:10.5999/aps.2017.44.4.324",
+   "title": "Liposuction in the Treatment of Lipedema: A Longitudinal Study",
+   "year": 2017,
+   "design": "cohort",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração é um tratamento eficaz para o lipedema, promovendo melhora sustentada da qualidade de vida e redução significativa da necessidade de terapia descongestiva combinada.",
+   "note": "Longitudinal cohort directly evaluating long-term efficacy (pain, QoL, CDT reduction) and safety (low complication rate) of liposuction for lipedema, with significant improvements and stage-dependent durability.",
+   "old_claims": [
+    "SCR-LIP-000252"
+   ],
+   "old_statements": [
+    "In a longitudinal study of 25 lipedema patients undergoing tumescent liposuction (mean 3 procedures, mean 9,914 mL removed), spontaneous pain VAS decreased from 7.2 to 4.3, quality-of-life VAS improved from 8.4 to 5.2, and CDT scores fell from 20.5 to 13.9 at ~37 months (all p<0.05), with only 1 erysipelas complication in 72 procedures (1.39%) and better sustained outcomes in stage II than stage III."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E25",
+   "ref": "DOI:10.1007/s00266-025-05507-2",
+   "title": "Aesth Plast Surg (2026) 50:1931–1939",
+   "year": 2026,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "surgical treatment with tumescent liposuction resulted in significant clinical improvements for patients with lipedema. The pooled mean preoperative pain score was 5.64 (95% CI: 3.67–8.69), which decreased to 1.19 (95% CI: 0.91–4.22) postoperatively",
+   "note": "Meta-analysis reports significant postoperative reduction in pain following tumescent liposuction, providing affirmative evidence for effectiveness.",
+   "old_claims": [
+    "SCR-LIP-000408"
+   ],
+   "old_statements": [
+    "In a single-arm meta-analysis of 6 studies (429 patients), tumescent liposuction reduced pooled mean pain scores from 5.64 preoperatively to 1.19 postoperatively in patients with lipedema refractory to conservative management."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E26",
+   "ref": "DOI:10.1016/j.bjps.2025.12.018",
+   "title": "Journal of Plastic, Reconstructive & Aesthetic Surgery 114 (2026) 44–54",
+   "year": 2026,
+   "design": "case_series",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "A single center retrospective observational study on 106 consecutive lipedema surgeries: Defining the ideal surgical approach",
+   "note": "The article is a retrospective observational study of 106 lipedema liposuction surgeries assessing surgical approach, function gain, and PROMs, directly bearing on the effectiveness of liposuction for lipedema. The abstract is truncated so ",
+   "old_claims": [
+    "SCR-LIP-000409"
+   ],
+   "old_statements": [
+    "A single-center retrospective study of 106 consecutive lipedema liposuction surgeries evaluated liposuction techniques (comparing dry vs wet/tumescent methods) for lipedema, reporting functional gain and improvements via patient-reported outcome measures."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E27",
+   "ref": "DOI:10.1007/s00266-026-06116-3",
+   "title": "Liposuction for Lipedema Significantly Reduces Benzodiazepine Dependence: A Prospective Cohort Study.",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "At six months, 77% of patients reduced or discontinued BNZ (32% stopped entirely), with average daily dosage decreasing from 3.2 ± 1.1 to 1.4 ± 1.2 mg (p < 0.001). Statistically significant improvements were also observed in anxiety, pain, sleep quality, and body image (all p < 0.001)",
+   "note": "Prospective/observational cohort reporting symptomatic and psychological improvement plus low complication rate after liposuction, providing affirmative evidence on efficacy and safety, though design labeling is inconsistent (called both re",
+   "old_claims": [
+    "SCR-LIP-000410"
+   ],
+   "old_statements": [
+    "In 100 women with Stage I-III lipedema, tumescent or water-assisted liposuction was followed at six months by 77% reducing or discontinuing benzodiazepines and by significant improvements in anxiety, pain (VAS), sleep, and body image, with only 8% minor complications and no major adverse events."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E28",
+   "ref": "DOI:10.1007/s00266-026-06004-w",
+   "title": "Are Routine Labs Necessary? Postoperative Electrolyte Trends in Lipedema Patients Undergoing Liposuction: Insights from a Single-Center Retrospective Cohort.",
+   "year": 2026,
+   "design": "cohort",
+   "n": null,
+   "grade": "low",
+   "risk_of_bias": "unknown",
+   "quote": "All parameters remained within physiological ranges and were not associated with adverse outcomes.",
+   "note": "The study addresses safety of liposuction for lipedema by examining postoperative lab changes, finding them mild and clinically insignificant; it supports safety but does not directly test overall effectiveness, adding a narrower safety-mon",
+   "old_claims": [
+    "SCR-LIP-000411"
+   ],
+   "old_statements": [
+    "In 116 women with stage 2-3 lipedema undergoing liposuction, postoperative hematologic and electrolyte changes (lower hemoglobin/hematocrit, higher leukocytes, mild electrolyte shifts) were mild, remained within physiological ranges, and were not associated with adverse outcomes, reflecting predictable hemodilution."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E29",
+   "ref": "DOI:10.1093/eurpub/ckab165.304",
+   "title": "Tumescent liposuction for lipoedema: A systematic review of clinical effectiveness and safety",
+   "year": 2021,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "A evidência atual é insuficiente para comprovar que a lipoaspiração tumescente é tão segura e mais eficaz do que o tratamento conservador para lipedema. Entretanto, com base na evidência limitada dos estudos não controlados incluídos, a lipoaspiração pode potencialmente reduzir os sintomas clínicos",
+   "note": "The systematic review reports positive effects on pain, volume, and QoL (affirmative signal) but explicitly concludes evidence is insufficient to prove liposuction is as safe and more effective than conservative treatment, with all studies ",
+   "old_claims": [
+    "SCR-LIP-000477"
+   ],
+   "old_statements": [
+    "In a systematic review of six uncontrolled prospective trials (467 patients), tumescent liposuction was associated with statistically significant improvements in patient-reported pain at 6 months up to 12 years, reduced limb volume/circumference, and improved quality of life, with 17 postoperative adverse events (5 serious) across 492 patients, but all studies had moderate-to-high risk of bias and safety evidence was graded very low, so evidence is insufficient to prove liposuction is as safe and more effective than conservative treatment."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E30",
+   "ref": "DOI:10.1016/s0140-6736(26)00910-4",
+   "title": "Liposuction versus conservative therapy for patients with lipoedema in Germany: a multicentre, randomised controlled clinical trial.",
+   "year": 2026,
+   "design": "rct",
+   "n": null,
+   "grade": "high",
+   "risk_of_bias": "unknown",
+   "quote": "After 12 months, 190 (68%) of 278 randomisly assigned patients undergoing liposuction achieved the primary endpoint of pain reduction versus ten (8%) of 132 randomly assigned to conservative therapy (odds ratio 26·2 [95% CI 13·1-52·5]; p<0·0001).",
+   "note": "This RCT demonstrates liposuction benefit but its measured endpoints are pain and quality of life, not limb volume; it is on-topic but does not directly test volume reduction.",
+   "old_claims": [
+    "SCR-LIP-000434"
+   ],
+   "old_statements": [
+    "In an RCT of 410 women with lipedema, liposuction reduced leg pain (68% vs 8% achieving ≥2-point reduction; OR 26.2) and improved quality of life versus conservative therapy, but the trial's primary endpoint was pain rather than limb volume."
+   ],
+   "old_role_in_question": "refines"
+  },
+  {
+   "e": "E31",
+   "ref": "DOI:10.1097/dss.0000000000002019",
+   "title": "Prevention of Progression of Lipedema with Liposuction Using Tumescent Local Anesthesia: Results of an International Consensus Conference",
+   "year": 2020,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "A lipoaspiração poupadora de linfático com anestesia tumescente local é atualmente o único tratamento efetivo para o lipedema. Pode prevenir progressão da doença, é segura, preserva a integridade linfática",
+   "note": "Consensus review synthesizing long-term outcome studies concludes tumescent liposuction is effective, safe, and preserves lymphatic integrity for lipedema.",
+   "old_claims": [
+    "SCR-LIP-000478"
+   ],
+   "old_statements": [
+    "An international consensus review reports that lymphatic-sparing tumescent liposuction produced sustained improvement in spontaneous pain, pressure sensitivity, bruising, edema and mobility at 8-year follow-up (Baumgartner n=85, one-third symptom-free), with lymphoscintigraphy and immunohistochemistry confirming no significant lymphatic damage."
+   ],
+   "old_role_in_question": "supporting"
+  },
+  {
+   "e": "E32",
+   "ref": "DOI:10.1080/21623945.2026.2719267",
+   "title": "Lipedema and obesity: biological interactions, diagnostic challenges, and staged interdisciplinary management",
+   "year": 2026,
+   "design": "review",
+   "n": null,
+   "grade": "very_low",
+   "risk_of_bias": "unknown",
+   "quote": "Although often approached as differential diagnoses, they frequently coexist and may aggravate one another.",
+   "note": "The review emphasizes overlap and bidirectional interaction between lipedema and obesity (and lymphatic dysfunction) rather than affirming lipedema as a cleanly separate entity; it qualifies the distinctness by stressing coexistence and sha",
+   "old_claims": [
+    "SCR-LIP-000445"
+   ],
+   "old_statements": [
+    "This narrative review argues that lipedema and obesity, though often treated as mutually exclusive differential diagnoses, frequently coexist and interact via a bidirectional loop between adiposity and lymphatic function, supporting a staged interdisciplinary approach rather than treatment as mutually exclusive entities."
+   ],
+   "old_role_in_question": "context"
+  },
+  {
+   "e": "E33",
+   "ref": "DOI:10.1007/s00266-026-06371-4",
+   "title": "Pain Reduction Following Liposuction for Lower Limb Lipedema: A Systematic Review and Meta-analysis.",
+   "year": 2026,
+   "design": "meta_analysis",
+   "n": null,
+   "grade": "moderate",
+   "risk_of_bias": "unknown",
+   "quote": "Liposuction was associated with a significant reduction in pain at ≤ 6 months postoperatively (SMD - 1.72, 95% CI - 2.18 to - 1.27). Pain reduction persisted at long-term follow-up (> 6 months; SMD - 1.96, 95% CI - 3.05 to - 0.88).",
+   "note": "Meta-analysis reports substantial and sustained pain reduction after liposuction and concludes it is an effective therapeutic intervention for lipedema pain, directly supporting efficacy. Evidence is predominantly observational (Level IV), ",
+   "old_claims": [
+    "SCR-LIP-000479"
+   ],
+   "old_statements": [
+    "In a meta-analysis of 10 studies (901 patients), liposuction for lower limb lipedema produced significant pain reduction at ≤6 months (SMD -1.72, 95% CI -2.18 to -1.27) and sustained at >6 months (SMD -1.96, 95% CI -3.05 to -0.88), with 87.7% of patients reporting improvement."
+   ],
+   "old_role_in_question": "supporting"
+  }
+ ],
+ "propositions": [
+  {
+   "key": "P1",
+   "statement": "In women with painful lipedema, liposuction reduces leg pain more than conservative therapy alone.",
+   "role": "supporting",
+   "rationale": "A multicentre randomised trial against conservative therapy licenses comparative causal wording for pain.",
+   "evidence": [
+    {
+     "e": "E30",
+     "stance": "supporting",
+     "finding": "RCT: at 12 months, 68% (190/278) of liposuction patients vs 8% (10/132) of conservative-therapy patients reached the pain-reduction endpoint (OR 26.2, p<0.0001). Quality of life also improved. Limb volume was not the primary endpoint."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 1,
+   "store_key": "G-00004"
+  },
+  {
+   "key": "P2",
+   "statement": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status.",
+   "role": "supporting",
+   "rationale": "Many before-after case series and pooled single-arm meta-analyses consistently report large symptom reductions across techniques.",
+   "evidence": [
+    {
+     "e": "E1",
+     "stance": "supporting",
+     "finding": "Meta-analysis of 7 before-after studies (n=451): pooled spontaneous pain MD 3.41 (95% CI 1.92–4.90), with reductions in edema, bruising and mobility impairment. Heterogeneity was high, and about 51% still needed conservative therapy."
+    },
+    {
+     "e": "E3",
+     "stance": "supporting",
+     "finding": "Case series of 28 patients (21 evaluated): tumescent liposuction gave marked symptom improvement and lasting correction of body proportions."
+    },
+    {
+     "e": "E6",
+     "stance": "supporting",
+     "finding": "Case series of 25 patients: pain VAS fell from 7.2±2.2 to 2.1±2.1 (p<0.001) after liposuction."
+    },
+    {
+     "e": "E10",
+     "stance": "context",
+     "secondary_of": "E6",
+     "finding": "Narrative review citing Rapprich et al.: 6.9% leg volume reduction and pain VAS falling from 7.2 to 2.1 at 6 months."
+    },
+    {
+     "e": "E7",
+     "stance": "context",
+     "secondary_of": "E23",
+     "finding": "Narrative review citing Wollina & Heinig 2019: micro-cannular tumescent liposuction reduced pain VAS from 7.8 to 2.2 in 111 patients."
+    },
+    {
+     "e": "E23",
+     "stance": "supporting",
+     "finding": "111 patients, 334 low-volume sessions: pain fell 72% (VAS 7.8 to 2.2), thigh circumference fell 6 cm and mobility improved in all. Serious adverse events 1.2%, no deaths."
+    },
+    {
+     "e": "E11",
+     "stance": "supporting",
+     "finding": "Case series of 24 (TLAL, VASER, WAL): pain VAS fell from 7.10 to 2.00 and edema from 8.50 to 2.10 over a median 19 months. Complications 12.5%, none major."
+    },
+    {
+     "e": "E13",
+     "stance": "supporting",
+     "finding": "191 women, VASER two-stage protocol: limb circumference fell 6.40 cm and symptom VAS fell from 6.04 to 3.17 (p<0.001). 89.8% were satisfied. Seroma 5.75%, skin necrosis 2.09%, transfusion 3–4%."
+    },
+    {
+     "e": "E14",
+     "stance": "supporting",
+     "finding": "126 patients, selective combined liposuction: at 6 months pain VAS fell from 6.4 to 2.7, heaviness from 7.9 to 2.9 and edema from 5.0 to 1.6 (all p<0.001). 89% reported pain improvement."
+    },
+    {
+     "e": "E25",
+     "stance": "supporting",
+     "finding": "Single-arm meta-analysis of 6 studies (429 patients): pooled pain fell from 5.64 to 1.19 after tumescent liposuction."
+    },
+    {
+     "e": "E33",
+     "stance": "supporting",
+     "finding": "Meta-analysis of 10 studies (901 patients): pain fell at ≤6 months (SMD −1.72) and at >6 months (SMD −1.96). 87.7% reported improvement. Evidence was mostly level IV."
+    },
+    {
+     "e": "E5",
+     "stance": "supporting",
+     "finding": "Scoping review of 13 mostly retrospective studies: self-reported improvements in pain, mobility, bruising and quality of life, with low serious adverse event rates. No RCTs were included."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 10,
+   "store_key": "G-00005"
+  },
+  {
+   "key": "P3",
+   "statement": "Liposuction for lipedema is associated with improved quality of life and mobility.",
+   "role": "supporting",
+   "rationale": "Systematic reviews and a prospective assessment report gains in quality of life and function. Psychological outcomes were split into their own proposition because their evidence is thinner.",
+   "evidence": [
+    {
+     "e": "E8",
+     "stance": "supporting",
+     "finding": "Prospective pre/post assessment in 20 patients: disease-specific QoL was low on all subscales before liposuction and improved in all aspects at 6 months."
+    },
+    {
+     "e": "E4",
+     "stance": "supporting",
+     "finding": "Systematic review of 25 studies (2373 patients): mainly tumescent liposuction reduced pain, BMI and functional limitations and improved mobility and QoL. Complications were uncommon."
+    },
+    {
+     "e": "E22",
+     "stance": "supporting",
+     "finding": "Systematic review of 61 articles: tumescent liposuction had the strongest evidence for sustained symptom, mobility and QoL improvement (Grade 1 recommendation, evidence quality 2–3)."
+    }
+   ],
+   "grade": "high",
+   "n_findings": 3,
+   "store_key": "G-00006"
+  },
+  {
+   "key": "P9",
+   "statement": "Liposuction for lipedema may be associated with improved psychological wellbeing and body image.",
+   "role": "supporting",
+   "rationale": "This is hedged because only a few lower-level studies report psychological outcomes.",
+   "evidence": [
+    {
+     "e": "E19",
+     "stance": "supporting",
+     "finding": "Modified Body-Q study: the liposuction group reported better body image (p<0.01), physical function (p=0.05), physical symptoms (p=0.04) and psychological function (p<0.01) than the conservatively treated group."
+    },
+    {
+     "e": "E27",
+     "stance": "supporting",
+     "finding": "100 women: at 6 months, 77% reduced or stopped benzodiazepines (32% stopped). Anxiety, pain, sleep and body image improved (p<0.001). Minor complications 8%, none major."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00007"
+  },
+  {
+   "key": "P4",
+   "statement": "Improvements after liposuction for lipedema are reported to persist for years without clinically relevant deterioration.",
+   "role": "supporting",
+   "rationale": "Long-term cohort data and a case report describe durable benefit. E31's long-term results come from the same Baumgartner cohort later reported at 12 years in E15, so E31 is marked secondary to avoid double counting.",
+   "evidence": [
+    {
+     "e": "E15",
+     "stance": "supporting",
+     "finding": "Prospective cohort of 60 stage I–II patients: improvements in pain, edema, bruising, mobility and QoL (d=1.04–2.18) persisted at 12 years. 27% needed no conservative therapy."
+    },
+    {
+     "e": "E31",
+     "stance": "context",
+     "secondary_of": "E15",
+     "finding": "Consensus review citing the Baumgartner cohort (n=85): sustained symptom improvement at 8 years, with lymphoscintigraphy showing no significant lymphatic damage. The review concludes liposuction may prevent progression."
+    },
+    {
+     "e": "E12",
+     "stance": "supporting",
+     "finding": "Case report of a male stage IV patient: three uneventful tumescent sessions (8000 mL) reduced thigh volume and resolved symptoms, with no recurrence at 2.5 years despite 20 kg weight gain."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 2,
+   "store_key": "G-00008"
+  },
+  {
+   "key": "P5",
+   "statement": "Liposuction for lipedema is associated with reduced need for compression and other conservative decongestive therapy.",
+   "role": "supporting",
+   "rationale": "Several series report fewer patients needing compression or decongestive therapy after surgery, though many still require some.",
+   "evidence": [
+    {
+     "e": "E20",
+     "stance": "supporting",
+     "finding": "Case series: significant reduction in lipedema complaints and in need for conservative therapy, with improved QoL and no serious complications."
+    },
+    {
+     "e": "E18",
+     "stance": "supporting",
+     "finding": "106 patients, multistage lymph-sparing liposuction over 10 years: CDT composite score fell 37.5%, pain VAS fell from 80 to 30, and 34.9% stopped compression. Outcomes were better in younger patients, BMI ≤35 and earlier stage."
+    }
+   ],
+   "grade": "low",
+   "n_findings": 2,
+   "store_key": "G-00009"
+  },
+  {
+   "key": "P6",
+   "statement": "Major complications after liposuction for lipedema are uncommon, while minor complications such as seroma and hematoma occur more often.",
+   "role": "supporting",
+   "rationale": "Pooled analyses and cohorts report low major complication rates and mostly minor, manageable events.",
+   "evidence": [
+    {
+     "e": "E16",
+     "stance": "supporting",
+     "finding": "Meta-analysis of TTL, PAL and WAL: all improved symptoms. Adjusted complication rate was 2.3% per procedure and 6.4% per patient, with hematoma the most frequent (8.4%)."
+    },
+    {
+     "e": "E17",
+     "stance": "supporting",
+     "finding": "Meta-analysis of 20 studies (1785 patients): seroma 0.82%, hematoma 0.71%, infection 0.59%, no mortality. QoL SMD 2.48, pain SMD 2.04. No RCTs were included and MINORS scores were low."
+    },
+    {
+     "e": "E9",
+     "stance": "refines",
+     "finding": "Retrospective series of 93: no DVT, PE or necrosis; infection plus hematoma 1.07%. Seroma occurred in 18.3%, linked to higher relative aspirated volume and concomitant procedures."
+    },
+    {
+     "e": "E28",
+     "stance": "supporting",
+     "finding": "116 women: postoperative hemoglobin, leukocyte and electrolyte shifts were mild, stayed within physiological ranges and were not associated with adverse outcomes."
+    },
+    {
+     "e": "E2",
+     "stance": "refines",
+     "finding": "Comparative cohort vs aesthetic liposuction: leg liposuction for lipedema gave significant symptomatic and functional relief with high satisfaction, but persistent cutaneous sensory alterations in stages II–III."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 5,
+   "store_key": "G-00010"
+  },
+  {
+   "key": "P7",
+   "statement": "Benefits of liposuction for lipedema may be more sustained in earlier than in advanced disease stages.",
+   "role": "refines",
+   "rationale": "A longitudinal cohort reports better sustained outcomes in an earlier stage, qualifying the overall benefit.",
+   "evidence": [
+    {
+     "e": "E24",
+     "stance": "supporting",
+     "finding": "25 patients, mean 37 months: pain VAS fell from 7.2 to 4.3, QoL from 8.4 to 5.2 and CDT scores from 20.5 to 13.9 (p<0.05). Erysipelas occurred in 1/72 procedures. Benefit was better sustained in stage II than stage III."
+    }
+   ],
+   "grade": "moderate",
+   "n_findings": 1,
+   "store_key": "G-00011"
+  },
+  {
+   "key": "P8",
+   "statement": "Much non-randomised evidence on liposuction for lipedema consists of uncontrolled before-after studies with substantial risk of bias.",
+   "role": "refines",
+   "rationale": "Following the verifier, the claim was narrowed to describe non-randomised evidence without asserting it is most of all evidence; a randomised trial exists for pain (P1).",
+   "evidence": [
+    {
+     "e": "E29",
+     "stance": "supporting",
+     "finding": "Systematic review of six uncontrolled trials (467 patients): improvements in pain, volume and QoL, but moderate-to-high risk of bias and very low-grade safety evidence (17 adverse events, 5 serious). At that time, evidence versus conservative treatment was insufficient; this predates the RCT."
+    }
+   ],
+   "grade": "very_low",
+   "n_findings": 1,
+   "store_key": "G-00012"
+  }
+ ],
+ "dropped": [
+  {
+   "e": "E21",
+   "reason": "Trial protocol with no results yet; the trial's results are reported in E30."
+  },
+  {
+   "e": "E26",
+   "reason": "Truncated abstract with no reported result."
+  },
+  {
+   "e": "E32",
+   "reason": "Off-topic: addresses the relationship between lipedema and obesity, not the effectiveness or safety of liposuction."
+  }
+ ],
+ "verification": {
+  "verdicts": [
+   {
+    "key": "P1",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The RCT finding directly supports greater pain reduction with liposuction than conservative therapy in women with painful lipedema."
+   },
+   {
+    "key": "P2",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Multiple before-after studies and meta-analyses support postoperative reductions in pain and several lipedema-associated symptoms versus preoperative status."
+   },
+   {
+    "key": "P3",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The included cohort and reviews support improved quality of life and mobility or functional limitations after liposuction."
+   },
+   {
+    "key": "P9",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The hedged wording is supported by findings reporting better body image, psychological function, anxiety, sleep, and related outcomes."
+   },
+   {
+    "key": "P4",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Long-term cohort evidence and a case report support that sustained improvements have been reported for years."
+   },
+   {
+    "key": "P5",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The findings support reduced need for compression or conservative decongestive therapy after liposuction."
+   },
+   {
+    "key": "P6",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "Meta-analytic and cohort findings support uncommon major complications, with minor events such as seroma or hematoma reported."
+   },
+   {
+    "key": "P7",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The proposition is appropriately hedged and supported by the cited cohort’s stage II versus stage III durability finding."
+   },
+   {
+    "key": "P8",
+    "supported": "yes",
+    "overgeneralized": false,
+    "compound": false,
+    "stance_errors": [],
+    "misplaced": [],
+    "suggested_statement": "",
+    "severity": "none",
+    "note": "The systematic review finding supports the methodological caveat about uncontrolled non-randomised evidence and risk of bias."
+   }
+  ],
+  "set_issues": []
+ },
+ "log": [
+  {
+   "step": "format_check",
+   "attempt": 1,
+   "errors": [
+    "E2: placed more than once"
+   ]
+  },
+  {
+   "step": "format_check",
+   "attempt": 2,
+   "errors": []
+  },
+  {
+   "step": "verify",
+   "round": 0,
+   "problems": [
+    "[minor] set: The E29 caveat that evidence was insufficient versus conservative treatment should be time-qualified, because E30 provides direct randomized comparative pain evidence.",
+    "[major] P2: not fully supported; overgeneralized; two ideas — suggested: Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms versus preoperative status. (The findings support pain and several symptom reductions, but pressure sensitivity is not clearly supported by the listed supporting findings for this proposition.)",
+    "[minor] P4: stance errors ['E12'] — suggested: Symptom and quality-of-life improvements after liposuction for lipedema are reported to persist for years in some cohorts. (E15 strongly supports long-term symptom and QoL persistence; E12 is only a male case report about volume/no recurrence and does not support QoL persistence.)",
+    "[major] P8: not fully supported; overgeneralized — suggested: Much published evidence comes from uncontrolled studies, although recent randomized evidence supports pain benefit over conservative therapy. (E29 supports concerns about uncontrolled evidence and bias, but the proposition is broad and does not account for the later RCT evidence in E30.)"
+   ]
+  },
+  {
+   "step": "format_check",
+   "attempt": 1,
+   "errors": []
+  },
+  {
+   "step": "verify",
+   "round": 1,
+   "problems": [
+    "[minor] set: E31 appears to re-report long-term Baumgartner follow-up likely overlapping E15 but is not marked secondary_of, risking double counting in P4.",
+    "[minor] P3: two ideas — suggested: Liposuction for lipedema is associated with improved quality of life and mobility; limited evidence suggests psychological wellbeing may improve. (Quality of life and mobility are supported by reviews; psychological wellbeing is supported by fewer, lower-level findings.)",
+    "[major] P8: not fully supported; overgeneralized — suggested: Much non-randomised evidence on liposuction for lipedema consists of uncontrolled before-after studies with substantial risk of bias. (E29 supports concerns about uncontrolled studies and bias, but alone does not establish that most current evidence has this design.)"
+   ]
+  },
+  {
+   "step": "format_check",
+   "attempt": 1,
+   "errors": []
+  },
+  {
+   "step": "verify",
+   "round": 2,
+   "problems": []
+  }
+ ]
+}

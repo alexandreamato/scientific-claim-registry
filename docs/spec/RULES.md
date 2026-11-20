@@ -230,6 +230,18 @@
   entram fatos conferíveis no artigo (desenho, seleção, perdas, números que não fecham, definição de caso);
   pontos de posição ou de agenda ficam fora. A autoria é declarada como é: avaliação por IA conferida no PDF não
   é assinada como avaliação de especialista (Layer 2). Risco de viés sério rebaixa o GRADE em um nível.
+- **R-CLM-19 [Proposed]** **Claim é proposição geral; o achado de cada estudo é evidência.** O claim tem até 25
+  palavras, uma ideia só, nenhum algarismo (sem n, %, p, estágio numerado), não descreve um estudo ("One cohort
+  reported…") e tem força compatível com a evidência ("is associated with" para dado descritivo). Deve poder ser
+  sustentado ou contrariado por vários artigos. O resultado específico (números, população, trecho literal) fica
+  em `evidence[].finding`. Achado isolado entra como refinamento de proposição mais ampla. Ressalva num eixo
+  diferente (ajuste para confundidor, controlado vs. não controlado) ganha proposição própria. Republicação
+  (revisão narrativa que só relata outro item) leva `secondary_of` e não conta. GRADE da proposição = melhor GRADE
+  entre seus achados de apoio, um nível abaixo se houver contradição de certeza igual ou maior (R-CLM-11).
+  Ferramenta: `registry/consolidate.py`. O consolidador e o verificador são de fabricantes diferentes (R-AI-14),
+  com checagem de formato determinística, até 2 rodadas de correção e desempate pela redação mais cautelosa do
+  verificador. Substitui na prática o "um achado = um claim" do R-OBJ-7, que continua valendo para não haver
+  proposições gêmeas entre perguntas.
 
 ## 5. Perguntas e respostas
 
@@ -620,6 +632,14 @@
 ---
 
 ## Changelog
+
+- **2026-11-20** — **R-CLM-19 [Proposed]: consolidação de claims.** 87% dos 514 claims tinham uma fonte só e liam como
+  resumo de artigo (mediana de 43 palavras). Com o `consolidate.py`, um piloto em duas perguntas, sem aplicar no
+  registro, levou a SQ-LIP-000007 de 9 claims para 3 proposições e a SQ-LIP-000013 de 27 para 9, ambas sem
+  problema residual. Consolidador Claude Opus 5.5, verificador GPT-5.5. A primeira versão tinha quatro defeitos,
+  e cada um virou regra: chave de evidência inventada (o formato agora é checado e refeito), ressalva já
+  superada por um RCT entre os itens (agora há verificação do conjunto), duas ideias numa frase e o mesmo
+  estudo contado duas vezes (`secondary_of`).
 
 - **2026-11-18** — **`first_mention` refeito nas 42 perguntas.** O anel vazado da linha do tempo ("primeira menção na
   literatura") estava errado em 20 perguntas e ausente em 19. Havia duas causas. A busca no texto integral do Europe PMC

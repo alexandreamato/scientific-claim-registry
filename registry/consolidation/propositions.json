@@ -1,0 +1,138 @@
+{
+ "G-00001": {
+  "statement": "Thyroid disorders, particularly hypothyroidism, are frequently reported as comorbidities among people with lipedema.",
+  "questions": [
+   "SQ-LIP-000007"
+  ],
+  "refs": [
+   "DOI:10.1007/s10238-026-02157-9",
+   "DOI:10.1097/gox.0000000000006173",
+   "DOI:10.20944/preprints202510.1397.v1",
+   "DOI:10.3390/biomedicines13123049"
+  ]
+ },
+ "G-00002": {
+  "statement": "Thyroid disease or hypothyroidism is reported more often in lipedema than in general-population or clinical comparison groups in unadjusted cross-sectional comparisons.",
+  "questions": [
+   "SQ-LIP-000007"
+  ],
+  "refs": [
+   "DOI:10.1097/prs.0000000000006280",
+   "DOI:10.1111/dth.14534",
+   "DOI:10.1177/02683555261435120",
+   "DOI:10.1177/1358863x231219006",
+   "DOI:10.3390/jcm14207195"
+  ]
+ },
+ "G-00003": {
+  "statement": "After multivariable adjustment for other factors, hypothyroidism may not be independently associated with lipedema.",
+  "questions": [
+   "SQ-LIP-000007"
+  ],
+  "refs": [
+   "DOI:10.1590/1677-5449.202101982"
+  ]
+ },
+ "G-00004": {
+  "statement": "In women with painful lipedema, liposuction reduces leg pain more than conservative therapy alone.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1016/s0140-6736(26)00910-4"
+  ]
+ },
+ "G-00005": {
+  "statement": "Liposuction for lipedema is associated with reductions in pain, edema, bruising, heaviness and other symptoms compared with preoperative status.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1007/7140.2006.00006",
+   "DOI:10.1007/s00266-025-05507-2",
+   "DOI:10.1007/s00266-026-06371-4",
+   "DOI:10.1016/j.bjps.2025.06.031",
+   "DOI:10.1016/j.jpra.2026.01.004",
+   "DOI:10.1097/gox.0000000000005952",
+   "DOI:10.1097/prs.0000000000012217",
+   "DOI:10.1111/dth.12820",
+   "DOI:10.1111/dth.14364",
+   "DOI:10.1111/j.1610-0387.2010.07504.x",
+   "DOI:10.21037/atm-24-165",
+   "DOI:10.7759/cureus.55260"
+  ]
+ },
+ "G-00006": {
+  "statement": "Liposuction for lipedema is associated with improved quality of life and mobility.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1093/asjof/ojag039",
+   "DOI:10.1111/ijd.70227",
+   "DOI:10.1111/iwj.13608"
+  ]
+ },
+ "G-00007": {
+  "statement": "Liposuction for lipedema may be associated with improved psychological wellbeing and body image.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-026-06116-3",
+   "DOI:10.3390/jcm14010279"
+  ]
+ },
+ "G-00008": {
+  "statement": "Improvements after liposuction for lipedema are reported to persist for years without clinically relevant deterioration.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1097/dss.0000000000002019",
+   "DOI:10.1177/0268355520949775",
+   "DOI:10.3205/iprs000161"
+  ]
+ },
+ "G-00009": {
+  "statement": "Liposuction for lipedema is associated with reduced need for compression and other conservative decongestive therapy.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-020-01910-z",
+   "DOI:10.1097/prs.0000000000008880"
+  ]
+ },
+ "G-00010": {
+  "statement": "Major complications after liposuction for lipedema are uncommon, while minor complications such as seroma and hematoma occur more often.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1007/s00266-025-05456-w",
+   "DOI:10.1007/s00266-026-05774-7",
+   "DOI:10.1007/s00266-026-06004-w",
+   "DOI:10.1016/j.bjps.2024.07.038",
+   "DOI:10.1055/a-2334-9260"
+  ]
+ },
+ "G-00011": {
+  "statement": "Benefits of liposuction for lipedema may be more sustained in earlier than in advanced disease stages.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.5999/aps.2017.44.4.324"
+  ]
+ },
+ "G-00012": {
+  "statement": "Much non-randomised evidence on liposuction for lipedema consists of uncontrolled before-after studies with substantial risk of bias.",
+  "questions": [
+   "SQ-LIP-000013"
+  ],
+  "refs": [
+   "DOI:10.1093/eurpub/ckab165.304"
+  ]
+ }
+}
