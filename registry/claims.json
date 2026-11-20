@@ -2,7 +2,7 @@
   "registry": "SCR-LIP",
   "version": "0.1",
   "date": "2026-11-20",
-  "count": 729,
+  "count": 730,
   "claims": [
     {
       "id": "SCR-LIP-000001",
@@ -58481,6 +58481,40 @@
           "from_claims": [
             "SCR-LIP-000573"
           ]
+        },
+        {
+          "ref": "DOI:10.1590/1677-5449.202600752",
+          "stance": "supporting",
+          "study_design": "cross_sectional",
+          "n": 4986,
+          "risk_of_bias": "moderate",
+          "year": 2026,
+          "title": "Peripheral fat distribution, the lipedema-associated phenotype, and lower prevalence of cardiometabolic disease in women: a cross-sectional study (NHANES 2011-2018)",
+          "authors": "Amato ACM, Amato JLS, Benitti DA",
+          "grade": "low",
+          "_prov": {
+            "grade_source": "bib_curated"
+          },
+          "quote": "Diabetes 465 0.17 (0.12-0.25) <0.001",
+          "finding": "In 4,986 NHANES women, the DXA peripheral fat phenotype was associated with lower diabetes prevalence (1.8% vs 13.6%; OR 0.17, 95%CI 0.12-0.25, adjusted for body-fat category, age, race/ethnicity and smoking; diabetes = self-report or HbA1c ≥6.5%); cross-sectional.",
+          "extraction_confidence": "high",
+          "verification": {
+            "method": "single-model (Claude Code subagent)",
+            "verifier_model": "claude-sonnet (subagent, fresh context)",
+            "primary_model": "claude-opus-5-5 (session)",
+            "quote_grounded": true,
+            "date": "2026-11-20",
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "supporting",
+            "verdict": "verified",
+            "reason": "Table 3 OR and Table 1 prevalences match; adiposity only partly controlled (body-fat category), consistent with the proposition's caveat."
+          },
+          "added": "2026-11-20",
+          "quote_location": "Table 3 (main effect OR per component, adjusted for body fat category, age, race/ethnicity, smoking)",
+          "note": "Overlaps the NHANES 2011-2014 participants of DOI:10.7759/cureus.104222 (same group, similar phenotype): not an independent sample for diabetes.",
+          "translation_ref": "DOI:10.1590/1677-5449.202600751",
+          "amato_authored": true
         }
       ],
       "relations": [],
@@ -58517,6 +58551,11 @@
           "date": "2026-11-20",
           "event": "created_by_consolidation",
           "detail": "general proposition consolidated from SQ-LIP-000010"
+        },
+        {
+          "date": "2026-11-20",
+          "event": "evidence added",
+          "detail": "finding from DOI:10.1590/1677-5449.202600752 (supporting)"
         }
       ],
       "statement_pt": "O diabetes é relatado com menos frequência no lipedema e na distribuição periférica de gordura semelhante à do lipedema do que em grupos de comparação, embora o pareamento por adiposidade seja limitado."
@@ -58636,6 +58675,41 @@
           "from_claims": [
             "SCR-LIP-000152"
           ]
+        },
+        {
+          "ref": "DOI:10.1590/1677-5449.202600752",
+          "stance": "context",
+          "study_design": "cross_sectional",
+          "n": 4986,
+          "risk_of_bias": "moderate",
+          "year": 2026,
+          "title": "Peripheral fat distribution, the lipedema-associated phenotype, and lower prevalence of cardiometabolic disease in women: a cross-sectional study (NHANES 2011-2018)",
+          "authors": "Amato ACM, Amato JLS, Benitti DA",
+          "grade": "low",
+          "_prov": {
+            "grade_source": "bib_curated"
+          },
+          "quote": "High cholesterol 1,118 0.66 (0.52-0.84) 0.002",
+          "finding": "In 4,986 NHANES women, the DXA peripheral fat phenotype (not diagnosed lipedema) was associated with lower odds of a binary high-cholesterol outcome (16.9% vs 30.1%; OR 0.66, 95%CI 0.52-0.84; adjusted for body-fat category, age, race/ethnicity, smoking). No lipid values were analyzed and the comparison was women below the cutoff, not obese women; cross-sectional.",
+          "extraction_confidence": "high",
+          "verification": {
+            "method": "single-model (Claude Code subagent)",
+            "verifier_model": "claude-sonnet (subagent, fresh context)",
+            "primary_model": "claude-opus-5-5 (session)",
+            "quote_grounded": true,
+            "date": "2026-11-20",
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "context",
+            "verdict": "verified",
+            "reason": "Verifier disputed 'supporting' (binary outcome, no lipid values, not vs obesity); adopted its stance (context) and wording — arbitration, not re-verified.",
+            "arbitration": true
+          },
+          "added": "2026-11-20",
+          "quote_location": "Table 3",
+          "note": "Population phenotype, not diagnosed lipedema vs obesity.",
+          "translation_ref": "DOI:10.1590/1677-5449.202600751",
+          "amato_authored": true
         }
       ],
       "relations": [],
@@ -58666,6 +58740,11 @@
           "date": "2026-11-20",
           "event": "created_by_consolidation",
           "detail": "general proposition consolidated from SQ-LIP-000010"
+        },
+        {
+          "date": "2026-11-20",
+          "event": "evidence added",
+          "detail": "finding from DOI:10.1590/1677-5449.202600752 (context)"
         }
       ],
       "statement_pt": "O lipedema pode estar associado a um perfil lipídico plasmático mais favorável do que a obesidade, embora as comparações pareadas por adiposidade sejam inconsistentes."
@@ -79908,7 +79987,7 @@
         "scope": "auto-ingested from Layer 1 surveillance"
       },
       "knowledge_state": "emerging",
-      "evidence_confidence": "very_low",
+      "evidence_confidence": "low",
       "evidence": [
         {
           "ref": "DOI:10.36557/2674-8169.2026v8n2p869-884",
@@ -79945,6 +80024,39 @@
           "from_claims": [
             "SCR-LIP-000062"
           ]
+        },
+        {
+          "ref": "DOI:10.1590/1677-5449.202600752",
+          "stance": "supporting",
+          "study_design": "cross_sectional",
+          "n": 4986,
+          "risk_of_bias": "moderate",
+          "year": 2026,
+          "title": "Peripheral fat distribution, the lipedema-associated phenotype, and lower prevalence of cardiometabolic disease in women: a cross-sectional study (NHANES 2011-2018)",
+          "authors": "Amato ACM, Amato JLS, Benitti DA",
+          "grade": "low",
+          "_prov": {
+            "grade_source": "bib_curated"
+          },
+          "quote": "57% of the women in the sample met the Buso criterion, a proportion substantially higher than the estimated clinical prevalence of lipedema, approximately 10-12%, and the estimated prevalence of 12.3% among Brazilian women.7,17 This discrepancy suggests that, when applied to the general population, the criterion predominantly identifies women without clinical lipedema and seems to capture a broader pattern of gynoid fat distribution, of which the clinical and symptomatic lipedema phenotype may represent a subset.",
+          "finding": "In NHANES women aged 20-59, 57% met the DXA Buso criterion (leg/total fat ≥0.383), far above the estimated 10-12% clinical lipedema prevalence; the authors infer the criterion mostly identifies a broader gynoid fat pattern without clinical lipedema. NHANES had no clinical lipedema assessment.",
+          "extraction_confidence": "high",
+          "verification": {
+            "method": "single-model (Claude Code subagent)",
+            "verifier_model": "claude-sonnet (subagent, fresh context)",
+            "primary_model": "claude-opus-5-5 (session)",
+            "quote_grounded": true,
+            "date": "2026-11-20",
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "supporting",
+            "verdict": "verified",
+            "reason": "57.0% (2,841/4,986) confirmed; hedge 'the authors infer' added as the verifier asked."
+          },
+          "added": "2026-11-20",
+          "note": "Supports that DXA fat distribution alone does not separate lipedema from a common gynoid pattern.",
+          "translation_ref": "DOI:10.1590/1677-5449.202600751",
+          "amato_authored": true
         }
       ],
       "relations": [],
@@ -79973,6 +80085,11 @@
           "date": "2026-11-20",
           "event": "created_by_consolidation",
           "detail": "general proposition consolidated from SQ-LIP-000031"
+        },
+        {
+          "date": "2026-11-20",
+          "event": "evidence added",
+          "detail": "finding from DOI:10.1590/1677-5449.202600752 (supporting)"
         }
       ],
       "statement_pt": "Um fenótipo de gordura ginoide pode imitar o lipedema, de modo que a distribuição de gordura isoladamente pode não separar com confiabilidade o lipedema da obesidade ginoide sem triagem clínica."
@@ -87377,6 +87494,76 @@
         }
       ],
       "statement_pt": "Os sintomas depressivos e ansiosos podem diminuir após a lipoaspiração no lipedema."
+    },
+    {
+      "id": "SCR-LIP-000793",
+      "statement": "A lipedema-like peripheral fat distribution may be associated with lower prevalence of cardiometabolic disease in women, including among women with similar total body fat.",
+      "statement_pt": "Uma distribuição periférica da gordura semelhante à do lipedema pode estar associada a menor prevalência de doença cardiometabólica em mulheres, inclusive entre mulheres com gordura corporal total semelhante.",
+      "claim_type": "epidemiological",
+      "context": {},
+      "knowledge_state": "emerging",
+      "evidence_confidence": "low",
+      "evidence": [
+        {
+          "ref": "DOI:10.1590/1677-5449.202600752",
+          "stance": "supporting",
+          "study_design": "cross_sectional",
+          "n": 4986,
+          "risk_of_bias": "moderate",
+          "year": 2026,
+          "title": "Peripheral fat distribution, the lipedema-associated phenotype, and lower prevalence of cardiometabolic disease in women: a cross-sectional study (NHANES 2011-2018)",
+          "authors": "Amato ACM, Amato JLS, Benitti DA",
+          "grade": "low",
+          "_prov": {
+            "grade_source": "bib_curated"
+          },
+          "quote": "The phenotype was associated with lower odds of the composite outcome (odds ratio = 0.49; 95% CI, 0.41-0.60; p < 0.001).",
+          "finding": "In 4,986 NHANES 2011-2018 women aged 20-59, a DXA peripheral fat phenotype (leg/total fat ≥0.383; 57% of the sample; not a lipedema diagnosis) had lower odds of composite diabetes, hypertension, high cholesterol, prediabetes or cardiovascular disease (survey-weighted OR 0.49; 95%CI 0.41-0.60; adjusted for age, race/ethnicity, smoking). ORs <1 in all 8 analyzable body-fat strata (0.23-0.67), 4 significant after FDR; hypertension OR 0.44, cardiovascular disease OR 0.52; BMI adjustment attenuated ORs; cross-sectional.",
+          "extraction_confidence": "high",
+          "verification": {
+            "method": "single-model (Claude Code subagent)",
+            "verifier_model": "claude-sonnet (subagent, fresh context)",
+            "primary_model": "claude-opus-5-5 (session)",
+            "quote_grounded": true,
+            "date": "2026-11-20",
+            "stance_agreed": true,
+            "faithful": true,
+            "verifier_stance": "supporting",
+            "verdict": "verified",
+            "reason": "Numbers checked against abstract and Tables 2-3; finding expanded with adjustment set, excluded stratum, FDR count and BMI attenuation as the verifier asked."
+          },
+          "added": "2026-11-20",
+          "note": "Phenotype+ women were younger and leaner (BMI 26.4 vs 32.2); stratification by DXA body-fat %, BMI adjustment attenuated but kept direction. Criterion met by 57% of women, so it mostly flags women without clinical lipedema. Cross-sectional: no temporality.",
+          "translation_ref": "DOI:10.1590/1677-5449.202600751",
+          "amato_authored": true
+        }
+      ],
+      "relations": [],
+      "gaps": "",
+      "curators": [],
+      "created": "2026-11-20",
+      "updated": "2026-11-20",
+      "license": "CC-BY-4.0",
+      "consolidated_from": [],
+      "questions_consolidated": [
+        "SQ-LIP-000010"
+      ],
+      "provenance": {
+        "method": "attach_findings (R-CLM-19)",
+        "source": "DOI:10.1590/1677-5449.202600752"
+      },
+      "history": [
+        {
+          "date": "2026-11-20",
+          "event": "created",
+          "detail": "general proposition created for DOI:10.1590/1677-5449.202600752 under SQ-LIP-000010"
+        },
+        {
+          "date": "2026-11-20",
+          "event": "evidence added",
+          "detail": "finding from DOI:10.1590/1677-5449.202600752 (supporting)"
+        }
+      ]
     }
   ]
 }

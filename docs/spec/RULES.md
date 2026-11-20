@@ -247,6 +247,11 @@
   continua dono de tudo que é determinístico (itens, formato, GRADE, store, status). O verificador é outro
   modelo (Sonnet) com contexto limpo, que não vê o raciocínio do consolidador: a independência é menor que entre
   fabricantes, e isso fica registrado em `models` de cada resultado.
+  **Artigo novo avulso:** `attach_findings.py` anexa o achado de um artigo às proposições existentes (ou cria uma
+  proposição nova no formato R-CLM-19), a partir de um arquivo preparado em sessão e checado por um verificador
+  com contexto limpo; só grava linha `verified`, recalcula o GRADE e respeita o teto do `bib` (R-CLM-13). Tradução
+  do mesmo artigo (outro DOI) não é segunda evidência: fica em `translation_ref`. Amostra que se sobrepõe à de
+  outro estudo já registrado é anotada em `note` e não conta como confirmação independente.
   **Aplicação:** `apply_consolidation.py` cria os claims novos (um por proposição do store, reaproveitado entre
   perguntas), copia cada evidência intacta com `stance`, `finding` e `secondary_of` novos, e troca os links da
   pergunta. O claim antigo nunca é apagado (R-CLM-9): recebe `superseded_by` e, quando nenhuma pergunta o liga
@@ -645,6 +650,12 @@
 
 ## Changelog
 
+- **2026-11-20 (tarde)** — **`attach_findings.py`** (R-CLM-19): primeiro artigo anexado no formato novo, Amato ACM,
+  Amato JLS, Benitti DA, J Vasc Bras 2026 (NHANES 2011-2018, 4.986 mulheres; EN 10.1590/1677-5449.202600752, PT
+  …202600751 como `translation_ref`). Proposição nova SCR-LIP-000793 (menor prevalência cardiometabólica) e achados
+  em SCR-LIP-000628 (diabetes), SCR-LIP-000629 (colesterol, como `context`: o verificador recusou `supporting` por
+  ser desfecho binário sem perfil lipídico) e SCR-LIP-000746 (57% das mulheres cumprem o critério de Buso, contra
+  ~10-12% de lipedema clínico). Diabetes anotado como sobreposto à amostra de 10.7759/cureus.104222.
 - **2026-11-20** — **R-CLM-19 [Proposed]: consolidação de claims.** 87% dos 514 claims tinham uma fonte só e liam como
   resumo de artigo (mediana de 43 palavras). Com o `consolidate.py`, um piloto em duas perguntas, sem aplicar no
   registro, levou a SQ-LIP-000007 de 9 claims para 3 proposições e a SQ-LIP-000013 de 27 para 9, ambas sem
