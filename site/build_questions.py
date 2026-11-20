@@ -11,7 +11,8 @@ Run from site/: python3 build_questions.py
 """
 import json, os, html, hashlib
 from collections import Counter
-from scrlib import timeline_svg, ref_link, ref_url, ev_label, cite_link, ANALYTICS
+from question_archive import archive_body, change_section, load_archives
+from scrlib import timeline_svg, ref_url, ev_label, cite_link, evidence_id, ANALYTICS
 SITE = os.path.dirname(os.path.abspath(__file__))
 # cache-bust the stylesheet: static assets are served with a 10-yr max-age, so a content hash in the
 # query string is the only way a CSS change reaches users (no Cloudflare purge token anymore).
@@ -20,6 +21,7 @@ REG = os.path.join(SITE, "..", "registry")
 Q = json.load(open(os.path.join(REG, "questions.json")))
 C = {c["id"]: c for c in json.load(open(os.path.join(REG, "claims.json")))["claims"]}
 QMAP = {q["id"]: q for q in Q["questions"]}
+ARCHIVES = load_archives(REG)
 # Registry-wide verification rollup (R-AI-14) — every evidence source's independent-verification verdict.
 _ALLV = [(ev.get("verification") or {}).get("verdict") or "unverified"
          for c in C.values() if c.get("status") not in ("superseded", "retired") for ev in c.get("evidence", [])]
@@ -315,6 +317,68 @@ def refs_of(links):
             if r and r.startswith(("DOI:", "PMID:")) and r not in out: out.append(r)
     return out
 
+
+def reference_section(links, lang, prefix):
+    sources = {}
+    for link in links:
+        cid = link["id"]
+        for index, row in enumerate(C.get(cid, {}).get("evidence", [])):
+            ref = (row.get("ref") or "").strip()
+            title = row.get("title")
+            public_ref = ref if ref_url(ref) else ""
+            if not (public_ref or title):
+                continue
+            key = (public_ref or title).casefold()
+            source = sources.setdefault(key, {"names": [], "destinations": {}})
+            source["names"].extend((title or "", row.get("authors") or "", public_ref))
+            source["destinations"].setdefault(cid, f"{prefix}/c/{cid}.html#{evidence_id(index)}")
+            if "row" not in source or not source["row"].get("authors") and row.get("authors"):
+                source["row"] = row
+
+    pt = lang == "pt"
+    heading = "Referências" if pt else "References"
+    if not sources:
+        return f'<h2 id="references">{heading}</h2><p class="muted">—</p>'
+    label = "Buscar por autor, título ou DOI" if pt else "Search by author, title or DOI"
+    empty = "Nenhuma referência encontrada." if pt else "No matching references."
+    rows = []
+    for source in sources.values():
+        row = source["row"]
+        ref = (row.get("ref") or "").strip()
+        citation = cite_link(row) if ref_url(ref) else e(ev_label(row))
+        identifier = f' <span class="muted small">· {e(ref)}</span>' if ref_url(ref) else ""
+        destinations = " · ".join(f'<a href="{url}">{e(cid)}</a>' for cid, url in source["destinations"].items())
+        rows.append(f'<li data-search="{e(" ".join(source["names"]))}">{citation}{identifier}'
+                    f'<br><span class="small">{destinations}</span></li>')
+    return f'''<section aria-labelledby="references">
+  <h2 id="references">{heading}</h2>
+  <div class="qsearch" id="reference-filter" hidden>
+    <label for="reference-search">{label}</label><br>
+    <input type="search" id="reference-search" aria-controls="reference-list">
+  </div>
+  <p id="reference-empty" role="status" hidden>{empty}</p>
+  <ul class="refs" id="reference-list">{"".join(rows)}</ul>
+  <script>(function () {{
+    const input = document.getElementById("reference-search");
+    const empty = document.getElementById("reference-empty");
+    const normalize = text => text.normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase();
+    const rows = Array.from(document.querySelectorAll("#reference-list [data-search]"),
+      row => [row, normalize(row.dataset.search)]);
+    function filter() {{
+      const terms = normalize(input.value).trim().split(/\\s+/);
+      let visible = 0;
+      for (const [row, text] of rows) {{
+        row.hidden = !terms.every(term => text.includes(term));
+        if (!row.hidden) visible++;
+      }}
+      empty.hidden = visible > 0;
+    }}
+    input.addEventListener("input", filter);
+    document.getElementById("reference-filter").hidden = false;
+    filter();
+  }})();</script>
+</section>'''
+
 def legend(lang):
     t = T[lang]
     dot = lambda k, lab: f'<span class="tldot" style="background:{k}"></span>{lab}'
@@ -399,6 +463,27 @@ def build_lang(lang):
         page_path = f"/q/{qid}.html"
         ver_path = f"/q/{qid}/v{ver}.html"
         ver_url = f"{BASE}{prefix}{ver_path}"
+        versions = ARCHIVES.get(qid, {})
+        archive_dir = os.path.join(out_root, "q", qid)
+        os.makedirs(archive_dir, exist_ok=True)
+        for archived_ver, (record, source) in versions.items():
+            archive_path = f"/q/{qid}/v{archived_ver}"
+            archived_title = record["question"].get("text_pt" if lang == "pt" else "text") or record["question"]["text"]
+            archive_url = f"{BASE}{prefix}{archive_path}.html"
+            archived_html = head(lang, f"{archived_title} — {qid} v{archived_ver}", "",
+                                 f"{archive_path}.html", robots="noindex,follow")
+            archived_html += archive_body(record, lang, prefix, archive_url) + foot(lang)
+            with open(os.path.join(archive_dir, f"v{archived_ver}.html"), "w", encoding="utf-8") as f:
+                f.write(archived_html)
+            if lang == "en":
+                with open(os.path.join(archive_dir, f"v{archived_ver}.json"), "wb") as f:
+                    f.write(source.read_bytes())
+
+        current_record = versions[ver][0] if ver in versions else {}
+        change_html = change_section(current_record, lang, prefix)
+        archived = {ver} | set(versions) | {
+            h["version"] for h in hist if os.path.exists(os.path.join(archive_dir, f"v{h['version']}.html"))
+        }
 
         # machine-readable JSON — generated once, in the EN pass (canonical), linked from both langs
         if lang == "en":
@@ -415,7 +500,10 @@ def build_lang(lang):
                   "claims": [{"id": l["id"], "role": l["role"], "statement": C.get(l["id"], {}).get("statement")} for l in links],
                   "references": refs, "cite": cite,
                   "versions": [{"version": h["version"], "date": h["date"],
-                                "url": f"{BASE}{prefix}/q/{qid}/v{h['version']}.html"} for h in hist],
+                                "url": f"{BASE}/q/{qid}/v{h['version']}.html" if h["version"] in archived else None,
+                                **({"url_pt": f"{BASE}/pt/q/{qid}/v{h['version']}.html",
+                                    "json": f"{BASE}/q/{qid}/v{h['version']}.json"}
+                                   if h["version"] in versions else {})} for h in hist],
                   "url": f"{BASE}{page_path}", "url_pt": f"{BASE}/pt{page_path}", "version_url": ver_url,
                   "license": "CC-BY-4.0", "disclaimer": "Evidence-bounded summary; not medical advice."}
             json.dump(mj, open(os.path.join(SITE, "q", f"{qid}.json"), "w"), ensure_ascii=False, indent=2)
@@ -423,7 +511,7 @@ def build_lang(lang):
         sup_li = "".join(claim_li(l) for l in links if l["role"] == "supporting") or f"<li class='muted'>{t['none_idx']}</li>"
         con_li = "".join(claim_li(l) for l in links if l["role"] == "contradicting") or f"<li class='muted'>{t['none_idx']}</li>"
         oth_li = "".join(claim_li(l) for l in links if l["role"] in ("refines", "context"))
-        refs_html = " · ".join(f'<span class="mono">{ref_link(r)}</span>' for r in refs[:30]) or "<span class='muted'>—</span>"
+        references_html = reference_section(links, lang, prefix)
         sb = small_base_badge(fr, lang)
         fr_tile = (f'<div><span class="mk">{t["k_fresh"]}</span><strong>{fr["pct"]}% {t["recent"]}</strong> '
                    f'<span class="muted">· {fresh_label(fr["pct"], lang)}</span>{sb}</div>' if fr else "")
@@ -450,10 +538,6 @@ def build_lang(lang):
         tl_section = (f'<h2>{t["ev_time"]}</h2>\n  <div class="qtl">{tl}</div>\n'
                       f'  <p class="small muted">{legend(lang)} {t["tl_note"]}{origin_note}</p>' if tl else "")
         founding_label = t["founding"] + f" ({sup+con+oth} " + t["claims_word"] + ")"
-        # a prior version is linkable only if its frozen snapshot exists on disk; the current
-        # version is always written this build, so it is always linkable.
-        archived = {ver} | {h.get("version") for h in hist
-                            if os.path.exists(os.path.join(out_root, "q", qid, f"v{h.get('version')}.html"))}
         vtrack = version_track(hist, qid, prefix, hchange, founding_label, archived, t["ver_noarch"])
         ver_section = (f'<h2>{t["ans_time"]}</h2>\n  {vtrack}\n'
                        f'  <p class="small muted">{t["ans_time_note"]}</p>' if vtrack else "")
@@ -485,13 +569,14 @@ def build_lang(lang):
   {qtags_html}
   {phr_html}
   {bottom_html}
+  {change_html}
   {related_html}
   <div class="glance">
     <span class="glance-h">{t["exec_h"]}</span>
     <dl>
       <div class="g-row g-answer"><dt>{t["cur_answer"]}</dt><dd>{e(first_sentence(qans))}</dd></div>
       <div class="g-row"><dt>{t["k_state"]}</dt><dd><span class="badge st-{q['knowledge_state']}">{e(STATE.get(q['knowledge_state']))}</span> <span class="muted">· {t["confidence_l"]}:</span> {e(grade_sum)} <span class="muted">(GRADE) · {t["stability_l"]}:</span> {t["stab_"+stab_key]}{(" · " + t["contested"]) if contested else ""}</dd></div>
-      <div class="g-row"><dt>{t["evidence_l"]}</dt><dd><a class="evlink sup" href="#ev-sup">{sup} {t["supporting"]}</a> · <a class="evlink con" href="#ev-con">{con} {t["contradicting"]}</a> · <a class="evlink oth" href="#ev-oth">{oth} {t["refctx"]}</a></dd></div>
+      <div class="g-row"><dt>{t["evidence_l"]}</dt><dd><a class="evlink sup" href="#ev-sup">{sup} {t["supporting"]}</a> · <a class="evlink con" href="#ev-con">{con} {t["contradicting"]}</a> · <a class="evlink oth" href="#ev-oth">{oth} {t["refctx"]}</a> · <a href="#references">{"Referências" if lang == "pt" else "References"}</a></dd></div>
       {f'<div class="g-row"><dt></dt><dd class="contra-caveat">⚠ {t["contra_none"]}</dd></div>' if con == 0 else ''}
       {g_verify}
       <div class="g-row"><dt>{t["limitation_l"]}</dt><dd>{e(first_sentence(qunc))}</dd></div>
@@ -503,7 +588,7 @@ def build_lang(lang):
   </div>
   {outcomes_html}
   <div class="answer"><span class="alabel">{t["synthesis_h"]} · v{ver} <span class="amut">· {t["ai_compiled"]}</span></span><p>{e(qans)}</p><p class="answer-cap">{t["answer_cap"]}</p>{ai_prov}</div>
-  <div class="whatsnew"><span class="wn-h">{t["whatsnew"]} v{ver}</span><p>{e(last_change)}</p></div>
+  {"" if change_html else f'<div class="whatsnew"><span class="wn-h">{t["whatsnew"]} v{ver}</span><p>{e(last_change)}</p></div>'}
   {fr_note}
   {tl_section}
   {ver_section}
@@ -516,8 +601,7 @@ def build_lang(lang):
   <h2>{t["major_unc"]}</h2>
   <p class="uncert">{e(qunc)}</p>
   {verhist}
-  <h2>{t["keyrefs"]}</h2>
-  <p class="refs">{refs_html}</p>
+  {references_html}
   <p class="backlink"><a href="{prefix}/questions.html">{t["allq"]}</a></p>'''
 
         desc = (qans or "")[:155]
@@ -525,8 +609,9 @@ def build_lang(lang):
         top_cur = f'<p class="qid mono">{e(qid)} · v{ver} ({t["current"]}) · <a href="/q/{qid}.json">{t["json"]}</a></p>'
         main = head(lang, f"{qtext} — SCR", desc, page_path, keywords=kw_meta) + f'<main class="qpage wrap">{top_cur}{inner}</main>' + foot(lang)
         open(os.path.join(out_root, "q", f"{qid}.html"), "w").write(main)
-        # FROZEN snapshot of the CURRENT version (past versions stay frozen on disk; build never rewrites them)
-        os.makedirs(os.path.join(out_root, "q", qid), exist_ok=True)
+        if ver in versions:
+            continue
+        # Legacy snapshots outside the archived pilot.
         banner = f'<div class="archived">{t["archived_banner"](ver, e(updated))} <a href="{prefix}/q/{qid}.html">{t["cur_ver_link"]}</a></div>'
         top_arc = f'<p class="qid mono">{e(qid)} · v{ver} ({t["archived"]}) · <a href="{prefix}/q/{qid}.html">{t["cur_ver_link"]}</a></p>'
         snap = head(lang, f"{qtext} — SCR {qid} v{ver} ({t['archived']})", desc, ver_path, robots="noindex,follow", keywords=kw_meta) + f'<main class="qpage wrap">{banner}{top_arc}{inner}</main>' + foot(lang)

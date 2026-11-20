@@ -4,13 +4,14 @@ Run from the site/ folder (or anywhere): python3 build_site.py
 Reads ../registry/claims.json. sitemap.xml is owned by build_questions.py."""
 import json, os, html, hashlib
 from collections import Counter
-from scrlib import timeline_svg, ref_link, ref_url, ev_label, cite_link, ANALYTICS
+from scrlib import timeline_svg, ref_url, ev_label, cite_link, evidence_id, ANALYTICS
 SITE = os.path.dirname(os.path.abspath(__file__))
 CSSVER = hashlib.md5(open(os.path.join(SITE, "style.css"), "rb").read()).hexdigest()[:8]  # cache-bust CSS
 BASE = "https://scientificclaims.org"
 REG = os.path.join(SITE, "..", "registry")
 data = json.load(open(os.path.join(REG, "claims.json")))
 ALL_CLAIMS = data["claims"]
+CLAIMS_BY_ID = {c["id"]: c for c in ALL_CLAIMS}
 # R-CLM-19: superseded single-paper claims keep their own page (R-CLM-9) but leave the claims index.
 claims = [c for c in ALL_CLAIMS if c.get("status") not in ("superseded", "retired")]
 def e(s): return html.escape(str(s if s is not None else ""))
@@ -270,7 +271,7 @@ def render_claim(c, lang):
     amato_txt = (" · " + t["by_amato"]) if any(x.get("amato_authored") for x in evs) else ""
     tl = timeline_svg([{"year": x.get("year"), "kind": x.get("stance"), "label": ev_label(x), "url": ref_url(x.get("ref"))} for x in evs], w=680, h=56)
     ev_items = ""
-    for x in evs:
+    for index, x in enumerate(evs):
         meta = " · ".join(p for p in [
             ROLE_L[lang].get(x.get("stance"), x.get("stance")),
             (x.get("study_design") or "").replace("_", " ") or None,
@@ -308,7 +309,7 @@ def render_claim(c, lang):
             rob_html = (f'<details class="robwhy"><summary class="small">{e(t["rob_why"])} ({len(ra["points"])})</summary>'
                         f'<p class="muted small">{e(t["rob_method"])} {e(ra.get("by",""))} · {e(ra.get("date",""))}</p>'
                         f'<ol class="small">{pts}</ol></details>')
-        ev_items += (f'<li>{cite_link(x)} {badge} <span class="muted small">— {e(meta)}</span>'
+        ev_items += (f'<li id="{evidence_id(index)}">{cite_link(x)} {badge} <span class="muted small">— {e(meta)}</span>'
                      f'{ec_html}{quote}{note}{rob_html}</li>')
     ql = claim_questions.get(cid, [])
     if ql:
@@ -332,8 +333,25 @@ def render_claim(c, lang):
         integ_html = f'<p class="frnote integ-warn">⚠ {t["integ_warn"]} {items}</p>'
     sup_html = ""
     if c.get("superseded_by"):
-        lk = ", ".join(f'<a href="{prefix}/c/{x}.html">{e(x)}</a>' for x in c["superseded_by"])
-        sup_html = (f'<p class="frnote sup-note">{t["sup_done"] if c.get("status") == "superseded" else t["sup_part"]} {lk}</p>')
+        refs = {(row.get("ref") or "").strip().casefold() for row in evs} - {""}
+        destinations = []
+        for target_id in c["superseded_by"]:
+            target = CLAIMS_BY_ID.get(target_id)
+            if target is None:
+                continue
+            url = f"{prefix}/c/{target_id}.html"
+            matches = [
+                f'<a href="{url}#{evidence_id(index)}">{e(ev_label(row))}</a>'
+                for index, row in enumerate(target["evidence"])
+                if cid in row.get("from_claims", []) or (row.get("ref") or "").strip().casefold() in refs
+            ]
+            destination = f'<a href="{url}">{e(target_id)}</a>'
+            if matches:
+                destination += f' · {" · ".join(matches)}'
+            destinations.append(f"<li>{destination}</li>")
+        if destinations:
+            label = t["sup_done"] if c.get("status") == "superseded" else t["sup_part"]
+            sup_html = f'<div class="frnote sup-note"><p>{label}</p><ul>{"".join(destinations)}</ul></div>'
     elif c.get("status") == "retired":
         sup_html = f'<p class="frnote sup-note">{t["retired"]}</p>'
     elif c.get("consolidated_from"):

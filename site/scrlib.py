@@ -61,6 +61,11 @@ def cite_link(ev):
         return f'<a class="reflink" href="{_html.escape(u)}" target="_blank" rel="noopener">{_html.escape(label)}</a>'
     return ref_link(ev.get("ref"))
 
+
+def evidence_id(index):
+    """Fragment for the evidence row at a zero-based claim index."""
+    return f"evidence-{index + 1}"
+
 # stance/role -> colour
 KIND_COLOR = {
     "supporting": "#1d7a4f", "contradicting": "#a23b52", "mentioning": "#94a3b8",

@@ -6,6 +6,8 @@ Visão de processo do **Scientific Claim Registry**. Fonte canônica das regras 
 > *"PubMed stores scientific papers. ScientificClaims.org stores the evolving answers to scientific questions."*
 > O SCR **registra, não arbitra.**
 
+Os fluxogramas descrevem o fluxo existente. A seção 6 registra a atualização planejada para o modelo de proposições e achados da v0.6.
+
 ---
 
 ## 1 · Modelo de objeto e camadas
@@ -202,3 +204,12 @@ flowchart TD
 > pergunta**, nunca escreve claim/resposta. Pior caso de abuso = *compute desperdiçado*, não corrupção (modelo
 > *pull-request*). Na Fase 3 (server-side) some-se a isto uma **fila isolada + aprovação humana** antes do build
 > (anti prompt-injection/spam) — ver `decentralization.md`.
+
+
+## 6 · Atualização planejada do piloto
+
+A unidade de extração é o **achado do estudo**. Ele deve preservar a referência, o trecho e sua localização quando disponível, o desenho, a população, o desfecho e a direção do resultado. A proposição agrega achados compatíveis, contraditórios ou que delimitam seu escopo. A revisão registra separadamente a fidelidade da extração, a certeza da evidência por desfecho e o efeito sobre a síntese. Verificações independentes da extração e da interpretação editorial têm papéis distintos.
+
+Para cada rodada de vigilância, registrar as fontes consultadas, incluindo a biblioteca do fundador e a busca externa, com data, consulta, recorte e critérios de seleção. Identificar lacunas de cobertura e explicitar as exclusões relevantes. Prever revisão independente das mudanças que alterem a direção ou a certeza da conclusão, ou que afetem desfechos prioritários. Registrar a justificativa quando novos achados forem incorporados e a conclusão for mantida.
+
+Cada versão citável deverá recuperar a síntese e as evidências usadas até sua data de corte. O histórico editorial deve indicar quais achados motivaram a mudança e fornecer acesso à versão anterior. A interface e o JSON deverão expor a data da última busca, a data da última mudança da resposta e a certeza por desfecho como campos distintos. O *Knowledge Freshness* descreve a recência das fontes. Os critérios de entrega estão no [roadmap](../roadmap.md).

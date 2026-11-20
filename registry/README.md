@@ -1,29 +1,22 @@
-# SCR-LIP — Registro-piloto (Lipedema) v0.1
+# SCR-LIP — Registro-piloto de lipedema
 
-Primeiro registro-piloto do **Scientific Claim Registry**, domínio **lipedema**.
-Construído a partir da biblioteca do Dr. Amato (`artigos lipedema`), **priorizando os
-artigos do próprio autor** como evidência. GRADE honesto; a IA não opina; curadoria humana opcional.
-
-**Modelo pergunta-cêntrico (ver `docs/10`):** os **345 claims** (atual; o seed v0.1 tinha 50) estão agrupados
-sob **42 perguntas científicas** (`SQ-LIP-…`, seed em `questions.json`). A pergunta é o objeto navegável;
-o claim é evidência ligada (papel supporting/contradicting/refines/context). O site gera uma
-página de evidência versionada por pergunta (com **Knowledge Freshness** e JSON legível por máquina).
+O piloto foi iniciado com a biblioteca de lipedema do Dr. Amato e priorizou artigos do próprio autor na v0.1. No registro de trabalho de 2026-11-20, **42 perguntas** agrupam **216 proposições ativas com 841 achados**. O registro preserva também **514 claims substituídos ou retirados**. Uma proposição pode estar ligada a várias perguntas. Cada achado registra o resultado de um estudo em relação à proposição.
 
 ## Arquivos
 
 | Arquivo | Conteúdo |
 |---|---|
-| **`scr.db`** | 🗄️ **Banco canônico** (SQLite) — fonte da verdade (claims + perguntas + evidência + versões + consenso) |
+| **`scr.db`** | Projeção SQLite reconstruída a partir dos JSON versionados |
 | `questions.json` | **Seed das perguntas** (`SQ-LIP-…`) + links a claims com papel |
-| `claims.json` | Seed/registro dos claims (atual **345**; seed v0.1 = 50) — schema em `docs/spec/claim-schema.md` |
+| `claims.json` | Registro versionado de proposições, achados e claims arquivados — schema em `docs/spec/claim-schema.md` |
 | `claims.csv` | Versão achatada para planilha/revisão |
 | `_held_out_theory.json` | **Teoria IIT2/gfWAT do autor — fora do registro por ora** (decisão de 2026-05-30) |
-| `build_registry.py` | Compilador (regenera json+csv a partir dos dados curados) |
+| `build_registry.py` | Compilador histórico do seed da v0.1 |
 | `REVIEW_v0.1.md` | **Revisão crítica** dos 50 claims (escopo, calibração, duplicação, DOIs) |
 | `schema.sql` | Esquema (claims, evidence, relations, curators, versions, consensus, held_out, **questions, question_versions, claim_questions**) |
 | `db.py` | CLI do banco: `build` · `export` · `stats` · `query "SQL"` |
 
-## Status (2026-06-02)
+## Histórico da v0.1 ao recorte de 2026-06-02
 
 - **42 perguntas** (`SQ-LIP-…`) agrupam **345 claims** (cada claim ligado a ≥1 pergunta; grafo cross-pergunta).
 - Crescimento: o seed v0.1 (2026-05-30) tinha **50 claims / 18 perguntas**; o loop de vigilância + ingestão de
@@ -48,11 +41,8 @@ página de evidência versionada por pergunta (com **Knowledge Freshness** e JSO
 
 ## Como evoluir
 
-- Cada claim deve, com o tempo, ganhar `consensus` (painel de especialistas) e `history` (versões).
-- Fontes ainda não mineradas para crescer além de 50: demais sentenças do consenso Delphi
-  (~90 no total), estudos de prevalência e os artigos do acervo ainda não usados.
-- Regenerar após editar `build_registry.py`: `python3 build_registry.py`.
+- O [roadmap](../docs/roadmap.md) descreve a integração entre vigilância e incorporação de achados, a revisão das sínteses afetadas e a publicação de versões recuperáveis. Para a operação atual, consulte o [runbook](../RUNBOOK.md).
 
 ## Aviso
 
-Claims não substituem julgamento clínico. Conteúdo sob CC BY 4.0.
+Claims não substituem julgamento clínico. As licenças por componente constam em [LICENSE](../LICENSE).

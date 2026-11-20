@@ -12,9 +12,9 @@
 - **Pergunta científica** (`SQ-LIP-000001`) = objeto central navegável (estável, neutra).
 - **Claim** (`SCR-LIP-000001`) = evidência estruturada e versionada que é *consistent / conflicting /
   refining / contextual* em relação à pergunta. É um **grafo** (um claim ↔ várias perguntas).
-- **Resposta = renderização versionada**, não verdade armazenada. Cada versão tem snapshot imutável e citável.
+- **Resposta versionada** registra a síntese e seu fundamento em uma data de corte. O protocolo prevê um snapshot imutável e citável por versão.
 - **Camadas:** L1 Registry (automatizável, o produto) · L2 Consensus (opcional) · L3 Recomendação (opcional).
-- **Knowledge Freshness:** mede o envelhecimento da evidência por pergunta (*Evidence Decay*).
+- **Knowledge Freshness:** indica a recência das fontes associadas à pergunta.
 - **Machine-first:** cada pergunta e claim expõe JSON (`/q/<id>.json`, `/c/<id>.json`) para LLMs/agentes.
 
 ## O protocolo (a "constituição")
@@ -29,15 +29,13 @@ contrato de claim, versionamento, freshness, machine-first, neutralidade) cercad
   identidade) e **sugestão de artigos** (DOI/PMID "a considerar"), atribuída por ORCID. Nunca escreve no
   registro: o conteúdo entra só pelo compilador neutro (*pull-request model*; BYO-compute).
 
-## Estado atual (2026-06-02)
+## Estado do piloto (2026-11-20)
 
-- **345 claims sob 42 perguntas** (`SQ-LIP-…`), site **bilíngue** (EN raiz + PT `/pt/`), cada claim com página
-  própria e JSON, back-links às perguntas, Knowledge Freshness, busca/paginação client-side.
-- **Loop de vigilância da Layer 1 — FECHADO** (`registry/loop.py` + `ingest.py`): retrieval semântico →
-  classify (LLM) → verify → corrobora/promove (merge conservador) → **busca de contradição sempre** →
-  recompila → versiona. Higiene: 0 órfãos · 0 evidências sem grade · 100% PECO · título em toda evidência.
-- **Página da pergunta:** *Bottom line* (10 s) → *Resumo executivo* → tabela **por desfecho** (sintoma ≠
-  modificação de doença) → síntese → claims; dois gráficos temporais (*Evidence over time* e *Answer over time*).
+- **42 perguntas, 216 proposições ativas e 841 achados** no registro de trabalho. Os 514 claims substituídos ou retirados continuam preservados sob seus IDs. O depósito v0.6 abaixo é um recorte anterior.
+- Site bilíngue (EN na raiz e PT em `/pt/`), com páginas e JSON de perguntas e claims, síntese por desfecho e histórico da resposta.
+- A vigilância automatizada (`registry/loop.py`) ainda usa o fluxo anterior à consolidação. O fluxo de incorporação por achado (`registry/attach_findings.py`) já existe e a recompilação ocorre em etapa separada.
+
+A próxima entrega vai demonstrar como citar uma versão da resposta, identificar o achado que a modificou e conferir sua origem. O [roadmap](docs/roadmap.md) descreve o piloto de três perguntas e os critérios para validar a publicação.
 
 ## Prioridade intelectual e DOIs (Zenodo, CC BY 4.0)
 
@@ -56,7 +54,7 @@ contrato de claim, versionamento, freshness, machine-first, neutralidade) cercad
 | Pasta | Conteúdo |
 |---|---|
 | `docs/` | Pensamento estratégico, material fundador e **`spec/`** (RULES.md = rulebook canônico · PROTOCOL.md) |
-| `registry/` | **Banco canônico** `scr.db` + seeds (`questions.json`, `claims.json`) + `schema.sql` + `db.py` + loop + `submit.py` |
+| `registry/` | JSON versionados (`questions.json`, `claims.json`) + projeção SQLite `scr.db` + `schema.sql` + `db.py` + loop + `submit.py` |
 | `site/` | O site estático no ar (gerado por `build_questions.py` + `build_site.py`; deploy em `site/deploy.md`) |
 | `osf/` | Pacote de registro de prioridade (OSF + Zenodo + PDFs) |
 | `CLAUDE.md` | Guia operacional completo (objeto, convenções, pipeline, infra, DOIs, mapa de docs) |

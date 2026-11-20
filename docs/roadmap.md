@@ -1,24 +1,19 @@
 # SCR — Roadmap
 
-> ⚠️ **Atualização (2026-05-30):** após o pivô **pergunta-cêntrico / registra-não-arbitra**
-> (docs/09–11), o núcleo passou a ser o **registro automatizado (Layer 1)**, não o consenso/Delphi
-> (que virou Layer 2 **opcional**). As ondas abaixo são o plano original (founder-steward) —
-> mantidas como histórico; o roadmap técnico vivo está no fim deste arquivo.
+## Próxima entrega · respostas citáveis e mudanças rastreáveis
 
-## ✅ Já feito (Onda 0 e parte da 1)
-- [x] PDFs fundadores + **OSF** (osf.io/n97ez) + **Zenodo DOI** (10.5281/zenodo.20466195/196).
-- [x] Editorial do SCR rascunhado (`docs/04`).
-- [x] Domínios: **scientificclaims.org** (principal) + **scr.bio** (marca).
-- [x] **Site no ar** (landing minimalista EN+PT, página de claims, 18 páginas de pergunta, JSON, freshness).
-- [x] **Registro-piloto:** 50 claims sob 18 perguntas; banco canônico `scr.db`.
+O piloto de lipedema já tem perguntas estáveis, proposições gerais e achados por estudo. A próxima entrega deve demonstrar o que o SCR oferece ao leitor ao longo do tempo. O recorte proposto são **três perguntas, com duas versões recuperáveis por pergunta**, escolhidas por terem material histórico suficiente e mudanças que possam ser explicadas pelos achados registrados.
 
-## 🎯 Roadmap técnico vivo (pergunta-cêntrico)
-1. **Loop de vigilância da Layer 1 (próximo):** IA lê artigo novo (PubMed/Europe PMC) → extrai
-   claim → liga à pergunta (ou cria) → marca supports/contradicts/refines → recalcula
-   **Knowledge Freshness** → versiona a resposta **se** mudou (commit). Roda mensal → semanal.
-2. **Interop machine-first:** índice `/api/`, JSON-LD / `ClaimReview`, IDs estilo nanopub/Trusty URI.
-3. **Expansão de perguntas/domínios** (linfedema, EDS…) e curadoria humana opcional (Layer 2).
-4. **Publicação:** editorial SCR → artigo do piloto.
+1. **Preservar as versões publicadas.** Guardar um artefato por ID de pergunta e versão com a síntese bilíngue, data de corte, proposições e respectivos estados ou versões, achados e referências usados na síntese. Preservar as URLs já publicadas e manter os artefatos em armazenamento durável, acessível ao build. Uma alteração no conteúdo citável exige nova versão. Recuperar versões antigas a partir dos artefatos preservados e identificar no histórico aquelas cujo conteúdo completo está indisponível.
+2. **Unificar a atualização no modelo da v0.6.** Integrar a vigilância à incorporação por achados. Validar a fonte, o trecho, a interpretação e o vínculo com a proposição. Identificar todas as perguntas ligadas, recompilar as sínteses afetadas e revisar o diff antes de publicar o conjunto. Registrar a incorporação mesmo quando a conclusão é mantida e explicar a decisão. Reprocessar uma entrada sem duplicar achados.
+3. **Checar a integridade em CI.** A partir de um checkout limpo, validar o build bilíngue, a recuperação de versões e a estabilidade de seus artefatos. Checar vínculos, contagens de claims ativos e arquivados entre banco, site e exportação, e projeção dos achados no SQLite. Usar os dados do registro para gerar as contagens exibidas na documentação.
+4. **Mostrar o que mudou na página da pergunta.** Logo abaixo da resposta curta, exibir a versão anterior, o achado novo, sua população e seu desfecho, e a mudança introduzida na síntese. Mostrar separadamente a última busca, a última mudança da resposta e a certeza por desfecho. Usar *Knowledge Freshness* para indicar a recência das fontes. Documentar a cobertura das fontes e submeter mudanças de maior impacto a revisão independente, conforme o [plano metodológico](spec/methodology.md#6--atualização-planejada-do-piloto).
+
+**Critério de aceite.** Em cada uma das três perguntas, um leitor consegue abrir a URL de qualquer uma das duas versões, identificar a mudança na resposta e seguir a referência até o trecho que a sustenta. Um build limpo recupera as duas versões a partir dos artefatos preservados e confirma que seus conteúdos permanecem iguais.
+
+O primeiro recorte arquivado reúne **SQ-LIP-000010** (1.7 e 1.8), **SQ-LIP-000031** (1.4 e 1.5) e **SQ-LIP-000039** (1.3 e 1.4). Os [registros recuperados do Git](../registry/question_versions) têm HTML bilíngue, JSON e links da mudança editorial para as evidências arquivadas. A integração com a vigilância e a validação contínua em CI seguem planejadas.
+
+Expansão para outros domínios e formatos adicionais de interoperabilidade ficam para depois da validação do piloto. O cronograma abaixo registra o plano original.
 
 ---
 

@@ -93,6 +93,9 @@ python3 registry/db.py query "SELECT id, statement FROM claims WHERE knowledge_s
 
 ---
 
+A paridade atual compara os registros brutos do SQLite com os JSON. A validação das projeções,
+incluindo o status editorial e os achados, está prevista no [roadmap](docs/roadmap.md).
+
 ## 4. Loop de vigilância (ingestão de literatura)
 
 Busca artigos e propõe claims numa pergunta. **Sem `--commit` = dry-run** (só mostra; não grava).
@@ -131,6 +134,15 @@ python3 build_site.py         # páginas de claims
 python3 build_home.py         # home com dados vivos
 cd ..
 ```
+
+Um build limpo gera as versões arquivadas do piloto a partir de
+[`registry/question_versions/`](registry/question_versions), com HTML em EN/PT e JSON bilíngue
+em `/q/<id>/v<versão>.json`. Cada registro preserva o estado recuperado do commit indicado em
+`source_commit`. Para preservar uma versão nova, adicione um arquivo para o novo par de ID e
+versão. Alterações citáveis devem ganhar um novo número de versão.
+
+Para perguntas fora do piloto, o build limpo gera o snapshot da versão corrente. As versões
+históricas legadas dependem dos HTML preservados no diretório gerado.
 
 **Deploy da instância oficial — SÓ maintainer** (precisa de `SCR_DEPLOY_SSH` + `SCR_CF_TOKEN`; um clone novo
 **não** publica em scientificclaims.org). Um host próprio aponta `SCR_DEPLOY_SSH` para o seu servidor.
